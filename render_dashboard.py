@@ -47,12 +47,15 @@ def load_scores():
         "percentile_cutoffs": d.get("percentile_cutoffs"),
     }
     return by_code, meta
-    return {
-        "T1": {"label": "T1 營收確認型", "cls": "tier-t1", "color": "#3ecf8e", "hold": "7-30天"},
-        "T2": {"label": "T2 動能爆發型", "cls": "tier-t2", "color": "#4aa3ff", "hold": "1-7天"},
-        "T3": {"label": "T3 題材短打型", "cls": "tier-t3", "color": "#f09030", "hold": "1-3天"},
-        "T4": {"label": "T4 觀察/不追", "cls": "tier-t4", "color": "#7a8599", "hold": "--"},
-    }.get(t, {})
+
+TIER_META = {
+    "T1": {"label": "T1 營收確認型", "cls": "tier-t1", "color": "#3ecf8e", "hold": "7-30天"},
+    "T2": {"label": "T2 動能爆發型", "cls": "tier-t2", "color": "#4aa3ff", "hold": "1-7天"},
+    "T3": {"label": "T3 題材短打型", "cls": "tier-t3", "color": "#f09030", "hold": "1-3天"},
+    "T4": {"label": "T4 觀察/不追",   "cls": "tier-t4", "color": "#7a8599", "hold": "--"},
+}
+def tier_meta(t):
+    return TIER_META.get(t, TIER_META["T4"])
 
 NOTE = {
     "2327":"00981A/00992A/00991A 核心持股，今日漲停創高",
