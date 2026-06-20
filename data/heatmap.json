@@ -1,138 +1,78 @@
 {
   "date": "2026-06-20",
-  "generated": "2026-06-20T08:57:41.825359",
-  "stocks": [
+  "generated": "2026-06-20",
+  "industries": [
     {
-      "code": "2327",
-      "week_pct": 9.1,
-      "month_pct": 23.45,
-      "day_pct": 4.21
+      "industry": "設備/散熱",
+      "avg_pct": 5.0,
+      "up": 1,
+      "down": 0,
+      "total": 1,
+      "codes": "2404"
     },
     {
-      "code": "2308",
-      "week_pct": 0.72,
-      "month_pct": 1.58,
-      "day_pct": 0.32
+      "industry": "被動元件",
+      "avg_pct": 3.71,
+      "up": 2,
+      "down": 0,
+      "total": 2,
+      "codes": "2327,2375"
     },
     {
-      "code": "2330",
-      "week_pct": -0.78,
-      "month_pct": 43.03,
-      "day_pct": 1.89
+      "industry": "DRAM",
+      "avg_pct": 3.69,
+      "up": 2,
+      "down": 0,
+      "total": 2,
+      "codes": "2344,2408"
     },
     {
-      "code": "2383",
-      "week_pct": 7.1,
-      "month_pct": 8.03,
-      "day_pct": 2.77
+      "industry": "網通",
+      "avg_pct": 2.29,
+      "up": 1,
+      "down": 0,
+      "total": 1,
+      "codes": "6285"
     },
     {
-      "code": "2454",
-      "week_pct": 6.64,
-      "month_pct": 21.35,
-      "day_pct": 3.28
+      "industry": "其他",
+      "avg_pct": 2.15,
+      "up": 2,
+      "down": 1,
+      "total": 3,
+      "codes": "6166,6239,7610"
     },
     {
-      "code": "2344",
-      "week_pct": -3.13,
-      "month_pct": 37.94,
-      "day_pct": 0.85
+      "industry": "IC/代工/封測",
+      "avg_pct": 2.01,
+      "up": 5,
+      "down": 1,
+      "total": 6,
+      "codes": "2303,2330,2383,2454,3711,6830"
     },
     {
-      "code": "2408",
-      "week_pct": 17.33,
-      "month_pct": 15.01,
-      "day_pct": 6.53
+      "industry": "ODM/EMS",
+      "avg_pct": -0.31,
+      "up": 1,
+      "down": 1,
+      "total": 2,
+      "codes": "2395,3443"
     },
     {
-      "code": "3017",
-      "week_pct": 8.12,
-      "month_pct": -6.01,
-      "day_pct": 2.41
+      "industry": "AI/散熱/伺服器",
+      "avg_pct": -0.4,
+      "up": 2,
+      "down": 2,
+      "total": 4,
+      "codes": "2308,2313,3017,6442"
     },
     {
-      "code": "3711",
-      "week_pct": -2.98,
-      "month_pct": 23.92,
-      "day_pct": 0.2
-    },
-    {
-      "code": "6166",
-      "week_pct": 14.29,
-      "month_pct": 1.69,
-      "day_pct": 4.85
-    },
-    {
-      "code": "2303",
-      "week_pct": -3.99,
-      "month_pct": -4.42,
-      "day_pct": -1.55
-    },
-    {
-      "code": "6442",
-      "week_pct": -7.17,
-      "month_pct": 33.08,
-      "day_pct": -0.74
-    },
-    {
-      "code": "2375",
-      "week_pct": 11.17,
-      "month_pct": -10.5,
-      "day_pct": 3.2
-    },
-    {
-      "code": "7610",
-      "week_pct": -5.61,
-      "month_pct": -16.84,
-      "day_pct": -2.71
-    },
-    {
-      "code": "2313",
-      "week_pct": -7.84,
-      "month_pct": -19.99,
-      "day_pct": -3.61
-    },
-    {
-      "code": "2395",
-      "week_pct": -10.88,
-      "month_pct": 12.51,
-      "day_pct": -3.0
-    },
-    {
-      "code": "6285",
-      "week_pct": 9.82,
-      "month_pct": -19.58,
-      "day_pct": 2.29
-    },
-    {
-      "code": "3443",
-      "week_pct": 9.62,
-      "month_pct": -16.53,
-      "day_pct": 2.38
-    },
-    {
-      "code": "3008",
-      "week_pct": -6.29,
-      "month_pct": -2.43,
-      "day_pct": -2.22
-    },
-    {
-      "code": "2404",
-      "week_pct": 13.4,
-      "month_pct": 10.75,
-      "day_pct": 5.0
-    },
-    {
-      "code": "6830",
-      "week_pct": 13.73,
-      "month_pct": 17.55,
-      "day_pct": 5.45
-    },
-    {
-      "code": "6239",
-      "week_pct": 12.7,
-      "month_pct": 1.73,
-      "day_pct": 4.32
+      "industry": "光學",
+      "avg_pct": -2.22,
+      "up": 0,
+      "down": 1,
+      "total": 1,
+      "codes": "3008"
     }
   ]
 }
