@@ -114,6 +114,17 @@ select{background:#11141c;color:var(--text);border:1px solid var(--border);borde
     </div>
   </div>
 
+  <!-- S6 熱力圖 -->
+  <div class="section" id="secHeat">
+    <h2 class="section-head" onclick="toggleSection('secHeat')"><span class="arrow">▼</span> 🌡️ 熱力圖</h2>
+    <div class="section-body">
+      <div class="alert">目前以快照與近似上月快照推算。顏色：紅=跌、灰=平、綠=漲，深淺代表幅度。</div>
+      <div class="grid grid-4" id="heatDay"></div>
+      <div class="grid grid-4" id="heatWeek"></div>
+      <div class="grid grid-4" id="heatMonth"></div>
+    </div>
+  </div>
+
   <!-- S5 資産 -->
   <div class="section" id="secPortfolio">
     <h2 class="section-head" onclick="toggleSection('secPortfolio')"><span class="arrow">▼</span> 💼 資產與對沖（Portfolio）</h2>
@@ -303,6 +314,38 @@ function renderPortfolio(){
   document.getElementById('hedgeReport').innerHTML = report.length? report.join('<div style="margin:4px 0"></div>') : '<div style="color:var(--muted);font-size:12px">未偵測到風險訊號。</div>';
 }
 
+/* ===== Heatmap ===== */
+function heatColor(pct){
+  if(pct > 0){
+    const a = Math.min(120, Math.round(pct * 5));
+    return 'rgba(62,207,142,' + (a/120).toFixed(2) + ')'; // green
+  }
+  if(pct < 0){
+    const a = Math.min(120, Math.round((-pct) * 5));
+    return 'rgba(240,70,90,' + (a/120).toFixed(2) + ')';  // red
+  }
+  return 'rgba(122,133,153,0.25)';
+}
+function renderHeat(){
+  const map = new Map(allStocks.map(s=>[s.code, s]));
+  const heat = window._heat || {stocks:[]};
+  const wrap = function(rows, label, field){
+    return rows.map(function(x){
+      const s = map.get(x.code);
+      if(!s) return '';
+      const pct = x[field];
+      const bg = heatColor(pct);
+      return '<div class="stock"><div class="name">'+s.name+' <span class="float">'+s.code+'</span></div><div class="meta">'+label+' <b>'+(pct>0?'+':'')+pct.toFixed(2)+'%</b></div><div style="height:8px;border-radius:999px;background:'+bg+';margin-top:6px"></div></div>';
+    }).join('');
+  };
+  const day = heat.stocks.slice().sort((a,b)=>b.day_pct-a.day_pct);
+  const week = heat.stocks.slice().sort((a,b)=>b.week_pct-a.week_pct);
+  const month = heat.stocks.slice().sort((a,b)=>b.month_pct-a.month_pct);
+  document.getElementById('heatDay').innerHTML = wrap(day, '近1日', 'day_pct') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無heat data</div>';
+  document.getElementById('heatWeek').innerHTML = wrap(week, '近1週', 'week_pct') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無heat data</div>';
+  document.getElementById('heatMonth').innerHTML = wrap(month, '近1月', 'month_pct') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無heat data</div>';
+}
+
 /* ===== Init ===== */
 fetch('data.json')
   .then(r=>r.json())
@@ -323,6 +366,10 @@ fetch('data.json')
   .catch(e=>{
     document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:#f0465a;color:#fbb">data.json 讀取失敗：'+e.message+'</div>');
   });
+  fetch('heatmap.json')
+    .then(r=>r.json())
+    .then(d=>{ window._heat=d; renderHeat(); })
+    .catch(()=>{});
 </script>
 </body>
 </html>
