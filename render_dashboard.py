@@ -94,8 +94,8 @@ th:hover{color:var(--text)}td{padding:8px;border-bottom:1px solid #1b2130}tr:hov
 </style>"""
 
 BODY_HEADER = """<header>
-  <h1>🎯 台股 AI 投資追蹤 <span class="tier-tag tier-t1" style="margin-left:10px" id="headerDate">{date}</span></h1>
-  <div class="sub">TWSE 即時快照 · 三軌配置 · 動態儀表板</div>
+  <h1>🎯 台股 AI 投資追蹤 <span class="tier-tag tier-t1" style="margin-left:10px" id="headerDate">{date}</span> <span style="font-size:11px;color:var(--muted);font-weight:400" id="headerTime"></span></h1>
+  <div class="sub">TWSE 即時快照 · 量化評分規則驅動 · 動態儀表板 · 組合對沖</div>
 </header>
 <div class="container">
   <div class="grid grid-4" id="summaryCards"><div class="card"><h2>載入中...</h2></div></div>
