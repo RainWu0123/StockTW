@@ -1,0 +1,44 @@
+name: Update TWSE Dashboard
+
+on:
+  schedule:
+    # Taiwan market close ~14:00 TWS = 06:00 UTC
+    - cron: '0 6 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch TWSE snapshot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 fetch_twse.py
+
+      - name: Render dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 render_dashboard.py
+          cp dashboard.html index.html
+
+      - name: Commit and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.email "hermes@rainwu"
+          git config user.name "Hermes Bot"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: TWSE daily update $(date +%F)"
+          git push
