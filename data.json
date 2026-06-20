@@ -1,6 +1,6 @@
 {
-  "date": "2026-06-19",
-  "updated": "2026-06-20T08:11:38.003725",
+  "date": "2026-06-20",
+  "updated": "2026-06-20T08:28:27.818424",
   "stocks": [
     {
       "code": "2327",
@@ -24,7 +24,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "營收年增582%，外資目標490，今日創高"
+      "note": "營收年增582%，外資目標490"
     },
     {
       "code": "2344",
@@ -36,7 +36,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "DRAM超循環，營收+181%，法人狂買"
+      "note": "DRAM超循環，營收+181%"
     },
     {
       "code": "2303",
@@ -48,7 +48,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "ADR 25%，爆量29萬張，矽光子題材"
+      "note": "ADR 25%，爆量29萬張"
     },
     {
       "code": "6166",
@@ -60,7 +60,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "Edge AI題材，今日漲停"
+      "note": "Edge AI題材"
     },
     {
       "code": "7610",
@@ -72,7 +72,7 @@
       "tier_label": "T3 題材短打型",
       "tier_cls": "tier-t3",
       "hold": "1-3天",
-      "note": "地緣題材，最快進最快出"
+      "note": "地緣題材"
     },
     {
       "code": "6442",
@@ -84,7 +84,7 @@
       "tier_label": "T3 題材短打型",
       "tier_cls": "tier-t3",
       "hold": "1-3天",
-      "note": "CPO最純台廠，外資買超最兇"
+      "note": "CPO最純台廠"
     },
     {
       "code": "2375",
@@ -96,7 +96,7 @@
       "tier_label": "T3 題材短打型",
       "tier_cls": "tier-t3",
       "hold": "1-3天",
-      "note": "AI電感/MLCC彈性最大，00981A掃貨"
+      "note": "AI電感/MLCC"
     },
     {
       "code": "3017",
@@ -108,7 +108,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "液冷散熱台廠第一，訂單能見度到2029"
+      "note": "液冷散熱台廠第一"
     },
     {
       "code": "3711",
@@ -120,7 +120,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "CoWoS溢最強，先進封裝占比持續提升"
+      "note": "CoWoS溢最強"
     },
     {
       "code": "2454",
@@ -132,7 +132,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "AI ASIC，今日-1.57%小拉，Momentum仍強"
+      "note": "AI ASIC"
     },
     {
       "code": "3443",
@@ -144,7 +144,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "高檔拉回，等止穩再說"
+      "note": "高檔拉回"
     },
     {
       "code": "3008",
@@ -168,7 +168,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "AI 電源+液冷雙主軸，盤整後還有空間"
+      "note": "AI 電源+液冷雙主軸"
     },
     {
       "code": "2330",
@@ -192,7 +192,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "AI載板+低軌衛星，等255以下"
+      "note": "AI載板+低軌衛星"
     },
     {
       "code": "2395",
@@ -204,7 +204,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "Edge AI存股型，短線動能不足"
+      "note": "Edge AI存股型"
     },
     {
       "code": "6285",
@@ -216,7 +216,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "網通+NB+低軌，無明確AI爆發點"
+      "note": "網通+NB+低軌"
     },
     {
       "code": "6830",
@@ -240,7 +240,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "動能中等，漲幅可能已被反映"
+      "note": "動能中等"
     },
     {
       "code": "2404",
@@ -264,7 +264,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "NVIDIA M9供應商，今日+7.69%"
+      "note": "NVIDIA M9供應商"
     }
   ]
 }
