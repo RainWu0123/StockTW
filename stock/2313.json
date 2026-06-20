@@ -1,0 +1,27 @@
+{
+  "code": "2313",
+  "name": "金寶",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "2313",
+    "name": "金寶",
+    "price": 68,
+    "pct": -3.61,
+    "vol": 8000,
+    "tier": "T3",
+    "tier_label": "題材短打型",
+    "tier_cls": "tier-t3",
+    "score": 8.8,
+    "hold": "7-30天",
+    "note": "AI載板+低軌衛星，等255以下",
+    "industry": "",
+    "day_pct": -3.61,
+    "week_pct": -7.84,
+    "month_pct": -19.99,
+    "bigOrder": 0.09,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

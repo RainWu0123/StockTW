@@ -1,0 +1,27 @@
+{
+  "code": "2454",
+  "name": "聯發科",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "2454",
+    "name": "聯發科",
+    "price": 1250,
+    "pct": 3.28,
+    "vol": 12000,
+    "tier": "T1",
+    "tier_label": "營收確認型",
+    "tier_cls": "tier-t1",
+    "score": 12.8,
+    "hold": "7-30天",
+    "note": "AI ASIC，今日-1.57%小拉，Momentum仍強",
+    "industry": "",
+    "day_pct": 3.28,
+    "week_pct": 6.64,
+    "month_pct": 21.35,
+    "bigOrder": 2.54,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

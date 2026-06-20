@@ -1,0 +1,27 @@
+{
+  "code": "3443",
+  "name": "鴻海",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "3443",
+    "name": "鴻海",
+    "price": 168,
+    "pct": 2.38,
+    "vol": 25000,
+    "tier": "T3",
+    "tier_label": "題材短打型",
+    "tier_cls": "tier-t3",
+    "score": 8.8,
+    "hold": "7-30天",
+    "note": "高檔拉回，等止穩再說",
+    "industry": "",
+    "day_pct": 2.38,
+    "week_pct": 9.62,
+    "month_pct": -16.53,
+    "bigOrder": 0.71,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

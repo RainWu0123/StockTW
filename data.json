@@ -1,6 +1,6 @@
 {
   "date": "2026-06-20",
-  "updated": "2026-06-20T09:28:35.444012",
+  "updated": "2026-06-20T09:39:08.550530",
   "stocks": [
     {
       "code": "2303",
@@ -26,7 +26,10 @@
       "month_pct": -4.42,
       "bigOrder": 0.11,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2308",
@@ -52,7 +55,10 @@
       "month_pct": 1.58,
       "bigOrder": 0.78,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2313",
@@ -78,7 +84,10 @@
       "month_pct": -19.99,
       "bigOrder": 0.09,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2327",
@@ -104,7 +113,10 @@
       "month_pct": 23.45,
       "bigOrder": 3.67,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2330",
@@ -130,7 +142,10 @@
       "month_pct": 43.03,
       "bigOrder": 8.55,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2344",
@@ -156,7 +171,10 @@
       "month_pct": 37.94,
       "bigOrder": 0.12,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2375",
@@ -182,7 +200,10 @@
       "month_pct": -10.5,
       "bigOrder": 0.33,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2383",
@@ -208,7 +229,10 @@
       "month_pct": 8.03,
       "bigOrder": 0.54,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2395",
@@ -234,7 +258,10 @@
       "month_pct": 12.51,
       "bigOrder": 0.24,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2404",
@@ -260,7 +287,10 @@
       "month_pct": 10.75,
       "bigOrder": 0.19,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2408",
@@ -286,7 +316,10 @@
       "month_pct": 15.01,
       "bigOrder": 0.29,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2454",
@@ -312,7 +345,10 @@
       "month_pct": 21.35,
       "bigOrder": 2.54,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3008",
@@ -338,7 +374,10 @@
       "month_pct": -2.43,
       "bigOrder": 1.36,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3017",
@@ -364,7 +403,10 @@
       "month_pct": -6.01,
       "bigOrder": 1.11,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3443",
@@ -390,7 +432,10 @@
       "month_pct": -16.53,
       "bigOrder": 0.71,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3711",
@@ -416,7 +461,10 @@
       "month_pct": 23.92,
       "bigOrder": 0.45,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6166",
@@ -442,7 +490,10 @@
       "month_pct": 1.69,
       "bigOrder": 0.14,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6239",
@@ -468,7 +519,10 @@
       "month_pct": 1.73,
       "bigOrder": 0.11,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6285",
@@ -494,7 +548,10 @@
       "month_pct": -19.58,
       "bigOrder": 0.12,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6442",
@@ -520,7 +577,10 @@
       "month_pct": 33.08,
       "bigOrder": 0.44,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6830",
@@ -546,7 +606,10 @@
       "month_pct": 17.55,
       "bigOrder": 0.02,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "7610",
@@ -572,7 +635,10 @@
       "month_pct": -16.84,
       "bigOrder": 0.08,
       "limitGene": 0,
-      "industry": ""
+      "industry": "",
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     }
   ],
   "meta": {

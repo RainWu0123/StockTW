@@ -1,0 +1,27 @@
+{
+  "code": "2308",
+  "name": "台達電",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "2308",
+    "name": "台達電",
+    "price": 385,
+    "pct": 0.32,
+    "vol": 12000,
+    "tier": "T1",
+    "tier_label": "營收確認型",
+    "tier_cls": "tier-t1",
+    "score": 12.8,
+    "hold": "7-30天",
+    "note": "AI 電源+液冷雙主軸，盤整後還有空間",
+    "industry": "",
+    "day_pct": 0.32,
+    "week_pct": 0.72,
+    "month_pct": 1.58,
+    "bigOrder": 0.78,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

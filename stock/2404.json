@@ -1,0 +1,27 @@
+{
+  "code": "2404",
+  "name": "漢唐",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "2404",
+    "name": "漢唐",
+    "price": 275,
+    "pct": 5.0,
+    "vol": 4000,
+    "tier": "T4",
+    "tier_label": "觀察/不追",
+    "tier_cls": "tier-t4",
+    "score": 8.8,
+    "hold": "7-30天",
+    "note": "無明顯催化劑",
+    "industry": "",
+    "day_pct": 5.0,
+    "week_pct": 13.4,
+    "month_pct": 10.75,
+    "bigOrder": 0.19,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

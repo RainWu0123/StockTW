@@ -1,0 +1,27 @@
+{
+  "code": "2383",
+  "name": "台光",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "2383",
+    "name": "台光",
+    "price": 178,
+    "pct": 2.77,
+    "vol": 18000,
+    "tier": "T1",
+    "tier_label": "營收確認型",
+    "tier_cls": "tier-t1",
+    "score": 16.8,
+    "hold": "7-30天",
+    "note": "NVIDIA M9供應商，今日強拉+7.69%",
+    "industry": "",
+    "day_pct": 2.77,
+    "week_pct": 7.1,
+    "month_pct": 8.03,
+    "bigOrder": 0.54,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

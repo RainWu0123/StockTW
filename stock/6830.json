@@ -1,0 +1,27 @@
+{
+  "code": "6830",
+  "name": "力積電",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "6830",
+    "name": "力積電",
+    "price": 12,
+    "pct": 5.45,
+    "vol": 8000,
+    "tier": "T4",
+    "tier_label": "觀察/不追",
+    "tier_cls": "tier-t4",
+    "score": 12.8,
+    "hold": "7-30天",
+    "note": "今日漲停但成交783張，流動性差",
+    "industry": "",
+    "day_pct": 5.45,
+    "week_pct": 13.73,
+    "month_pct": 17.55,
+    "bigOrder": 0.02,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

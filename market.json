@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-20",
+  "indices": [
+    {
+      "id": "TSE",
+      "name": "大盤指數",
+      "price": "22,860.5",
+      "pct": 0.35
+    },
+    {
+      "id": "TAIFEX",
+      "name": "台指期",
+      "price": "22,890.0",
+      "pct": 0.42
+    },
+    {
+      "id": "KOSPI",
+      "name": "韓國 KOSPI",
+      "price": "2,980.1",
+      "pct": -0.18
+    },
+    {
+      "id": "N225",
+      "name": "日經 225",
+      "price": "38,450",
+      "pct": 0.55
+    },
+    {
+      "id": "SPX_F",
+      "name": "S&P 期貨",
+      "price": "5,820.5",
+      "pct": -0.12
+    },
+    {
+      "id": "NDX_F",
+      "name": "NASDAQ 期貨",
+      "price": "20,120",
+      "pct": -0.3
+    }
+  ],
+  "arms": {
+    "up": 580,
+    "dn": 310,
+    "limitUp": 28,
+    "limitDn": 7
+  }
+}

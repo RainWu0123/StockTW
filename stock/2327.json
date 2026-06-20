@@ -1,0 +1,27 @@
+{
+  "code": "2327",
+  "name": "國巨",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "2327",
+    "name": "國巨",
+    "price": 985,
+    "pct": 4.21,
+    "vol": 22000,
+    "tier": "T2",
+    "tier_label": "動能爆發型",
+    "tier_cls": "tier-t2",
+    "score": 12.8,
+    "hold": "7-30天",
+    "note": "00981A/00992A/00991A 核心持股，今日漲停創高",
+    "industry": "",
+    "day_pct": 4.21,
+    "week_pct": 9.1,
+    "month_pct": 23.45,
+    "bigOrder": 3.67,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

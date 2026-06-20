@@ -1,0 +1,27 @@
+{
+  "code": "3017",
+  "name": "奇鋐",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "3017",
+    "name": "奇鋐",
+    "price": 728,
+    "pct": 2.41,
+    "vol": 9000,
+    "tier": "T2",
+    "tier_label": "動能爆發型",
+    "tier_cls": "tier-t2",
+    "score": 12.8,
+    "hold": "7-30天",
+    "note": "液冷散熱台廠第一，訂單能見度到2029",
+    "industry": "",
+    "day_pct": 2.41,
+    "week_pct": 8.12,
+    "month_pct": -6.01,
+    "bigOrder": 1.11,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

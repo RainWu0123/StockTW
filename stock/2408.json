@@ -1,0 +1,27 @@
+{
+  "code": "2408",
+  "name": "南亞科",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "2408",
+    "name": "南亞科",
+    "price": 78,
+    "pct": 6.53,
+    "vol": 22000,
+    "tier": "T3",
+    "tier_label": "題材短打型",
+    "tier_cls": "tier-t3",
+    "score": 12.8,
+    "hold": "7-30天",
+    "note": "營收年增582%，外資目標490，今日創高",
+    "industry": "",
+    "day_pct": 6.53,
+    "week_pct": 17.33,
+    "month_pct": 15.01,
+    "bigOrder": 0.29,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

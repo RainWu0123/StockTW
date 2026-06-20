@@ -1,0 +1,27 @@
+{
+  "code": "6166",
+  "name": "凌华",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "6166",
+    "name": "凌华",
+    "price": 135,
+    "pct": 4.85,
+    "vol": 6000,
+    "tier": "T2",
+    "tier_label": "動能爆發型",
+    "tier_cls": "tier-t2",
+    "score": 8.8,
+    "hold": "7-30天",
+    "note": "Edge AI題材，今日漲停",
+    "industry": "",
+    "day_pct": 4.85,
+    "week_pct": 14.29,
+    "month_pct": 1.69,
+    "bigOrder": 0.14,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

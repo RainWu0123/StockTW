@@ -1,0 +1,27 @@
+{
+  "code": "3711",
+  "name": "日月光",
+  "date": "2026-06-20",
+  "stock": {
+    "code": "3711",
+    "name": "日月光",
+    "price": 178,
+    "pct": 0.2,
+    "vol": 15000,
+    "tier": "T1",
+    "tier_label": "營收確認型",
+    "tier_cls": "tier-t1",
+    "score": 16.8,
+    "hold": "7-30天",
+    "note": "CoWoS溢最強，先進封裝占營收比持續提升",
+    "industry": "",
+    "day_pct": 0.2,
+    "week_pct": -2.98,
+    "month_pct": 23.92,
+    "bigOrder": 0.45,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}
