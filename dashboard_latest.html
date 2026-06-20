@@ -91,24 +91,33 @@ tr:hover td{background:#161b25}
 
   <div class="alert">舊資料事故修正：華邦電、南亞科、國巨過去價格皆為舊估值。現用 2026-06-18 TWSE API 校正完成。</div>
 
-  <!-- 2. TWSE 快照 -->
+  <!-- 2. 即時快照（由 data.json 動態渲染，含排序與搜尋） -->
   <div class="section">
-    <h2>📊 TWSE 收盤快照 <span style="font-size:12px;color:var(--muted);font-weight:400">（點欄位排序）</span></h2>
-    <div class="card" style="overflow:auto">
-    <table id="snapshotTable">
-    <thead><tr>
-      <th class="sortable" data-key="code">代號</th>
-      <th class="sortable" data-key="name">公司</th>
-      <th class="sortable" data-key="price" data-type="num">收盤價</th>
-      <th class="sortable" data-key="pct" data-type="num">漲跌幅</th>
-      <th class="sortable" data-key="vol" data-type="num">成交張數</th>
-      <th>狀態</th>
-      <th class="sortable" data-key="tier">分級</th>
-    </tr></thead>
-    <tbody id="snapshotBody"></tbody>
-    </table>
+    <h2>📊 TWSE 即時快照</h2>
+    <div class="card" id="dynamicLoader">
+      <div class="alert" style="border-color:#2a3040;color:#c7cdd9">資料載入方式：<span style="color:var(--accent)">data.json</span>（前一日收盤快照）。進入交易時段可刷新為即時报价。</div>
+      <div class="ctrl">
+        <input type="text" id="searchBox" placeholder="🔍 輸入名稱或代號篩選" oninput="renderTable()">
+        <button onclick="setSort('pct')">依漲跌幅</button>
+        <button onclick="setSort('vol')">依成交量</button>
+        <button onclick="setSort('price')">依股價</button>
+        <button onclick="setSort('tier')">依分級</button>
+      </div>
+      <div style="overflow:auto">
+      <table id="snapshotTable">
+        <thead><tr>
+          <th onclick="setSort('code')">代號</th>
+          <th onclick="setSort('name')">公司</th>
+          <th onclick="setSort('price')">收盤價</th>
+          <th onclick="setSort('pct')">漲跌幅</th>
+          <th onclick="setSort('vol')">成交張數</th>
+          <th>持有邏輯</th>
+          <th onclick="setSort('tier')">分級</th>
+        </tr></thead>
+        <tbody id="snapshotBody"></tbody>
+      </table>
+      </div>
     </div>
-    <div class="alert" style="margin-top:8px">排序方式：<button onclick="sortTable('default')" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:4px 10px;border-radius:6px;cursor:pointer;margin-right:4px">預設分級</button><button onclick="sortTable('pct')" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:4px 10px;border-radius:6px;cursor:pointer;margin-right:4px">漲跌幅</button><button onclick="sortTable('vol')" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:4px 10px;border-radius:6px;cursor:pointer;margin-right:4px">成交量</button><button onclick="sortTable('price')" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:4px 10px;border-radius:6px;cursor:pointer">股價</button></div>
   </div>
 
   <!-- 3. Tier 排名 -->
