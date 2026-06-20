@@ -12,8 +12,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "00981A/00992A/00991A 核心持股，今日漲停創高",
-      "industry": "被動元件"
+      "note": "00981A/00992A/00991A 核心持股，今日漲停創高"
     },
     {
       "code": "2408",
@@ -25,8 +24,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "營收年增582%，外資目標490，今日創高",
-      "industry": "DRAM"
+      "note": "營收年增582%，外資目標490，今日創高"
     },
     {
       "code": "2344",
@@ -38,8 +36,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "DRAM超循環，營收+181%，法人狂買",
-      "industry": "DRAM"
+      "note": "DRAM超循環，營收+181%，法人狂買"
     },
     {
       "code": "2303",
@@ -51,8 +48,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "ADR 25%，爆量29萬張，矽光子題材",
-      "industry": "IC/代工"
+      "note": "ADR 25%，爆量29萬張，矽光子題材"
     },
     {
       "code": "6166",
@@ -64,12 +60,11 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "Edge AI題材，今日漲停",
-      "industry": "工業/網通"
+      "note": "Edge AI題材，今日漲停"
     },
     {
       "code": "7610",
-      "name": "聯友金屬-創",
+      "name": "聯友金屬",
       "price": 2315,
       "pct": 9.98,
       "vol": 1538,
@@ -77,8 +72,7 @@
       "tier_label": "T3 題材短打型",
       "tier_cls": "tier-t3",
       "hold": "1-3天",
-      "note": "地緣題材，最快進最快出",
-      "industry": "工業/網通"
+      "note": "地緣題材，最快進最快出"
     },
     {
       "code": "6442",
@@ -90,8 +84,7 @@
       "tier_label": "T3 題材短打型",
       "tier_cls": "tier-t3",
       "hold": "1-3天",
-      "note": "CPO最純台廠，外資買超最兇",
-      "industry": "AI/散熱/伺服器"
+      "note": "CPO最純台廠，外資買超最兇"
     },
     {
       "code": "2375",
@@ -103,8 +96,7 @@
       "tier_label": "T3 題材短打型",
       "tier_cls": "tier-t3",
       "hold": "1-3天",
-      "note": "AI電感/MLCC彈性最大，00981A掃貨",
-      "industry": "被動元件"
+      "note": "AI電感/MLCC彈性最大，00981A掃貨"
     },
     {
       "code": "3017",
@@ -116,8 +108,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "液冷散熱台廠第一，訂單能見度到2029",
-      "industry": "AI/散熱/伺服器"
+      "note": "液冷散熱台廠第一，訂單能見度到2029"
     },
     {
       "code": "3711",
@@ -129,8 +120,7 @@
       "tier_label": "T2 動能爆發型",
       "tier_cls": "tier-t2",
       "hold": "1-7天",
-      "note": "CoWoS溢最強，先進封裝占比持續提升",
-      "industry": "IC/封測"
+      "note": "CoWoS溢最強，先進封裝占比持續提升"
     },
     {
       "code": "2454",
@@ -142,8 +132,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "AI ASIC，今日-1.57%小拉，Momentum仍強",
-      "industry": "IC/設計"
+      "note": "AI ASIC，今日-1.57%小拉，Momentum仍強"
     },
     {
       "code": "3443",
@@ -155,8 +144,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "高檔拉回，等止穩再說",
-      "industry": "ODM/EMS"
+      "note": "高檔拉回，等止穩再說"
     },
     {
       "code": "3008",
@@ -168,8 +156,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "營收確認佳但基期高",
-      "industry": "光學"
+      "note": "營收確認佳但基期高"
     },
     {
       "code": "2308",
@@ -181,8 +168,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "AI 電源+液冷雙主軸，盤整後還有空間",
-      "industry": "電源/散熱"
+      "note": "AI 電源+液冷雙主軸，盤整後還有空間"
     },
     {
       "code": "2330",
@@ -194,8 +180,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "CoWoS/2奈米確定性最高",
-      "industry": "IC/代工"
+      "note": "CoWoS/2奈米確定性最高"
     },
     {
       "code": "2313",
@@ -207,8 +192,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "AI載板+低軌衛星，等255以下",
-      "industry": "PCB/載板"
+      "note": "AI載板+低軌衛星，等255以下"
     },
     {
       "code": "2395",
@@ -220,8 +204,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "Edge AI存股型，短線動能不足",
-      "industry": "工業/邊緣"
+      "note": "Edge AI存股型，短線動能不足"
     },
     {
       "code": "6285",
@@ -233,8 +216,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "網通+NB+低軌，無明確AI爆發點",
-      "industry": "網通"
+      "note": "網通+NB+低軌，無明確AI爆發點"
     },
     {
       "code": "6830",
@@ -246,12 +228,11 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "今日漲停但成交783張，流動性差",
-      "industry": "IC/代工"
+      "note": "今日漲停但成交783張，流動性差"
     },
     {
       "code": "6239",
-      "name": "台郡",
+      "name": "力成",
       "price": 363.5,
       "pct": 5.36,
       "vol": 60643,
@@ -259,8 +240,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "動能中等，漲幅可能已被反映",
-      "industry": "IC/封測"
+      "note": "動能中等，漲幅可能已被反映"
     },
     {
       "code": "2404",
@@ -272,8 +252,7 @@
       "tier_label": "T4 觀察/不追",
       "tier_cls": "tier-t4",
       "hold": "--",
-      "note": "無明顯催化劑",
-      "industry": "設備"
+      "note": "無明顯催化劑"
     },
     {
       "code": "2383",
@@ -285,8 +264,7 @@
       "tier_label": "T1 營收確認型",
       "tier_cls": "tier-t1",
       "hold": "7-30天",
-      "note": "NVIDIA M9供應商，今日+7.69%",
-      "industry": "IC/載板"
+      "note": "NVIDIA M9供應商，今日+7.69%"
     }
   ]
 }

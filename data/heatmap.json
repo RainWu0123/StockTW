@@ -1,78 +1,126 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-19",
   "generated": "2026-06-20",
   "industries": [
     {
-      "industry": "設備",
-      "avg_pct": 5.0,
-      "up": 1,
-      "down": 0,
-      "total": 1,
-      "codes": "2404"
-    },
-    {
       "industry": "被動元件",
-      "avg_pct": 3.71,
+      "avg_pct": 9.77,
       "up": 2,
       "down": 0,
       "total": 2,
       "codes": "2327,2375"
     },
     {
-      "industry": "DRAM",
-      "avg_pct": 3.69,
+      "industry": "工業/網通",
+      "avg_pct": 9.55,
       "up": 2,
       "down": 0,
       "total": 2,
-      "codes": "2344,2408"
+      "codes": "6166,7610"
+    },
+    {
+      "industry": "IC/載板",
+      "avg_pct": 7.69,
+      "up": 1,
+      "down": 0,
+      "total": 1,
+      "codes": "2383"
+    },
+    {
+      "industry": "DRAM",
+      "avg_pct": 7.48,
+      "up": 2,
+      "down": 0,
+      "total": 2,
+      "codes": "2408,2344"
+    },
+    {
+      "industry": "IC/代工",
+      "avg_pct": 4.97,
+      "up": 3,
+      "down": 0,
+      "total": 3,
+      "codes": "2303,2330,6830"
+    },
+    {
+      "industry": "IC/封測",
+      "avg_pct": 4.2,
+      "up": 2,
+      "down": 0,
+      "total": 2,
+      "codes": "3711,6239"
+    },
+    {
+      "industry": "AI/散熱/伺服器",
+      "avg_pct": 3.74,
+      "up": 2,
+      "down": 0,
+      "total": 2,
+      "codes": "6442,3017"
     },
     {
       "industry": "網通",
-      "avg_pct": 2.29,
+      "avg_pct": 1.29,
       "up": 1,
       "down": 0,
       "total": 1,
       "codes": "6285"
     },
     {
-      "industry": "其他",
-      "avg_pct": 2.15,
-      "up": 2,
-      "down": 1,
-      "total": 3,
-      "codes": "6166,6239,7610"
-    },
-    {
-      "industry": "IC/代工/封測",
-      "avg_pct": 2.01,
-      "up": 5,
-      "down": 1,
-      "total": 6,
-      "codes": "2303,2330,2383,2454,3711,6830"
-    },
-    {
-      "industry": "ODM/EMS",
-      "avg_pct": -0.31,
+      "industry": "工業/邊緣",
+      "avg_pct": 1.12,
       "up": 1,
-      "down": 1,
-      "total": 2,
-      "codes": "2395,3443"
-    },
-    {
-      "industry": "AI/散熱/伺服器",
-      "avg_pct": -0.4,
-      "up": 2,
-      "down": 2,
-      "total": 4,
-      "codes": "2308,2313,3017,6442"
+      "down": 0,
+      "total": 1,
+      "codes": "2395"
     },
     {
       "industry": "光學",
-      "avg_pct": -2.22,
+      "avg_pct": 0.97,
+      "up": 1,
+      "down": 0,
+      "total": 1,
+      "codes": "3008"
+    },
+    {
+      "industry": "電源/散熱",
+      "avg_pct": -0.23,
       "up": 0,
       "down": 1,
       "total": 1,
-      "codes": "3008"
+      "codes": "2308"
+    },
+    {
+      "industry": "設備",
+      "avg_pct": -1.17,
+      "up": 0,
+      "down": 1,
+      "total": 1,
+      "codes": "2404"
+    },
+    {
+      "industry": "IC/設計",
+      "avg_pct": -1.57,
+      "up": 0,
+      "down": 1,
+      "total": 1,
+      "codes": "2454"
+    },
+    {
+      "industry": "PCB/載板",
+      "avg_pct": -1.7,
+      "up": 0,
+      "down": 1,
+      "total": 1,
+      "codes": "2313"
+    },
+    {
+      "industry": "ODM/EMS",
+      "avg_pct": -4.24,
+      "up": 0,
+      "down": 1,
+      "total": 1,
+      "codes": "3443"
     }
   ]
 }
