@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台股 AI 投資追蹤 — 2026-06-19</title>
+<style>
+:root{--bg:#0c0f14;--panel:#141820;--panel2:#1a1f2b;--text:#d8dee8;--muted:#7a8599;--accent:#4aa3ff;--green:#3ecf8e;--red:#f0465a;--yellow:#f5c842;--orange:#f09030;--warn:#c98dff;--border:#252a36}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC",sans-serif;line-height:1.55}
+a{color:var(--accent)}
+header{padding:18px 24px;border-bottom:1px solid var(--border);background:#11141c;position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+header h1{font-size:18px;margin:0;font-weight:600}
+header .sub{color:var(--muted);font-size:12px;margin-top:6px}
+.container{max-width:1300px;margin:0 auto;padding:18px 16px 40px}
+.grid{display:grid;gap:14px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.card h2{font-size:13px;color:var(--muted);margin:0 0 10px;text-transform:uppercase;letter-spacing:.6px}
+.big{font-size:28px;font-weight:700;color:var(--text)}
+.big .badge{font-size:12px;padding:3px 8px;border-radius:999px;background:#2a3142;color:#c7cdd9;vertical-align:middle;margin-left:8px;font-weight:500}
+
+.tier-tag{display:inline-block;font-size:11px;padding:3px 7px;border-radius:999px;font-weight:600;letter-spacing:.3px}
+.tier-t1{background:#16302a;color:var(--green)}
+.tier-t2{background:#1a2430;color:var(--accent)}
+.tier-t3{background:#2f2316;color:var(--orange)}
+.tier-t4{background:#221a1a;color:var(--muted)}
+.tier-rm{background:#1e1a22;color:var(--warn)}
+
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
+th{color:var(--muted);font-weight:500;text-align:left;padding:7px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:8px;border-bottom:1px solid #1b2130;vertical-align:top}
+tr:hover td{background:#161b25}
+.up{color:var(--green)}
+.down{color:var(--red)}
+.float{color:var(--muted)}
+.tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:6px;background:#1c2230;color:#c9d0df;margin-left:6px}
+
+.bar-wrap{background:#1c2430;border-radius:999px;height:8px;overflow:hidden;margin-top:6px}
+.bar{height:100%;border-radius:999px}
+
+.stock-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(max-width:720px){.stock-list{grid-template-columns:1fr}}
+.stock{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.stock .name{font-weight:600;font-size:14px}
+.stock .meta{font-size:12px;color:var(--muted);margin-top:4px}
+.stock .price{font-size:18px;font-weight:700;margin-top:6px}
+.stock .note{font-size:12px;color:#9aa6b8;margin-top:6px}
+
+.footer{color:var(--muted);font-size:12px;margin-top:18px}
+.footer a{color:#d8dee8;text-decoration:underline}
+
+.section{margin-top:20px}
+.section h2{font-size:15px;font-weight:600;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+.alert{padding:10px 12px;border-radius:8px;background:#1e1a22;border:1px solid #342840;color:#e3cbff;font-size:12px;margin-top:12px}
+.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
+.kv div{background:#1a1f2b;border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.kv div b{display:block;color:var(--muted);font-size:11px;font-weight:500}
+.kv div span{font-size:14px;font-weight:600;display:block;margin-top:2px}
+
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+.legend span{font-size:12px;display:flex;align-items:center;gap:6px}
+.legend span::before{content:"";width:10px;height:10px;border-radius:2px;display:inline-block}
+.legend .l-t1::before{background:var(--green)}
+.legend .l-t2::before{background:var(--accent)}
+.legend .l-t3::before{background:var(--orange)}
+.legend .l-t4::before{background:#4a545c}
+.legend .l-rm::before{background:var(--warn)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎯 台股 AI 投資追蹤 <span class="tag" style="margin-left:10px">2026-06-19</span></h1>
+  <div class="sub">TWSE 即時快照 · 三軌配置 · 智慧選股儀表板（單頁靜態）</div>
+</header>
+
+<div class="container">
+
+  <!-- 1. 核心數據卡 -->
+  <div class="grid grid-4">
+    <div class="card"><h2>標的總數</h2><div class="big">22 <span class="badge">22</span></div></div>
+    <div class="card"><h2>T1 營收確認型</h2><div class="big">5 <span class="badge">25%</span></div></div>
+    <div class="card"><h2>T2 動能爆發型</h2><div class="big">7 <span class="badge">30%</span></div></div>
+    <div class="card"><h2>T3 / T4 觀察</h2><div class="big">10 <span class="badge">45%</span></div></div>
+  </div>
+
+  <div class="alert">舊資料事故修正：華邦電、南亞科、國巨過去價格皆為舊估值。現用 2026-06-18 TWSE API 校正完成。</div>
+
+  <!-- 2. TWSE 快照 -->
+  <div class="section">
+    <h2>📊 2026-06-18 TWSE 收盤快照</h2>
+    <div class="card" style="overflow:auto">
+    <table>
+    <thead><tr><th>代號</th><th>公司</th><th>收盤價</th><th>漲跌幅</th><th>成交張數</th><th>狀態</th><th>分級</th></tr></thead>
+    <tbody>
+    <tr><td>2327</td><td>國巨</td><td>1080</td><td class="up">+9.76%</td><td>90,472</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
+    <tr><td>2408</td><td>南亞科</td><td>459.5</td><td class="up">+5.15%</td><td>178,245</td><td>創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
+    <tr><td>2344</td><td>華邦電</td><td>218.5</td><td class="up">+9.80%</td><td>334,015</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
+    <tr><td>2303</td><td>聯電</td><td>145.5</td><td class="up">+3.93%</td><td>292,688</td><td>爆量上攻</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
+    <tr><td>6166</td><td>凌華</td><td>155.5</td><td class="up">+9.12%</td><td>5,620</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
+    <tr><td>7610</td><td>聯友金屬</td><td>2315</td><td class="up">+9.98%</td><td>1,538</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t3">T3 地緣</span></td></tr>
+    <tr><td>6442</td><td>光聖</td><td>1945</td><td class="up">+6.00%</td><td>573</td><td>創高</td><td><span class="tier-tag tier-t3">T3 題材</span></td></tr>
+    <tr><td>2375</td><td>凱美</td><td>219</td><td class="up">+9.77%</td><td>18,613</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t3">T3 題材</span></td></tr>
+    <tr><td>3017</td><td>奇鋐</td><td>2400</td><td class="up">+1.48%</td><td>3,133</td><td>盤高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
+    <tr><td>3711</td><td>日月光</td><td>613</td><td class="up">+3.03%</td><td>34,149</td><td>創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
+    <tr><td>2454</td><td>聯發科</td><td>4390</td><td class="down">-1.57%</td><td>12,095</td><td>高檔震盪</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
+    <tr><td>3443</td><td>創意</td><td>4860</td><td class="down">-4.24%</td><td>4,466</td><td>拉回</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>3008</td><td>大立光</td><td>5195</td><td class="up">+0.97%</td><td>2,785</td><td>盤高</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>2308</td><td>台達電</td><td>2150</td><td class="down">-0.23%</td><td>10,395</td><td>盤整</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
+    <tr><td>2330</td><td>台積電</td><td>2410</td><td class="up">+1.05%</td><td>46,272</td><td>小創高</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
+    <tr><td>2313</td><td>華通</td><td>259.5</td><td class="down">-1.70%</td><td>39,340</td><td>小拉</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>2395</td><td>研華</td><td>494</td><td class="up">+1.12%</td><td>4,210</td><td>盤整</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>6285</td><td>啟碁</td><td>274</td><td class="up">+1.29%</td><td>15,214</td><td>震盪</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>6830</td><td>汎銓</td><td>564</td><td class="up">+9.94%</td><td>783</td><td>漲停/創高(流動性差)</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>6239</td><td>力成</td><td>363.5</td><td class="up">+5.36%</td><td>60,643</td><td>創高</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>2404</td><td>漢唐</td><td>1265</td><td class="down">-1.17%</td><td>3,009</td><td>盤整</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
+    <tr><td>2383</td><td>台光電</td><td>5600</td><td class="up">+7.69%</td><td>1,584</td><td>強拉創高</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
+    </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- 3. Tier 排名 -->
+  <div class="section">
+    <h2>🏆 分級排名</h2>
+    <div class="grid grid-4">
+
+      <div class="card">
+        <h2><span class="tier-tag tier-t1" style="margin-right:6px">T1</span>營收確認型（7–30天）</h2>
+        <div class="stock-list">
+          <div class="stock"><div class="name">國巨 <span class="float">2327</span></div><div class="meta">營收 +47%</div><div class="price up">1080</div><div class="note">00981A/00992A/00991A 核心持股，今日漲停創高</div></div>
+          <div class="stock"><div class="name">台達電 <span class="float">2308</span></div><div class="meta">Q1+34%</div><div class="price float">2150</div><div class="note">AI 電源+液冷雙主軸，盤整後還有空間</div></div>
+          <div class="stock"><div class="name">台積電 <span class="float">2330</span></div><div class="meta">法人最大買超</div><div class="price up">2410</div><div class="note">CoWoS/2奈米確定性最高</div></div>
+          <div class="stock"><div class="name">台光電 <span class="float">2383</span></div><div class="meta">M9供應商</div><div class="price up">5600</div><div class="note">今日+7.69%，營收年增35%</div></div>
+          <div class="stock"><div class="name">聯發科 <span class="float">2454</span></div><div class="meta">AI ASIC</div><div class="price down">4390</div><div class="note">今日-1.57%小拉，Momentum仍強</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="tier-tag tier-t2" style="margin-right:6px">T2</span>動能爆發型（1–7天）</h2>
+        <div class="stock-list">
+          <div class="stock"><div class="name">華邦電 <span class="float">2344</span></div><div class="meta">營收+181%</div><div class="price up">218.5</div><div class="note">法人狂買，毛利率破50%</div></div>
+          <div class="stock"><div class="name">南亞科 <span class="float">2408</span></div><div class="meta">營收年增582%</div><div class="price up">459.5</div><div class="note">外資目標490元，今日創高</div></div>
+          <div class="stock"><div class="name">奇鋐 <span class="float">3017</span></div><div class="meta">訂單到2029</div><div class="price up">2400</div><div class="note">液冷散熱台廠第一</div></div>
+          <div class="stock"><div class="name">日月光 <span class="float">3711</span></div><div class="meta">CoWoS溢最強</div><div class="price up">613</div><div class="note">先進封裝占營收比持續提升</div></div>
+          <div class="stock"><div class="name">凌華 <span class="float">6166</span></div><div class="meta">4月營收+63%</div><div class="price up">155.5</div><div class="note">Edge AI題材，今日漲停</div></div>
+          <div class="stock"><div class="name">聯電 <span class="float">2303</span></div><div class="meta">ADR 25%</div><div class="price up">145.5</div><div class="note">爆量29萬張，矽光子題材</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="tier-tag tier-t3" style="margin-right:6px">T3</span>題材短打型（1–3天）</h2>
+        <div class="stock-list">
+          <div class="stock"><div class="name">光聖 <span class="float">6442</span></div><div class="meta">5月營收+116%</div><div class="price up">1945</div><div class="note">CPO 最純台廠，外資買超最兇</div></div>
+          <div class="stock"><div class="name">凱美 <span class="float">2375</span></div><div class="meta">Q1 EPS+572%</div><div class="price up">219</div><div class="note">AI 電感/MLCC，00981A掃貨</div></div>
+          <div class="stock"><div class="name">聯友金屬 <span class="float">7610</span></div><div class="meta">鎢/APT</div><div class="price up">2315</div><div class="note">地緣題材，最快進最快出</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><span class="tier-tag tier-t4" style="margin-right:6px">T4</span>觀察 / 不追</h2>
+        <div class="stock-list">
+          <div class="stock"><div class="name">華通 <span class="float">2313</span></div><div class="meta">-1.70%</div><div class="price down">259.5</div><div class="note">AI 載板+低軌衛星，等255以下</div></div>
+          <div class="stock"><div class="name">研華 <span class="float">2395</span></div><div class="meta">+1.12%</div><div class="price up">494</div><div class="note">Edge AI存股型，短線動能不足</div></div>
+          <div class="stock"><div class="name">啟碁 <span class="float">6285</span></div><div class="meta">+1.29%</div><div class="price up">274</div><div class="note">網通+NB+低軌，無明確AI爆發點</div></div>
+          <div class="stock"><div class="name">創意 <span class="float">3443</span></div><div class="meta">-4.24%</div><div class="price down">4860</div><div class="note">高檔拉回，等止穩再說</div></div>
+          <div class="stock"><div class="name">大立光 <span class="float">3008</span></div><div class="meta">+0.97%</div><div class="price up">5195</div><div class="note">營收確認佳但基期高</div></div>
+          <div class="stock"><div class="name">漢唐 <span class="float">2404</span></div><div class="meta">-1.17%</div><div class="price down">1265</div><div class="note">無明顯催化劑</div></div>
+          <div class="stock"><div class="name">汎銓 <span class="float">6830</span></div><div class="meta">+9.94%</div><div class="price up">564</div><div class="note">今日漲停但成交783張，流動性差</div></div>
+          <div class="stock"><div class="name">力成 <span class="float">6239</span></div><div class="meta">+5.36%</div><div class="price up">363.5</div><div class="note">動能中等，漲幅可能已被反映</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. 3-5 檔投入配置 -->
+  <div class="section">
+    <h2>💼 最終投入配置（5 檔）</h2>
+    <div class="card">
+    <table>
+    <thead><tr><th>優先</th><th>公司</th><th>部位</th><th>持有邏輯</th><th>ETF對應</th><th>部位可視化</th></tr></thead>
+    <tbody>
+    <tr><td>1</td><td>國巨 2327</td><td><strong>25%</strong></td><td>被動元件龍頭，所有冠軍 ETF 最愛加碼，營收創高有增無減</td><td>00981A 核心</td><td><div class="bar-wrap"><div class="bar" style="width:25%;background:var(--green)"></div></div></td></tr>
+    <tr><td>2</td><td>奇鋐 3017</td><td><strong>20%</strong></td><td>液冷散熱台廠第一，訂單能見度到 2029</td><td>00981A / 00992A 雙核心</td><td><div class="bar-wrap"><div class="bar" style="width:20%;background:var(--accent)"></div></div></td></tr>
+    <tr><td>3</td><td>華邦電 2344</td><td><strong>20%</strong></td><td>DRAM超循環，營收+181%，法人目標上看260+</td><td>DRAM 動能型</td><td><div class="bar-wrap"><div class="bar" style="width:20%;background:var(--accent)"></div></div></td></tr>
+    <tr><td>4</td><td>南亞科 2408</td><td><strong>20%</strong></td><td>營收年增582%，法人目標490，今日459.5創高</td><td>DRAM 動能型</td><td><div class="bar-wrap"><div class="bar" style="width:20%;background:var(--accent)"></div></div></td></tr>
+    <tr><td>5</td><td>凱美 2375</td><td><strong>15%</strong></td><td>AI電感/MLCC彈性最大，00981A近期掃貨，短線最強</td><td>題材短打</td><td><div class="bar-wrap"><div class="bar" style="width:15%;background:var(--orange)"></div></div></td></tr>
+    </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- 5. 三軌配置摘要 -->
+  <div class="section">
+    <h2>📐 三軌配置摘要</h2>
+    <div class="cards">
+      <div class="card">
+        <h2><span class="tier-tag tier-t1">A 軌</span>營收確認型 50%（7-30天）</h2>
+        <div>國巨、聯發科、台積電、台光電、台達電</div>
+      </div>
+      <div class="card">
+        <h2><span class="tier-tag tier-t2">B 軌</span>動能爆發型 30%（1-7天）</h2>
+        <div>華邦電、南亞科、日月光、奇鋐、凌華、聯電</div>
+      </div>
+      <div class="card">
+        <h2><span class="tier-tag tier-t3">C 軌</span>地緣題材型 20%（1-3天）</h2>
+        <div>光聖、凱美、聯友金屬，最短進最快出</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+  資料來源：TWSE API + 00981A / 00992A / 00991A ETF 公開持倉<br>
+  頁面建立：2026-06-19 · Hermes 投資追蹤系統<br>
+  <a href="research.html">🡒 個股深度研究報告</a>
+  </div>
+
+</div>
+</body>
+</html>
