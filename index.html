@@ -3,224 +3,323 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>台股 AI 投資追蹤 — 2026-06-19</title>
+<title>台股 AI 投資追蹤 — 動態儀表板</title>
 <style>
-:root{--bg:#0c0f14;--panel:#141820;--panel2:#1a1f2b;--text:#d8dee8;--muted:#7a8599;--accent:#4aa3ff;--green:#3ecf8e;--red:#f0465a;--yellow:#f5c842;--orange:#f09030;--warn:#c98dff;--border:#252a36}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC",sans-serif;line-height:1.55}
+:root{--bg:#0c0f14;--panel:#141820;--panel2:#1a1f2b;--text:#d8dee8;--muted:#7a8599;--accent:#4aa3ff;--green:#3ecf8e;--red:#f0465a;--orange:#f09030;--warn:#c98dff;--border:#252a36}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC",sans-serif;line-height:1.55}
 a{color:var(--accent)}
-header{padding:18px 24px;border-bottom:1px solid var(--border);background:#11141c;position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
-header h1{font-size:18px;margin:0;font-weight:600}
-header .sub{color:var(--muted);font-size:12px;margin-top:6px}
-.container{max-width:1300px;margin:0 auto;padding:18px 16px 40px}
-.grid{display:grid;gap:14px}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-.grid-3{grid-template-columns:repeat(3,1fr)}
-.grid-4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:720px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
-
+header{padding:14px 20px;border-bottom:1px solid var(--border);background:#11141c;position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+header h1{font-size:17px;margin:0;font-weight:600}header .sub{color:var(--muted);font-size:12px;margin-top:4px}
+.container{max-width:1320px;margin:0 auto;padding:14px 14px 40px}
+.grid{display:grid;gap:12px}.grid-4{grid-template-columns:repeat(4,1fr)}@media(max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){.grid-4{grid-template-columns:1fr}}
 .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
-.card h2{font-size:13px;color:var(--muted);margin:0 0 10px;text-transform:uppercase;letter-spacing:.6px}
+.card h2{font-size:13px;color:var(--muted);margin:0 0 10px;text-transform:uppercase;letter-spacing:.5px}
 .big{font-size:28px;font-weight:700;color:var(--text)}
-.big .badge{font-size:12px;padding:3px 8px;border-radius:999px;background:#2a3142;color:#c7cdd9;vertical-align:middle;margin-left:8px;font-weight:500}
-
 .tier-tag{display:inline-block;font-size:11px;padding:3px 7px;border-radius:999px;font-weight:600;letter-spacing:.3px}
-.tier-t1{background:#16302a;color:var(--green)}
-.tier-t2{background:#1a2430;color:var(--accent)}
-.tier-t3{background:#2f2316;color:var(--orange)}
-.tier-t4{background:#221a1a;color:var(--muted)}
-.tier-rm{background:#1e1a22;color:var(--warn)}
-
+.tier-t1{background:#16302a;color:var(--green)}.tier-t2{background:#1a2430;color:var(--accent)}.tier-t3{background:#2f2316;color:var(--orange)}.tier-t4{background:#221a1a;color:var(--muted)}
 table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
-th{color:var(--muted);font-weight:500;text-align:left;padding:7px 8px;border-bottom:1px solid var(--border);white-space:nowrap}
-td{padding:8px;border-bottom:1px solid #1b2130;vertical-align:top}
-tr:hover td{background:#161b25}
-.up{color:var(--green)}
-.down{color:var(--red)}
-.float{color:var(--muted)}
-.tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:6px;background:#1c2230;color:#c9d0df;margin-left:6px}
-
-.bar-wrap{background:#1c2430;border-radius:999px;height:8px;overflow:hidden;margin-top:6px}
-.bar{height:100%;border-radius:999px}
-
-.stock-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(max-width:720px){.stock-list{grid-template-columns:1fr}}
+th{color:var(--muted);font-weight:500;text-align:left;padding:7px 8px;border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none}
+th:hover{color:var(--text)}td{padding:8px;border-bottom:1px solid #1b2130}tr:hover td{background:#161b25}
+.up{color:var(--green)}.down{color:var(--red)}.float{color:var(--muted)}
+.stock-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(max-width:720px){.stock-list{grid-template-columns:1fr}}
 .stock{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
-.stock .name{font-weight:600;font-size:14px}
-.stock .meta{font-size:12px;color:var(--muted);margin-top:4px}
-.stock .price{font-size:18px;font-weight:700;margin-top:6px}
-.stock .note{font-size:12px;color:#9aa6b8;margin-top:6px}
-
-.footer{color:var(--muted);font-size:12px;margin-top:18px}
-.footer a{color:#d8dee8;text-decoration:underline}
-
-.section{margin-top:20px}
-.section h2{font-size:15px;font-weight:600;margin:0 0 10px;display:flex;align-items:center;gap:8px}
-.alert{padding:10px 12px;border-radius:8px;background:#1e1a22;border:1px solid #342840;color:#e3cbff;font-size:12px;margin-top:12px}
-.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
-.kv div{background:#1a1f2b;border:1px solid var(--border);border-radius:8px;padding:10px 12px}
-.kv div b{display:block;color:var(--muted);font-size:11px;font-weight:500}
-.kv div span{font-size:14px;font-weight:600;display:block;margin-top:2px}
-
-.legend{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
-.legend span{font-size:12px;display:flex;align-items:center;gap:6px}
-.legend span::before{content:"";width:10px;height:10px;border-radius:2px;display:inline-block}
-.legend .l-t1::before{background:var(--green)}
-.legend .l-t2::before{background:var(--accent)}
-.legend .l-t3::before{background:var(--orange)}
-.legend .l-t4::before{background:#4a545c}
-.legend .l-rm::before{background:var(--warn)}
+.stock .name{font-weight:600;font-size:14px}.stock .meta{font-size:12px;color:var(--muted);margin-top:4px}.stock .price{font-size:18px;font-weight:700;margin-top:6px}.stock .note{font-size:12px;color:#9aa6b8;margin-top:6px}
+.section{margin-top:14px}.section h2{font-size:15px;font-weight:600;margin:0 0 10px;display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;flex-wrap:wrap}
+.section h2 .arrow{display:inline-block;transition:transform .15s ease;font-size:12px;color:var(--muted)}
+.section.collapsed h2 .arrow{transform:rotate(-90deg)}
+.section.collapsed .section-body{display:none}
+.alert{padding:10px 12px;border-radius:8px;background:#1e1a22;border:1px solid #342840;color:#e3cbff;font-size:12px;margin-top:10px}
+.bar-wrap{background:#1c2430;border-radius:999px;height:8px;overflow:hidden;margin-top:6px}.bar{height:100%;border-radius:999px}
+.ctrl{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0;align-items:center}
+.ctrl input{background:#11141c;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-size:13px;min-width:150px}
+.ctrl button{background:#1a1f2b;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 10px;cursor:pointer;font-size:13px}
+.ctrl button:hover{border-color:var(--accent)}
+.footer{color:var(--muted);font-size:12px;margin-top:16px}.footer a{color:#d8dee8;text-decoration:underline}
+.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}@media(max-width:900px){.kv{grid-template-columns:repeat(2,1fr)}}
+.kv div{background:#1a1f2b;border:1px solid var(--border);border-radius:8px;padding:10px 12px}.kv b{display:block;color:var(--muted);font-size:11px;font-weight:500}.kv span{font-size:14px;font-weight:600;display:block;margin-top:2px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600}
+.pill.ok{background:#16302a;color:var(--green)}.pill.warn{background:#2f2316;color:var(--orange)}.pill.bad{background:#2a1520;color:var(--red)}
+.tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:6px;background:#1c2230;color:#c9d0df;margin-left:6px}
+select{background:#11141c;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:5px 8px;font-size:13px}
 </style>
 </head>
 <body>
 <header>
-  <h1>🎯 台股 AI 投資追蹤 <span class="tag" style="margin-left:10px">2026-06-19</span></h1>
-  <div class="sub">TWSE 即時快照 · 三軌配置 · 智慧選股儀表板（單頁靜態）</div>
+  <h1>🎯 台股 AI 投資追蹤 <span class="tier-tag tier-t1" style="margin-left:10px" id="headerDate">--</span> <span style="font-size:11px;color:var(--muted);font-weight:400" id="headerTime"></span></h1>
+  <div class="sub">TWSE 即時快照 · 三軌配置 · 動態儀表板 · 組合對沖 · 大單偵測</div>
 </header>
-
 <div class="container">
 
-  <!-- 1. 核心數據卡 -->
-  <div class="grid grid-4">
-    <div class="card"><h2>標的總數</h2><div class="big">22 <span class="badge">22</span></div></div>
-    <div class="card"><h2>T1 營收確認型</h2><div class="big">5 <span class="badge">25%</span></div></div>
-    <div class="card"><h2>T2 動能爆發型</h2><div class="big">7 <span class="badge">30%</span></div></div>
-    <div class="card"><h2>T3 / T4 觀察</h2><div class="big">10 <span class="badge">45%</span></div></div>
-  </div>
-
-  <div class="alert">舊資料事故修正：華邦電、南亞科、國巨過去價格皆為舊估值。現用 2026-06-18 TWSE API 校正完成。</div>
-
-  <!-- 2. TWSE 快照 -->
-  <div class="section">
-    <h2>📊 2026-06-18 TWSE 收盤快照</h2>
-    <div class="card" style="overflow:auto">
-    <table>
-    <thead><tr><th>代號</th><th>公司</th><th>收盤價</th><th>漲跌幅</th><th>成交張數</th><th>狀態</th><th>分級</th></tr></thead>
-    <tbody>
-    <tr><td>2327</td><td>國巨</td><td>1080</td><td class="up">+9.76%</td><td>90,472</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
-    <tr><td>2408</td><td>南亞科</td><td>459.5</td><td class="up">+5.15%</td><td>178,245</td><td>創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
-    <tr><td>2344</td><td>華邦電</td><td>218.5</td><td class="up">+9.80%</td><td>334,015</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
-    <tr><td>2303</td><td>聯電</td><td>145.5</td><td class="up">+3.93%</td><td>292,688</td><td>爆量上攻</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
-    <tr><td>6166</td><td>凌華</td><td>155.5</td><td class="up">+9.12%</td><td>5,620</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
-    <tr><td>7610</td><td>聯友金屬</td><td>2315</td><td class="up">+9.98%</td><td>1,538</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t3">T3 地緣</span></td></tr>
-    <tr><td>6442</td><td>光聖</td><td>1945</td><td class="up">+6.00%</td><td>573</td><td>創高</td><td><span class="tier-tag tier-t3">T3 題材</span></td></tr>
-    <tr><td>2375</td><td>凱美</td><td>219</td><td class="up">+9.77%</td><td>18,613</td><td>漲停 / 創高</td><td><span class="tier-tag tier-t3">T3 題材</span></td></tr>
-    <tr><td>3017</td><td>奇鋐</td><td>2400</td><td class="up">+1.48%</td><td>3,133</td><td>盤高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
-    <tr><td>3711</td><td>日月光</td><td>613</td><td class="up">+3.03%</td><td>34,149</td><td>創高</td><td><span class="tier-tag tier-t2">T2 動能</span></td></tr>
-    <tr><td>2454</td><td>聯發科</td><td>4390</td><td class="down">-1.57%</td><td>12,095</td><td>高檔震盪</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
-    <tr><td>3443</td><td>創意</td><td>4860</td><td class="down">-4.24%</td><td>4,466</td><td>拉回</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>3008</td><td>大立光</td><td>5195</td><td class="up">+0.97%</td><td>2,785</td><td>盤高</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>2308</td><td>台達電</td><td>2150</td><td class="down">-0.23%</td><td>10,395</td><td>盤整</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
-    <tr><td>2330</td><td>台積電</td><td>2410</td><td class="up">+1.05%</td><td>46,272</td><td>小創高</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
-    <tr><td>2313</td><td>華通</td><td>259.5</td><td class="down">-1.70%</td><td>39,340</td><td>小拉</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>2395</td><td>研華</td><td>494</td><td class="up">+1.12%</td><td>4,210</td><td>盤整</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>6285</td><td>啟碁</td><td>274</td><td class="up">+1.29%</td><td>15,214</td><td>震盪</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>6830</td><td>汎銓</td><td>564</td><td class="up">+9.94%</td><td>783</td><td>漲停/創高(流動性差)</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>6239</td><td>力成</td><td>363.5</td><td class="up">+5.36%</td><td>60,643</td><td>創高</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>2404</td><td>漢唐</td><td>1265</td><td class="down">-1.17%</td><td>3,009</td><td>盤整</td><td><span class="tier-tag tier-t4">T4 觀察</span></td></tr>
-    <tr><td>2383</td><td>台光電</td><td>5600</td><td class="up">+7.69%</td><td>1,584</td><td>強拉創高</td><td><span class="tier-tag tier-t1">T1 營收確認</span></td></tr>
-    </tbody>
-    </table>
+  <!-- S1 大廳 -->
+  <div class="section" id="secLobby">
+    <h2 class="section-head" onclick="toggleSection('secLobby')"><span class="arrow">▼</span> 📊 大廳（L1/L2）</h2>
+    <div class="section-body">
+      <div class="grid grid-4" id="summaryCards"><div class="card"><h2>載入中...</h2></div></div>
+      <div class="alert">資料來源：TWSE API。支援排序、搜尋、大單代理指標、漲停基因檢測。組合對沖與本地設定見下方「資産」。</div>
+      <div class="ctrl">
+        <input type="text" id="searchBox" placeholder="🔍 搜尋名稱/代號" oninput="renderTable()">
+        <select id="sortSel" onchange="setSort(this.value)"><option value="default">預設分級</option><option value="pct">漲跌幅</option><option value="vol">成交量</option><option value="price">股價</option><option value="bigOrder">大單代理</option><option value="limitGene">漲停基因</option></select>
+        <button onclick="setSort('default')">重置</button>
+        <span style="color:var(--muted);font-size:12px" id="countLabel"></span>
+      </div>
+      <div style="overflow:auto">
+      <table id="snapshotTable">
+        <thead><tr>
+          <th onclick="setSort('code')">代號 ⇅</th>
+          <th onclick="setSort('name')">公司 ⇅</th>
+          <th onclick="setSort('price')">收盤價 ⇅</th>
+          <th onclick="setSort('pct')">漲跌幅 ⇅</th>
+          <th onclick="setSort('vol')">成交張數 ⇅</th>
+          <th>大單</th>
+          <th>漲停基因</th>
+          <th>持有邏輯</th>
+          <th onclick="setSort('tier')">分級 ⇅</th>
+        </tr></thead>
+        <tbody id="snapshotBody"></tbody>
+      </table>
+      </div>
     </div>
   </div>
 
-  <!-- 3. Tier 排名 -->
-  <div class="section">
-    <h2>🏆 分級排名</h2>
-    <div class="grid grid-4">
-
-      <div class="card">
-        <h2><span class="tier-tag tier-t1" style="margin-right:6px">T1</span>營收確認型（7–30天）</h2>
-        <div class="stock-list">
-          <div class="stock"><div class="name">國巨 <span class="float">2327</span></div><div class="meta">營收 +47%</div><div class="price up">1080</div><div class="note">00981A/00992A/00991A 核心持股，今日漲停創高</div></div>
-          <div class="stock"><div class="name">台達電 <span class="float">2308</span></div><div class="meta">Q1+34%</div><div class="price float">2150</div><div class="note">AI 電源+液冷雙主軸，盤整後還有空間</div></div>
-          <div class="stock"><div class="name">台積電 <span class="float">2330</span></div><div class="meta">法人最大買超</div><div class="price up">2410</div><div class="note">CoWoS/2奈米確定性最高</div></div>
-          <div class="stock"><div class="name">台光電 <span class="float">2383</span></div><div class="meta">M9供應商</div><div class="price up">5600</div><div class="note">今日+7.69%，營收年增35%</div></div>
-          <div class="stock"><div class="name">聯發科 <span class="float">2454</span></div><div class="meta">AI ASIC</div><div class="price down">4390</div><div class="note">今日-1.57%小拉，Momentum仍強</div></div>
-        </div>
+  <!-- S2 信號 -->
+  <div class="section collapsed" id="secSignals">
+    <h2 class="section-head" onclick="toggleSection('secSignals')"><span class="arrow">▼</span> 🔔 信號（Signals）</h2>
+    <div class="section-body">
+      <div class="alert">此區預設收起。每支股票根據量價條件，前端即時偵測以下信號：
+        <br>• 大單代理：成交均值分位 > P90（粗估主力進出）
+        <br>• 漲停基因：強勢漲停且成交筆數偏低（疑似控盤）
+        <br>• 爆量突破：量能 > 2x 其他標的平均成交量
       </div>
-
-      <div class="card">
-        <h2><span class="tier-tag tier-t2" style="margin-right:6px">T2</span>動能爆發型（1–7天）</h2>
-        <div class="stock-list">
-          <div class="stock"><div class="name">華邦電 <span class="float">2344</span></div><div class="meta">營收+181%</div><div class="price up">218.5</div><div class="note">法人狂買，毛利率破50%</div></div>
-          <div class="stock"><div class="name">南亞科 <span class="float">2408</span></div><div class="meta">營收年增582%</div><div class="price up">459.5</div><div class="note">外資目標490元，今日創高</div></div>
-          <div class="stock"><div class="name">奇鋐 <span class="float">3017</span></div><div class="meta">訂單到2029</div><div class="price up">2400</div><div class="note">液冷散熱台廠第一</div></div>
-          <div class="stock"><div class="name">日月光 <span class="float">3711</span></div><div class="meta">CoWoS溢最強</div><div class="price up">613</div><div class="note">先進封裝占營收比持續提升</div></div>
-          <div class="stock"><div class="name">凌華 <span class="float">6166</span></div><div class="meta">4月營收+63%</div><div class="price up">155.5</div><div class="note">Edge AI題材，今日漲停</div></div>
-          <div class="stock"><div class="name">聯電 <span class="float">2303</span></div><div class="meta">ADR 25%</div><div class="price up">145.5</div><div class="note">爆量29萬張，矽光子題材</div></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2><span class="tier-tag tier-t3" style="margin-right:6px">T3</span>題材短打型（1–3天）</h2>
-        <div class="stock-list">
-          <div class="stock"><div class="name">光聖 <span class="float">6442</span></div><div class="meta">5月營收+116%</div><div class="price up">1945</div><div class="note">CPO 最純台廠，外資買超最兇</div></div>
-          <div class="stock"><div class="name">凱美 <span class="float">2375</span></div><div class="meta">Q1 EPS+572%</div><div class="price up">219</div><div class="note">AI 電感/MLCC，00981A掃貨</div></div>
-          <div class="stock"><div class="name">聯友金屬 <span class="float">7610</span></div><div class="meta">鎢/APT</div><div class="price up">2315</div><div class="note">地緣題材，最快進最快出</div></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2><span class="tier-tag tier-t4" style="margin-right:6px">T4</span>觀察 / 不追</h2>
-        <div class="stock-list">
-          <div class="stock"><div class="name">華通 <span class="float">2313</span></div><div class="meta">-1.70%</div><div class="price down">259.5</div><div class="note">AI 載板+低軌衛星，等255以下</div></div>
-          <div class="stock"><div class="name">研華 <span class="float">2395</span></div><div class="meta">+1.12%</div><div class="price up">494</div><div class="note">Edge AI存股型，短線動能不足</div></div>
-          <div class="stock"><div class="name">啟碁 <span class="float">6285</span></div><div class="meta">+1.29%</div><div class="price up">274</div><div class="note">網通+NB+低軌，無明確AI爆發點</div></div>
-          <div class="stock"><div class="name">創意 <span class="float">3443</span></div><div class="meta">-4.24%</div><div class="price down">4860</div><div class="note">高檔拉回，等止穩再說</div></div>
-          <div class="stock"><div class="name">大立光 <span class="float">3008</span></div><div class="meta">+0.97%</div><div class="price up">5195</div><div class="note">營收確認佳但基期高</div></div>
-          <div class="stock"><div class="name">漢唐 <span class="float">2404</span></div><div class="meta">-1.17%</div><div class="price down">1265</div><div class="note">無明顯催化劑</div></div>
-          <div class="stock"><div class="name">汎銓 <span class="float">6830</span></div><div class="meta">+9.94%</div><div class="price up">564</div><div class="note">今日漲停但成交783張，流動性差</div></div>
-          <div class="stock"><div class="name">力成 <span class="float">6239</span></div><div class="meta">+5.36%</div><div class="price up">363.5</div><div class="note">動能中等，漲幅可能已被反映</div></div>
-        </div>
-      </div>
-
+      <div id="signalList"></div>
     </div>
   </div>
 
-  <!-- 4. 3-5 檔投入配置 -->
-  <div class="section">
-    <h2>💼 最終投入配置（5 檔）</h2>
-    <div class="card">
-    <table>
-    <thead><tr><th>優先</th><th>公司</th><th>部位</th><th>持有邏輯</th><th>ETF對應</th><th>部位可視化</th></tr></thead>
-    <tbody>
-    <tr><td>1</td><td>國巨 2327</td><td><strong>25%</strong></td><td>被動元件龍頭，所有冠軍 ETF 最愛加碼，營收創高有增無減</td><td>00981A 核心</td><td><div class="bar-wrap"><div class="bar" style="width:25%;background:var(--green)"></div></div></td></tr>
-    <tr><td>2</td><td>奇鋐 3017</td><td><strong>20%</strong></td><td>液冷散熱台廠第一，訂單能見度到 2029</td><td>00981A / 00992A 雙核心</td><td><div class="bar-wrap"><div class="bar" style="width:20%;background:var(--accent)"></div></div></td></tr>
-    <tr><td>3</td><td>華邦電 2344</td><td><strong>20%</strong></td><td>DRAM超循環，營收+181%，法人目標上看260+</td><td>DRAM 動能型</td><td><div class="bar-wrap"><div class="bar" style="width:20%;background:var(--accent)"></div></div></td></tr>
-    <tr><td>4</td><td>南亞科 2408</td><td><strong>20%</strong></td><td>營收年增582%，法人目標490，今日459.5創高</td><td>DRAM 動能型</td><td><div class="bar-wrap"><div class="bar" style="width:20%;background:var(--accent)"></div></div></td></tr>
-    <tr><td>5</td><td>凱美 2375</td><td><strong>15%</strong></td><td>AI電感/MLCC彈性最大，00981A近期掃貨，短線最強</td><td>題材短打</td><td><div class="bar-wrap"><div class="bar" style="width:15%;background:var(--orange)"></div></div></td></tr>
-    </tbody>
-    </table>
+  <!-- S3 籌碼 -->
+  <div class="section collapsed" id="secChip">
+    <h2 class="section-head" onclick="toggleSection('secChip')"><span class="arrow">▼</span> 🧩 籌碼（ChipFlow）</h2>
+    <div class="section-body">
+      <div class="alert">目前欄位不含「已發行股本」。先用成交筆數均值替代換手率異形偵測。
+      <br>若想啟用準確換手率，需補 `float_cap.json`（已發行股本）。</div>
+      <div id="chipList"></div>
     </div>
   </div>
 
-  <!-- 5. 三軌配置摘要 -->
-  <div class="section">
-    <h2>📐 三軌配置摘要</h2>
-    <div class="cards">
-      <div class="card">
-        <h2><span class="tier-tag tier-t1">A 軌</span>營收確認型 50%（7-30天）</h2>
-        <div>國巨、聯發科、台積電、台光電、台達電</div>
+  <!-- S4 事件 -->
+  <div class="section collapsed" id="secEvent">
+    <h2 class="section-head" onclick="toggleSection('secEvent')"><span class="arrow">▼</span> 📰 事件（Events）</h2>
+    <div class="section-body">
+      <div class="alert">事件數據尚未接入。本階段提供「板塊熱度」秒級統計：依名稱關鍵字分組，算出板塊平均漲跌幅與上漲家數。</div>
+      <div id="sectorHeat"></div>
+    </div>
+  </div>
+
+  <!-- S5 資産 -->
+  <div class="section" id="secPortfolio">
+    <h2 class="section-head" onclick="toggleSection('secPortfolio')"><span class="arrow">▼</span> 💼 資產與對沖（Portfolio）</h2>
+    <div class="section-body">
+      <div class="alert">組合資料儲存在你的瀏覽器 <code>localStorage</code>，不會上傳。請定期 Export 備份。</div>
+      <div class="ctrl">
+        <input type="text" id="pfCode" placeholder="輸入代號（如 2330）" style="width:120px">
+        <input type="number" id="pfShares" placeholder="張數" style="width:100px">
+        <input type="number" id="pfCost" placeholder="持有價" step="0.5" style="width:100px">
+        <button onclick="addPortfolio()">加入</button>
+        <button onclick="clearPortfolio()">清空</button>
+        <button onclick="exportPortfolio()">Export</button>
+        <button onclick="importPortfolio()">Import</button>
+        <span class="tag" id="pfCount">0 檔</span>
       </div>
-      <div class="card">
-        <h2><span class="tier-tag tier-t2">B 軌</span>動能爆發型 30%（1-7天）</h2>
-        <div>華邦電、南亞科、日月光、奇鋐、凌華、聯電</div>
-      </div>
-      <div class="card">
-        <h2><span class="tier-tag tier-t3">C 軌</span>地緣題材型 20%（1-3天）</h2>
-        <div>光聖、凱美、聯友金屬，最短進最快出</div>
+      <div class="grid grid-4" id="portfolioCards"></div>
+      <div class="card" style="margin-top:10px">
+        <h2>對沖檢查</h2>
+        <div id="hedgeReport" style="font-size:13px"></div>
       </div>
     </div>
   </div>
 
   <div class="footer">
-  資料來源：TWSE API + 00981A / 00992A / 00991A ETF 公開持倉<br>
-  頁面建立：2026-06-19 · Hermes 投資追蹤系統<br>
-  <a href="research.html">🡒 個股深度研究報告</a>
+    Hermes 動態儀表板 · 前端即時排序 + 大單代理 + 漲停基因 + 組合對沖 · <a href="research.html">🡒 個股研究報告</a>
   </div>
-
 </div>
+
+<script>
+let allStocks = [];
+let currentSort = 'default';
+let currentDir = 1;
+
+function pctClass(p){ if(p>0) return 'up'; if(p<0) return 'down'; return 'float'; }
+
+function setSort(k){ if(currentSort===k) currentDir*=-1; else{currentSort=k;currentDir=1;} renderTable(); renderSignals(); renderChip(); }
+
+function sortFn(a,b){
+  const k=currentSort;
+  if(k==='default') return ({T1:1,T2:2,T3:3,T4:4}[a.tier]||4)-({T1:1,T2:2,T3:3,T4:4}[b.tier]||4);
+  let av=a[k],bv=b[k];
+  if(k==='bigOrder'||k==='limitGene'||k==='pct'||k==='price'||k==='vol') return (av-bv)*currentDir;
+  if(typeof av==='string') av=av.toLowerCase(); if(typeof bv==='string') bv=bv.toLowerCase();
+  if(av<bv) return -1*currentDir; if(av>bv) return 1*currentDir; return 0;
+}
+
+function toggleSection(id){ document.getElementById(id).classList.toggle('collapsed'); }
+
+function computeDerived(){
+  const n=allStocks.length;
+  const avgVol = n ? allStocks.reduce((s,x)=>s+x.vol,0)/n : 1;
+  const avgAmt = n ? allStocks.reduce((s,x)=>s+x.price*x.vol*1000,0)/n : 1;
+  const vol90 = n ? allStocks.slice().sort((a,b)=>a.vol-b.vol)[Math.floor(n*0.9)].vol : 0;
+  allStocks.forEach(s=>{
+    const amt = s.price*s.vol*1000;
+    s.bigOrder = amt/avgAmt; // bigger = more big-order proxy
+    const isUp = s.pct>=9.5;
+    const lowTx = s.vol < avgVol*0.5;
+    s.limitGene = (isUp && lowTx) ? 1 : 0;
+    s.breakoutVol = s.vol > avgVol*2 ? 1 : 0;
+  });
+}
+
+function renderTable(){
+  const q=document.getElementById('searchBox').value.toLowerCase();
+  let rows=allStocks.filter(s=>s.name.toLowerCase().includes(q)||s.code.includes(q));
+  rows.sort(sortFn);
+  document.getElementById('snapshotBody').innerHTML = rows.map(s=>'<tr><td>'+
+    s.code+'</td><td><strong>'+s.name+'</strong><div style="font-size:11px;color:var(--muted);margin-top:2px">'+s.note+'</div></td><td style="font-weight:700">'+s.price+'</td><td class="'+pctClass(s.pct)+'">'+(s.pct>0?'+':'')+s.pct+'%</td><td>'+s.vol.toLocaleString()+'</td><td>'+(s.bigOrder>1.2?'<span class="pill ok">主力</span>':'--')+'</td><td>'+(s.limitGene?'<span class="pill warn">基因</span>':'--')+'</td><td><span class="tier-tag '+s.tier_cls+'">'+s.tier_label+'</span><div style="font-size:11px;color:var(--muted);margin-top:2px">持有 '+s.hold+'</div></td><td><span class="tier-tag '+s.tier_cls+'">'+s.tier+'</span></td></tr>').join('');
+  document.getElementById('countLabel').textContent = rows.length+' / '+allStocks.length+' 檔';
+}
+
+function renderSummary(){
+  const t1=allStocks.filter(s=>s.tier==='T1').length,t2=allStocks.filter(s=>s.tier==='T2').length,t3=allStocks.filter(s=>s.tier==='T3').length,t4=allStocks.filter(s=>s.tier==='T4').length;
+  document.getElementById('summaryCards').innerHTML=[
+    '<div class="card"><h2>標的總數</h2><div class="big">'+allStocks.length+'</div></div>',
+    '<div class="card"><h2>T1 營收確認型</h2><div class="big">'+t1+'</div></div>',
+    '<div class="card"><h2>T2 動能爆發型</h2><div class="big">'+t2+'</div></div>',
+    '<div class="card"><h2>T3 / T4 觀察</h2><div class="big">'+(t3+t4)+'</div></div>'
+  ].join('');
+}
+
+function renderSignals(){
+  const list=allStocks.filter(s=>s.bigOrder>1.2||s.limitGene||s.breakoutVol).sort((a,b)=>b.bigOrder-a.bigOrder);
+  document.getElementById('signalList').innerHTML = list.map(s=>{
+    let tags=[];
+    if(s.bigOrder>1.2) tags.push('<span class="pill ok">大單</span>');
+    if(s.limitGene) tags.push('<span class="pill warn">漲停基因</span>');
+    if(s.breakoutVol) tags.push('<span class="pill warn">爆量</span>');
+    return '<div class="stock"><div class="name">'+s.name+' <span class="float">'+s.code+'</span></div><div class="meta">'+tags.join(' ')+'</div><div class="price '+pctClass(s.pct)+'">'+s.price+' <span style="font-size:13px">'+(s.pct>0?'+':'')+s.pct+'%</span></div><div class="note">成交'+s.vol.toLocaleString()+'張 · 金額分位 '+Math.min(100,Math.round(s.bigOrder*50))+'%</div></div>';
+  }).join('') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無符合信號標的（市場清淡或篩選條件收緊）。</div>';
+}
+
+function renderChip(){
+  if(!allStocks.length) return;
+  const avgAmt = allStocks.reduce((s,x)=>s+x.price*x.vol*1000,0)/allStocks.length;
+  const list = allStocks.slice().sort((a,b)=>(b.price*b.vol*1000/avgAmt)-(a.price*a.vol*1000/avgAmt));
+  document.getElementById('chipList').innerHTML = '<div class="stock-list">'+list.map(s=>{
+    const proxy = s.price*s.vol*1000/avgAmt;
+    const cls = proxy>1.3?'ok':proxy>1? 'warn':'float';
+    return '<div class="stock"><div class="name">'+s.name+' <span class="float">'+s.code+'</span></div><div class="meta">成交額分位 '+Math.round(proxy*50)+'%</div><div class="price '+pctClass(s.pct)+'">'+s.price+' <span style="font-size:13px">'+(s.pct>0?'+':'')+s.pct+'%</span></div><div class="note">成交'+s.vol.toLocaleString()+'張 · 大單代理指數 '+proxy.toFixed(2)+'</div></div>';
+  }).join('')+'</div>';
+}
+
+function renderSectorHeat(){
+  const map={};
+  allStocks.forEach(s=>{
+    const group = s.industry || guessSector(s.name);
+    if(!map[group]) map[group]={up:[],down:[],flat:[],pcts:[]};
+    if(s.pct>0) map[group].up.push(s);
+    else if(s.pct<0) map[group].down.push(s);
+    else map[group].flat.push(s);
+    map[group].pcts.push(s.pct);
+  });
+  const rows=Object.entries(map).map(([k,v])=>({name:k,avg:v.pcts.reduce((a,b)=>a+b,0)/v.pcts.length,up:v.up.length,down:v.down.length,total:v.pcts.length})).sort((a,b)=>b.avg-a.avg);
+  document.getElementById('sectorHeat').innerHTML = rows.map(r=>{
+    const intensity = Math.min(100,Math.max(0,Math.round((r.avg+5)*10)));
+    const color = intensity>60?'var(--green)':intensity>40?'var(--accent)':'var(--muted)';
+    return '<div style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid #1b2130">'+
+      '<div style="width:110px;font-weight:600">'+r.name+'</div>'+
+      '<div style="flex:1;background:#1c2430;border-radius:999px;height:10px;overflow:hidden"><div style="height:100%;width:'+intensity+'%;background:'+color+';border-radius:999px"></div></div>'+
+      '<div style="width:80px;text-align:right;font-size:13px" class="'+pctClass(r.avg)+'">'+(r.avg>0?'+':'')+r.avg.toFixed(2)+'%</div>'+
+      '<div style="width:80px;text-align:right;font-size:12px;color:var(--muted)">'+r.up+'↑ '+r.down+'↓</div></div>';
+  }).join('');
+}
+
+function guessSector(name){
+  if(name.includes('電')||name.includes('網')) return '網通/電機';
+  if(name.includes('鋼')||name.includes('鑫')||name.includes('金')) return '鋼鐵/金屬';
+  if(name.includes('生')||name.includes('藥')) return '生技/藥';
+  if(name.includes('金融')||name.includes('銀')||name.includes('證')) return '金融';
+  if(name.includes('ai')||name.includes('AI')||name.includes('光')) return 'AI/光電';
+  return '其他';
+}
+
+/* ===== Portfolio + Hedge ===== */
+function loadPf(){
+  try{ return JSON.parse(localStorage.getItem('portfolio')||'[]'); }catch(e){ return []; }
+}
+function savePf(p){ localStorage.setItem('portfolio', JSON.stringify(p)); renderPortfolio(); }
+function addPortfolio(){
+  const code=document.getElementById('pfCode').value.trim();
+  const shares=parseInt(document.getElementById('pfShares').value||'0',10);
+  const cost=parseFloat(document.getElementById('pfCost').value||'0');
+  if(!code) return alert('輸入代號');
+  const arr=loadPf();
+  const idx=arr.findIndex(x=>x.code===code);
+  if(idx>=0){ arr[idx].shares+=shares; arr[idx].cost=(arr[idx].cost+ (cost||0))/2; }
+  else arr.push({code, shares:shares||0, cost:cost||0});
+  savePf(arr);
+  ['pfCode','pfShares','pfCost'].forEach(id=>document.getElementById(id).value='');
+}
+function removePf(code){ const arr=loadPf().filter(x=>x.code!==code); savePf(arr); }
+function clearPortfolio(){ if(confirm('清空全部組合？')){ localStorage.removeItem('portfolio'); renderPortfolio(); } }
+function exportPortfolio(){
+  const blob = new Blob([localStorage.getItem('portfolio')||'[]'],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='portfolio.json'; a.click();
+}
+function importPortfolio(){
+  const input=document.createElement('input'); input.type='file'; input.accept='application/json';
+  input.onchange=e=>{ const r=new FileReader(); r.onload=()=>{ localStorage.setItem('portfolio',r.target.result); renderPortfolio(); }; r.readAsText(e.target.files[0]); };
+  input.click();
+}
+
+function renderPortfolio(){
+  const pf=loadPf();
+  document.getElementById('pfCount').textContent = pf.length+' 檔';
+  const map = new Map(allStocks.map(s=>[s.code,s]));
+  document.getElementById('portfolioCards').innerHTML = pf.map(p=>{
+    const s=map.get(p.code);
+    const price=s?s.price:null;
+    const pnl = price? (price-p.cost)*p.shares*1000 : 0;
+    const pct = p.cost? (price-p.cost)/p.cost*100 : 0;
+    const color = pnl>0?'var(--green)':pnl<0?'var(--red)':'var(--muted)';
+    return '<div class="card"><h2>'+(s?s.name:p.code)+' <span class="float">'+p.code+'</span></h2><div class="meta">持有 '+p.shares+' 張 · 成本 '+p.cost+'</div><div class="price" style="color:'+color+'">'+(price?price:'--')+' <span style="font-size:13px">'+(price?((pct>0?'+':'')+pct.toFixed(2)+'%'):'')+'</span></div><div class="note">未實現盈虧 <b style="color:'+color+'">'+(price?pnl.toFixed(0):'--')+'</b></div><div style="margin-top:6px"><button onclick="removePf(\''+p.code+'\')" style="background:#2a1520;color:#fbb;border:1px solid #3a2030;border-radius:6px;padding:3px 8px;cursor:pointer;font-size:12px">移除</button></div></div>';
+  }).join('') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">尚未加入任何持倉。</div>';
+
+  // Hedge report
+  let report=[];
+  pf.forEach(p=>{
+    const s=map.get(p.code);
+    if(!s) return;
+    const dist=(s.price-p.cost)/p.cost*100;
+    if(dist<-5) report.push('<div class="pill bad">'+s.name+' '+p.code+' 距成本 -'+dist.toFixed(2)+'%（接近防守點）</div>');
+    if(s.bigOrder>1.2) report.push('<div class="pill warn">'+s.name+' '+p.code+' 大單進出（波動風險）</div>');
+  });
+  document.getElementById('hedgeReport').innerHTML = report.length? report.join('<div style="margin:4px 0"></div>') : '<div style="color:var(--muted);font-size:12px">未偵測到風險訊號。</div>';
+}
+
+/* ===== Init ===== */
+fetch('data.json')
+  .then(r=>r.json())
+  .then(d=>{
+    document.getElementById('headerDate').textContent=d.date;
+    document.getElementById('headerTime').textContent=d.updated;
+    allStocks=d.stocks;
+    computeDerived();
+    renderSummary();
+    renderTable();
+    renderSignals();
+    renderChip();
+    renderSectorHeat();
+    renderPortfolio();
+  })
+  .catch(e=>{
+    document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:#f0465a;color:#fbb">data.json 讀取失敗：'+e.message+'</div>');
+  });
+</script>
 </body>
 </html>
