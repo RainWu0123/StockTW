@@ -1,0 +1,563 @@
+{
+  "date": "2026-06-20",
+  "generated": "2026-06-20T08:44:57.467952",
+  "rules_version": "2026-06-20",
+  "thresholds": {
+    "T1": 72,
+    "T2": 58,
+    "T3": 40,
+    "T4": 0
+  },
+  "stocks": [
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "price": 218.5,
+      "pct": 9.8,
+      "vol": 334015,
+      "score": 64.0,
+      "tier": "T2",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 1,
+        "limit_up_5d_flag": 1,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "price": 145.5,
+      "pct": 3.93,
+      "vol": 292688,
+      "score": 44.0,
+      "tier": "T3",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 1,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "price": 1080,
+      "pct": 9.76,
+      "vol": 90472,
+      "score": 37.2,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.43,
+        "limit_up_5d_flag": 1,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "price": 459.5,
+      "pct": 5.15,
+      "vol": 178245,
+      "score": 33.8,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.845,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "7610",
+      "name": "聯友金屬",
+      "price": 2315,
+      "pct": 9.98,
+      "vol": 1538,
+      "score": 24.3,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0075,
+        "limit_up_5d_flag": 1,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2375",
+      "name": "凱美",
+      "price": 219,
+      "pct": 9.77,
+      "vol": 18613,
+      "score": 23.5,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0875,
+        "limit_up_5d_flag": 1,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "6830",
+      "name": "汎銓",
+      "price": 564,
+      "pct": 9.94,
+      "vol": 783,
+      "score": 20.1,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0025,
+        "limit_up_5d_flag": 1,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "price": 2410,
+      "pct": 1.05,
+      "vol": 46272,
+      "score": 12.8,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.22,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "price": 363.5,
+      "pct": 5.36,
+      "vol": 60643,
+      "score": 11.5,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.2875,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "3711",
+      "name": "日月光",
+      "price": 613,
+      "pct": 3.03,
+      "vol": 34149,
+      "score": 10.5,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.1625,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "price": 5600,
+      "pct": 7.69,
+      "vol": 1584,
+      "score": 8.3,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0075,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.4
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "price": 259.5,
+      "pct": -1.7,
+      "vol": 39340,
+      "score": 7.5,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.1875,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "price": 2150,
+      "pct": -0.23,
+      "vol": 10395,
+      "score": 6.0,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.05,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "price": 5195,
+      "pct": 0.97,
+      "vol": 2785,
+      "score": 4.5,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0125,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "6442",
+      "name": "光聖",
+      "price": 1945,
+      "pct": 6.0,
+      "vol": 573,
+      "score": 4.1,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0025,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0.2
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "price": 274,
+      "pct": 1.29,
+      "vol": 15214,
+      "score": 2.9,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0725,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "price": 4390,
+      "pct": -1.57,
+      "vol": 12095,
+      "score": 2.3,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0575,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "6166",
+      "name": "凌華",
+      "price": 155.5,
+      "pct": 9.12,
+      "vol": 5620,
+      "score": 1.1,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.0275,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "price": 494,
+      "pct": 1.12,
+      "vol": 4210,
+      "score": 0.8,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.02,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "price": 4860,
+      "pct": -4.24,
+      "vol": 4466,
+      "score": 0.8,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.02,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "2404",
+      "name": "漢唐",
+      "price": 1265,
+      "pct": -1.17,
+      "vol": 3009,
+      "score": 0.6,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.015,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "price": 2400,
+      "pct": 1.48,
+      "vol": 3133,
+      "score": 0.6,
+      "tier": "T4",
+      "parts": {
+        "revenue_yoy_pct": null,
+        "foreign_consec_days": null,
+        "dealer_consec_days": null,
+        "dist_52w_high_pct": null,
+        "vol_ratio_5d": 0.015,
+        "limit_up_5d_flag": 0,
+        "in_ai_etf_flag": 0,
+        "theme_score": 0
+      },
+      "missing_fields": [
+        "revenue_yoy_pct",
+        "foreign_consec_days",
+        "dealer_consec_days",
+        "dist_52w_high_pct"
+      ]
+    }
+  ]
+}
