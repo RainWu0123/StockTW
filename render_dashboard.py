@@ -28,7 +28,25 @@ def tier_of(code):
     }
     return TIER.get(code, "T4")
 
-def tier_meta(t):
+def load_scores():
+    p = os.path.join(BASE, "data", "scores.json")
+    if not os.path.exists(p):
+        return {}, {}
+    with open(p, "r", encoding="utf-8") as f:
+        d = json.load(f)
+    by_code = {}
+    for s in d.get("stocks", []):
+        by_code[s.get("code", "")] = {
+            "score": s.get("score"),
+            "parts": s.get("parts"),
+            "tier": s.get("tier"),
+        }
+    meta = {
+        "rules_version": d.get("rules_version"),
+        "thresholds": d.get("thresholds"),
+        "percentile_cutoffs": d.get("percentile_cutoffs"),
+    }
+    return by_code, meta
     return {
         "T1": {"label": "T1 營收確認型", "cls": "tier-t1", "color": "#3ecf8e", "hold": "7-30天"},
         "T2": {"label": "T2 動能爆發型", "cls": "tier-t2", "color": "#4aa3ff", "hold": "1-7天"},
@@ -246,13 +264,15 @@ def main():
     if not stocks:
         print("[warn] no new snapshot found; keeping existing data.json if any.", flush=True)
     else:
+        scores_map, scores_meta = load_scores()
         stocks_map = {s["code"]: s for s in stocks}
         out = []
         for code in sorted(stocks_map.keys()):
             s = stocks_map[code]
-            t = tier_of(code)
+            sc = scores_map.get(code, {})
+            t = sc.get("tier") or tier_of(code)
             m = tier_meta(t)
-            out.append({
+            row = {
                 "code": s["code"],
                 "name": s["name"],
                 "price": s["price"],
@@ -264,10 +284,23 @@ def main():
                 "tier_color": m.get("color", "#7a8599"),
                 "hold": m.get("hold", "--"),
                 "note": NOTE.get(s["code"], ""),
-            })
+            }
+            if sc.get("score") is not None:
+                row["score"] = sc["score"]
+            if sc.get("parts"):
+                row["parts"] = sc["parts"]
+            out.append(row)
 
+        payload = {
+            "date": date,
+            "updated": datetime.now().isoformat(),
+            "stocks": out,
+            "meta": scores_meta,
+        }
+        if not scores_meta.get("rules_version"):
+            payload.pop("meta", None)
         with open(os.path.join(BASE, "data.json"), "w", encoding="utf-8") as f:
-            json.dump({"date": date, "updated": datetime.now().isoformat(), "stocks": out}, f, ensure_ascii=False, indent=2)
+            json.dump(payload, f, ensure_ascii=False, indent=2)
         print(f"[data.json] written {len(out)} stocks at {date}", flush=True)
 
     # Always publish SPA as public pages

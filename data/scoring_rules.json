@@ -1,34 +1,39 @@
 {
-  "version": "2026-06-20",
+  "version": "2026-06-20-quant",
   "weights": {
-    "revenue_yoy_pct": 25,
-    "foreign_consec_days": 20,
-    "dealer_consec_days": 15,
-    "dist_52w_high_pct": 15,
-    "vol_ratio_5d": 10,
-    "limit_up_5d_flag": 5,
-    "in_ai_etf_flag": 5,
-    "theme_score": 5
-  },
-  "thresholds": {
-    "T1": 72,
-    "T2": 58,
-    "T3": 40,
-    "T4": 0
+    "vol_ratio_5d": 35,
+    "limit_up_5d_flag": 20,
+    "in_ai_etf_flag": 25,
+    "theme_score": 20
   },
   "field_max": {
-    "revenue_yoy_pct": 100,
-    "foreign_consec_days": 10,
-    "dealer_consec_days": 10,
-    "dist_52w_high_pct": 30,
     "vol_ratio_5d": 4,
     "limit_up_5d_flag": 1,
     "in_ai_etf_flag": 1,
     "theme_score": 5
   },
-  "ai_commentary_only_fields": [
-    "industry_report",
-    "buy_sell_advice",
-    "risk_alert"
-  ]
+  "threshold_mode": "percentile",
+  "thresholds": {
+    "T1": 80,
+    "T2": 60,
+    "T3": 40,
+    "T4": 0
+  },
+  "percentile_cutoffs": {
+    "T1": 0.80,
+    "T2": 0.60,
+    "T3": 0.40
+  },
+  "ai_fields": [
+    "revenue_yoy_pct",
+    "foreign_consec_days",
+    "dealer_consec_days",
+    "dist_52w_high_pct"
+  ],
+  "fields": {
+    "vol_ratio_5d": "5日均量比（proxy: 今日量/全樣本平均量）",
+    "limit_up_5d_flag": "近5日漲停 flag（目前用單日近似）",
+    "in_ai_etf_flag": "是否為 00981A/00992A 重倉",
+    "theme_score": "題材純度 0-5（關鍵字 proxy）"
+  }
 }

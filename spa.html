@@ -46,7 +46,7 @@ select{background:#11141c;color:var(--text);border:1px solid var(--border);borde
 <body>
 <header>
   <h1>🎯 台股 AI 投資追蹤 <span class="tier-tag tier-t1" style="margin-left:10px" id="headerDate">--</span> <span style="font-size:11px;color:var(--muted);font-weight:400" id="headerTime"></span></h1>
-  <div class="sub">TWSE 即時快照 · 三軌配置 · 動態儀表板 · 組合對沖 · 大單偵測</div>
+  <div class="sub">TWSE 即時快照 · 量化評分規則驅動 · 動態儀表板 · 組合對沖 <span id="ruleVersion" style="margin-left:8px"></span></div>
 </header>
 <div class="container">
 
@@ -70,6 +70,7 @@ select{background:#11141c;color:var(--text);border:1px solid var(--border);borde
           <th onclick="setSort('price')">收盤價 ⇅</th>
           <th onclick="setSort('pct')">漲跌幅 ⇅</th>
           <th onclick="setSort('vol')">成交張數 ⇅</th>
+          <th onclick="setSort('score')">評分 ⇅</th>
           <th>大單</th>
           <th>漲停基因</th>
           <th>持有邏輯</th>
@@ -152,9 +153,9 @@ function setSort(k){ if(currentSort===k) currentDir*=-1; else{currentSort=k;curr
 
 function sortFn(a,b){
   const k=currentSort;
-  if(k==='default') return ({T1:1,T2:2,T3:3,T4:4}[a.tier]||4)-({T1:1,T2:2,T3:3,T4:4}[b.tier]||4);
+  if(currentSort==='default') return ({T1:1,T2:2,T3:3,T4:4}[a.tier]||4)-({T1:1,T2:2,T3:3,T4:4}[b.tier]||4);
   let av=a[k],bv=b[k];
-  if(k==='bigOrder'||k==='limitGene'||k==='pct'||k==='price'||k==='vol') return (av-bv)*currentDir;
+  if(k==='score'||k==='bigOrder'||k==='limitGene'||k==='pct'||k==='price'||k==='vol') return (av-bv)*currentDir;
   if(typeof av==='string') av=av.toLowerCase(); if(typeof bv==='string') bv=bv.toLowerCase();
   if(av<bv) return -1*currentDir; if(av>bv) return 1*currentDir; return 0;
 }
@@ -181,7 +182,7 @@ function renderTable(){
   let rows=allStocks.filter(s=>s.name.toLowerCase().includes(q)||s.code.includes(q));
   rows.sort(sortFn);
   document.getElementById('snapshotBody').innerHTML = rows.map(s=>'<tr><td>'+
-    s.code+'</td><td><strong>'+s.name+'</strong><div style="font-size:11px;color:var(--muted);margin-top:2px">'+s.note+'</div></td><td style="font-weight:700">'+s.price+'</td><td class="'+pctClass(s.pct)+'">'+(s.pct>0?'+':'')+s.pct+'%</td><td>'+s.vol.toLocaleString()+'</td><td>'+(s.bigOrder>1.2?'<span class="pill ok">主力</span>':'--')+'</td><td>'+(s.limitGene?'<span class="pill warn">基因</span>':'--')+'</td><td><span class="tier-tag '+s.tier_cls+'">'+s.tier_label+'</span><div style="font-size:11px;color:var(--muted);margin-top:2px">持有 '+s.hold+'</div></td><td><span class="tier-tag '+s.tier_cls+'">'+s.tier+'</span></td></tr>').join('');
+    s.code+'</td><td><strong>'+s.name+'</strong><div style="font-size:11px;color:var(--muted);margin-top:2px">'+s.note+'</div></td><td style="font-weight:700">'+s.price+'</td><td class="'+pctClass(s.pct)+'">'+(s.pct>0?'+':'')+s.pct+'%</td><td>'+s.vol.toLocaleString()+'</td><td style="font-weight:700">'+(s.score!=null?s.score:'--')+'</td><td><span class="tier-tag '+s.tier_cls+'">'+s.tier_label+'</span><div style="font-size:11px;color:var(--muted);margin-top:2px">持有 '+s.hold+'</div></td><td><span class="tier-tag '+s.tier_cls+'">'+s.tier+'</span></td></tr>').join('');
   document.getElementById('countLabel').textContent = rows.length+' / '+allStocks.length+' 檔';
 }
 
@@ -308,6 +309,8 @@ fetch('data.json')
   .then(d=>{
     document.getElementById('headerDate').textContent=d.date;
     document.getElementById('headerTime').textContent=d.updated;
+    const rv = d.meta && d.meta.rules_version;
+    if(rv) document.getElementById('ruleVersion').textContent = '版本：' + rv;
     allStocks=d.stocks;
     computeDerived();
     renderSummary();
