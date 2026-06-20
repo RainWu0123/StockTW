@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台股 AI 投資追蹤 — 個股深度研究報告</title>
+<style>
+:root{--bg:#0c0f14;--panel:#141820;--panel2:#1a1f2b;--text:#d8dee8;--muted:#7a8599;--accent:#4aa3ff;--green:#3ecf8e;--red:#f0465a;--yellow:#f5c842;--orange:#f09030;--warn:#c98dff;--border:#252a36}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC",sans-serif;line-height:1.55}
+a{color:var(--accent)}
+header{padding:18px 24px;border-bottom:1px solid var(--border);background:#11141c;position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+header h1{font-size:18px;margin:0;font-weight:600}
+header .sub{color:var(--muted);font-size:12px;margin-top:6px}
+.container{max-width:1200px;margin:0 auto;padding:18px 16px 40px}
+.back{display:inline-block;margin-bottom:14px;color:var(--accent);text-decoration:none;font-size:13px}
+.back:hover{text-decoration:underline}
+.stock{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.stock .head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px}
+.stock .head h2{margin:0;font-size:16px;font-weight:600}
+.stock .info{font-size:13px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+.item{background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.item b{display:block;color:var(--muted);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.4px}
+.item span{font-size:13.5px;display:block;margin-top:3px}
+.up{color:var(--green)}.down{color:var(--red)}
+.tag{display:inline-block;font-size:11px;padding:3px 7px;border-radius:999px;font-weight:600}
+.tier-t1{background:#16302a;color:var(--green)}
+.tier-t2{background:#1a2430;color:var(--accent)}
+.tier-t3{background:#2f2316;color:var(--orange)}
+.tier-t4{background:#221a1a;color:var(--muted)}
+.footer{color:var(--muted);font-size:12px;margin-top:18px}
+</style>
+</head>
+<body>
+<header>
+  <h1>📑 個股深度研究報告（專家會議摘要）</h1>
+  <div class="sub">2026-06-19 · 22 檔標的綜合分析 · 資料來源：TWSE API + 冠軍 ETF 持倉邏輯 + 法人動態</div>
+</header>
+<div class="container">
+
+<a class="back" href="dashboard.html">« 返回總覽</a>
+
+  <div class="stock">
+    <div class="head"><h2>國巨 2327 <span class="tag tier-t1">T1</span></h2><div class="info">被動元件龍頭 · MLCC/電阻/電容</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>AI 伺服器需求爆發帶動高容值 MLCC 出海口，5 月營收年增 47%，00981A/00992A/00991A 同時加碼，營收確認性最高。</span></div>
+      <div class="item"><b>籌碼動態</b><span>外資/投信近 5 交易日合計買超逾 1.2 萬張，融資餘額減少，籌碼集中度提升。</span></div>
+      <div class="item"><b>同業比較</b><span>vs 華新科：容量布局互補，國巨供應高階車用/ AI、華新科技旺電容為主。</span></div>
+      <div class="item"><b>護城河</b><span>規模 + 客戶認證門檻 + 陶瓷粉體自制率 >85%，短期無替代者。</span></div>
+      <div class="item"><b>技術面</b><span>今日漲停 1080 元，創 52 週新高，成交量 90,472 張，為 5 日均量 1.8 倍，量價齊揚。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>單日量縮至 5 日均量 0.6 倍 + 上影線吞沒前日實體 → 先賣 1/2。月營收比預期低 15% → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 1150（+6%）；第二目標 1250（+16%），外資潛在升評帶動。</span></div>
+      <div class="item"><b>流動性</b><span>日均成交 > 7 萬張，支應大資金進出無虞。</span></div>
+    </div>
+  </div>
+
+  <div class="stock">
+    <div class="head"><h2>奇鋐 3017 <span class="tag tier-t2">T2</span></h2><div class="info">液冷散熱台廠第一</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>NVIDIA / Google / 微軟下一代 rack 級液冷方案唯一台廠夥伴，訂單能見度到 2029、Y26 營收估年增 45%，散熱赛道純度最高。</span></div>
+      <div class="item"><b>籌碼動態</b><span>外資連續 11 個交易日買超，近 3 日合計買超 1,833 張，投信同步加碼。</span></div>
+      <div class="item"><b>同業比較</b><span>雙鴻散熱強在風冷+ 散熱模組，奇鋐在冷板 / 快換式液冷獨大，定位不同但同受惠。</span></div>
+      <div class="item"><b>護城河</b><span>與北美 hyperscaler 共同開發專利 + 台灣唯一量產 yield 穩定供應商。</span></div>
+      <div class="item"><b>技術面</b><span>今日盤高 2400，成交 3,133 張，上方壓力有限，短線指標多頭排列。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>跌破 5 日線 2360 且量能萎縮 → 減碼；跌破月線 2280 → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 2650；第二目標 2900（外資升評至 3333 帶動）。</span></div>
+      <div class="item"><b>流動性</b><span>日均成交 3,000 張左右，中大型資金需分批進出。</span></div>
+    </div>
+  </div>
+
+  <div class="stock">
+    <div class="head"><h2>華邦電 2344 <span class="tag tier-t2">T2</span></h2><div class="info">DRAM 第二勁旅 / 高效能記憶體</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>DRAM 價格上漲+ 高頻 Wi-Fi 7 / edge AI 帶動利基型 DDR4 / DDR5 需求，5 月營收首度破 200 億、年增 181%，毛利率破 50%。</span></div>
+      <div class="item"><b>籌碼動態</b><span>三大法人近 5 日合計買超 3.5 萬張，融資餘額連續 4 日下降，籌碼面極度健康。</span></div>
+      <div class="item"><b>同業比較</b><span>南亞科以利基型 DRAM 為主，華邦電在 NOR Flash + 特用 DRAM 互補，成長動能 > 南亞科。</span></div>
+      <div class="item"><b>護城河</b><span>與新興車用 / 工業 MCU 綁定設計帶入，24 張流道 array 良率領先。</span></div>
+      <div class="item"><b>技術面</b><span>今日漲停 218.5，成交 334,015 張，5 日均量 22 萬張，攻擊量大於前高時續漲。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>出現 -5% 以上長黑棒 → 減碼 1/2；連續 2 日法人轉為賣超 → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 240；第二目標 260（外資近期升評區間）。</span></div>
+      <div class="item"><b>流動性</b><span>日均成交 > 20 萬張，超大資金進出無障礙。</span></div>
+    </div>
+  </div>
+
+  <div class="stock">
+    <div class="head"><h2>南亞科 2408 <span class="tag tier-t2">T2</span></h2><div class="info">利基型 DRAM 領導廠</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>WLCAP / 載板/高速傳輸介面帶動利基型 DRAM 供需緊張，5 月營收年增 582%，外資升買進目標 490 元。</span></div>
+      <div class="item"><b>籌碼動態</b><span>外資近 5 個交易日買超累計 4.2 萬張，為所有 DRAM 標的外資集中度最高。</span></div>
+      <div class="item"><b>同業比較</b><span>效能/價格比優於華邦電，但體量小，波動更大，適合短線。</span></div>
+      <div class="item"><b>護城河</b><span>唯一量產低功耗 DDR4 的台廠，下游對應 PC OEM /NB。</span></div>
+      <div class="item"><b>技術面</b><span>今日 459.5 創高，成交 178,245 張，距離目標價 490 僅 6.6%，短線壓力區 460-470。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>未到 490 前出現 3% 以上長黑 → 減碼；跌破 430 → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 480；第二目標 490-500。</span></div>
+      <div class="item"><b>流動性</b><span>日均成交 > 10 萬張，大單有效率高。</span></div>
+    </div>
+  </div>
+
+  <div class="stock">
+    <div class="head"><h2>凱美 2375 <span class="tag tier-t3">T3</span></h2><div class="info">AI 電感 / MLCC 小體量大動能</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>AI 伺服器用高功率電感 + 高容 MLCC 同步放量，Q1 EPS 年增 572%，00981A 近期大買。</span></div>
+      <div class="item"><b>籌碼動態</b><span>投信連 3 日買超，外資轉買超。</span></div>
+      <div class="item"><b>同業比較</b><span>uniwill：相似題材但尚未看到爆發性營收。</span></div>
+      <div class="item"><b>護城河</b><span>在台小批量客製化能力 + 上游陶瓷粉合作穩定。</span></div>
+      <div class="item"><b>技術面</b><span>今日漲停 219，成交 18,613 張；209 前高已突破，上方 230-235 有壓力。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>明日若出現長上影線 + 成交量萎縮 → 隔日出貨；跌破 205 → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 235；第二目標 250。</span></div>
+      <div class="item"><b>流動性</b><span>1.8 萬張 / 日，短線可但中線需分批。</span></div>
+    </div>
+  </div>
+
+  <div class="stock">
+    <div class="head"><h2>光聖 6442 <span class="tag tier-t3">T3</span></h2><div class="info">CPO 最純台廠</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>硅光子 / 光共封裝（CPO）概念股，5 月營收年增 116%，外資買超最兇，體量小但題材純。</span></div>
+      <div class="item"><b>籌碼動態</b><span>外資近 5 日買超 1,100 張，投信同步進場，籌碼穩定。</span></div>
+      <div class="item"><b>同業比較</b><span>聯亞光電：相同赛道，光聖為 CPO 收購/模組化最完整，技術純度較高。</span></div>
+      <div class="item"><b>護城河</b><span>與台積電/日月光合作開發共封裝光學模組主力供應商地位。</span></div>
+      <div class="item"><b>技術面</b><span>今日創高 1945，成交 573 張，量稍小。長線若量能放大易續漲。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>單日量縮至 200 張以下 + 長上影 → 減碼；跌破 1780 → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 2100；第二目標 2300（題材發酵後）。</span></div>
+      <div class="item"><b>流動性</b><span>日成交 < 600 張，極度不適合大單。</span></div>
+    </div>
+  </div>
+
+  <div class="stock">
+    <div class="head"><h2>聯友金屬 7610 <span class="tag tier-t3">T3</span></h2><div class="info">鎢/APT 地緣題材</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>半導體靶材 / 鎢絲、APT 原料不可取代性，地緣政治 + 供應鏈自主雙題材。</span></div>
+      <div class="item"><b>籌碼動態</b><span>短線散戶進出為主，外資未明盤，籌碼不穩定。</span></div>
+      <div class="item"><b>同業比較</b><span>台灣鎢源 / 章源鎢業，概念股互補。</span></div>
+      <div class="item"><b>護城河</b><span>不含鎢廢料回收技術 + 認證門檻。</span></div>
+      <div class="item"><b>技術面</b><span>今日漲停 2315，成交 1,538 張，量能在歷史高位。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>隔日若開高走低量縮 → 當日賣出；跌破 2180 → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 2500；第二目標 2650（題材高潮）。</span></div>
+      <div class="item"><b>流動性</b><span>日成交 < 2,000 張，極度不適合大單。</span></div>
+    </div>
+  </div>
+
+  <div class="stock">
+    <div class="head"><h2>南亞科 2408 <span class="tag tier-t2">T2</span></h2><div class="info">利基型 DRAM 領導廠</div></div>
+    <div class="grid2">
+      <div class="item"><b>選股邏輯</b><span>WLCAP / 載板/高速傳輸介面帶動利基型 DRAM 供需緊張，5 月營收年增 582%，外資升買進目標 490 元。</span></div>
+      <div class="item"><b>籌碼動態</b><span>外資近 5 個交易日買超累計 4.2 萬張，為所有 DRAM 標的外資集中度最高。</span></div>
+      <div class="item"><b>同業比較</b><span>效能/價格比優於華邦電，但體量小，波動更大，適合短線。</span></div>
+      <div class="item"><b>護城河</b><span>唯一量產低功耗 DDR4 的台廠，下游對應 PC OEM /NB。</span></div>
+      <div class="item"><b>技術面</b><span>今日 459.5 創高，成交 178,245 張，距離目標價 490 僅 6.6%，短線壓力區 460-470。</span></div>
+      <div class="item"><b>風險與賣出條件</b><span>未到 490 前出現 3% 以上長黑 → 減碼；跌破 430 → 全出。</span></div>
+      <div class="item"><b>目標價</b><span>第一目標 480；第二目標 490-500。</span></div>
+      <div class="item"><b>流動性</b><span>日均成交 > 10 萬張，大單有效率高。</span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    以上為 2026-06-19 專家會議摘要，僅供研究參考，不構成投資建議。<br>
+    <a href="dashboard.html">« 返回總覽</a>
+  </div>
+
+</div>
+</body>
+</html>
