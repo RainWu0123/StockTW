@@ -237,9 +237,14 @@ def render_dashboard(date):
     print(f"[dashboard.html] -> {out}", flush=True)
 
 def main():
+    run_fetch = os.environ.get("RUN_FETCH","1") == "1"
+    if run_fetch:
+        import subprocess, sys
+        subprocess.run([sys.executable, os.path.join(BASE, "fetch_twse.py")], check=False)
+
     date, stocks = load_snapshot()
     if not stocks:
-        print("[warn] no snapshot found. Run fetch_twse.py first.", flush=True)
+        print("[warn] no snapshot found.", flush=True)
         return
 
     stocks_map = {s["code"]: s for s in stocks}
@@ -266,7 +271,14 @@ def main():
         json.dump({"date": date, "updated": datetime.now().isoformat(), "stocks": out}, f, ensure_ascii=False, indent=2)
     print(f"[data.json] written {len(out)} stocks at {date}", flush=True)
 
-    render_dashboard(date)
+    # Copy SPA to public pages
+    for name in ("index.html", "dashboard_latest.html"):
+        dst = os.path.join(BASE, name)
+        src = os.path.join(BASE, "spa.html")
+        with open(src, "r", encoding="utf-8") as s:
+            with open(dst, "w", encoding="utf-8") as d:
+                d.write(s.read())
+        print(f"[copy] {name}", flush=True)
 
 if __name__ == "__main__":
     main()

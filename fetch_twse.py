@@ -25,7 +25,8 @@ def parse(data):
         try:
             name = d.get("n","")
             price = float(d.get("z", d.get("o", 0)) or 0)
-            chg = float(d.get("y", price))  # yesterday
+            # Use 'a' (previous close) for chg; fallback to yesterday price
+            chg = float(d.get("a", d.get("y", 0)) or 0)
             if chg:
                 pct = (price - chg) / chg * 100
             else:

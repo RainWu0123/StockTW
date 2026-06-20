@@ -20,18 +20,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch TWSE snapshot
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python3 fetch_twse.py
-
-      - name: Render dashboard
+      - name: Update dashboard (fetch + render)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 render_dashboard.py
-          cp dashboard.html index.html
 
       - name: Commit and push
         env:
