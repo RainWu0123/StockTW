@@ -244,34 +244,33 @@ def main():
 
     date, stocks = load_snapshot()
     if not stocks:
-        print("[warn] no snapshot found.", flush=True)
-        return
+        print("[warn] no new snapshot found; keeping existing data.json if any.", flush=True)
+    else:
+        stocks_map = {s["code"]: s for s in stocks}
+        out = []
+        for code in sorted(stocks_map.keys()):
+            s = stocks_map[code]
+            t = tier_of(code)
+            m = tier_meta(t)
+            out.append({
+                "code": s["code"],
+                "name": s["name"],
+                "price": s["price"],
+                "pct": s["pct"],
+                "vol": s["vol"],
+                "tier": t,
+                "tier_label": m.get("label", t),
+                "tier_cls": m.get("cls", "tier-t4"),
+                "tier_color": m.get("color", "#7a8599"),
+                "hold": m.get("hold", "--"),
+                "note": NOTE.get(s["code"], ""),
+            })
 
-    stocks_map = {s["code"]: s for s in stocks}
-    out = []
-    for code in sorted(stocks_map.keys()):
-        s = stocks_map[code]
-        t = tier_of(code)
-        m = tier_meta(t)
-        out.append({
-            "code": s["code"],
-            "name": s["name"],
-            "price": s["price"],
-            "pct": s["pct"],
-            "vol": s["vol"],
-            "tier": t,
-            "tier_label": m.get("label", t),
-            "tier_cls": m.get("cls", "tier-t4"),
-            "tier_color": m.get("color", "#7a8599"),
-            "hold": m.get("hold", "--"),
-            "note": NOTE.get(s["code"], ""),
-        })
+        with open(os.path.join(BASE, "data.json"), "w", encoding="utf-8") as f:
+            json.dump({"date": date, "updated": datetime.now().isoformat(), "stocks": out}, f, ensure_ascii=False, indent=2)
+        print(f"[data.json] written {len(out)} stocks at {date}", flush=True)
 
-    with open(os.path.join(BASE, "data.json"), "w", encoding="utf-8") as f:
-        json.dump({"date": date, "updated": datetime.now().isoformat(), "stocks": out}, f, ensure_ascii=False, indent=2)
-    print(f"[data.json] written {len(out)} stocks at {date}", flush=True)
-
-    # Copy SPA to public pages
+    # Always publish SPA as public pages
     for name in ("index.html", "dashboard_latest.html"):
         dst = os.path.join(BASE, name)
         src = os.path.join(BASE, "spa.html")
