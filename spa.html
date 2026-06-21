@@ -358,7 +358,7 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
 </div>
 
 <script>
-let allStocks=[], currentSort='default', currentDir=1, _heat={industries:[]};
+let allStocks=[], currentSort='default', currentDir=1, _heat={industries:[]}, _raf=null;
 
 document.querySelectorAll('#navTabs .tab').forEach(t=>{
   t.addEventListener('click', ()=>{
@@ -392,11 +392,15 @@ function sortFn(a,b){
 }
 
 function renderLobby(){
-  const q = (document.getElementById('searchBox').value||'').toLowerCase();
-  const rows = allStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
-  rows.sort(sortFn);
-  document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row-${(s.tier||'T4').toLowerCase()}"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag ${s.tier_cls||('tier-'+((s.tier||'T4').toLowerCase()))}">${s.tier||'T4'}</span></td></tr>`).join('');
-  document.getElementById('countLabel').textContent = rows.length+' / '+(allStocks.length||0)+' 檔';
+  if(_raf) cancelAnimationFrame(_raf);
+  _raf = requestAnimationFrame(()=>{
+    _raf = null;
+    const q = (document.getElementById('searchBox').value||'').toLowerCase();
+    const rows = allStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
+    rows.sort(sortFn);
+    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row-${(s.tier||'T4').toLowerCase()}"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag ${s.tier_cls||('tier-'+((s.tier||'T4').toLowerCase()))}">${s.tier||'T4'}</span></td></tr>`).join('');
+    document.getElementById('countLabel').textContent = rows.length+' / '+(allStocks.length||0)+' 檔';
+  });
 }
 
 function computeDerived(){
@@ -571,9 +575,14 @@ function renderPf(){
 
 /* === GSAP Animations === */
 function animateAll(){
-  gsap.fromTo('.card', {opacity:0, y:16}, {opacity:1, y:0, duration:.55, stagger:.05, ease:'power2.out'});
-  gsap.fromTo('#snapshotBody tr', {opacity:0, x:-8}, {opacity:1, x:0, duration:.4, stagger:.018, ease:'power1.out'});
-  gsap.fromTo('.industry-card', {opacity:0, y:12}, {opacity:1, y:0, duration:.5, stagger:.04, ease:'power2.out'});
+  gsap.fromTo('.card', {opacity:0, y:16}, {opacity:1, y:0, duration:.45, stagger:.03, ease:'power2.out'});
+  const rows=document.querySelectorAll('#snapshotBody tr');
+  gsap.fromTo(rows.length?rows[0]:null, {opacity:0, x:-8}, {opacity:1, x:0, duration:.35, stagger:.012, ease:'power1.out', onComplete:null});
+  if(rows.length>1) gsap.set(rows.length>1?Array.from(rows).slice(1):[], {opacity:1, x:0});
+  const cards=document.querySelectorAll('.industry-card');
+  const show=cards.length>20?Array.from(cards).slice(0,20):cards;
+  gsap.fromTo(show, {opacity:0, y:10}, {opacity:1, y:0, duration:.4, stagger:.025, ease:'power2.out'});
+  if(cards.length>20) gsap.set(Array.from(cards).slice(20), {opacity:1, y:0});
 }
 function animateSheet(){
   gsap.fromTo('#sheetBody', {opacity:0, x:24}, {opacity:1, x:0, duration:.4, ease:'power2.out'});
