@@ -103,7 +103,7 @@ function openReport(code){
   const mdPath = 'research_data/'+code+'.md';
   fetch(mdPath).then(r=>r.text()).then(t=>{
     const html = simpleMd(t);
-    document.getElementById('reportBody').innerHTML='<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px"><h1 style="margin:0;font-size:22px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><span class="tag '+s.tier_cls||'t4'+'">'+(s.tier||'T4')+'</span><span class="market-tag">'+(s.industry||'')+'</span></div>'+html;
+    document.getElementById('reportBody').innerHTML='<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px"><h1 style="margin:0;font-size:22px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><span class="tag '+(s.tier_cls||'t4')+'">'+(s.tier||'T4')+'</span><span class="market-tag">'+(s.industry||'')+'</span></div>'+html;
   }).catch(()=>{
     document.getElementById('reportBody').innerHTML='<h1 style="margin:0 0 4px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><div class="alert" style="border-color:#252a36;color:var(--muted)">研究報告尚未產出，請稍後再試。</div>';
   });
