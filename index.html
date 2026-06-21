@@ -174,36 +174,34 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
 }
 .alert::before { content: "ℹ️"; font-size: 14px; flex-shrink: 0; }
 
-/* === 產業卡片（展開/收合） === */
-.industry-card {
+/* === 產業 Treemap === */
+.heat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-auto-rows: minmax(90px, auto);
+  gap: 10px;
+}
+.heat-tile {
   background: linear-gradient(180deg, #181c26, #14171f);
   border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 14px 16px; cursor: pointer; position: relative;
+  padding: 12px 14px; cursor: pointer; position: relative;
   box-shadow: var(--shadow-press);
   transition: transform .22s cubic-bezier(.2,.8,.2,1), box-shadow .22s, border-color .22s;
+  overflow: hidden; min-height: 90px;
 }
-.industry-card:hover {
+.heat-tile:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-raise);
   border-color: #3a4258;
 }
-.industry-head { display: flex; align-items: center; gap: 8px; }
-.industry-title { font-size: 15px; font-weight: 700; }
-.industry-count { font-size: 12px; color: var(--muted); font-weight: 500; }
-.industry-meta { font-size: 12px; color: var(--muted); margin-top: 4px; }
-.industry-bar {
-  height: 8px; background: #1c2430; border-radius: 999px;
-  border: 1px solid #232a38; overflow: hidden; margin-top: 10px;
+.heat-tile-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.industry-title { font-size: 14px; font-weight: 700; }
+.arrow { font-size: 12px; color: var(--muted); font-weight: 700; }
+.heat-tile-body {
+  margin-top: 10px; border-top: 1px solid var(--border);
+  padding-top: 10px; display: flex; flex-wrap: wrap; gap: 8px;
 }
-.industry-bar-fill {
-  height: 100%; border-radius: 999px;
-  transition: width .6s cubic-bezier(.2,.8,.2,1);
-}
-.industry-body {
-  margin-top: 12px; border-top: 1px solid var(--border);
-  padding-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;
-}
-.industry-body.collapsed { display: none; }
+.heat-tile-body.collapsed { display: none; }
 .stock-tag {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 6px 10px; border-radius: 10px;
@@ -337,7 +335,7 @@ body.sheet-open { overflow: hidden; }
 
   <main id="page-chip" class="section"><div class="section-body"><div class="alert">成交額分位替代換手率異形偵測。</div><div id="chipList"></div></div></main>
 
-  <main id="page-heat" class="section"><div class="section-body"><div class="alert">依產業族群分群：點產業卡片可展開成分股。</div><div class="grid grid-4" id="heatDay"></div><div class="grid grid-4" id="heatWeek" style="margin-top:10px"></div><div class="grid grid-4" id="heatMonth" style="margin-top:10px"></div><div id="industryDetail" style="margin-top:10px"></div></div></main>
+  <main id="page-heat" class="section"><div class="section-body"><div class="alert">依產業族群分群：點擊色塊可展開成分股。面積越大代表檔數越多。</div><div class="heat-grid" id="heatView"></div><div id="industryDetail" style="margin-top:10px"></div></div></main>
 
   <main id="page-etf" class="section"><div class="section-body"><div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。</div><div class="ctrl" style="margin-top:6px"><select id="etfSel" onchange="renderEtf()"><option value="">選擇 ETF…</option><option value="0050">0050 台灣50</option><option value="00981A">00981A 永豐臺灣科技</option><option value="00991A">00991A 中信關鍵半導體</option><option value="00988A">00988A 富邦台灣優質</option></select></div><div id="etfList"></div></div></main>
 
@@ -441,49 +439,36 @@ function renderChip(){
 }
 
 /* === 產業熱力：可展開卡片 === */
+/* === 產業熱力 Treemap === */
 function toggleIndustry(el){
   const body = el.querySelector('.industry-body');
   if(!body) return;
   el.classList.toggle('expanded');
-  if(body.classList.contains('collapsed')){
+  const isCollapsed = body.classList.contains('collapsed');
+  if(isCollapsed){
     body.classList.remove('collapsed');
     gsap.fromTo(body, {opacity:0, y:6}, {opacity:1, y:0, duration:.32, ease:'power2.out'});
   } else {
     gsap.to(body, {opacity:0, y:-4, duration:.2, ease:'power1.in', onComplete:()=>body.classList.add('collapsed')});
   }
 }
-
 function renderHeat(){
   const industries=_heat.industries||[];
-  const map=new Map(allStocks.map(s=>[s.code,s]));
-
   if(!industries.length){
-    ['heatDay','heatWeek','heatMonth'].forEach(id=>{
-      document.getElementById(id).innerHTML='<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無產業數據</div>';
-    });
+    document.getElementById('heatView').innerHTML='<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無產業數據</div>';
     return;
   }
-
-  const wrap=(rows,label,field)=>rows.map(x=>{
-    const bg=heatColor(x[field]);
-    const absPct=Math.abs(x[field]||0);
-    const barWidth=Math.min(100, absPct*10);
+  const map=new Map(allStocks.map(s=>[s.code,s]));
+  const tiles=industries.map(x=>{
+    const bg=heatColor(x.avg_pct);
     const chips=(x.codes||'').split(',').map(c=>{const s=map.get(c); if(!s) return ''; return `<span class="stock-tag" onclick="event.stopPropagation();openDetail('${s.code}')">${s.code} ${s.name}</span>`;}).join('');
-    return `<div class="industry-card" onclick="toggleIndustry(this)">
-      <div class="industry-head">
-        <span class="industry-title">${x.industry}</span>
-        <span class="industry-count">${x.total} 檔</span>
-        <span class="arrow">▼</span>
-      </div>
-      <div class="industry-meta">${label} <b class="${pctClass(x[field])}">${x[field]>0?'+':''}${x[field]}%</b>　上 ${x.up} / 跌 ${x.down}</div>
-      <div class="industry-bar"><div class="industry-bar-fill" style="width:${barWidth}%;background:${bg==='rgba(122,133,153,0.25)'?'var(--muted)':bg}"></div></div>
-      <div class="industry-body collapsed">${chips}</div>
+    const span=Math.max(1,Math.min(3,Math.ceil((x.total||1)/2)));
+    return `<div class="heat-tile" onclick="toggleIndustry(this)" style="background:${bg};grid-row:span ${span};grid-column:span ${span};">
+      <div class="heat-tile-head"><span class="industry-title">${x.industry}</span><span class="arrow">${x.total}</span></div>
+      <div class="heat-tile-body collapsed"><div style="margin-top:6px">${chips}</div></div>
     </div>`;
   }).join('');
-
-  document.getElementById('heatDay').innerHTML=wrap(industries.slice().sort((a,b)=>b.avg_pct-a.avg_pct),'近1日','avg_pct');
-  document.getElementById('heatWeek').innerHTML=wrap([...industries],'近1週','avg_pct');
-  document.getElementById('heatMonth').innerHTML=wrap([...industries],'近1月','avg_pct');
+  document.getElementById('heatView').innerHTML=tiles;
 }
 
 function heatColor(pct){
@@ -562,13 +547,13 @@ function renderDetail(code){
       <div><b>持有邏輯</b><span>${s.hold||'--'}</span></div>
     </div>
     <div class="card" style="margin-top:12px"><h2>概念股</h2><div>${concepts.map(c=>'<span class="stock-tag">'+c+'</span>').join('')||'<span class="muted" style="font-size:12px">無概念股標示</span>'}</div></div>
-    <div class="card" style="margin-top:12px"><h2>同產業 / 概念股</h2><div class="grid grid-4" style="gap:10px">${peerCards.map(x=>`<div class="card"><div class="industry-head"><div class="industry-title">${x.name}</div><div class="muted" style="font-weight:400;font-size:12px">${x.code}</div></div><div class="big" style="font-size:18px;margin-top:6px" class="${pctClass(x.pct)}">${x.price} <span style="font-size:13px" class="${pctClass(x.pct)}">${x.pct>0?'+':''}${x.pct}%</span></div></div>`).join('')}</div></div>
+    <div class="card" style="margin-top:12px"><h2>同產業 / 概念股</h2><div class="grid grid-4" style="gap:10px">${peerCards.map(x=>`<div class="card"><div class="industry-head"><div class="industry-title">${x.name}</div><div class="muted" style="font-weight:400;font-size:12px">${x.code}</div></div><div class="big pct-${pctClass(x.pct)}" style="font-size:18px;margin-top:6px">${x.price} <span style="font-size:13px" class="pct-${pctClass(x.pct)}">${x.pct!=null?(x.pct>0?'+':'')+x.pct+'%':'--%'}</span></div></div>`).join('')}</div></div>
     <div class="card" style="margin-top:12px"><h2>交易劇本</h2><div id="holdBlock" style="font-size:13px"></div></div>
   `;
   const sheet=document.getElementById('sheetBody');
   sheet.innerHTML=html;
   document.getElementById('stockDetail').style.display='block';
-  setTimeout(()=>document.getElementById('sheet').classList.add('open'),0);
+  gsap.fromTo('#sheet', {opacity:0, y:8}, {opacity:1, y:0, duration:.25, ease:'power2.out'});
 }
 
 function renderPf(){
@@ -590,7 +575,7 @@ function animateAll(){
     gsap.fromTo(show, {opacity:0, x:-6}, {opacity:1, x:0, duration:.35, stagger:.012, ease:'power1.out'});
     if(rows.length>40) gsap.set(Array.from(rows).slice(40), {opacity:1, x:0});
   }
-  const cards=document.querySelectorAll('.industry-card');
+  const cards=document.querySelectorAll('.heat-tile');
   const show=cards.length>20?Array.from(cards).slice(0,20):cards;
   gsap.fromTo(show, {opacity:0, y:10}, {opacity:1, y:0, duration:.4, stagger:.025, ease:'power2.out'});
   if(cards.length>20) gsap.set(Array.from(cards).slice(20), {opacity:1, y:0});
