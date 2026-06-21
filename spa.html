@@ -259,12 +259,12 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
   display: block; color: var(--muted); font-size: 10px; font-weight: 700;
   text-transform: uppercase; letter-spacing: .8px;
 }
+body.sheet-open { overflow: hidden; }
 .kv span { display: block; margin-top: 4px; font-size: 15px; font-weight: 700; }
 
 /* 頁面區塊（折疊） */
-.section-body { display: none; }
-.section.active .section-body { display: block; }
-.section { margin-top: 14px; }
+.section { display: none; }
+.section.active { display: block; margin-top: 14px; }
 .footer {
   color: var(--muted); font-size: 12px; margin-top: 18px; padding-top: 10px;
   border-top: 1px solid var(--border);
@@ -375,6 +375,7 @@ document.querySelectorAll('#navTabs .tab').forEach(t=>{
     if(page==='chip') renderChip();
     if(page==='etf') renderEtf();
     if(page==='portfolio') renderPf();
+    window.scrollTo({top:0, behavior:'instant'});
   });
 });
 
@@ -425,7 +426,7 @@ function renderSignals(){
     if((s.bigOrder||0)>1.2) tags.push('<span class="pill ok">大單</span>');
     if(s.limitGene) tags.push('<span class="pill warn">漲停基因</span>');
     if(s.breakoutVol) tags.push('<span class="pill warn">爆量</span>');
-    return `<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div><div class="arrow">▶</div></div><div style="margin-top:6px">${tags.join(' ')}</div><div class="big" style="margin-top:6px;font-size:20px" class="${pctClass(s.pct)}">${s.price} <span style="font-size:13px" class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</span></div><div class="muted" style="font-size:12px;margin-top:4px">成交 ${(s.vol||0).toLocaleString()} 張</div></div>`;
+    return `<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div><div class="arrow">▶</div></div><div style="margin-top:6px">${tags.join(' ')}</div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div><div class="muted" style="font-size:12px;margin-top:4px">成交 ${(s.vol||0).toLocaleString()} 張</div></div>`;
   }).join('') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無符合信號標的。</div>';
 }
 
@@ -435,7 +436,7 @@ function renderChip(){
   const list=allStocks.slice().sort((a,b)=>(b.price*b.vol*1000/avgAmt)-(a.price*a.vol*1000/avgAmt));
   document.getElementById('chipList').innerHTML='<div class="grid grid-4">'+list.map(s=>{
     const proxy=avgAmt?s.price*s.vol*1000/avgAmt:1;
-    return `<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="muted" style="font-size:12px;margin-top:4px">成交額分位 ${Math.round(proxy*50)}%</div><div class="big" style="margin-top:6px;font-size:20px" class="${pctClass(s.pct)}">${s.price} <span style="font-size:13px" class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</span></div></div>`;
+    return `<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="muted" style="font-size:12px;margin-top:4px">成交額分位 ${Math.round(proxy*50)}%</div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div></div>`;
   }).join('')+'</div>';
 }
 
@@ -497,7 +498,7 @@ function renderEtf(){
   const codes=new Set((window.__etf||{})[code]||[]);
   const map=new Map(allStocks.map(s=>[s.code,s]));
   const list=[...codes].map(c=>map.get(c)).filter(Boolean);
-  document.getElementById('etfList').innerHTML=list.length?'<div class="grid grid-4">'+list.map(s=>`<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="big" style="margin-top:6px;font-size:20px" class="${pctClass(s.pct)}">${s.price} <span style="font-size:13px" class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</span></div></div>`).join('')+'</div>':'<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無重疊成分股。</div>';
+  document.getElementById('etfList').innerHTML=list.length?'<div class="grid grid-4">'+list.map(s=>`<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div></div>`).join('')+'</div>':'<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無重疊成分股。</div>';
 }
 
 /* === Portfolio === */
@@ -529,10 +530,17 @@ function importPf(){
 function guessSector(name){ return '其他'; }
 
 /* === Detail === */
-function openDetail(code){ renderDetail(code); }
+function openDetail(code){ document.body.classList.add('sheet-open'); renderDetail(code); }
 function closeSheet(){
-  document.getElementById('sheet').classList.remove('open');
-  setTimeout(()=>document.getElementById('stockDetail').style.display='none',220);
+  const sheet=document.getElementById('sheet');
+  const backdrop=document.getElementById('stockDetail');
+  gsap.to(sheet, {x:24, opacity:0, duration:.2, ease:'power1.in', onComplete:()=>{
+    sheet.classList.remove('open');
+    sheet.style.transform='';
+    sheet.style.opacity='';
+    document.body.classList.remove('sheet-open');
+    backdrop.style.display='none';
+  }});
 }
 function renderDetail(code){
   const s=allStocks.find(x=>x.code===code); if(!s) return;
@@ -577,8 +585,11 @@ function renderPf(){
 function animateAll(){
   gsap.fromTo('.card', {opacity:0, y:16}, {opacity:1, y:0, duration:.45, stagger:.03, ease:'power2.out'});
   const rows=document.querySelectorAll('#snapshotBody tr');
-  gsap.fromTo(rows.length?rows[0]:null, {opacity:0, x:-8}, {opacity:1, x:0, duration:.35, stagger:.012, ease:'power1.out', onComplete:null});
-  if(rows.length>1) gsap.set(rows.length>1?Array.from(rows).slice(1):[], {opacity:1, x:0});
+  if(rows.length){
+    const show=Array.from(rows).slice(0,40);
+    gsap.fromTo(show, {opacity:0, x:-6}, {opacity:1, x:0, duration:.35, stagger:.012, ease:'power1.out'});
+    if(rows.length>40) gsap.set(Array.from(rows).slice(40), {opacity:1, x:0});
+  }
   const cards=document.querySelectorAll('.industry-card');
   const show=cards.length>20?Array.from(cards).slice(0,20):cards;
   gsap.fromTo(show, {opacity:0, y:10}, {opacity:1, y:0, duration:.4, stagger:.025, ease:'power2.out'});
