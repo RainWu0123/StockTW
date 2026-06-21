@@ -262,7 +262,8 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
 .kv span { display: block; margin-top: 4px; font-size: 15px; font-weight: 700; }
 
 /* 頁面區塊（折疊） */
-.section.collapsed .section-body { display: none; }
+.section-body { display: none; }
+.section.active .section-body { display: block; }
 .section { margin-top: 14px; }
 .footer {
   color: var(--muted); font-size: 12px; margin-top: 18px; padding-top: 10px;
@@ -298,7 +299,7 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
 
 <div class="container">
 
-  <main id="page-lobby" class="section">
+  <main id="page-lobby" class="section active"><div class="section-body">
     <div class="grid grid-4" id="summaryCards"><div class="card"><h2>載入中…</h2></div></div>
     <div class="alert">欄位：代號 / 公司 / 現價 / 漲跌 / 量能 / 大單代理 / 漲停基因 / 持有邏輯 / 分級。可排序列、搜尋；點公司名可看個股詳情。</div>
     <div class="ctrl">
@@ -332,53 +333,15 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
     </div>
   </main>
 
-  <main id="page-signals" class="section collapsed"><div class="section-body">
-    <div class="alert">前端即時偵測：大單代理 / 漲停基因 / 爆量突破。</div>
-    <div id="signalList"></div>
-  </div></main>
+  <main id="page-signals" class="section"><div class="section-body"><div class="alert">前端即時偵測：大單代理 / 漲停基因 / 爆量突破。</div><div id="signalList"></div></div></main>
 
-  <main id="page-chip" class="section collapsed"><div class="section-body">
-    <div class="alert">成交額分位替代換手率異形偵測。</div>
-    <div id="chipList"></div>
-  </div></main>
+  <main id="page-chip" class="section"><div class="section-body"><div class="alert">成交額分位替代換手率異形偵測。</div><div id="chipList"></div></div></main>
 
-  <main id="page-heat" class="section collapsed"><div class="section-body">
-    <div class="alert">依產業族群分群：點產業卡片可展開成分股。</div>
-    <div class="grid grid-4" id="heatDay"></div>
-    <div class="grid grid-4" id="heatWeek" style="margin-top:10px"></div>
-    <div class="grid grid-4" id="heatMonth" style="margin-top:10px"></div>
-    <div id="industryDetail" style="margin-top:10px"></div>
-  </div></main>
+  <main id="page-heat" class="section"><div class="section-body"><div class="alert">依產業族群分群：點產業卡片可展開成分股。</div><div class="grid grid-4" id="heatDay"></div><div class="grid grid-4" id="heatWeek" style="margin-top:10px"></div><div class="grid grid-4" id="heatMonth" style="margin-top:10px"></div><div id="industryDetail" style="margin-top:10px"></div></div></main>
 
-  <main id="page-etf" class="section collapsed"><div class="section-body">
-    <div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。</div>
-    <div class="ctrl" style="margin-top:6px">
-      <select id="etfSel" onchange="renderEtf()">
-        <option value="">選擇 ETF…</option>
-        <option value="0050">0050 台灣50</option>
-        <option value="00981A">00981A 永豐臺灣科技</option>
-        <option value="00991A">00991A 中信關鍵半導體</option>
-        <option value="00988A">00988A 富邦台灣優質</option>
-      </select>
-    </div>
-    <div id="etfList"></div>
-  </div></main>
+  <main id="page-etf" class="section"><div class="section-body"><div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。</div><div class="ctrl" style="margin-top:6px"><select id="etfSel" onchange="renderEtf()"><option value="">選擇 ETF…</option><option value="0050">0050 台灣50</option><option value="00981A">00981A 永豐臺灣科技</option><option value="00991A">00991A 中信關鍵半導體</option><option value="00988A">00988A 富邦台灣優質</option></select></div><div id="etfList"></div></div></main>
 
-  <main id="page-portfolio" class="section collapsed"><div class="section-body">
-    <div class="alert">組合資料儲存在瀏覽器 localStorage，請定期 Export。可由此快速組成。</div>
-    <div class="ctrl" style="margin-top:6px">
-      <input type="text" id="pfCode" placeholder="代號" style="width:110px">
-      <input type="number" id="pfShares" placeholder="張數" style="width:100px">
-      <input type="number" id="pfCost" placeholder="持有價" step="0.5" style="width:100px">
-      <button onclick="addPf()">加入</button>
-      <button onclick="clearPf()">清空</button>
-      <button onclick="exportPf()">Exp</button>
-      <button onclick="importPf()">Imp</button>
-      <span class="tier-tag tier-t4" style="background:#1c2230" id="pfCount">0 檔</span>
-    </div>
-    <div class="grid grid-4" id="pfCards"></div>
-    <div class="card" style="margin-top:10px"><h2>風險提示</h2><div id="pfRisk" style="font-size:13px"></div></div>
-  </div></main>
+  <main id="page-portfolio" class="section"><div class="section-body"><div class="alert">組合資料儲存在瀏覽器 localStorage，請定期 Export。可由此快速組成。</div><div class="ctrl" style="margin-top:6px"><input type="text" id="pfCode" placeholder="代號" style="width:110px"><input type="number" id="pfShares" placeholder="張數" style="width:100px"><input type="number" id="pfCost" placeholder="持有價" step="0.5" style="width:100px"><button onclick="addPf()">加入</button><button onclick="clearPf()">清空</button><button onclick="exportPf()">Exp</button><button onclick="importPf()">Imp</button><span class="tier-tag tier-t4" style="background:#1c2230" id="pfCount">0 檔</span></div><div class="grid grid-4" id="pfCards"></div><div class="card" style="margin-top:10px"><h2>風險提示</h2><div id="pfRisk" style="font-size:13px"></div></div></div></main>
 
 </div>
 
@@ -405,8 +368,7 @@ document.querySelectorAll('#navTabs .tab').forEach(t=>{
     ['lobby','signals','chip','heat','etf','portfolio'].forEach(p=>{
       const el = document.getElementById('page-'+p);
       if(!el) return;
-      el.classList.toggle('section', p!==page);
-      el.classList.toggle('collapsed', p!==page);
+      el.classList.toggle('active', p===page);
     });
     if(page==='heat') renderHeat();
     if(page==='signals') renderSignals();
@@ -417,7 +379,7 @@ document.querySelectorAll('#navTabs .tab').forEach(t=>{
 });
 
 function pctClass(p){ return p>0?'up':p<0?'down':'muted'; }
-function toggleSection(id){ document.getElementById(id).classList.toggle('collapsed'); }
+function toggleSection(id){ document.getElementById(id).classList.toggle('active'); }
 function setSort(k){ if(currentSort===k) currentDir*=-1; else{currentSort=k;currentDir=1;} renderLobby(); }
 
 function sortFn(a,b){
