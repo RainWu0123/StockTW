@@ -337,7 +337,7 @@ body.sheet-open { overflow: hidden; }
 
   <main id="page-heat" class="section"><div class="section-body"><div class="alert">依產業族群分群：點擊色塊可展開成分股。面積越大代表檔數越多。</div><div class="heat-grid" id="heatView"></div><div id="industryDetail" style="margin-top:10px"></div></div></main>
 
-  <main id="page-etf" class="section"><div class="section-body"><div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。</div><div class="ctrl" style="margin-top:6px"><select id="etfSel" onchange="renderEtf()"><option value="">選擇 ETF…</option><option value="0050">0050 台灣50</option><option value="00981A">00981A 永豐臺灣科技</option><option value="00991A">00991A 中信關鍵半導體</option><option value="00988A">00988A 富邦台灣優質</option></select></div><div id="etfList"></div></div></main>
+  <main id="page-etf" class="section"><div class="section-body"><div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。選 ETF 可看成分股；選「全部追蹤」看所有含 ETF 標記的個股。</div><div class="ctrl" style="margin-top:6px"><select id="etfSel" onchange="renderEtf()"><option value="">全部追蹤</option><option value="0050">0050 台灣50</option><option value="00981A">00981A 永豐臺灣科技</option><option value="00991A">00991A 中信關鍵半導體</option><option value="00988A">00988A 富邦台灣優質</option></select></div><div id="etfList"></div></div></main>
 
   <main id="page-portfolio" class="section"><div class="section-body"><div class="alert">組合資料儲存在瀏覽器 localStorage，請定期 Export。可由此快速組成。</div><div class="ctrl" style="margin-top:6px"><input type="text" id="pfCode" placeholder="代號" style="width:110px"><input type="number" id="pfShares" placeholder="張數" style="width:100px"><input type="number" id="pfCost" placeholder="持有價" step="0.5" style="width:100px"><button onclick="addPf()">加入</button><button onclick="clearPf()">清空</button><button onclick="exportPf()">Exp</button><button onclick="importPf()">Imp</button><span class="tier-tag tier-t4" style="background:#1c2230" id="pfCount">0 檔</span></div><div class="grid grid-4" id="pfCards"></div><div class="card" style="margin-top:10px"><h2>風險提示</h2><div id="pfRisk" style="font-size:13px"></div></div></div></main>
 
@@ -479,11 +479,15 @@ function heatColor(pct){
 
 function renderEtf(){
   const code=document.getElementById('etfSel').value;
-  if(!code){ document.getElementById('etfList').innerHTML=''; return; }
-  const codes=new Set((window.__etf||{})[code]||[]);
-  const map=new Map(allStocks.map(s=>[s.code,s]));
-  const list=[...codes].map(c=>map.get(c)).filter(Boolean);
-  document.getElementById('etfList').innerHTML=list.length?'<div class="grid grid-4">'+list.map(s=>`<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div></div>`).join('')+'</div>':'<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無重疊成分股。</div>';
+  let list=[];
+  if(!code){
+    list=allStocks.filter(s=>(s.etf_tags||[]).length>0).sort((a,b)=>a.code.localeCompare(b.code));
+  } else {
+    const codes=new Set((window.__etf||{})[code]||[]);
+    const map=new Map(allStocks.map(s=>[s.code,s]));
+    list=[...codes].map(c=>map.get(c)).filter(Boolean);
+  }
+  document.getElementById('etfList').innerHTML=list.length?'<div class="grid grid-4">'+list.map(s=>`<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="muted" style="font-size:11px;margin-top:4px">${(s.etf_tags||[]).join(', ')}</div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div></div>`).join('')+'</div>':'<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無符合條件的成分股。</div>';
 }
 
 /* === Portfolio === */

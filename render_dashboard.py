@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render data.json + static dashboard.html from TWSE snapshot."""
 import os, json, glob
+import yfinance as yf
 from datetime import datetime
 
 BASE = "/home/ubuntu/investment"
@@ -56,6 +57,35 @@ TIER_META = {
 }
 def tier_meta(t):
     return TIER_META.get(t, TIER_META["T4"])
+
+def load_etf_universe():
+    p = os.path.join(BASE, "data", "etf.json")
+    if not os.path.exists(p):
+        return {}
+    with open(p, "r", encoding="utf-8") as f:
+        d = json.load(f)
+    etfs = d.get("etfs", {})
+    mapping = {}
+    for etf, codes in etfs.items():
+        for c in codes:
+            mapping.setdefault(c, []).append(etf)
+    return mapping
+
+def fetch_etf_price(code):
+    try:
+        ticker = yf.Ticker(f"{code}.TW")
+        info = ticker.info
+        price = info.get("currentPrice") or info.get("regularMarketPrice")
+        prev = info.get("previousClose")
+        if price is None or prev is None or prev == 0:
+            return None, 0.0, 0
+        pct = round((price - prev) / prev * 100, 2)
+        vol = 0
+        if info.get("volume"):
+            vol = int(info.get("volume") / 1000)
+        return round(price, 2), pct, vol
+    except Exception:
+        return None, 0.0, 0
 
 NOTE = {
     "2327":"00981A/00992A/00991A 核心持股，今日漲停創高",
@@ -264,9 +294,8 @@ def main():
         subprocess.run([sys.executable, os.path.join(BASE, "fetch_twse.py")], check=False)
 
     date, stocks = load_snapshot()
-    if not stocks:
-        print("[warn] no new snapshot found; keeping existing data.json if any.", flush=True)
-    else:
+    etf_map = load_etf_universe()
+    if stocks:
         scores_map, scores_meta = load_scores()
         stocks_map = {s["code"]: s for s in stocks}
         out = []
@@ -287,6 +316,7 @@ def main():
                 "tier_color": m.get("color", "#7a8599"),
                 "hold": m.get("hold", "--"),
                 "note": NOTE.get(s["code"], ""),
+                "etf_tags": etf_map.get(s["code"], []),
             }
             if sc.get("score") is not None:
                 row["score"] = sc["score"]
@@ -294,17 +324,83 @@ def main():
                 row["parts"] = sc["parts"]
             out.append(row)
 
+        master_codes = set(stocks_map.keys())
+        need_fetch = [c for c in etf_map.keys() if c not in master_codes]
+        print(f"[etf] fetching {len(need_fetch)} ETF components via yfinance", flush=True)
+        for code in need_fetch:
+            price, pct, vol = fetch_etf_price(code)
+            if price is None:
+                continue
+            t = "T4"
+            m = tier_meta(t)
+            row = {
+                "code": code,
+                "name": code,
+                "price": price,
+                "pct": pct,
+                "vol": vol,
+                "tier": t,
+                "tier_label": m.get("label", t),
+                "tier_cls": m.get("cls", "tier-t4"),
+                "tier_color": m.get("color", "#7a8599"),
+                "hold": m.get("hold", "--"),
+                "note": "ETF 成分追蹤",
+                "etf_tags": etf_map.get(code, []),
+            }
+            out.append(row)
+        out.sort(key=lambda x: x["code"])
+
         payload = {
             "date": date,
             "updated": datetime.now().isoformat(),
             "stocks": out,
             "meta": scores_meta,
+            "etf_universe": etf_map,
         }
         if not scores_meta.get("rules_version"):
             payload.pop("meta", None)
         with open(os.path.join(BASE, "data.json"), "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
         print(f"[data.json] written {len(out)} stocks at {date}", flush=True)
+    else:
+        data_path = os.path.join(BASE, "data.json")
+        if os.path.exists(data_path):
+            with open(data_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+            out = payload.get("stocks", [])
+            scores_meta = payload.get("meta", {})
+            master_codes = {s["code"] for s in out}
+            need_fetch = [c for c in etf_map.keys() if c not in master_codes]
+            print(f"[etf] off-hours: fetching {len(need_fetch)} ETF components via yfinance", flush=True)
+            for code in need_fetch:
+                price, pct, vol = fetch_etf_price(code)
+                if price is None:
+                    continue
+                t = "T4"
+                m = tier_meta(t)
+                row = {
+                    "code": code,
+                    "name": code,
+                    "price": price,
+                    "pct": pct,
+                    "vol": vol,
+                    "tier": t,
+                    "tier_label": m.get("label", t),
+                    "tier_cls": m.get("cls", "tier-t4"),
+                    "tier_color": m.get("color", "#7a8599"),
+                    "hold": m.get("hold", "--"),
+                    "note": "ETF 成分追蹤",
+                    "etf_tags": etf_map.get(code, []),
+                }
+                out.append(row)
+            out.sort(key=lambda x: x["code"])
+            payload["stocks"] = out
+            payload["etf_universe"] = etf_map
+            with open(data_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            print(f"[data.json] updated with {len(out)} stocks (off-hours ETF supplement)", flush=True)
+        else:
+            print("[warn] no data.json to supplement.", flush=True)
 
     # Always publish SPA as public pages
     for name in ("index.html", "dashboard_latest.html"):

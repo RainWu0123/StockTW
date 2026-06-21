@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個股深度研究 — 台股 AI 投資追蹤</title>
+<style>
+:root{--bg:#080a0e;--panel:#11141b;--panel2:#181c26;--text:#d8dee8;--muted:#7a8599;--accent:#4da6ff;--green:#2ee89e;--red:#ff4d5e;--orange:#f09030;--border:#232a38;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",Roboto,sans-serif;line-height:1.6}
+header{padding:18px 24px;border-bottom:1px solid var(--border);background:#0d1017;position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+header h1{font-size:18px;margin:0;font-weight:600}
+header a{color:var(--accent);text-decoration:none;font-size:13px}
+.container{max-width:1200px;margin:0 auto;padding:18px 16px 60px}
+.grid{display:grid;gap:14px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.grid-3,.grid-2{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(0,0,0,.45)}
+.card h2{font-size:13px;color:var(--muted);margin:0 0 10px;text-transform:uppercase;letter-spacing:.8px}
+.big{font-size:26px;font-weight:700;display:block;margin-top:4px}
+.muted{color:var(--muted);font-size:12px}
+.tag{display:inline-block;font-size:11px;padding:3px 8px;border-radius:999px;font-weight:700;margin-right:4px;margin-bottom:4px}
+.t1{background:#122e26;color:var(--green);border:1px solid rgba(46,232,158,.18)}
+.t2{background:#14263a;color:var(--accent);border:1px solid rgba(77,166,255,.18)}
+.t3{background:#3a2714;color:var(--orange);border:1px solid rgba(240,144,48,.18)}
+.t4{background:#221a1a;color:#9aa1ad;border:1px solid rgba(156,163,175,.12)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th{color:var(--muted);font-weight:600;text-align:left;padding:8px 6px;border-bottom:1px solid var(--border);cursor:pointer;user-select:none;white-space:nowrap}
+th:hover{color:var(--text)}
+td{padding:10px 6px;border-bottom:1px solid #1b2130}
+tr:hover td{background:rgba(255,255,255,.015)}
+.up{color:var(--green)}.down{color:var(--red)}.flat{color:var(--muted)}
+.ctrl{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;align-items:center}
+.ctrl input,.ctrl select{background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:9px 12px;font-size:14px;outline:none}
+.ctrl input:focus,.ctrl select:focus{border-color:var(--accent)}
+.section{margin-top:22px}
+.section h2{font-size:15px;font-weight:600;margin:0 0 12px}
+.back{display:inline-block;margin-bottom:14px;color:var(--accent);cursor:pointer;font-size:13px}
+.chart{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px;margin-top:12px}
+.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+@media(max-width:900px){.kv{grid-template-columns:repeat(2,1fr)}}
+.kv div{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.kv b{display:block;color:var(--muted);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+.kv span{font-size:15px;font-weight:700;display:block;margin-top:2px}
+.market-tag{font-size:11px;color:var(--muted);background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:2px 8px;margin-left:6px}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>📐 個股深度研究 <span class="market-tag" id="headerDate">--</span></h1>
+    <div class="muted" style="margin-top:4px">法人研究員 SubAgent 產出 · 數據可追溯 · 零炒作</div>
+  </div>
+  <a href="index.html">← 返回儀表板</a>
+</header>
+<div class="container">
+  <div class="ctrl">
+    <input type="text" id="searchBox" placeholder="🔍 搜尋名稱或代號" oninput="renderResearch()">
+    <select id="sortSel" onchange="setRSort(this.value)">
+      <option value="default">預設</option>
+      <option value="pct">漲跌幅</option>
+      <option value="price">股價</option>
+      <option value="tier">分級</option>
+      <option value="score">評分</option>
+    </select>
+    <button onclick="setRSort('default')">重置</button>
+    <span class="muted" id="rCount" style="align-self:center"></span>
+  </div>
+  <div class="section">
+    <div class="grid grid-3" id="researchCards"></div>
+  </div>
+  <div class="section" id="reportSection" style="display:none">
+    <div class="back" onclick="closeReport()">← 返回列表</div>
+    <div class="card" id="reportCard"><div id="reportBody"></div></div>
+  </div>
+</div>
+<script>
+let rStocks=[], rSort='default', rDir=1;
+function setRSort(k){ if(rSort===k) rDir*=-1; else{rSort=k;rDir=1;} renderResearch(); }
+function rSortFn(a,b){
+  const k=rSort;
+  if(k==='default') return ({T1:1,T2:2,T3:3,T4:4}[a.tier]||4)-({T1:1,T2:2,T3:3,T4:4}[b.tier]||4);
+  let av=a[k],bv=b[k];
+  if(['pct','price','score','vol'].indexOf(k)>=0) return (av-bv)*rDir;
+  if(typeof av==='string') av=av.toLowerCase(); if(typeof bv==='string') bv=bv.toLowerCase();
+  return av<bv?-1*rDir:av>bv?1*rDir:0;
+}
+function renderResearch(){
+  const q=(document.getElementById('searchBox').value||'').toLowerCase();
+  const rows=rStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
+  rows.sort(rSortFn);
+  document.getElementById('researchCards').innerHTML=rows.map(s=>`<div class="card" style="cursor:pointer" onclick="openReport('${s.code}')"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px"><div><span class="tag ${s.tier_cls||'t4'}">${s.tier||'T4'}</span><span class="muted" style="font-size:11px">${s.code}</span></div><div class="muted" style="font-size:11px">${(s.etf_tags||[]).join(', ')}</div></div><div style="font-size:16px;font-weight:700;margin-top:8px">${s.name||s.code}</div><div class="big pct-${pctClass(s.pct)}" style="font-size:22px;margin-top:4px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div><div class="muted" style="margin-top:6px">成交量 ${(s.vol||0).toLocaleString()} 張${s.score!=null?' · 評分 '+s.score:''}</div></div>`).join('');
+  document.getElementById('rCount').textContent=rows.length+' / '+rStocks.length+' 檔';
+}
+function pctClass(p){ return p>0?'up':p<0?'down':'flat'; }
+function openReport(code){
+  const s=rStocks.find(x=>x.code===code); if(!s) return;
+  document.getElementById('reportSection').style.display='block';
+  document.getElementById('reportCard').scrollIntoView({behavior:'instant'});
+  fetch('research/'+code+'_'+s.name+'.md').then(r=>r.text()).then(t=>{
+    document.getElementById('reportBody').innerHTML='<h1 style="margin:0 0 4px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><div class="muted" style="margin-bottom:14px">'+s.note+'</div><pre style="white-space:pre-wrap;font-family:inherit;font-size:13.5px;line-height:1.7;color:var(--text)">'+t+'</pre>';
+  }).catch(()=>{
+    document.getElementById('reportBody').innerHTML='<h1 style="margin:0 0 4px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><div class="alert" style="border-color:#252a36;color:var(--muted)">研究報告尚未產出，請稍後再試。</div>';
+  });
+}
+function closeReport(){
+  document.getElementById('reportSection').style.display='none';
+}
+fetch('data.json').then(r=>r.json()).then(d=>{
+  document.getElementById('headerDate').textContent=d.date||'--';
+  rStocks=d.stocks||[];
+  renderResearch();
+}).catch(e=>{
+  document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:var(--red);color:#fbb">data.json 讀取失敗：'+e.message+'</div>');
+});
+</script>
+</body>
+</html>

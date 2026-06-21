@@ -1,0 +1,14 @@
+{
+  "date": "2026-06-21",
+  "updated": "2026-06-21T09:14:33.867821",
+  "stocks": [],
+  "meta": {
+    "fields": {
+      "revenue_yoy": "待補",
+      "foreign_net_days": "待補",
+      "dealer_net_days": "待補",
+      "dist_52w_high": "待補"
+    },
+    "note": "量化评分暂缓字段：营收YoY、法人连续天数、52周距离、5日均量比（5日K缺失）。请先在 5-agent 会议上讨论7日历史补全方案。"
+  }
+}
