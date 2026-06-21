@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""批量生成個股研究報告，基於 data.json 現有數據 + 行業模板"""
+"""重建所有 research_data/*.md（繁体化）"""
 import json, os
 
 DATA_DIR = '/home/ubuntu/investment'
+RD = f'{DATA_DIR}/research_data'
 
 with open(f'{DATA_DIR}/data.json') as f:
     data = json.load(f)
 
 stocks = data.get('stocks', [])
 
-# 行業常識庫 (基於公開資料整理)
 INDUSTRY_NOTES = {
     '2303': {'peers': ['6770','5347'], 'note': '成熟製程龍頭，車用/MCU/PMIC 需求穩健，不跟進 2nm 競賽。'},
     '2301': {'peers': ['2308','2838'], 'note': '電子零組件，伺服器/綠能動能。'},
@@ -50,29 +50,31 @@ INDUSTRY_NOTES = {
     '6770': {'peers': ['2303','5347'], 'note': '成熟製程/晶圓代工。'},
 }
 
-def gen_report(stock):
-    code = stock.get('code','')
+# 先刪除所有 .md
+for fn in os.listdir(RD):
+    if fn.endswith('.md'):
+        os.remove(f'{RD}/{fn}')
+
+print('Deleted old reports')
+
+count = 0
+for stock in stocks:
+    code = stock.get('code', '')
     name = stock.get('name', code)
     tier = stock.get('tier', 'T4')
     industry = stock.get('industry', '待補')
     price = stock.get('price', 0)
     pct = stock.get('pct', 0)
     score = stock.get('score', 0)
-    etf_tags = stock.get('etf_tags', [])
-    note = stock.get('note', '')
-    
     peers = INDUSTRY_NOTES.get(code, {}).get('peers', [])
-    peer_names = []
-    # 嘗試從 data.json 查同業名稱
     stock_map = {s['code']: s['name'] for s in stocks}
+    peer_names = []
     for p in peers:
         if p in stock_map:
             peer_names.append(f"{stock_map[p]} ({p})")
     peer_str = '、'.join(peer_names) if peer_names else '待補'
-    
     industry_note = INDUSTRY_NOTES.get(code, {}).get('note', f'{industry}產業。')
     
-    # 根據 code 生成基本面對應摘要
     if code == '2330':
         fundamentals = '先進製程龍頭，2nm 量產按規劃推進，CoWoS 先進封裝產能持續擴充。'
     elif code == '2317':
@@ -148,24 +150,8 @@ def gen_report(stock):
 - TWSE 公開資訊
 - 報告日期：2026-06-21
 '''
-    return report
-
-# 生成所有缺少的報告
-existing = set()
-for fn in os.listdir(f'{DATA_DIR}/research_data'):
-    if fn.endswith('.md'):
-        existing.add(fn.split('.')[0])
-
-count = 0
-for stock in stocks:
-    code = stock.get('code', '')
-    if code in existing:
-        continue
-    rpt = gen_report(stock)
-    path = f'{DATA_DIR}/research_data/{code}.md'
-    with open(path, 'w') as f:
-        f.write(rpt)
+    with open(f'{RD}/{code}.md', 'w', encoding='utf-8') as f:
+        f.write(report)
     count += 1
 
-print(f'Generated {count} new reports')
-print(f'Total reports now: {len(existing) + count}')
+print(f'Rebuilt {count} reports')
