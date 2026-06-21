@@ -2,6 +2,7 @@
 """Render data.json + static dashboard.html from TWSE snapshot."""
 import os, json, glob
 import yfinance as yf
+import requests
 from datetime import datetime
 
 BASE = "/home/ubuntu/investment"
@@ -72,20 +73,54 @@ def load_etf_universe():
     return mapping
 
 def fetch_etf_price(code):
+    price = prev = vol = None
+    # 1) yfinance info
     try:
         ticker = yf.Ticker(f"{code}.TW")
         info = ticker.info
         price = info.get("currentPrice") or info.get("regularMarketPrice")
         prev = info.get("previousClose")
-        if price is None or prev is None or prev == 0:
-            return None, 0.0, 0
-        pct = round((price - prev) / prev * 100, 2)
-        vol = 0
-        if info.get("volume"):
-            vol = int(info.get("volume") / 1000)
-        return round(price, 2), pct, vol
+        vol = info.get("volume")
     except Exception:
+        pass
+    # 2) yfinance history fallback
+    if price is None or prev is None or prev == 0:
+        try:
+            hist = yf.Ticker(f"{code}.TW").history(period="5d")
+            if not hist.empty:
+                price = round(float(hist["Close"].iloc[-1]), 2)
+                if len(hist) >= 2:
+                    prev = round(float(hist["Close"].iloc[-2]), 2)
+                else:
+                    prev = price
+                vol = int(hist["Volume"].iloc[-1]) if "Volume" in hist.columns else None
+        except Exception:
+            pass
+    # 3) TWSE API fallback
+    if price is None or prev is None or prev == 0:
+        try:
+            url = f"https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_{code}.tw"
+            r = requests.get(url, headers={"User-Agent":"Mozilla/5.0"}, timeout=10)
+            d = r.json().get("msgArray", [{}])[0]
+            p = d.get("z") or d.get("o") or 0
+            if p:
+                price = round(float(p), 2)
+                prev = round(float(d.get("y", 0) or 0), 2)
+                vol = int(d.get("v", 0) or 0)
+        except Exception:
+            pass
+    if price is None or prev is None or prev == 0:
         return None, 0.0, 0
+    pct = round((price - prev) / prev * 100, 2)
+    vol_int = 0
+    if vol is not None:
+        try:
+            vol_int = int(vol)
+            if vol_int > 1000000:
+                vol_int = int(vol_int / 1000)
+        except Exception:
+            vol_int = 0
+    return round(price, 2), pct, vol_int
 
 NOTE = {
     "2327":"00981A/00992A/00991A 核心持股，今日漲停創高",
