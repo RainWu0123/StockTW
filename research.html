@@ -99,14 +99,31 @@ function openReport(code){
   const s=rStocks.find(x=>x.code===code); if(!s) return;
   document.getElementById('reportSection').style.display='block';
   document.getElementById('reportCard').scrollIntoView({behavior:'instant'});
-  fetch('research/'+code+'_'+s.name+'.md').then(r=>r.text()).then(t=>{
-    document.getElementById('reportBody').innerHTML='<h1 style="margin:0 0 4px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><div class="muted" style="margin-bottom:14px">'+s.note+'</div><pre style="white-space:pre-wrap;font-family:inherit;font-size:13.5px;line-height:1.7;color:var(--text)">'+t+'</pre>';
+  // 修正路徑：research_data/{code}.md
+  const mdPath = 'research_data/'+code+'.md';
+  fetch(mdPath).then(r=>r.text()).then(t=>{
+    const html = simpleMd(t);
+    document.getElementById('reportBody').innerHTML='<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px"><h1 style="margin:0;font-size:22px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><span class="tag '+s.tier_cls||'t4'+'">'+(s.tier||'T4')+'</span><span class="market-tag">'+(s.industry||'')+'</span></div>'+html;
   }).catch(()=>{
     document.getElementById('reportBody').innerHTML='<h1 style="margin:0 0 4px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><div class="alert" style="border-color:#252a36;color:var(--muted)">研究報告尚未產出，請稍後再試。</div>';
   });
 }
 function closeReport(){
   document.getElementById('reportSection').style.display='none';
+}
+// 簡易 Markdown 轉 HTML（足夠處理研究報告格式）
+function simpleMd(text){
+  let h=text;
+  h=h.replace(/^### (.+)$/gm,'<h3 style="font-size:14px;font-weight:600;color:var(--accent);margin:18px 0 8px">$1</h3>');
+  h=h.replace(/^## (.+)$/gm,'<h2 style="font-size:16px;font-weight:700;margin:22px 0 10px;border-bottom:1px solid var(--border);padding-bottom:6px">$1</h2>');
+  h=h.replace(/^# (.+)$/gm,'<h1 style="font-size:20px;font-weight:700;margin:0 0 12px">$1</h1>');
+  h=h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  h=h.replace(/^- (.+)$/gm,'<li style="margin-left:18px;margin-bottom:4px">$1</li>');
+  h=h.replace(/<li[^>]*>/g,'<ul style="margin:6px 0;padding-left:0;list-style:none">$&');
+  h=h.replace(/^\|(.+)\|$/gm,function(m,c){return '<tr>'+c.split('|').map(x=>'<td style="padding:6px 8px;border-bottom:1px solid #1b2130;font-size:13px">'+x.trim()+'</td>').join('')+'</tr>';});
+  h=h.replace(/((<tr>.*<\/tr>\n?)+)/g,'<table style="width:100%;border-collapse:collapse;margin:8px 0">$1</table>');
+  h=h.replace(/\n{2,}/g,'<div style="height:10px"></div>');
+  return h;
 }
 fetch('data.json').then(r=>r.json()).then(d=>{
   document.getElementById('headerDate').textContent=d.date||'--';
