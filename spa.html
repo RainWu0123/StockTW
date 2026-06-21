@@ -587,7 +587,7 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   document.getElementById('headerDate').textContent=d.date; document.getElementById('headerTime').textContent=d.updated||'';
   allStocks=d.stocks||[]; computeDerived(); renderSummary(); renderLobby();
   gsap.fromTo('header', {opacity:0, y:-10}, {opacity:1, y:0, duration:.5, ease:'power2.out', onComplete:animateAll});
-  fetch('heatmap.json').then(r=>r.json()).then(h=>{ _heat=h||{industries:[]}; }).catch(()=>{});
+  fetch('data/heatmap.json').then(r=>r.json()).then(h=>{ _heat=h||{industries:[]}; }).catch(()=>{});
   fetch('data/etf.json').then(r=>r.json()).then(e=>{ window.__etf=e.etfs||{}; window.__concepts=e.concepts||{}; window.__peers=e.peers||{}; }).catch(()=>{});
 }).catch(e=>{ document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:var(--red);color:#fbb">data.json 讀取失敗：'+e.message+'</div>'); });
 
