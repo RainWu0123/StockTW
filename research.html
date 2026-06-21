@@ -99,11 +99,29 @@ function openReport(code){
   const s=rStocks.find(x=>x.code===code); if(!s) return;
   document.getElementById('reportSection').style.display='block';
   document.getElementById('reportCard').scrollIntoView({behavior:'instant'});
-  // 修正路徑：research_data/{code}.md
   const mdPath = 'research_data/'+code+'.md';
-  fetch(mdPath).then(r=>r.text()).then(t=>{
-    const html = simpleMd(t);
-    document.getElementById('reportBody').innerHTML='<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px"><h1 style="margin:0;font-size:22px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><span class="tag '+(s.tier_cls||'t4')+'">'+(s.tier||'T4')+'</span><span class="market-tag">'+(s.industry||'')+'</span></div>'+html;
+  const chartPath = 'research_data/'+code+'.json';
+  // 嘗試同時載入報告 + 價格歷史
+  Promise.all([
+    fetch(mdPath).then(r=>r.text()).catch(()=>null),
+    fetch(chartPath).then(r=>r.json()).catch(()=>null)
+  ]).then(([mdText, chart])=>{
+    let chartHtml = '';
+    if(chart && chart.closes && chart.closes.length>1){
+      const w=600, h=120, pad=4;
+      const cs = chart.closes;
+      const mn = Math.min(...cs), mx = Math.max(...cs);
+      const rng = mx-mn || 1;
+      const pts = cs.map((v,i)=>{
+        const x = pad + (i/(cs.length-1))*(w-2*pad);
+        const y = h-pad - ((v-mn)/rng)*(h-2*pad);
+        return `${x},${y}`;
+      }).join(' ');
+      const color = cs[cs.length-1]>=cs[0]?'var(--green)':'var(--red)';
+      chartHtml = `<div class="chart"><h2 style="font-size:13px;color:var(--muted);margin:0 0 8px;text-transform:uppercase;letter-spacing:.6px">近三個月股價走勢</h2><svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" style="width:100%;height:120px"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2"/></svg><div class="muted" style="margin-top:6px">收盤：${chart.last||cs[cs.length-1]} 元（近 ${cs.length} 交易日）</div></div>`;
+    }
+    const mdHtml = mdText ? simpleMd(mdText) : '<div class="alert" style="border-color:#252a36;color:var(--muted)">研究報告尚未產出，請稍後再試。</div>';
+    document.getElementById('reportBody').innerHTML='<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px"><h1 style="margin:0;font-size:22px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><span class="tag '+(s.tier_cls||'t4')+'">'+(s.tier||'T4')+'</span><span class="market-tag">'+(s.industry||'')+'</span></div>' + chartHtml + mdHtml;
   }).catch(()=>{
     document.getElementById('reportBody').innerHTML='<h1 style="margin:0 0 4px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><div class="alert" style="border-color:#252a36;color:var(--muted)">研究報告尚未產出，請稍後再試。</div>';
   });
