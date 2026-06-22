@@ -33,13 +33,25 @@ def clamp(v, lo=0.0, hi=100.0):
 # === 五維量化函數（全部讀 API 字段） ===
 
 def score_liquidity(s):
+    """短線流動性 = 成交金額（30%）+ 價量齊升攻勢（70%）"""
     price = safe_num(s.get("price"), 0)
     vol = safe_num(s.get("vol", 0))
     turnover = (vol * price * 1000) / 10000 if price > 0 else 0
-    t_score = min(turnover / 5000, 1.0) * 60
-    pct = abs(safe_num(s.get("pct", 0)))
-    spread_score = max(0, (5 - pct) / 5) * 40
-    return clamp(t_score + spread_score)
+    # 成交金額基礎分（0-30）
+    t_score = min(turnover / 5000, 1.0) * 30
+    pct = safe_num(s.get("pct", 0))
+    # 價量配合：量 > 0 且 pct > 0（攻勢）得高分
+    if vol > 0 and pct > 3:
+        attack_score = 70
+    elif vol > 0 and pct > 1:
+        attack_score = 55
+    elif vol > 0 and pct > 0:
+        attack_score = 40
+    elif vol > 0 and pct > -2:
+        attack_score = 20
+    else:
+        attack_score = 5
+    return clamp(t_score + attack_score)
 
 def score_momentum(s):
     pct = safe_num(s.get("pct"), 0)
@@ -54,21 +66,23 @@ def score_momentum(s):
         pos = (price - low) / (high - low)
         score += pos * 30
     return clamp(score)
-
 def score_alpha(s):
+    """短線 alpha = 相對大盤強弱 + 動能爆發度，不是平穩度"""
     pct = safe_num(s.get("pct"), 0)
-    beta = safe_num(s.get("beta"), 1)
     score = 0.0
-    if pct > 3:
+    # 相對強弱（0-60）：越強越高分，但門檻提高
+    if pct > 5:
         score += 50
-    elif pct > 1:
+    elif pct > 3:
         score += 35
-    elif pct > -1:
+    elif pct > 1:
         score += 20
-    elif pct > -3:
+    elif pct > -1:
         score += 10
-    beta_dev = abs(beta - 1)
-    score += max(0, (1 - min(beta_dev, 1))) * 50
+    else:
+        score += 3
+    # 爆發度 proxy：漲幅越大越有 alpha（0-40）
+    score += min(abs(pct) / 5, 1.0) * 30
     return clamp(score)
 
 def score_fund_flow(s):
