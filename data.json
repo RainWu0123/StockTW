@@ -8,12 +8,12 @@
       "price": 24.35,
       "pct": -0.81,
       "vol": 40246,
-      "score": 32.71,
+      "score": 39.48,
       "note": "ETF成分股(00988A)",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 33.2,
-      "s2_raw": 32.71,
+      "s1_raw": 35.33,
+      "s2_raw": 39.48,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 43.39,
@@ -26,8 +26,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -55,9 +54,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 43.81,
-      "s1_raw": 41.26,
-      "s2_raw": 43.81,
+      "score": 52.41,
+      "s1_raw": 46.13,
+      "s2_raw": 52.41,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 38.25,
@@ -70,8 +69,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -92,12 +90,12 @@
       "price": 74.3,
       "pct": -0.54,
       "vol": 14784,
-      "score": 31.72,
+      "score": 40.62,
       "note": "ETF成分股(00988A)",
       "tier_label": "不建議",
       "tier_cls": "tier-t4",
-      "s1_raw": 29.82,
-      "s2_raw": 31.72,
+      "s1_raw": 30.45,
+      "s2_raw": 40.62,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 32.01,
@@ -126,17 +124,17 @@
     {
       "code": "1301",
       "name": "台塑",
-      "tier": "A",
+      "tier": "S1",
       "industry": "石化",
       "price": 52.4,
       "pct": 3.15,
       "vol": 51436,
-      "score": 60.43,
+      "score": 72.07,
       "note": "ETF成分股(0050)",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "s1_raw": 61.75,
-      "s2_raw": 60.43,
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
+      "s1_raw": 72.07,
+      "s2_raw": 66.54,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 78.23,
@@ -146,12 +144,13 @@
         "fundamental": 50.56
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "3-10天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 8
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "A",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 333564838113.3499,
       "trailingPE": null,
@@ -170,12 +169,12 @@
       "price": 152.5,
       "pct": 9.71,
       "vol": 56524,
-      "score": 68.41,
+      "score": 80.28,
       "note": "ETF成分股(0050)",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
-      "s1_raw": 68.41,
-      "s2_raw": 68.72,
+      "s1_raw": 80.28,
+      "s2_raw": 73.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.69,
@@ -186,10 +185,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -208,18 +207,18 @@
       "price": 56.2,
       "pct": 3.5,
       "vol": 32969,
-      "tier": "A",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
+      "tier": "S1",
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
       "note": "ETF 成分追蹤",
       "etf_tags": [
         "0050"
       ],
-      "score": 60.48,
-      "s1_raw": 63.09,
-      "s2_raw": 60.48,
+      "score": 74.51,
+      "s1_raw": 74.51,
+      "s2_raw": 64.39,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 83.28,
@@ -229,12 +228,13 @@
         "fundamental": 35.63
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "3-10天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 8
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "A",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 328714725580.4454,
       "trailingPE": null,
@@ -253,12 +253,12 @@
       "price": 19.5,
       "pct": 2.9,
       "vol": 128895,
-      "score": 49.46,
+      "score": 59.86,
       "note": "ETF成分股(0050/00988A)",
       "tier_label": "觀察",
       "tier_cls": "tier-t3",
-      "s1_raw": 51.59,
-      "s2_raw": 49.46,
+      "s1_raw": 59.86,
+      "s2_raw": 54.21,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 67.2,
@@ -290,18 +290,18 @@
       "price": 231.5,
       "pct": 9.72,
       "vol": 44354,
-      "tier": "S2",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
+      "tier": "S1",
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
       "note": "ETF 成分追蹤",
       "etf_tags": [
         "0050"
       ],
-      "score": 67.58,
-      "s1_raw": 66.93,
-      "s2_raw": 67.58,
+      "score": 78.81,
+      "s1_raw": 78.81,
+      "s2_raw": 71.06,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 82.03,
@@ -311,13 +311,13 @@
         "fundamental": 49.16
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 525297469973.0,
       "trailingPE": 35.128983,
@@ -336,12 +336,12 @@
       "price": 160.0,
       "pct": 9.59,
       "vol": 63848,
-      "score": 68.74,
+      "score": 80.33,
       "note": "ADR 25%，爆量29萬張，矽光子題材",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
-      "s1_raw": 68.74,
-      "s2_raw": 69.33,
+      "s1_raw": 80.33,
+      "s2_raw": 74.48,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.83,
@@ -352,10 +352,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -376,12 +376,12 @@
       "price": 2150.0,
       "pct": -0.69,
       "vol": 13432,
-      "score": 36.3,
+      "score": 46.33,
       "note": "AI 電源+液冷雙主軸，盤整後還有空間",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 37.47,
-      "s2_raw": 36.3,
+      "s1_raw": 39.16,
+      "s2_raw": 46.33,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 53.34,
@@ -394,8 +394,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -416,12 +415,12 @@
       "price": 259.5,
       "pct": -0.19,
       "vol": 28046,
-      "score": 32.17,
+      "score": 39.61,
       "note": "AI載板+低軌衛星，等255以下",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 33.14,
-      "s2_raw": 32.17,
+      "s1_raw": 35.06,
+      "s2_raw": 39.61,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 44.59,
@@ -434,8 +433,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -456,12 +454,12 @@
       "price": 268.5,
       "pct": -0.74,
       "vol": 63545,
-      "score": 36.14,
+      "score": 46.42,
       "note": "ETF成分股(0050/00988A)",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 36.75,
-      "s2_raw": 36.14,
+      "s1_raw": 38.2,
+      "s2_raw": 46.42,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 50.78,
@@ -474,8 +472,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -496,12 +493,12 @@
       "price": 1065.0,
       "pct": -1.39,
       "vol": 58977,
-      "score": 36.83,
+      "score": 45.98,
       "note": "00981A/00992A/00991A 核心持股，今日漲停創高",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 40.65,
-      "s2_raw": 36.83,
+      "s1_raw": 43.39,
+      "s2_raw": 45.98,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 65.3,
@@ -514,8 +511,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -531,17 +527,17 @@
     {
       "code": "2330",
       "name": "台積電",
-      "tier": "S2",
+      "tier": "S1",
       "industry": "IC/代工",
       "price": 2510.0,
       "pct": 4.58,
       "vol": 39077,
-      "score": 66.02,
+      "score": 78.6,
       "note": "CoWoS/2奈米確定性最高",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
-      "s1_raw": 67.76,
-      "s2_raw": 66.02,
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
+      "s1_raw": 78.6,
+      "s2_raw": 73.41,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 90.27,
@@ -551,13 +547,13 @@
         "fundamental": 60.88
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 65090248868170.0,
       "trailingPE": 34.14501,
@@ -575,7 +571,7 @@
       "pct": 10.09,
       "vol": 132843,
       "tier": "S1",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
@@ -583,9 +579,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 71.58,
-      "s1_raw": 71.58,
-      "s2_raw": 70.12,
+      "score": 84.24,
+      "s1_raw": 84.24,
+      "s2_raw": 74.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 95.59,
@@ -596,10 +592,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -615,17 +611,17 @@
     {
       "code": "2344",
       "name": "華邦電",
-      "tier": "A",
+      "tier": "S2",
       "industry": "DRAM",
       "price": 222.0,
       "pct": 1.6,
       "vol": 398033,
-      "score": 51.45,
+      "score": 60.05,
       "note": "DRAM超循環，營收+181%，法人狂買",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "s1_raw": 55.2,
-      "s2_raw": 51.45,
+      "tier_label": "波段 (5-20天)",
+      "tier_cls": "tier-t2",
+      "s1_raw": 62.8,
+      "s2_raw": 60.05,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 78.44,
@@ -636,11 +632,12 @@
       },
       "action": {
         "position": "半倉",
-        "hold_days": "3-10天",
+        "hold_days": "5-20天",
         "stop_loss_pct": -5,
-        "take_profit_pct": 8
+        "take_profit_pct": 10,
+        "exit_note": "基本面+法人+趨勢共振"
       },
-      "track_assigned": "A",
+      "track_assigned": "S2",
       "beta": null,
       "marketCap": 999000042846.0,
       "trailingPE": 255.17241,
@@ -659,12 +656,12 @@
       "price": 2595.0,
       "pct": 5.92,
       "vol": 3150,
-      "score": 71.2,
+      "score": 83.24,
       "note": "ETF成分股(00991A)",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
-      "s1_raw": 71.2,
-      "s2_raw": 70.6,
+      "s1_raw": 83.24,
+      "s2_raw": 75.83,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 93.1,
@@ -675,10 +672,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -706,9 +703,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 32.76,
-      "s1_raw": 31.95,
-      "s2_raw": 32.76,
+      "score": 42.66,
+      "s1_raw": 32.65,
+      "s2_raw": 42.66,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 38.67,
@@ -721,8 +718,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -750,9 +746,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 39.88,
-      "s1_raw": 41.08,
-      "s2_raw": 39.88,
+      "score": 50.71,
+      "s1_raw": 44.43,
+      "s2_raw": 50.71,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 52.92,
@@ -765,8 +761,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -785,18 +780,18 @@
       "price": 1395.0,
       "pct": 3.33,
       "vol": 4924,
-      "tier": "S2",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
+      "tier": "S1",
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
       "note": "ETF 成分追蹤",
       "etf_tags": [
         "0050"
       ],
-      "score": 64.1,
-      "s1_raw": 66.5,
-      "s2_raw": 64.1,
+      "score": 76.92,
+      "s1_raw": 76.92,
+      "s2_raw": 72.3,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 89.8,
@@ -806,13 +801,13 @@
         "fundamental": 61.39
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 705002310000.0,
       "trailingPE": 73.53717,
@@ -831,12 +826,12 @@
       "price": 219.0,
       "pct": 0.0,
       "vol": 32758,
-      "score": 30.86,
+      "score": 36.72,
       "note": "AI電感/MLCC彈性最大，00981A掃貨",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 32.59,
-      "s2_raw": 30.86,
+      "s1_raw": 35.06,
+      "s2_raw": 36.72,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 45.15,
@@ -849,8 +844,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -869,18 +863,18 @@
       "price": 900.0,
       "pct": 9.89,
       "vol": 6921,
-      "tier": "S2",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
+      "tier": "S1",
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
       "note": "ETF 成分追蹤",
       "etf_tags": [
         "0050"
       ],
-      "score": 67.86,
-      "s1_raw": 67.96,
-      "s2_raw": 67.86,
+      "score": 80.24,
+      "s1_raw": 80.24,
+      "s2_raw": 70.87,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.6,
@@ -890,13 +884,13 @@
         "fundamental": 44.87
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 461576700000.0,
       "trailingPE": 32.03987,
@@ -915,12 +909,12 @@
       "price": 380.0,
       "pct": 0.8,
       "vol": 18618,
-      "score": 41.77,
+      "score": 52.95,
       "note": "ETF成分股(00981A)",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 42.95,
-      "s2_raw": 41.77,
+      "s1_raw": 46.47,
+      "s2_raw": 52.95,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 56.28,
@@ -933,8 +927,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -955,12 +948,12 @@
       "price": 5825.0,
       "pct": 6.01,
       "vol": 1765,
-      "score": 70.49,
+      "score": 82.64,
       "note": "NVIDIA M9供應商，今日+7.69%",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
-      "s1_raw": 70.49,
-      "s2_raw": 69.93,
+      "s1_raw": 82.64,
+      "s2_raw": 74.53,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 91.61,
@@ -971,10 +964,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -995,12 +988,12 @@
       "price": 499.5,
       "pct": 0.81,
       "vol": 2924,
-      "score": 39.5,
+      "score": 47.8,
       "note": "Edge AI存股型，短線動能不足",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 41.25,
-      "s2_raw": 39.5,
+      "s1_raw": 45.57,
+      "s2_raw": 47.8,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 54.0,
@@ -1013,8 +1006,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1030,17 +1022,17 @@
     {
       "code": "2404",
       "name": "漢唐",
-      "tier": "A",
+      "tier": "S2",
       "industry": "設備",
       "price": 1280.0,
       "pct": 1.99,
       "vol": 1759,
-      "score": 53.92,
+      "score": 65.37,
       "note": "無明顯催化劑",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "s1_raw": 56.27,
-      "s2_raw": 53.92,
+      "tier_label": "波段 (5-20天)",
+      "tier_cls": "tier-t2",
+      "s1_raw": 62.91,
+      "s2_raw": 65.37,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 77.55,
@@ -1051,11 +1043,12 @@
       },
       "action": {
         "position": "半倉",
-        "hold_days": "3-10天",
+        "hold_days": "5-20天",
         "stop_loss_pct": -5,
-        "take_profit_pct": 8
+        "take_profit_pct": 10,
+        "exit_note": "基本面+法人+趨勢共振"
       },
-      "track_assigned": "A",
+      "track_assigned": "S2",
       "beta": null,
       "marketCap": 241774976000.0,
       "trailingPE": 26.84001,
@@ -1074,12 +1067,12 @@
       "price": 505.0,
       "pct": 11.36,
       "vol": 93971,
-      "score": 73.38,
+      "score": 86.0,
       "note": "營收年增582%，外資目標490，今日創高",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
-      "s1_raw": 73.38,
-      "s2_raw": 71.5,
+      "s1_raw": 86.0,
+      "s2_raw": 76.38,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 100.0,
@@ -1090,10 +1083,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -1114,12 +1107,12 @@
       "price": 144.5,
       "pct": 0.0,
       "vol": 8233,
-      "score": 32.15,
+      "score": 40.71,
       "note": "ETF成分股(0050)",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 32.5,
-      "s2_raw": 32.15,
+      "s1_raw": 33.87,
+      "s2_raw": 40.71,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 42.18,
@@ -1132,8 +1125,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1153,7 +1145,7 @@
       "pct": 9.89,
       "vol": 78538,
       "tier": "S1",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
@@ -1161,9 +1153,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 68.26,
-      "s1_raw": 68.26,
-      "s2_raw": 67.25,
+      "score": 81.21,
+      "s1_raw": 81.21,
+      "s2_raw": 68.71,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 88.02,
@@ -1174,10 +1166,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -1198,12 +1190,12 @@
       "price": 4465.0,
       "pct": 1.59,
       "vol": 10816,
-      "score": 46.15,
+      "score": 56.15,
       "note": "AI ASIC，今日-1.57%小拉，Momentum仍強",
       "tier_label": "觀察",
       "tier_cls": "tier-t3",
-      "s1_raw": 48.4,
-      "s2_raw": 46.15,
+      "s1_raw": 56.15,
+      "s2_raw": 51.01,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 61.85,
@@ -1244,9 +1236,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 29.42,
-      "s1_raw": 27.35,
-      "s2_raw": 29.42,
+      "score": 36.26,
+      "s1_raw": 28.32,
+      "s2_raw": 36.26,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 26.74,
@@ -1287,9 +1279,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 41.72,
-      "s1_raw": 39.77,
-      "s2_raw": 41.72,
+      "score": 46.97,
+      "s1_raw": 45.65,
+      "s2_raw": 46.97,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 36.3,
@@ -1302,8 +1294,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1331,9 +1322,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 36.52,
-      "s1_raw": 36.66,
-      "s2_raw": 36.52,
+      "score": 47.2,
+      "s1_raw": 37.91,
+      "s2_raw": 47.2,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 49.54,
@@ -1346,8 +1337,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1375,9 +1365,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 33.4,
-      "s1_raw": 30.57,
-      "s2_raw": 33.4,
+      "score": 42.07,
+      "s1_raw": 32.7,
+      "s2_raw": 42.07,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 23.89,
@@ -1390,8 +1380,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1419,9 +1408,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 38.84,
-      "s1_raw": 42.07,
-      "s2_raw": 38.84,
+      "score": 51.03,
+      "s1_raw": 42.86,
+      "s2_raw": 51.03,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 72.39,
@@ -1434,8 +1423,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1456,12 +1444,12 @@
       "price": 138.5,
       "pct": 0.0,
       "vol": 24104,
-      "score": 37.77,
+      "score": 50.6,
       "note": "ETF成分股(0050/00988A)",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 39.46,
-      "s2_raw": 37.77,
+      "s1_raw": 40.52,
+      "s2_raw": 50.6,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 58.81,
@@ -1474,8 +1462,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1496,12 +1483,12 @@
       "price": 113.0,
       "pct": -3.0,
       "vol": 33990,
-      "score": 45.04,
+      "score": 58.56,
       "note": "ETF成分股(0050/00988A)",
       "tier_label": "觀察",
       "tier_cls": "tier-t3",
-      "s1_raw": 51.36,
-      "s2_raw": 45.04,
+      "s1_raw": 53.4,
+      "s2_raw": 58.56,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 96.76,
@@ -1542,9 +1529,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 34.12,
-      "s1_raw": 34.39,
-      "s2_raw": 34.12,
+      "score": 44.32,
+      "s1_raw": 35.46,
+      "s2_raw": 44.32,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 45.72,
@@ -1557,8 +1544,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1586,9 +1572,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 38.31,
-      "s1_raw": 42.27,
-      "s2_raw": 38.31,
+      "score": 49.07,
+      "s1_raw": 43.66,
+      "s2_raw": 49.07,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 74.2,
@@ -1601,8 +1587,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1630,9 +1615,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 35.79,
-      "s1_raw": 36.54,
-      "s2_raw": 35.79,
+      "score": 47.22,
+      "s1_raw": 37.56,
+      "s2_raw": 47.22,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 51.01,
@@ -1645,8 +1630,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1674,9 +1658,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 36.36,
-      "s1_raw": 37.29,
-      "s2_raw": 36.36,
+      "score": 46.85,
+      "s1_raw": 38.77,
+      "s2_raw": 46.85,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 52.57,
@@ -1689,8 +1673,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1711,12 +1694,12 @@
       "price": 100.5,
       "pct": -0.99,
       "vol": 6013,
-      "score": 31.78,
+      "score": 39.98,
       "note": "ETF成分股(00981A)",
       "tier_label": "不建議",
       "tier_cls": "tier-t4",
-      "s1_raw": 29.43,
-      "s2_raw": 31.78,
+      "s1_raw": 30.21,
+      "s2_raw": 39.98,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 30.05,
@@ -1750,12 +1733,12 @@
       "price": 5185.0,
       "pct": -0.48,
       "vol": 1697,
-      "score": 34.22,
+      "score": 42.34,
       "note": "營收確認佳但基期高",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 35.76,
-      "s2_raw": 34.22,
+      "s1_raw": 37.9,
+      "s2_raw": 42.34,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 50.82,
@@ -1768,8 +1751,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1790,12 +1772,12 @@
       "price": 2420.0,
       "pct": 0.0,
       "vol": 3026,
-      "score": 36.79,
+      "score": 49.77,
       "note": "液冷散熱台廠第一，訂單能見度到2029",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 37.34,
-      "s2_raw": 36.79,
+      "s1_raw": 37.91,
+      "s2_raw": 49.77,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 52.26,
@@ -1808,8 +1790,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -1828,18 +1809,18 @@
       "price": 567.0,
       "pct": 9.88,
       "vol": 10684,
-      "tier": "S2",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
+      "tier": "S1",
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
       "note": "ETF 成分追蹤",
       "etf_tags": [
         "0050"
       ],
-      "score": 67.3,
-      "s1_raw": 66.97,
-      "s2_raw": 67.3,
+      "score": 79.12,
+      "s1_raw": 79.12,
+      "s2_raw": 70.16,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 82.8,
@@ -1849,13 +1830,13 @@
         "fundamental": 44.78
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 345026002923.0,
       "trailingPE": 21.13306,
@@ -1872,18 +1853,18 @@
       "price": 1005.0,
       "pct": 3.5,
       "vol": 26100,
-      "tier": "S2",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
+      "tier": "S1",
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
       "tier_color": "#7a8599",
       "hold": "--",
       "note": "ETF 成分追蹤",
       "etf_tags": [
         "0050"
       ],
-      "score": 62.94,
-      "s1_raw": 64.76,
-      "s2_raw": 62.94,
+      "score": 75.22,
+      "s1_raw": 75.22,
+      "s2_raw": 70.11,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.04,
@@ -1893,13 +1874,13 @@
         "fundamental": 56.79
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 1582016490810.0,
       "trailingPE": 230.50458,
@@ -1918,12 +1899,12 @@
       "price": 22.95,
       "pct": 1.1,
       "vol": 440,
-      "score": 38.79,
+      "score": 45.32,
       "note": "ETF成分股(00981A/00991A)",
       "tier_label": "流動性不足",
       "tier_cls": "tier-t4",
-      "s1_raw": 38.11,
-      "s2_raw": 38.79,
+      "s1_raw": 41.75,
+      "s2_raw": 45.32,
       "dimensions": {
         "liquidity": 61.06,
         "momentum": 45.28,
@@ -1964,9 +1945,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 32.09,
-      "s1_raw": 32.01,
-      "s2_raw": 32.09,
+      "score": 40.99,
+      "s1_raw": 33.14,
+      "s2_raw": 40.99,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 40.35,
@@ -1979,8 +1960,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2008,9 +1988,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 41.67,
-      "s1_raw": 41.65,
-      "s2_raw": 41.67,
+      "score": 55.26,
+      "s1_raw": 44.0,
+      "s2_raw": 55.26,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 51.58,
@@ -2023,8 +2003,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2045,12 +2024,12 @@
       "price": 4755.0,
       "pct": -4.04,
       "vol": 2820,
-      "score": 43.35,
+      "score": 53.77,
       "note": "高檔拉回，等止穩再說",
       "tier_label": "觀察",
       "tier_cls": "tier-t3",
-      "s1_raw": 48.27,
-      "s2_raw": 43.35,
+      "s1_raw": 50.81,
+      "s2_raw": 53.77,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 87.16,
@@ -2084,12 +2063,12 @@
       "price": 3180.0,
       "pct": -2.75,
       "vol": 452,
-      "score": 31.96,
+      "score": 37.84,
       "note": "ETF成分股(00991A)",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 33.51,
-      "s2_raw": 31.96,
+      "s1_raw": 35.07,
+      "s2_raw": 37.84,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 51.67,
@@ -2102,8 +2081,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2131,9 +2109,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 35.13,
-      "s1_raw": 39.17,
-      "s2_raw": 35.13,
+      "score": 42.25,
+      "s1_raw": 41.38,
+      "s2_raw": 42.25,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 68.08,
@@ -2146,8 +2124,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2175,9 +2152,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 41.82,
-      "s1_raw": 44.83,
-      "s2_raw": 41.82,
+      "score": 50.02,
+      "s1_raw": 47.46,
+      "s2_raw": 50.02,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 75.89,
@@ -2190,8 +2167,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2212,12 +2188,12 @@
       "price": 674.0,
       "pct": 9.24,
       "vol": 34043,
-      "score": 69.08,
+      "score": 81.03,
       "note": "CoWoS溢最強，先進封裝占比持續提升",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
-      "s1_raw": 69.08,
-      "s2_raw": 69.11,
+      "s1_raw": 81.03,
+      "s2_raw": 73.49,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 87.58,
@@ -2228,10 +2204,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -2259,9 +2235,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 35.83,
-      "s1_raw": 37.14,
-      "s2_raw": 35.83,
+      "score": 44.6,
+      "s1_raw": 39.24,
+      "s2_raw": 44.6,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 52.84,
@@ -2274,8 +2250,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2303,9 +2278,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 32.96,
-      "s1_raw": 34.08,
-      "s2_raw": 32.96,
+      "score": 40.48,
+      "s1_raw": 36.14,
+      "s2_raw": 40.48,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 46.67,
@@ -2318,8 +2293,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2340,12 +2314,12 @@
       "price": 1450.0,
       "pct": 0.35,
       "vol": 754,
-      "score": 37.76,
+      "score": 48.78,
       "note": "ETF成分股(00991A)",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 36.31,
-      "s2_raw": 37.76,
+      "s1_raw": 38.62,
+      "s2_raw": 48.78,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 38.0,
@@ -2358,8 +2332,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2387,9 +2360,9 @@
       "etf_tags": [
         "0050"
       ],
-      "score": 35.78,
-      "s1_raw": 37.21,
-      "s2_raw": 35.78,
+      "score": 46.21,
+      "s1_raw": 38.75,
+      "s2_raw": 46.21,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 53.64,
@@ -2402,8 +2375,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2419,17 +2391,17 @@
     {
       "code": "6166",
       "name": "凌華",
-      "tier": "A",
+      "tier": "S2",
       "industry": "工業/網通",
       "price": 158.0,
       "pct": 2.27,
       "vol": 4052,
-      "score": 52.95,
+      "score": 62.1,
       "note": "Edge AI題材，今日漲停",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "s1_raw": 55.86,
-      "s2_raw": 52.95,
+      "tier_label": "波段 (5-20天)",
+      "tier_cls": "tier-t2",
+      "s1_raw": 63.3,
+      "s2_raw": 62.1,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 77.69,
@@ -2440,11 +2412,12 @@
       },
       "action": {
         "position": "半倉",
-        "hold_days": "3-10天",
+        "hold_days": "5-20天",
         "stop_loss_pct": -5,
-        "take_profit_pct": 8
+        "take_profit_pct": 10,
+        "exit_note": "基本面+法人+趨勢共振"
       },
-      "track_assigned": "A",
+      "track_assigned": "S2",
       "beta": null,
       "marketCap": 34418878000.0,
       "trailingPE": 67.81116,
@@ -2463,12 +2436,12 @@
       "price": 366.0,
       "pct": -0.27,
       "vol": 61252,
-      "score": 34.78,
+      "score": 44.07,
       "note": "動能中等，漲幅可能已被反映",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 36.29,
-      "s2_raw": 34.78,
+      "s1_raw": 38.09,
+      "s2_raw": 44.07,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 51.92,
@@ -2481,8 +2454,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2503,12 +2475,12 @@
       "price": 268.0,
       "pct": -2.19,
       "vol": 14388,
-      "score": 34.9,
+      "score": 43.18,
       "note": "網通+NB+低軌，無明確AI爆發點",
       "tier_label": "觀望",
       "tier_cls": "tier-t4",
-      "s1_raw": 38.5,
-      "s2_raw": 34.9,
+      "s1_raw": 40.16,
+      "s2_raw": 43.18,
       "dimensions": {
         "liquidity": 35.0,
         "momentum": 66.08,
@@ -2521,8 +2493,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2538,17 +2509,17 @@
     {
       "code": "6442",
       "name": "光聖",
-      "tier": "S2",
+      "tier": "S1",
       "industry": "AI/伺服器",
       "price": 2085.0,
       "pct": 7.47,
       "vol": 1333,
-      "score": 67.97,
+      "score": 79.13,
       "note": "CPO最純台廠，外資買超最兇",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
-      "s1_raw": 67.32,
-      "s2_raw": 67.97,
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
+      "s1_raw": 79.13,
+      "s2_raw": 71.83,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 82.82,
@@ -2558,13 +2529,13 @@
         "fundamental": 51.47
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 162365805480.0,
       "trailingPE": 90.84967,
@@ -2591,9 +2562,9 @@
         "00981A",
         "00988A"
       ],
-      "score": 36.47,
-      "s1_raw": 35.87,
-      "s2_raw": 36.47,
+      "score": 44.78,
+      "s1_raw": 39.15,
+      "s2_raw": 44.78,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 38.7,
@@ -2606,8 +2577,7 @@
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       },
       "track_assigned": "B",
       "beta": null,
@@ -2623,17 +2593,17 @@
     {
       "code": "6770",
       "name": "力積電",
-      "tier": "S2",
+      "tier": "S1",
       "industry": "IC/代工",
       "price": 81.6,
       "pct": 10.42,
       "vol": 131242,
-      "score": 66.84,
+      "score": 79.39,
       "note": "ETF成分股(00981A/00991A)",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
-      "s1_raw": 66.91,
-      "s2_raw": 66.84,
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
+      "s1_raw": 79.39,
+      "s2_raw": 68.84,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 83.48,
@@ -2643,13 +2613,13 @@
         "fundamental": 38.87
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 348217092870.9156,
       "trailingPE": null,
@@ -2663,17 +2633,17 @@
     {
       "code": "6830",
       "name": "汎銓",
-      "tier": "S2",
+      "tier": "S1",
       "industry": "IC/代工",
       "price": 608.0,
       "pct": 7.8,
       "vol": 948,
-      "score": 65.26,
+      "score": 76.15,
       "note": "今日漲停但成交783張，流動性差",
-      "tier_label": "穩健持有 (5-30天)",
-      "tier_cls": "tier-t2",
-      "s1_raw": 64.1,
-      "s2_raw": 65.26,
+      "tier_label": "隔日沖 (1-2天)",
+      "tier_cls": "tier-t1",
+      "s1_raw": 76.15,
+      "s2_raw": 66.92,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 75.37,
@@ -2683,13 +2653,13 @@
         "fundamental": 39.29
       },
       "action": {
-        "position": "半倉",
-        "hold_days": "5-30天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "position": "重倉",
+        "hold_days": "1-2天",
+        "stop_loss_pct": -3,
+        "take_profit_pct": 5,
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
-      "track_assigned": "S2",
+      "track_assigned": "S1",
       "beta": null,
       "marketCap": 31483456000.0,
       "trailingPE": null,
@@ -2708,12 +2678,12 @@
       "price": 2505.0,
       "pct": 8.91,
       "vol": 870,
-      "score": 73.21,
+      "score": 85.81,
       "note": "地緣題材，最快進最快出",
-      "tier_label": "短線投機 (1-5天)",
+      "tier_label": "隔日沖 (1-2天)",
       "tier_cls": "tier-t1",
-      "s1_raw": 73.21,
-      "s2_raw": 71.42,
+      "s1_raw": 85.81,
+      "s2_raw": 76.27,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 99.52,
@@ -2724,10 +2694,10 @@
       },
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "track_assigned": "S1",
       "beta": null,
@@ -2748,12 +2718,12 @@
       "price": 87.5,
       "pct": 9.65,
       "vol": 0,
-      "score": 48.02,
+      "score": 51.84,
       "note": "原始追蹤標的",
       "tier_label": "流動性不足",
       "tier_cls": "tier-t4",
-      "s1_raw": 48.6,
-      "s2_raw": 48.02,
+      "s1_raw": 51.84,
+      "s2_raw": 49.71,
       "dimensions": {
         "liquidity": 5.0,
         "momentum": 85.86,
@@ -2780,7 +2750,7 @@
       "averageVolume10days": 12044687
     }
   ],
-  "updated": "2026-06-22T10:32:24.522244",
+  "updated": "2026-06-22T11:07:02.674399",
   "etf_universe": {
     "2330": [
       "0050",
@@ -2968,5 +2938,5 @@
     ]
   },
   "date": "2026-06-22",
-  "scoring_rules_version": "2026-06-20-STAR-v1"
+  "scoring_rules_version": "2026-06-20-STAR-v3"
 }

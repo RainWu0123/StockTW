@@ -1,49 +1,51 @@
 {
-  "version": "2026-06-20-STAR-v1",
-  "description": "五維雙軌分級系統（少年股神/巴菲特/基金經理人/散戶/經濟學家/數學家 圓桌會議產出）",
+  "version": "2026-06-20-STAR-v3",
+  "description": "五維雙軌分級系統 v3 — 隔日沖 + 波段 獨立權重",
   "tracks": {
     "S1": {
-      "label": "短線投機 (1-5天)",
+      "label": "隔日沖 (1-2天)",
+      "hold_days": "1-2天",
       "weights": {
-        "liquidity": 20,
-        "momentum": 35,
-        "alpha": 15,
-        "fund_flow": 15,
-        "theme": 15,
-        "fundamental": 5
+        "liquidity": 30,
+        "momentum": 40,
+        "alpha": 20,
+        "fund_flow": 0,
+        "theme": 10,
+        "fundamental": 0
       },
-      "min_score": 68,
+      "min_score": 65,
       "action": {
         "position": "重倉",
-        "hold_days": "1-5天",
+        "hold_days": "1-2天",
         "stop_loss_pct": -3,
         "take_profit_pct": 5,
-        "exit_note": "動能+量價+題材主導，T+1~T+3可退"
+        "exit_note": "T+0/T+1，量價齊升才留"
       },
       "macro_bound": false
     },
     "S2": {
-      "label": "穩健持有 (5-30天)",
+      "label": "波段 (5-20天)",
+      "hold_days": "5-20天",
       "weights": {
         "liquidity": 20,
-        "momentum": 20,
-        "alpha": 25,
+        "momentum": 25,
+        "alpha": 15,
         "fund_flow": 25,
         "theme": 10,
-        "fundamental": 10
+        "fundamental": 25
       },
-      "min_score": 62,
+      "min_score": 60,
       "action": {
         "position": "半倉",
-        "hold_days": "5-30天",
+        "hold_days": "5-20天",
         "stop_loss_pct": -5,
         "take_profit_pct": 10,
-        "exit_note": "五維全考量，macro overlay生效"
+        "exit_note": "基本面+法人+趨勢共振"
       },
       "macro_bound": true
     },
     "A": {
-      "min_score": 45,
+      "min_score": 48,
       "action": {
         "position": "半倉",
         "hold_days": "3-10天",
@@ -52,13 +54,12 @@
       }
     },
     "B": {
-      "min_score": 30,
+      "min_score": 32,
       "action": {
         "position": "觀望",
         "hold_days": "10-20天",
         "stop_loss_pct": -7,
-        "take_profit_pct": 12,
-        "upgrade_note": "題材爆發可臨時升級為A，24小時內重評"
+        "take_profit_pct": 12
       }
     },
     "C": {
@@ -81,7 +82,6 @@
     },
     "E": {
       "label": "前置過濾不合格",
-      "reason": "成交金額<3000萬 或 重大負評 或 流動性不足",
       "action": {
         "position": "不碰",
         "hold_days": "-",
@@ -92,47 +92,16 @@
   },
   "pre_filters": {
     "min_turnover": 3000,
-    "no_negative_news": true,
     "liquidity_decay_days": 3,
     "liquidity_decay_threshold": 0.7
   },
   "dimensions": {
-    "liquidity": {
-      "name": "流動性",
-      "description": "成交金額、買賣價差、五檔掛單密度",
-      "api": "TWSE即時成交/五檔",
-      "fields": ["turnover", "spread", "depth"]
-    },
-    "momentum": {
-      "name": "動能",
-      "description": "風險調整動能、均線突破、RSI加速段",
-      "api": "TWSE日行情",
-      "fields": ["risk_adj_return", "ma_breakout", "rsi_accel"]
-    },
-    "alpha": {
-      "name": "Alpha",
-      "description": "20日Jensen's alpha vs 0050",
-      "api": "TWSE日行情+0050",
-      "fields": ["jensen_alpha", "beta_stability"]
-    },
-    "fund_flow": {
-      "name": "法人資金",
-      "description": "三大法人買超、融資餘額變化",
-      "api": "TWSE法人買超",
-      "fields": ["foreign_days", "trust_shares", "margin_change"]
-    },
-    "theme": {
-      "name": "題材",
-      "description": "新聞曝光斜率、板塊漲跌幅排名",
-      "api": "Google News+TWSE產業指數",
-      "fields": ["news_slope", "sector_rank_change"]
-    },
-    "fundamental": {
-      "name": "財務安全",
-      "description": "ROE、毛利率變動、負債比率",
-      "api": "TWSE財務API",
-      "fields": ["roe", "gross_margin_chg", "debt_ratio"]
-    }
+    "liquidity": "成交金額 + 價量攻勢",
+    "momentum": "日漲跌 + 營收成長 + 位置",
+    "alpha": "相對強弱 + 爆發度",
+    "fund_flow": "機構持倉 + 量比",
+    "theme": "題材（暫為0）",
+    "fundamental": "PE + 營收成長 + EPS成長"
   },
   "special_adjustments": {
     "limit_up_liquidity_fix": true,
@@ -149,12 +118,6 @@
       "loose": 1.1,
       "normal": 1.0,
       "tight": 0.8
-    },
-    "indicators": {
-      "cbc_discount_rate": "央行重貼現率",
-      "m2_yoy": "M2年增率",
-      "tw10y_yield": "10年公債殖利率",
-      "ntd_change": "新台幣對美元變動"
     }
   }
 }
