@@ -398,7 +398,7 @@ body.sheet-open { overflow: hidden; }
           <th onclick="setSort('vol')">成交</th>
           <th onclick="setSort('score')">評分</th>
           <th>大單</th><th>漲停</th><th>持有</th>
-          <th onclick="setSort('tier')">分級</th>
+          <th onclick="setSort('rank')">排名</th>
         </tr></thead>
         <tbody id="snapshotBody"></tbody>
       </table>
@@ -463,7 +463,7 @@ function setSort(k){ if(currentSort===k) currentDir*=-1; else{currentSort=k;curr
 
 function sortFn(a,b){
   const k=currentSort;
-  if(currentSort==='default') return ({T1:1,T2:2,T3:3,T4:4}[a.tier]||4)-({T1:1,T2:2,T3:3,T4:4}[b.tier]||4);
+  if(currentSort==='default') return a.rank - b.rank;
   let av=a[k],bv=b[k];
   if(['score','bigOrder','limitGene','pct','price','vol'].indexOf(k)>=0) return (av-bv)*currentDir;
   if(typeof av==='string') av=av.toLowerCase(); if(typeof bv==='string') bv=bv.toLowerCase();
@@ -477,7 +477,7 @@ function renderLobby(){
     const q = (document.getElementById('searchBox').value||'').toLowerCase();
     const rows = allStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
     rows.sort(sortFn);
-    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row-${(s.tier||'T4').toLowerCase()}"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag ${s.tier_cls||('tier-'+((s.tier||'T4').toLowerCase()))}">${s.tier||'T4'}</span></td></tr>`).join('');
+    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag ${s.tier_cls||('tier-'+((s.tier||'T4').toLowerCase()))}">${s.tier||'T4'}</span></td></tr>`).join('');
     document.getElementById('countLabel').textContent = rows.length+' / '+(allStocks.length||0)+' 檔';
   });
 }

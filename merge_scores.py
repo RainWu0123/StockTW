@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""merge scores.json back into data.json"""
+"""merge scores.json back into data.json — no tier fields, only rank + score."""
 import json
 
 BASE = "/home/ubuntu/investment"
@@ -17,21 +17,15 @@ for s in data.get("stocks", []):
     r = score_map.get(code)
     if not r:
         continue
-    s["tier"] = r.get("tier", s.get("tier", "D"))
-    s["tier_label"] = r.get("tier_label", "")
-    s["tier_cls"] = r.get("tier_cls", "tier-t4")
-    # 顯示對應 track 的分數；非 S1/S2 則顯示 s1_raw（較高者）
-    if r.get("track_assigned") == "S1":
-        s["score"] = r.get("s1_raw")
-    elif r.get("track_assigned") == "S2":
-        s["score"] = r.get("s2_raw")
-    else:
-        s["score"] = max(r.get("s1_raw", 0), r.get("s2_raw", 0))
+    s["rank"] = r.get("rank")
+    s["score"] = r.get("score")
     s["s1_raw"] = r.get("s1_raw")
     s["s2_raw"] = r.get("s2_raw")
     s["dimensions"] = r.get("dimensions", {})
-    s["action"] = r.get("action", {})
-    s["track_assigned"] = r.get("track_assigned")
+    s["note"] = r.get("note", s.get("note", ""))
+    # 移除舊 tier 欄位（避免前端混淆）
+    for k in ["tier", "tier_label", "tier_cls", "action", "track_assigned"]:
+        s.pop(k, None)
     updated += 1
 
 data["updated"] = scores.get("generated", data.get("updated"))

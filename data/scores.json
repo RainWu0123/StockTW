@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "generated": "2026-06-22T11:07:02.674399",
+  "generated": "2026-06-22T11:32:51.539278",
   "rules_version": "2026-06-20-STAR-v3",
   "stocks": [
     {
@@ -9,7 +9,6 @@
       "price": 505.0,
       "pct": 11.36,
       "vol": 93971,
-      "turnover": 4745536.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 100.0,
@@ -20,17 +19,8 @@
       },
       "s1_raw": 86.0,
       "s2_raw": 76.38,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 86.0,
+      "rank": 1,
       "note": "營收年增582%，外資目標490，今日創高"
     },
     {
@@ -39,7 +29,6 @@
       "price": 2505.0,
       "pct": 8.91,
       "vol": 870,
-      "turnover": 217935.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 99.52,
@@ -50,17 +39,8 @@
       },
       "s1_raw": 85.81,
       "s2_raw": 76.27,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 85.81,
+      "rank": 2,
       "note": "地緣題材，最快進最快出"
     },
     {
@@ -69,7 +49,6 @@
       "price": 185.5,
       "pct": 10.09,
       "vol": 132843,
-      "turnover": 2464238.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 95.59,
@@ -80,17 +59,8 @@
       },
       "s1_raw": 84.24,
       "s2_raw": 74.0,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 84.24,
+      "rank": 3,
       "note": "ETF 成分追蹤"
     },
     {
@@ -99,7 +69,6 @@
       "price": 2595.0,
       "pct": 5.92,
       "vol": 3150,
-      "turnover": 817425.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 93.1,
@@ -110,17 +79,8 @@
       },
       "s1_raw": 83.24,
       "s2_raw": 75.83,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 83.24,
+      "rank": 4,
       "note": "ETF成分股(00991A)"
     },
     {
@@ -129,7 +89,6 @@
       "price": 5825.0,
       "pct": 6.01,
       "vol": 1765,
-      "turnover": 1028112.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 91.61,
@@ -140,17 +99,8 @@
       },
       "s1_raw": 82.64,
       "s2_raw": 74.53,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 82.64,
+      "rank": 5,
       "note": "NVIDIA M9供應商，今日+7.69%"
     },
     {
@@ -159,7 +109,6 @@
       "price": 339.0,
       "pct": 9.89,
       "vol": 78538,
-      "turnover": 2662438.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 88.02,
@@ -170,17 +119,8 @@
       },
       "s1_raw": 81.21,
       "s2_raw": 68.71,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 81.21,
+      "rank": 6,
       "note": "ETF 成分追蹤"
     },
     {
@@ -189,7 +129,6 @@
       "price": 674.0,
       "pct": 9.24,
       "vol": 34043,
-      "turnover": 2294498.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 87.58,
@@ -200,17 +139,8 @@
       },
       "s1_raw": 81.03,
       "s2_raw": 73.49,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 81.03,
+      "rank": 7,
       "note": "CoWoS溢最強，先進封裝占比持續提升"
     },
     {
@@ -219,7 +149,6 @@
       "price": 160.0,
       "pct": 9.59,
       "vol": 63848,
-      "turnover": 1021568.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.83,
@@ -230,17 +159,8 @@
       },
       "s1_raw": 80.33,
       "s2_raw": 74.48,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 80.33,
+      "rank": 8,
       "note": "ADR 25%，爆量29萬張，矽光子題材"
     },
     {
@@ -249,7 +169,6 @@
       "price": 152.5,
       "pct": 9.71,
       "vol": 56524,
-      "turnover": 861991.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.69,
@@ -260,17 +179,8 @@
       },
       "s1_raw": 80.28,
       "s2_raw": 73.0,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 80.28,
+      "rank": 9,
       "note": "ETF成分股(0050)"
     },
     {
@@ -279,7 +189,6 @@
       "price": 900.0,
       "pct": 9.89,
       "vol": 6921,
-      "turnover": 622890.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.6,
@@ -290,17 +199,8 @@
       },
       "s1_raw": 80.24,
       "s2_raw": 70.87,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 80.24,
+      "rank": 10,
       "note": "ETF 成分追蹤"
     },
     {
@@ -309,7 +209,6 @@
       "price": 81.6,
       "pct": 10.42,
       "vol": 131242,
-      "turnover": 1070935.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 83.48,
@@ -320,17 +219,8 @@
       },
       "s1_raw": 79.39,
       "s2_raw": 68.84,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 79.39,
+      "rank": 11,
       "note": "ETF成分股(00981A/00991A)"
     },
     {
@@ -339,7 +229,6 @@
       "price": 2085.0,
       "pct": 7.47,
       "vol": 1333,
-      "turnover": 277930.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 82.82,
@@ -350,17 +239,8 @@
       },
       "s1_raw": 79.13,
       "s2_raw": 71.83,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 79.13,
+      "rank": 12,
       "note": "CPO最純台廠，外資買超最兇"
     },
     {
@@ -369,7 +249,6 @@
       "price": 567.0,
       "pct": 9.88,
       "vol": 10684,
-      "turnover": 605783.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 82.8,
@@ -380,17 +259,8 @@
       },
       "s1_raw": 79.12,
       "s2_raw": 70.16,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 79.12,
+      "rank": 13,
       "note": "ETF 成分追蹤"
     },
     {
@@ -399,7 +269,6 @@
       "price": 231.5,
       "pct": 9.72,
       "vol": 44354,
-      "turnover": 1026795.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 82.03,
@@ -410,17 +279,8 @@
       },
       "s1_raw": 78.81,
       "s2_raw": 71.06,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 78.81,
+      "rank": 14,
       "note": "ETF 成分追蹤"
     },
     {
@@ -429,7 +289,6 @@
       "price": 2510.0,
       "pct": 4.58,
       "vol": 39077,
-      "turnover": 9808327.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 90.27,
@@ -440,17 +299,8 @@
       },
       "s1_raw": 78.6,
       "s2_raw": 73.41,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 78.6,
+      "rank": 15,
       "note": "CoWoS/2奈米確定性最高"
     },
     {
@@ -459,7 +309,6 @@
       "price": 1395.0,
       "pct": 3.33,
       "vol": 4924,
-      "turnover": 686898.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 89.8,
@@ -470,17 +319,8 @@
       },
       "s1_raw": 76.92,
       "s2_raw": 72.3,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 76.92,
+      "rank": 16,
       "note": "ETF 成分追蹤"
     },
     {
@@ -489,7 +329,6 @@
       "price": 608.0,
       "pct": 7.8,
       "vol": 948,
-      "turnover": 57638.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 75.37,
@@ -500,17 +339,8 @@
       },
       "s1_raw": 76.15,
       "s2_raw": 66.92,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 76.15,
+      "rank": 17,
       "note": "今日漲停但成交783張，流動性差"
     },
     {
@@ -519,7 +349,6 @@
       "price": 1005.0,
       "pct": 3.5,
       "vol": 26100,
-      "turnover": 2623050.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 85.04,
@@ -530,17 +359,8 @@
       },
       "s1_raw": 75.22,
       "s2_raw": 70.11,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 75.22,
+      "rank": 18,
       "note": "ETF 成分追蹤"
     },
     {
@@ -549,7 +369,6 @@
       "price": 56.2,
       "pct": 3.5,
       "vol": 32969,
-      "turnover": 185286.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 83.28,
@@ -560,17 +379,8 @@
       },
       "s1_raw": 74.51,
       "s2_raw": 64.39,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 74.51,
+      "rank": 19,
       "note": "ETF 成分追蹤"
     },
     {
@@ -579,7 +389,6 @@
       "price": 52.4,
       "pct": 3.15,
       "vol": 51436,
-      "turnover": 269525.0,
       "dimensions": {
         "liquidity": 100.0,
         "momentum": 78.23,
@@ -590,17 +399,8 @@
       },
       "s1_raw": 72.07,
       "s2_raw": 66.54,
-      "tier": "S1",
-      "tier_label": "隔日沖 (1-2天)",
-      "tier_cls": "tier-t1",
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "track_assigned": "S1",
+      "score": 72.07,
+      "rank": 20,
       "note": "ETF成分股(0050)"
     },
     {
@@ -609,7 +409,6 @@
       "price": 1280.0,
       "pct": 1.99,
       "vol": 1759,
-      "turnover": 225152.0,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 77.55,
@@ -620,17 +419,8 @@
       },
       "s1_raw": 62.91,
       "s2_raw": 65.37,
-      "tier": "S2",
-      "tier_label": "波段 (5-20天)",
-      "tier_cls": "tier-t2",
-      "action": {
-        "position": "半倉",
-        "hold_days": "5-20天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "基本面+法人+趨勢共振"
-      },
-      "track_assigned": "S2",
+      "score": 65.37,
+      "rank": 21,
       "note": "無明顯催化劑"
     },
     {
@@ -639,7 +429,6 @@
       "price": 158.0,
       "pct": 2.27,
       "vol": 4052,
-      "turnover": 64022.0,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 77.69,
@@ -650,17 +439,8 @@
       },
       "s1_raw": 63.3,
       "s2_raw": 62.1,
-      "tier": "S2",
-      "tier_label": "波段 (5-20天)",
-      "tier_cls": "tier-t2",
-      "action": {
-        "position": "半倉",
-        "hold_days": "5-20天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "基本面+法人+趨勢共振"
-      },
-      "track_assigned": "S2",
+      "score": 63.3,
+      "rank": 22,
       "note": "Edge AI題材，今日漲停"
     },
     {
@@ -669,7 +449,6 @@
       "price": 222.0,
       "pct": 1.6,
       "vol": 398033,
-      "turnover": 8836333.0,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 78.44,
@@ -680,47 +459,9 @@
       },
       "s1_raw": 62.8,
       "s2_raw": 60.05,
-      "tier": "S2",
-      "tier_label": "波段 (5-20天)",
-      "tier_cls": "tier-t2",
-      "action": {
-        "position": "半倉",
-        "hold_days": "5-20天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "基本面+法人+趨勢共振"
-      },
-      "track_assigned": "S2",
+      "score": 62.8,
+      "rank": 23,
       "note": "DRAM超循環，營收+181%，法人狂買"
-    },
-    {
-      "code": "2882",
-      "name": "開發金",
-      "price": 113.0,
-      "pct": -3.0,
-      "vol": 33990,
-      "turnover": 384087.0,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 96.76,
-        "alpha": 21.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 71.88
-      },
-      "s1_raw": 53.4,
-      "s2_raw": 58.56,
-      "tier": "A",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "action": {
-        "position": "半倉",
-        "hold_days": "3-10天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 8
-      },
-      "track_assigned": "A",
-      "note": "ETF成分股(0050/00988A)"
     },
     {
       "code": "2002",
@@ -728,7 +469,6 @@
       "price": 19.5,
       "pct": 2.9,
       "vol": 128895,
-      "turnover": 251345.0,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 67.2,
@@ -739,46 +479,29 @@
       },
       "s1_raw": 59.86,
       "s2_raw": 54.21,
-      "tier": "A",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "action": {
-        "position": "半倉",
-        "hold_days": "3-10天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 8
-      },
-      "track_assigned": "A",
+      "score": 59.86,
+      "rank": 24,
       "note": "ETF成分股(0050/00988A)"
     },
     {
-      "code": "3443",
-      "name": "創意",
-      "price": 4755.0,
-      "pct": -4.04,
-      "vol": 2820,
-      "turnover": 1340910.0,
+      "code": "2882",
+      "name": "開發金",
+      "price": 113.0,
+      "pct": -3.0,
+      "vol": 33990,
       "dimensions": {
         "liquidity": 35.0,
-        "momentum": 87.16,
-        "alpha": 27.24,
-        "fund_flow": 25.03,
+        "momentum": 96.76,
+        "alpha": 21.0,
+        "fund_flow": 25.02,
         "theme": 0.0,
-        "fundamental": 58.55
+        "fundamental": 71.88
       },
-      "s1_raw": 50.81,
-      "s2_raw": 53.77,
-      "tier": "A",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "action": {
-        "position": "半倉",
-        "hold_days": "3-10天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 8
-      },
-      "track_assigned": "A",
-      "note": "高檔拉回，等止穩再說"
+      "s1_raw": 53.4,
+      "s2_raw": 58.56,
+      "score": 58.56,
+      "rank": 25,
+      "note": "ETF成分股(0050/00988A)"
     },
     {
       "code": "2454",
@@ -786,7 +509,6 @@
       "price": 4465.0,
       "pct": 1.59,
       "vol": 10816,
-      "turnover": 4829344.0,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 61.85,
@@ -797,16 +519,8 @@
       },
       "s1_raw": 56.15,
       "s2_raw": 51.01,
-      "tier": "A",
-      "tier_label": "觀察",
-      "tier_cls": "tier-t3",
-      "action": {
-        "position": "半倉",
-        "hold_days": "3-10天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 8
-      },
-      "track_assigned": "A",
+      "score": 56.15,
+      "rank": 26,
       "note": "AI ASIC，今日-1.57%小拉，Momentum仍強"
     },
     {
@@ -815,7 +529,6 @@
       "price": 162.5,
       "pct": 0.31,
       "vol": 45016,
-      "turnover": 731510.0,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 51.58,
@@ -826,17 +539,29 @@
       },
       "s1_raw": 44.0,
       "s2_raw": 55.26,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
+      "score": 55.26,
+      "rank": 27,
       "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "price": 4755.0,
+      "pct": -4.04,
+      "vol": 2820,
+      "dimensions": {
+        "liquidity": 35.0,
+        "momentum": 87.16,
+        "alpha": 27.24,
+        "fund_flow": 25.03,
+        "theme": 0.0,
+        "fundamental": 58.55
+      },
+      "s1_raw": 50.81,
+      "s2_raw": 53.77,
+      "score": 53.77,
+      "rank": 28,
+      "note": "高檔拉回，等止穩再說"
     },
     {
       "code": "2382",
@@ -844,7 +569,6 @@
       "price": 380.0,
       "pct": 0.8,
       "vol": 18618,
-      "turnover": 707484.0,
       "dimensions": {
         "liquidity": 70.0,
         "momentum": 56.28,
@@ -855,16 +579,8 @@
       },
       "s1_raw": 46.47,
       "s2_raw": 52.95,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
+      "score": 52.95,
+      "rank": 29,
       "note": "ETF成分股(00981A)"
     },
     {
@@ -873,7 +589,6 @@
       "price": 36.35,
       "pct": 1.11,
       "vol": 19784,
-      "turnover": 71915.0,
       "dimensions": {
         "liquidity": 85.0,
         "momentum": 38.25,
@@ -884,945 +599,9 @@
       },
       "s1_raw": 46.13,
       "s2_raw": 52.41,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
+      "score": 52.41,
+      "rank": 30,
       "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "price": 41.65,
-      "pct": -2.34,
-      "vol": 53795,
-      "turnover": 224056.0,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 72.39,
-        "alpha": 17.04,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 68.47
-      },
-      "s1_raw": 42.86,
-      "s2_raw": 51.03,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2360",
-      "name": "致茂",
-      "price": 2310.0,
-      "pct": 0.22,
-      "vol": 2502,
-      "turnover": 577962.0,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 52.92,
-        "alpha": 11.32,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 62.11
-      },
-      "s1_raw": 44.43,
-      "s2_raw": 50.71,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2881",
-      "name": "國泰金",
-      "price": 138.5,
-      "pct": 0.0,
-      "vol": 24104,
-      "turnover": 333840.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 58.81,
-        "alpha": 10.0,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 72.58
-      },
-      "s1_raw": 40.52,
-      "s2_raw": 50.6,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF成分股(0050/00988A)"
-    },
-    {
-      "code": "3665",
-      "name": "貿聯-KY",
-      "price": 1990.0,
-      "pct": -6.13,
-      "vol": 4807,
-      "turnover": 956593.0,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 75.89,
-        "alpha": 33.0,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 51.35
-      },
-      "s1_raw": 47.46,
-      "s2_raw": 50.02,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "3017",
-      "name": "奇鋐",
-      "price": 2420.0,
-      "pct": 0.0,
-      "vol": 3026,
-      "turnover": 732292.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 52.26,
-        "alpha": 10.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 75.8
-      },
-      "s1_raw": 37.91,
-      "s2_raw": 49.77,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "液冷散熱台廠第一，訂單能見度到2029"
-    },
-    {
-      "code": "2886",
-      "name": "兆豐金",
-      "price": 44.75,
-      "pct": -2.4,
-      "vol": 52956,
-      "turnover": 236978.0,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 74.2,
-        "alpha": 17.4,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 58.61
-      },
-      "s1_raw": 43.66,
-      "s2_raw": 49.07,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "5269",
-      "name": "華豐",
-      "price": 1450.0,
-      "pct": 0.35,
-      "vol": 754,
-      "turnover": 109330.0,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 38.0,
-        "alpha": 12.1,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 68.84
-      },
-      "s1_raw": 38.62,
-      "s2_raw": 48.78,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF成分股(00991A)"
-    },
-    {
-      "code": "2395",
-      "name": "研華",
-      "price": 499.5,
-      "pct": 0.81,
-      "vol": 2924,
-      "turnover": 146054.0,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 54.0,
-        "alpha": 14.86,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 47.25
-      },
-      "s1_raw": 45.57,
-      "s2_raw": 47.8,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "Edge AI存股型，短線動能不足"
-    },
-    {
-      "code": "2890",
-      "name": "永豐金",
-      "price": 39.8,
-      "pct": -0.13,
-      "vol": 93427,
-      "turnover": 371839.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 51.01,
-        "alpha": 10.78,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 66.37
-      },
-      "s1_raw": 37.56,
-      "s2_raw": 47.22,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2610",
-      "name": "華航",
-      "price": 21.8,
-      "pct": -0.91,
-      "vol": 56695,
-      "turnover": 123595.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 49.54,
-        "alpha": 15.46,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 64.95
-      },
-      "s1_raw": 37.91,
-      "s2_raw": 47.2,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2609",
-      "name": "陽明",
-      "price": 52.3,
-      "pct": 1.36,
-      "vol": 37796,
-      "turnover": 197673.0,
-      "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 36.3,
-        "alpha": 28.16,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 41.68
-      },
-      "s1_raw": 45.65,
-      "s2_raw": 46.97,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2892",
-      "name": "第一金",
-      "price": 32.3,
-      "pct": -0.62,
-      "vol": 46600,
-      "turnover": 150518.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 52.57,
-        "alpha": 13.72,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 61.58
-      },
-      "s1_raw": 38.77,
-      "s2_raw": 46.85,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "price": 268.5,
-      "pct": -0.74,
-      "vol": 63545,
-      "turnover": 1706183.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 50.78,
-        "alpha": 14.44,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 61.2
-      },
-      "s1_raw": 38.2,
-      "s2_raw": 46.42,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF成分股(0050/00988A)"
-    },
-    {
-      "code": "2308",
-      "name": "台達電",
-      "price": 2150.0,
-      "pct": -0.69,
-      "vol": 13432,
-      "turnover": 2887880.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 53.34,
-        "alpha": 14.14,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 58.45
-      },
-      "s1_raw": 39.16,
-      "s2_raw": 46.33,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "AI 電源+液冷雙主軸，盤整後還有空間"
-    },
-    {
-      "code": "5880",
-      "name": "合庫金",
-      "price": 24.45,
-      "pct": -1.41,
-      "vol": 22988,
-      "turnover": 56206.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 53.64,
-        "alpha": 11.46,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 59.31
-      },
-      "s1_raw": 38.75,
-      "s2_raw": 46.21,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2327",
-      "name": "國巨",
-      "price": 1065.0,
-      "pct": -1.39,
-      "vol": 58977,
-      "turnover": 6281050.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 65.3,
-        "alpha": 11.34,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 46.78
-      },
-      "s1_raw": 43.39,
-      "s2_raw": 45.98,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "00981A/00992A/00991A 核心持股，今日漲停創高"
-    },
-    {
-      "code": "6505",
-      "name": "台塑化",
-      "price": 54.0,
-      "pct": 0.56,
-      "vol": 7823,
-      "turnover": 42244.0,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 38.7,
-        "alpha": 13.36,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 51.36
-      },
-      "s1_raw": 39.15,
-      "s2_raw": 44.78,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "4904",
-      "name": "遠傳",
-      "price": 108.0,
-      "pct": -0.92,
-      "vol": 43116,
-      "turnover": 465653.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 52.84,
-        "alpha": 15.52,
-        "fund_flow": 25.08,
-        "theme": 0.0,
-        "fundamental": 51.17
-      },
-      "s1_raw": 39.24,
-      "s2_raw": 44.6,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2884",
-      "name": "玉山金",
-      "price": 35.8,
-      "pct": -0.14,
-      "vol": 105517,
-      "turnover": 377751.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 45.72,
-        "alpha": 10.84,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 60.01
-      },
-      "s1_raw": 35.46,
-      "s2_raw": 44.32,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "6239",
-      "name": "力成",
-      "price": 366.0,
-      "pct": -0.27,
-      "vol": 61252,
-      "turnover": 2241823.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 51.92,
-        "alpha": 11.62,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 52.36
-      },
-      "s1_raw": 38.09,
-      "s2_raw": 44.07,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "動能中等，漲幅可能已被反映"
-    },
-    {
-      "code": "6285",
-      "name": "啟碁",
-      "price": 268.0,
-      "pct": -2.19,
-      "vol": 14388,
-      "turnover": 385598.0,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 66.08,
-        "alpha": 16.14,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 43.92
-      },
-      "s1_raw": 40.16,
-      "s2_raw": 43.18,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "網通+NB+低軌，無明確AI爆發點"
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "price": 67.8,
-      "pct": -0.15,
-      "vol": 62503,
-      "turnover": 423770.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 38.67,
-        "alpha": 10.9,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 60.41
-      },
-      "s1_raw": 32.65,
-      "s2_raw": 42.66,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "3008",
-      "name": "大立光",
-      "price": 5185.0,
-      "pct": -0.48,
-      "vol": 1697,
-      "turnover": 879894.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 50.82,
-        "alpha": 12.88,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 45.8
-      },
-      "s1_raw": 37.9,
-      "s2_raw": 42.34,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "營收確認佳但基期高"
-    },
-    {
-      "code": "3653",
-      "name": "健策",
-      "price": 3840.0,
-      "pct": -2.54,
-      "vol": 1315,
-      "turnover": 504960.0,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 68.08,
-        "alpha": 18.24,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 36.96
-      },
-      "s1_raw": 41.38,
-      "s2_raw": 42.25,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2615",
-      "name": "萬海",
-      "price": 80.5,
-      "pct": 0.12,
-      "vol": 6942,
-      "turnover": 55883.0,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 23.89,
-        "alpha": 10.72,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 56.93
-      },
-      "s1_raw": 32.7,
-      "s2_raw": 42.07,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "3045",
-      "name": "台灣大",
-      "price": 118.5,
-      "pct": 0.0,
-      "vol": 11163,
-      "turnover": 132282.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 40.35,
-        "alpha": 10.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 52.6
-      },
-      "s1_raw": 33.14,
-      "s2_raw": 40.99,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2412",
-      "name": "中華電",
-      "price": 144.5,
-      "pct": 0.0,
-      "vol": 8233,
-      "turnover": 118967.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 42.18,
-        "alpha": 10.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 49.64
-      },
-      "s1_raw": 33.87,
-      "s2_raw": 40.71,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF成分股(0050)"
-    },
-    {
-      "code": "4938",
-      "name": "和碩",
-      "price": 82.0,
-      "pct": -1.56,
-      "vol": 22391,
-      "turnover": 183606.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 46.67,
-        "alpha": 12.36,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 42.8
-      },
-      "s1_raw": 36.14,
-      "s2_raw": 40.48,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2313",
-      "name": "華通",
-      "price": 259.5,
-      "pct": -0.19,
-      "vol": 28046,
-      "turnover": 727794.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 44.59,
-        "alpha": 11.14,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 42.17
-      },
-      "s1_raw": 35.06,
-      "s2_raw": 39.61,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "AI載板+低軌衛星，等255以下"
-    },
-    {
-      "code": "1101",
-      "name": "台泥",
-      "price": 24.35,
-      "pct": -0.81,
-      "vol": 40246,
-      "turnover": 97999.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 43.39,
-        "alpha": 14.86,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 40.56
-      },
-      "s1_raw": 35.33,
-      "s2_raw": 39.48,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF成分股(00988A)"
-    },
-    {
-      "code": "3529",
-      "name": "力旺",
-      "price": 3180.0,
-      "pct": -2.75,
-      "vol": 452,
-      "turnover": 143736.0,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 51.67,
-        "alpha": 19.5,
-        "fund_flow": 25.0,
-        "theme": 0.0,
-        "fundamental": 35.0
-      },
-      "s1_raw": 35.07,
-      "s2_raw": 37.84,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "ETF成分股(00991A)"
-    },
-    {
-      "code": "2375",
-      "name": "凱美",
-      "price": 219.0,
-      "pct": 0.0,
-      "vol": 32758,
-      "turnover": 717400.0,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 45.15,
-        "alpha": 10.0,
-        "fund_flow": 25.06,
-        "theme": 0.0,
-        "fundamental": 30.66
-      },
-      "s1_raw": 35.06,
-      "s2_raw": 36.72,
-      "tier": "B",
-      "tier_label": "觀望",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      },
-      "track_assigned": "B",
-      "note": "AI電感/MLCC彈性最大，00981A掃貨"
     },
     {
       "code": "6269",
@@ -1830,7 +609,6 @@
       "price": 87.5,
       "pct": 9.65,
       "vol": 0,
-      "turnover": 0.0,
       "dimensions": {
         "liquidity": 5.0,
         "momentum": 85.86,
@@ -1841,17 +619,329 @@
       },
       "s1_raw": 51.84,
       "s2_raw": 49.71,
-      "tier": "E",
-      "tier_label": "流動性不足",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      },
-      "track_assigned": "E",
+      "score": 51.84,
+      "rank": 31,
       "note": "原始追蹤標的"
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "price": 41.65,
+      "pct": -2.34,
+      "vol": 53795,
+      "dimensions": {
+        "liquidity": 35.0,
+        "momentum": 72.39,
+        "alpha": 17.04,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 68.47
+      },
+      "s1_raw": 42.86,
+      "s2_raw": 51.03,
+      "score": 51.03,
+      "rank": 32,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "price": 2310.0,
+      "pct": 0.22,
+      "vol": 2502,
+      "dimensions": {
+        "liquidity": 70.0,
+        "momentum": 52.92,
+        "alpha": 11.32,
+        "fund_flow": 25.03,
+        "theme": 0.0,
+        "fundamental": 62.11
+      },
+      "s1_raw": 44.43,
+      "s2_raw": 50.71,
+      "score": 50.71,
+      "rank": 33,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2881",
+      "name": "國泰金",
+      "price": 138.5,
+      "pct": 0.0,
+      "vol": 24104,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 58.81,
+        "alpha": 10.0,
+        "fund_flow": 25.01,
+        "theme": 0.0,
+        "fundamental": 72.58
+      },
+      "s1_raw": 40.52,
+      "s2_raw": 50.6,
+      "score": 50.6,
+      "rank": 34,
+      "note": "ETF成分股(0050/00988A)"
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "price": 1990.0,
+      "pct": -6.13,
+      "vol": 4807,
+      "dimensions": {
+        "liquidity": 35.0,
+        "momentum": 75.89,
+        "alpha": 33.0,
+        "fund_flow": 25.04,
+        "theme": 0.0,
+        "fundamental": 51.35
+      },
+      "s1_raw": 47.46,
+      "s2_raw": 50.02,
+      "score": 50.02,
+      "rank": 35,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "price": 2420.0,
+      "pct": 0.0,
+      "vol": 3026,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 52.26,
+        "alpha": 10.0,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 75.8
+      },
+      "s1_raw": 37.91,
+      "s2_raw": 49.77,
+      "score": 49.77,
+      "rank": 36,
+      "note": "液冷散熱台廠第一，訂單能見度到2029"
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "price": 44.75,
+      "pct": -2.4,
+      "vol": 52956,
+      "dimensions": {
+        "liquidity": 35.0,
+        "momentum": 74.2,
+        "alpha": 17.4,
+        "fund_flow": 25.04,
+        "theme": 0.0,
+        "fundamental": 58.61
+      },
+      "s1_raw": 43.66,
+      "s2_raw": 49.07,
+      "score": 49.07,
+      "rank": 37,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "5269",
+      "name": "華豐",
+      "price": 1450.0,
+      "pct": 0.35,
+      "vol": 754,
+      "dimensions": {
+        "liquidity": 70.0,
+        "momentum": 38.0,
+        "alpha": 12.1,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 68.84
+      },
+      "s1_raw": 38.62,
+      "s2_raw": 48.78,
+      "score": 48.78,
+      "rank": 38,
+      "note": "ETF成分股(00991A)"
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "price": 499.5,
+      "pct": 0.81,
+      "vol": 2924,
+      "dimensions": {
+        "liquidity": 70.0,
+        "momentum": 54.0,
+        "alpha": 14.86,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 47.25
+      },
+      "s1_raw": 45.57,
+      "s2_raw": 47.8,
+      "score": 47.8,
+      "rank": 39,
+      "note": "Edge AI存股型，短線動能不足"
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "price": 39.8,
+      "pct": -0.13,
+      "vol": 93427,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 51.01,
+        "alpha": 10.78,
+        "fund_flow": 25.04,
+        "theme": 0.0,
+        "fundamental": 66.37
+      },
+      "s1_raw": 37.56,
+      "s2_raw": 47.22,
+      "score": 47.22,
+      "rank": 40,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "price": 21.8,
+      "pct": -0.91,
+      "vol": 56695,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 49.54,
+        "alpha": 15.46,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 64.95
+      },
+      "s1_raw": 37.91,
+      "s2_raw": 47.2,
+      "score": 47.2,
+      "rank": 41,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "price": 52.3,
+      "pct": 1.36,
+      "vol": 37796,
+      "dimensions": {
+        "liquidity": 85.0,
+        "momentum": 36.3,
+        "alpha": 28.16,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 41.68
+      },
+      "s1_raw": 45.65,
+      "s2_raw": 46.97,
+      "score": 46.97,
+      "rank": 42,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "price": 32.3,
+      "pct": -0.62,
+      "vol": 46600,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 52.57,
+        "alpha": 13.72,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 61.58
+      },
+      "s1_raw": 38.77,
+      "s2_raw": 46.85,
+      "score": 46.85,
+      "rank": 43,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "price": 268.5,
+      "pct": -0.74,
+      "vol": 63545,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 50.78,
+        "alpha": 14.44,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 61.2
+      },
+      "s1_raw": 38.2,
+      "s2_raw": 46.42,
+      "score": 46.42,
+      "rank": 44,
+      "note": "ETF成分股(0050/00988A)"
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "price": 2150.0,
+      "pct": -0.69,
+      "vol": 13432,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 53.34,
+        "alpha": 14.14,
+        "fund_flow": 25.03,
+        "theme": 0.0,
+        "fundamental": 58.45
+      },
+      "s1_raw": 39.16,
+      "s2_raw": 46.33,
+      "score": 46.33,
+      "rank": 45,
+      "note": "AI 電源+液冷雙主軸，盤整後還有空間"
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "price": 24.45,
+      "pct": -1.41,
+      "vol": 22988,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 53.64,
+        "alpha": 11.46,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 59.31
+      },
+      "s1_raw": 38.75,
+      "s2_raw": 46.21,
+      "score": 46.21,
+      "rank": 46,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "price": 1065.0,
+      "pct": -1.39,
+      "vol": 58977,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 65.3,
+        "alpha": 11.34,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 46.78
+      },
+      "s1_raw": 43.39,
+      "s2_raw": 45.98,
+      "score": 45.98,
+      "rank": 47,
+      "note": "00981A/00992A/00991A 核心持股，今日漲停創高"
     },
     {
       "code": "3038",
@@ -1859,7 +949,6 @@
       "price": 22.95,
       "pct": 1.1,
       "vol": 440,
-      "turnover": 1010.0,
       "dimensions": {
         "liquidity": 61.06,
         "momentum": 45.28,
@@ -1870,17 +959,229 @@
       },
       "s1_raw": 41.75,
       "s2_raw": 45.32,
-      "tier": "E",
-      "tier_label": "流動性不足",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      },
-      "track_assigned": "E",
+      "score": 45.32,
+      "rank": 48,
       "note": "ETF成分股(00981A/00991A)"
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "price": 54.0,
+      "pct": 0.56,
+      "vol": 7823,
+      "dimensions": {
+        "liquidity": 70.0,
+        "momentum": 38.7,
+        "alpha": 13.36,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 51.36
+      },
+      "s1_raw": 39.15,
+      "s2_raw": 44.78,
+      "score": 44.78,
+      "rank": 49,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "4904",
+      "name": "遠傳",
+      "price": 108.0,
+      "pct": -0.92,
+      "vol": 43116,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 52.84,
+        "alpha": 15.52,
+        "fund_flow": 25.08,
+        "theme": 0.0,
+        "fundamental": 51.17
+      },
+      "s1_raw": 39.24,
+      "s2_raw": 44.6,
+      "score": 44.6,
+      "rank": 50,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "price": 35.8,
+      "pct": -0.14,
+      "vol": 105517,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 45.72,
+        "alpha": 10.84,
+        "fund_flow": 25.04,
+        "theme": 0.0,
+        "fundamental": 60.01
+      },
+      "s1_raw": 35.46,
+      "s2_raw": 44.32,
+      "score": 44.32,
+      "rank": 51,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "price": 366.0,
+      "pct": -0.27,
+      "vol": 61252,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 51.92,
+        "alpha": 11.62,
+        "fund_flow": 25.04,
+        "theme": 0.0,
+        "fundamental": 52.36
+      },
+      "s1_raw": 38.09,
+      "s2_raw": 44.07,
+      "score": 44.07,
+      "rank": 52,
+      "note": "動能中等，漲幅可能已被反映"
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "price": 268.0,
+      "pct": -2.19,
+      "vol": 14388,
+      "dimensions": {
+        "liquidity": 35.0,
+        "momentum": 66.08,
+        "alpha": 16.14,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 43.92
+      },
+      "s1_raw": 40.16,
+      "s2_raw": 43.18,
+      "score": 43.18,
+      "rank": 53,
+      "note": "網通+NB+低軌，無明確AI爆發點"
+    },
+    {
+      "code": "2356",
+      "name": "英業達",
+      "price": 67.8,
+      "pct": -0.15,
+      "vol": 62503,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 38.67,
+        "alpha": 10.9,
+        "fund_flow": 25.03,
+        "theme": 0.0,
+        "fundamental": 60.41
+      },
+      "s1_raw": 32.65,
+      "s2_raw": 42.66,
+      "score": 42.66,
+      "rank": 54,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "price": 5185.0,
+      "pct": -0.48,
+      "vol": 1697,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 50.82,
+        "alpha": 12.88,
+        "fund_flow": 25.01,
+        "theme": 0.0,
+        "fundamental": 45.8
+      },
+      "s1_raw": 37.9,
+      "s2_raw": 42.34,
+      "score": 42.34,
+      "rank": 55,
+      "note": "營收確認佳但基期高"
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "price": 3840.0,
+      "pct": -2.54,
+      "vol": 1315,
+      "dimensions": {
+        "liquidity": 35.0,
+        "momentum": 68.08,
+        "alpha": 18.24,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 36.96
+      },
+      "s1_raw": 41.38,
+      "s2_raw": 42.25,
+      "score": 42.25,
+      "rank": 56,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "price": 80.5,
+      "pct": 0.12,
+      "vol": 6942,
+      "dimensions": {
+        "liquidity": 70.0,
+        "momentum": 23.89,
+        "alpha": 10.72,
+        "fund_flow": 25.01,
+        "theme": 0.0,
+        "fundamental": 56.93
+      },
+      "s1_raw": 32.7,
+      "s2_raw": 42.07,
+      "score": 42.07,
+      "rank": 57,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "3045",
+      "name": "台灣大",
+      "price": 118.5,
+      "pct": 0.0,
+      "vol": 11163,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 40.35,
+        "alpha": 10.0,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 52.6
+      },
+      "s1_raw": 33.14,
+      "s2_raw": 40.99,
+      "score": 40.99,
+      "rank": 58,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "price": 144.5,
+      "pct": 0.0,
+      "vol": 8233,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 42.18,
+        "alpha": 10.0,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 49.64
+      },
+      "s1_raw": 33.87,
+      "s2_raw": 40.71,
+      "score": 40.71,
+      "rank": 59,
+      "note": "ETF成分股(0050)"
     },
     {
       "code": "1216",
@@ -1888,7 +1189,6 @@
       "price": 74.3,
       "pct": -0.54,
       "vol": 14784,
-      "turnover": 109845.0,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 32.01,
@@ -1899,17 +1199,29 @@
       },
       "s1_raw": 30.45,
       "s2_raw": 40.62,
-      "tier": "C",
-      "tier_label": "不建議",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      },
-      "track_assigned": null,
+      "score": 40.62,
+      "rank": 60,
       "note": "ETF成分股(00988A)"
+    },
+    {
+      "code": "4938",
+      "name": "和碩",
+      "price": 82.0,
+      "pct": -1.56,
+      "vol": 22391,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 46.67,
+        "alpha": 12.36,
+        "fund_flow": 25.02,
+        "theme": 0.0,
+        "fundamental": 42.8
+      },
+      "s1_raw": 36.14,
+      "s2_raw": 40.48,
+      "score": 40.48,
+      "rank": 61,
+      "note": "ETF 成分追蹤"
     },
     {
       "code": "3005",
@@ -1917,7 +1229,6 @@
       "price": 100.5,
       "pct": -0.99,
       "vol": 6013,
-      "turnover": 60431.0,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 30.05,
@@ -1928,17 +1239,89 @@
       },
       "s1_raw": 30.21,
       "s2_raw": 39.98,
-      "tier": "C",
-      "tier_label": "不建議",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      },
-      "track_assigned": null,
+      "score": 39.98,
+      "rank": 62,
       "note": "ETF成分股(00981A)"
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "price": 259.5,
+      "pct": -0.19,
+      "vol": 28046,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 44.59,
+        "alpha": 11.14,
+        "fund_flow": 25.01,
+        "theme": 0.0,
+        "fundamental": 42.17
+      },
+      "s1_raw": 35.06,
+      "s2_raw": 39.61,
+      "score": 39.61,
+      "rank": 63,
+      "note": "AI載板+低軌衛星，等255以下"
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "price": 24.35,
+      "pct": -0.81,
+      "vol": 40246,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 43.39,
+        "alpha": 14.86,
+        "fund_flow": 25.03,
+        "theme": 0.0,
+        "fundamental": 40.56
+      },
+      "s1_raw": 35.33,
+      "s2_raw": 39.48,
+      "score": 39.48,
+      "rank": 64,
+      "note": "ETF成分股(00988A)"
+    },
+    {
+      "code": "3529",
+      "name": "力旺",
+      "price": 3180.0,
+      "pct": -2.75,
+      "vol": 452,
+      "dimensions": {
+        "liquidity": 35.0,
+        "momentum": 51.67,
+        "alpha": 19.5,
+        "fund_flow": 25.0,
+        "theme": 0.0,
+        "fundamental": 35.0
+      },
+      "s1_raw": 35.07,
+      "s2_raw": 37.84,
+      "score": 37.84,
+      "rank": 65,
+      "note": "ETF成分股(00991A)"
+    },
+    {
+      "code": "2375",
+      "name": "凱美",
+      "price": 219.0,
+      "pct": 0.0,
+      "vol": 32758,
+      "dimensions": {
+        "liquidity": 50.0,
+        "momentum": 45.15,
+        "alpha": 10.0,
+        "fund_flow": 25.06,
+        "theme": 0.0,
+        "fundamental": 30.66
+      },
+      "s1_raw": 35.06,
+      "s2_raw": 36.72,
+      "score": 36.72,
+      "rank": 66,
+      "note": "AI電感/MLCC彈性最大，00981A掃貨"
     },
     {
       "code": "2603",
@@ -1946,7 +1329,6 @@
       "price": 193.0,
       "pct": -0.52,
       "vol": 15103,
-      "turnover": 291488.0,
       "dimensions": {
         "liquidity": 50.0,
         "momentum": 26.74,
@@ -1957,16 +1339,8 @@
       },
       "s1_raw": 28.32,
       "s2_raw": 36.26,
-      "tier": "C",
-      "tier_label": "不建議",
-      "tier_cls": "tier-t4",
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      },
-      "track_assigned": null,
+      "score": 36.26,
+      "rank": 67,
       "note": "ETF 成分追蹤"
     }
   ]

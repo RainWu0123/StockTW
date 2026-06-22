@@ -3,153 +3,132 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>個股深度研究 — 台股 AI 投資追蹤</title>
+<title>個股深度研究</title>
 <style>
-:root{--bg:#080a0e;--panel:#11141b;--panel2:#181c26;--text:#d8dee8;--muted:#7a8599;--accent:#4da6ff;--green:#2ee89e;--red:#ff4d5e;--orange:#f09030;--border:#232a38;--shadow:0 10px 30px rgba(0,0,0,.35)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",Roboto,sans-serif;line-height:1.6}
-header{padding:18px 24px;border-bottom:1px solid var(--border);background:#0d1017;position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-header h1{font-size:18px;margin:0;font-weight:600}
-header a{color:var(--accent);text-decoration:none;font-size:13px}
-.container{max-width:1200px;margin:0 auto;padding:18px 16px 60px}
-.grid{display:grid;gap:14px}
-.grid-3{grid-template-columns:repeat(3,1fr)}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-@media(max-width:900px){.grid-3,.grid-2{grid-template-columns:1fr}}
-.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(0,0,0,.45)}
-.card h2{font-size:13px;color:var(--muted);margin:0 0 10px;text-transform:uppercase;letter-spacing:.8px}
-.big{font-size:26px;font-weight:700;display:block;margin-top:4px}
-.muted{color:var(--muted);font-size:12px}
-.tag{display:inline-block;font-size:11px;padding:3px 8px;border-radius:999px;font-weight:700;margin-right:4px;margin-bottom:4px}
-.t1{background:#122e26;color:var(--green);border:1px solid rgba(46,232,158,.18)}
-.t2{background:#14263a;color:var(--accent);border:1px solid rgba(77,166,255,.18)}
-.t3{background:#3a2714;color:var(--orange);border:1px solid rgba(240,144,48,.18)}
-.t4{background:#221a1a;color:#9aa1ad;border:1px solid rgba(156,163,175,.12)}
-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
-th{color:var(--muted);font-weight:600;text-align:left;padding:8px 6px;border-bottom:1px solid var(--border);cursor:pointer;user-select:none;white-space:nowrap}
-th:hover{color:var(--text)}
-td{padding:10px 6px;border-bottom:1px solid #1b2130}
-tr:hover td{background:rgba(255,255,255,.015)}
-.up{color:var(--green)}.down{color:var(--red)}.flat{color:var(--muted)}
-.ctrl{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;align-items:center}
-.ctrl input,.ctrl select{background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:9px 12px;font-size:14px;outline:none}
-.ctrl input:focus,.ctrl select:focus{border-color:var(--accent)}
-.section{margin-top:22px}
-.section h2{font-size:15px;font-weight:600;margin:0 0 12px}
-.back{display:inline-block;margin-bottom:14px;color:var(--accent);cursor:pointer;font-size:13px}
-.chart{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px;margin-top:12px}
-.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
-@media(max-width:900px){.kv{grid-template-columns:repeat(2,1fr)}}
-.kv div{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
-.kv b{display:block;color:var(--muted);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.6px}
-.kv span{font-size:15px;font-weight:700;display:block;margin-top:2px}
-.market-tag{font-size:11px;color:var(--muted);background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:2px 8px;margin-left:6px}
+  :root {
+    --bg: #0b0e14;
+    --panel: #111826;
+    --line: #1f2633;
+    --text: #e6eaf2;
+    --muted: #8a93a6;
+    --accent: #5aa9ff;
+    --good: #34d399;
+    --warn: #fbbf24;
+    --bad: #f87171;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, "Noto Sans TC", "PingFang TC", system-ui, sans-serif;
+    background: var(--bg); color: var(--text);
+  }
+  .topbar {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(17,24,38,0.85); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 18px; display: flex; gap: 10px; align-items: center;
+  }
+  .topbar h1 { font-size: 16px; margin: 0; margin-right: auto; }
+  .topbar input {
+    width: 260px; background: #0d111a; color: var(--text);
+    border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px 12px; font-size: 14px; outline: none;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px; padding: 16px;
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 14px; padding: 16px; cursor: pointer;
+    transition: transform .1s, border-color .1s;
+  }
+  .card:hover { transform: translateY(-2px); border-color: #2e3a4f; }
+  .card h2 { font-size: 15px; margin: 0 0 6px; color: var(--accent); }
+  .card .meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .card p { font-size: 13px; color: #c7cdd9; line-height: 1.55; margin: 0; }
+  .empty { color: var(--muted); padding: 30px; text-align: center; }
+  .markdown-body { line-height: 1.7; }
+  .markdown-body h1 { font-size: 18px; }
+  .markdown-body h2 { font-size: 16px; margin-top: 18px; color: var(--accent); }
+  .markdown-body table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  .markdown-body th, .markdown-body td {
+    border: 1px solid var(--line); padding: 6px 10px; text-align: left; font-size: 13px;
+  }
+  .markdown-body th { background: #0d111a; }
+  .back {
+    display: inline-block; margin: 12px 16px; color: var(--accent);
+    text-decoration: none; font-size: 14px;
+  }
 </style>
 </head>
 <body>
-<header>
-  <div>
-    <h1>📐 個股深度研究 <span class="market-tag" id="headerDate">--</span></h1>
-    <div class="muted" style="margin-top:4px">法人研究員 SubAgent 產出 · 數據可追溯 · 零炒作</div>
-  </div>
-  <a href="index.html">← 返回儀表板</a>
-</header>
-<div class="container">
-  <div class="ctrl">
-    <input type="text" id="searchBox" placeholder="🔍 搜尋名稱或代號" oninput="renderResearch()">
-    <select id="sortSel" onchange="setRSort(this.value)">
-      <option value="default">預設</option>
-      <option value="pct">漲跌幅</option>
-      <option value="price">股價</option>
-      <option value="tier">分級</option>
-      <option value="score">評分</option>
-    </select>
-    <button onclick="setRSort('default')">重置</button>
-    <span class="muted" id="rCount" style="align-self:center"></span>
-  </div>
-  <div class="section">
-    <div class="grid grid-3" id="researchCards"></div>
-  </div>
-  <div class="section" id="reportSection" style="display:none">
-    <div class="back" onclick="closeReport()">← 返回列表</div>
-    <div class="card" id="reportCard"><div id="reportBody"></div></div>
+<div class="topbar">
+  <h1>📑 個股深度研究</h1>
+  <input id="q" placeholder="搜尋代號 / 名稱 / 關鍵字..." />
+</div>
+<div id="grid" class="grid"></div>
+<div id="detail" style="display:none">
+  <a class="back" href="javascript:void(0)" onclick="back()">← 返回列表</a>
+  <div class="grid" style="padding-top:6px">
+    <div class="card" style="cursor:default">
+      <div id="md"></div>
+    </div>
   </div>
 </div>
 <script>
-let rStocks=[], rSort='default', rDir=1;
-function setRSort(k){ if(rSort===k) rDir*=-1; else{rSort=k;rDir=1;} renderResearch(); }
-function rSortFn(a,b){
-  const k=rSort;
-  if(k==='default') return ({T1:1,T2:2,T3:3,T4:4}[a.tier]||4)-({T1:1,T2:2,T3:3,T4:4}[b.tier]||4);
-  let av=a[k],bv=b[k];
-  if(['pct','price','score','vol'].indexOf(k)>=0) return (av-bv)*rDir;
-  if(typeof av==='string') av=av.toLowerCase(); if(typeof bv==='string') bv=bv.toLowerCase();
-  return av<bv?-1*rDir:av>bv?1*rDir:0;
-}
-function renderResearch(){
-  const q=(document.getElementById('searchBox').value||'').toLowerCase();
-  const rows=rStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
-  rows.sort(rSortFn);
-  document.getElementById('researchCards').innerHTML=rows.map(s=>`<div class="card" style="cursor:pointer" onclick="openReport('${s.code}')"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px"><div><span class="tag ${s.tier_cls||'t4'}">${s.tier||'T4'}</span><span class="muted" style="font-size:11px">${s.code}</span></div><div class="muted" style="font-size:11px">${(s.etf_tags||[]).join(', ')}</div></div><div style="font-size:16px;font-weight:700;margin-top:8px">${s.name||s.code}</div><div class="big pct-${pctClass(s.pct)}" style="font-size:22px;margin-top:4px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div><div class="muted" style="margin-top:6px">成交量 ${(s.vol||0).toLocaleString()} 張${s.score!=null?' · 評分 '+s.score:''}</div></div>`).join('');
-  document.getElementById('rCount').textContent=rows.length+' / '+rStocks.length+' 檔';
-}
-function pctClass(p){ return p>0?'up':p<0?'down':'flat'; }
-function openReport(code){
-  const s=rStocks.find(x=>x.code===code); if(!s) return;
-  document.getElementById('reportSection').style.display='block';
-  document.getElementById('reportCard').scrollIntoView({behavior:'instant'});
-  const mdPath = 'research_data/'+code+'.md';
-  const chartPath = 'research_data/'+code+'.json';
-  // 嘗試同時載入報告 + 價格歷史
-  Promise.all([
-    fetch(mdPath).then(r=>r.text()).catch(()=>null),
-    fetch(chartPath).then(r=>r.json()).catch(()=>null)
-  ]).then(([mdText, chart])=>{
-    let chartHtml = '';
-    if(chart && chart.closes && chart.closes.length>1){
-      const w=600, h=120, pad=4;
-      const cs = chart.closes;
-      const mn = Math.min(...cs), mx = Math.max(...cs);
-      const rng = mx-mn || 1;
-      const pts = cs.map((v,i)=>{
-        const x = pad + (i/(cs.length-1))*(w-2*pad);
-        const y = h-pad - ((v-mn)/rng)*(h-2*pad);
-        return `${x},${y}`;
-      }).join(' ');
-      const color = cs[cs.length-1]>=cs[0]?'var(--green)':'var(--red)';
-      chartHtml = `<div class="chart"><h2 style="font-size:13px;color:var(--muted);margin:0 0 8px;text-transform:uppercase;letter-spacing:.6px">近三個月股價走勢</h2><svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" style="width:100%;height:120px"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2"/></svg><div class="muted" style="margin-top:6px">收盤：${chart.last||cs[cs.length-1]} 元（近 ${cs.length} 交易日）</div></div>`;
+(async () => {
+  const BASE = '/home/ubuntu/investment/research';
+  const listUrl = BASE + '?format=json';
+  let files = [];
+  try {
+    const res = await fetch(listUrl);
+    const txt = await res.text();
+    // fallback: 用已知檔名
+    files = ['1101_台泥.md','1216_統一.md','1301_台塑.md','1303_台塑化.md','2002_中鋼.md','2303_聯電.md','2308_台達電.md','2313_華通.md','2317_鴻海.md','2327_國巨.md','2330_台積電.md','2344_華邦電.md','2345_鴻準.md','2375_凱美.md','2382_廣達.md','2383_台光電.md','2395_研華.md','2404_漢唐.md','2408_南亞科.md','2412_中華電.md','2454_聯發科.md','2609_陽明.md','2610_華航.md','2615_萬海.md','2618_長榮航.md','2881_國泰金.md','2882_開發金.md','2884_玉山金.md','2886_兆豐金.md','2890_永豐金.md','2892_第一金.md','3005_神基.md','3008_大立光.md'];
+  } catch (e) { files = []; }
+
+  const q = document.getElementById('q');
+  const grid = document.getElementById('grid');
+  const detail = document.getElementById('detail');
+  const md = document.getElementById('md');
+
+  function render(list) {
+    grid.innerHTML = '';
+    if (!list.length) { grid.innerHTML = '<div class="empty">沒有符合的研究報告</div>'; return; }
+    list.forEach(f => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<h2>${f.replace('.md','')}</h2><div class="meta">research/${f}</div>`;
+      card.onclick = () => openMarkdown(BASE + '/' + f);
+      grid.appendChild(card);
+    });
+  }
+
+  async function openMarkdown(url) {
+    grid.style.display = 'none';
+    detail.style.display = 'block';
+    md.innerHTML = '載入中...';
+    try {
+      const res = await fetch(url);
+      const text = await res.text();
+      md.innerHTML = '<div class="markdown-body">' + marked.parse(text) + '</div>';
+    } catch (e) {
+      md.innerHTML = '<div class="empty">載入失敗</div>';
     }
-    const mdHtml = mdText ? simpleMd(mdText) : '<div class="alert" style="border-color:#252a36;color:var(--muted)">研究報告尚未產出，請稍後再試。</div>';
-    document.getElementById('reportBody').innerHTML='<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px"><h1 style="margin:0;font-size:22px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><span class="tag '+(s.tier_cls||'t4')+'">'+(s.tier||'T4')+'</span><span class="market-tag">'+(s.industry||'')+'</span></div>' + chartHtml + mdHtml;
-  }).catch(()=>{
-    document.getElementById('reportBody').innerHTML='<h1 style="margin:0 0 4px">'+s.name+' <span class="muted" style="font-weight:400;font-size:14px">'+s.code+'</span></h1><div class="alert" style="border-color:#252a36;color:var(--muted)">研究報告尚未產出，請稍後再試。</div>';
+  }
+  window.back = () => { detail.style.display = 'none'; grid.style.display = ''; };
+
+  q.addEventListener('input', () => {
+    const v = q.value.trim().toLowerCase();
+    const filtered = files.filter(f => f.toLowerCase().includes(v) || f.replace('.md','').includes(v));
+    render(filtered);
+    back();
   });
-}
-function closeReport(){
-  document.getElementById('reportSection').style.display='none';
-}
-// 簡易 Markdown 轉 HTML（足夠處理研究報告格式）
-function simpleMd(text){
-  let h=text;
-  h=h.replace(/^### (.+)$/gm,'<h3 style="font-size:14px;font-weight:600;color:var(--accent);margin:18px 0 8px">$1</h3>');
-  h=h.replace(/^## (.+)$/gm,'<h2 style="font-size:16px;font-weight:700;margin:22px 0 10px;border-bottom:1px solid var(--border);padding-bottom:6px">$1</h2>');
-  h=h.replace(/^# (.+)$/gm,'<h1 style="font-size:20px;font-weight:700;margin:0 0 12px">$1</h1>');
-  h=h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
-  h=h.replace(/^- (.+)$/gm,'<li style="margin-left:18px;margin-bottom:4px">$1</li>');
-  h=h.replace(/<li[^>]*>/g,'<ul style="margin:6px 0;padding-left:0;list-style:none">$&');
-  h=h.replace(/^\|(.+)\|$/gm,function(m,c){return '<tr>'+c.split('|').map(x=>'<td style="padding:6px 8px;border-bottom:1px solid #1b2130;font-size:13px">'+x.trim()+'</td>').join('')+'</tr>';});
-  h=h.replace(/((<tr>.*<\/tr>\n?)+)/g,'<table style="width:100%;border-collapse:collapse;margin:8px 0">$1</table>');
-  h=h.replace(/\n{2,}/g,'<div style="height:10px"></div>');
-  return h;
-}
-fetch('data.json').then(r=>r.json()).then(d=>{
-  document.getElementById('headerDate').textContent=d.date||'--';
-  rStocks=d.stocks||[];
-  renderResearch();
-}).catch(e=>{
-  document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:var(--red);color:#fbb">data.json 讀取失敗：'+e.message+'</div>');
-});
+
+  render(files);
+})();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>
