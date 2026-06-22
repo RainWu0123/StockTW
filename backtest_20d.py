@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-回溯测试 v2：從 yfinance 拉 60 日日線，逐日重建五維 STAR 分數，
-只使用當日可見的價格/量能數據（fundamental 和 institution 在歷史日線不可得，暫時設為 0 或靜態近似）。
+回溯測試：從 yfinance 拉 60 日日線，逐日重建 STAR 分數，
+只使用當日可見的價格/量能數據。
 """
 import json, time, math
 from datetime import datetime, timedelta
@@ -20,7 +20,6 @@ RULES_PATH = os.path.join(BASE, "data", "scoring_rules.json")
 
 with open(DATA_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
-
 with open(RULES_PATH, "r", encoding="utf-8") as f:
     rules = json.load(f)
 
@@ -28,7 +27,7 @@ stocks = data.get("stocks", [])
 codes = [s["code"] for s in stocks if s.get("code")]
 print(f"[backtest] {len(codes)} stocks")
 
-# 靜態字段（從 data.json 快照取，不隨日期變化）
+# 靜態字段
 static_fields = {}
 for s in stocks:
     static_fields[s["code"]] = {
@@ -42,10 +41,8 @@ for s in stocks:
         "averageVolume10days": s.get("averageVolume10days"),
     }
 
-# 拉 60 天歷史
 def fetch_history(code):
-    tickers = [code + ".TW", code + ".TWO"]
-    for tk in tickers:
+    for tk in [code + ".TW", code + ".TWO"]:
         try:
             t = yf.Ticker(tk)
             h = t.history(period="3mo", interval="1d")
@@ -64,7 +61,6 @@ for code in codes:
 
 print(f"[backtest] loaded history for {len(hist_map)}/{len(codes)} codes")
 
-# 工具函數
 def safe_num(v, default=0.0):
     try:
         n = float(v)
@@ -75,20 +71,14 @@ def safe_num(v, default=0.0):
 def clamp(v, lo=0.0, hi=100.0):
     return max(lo, min(hi, v))
 
-# 五維（只使用日線可推導的字段）
 def score_liquidity(price, vol, pct):
     turnover = (vol * price * 1000) / 10000 if price > 0 else 0
     t_score = min(turnover / 5000, 1.0) * 30
-    if vol > 0 and pct > 3:
-        attack = 70
-    elif vol > 0 and pct > 1:
-        attack = 55
-    elif vol > 0 and pct > 0:
-        attack = 40
-    elif vol > 0 and pct > -2:
-        attack = 20
-    else:
-        attack = 5
+    if vol > 0 and pct > 3: attack = 70
+    elif vol > 0 and pct > 1: attack = 55
+    elif vol > 0 and pct > 0: attack = 40
+    elif vol > 0 and pct > -2: attack = 20
+    else: attack = 5
     return clamp(t_score + attack)
 
 def score_momentum(price, vol, pct, rev_growth):
@@ -96,22 +86,16 @@ def score_momentum(price, vol, pct, rev_growth):
     score += min(abs(pct) / 3, 1.0) * 40
     rev = safe_num(rev_growth, 0)
     score += min(max(rev, -1), 1) * 15 + 15
-    # 52周位置用 hist high/low proxy（此處略，用 pct 代替）
     score += min(max(pct + 5, 0) / 10, 1.0) * 30
     return clamp(score)
 
 def score_alpha(pct):
     score = 0.0
-    if pct > 5:
-        score += 50
-    elif pct > 3:
-        score += 35
-    elif pct > 1:
-        score += 20
-    elif pct > -1:
-        score += 10
-    else:
-        score += 3
+    if pct > 5: score += 50
+    elif pct > 3: score += 35
+    elif pct > 1: score += 20
+    elif pct > -1: score += 10
+    else: score += 3
     score += min(abs(pct) / 5, 1.0) * 30
     return clamp(score)
 
@@ -148,9 +132,6 @@ def classify(dims, track):
     )
     return round(raw, 2)
 
-MIN_TURNOVER = rules.get("pre_filters", {}).get("min_turnover", 3000)
-
-# 逐日回溯
 lookback = 100
 summary = {
     "generated_at": datetime.now().isoformat(),
@@ -161,13 +142,11 @@ summary = {
 }
 
 tier_hits = {t: {"count": 0, "win": 0, "returns": [], "codes": []} for t in ["S1","S2","A","B","C","D","E"]}
-tier_transitions = {code: [] for code in codes}
 
 for code in codes:
     h = hist_map.get(code)
     if h is None or len(h) < 10:
         continue
-    # 取最近 20 個交易日
     dates = list(h.index[-lookback:])
     for i, idx in enumerate(dates):
         date_str = idx.strftime("%Y-%m-%d")
@@ -195,7 +174,7 @@ for code in codes:
         turnover_est = (vol * close * 1000) / 10000 if close > 0 else 0
         assigned = False
         tier = "E"
-        if turnover_est < MIN_TURNOVER:
+        if turnover_est < rules.get("pre_filters", {}).get("min_turnover", 3000):
             tier = "E"
         else:
             if s1 >= rules["tracks"]["S1"]["min_score"] and not rules["tracks"]["S1"].get("macro_bound", False):
@@ -211,8 +190,7 @@ for code in codes:
                     tier = "C"
         tier_hits[tier]["count"] += 1
         tier_hits[tier]["codes"].append(code)
-        tier_transitions[code].append({"date": date_str, "tier": tier})
-        # 次日報酬
+
         if i + 1 < len(dates):
             nxt_close = float(h.loc[dates[i + 1], "Close"])
             future_ret = round((nxt_close - close) / close * 100, 2)
@@ -220,7 +198,6 @@ for code in codes:
                 tier_hits[tier]["win"] += 1
             tier_hits[tier]["returns"].append(future_ret)
 
-# 統計
 for t, v in tier_hits.items():
     cnt = v["count"]
     if cnt > 0:
@@ -238,8 +215,6 @@ for t, v in tier_hits.items():
         v["max_drawdown"] = 0
 
 summary["stats"] = tier_hits
-summary["transitions"] = {k: v for k, v in tier_transitions.items()}
-
 with open(OUT_PATH, "w", encoding="utf-8") as f:
     json.dump(summary, f, ensure_ascii=False, indent=2)
 
@@ -247,11 +222,3 @@ print(f"[backtest] saved to {OUT_PATH}")
 print("[backtest] Stats:")
 for t, v in tier_hits.items():
     print(f"  {t}: n={v['count']}, win={v['win_rate']:.2%}, avg_ret={v['avg_return']:.2f}%, max_dd={v['max_drawdown']:.2f}%")
-
-# 列出各級別 top 5 報酬
-print("\n[backtest] Top winners/losers by tier:")
-for t in ["S1", "S2", "A", "B"]:
-    rets = tier_hits[t]["returns"]
-    if rets:
-        rets_sorted = sorted(rets, reverse=True)
-        print(f"  {t} winners: {rets_sorted[:3]}, losers: {rets_sorted[-3:]}")
