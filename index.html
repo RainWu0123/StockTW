@@ -174,47 +174,121 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
 }
 .alert::before { content: "ℹ️"; font-size: 14px; flex-shrink: 0; }
 
-/* === 產業 Treemap === */
-.heat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  grid-auto-rows: minmax(90px, auto);
-  gap: 10px;
+/* === 產業 Treemap (Bloomberg / TradingView) === */
+.heat-wrap {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-press);
+}
+.heat-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin: 0 auto;
 }
 .heat-tile {
-  background: linear-gradient(180deg, #181c26, #14171f);
-  border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 12px 14px; cursor: pointer; position: relative;
-  box-shadow: var(--shadow-press);
-  transition: transform .22s cubic-bezier(.2,.8,.2,1), box-shadow .22s, border-color .22s;
-  overflow: hidden; min-height: 90px;
+  position: absolute;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s, border-color .18s;
+  display: flex; flex-direction: column; justify-content: space-between;
 }
 .heat-tile:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-raise);
-  border-color: #3a4258;
+  z-index: 20;
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 12px 32px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.15);
 }
-.heat-tile-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.heat-tile-inner {
+  padding: 10px 12px; height: 100%;
+  display: flex; flex-direction: column; justify-content: space-between;
+  pointer-events: none; position: relative; z-index: 1;
+}
 .industry-title { font-size: 14px; font-weight: 700; }
-.arrow { font-size: 12px; color: var(--muted); font-weight: 700; }
-.heat-tile-body {
-  margin-top: 10px; border-top: 1px solid var(--border);
-  padding-top: 10px; display: flex; flex-wrap: wrap; gap: 8px;
-}
-.heat-tile-body.collapsed { display: none; }
-.stock-tag {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 6px 10px; border-radius: 10px;
-  background: linear-gradient(180deg, #1a1f2b, #161a24);
-  border: 1px solid var(--border); color: var(--text);
-  font-size: 12px; box-shadow: var(--shadow-press); cursor: pointer;
-}
-.stock-tag:active { transform: translateY(1px); }
-.arrow {
-  margin-left: auto; color: var(--muted); font-size: 11px;
-  transition: transform .25s;
-}
+.arrow { margin-left: auto; color: var(--muted); font-size: 11px; transition: transform .25s; }
 .expanded .arrow { transform: rotate(180deg); }
+.heat-tile-name {
+  font-size: 11px; font-weight: 800; color: rgba(255,255,255,0.92);
+  line-height: 1.2; letter-spacing: .2px; text-transform: uppercase;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.heat-tile-meta { margin-top: auto; }
+.heat-tile-pct {
+  font-size: 18px; font-weight: 800; letter-spacing: -.3px; line-height: 1;
+}
+.heat-tile-count {
+  font-size: 10px; color: rgba(255,255,255,0.5); font-weight: 600; margin-top: 3px;
+}
+.heat-tile .expand-icon {
+  position: absolute; bottom: 6px; right: 8px;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; color: rgba(255,255,255,0.85); line-height: 1;
+  transition: transform .25s, opacity .25s;
+  opacity: 0; pointer-events: none;
+}
+.heat-tile:hover .expand-icon { opacity: 1; }
+.heat-tile.expanded .expand-icon { transform: rotate(180deg); opacity: 1; }
+.heat-tile-body {
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.25) 65%, transparent 100%);
+  padding: 10px 12px; display: none;
+  flex-wrap: wrap; gap: 5px; align-content: flex-end;
+  opacity: 0; z-index: 2;
+}
+.heat-tile.expanded .heat-tile-body { display: flex; }
+.heat-tile-body.collapsed { display: none !important; }
+.stock-tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 8px; border-radius: 6px;
+  background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.18);
+  color: #fff; font-size: 11px; font-weight: 600;
+  backdrop-filter: blur(4px); pointer-events: auto;
+  transition: background .15s;
+}
+.stock-tag:hover { background: rgba(0,0,0,0.8); border-color: rgba(255,255,255,0.35); }
+.heat-tooltip {
+  position: fixed; z-index: 999;
+  background: rgba(10,12,18,0.96);
+  border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px 14px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.75);
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+  opacity: 0; transition: opacity .12s;
+  font-size: 12px; max-width: 260px;
+}
+.heat-tooltip.visible { opacity: 1; }
+.heat-tooltip .tt-name { font-weight: 800; font-size: 13px; color: #fff; }
+.heat-tooltip .tt-count { color: var(--muted); margin-top: 2px; }
+.heat-tooltip .tt-pct { font-size: 16px; font-weight: 800; margin-top: 6px; }
+.heat-tooltip .tt-stocks { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+.heat-legend {
+  display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+  font-size: 11px; color: var(--muted); font-weight: 600;
+}
+.heat-legend-bar {
+  flex: 1; height: 6px; border-radius: 3px;
+  background: linear-gradient(90deg, var(--red), #374151, var(--green));
+}
+.heat-legend-label { font-size: 10px; }
+@media (max-width: 768px) {
+  .heat-container { aspect-ratio: 4 / 3; }
+  .heat-tile-inner { padding: 7px 9px; }
+  .heat-tile-name { font-size: 9px; }
+  .heat-tile-pct { font-size: 14px; }
+  .heat-tile-count { font-size: 9px; }
+}
+@media (max-width: 480px) {
+  .heat-container { aspect-ratio: 1 / 1; }
+  .heat-tile { border-radius: 2px; }
+}
 
 /* === Sheet === */
 .backdrop {
@@ -335,7 +409,7 @@ body.sheet-open { overflow: hidden; }
 
   <main id="page-chip" class="section"><div class="section-body"><div class="alert">成交額分位替代換手率異形偵測。</div><div id="chipList"></div></div></main>
 
-  <main id="page-heat" class="section"><div class="section-body"><div class="alert">依產業族群分群：點擊色塊可展開成分股。面積越大代表檔數越多。</div><div class="heat-grid" id="heatView"></div><div id="industryDetail" style="margin-top:10px"></div></div></main>
+  <main id="page-heat" class="section"><div class="section-body"><div class="alert">依產業族群分群：點擊色塊可展開成分股。面積越大代表檔數越多。</div><div class="heat-wrap"><div class="heat-container" id="heatView"></div><div class="heat-legend" id="heatLegend"></div></div><div id="industryDetail" style="margin-top:10px"></div></div></main>
 
   <main id="page-etf" class="section"><div class="section-body"><div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。選 ETF 可看成分股；選「全部追蹤」看所有含 ETF 標記的個股。</div><div class="ctrl" style="margin-top:6px"><select id="etfSel" onchange="renderEtf()"><option value="">全部追蹤</option><option value="0050">0050 台灣50</option><option value="00981A">00981A 永豐臺灣科技</option><option value="00991A">00991A 中信關鍵半導體</option><option value="00988A">00988A 富邦台灣優質</option></select></div><div id="etfList"></div></div></main>
 
@@ -355,8 +429,14 @@ body.sheet-open { overflow: hidden; }
   </div>
 </div>
 
+<div id="heatTooltip" class="heat-tooltip"></div>
+
 <script>
 let allStocks=[], currentSort='default', currentDir=1, _heat={industries:[]}, _raf=null;
+
+// 快取細節渲染所需的 Map 與同業卡片，避免每次點擊都重算
+let _stockMap=null;
+let _peerCache={};
 
 document.querySelectorAll('#navTabs .tab').forEach(t=>{
   t.addEventListener('click', ()=>{
@@ -368,7 +448,7 @@ document.querySelectorAll('#navTabs .tab').forEach(t=>{
       if(!el) return;
       el.classList.toggle('active', p===page);
     });
-    if(page==='heat') renderHeat();
+    if(page==='heat'){ renderHeat(); animateAll(); }
     if(page==='signals') renderSignals();
     if(page==='chip') renderChip();
     if(page==='etf') renderEtf();
@@ -439,42 +519,158 @@ function renderChip(){
 }
 
 /* === 產業熱力：可展開卡片 === */
-/* === 產業熱力 Treemap === */
-function toggleIndustry(el){
-  const body = el.querySelector('.industry-body');
-  if(!body) return;
-  el.classList.toggle('expanded');
-  const isCollapsed = body.classList.contains('collapsed');
-  if(isCollapsed){
-    body.classList.remove('collapsed');
-    gsap.fromTo(body, {opacity:0, y:6}, {opacity:1, y:0, duration:.32, ease:'power2.out'});
-  } else {
-    gsap.to(body, {opacity:0, y:-4, duration:.2, ease:'power1.in', onComplete:()=>body.classList.add('collapsed')});
+/* === 產業熱力 Treemap (Squarified) === */
+function squarify(items, x, y, w, h){
+  const data = items.map(it=>({...it, area: Math.max(1, it.area||1)}));
+  const rects = [];
+  function worst(row, rowArea, sideLen){
+    if(rowArea <= 0 || sideLen <= 0) return Infinity;
+    const stripW = rowArea / sideLen;
+    let worst = 0;
+    for(const r of row){
+      const itemH = r.area / stripW;
+      const ar = Math.max(stripW / itemH, itemH / stripW);
+      worst = Math.max(worst, ar);
+    }
+    return worst;
   }
+  function lay(row, stripW, cx, cy, cw, ch){
+    let offset = 0;
+    for(const r of row){
+      const itemLen = r.area / stripW;
+      if(cw >= ch){
+        rects.push({...r, x: cx, y: cy+offset, w: stripW, h: itemLen});
+      } else {
+        rects.push({...r, x: cx+offset, y: cy, w: itemLen, h: stripW});
+      }
+      offset += itemLen;
+    }
+  }
+  function rec(children, cx, cy, cw, ch){
+    if(!children.length) return;
+    if(children.length === 1){ rects.push({...children[0], x:cx, y:cy, w:cw, h:ch}); return; }
+    if(cw <= 0 || ch <= 0) return;
+    const isWide = cw >= ch;
+    const sideLen = isWide ? ch : cw;
+    const row = [];
+    let rowArea = 0;
+    for(let i = 0; i < children.length; i++){
+      const c = children[i];
+      const nextRow = [...row, c];
+      const nextRowArea = rowArea + c.area;
+      const curWorst = row.length === 0 ? Infinity : worst(row, rowArea, sideLen);
+      const newWorst = worst(nextRow, nextRowArea, sideLen);
+      if(newWorst <= curWorst){
+        row.push(c); rowArea += c.area;
+      } else {
+        break;
+      }
+    }
+    const stripW = rowArea / sideLen;
+    lay(row, stripW, cx, cy, cw, ch);
+    if(isWide){
+      rec(children.slice(row.length), cx+stripW, cy, cw-stripW, ch);
+    } else {
+      rec(children.slice(row.length), cx, cy+stripW, cw, ch-stripW);
+    }
+  }
+  rec(data, x, y, w, h);
+  return rects;
 }
-function renderHeat(){
-  const industries=_heat.industries||[];
-  if(!industries.length){
-    document.getElementById('heatView').innerHTML='<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無產業數據</div>';
-    return;
-  }
-  const map=new Map(allStocks.map(s=>[s.code,s]));
-  const tiles=industries.map(x=>{
-    const bg=heatColor(x.avg_pct);
-    const chips=(x.codes||'').split(',').map(c=>{const s=map.get(c); if(!s) return ''; return `<span class="stock-tag" onclick="event.stopPropagation();openDetail('${s.code}')">${s.code} ${s.name}</span>`;}).join('');
-    const span=Math.max(1,Math.min(3,Math.ceil((x.total||1)/2)));
-    return `<div class="heat-tile" onclick="toggleIndustry(this)" style="background:${bg};grid-row:span ${span};grid-column:span ${span};">
-      <div class="heat-tile-head"><span class="industry-title">${x.industry}</span><span class="arrow">${x.total}</span></div>
-      <div class="heat-tile-body collapsed"><div style="margin-top:6px">${chips}</div></div>
-    </div>`;
-  }).join('');
-  document.getElementById('heatView').innerHTML=tiles;
+
+function colorShade(hex, pct){
+  let num = parseInt(hex.replace('#',''), 16), amt = Math.round(2.55 * pct);
+  let R = Math.min(255, (num >> 16) + amt);
+  let G = Math.min(255, ((num >> 8) & 0x00FF) + amt);
+  let B = Math.min(255, (num & 0x0000FF) + amt);
+  return '#' + (0x1000000 + R * 0x10000 + G * 0x100 + B).toString(16).slice(1);
 }
 
 function heatColor(pct){
-  if(pct>0){ const a=Math.min(120,Math.round(Math.abs(pct)*5)); return 'rgba(52,211,153,'+(a/120).toFixed(2)+')'; }
-  if(pct<0){ const a=Math.min(120,Math.round(Math.abs(pct)*5)); return 'rgba(248,113,113,'+(a/120).toFixed(2)+')'; }
-  return 'rgba(122,133,153,0.25)';
+  if(pct >= 5) return '#059669';
+  if(pct >= 3) return '#047857';
+  if(pct >= 1) return '#065f46';
+  if(pct > 0) return '#064e3b';
+  if(pct > -0.5) return '#1f2937';
+  if(pct > -3) return '#991b1b';
+  if(pct > -5) return '#7f1d1d';
+  return '#450a0a';
+}
+
+function toggleIndustry(el){
+  const body = el.querySelector('.heat-tile-body');
+  if(!body) return;
+  const wasExpanded = el.classList.contains('expanded');
+  document.querySelectorAll('.heat-tile.expanded').forEach(tile=>{
+    if(tile !== el){
+      tile.classList.remove('expanded');
+      const b=tile.querySelector('.heat-tile-body');
+      if(b){ gsap.to(b, {opacity:0, y:-4, duration:.15, ease:'power1.in', onComplete:()=>b.classList.add('collapsed')}); }
+    }
+  });
+  if(wasExpanded){
+    el.classList.remove('expanded');
+    gsap.to(body, {opacity:0, y:-4, duration:.2, ease:'power1.in', onComplete:()=>body.classList.add('collapsed')});
+  } else {
+    el.classList.add('expanded');
+    body.classList.remove('collapsed');
+    gsap.fromTo(body, {opacity:0, y:6}, {opacity:1, y:0, duration:.32, ease:'power2.out'});
+  }
+}
+
+function renderHeat(){
+  const industries = _heat.industries || [];
+  if(!industries.length){
+    document.getElementById('heatView').innerHTML='<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無產業數據</div>';
+    if(document.getElementById('heatLegend')) document.getElementById('heatLegend').innerHTML='';
+    return;
+  }
+  const map = new Map(allStocks.map(s=>[s.code,s]));
+  const sorted = industries.map(x=>({...x, area: Math.max(1, x.total||1)})).sort((a,b)=>b.area - a.area);
+  const container = document.getElementById('heatView');
+  const rect = container.getBoundingClientRect();
+  const w = rect.width || 800, h = rect.height || 500;
+  const tiles = squarify(sorted, 0, 0, w, h);
+  container.innerHTML = tiles.map(x=>{
+    const base = heatColor(x.avg_pct);
+    const light = colorShade(base, 18);
+    const bgGrad = 'linear-gradient(160deg, '+light+', '+base+')';
+    const pctStr = x.avg_pct != null ? (x.avg_pct>0?'+':'')+x.avg_pct.toFixed(2)+'%' : '--%';
+    const pctRaw = x.avg_pct != null ? x.avg_pct.toFixed(2) : '0';
+    const chips = (x.codes||'').split(',').map(c=>{
+      const s = map.get(c); if(!s) return '';
+      return '<span class="stock-tag" onclick="event.stopPropagation();openDetail(\''+s.code+'\')">'+s.code+' '+s.name+'</span>';
+    }).join('');
+    return '<div class="heat-tile" onclick="toggleIndustry(this)" style="left:'+((x.x/w)*100)+'%;top:'+((x.y/h)*100)+'%;width:'+((x.w/w)*100)+'%;height:'+((x.h/h)*100)+'%;background:'+bgGrad+';" data-tooltip-industry="'+x.industry+'" data-tooltip-pct="'+pctStr+'" data-tooltip-pct-raw="'+pctRaw+'" data-tooltip-count="'+(x.total||0)+'" data-tooltip-stocks="'+chips.replace(/"/g,'&quot;')+'"><div class="heat-tile-inner"><div class="heat-tile-name">'+x.industry+'</div><div class="heat-tile-meta"><div class="heat-tile-pct '+pctClass(x.avg_pct)+'">'+pctStr+'</div><div class="heat-tile-count">'+(x.total||0)+' 檔</div></div></div><div class="expand-icon">▾</div><div class="heat-tile-body collapsed"><div style="width:100%;display:flex;flex-wrap:wrap;gap:5px">'+chips+'</div></div></div>';
+  }).join('');
+  const legend = document.getElementById('heatLegend');
+  if(legend) legend.innerHTML = '<span class="heat-legend-label">弱</span><div class="heat-legend-bar"></div><span class="heat-legend-label">強</span>';
+  if(!container._boundEvt){
+    container._boundEvt = true;
+    container.addEventListener('mouseover', (e)=>{
+      const tile = e.target.closest('.heat-tile');
+      const tooltip = document.getElementById('heatTooltip');
+      if(!tile || !tooltip){ if(tooltip) tooltip.classList.remove('visible'); return; }
+      const name = tile.dataset.tooltipIndustry;
+      const pct = tile.dataset.tooltipPct;
+      const pctRaw = tile.dataset.tooltipPctRaw;
+      const count = tile.dataset.tooltipCount;
+      const stocks = tile.dataset.tooltipStocks;
+      const pctCls = pctClass(parseFloat(pctRaw));
+      tooltip.innerHTML = '<div class="tt-name">'+name+'</div><div class="tt-count">'+count+' 檔成分股</div><div class="tt-pct '+pctCls+'">'+pct+'</div><div class="tt-stocks">'+stocks+'</div>';
+      tooltip.classList.add('visible');
+    });
+    container.addEventListener('mousemove', (e)=>{
+      const tooltip = document.getElementById('heatTooltip');
+      if(!tooltip) return;
+      tooltip.style.left = (e.clientX + 12)+'px';
+      tooltip.style.top = (e.clientY + 12)+'px';
+    });
+    container.addEventListener('mouseleave', (e)=>{
+      const tooltip = document.getElementById('heatTooltip');
+      if(tooltip) tooltip.classList.remove('visible');
+    });
+  }
 }
 
 function renderEtf(){
@@ -518,8 +714,22 @@ function importPf(){
 }
 function guessSector(name){ return '其他'; }
 
+function buildPeerCache(){
+  _peerCache={};
+  if(!_stockMap || !window.__peers) return;
+  Object.keys(window.__peers).forEach(code=>{
+    const peers=window.__peers[code];
+    _peerCache[code]=peers.map(c=>_stockMap.get(c)).filter(Boolean).slice(0,20);
+  });
+}
+
 /* === Detail === */
-function openDetail(code){ document.body.classList.add('sheet-open'); renderDetail(code); }
+function openDetail(code){
+  document.body.classList.add('sheet-open');
+  document.getElementById('stockDetail').style.display='block';
+  document.getElementById('sheetBody').innerHTML='<div style="padding:20px;text-align:center;color:var(--muted)">載入中…</div>';
+  requestAnimationFrame(()=>renderDetail(code));
+}
 function closeSheet(){
   const sheet=document.getElementById('sheet');
   const backdrop=document.getElementById('stockDetail');
@@ -532,11 +742,9 @@ function closeSheet(){
   }});
 }
 function renderDetail(code){
-  const s=allStocks.find(x=>x.code===code); if(!s) return;
+  const s=_stockMap?_stockMap.get(code):allStocks.find(x=>x.code===code); if(!s) return;
   const concepts=(window.__concepts||{})[code]||s.concepts||[];
-  const peers=(window.__peers||{})[code]||[];
-  const map=new Map(allStocks.map(x=>[x.code,x]));
-  const peerCards=peers.map(c=>map.get(c)).filter(Boolean).slice(0,20);
+  const peerCards=_peerCache[code]||[];
   const html=`
     <div class="industry-head"><h2 style="margin:0">${s.name} <span class="muted" style="font-weight:400;font-size:13px">${s.code}</span></h2></div>
     <div class="muted" style="margin-top:4px">${s.note||''}</div>
@@ -556,7 +764,6 @@ function renderDetail(code){
   `;
   const sheet=document.getElementById('sheetBody');
   sheet.innerHTML=html;
-  document.getElementById('stockDetail').style.display='block';
   gsap.fromTo('#sheet', {opacity:0, y:8}, {opacity:1, y:0, duration:.25, ease:'power2.out'});
 }
 
@@ -591,13 +798,72 @@ function animateTabs(){
   gsap.fromTo('.tab', {opacity:0, y:6}, {opacity:1, y:0, duration:.4, stagger:.03, ease:'power2.out'});
 }
 
+/* === 即時 TWSE 補價 === */
+async function refreshPrices(){
+  if(!allStocks.length) return;
+  const codes = allStocks.map(s=>s.code);
+  const BATCH = 20;
+  for(let i=0; i<codes.length; i+=BATCH){
+    const batch = codes.slice(i, i+BATCH);
+    const ch = batch.map(c=>`tse_${c}.tw`).join('|');
+    try {
+      const url = `https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${encodeURIComponent(ch)}&json=1`;
+      const resp = await fetch(url);
+      const data = await resp.json();
+      const arr = data.msgArray || [];
+      const updated = new Set();
+      arr.forEach(item=>{
+        const code = String(item.c||'');
+        const s = allStocks.find(x=>x.code===code);
+        if(!s) return;
+        const z = parseFloat(item.z);
+        const y = parseFloat(item.y);
+        if(!isNaN(z) && !isNaN(y) && y>0){
+          s.price = z;
+          s.pct = ((z-y)/y)*100;
+        }
+        if(item.v !== undefined) s.vol = parseInt(item.v,10)||0;
+        updated.add(code);
+      });
+      // 若某些代碼未回傳（可能是上櫃股），補抓 otc
+      const missing = batch.filter(c=>!updated.has(c));
+      if(missing.length){
+        const otcCh = missing.map(c=>`otc_${c}.tw`).join('|');
+        try {
+          const r2 = await fetch(`https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${encodeURIComponent(otcCh)}&json=1`);
+          const d2 = await r2.json();
+          (d2.msgArray||[]).forEach(item=>{
+            const code = String(item.c||'');
+            const s = allStocks.find(x=>x.code===code);
+            if(!s) return;
+            const z = parseFloat(item.z);
+            const y = parseFloat(item.y);
+            if(!isNaN(z) && !isNaN(y) && y>0){
+              s.price = z;
+              s.pct = ((z-y)/y)*100;
+            }
+            if(item.v !== undefined) s.vol = parseInt(item.v,10)||0;
+          });
+        } catch(e){}
+      }
+    } catch(e){}
+    // 避免又塊打 API
+    if(i+BATCH < codes.length) await new Promise(r=>setTimeout(r, 300));
+  }
+  _stockMap=new Map(allStocks.map(s=>[s.code,s]));
+  renderLobby();
+}
+
 /* === Init === */
 fetch('data.json').then(r=>r.json()).then(d=>{
   document.getElementById('headerDate').textContent=d.date; document.getElementById('headerTime').textContent=d.updated||'';
   allStocks=d.stocks||[]; computeDerived(); renderSummary(); renderLobby();
+  _stockMap=new Map(allStocks.map(s=>[s.code,s]));
   gsap.fromTo('header', {opacity:0, y:-10}, {opacity:1, y:0, duration:.5, ease:'power2.out', onComplete:animateAll});
   fetch('data/heatmap.json').then(r=>r.json()).then(h=>{ _heat=h||{industries:[]}; }).catch(()=>{});
-  fetch('data/etf.json').then(r=>r.json()).then(e=>{ window.__etf=e.etfs||{}; window.__concepts=e.concepts||{}; window.__peers=e.peers||{}; }).catch(()=>{});
+  fetch('data/etf.json').then(r=>r.json()).then(e=>{ window.__etf=e.etfs||{}; window.__concepts=e.concepts||{}; window.__peers=e.peers||{}; buildPeerCache(); }).catch(()=>{});
+  // 即時補價：TWSE API（上市 + 上櫃分批）
+  refreshPrices();
 }).catch(e=>{ document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:var(--red);color:#fbb">data.json 讀取失敗：'+e.message+'</div>'); });
 
 const _origOpen = window.openDetail;
