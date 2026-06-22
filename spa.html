@@ -606,16 +606,16 @@ function toggleIndustry(el){
     if(tile !== el){
       tile.classList.remove('expanded');
       const b=tile.querySelector('.heat-tile-body');
-      if(b){ gsap.to(b, {opacity:0, y:-4, duration:.15, ease:'power1.in', clearProps:'all', onComplete:()=>b.classList.add('collapsed')}); }
+      if(b){ gsap.to(b, {opacity:0, y:-4, duration:.15, ease:'power1.in', clearProps:'opacity,transform', onComplete:()=>b.classList.add('collapsed')}); }
     }
   });
   if(wasExpanded){
     el.classList.remove('expanded');
-    gsap.to(body, {opacity:0, y:-4, duration:.2, ease:'power1.in', clearProps:'all', onComplete:()=>body.classList.add('collapsed')});
+    gsap.to(body, {opacity:0, y:-4, duration:.2, ease:'power1.in', clearProps:'opacity,transform', onComplete:()=>body.classList.add('collapsed')});
   } else {
     el.classList.add('expanded');
     body.classList.remove('collapsed');
-    gsap.fromTo(body, {opacity:0, y:6}, {opacity:1, y:0, duration:.32, ease:'power2.out', clearProps:'all'});
+    gsap.fromTo(body, {opacity:0, y:6}, {opacity:1, y:0, duration:.32, ease:'power2.out', clearProps:'opacity,transform'});
   }
 }
 
@@ -734,7 +734,7 @@ function openDetail(code){
 function closeSheet(){
   const sheet=document.getElementById('sheet');
   const backdrop=document.getElementById('stockDetail');
-  gsap.to(sheet, {x:24, opacity:0, duration:.2, ease:'power1.in', clearProps:'all', onComplete:()=>{
+  gsap.to(sheet, {x:24, opacity:0, duration:.2, ease:'power1.in', clearProps:'opacity,transform', onComplete:()=>{
     sheet.classList.remove('open');
     sheet.style.transform='';
     sheet.style.opacity='';
@@ -765,7 +765,7 @@ function renderDetail(code){
   `;
   const sheet=document.getElementById('sheetBody');
   sheet.innerHTML=html;
-  gsap.fromTo('#sheet', {opacity:0, y:8}, {opacity:1, y:0, duration:.25, ease:'power2.out', clearProps:'all'});
+  gsap.fromTo('#sheet', {opacity:0, y:8}, {opacity:1, y:0, duration:.25, ease:'power2.out', clearProps:'opacity,transform'});
 }
 
 function renderPf(){
@@ -780,23 +780,23 @@ function renderPf(){
 
 /* === GSAP Animations === */
 function animateAll(){
-  gsap.fromTo('.card', {opacity:0, y:16}, {opacity:1, y:0, duration:.45, stagger:.03, ease:'power2.out', clearProps:'all'});
+  gsap.fromTo('.card', {opacity:0, y:16}, {opacity:1, y:0, duration:.45, stagger:.03, ease:'power2.out', clearProps:'opacity,transform'});
   const rows=document.querySelectorAll('#snapshotBody tr');
   if(rows.length){
     const show=Array.from(rows).slice(0,40);
-    gsap.fromTo(show, {opacity:0, x:-6}, {opacity:1, x:0, duration:.35, stagger:.012, ease:'power1.out', clearProps:'all'});
+    gsap.fromTo(show, {opacity:0, x:-6}, {opacity:1, x:0, duration:.35, stagger:.012, ease:'power1.out', clearProps:'opacity,transform'});
     if(rows.length>40) gsap.set(Array.from(rows).slice(40), {opacity:1, x:0});
   }
   const cards=document.querySelectorAll('.heat-tile');
   const show=cards.length>20?Array.from(cards).slice(0,20):cards;
-  gsap.fromTo(show, {opacity:0, y:10}, {opacity:1, y:0, duration:.4, stagger:.025, ease:'power2.out', clearProps:'all'});
+  gsap.fromTo(show, {opacity:0, y:10}, {opacity:1, y:0, duration:.4, stagger:.025, ease:'power2.out', clearProps:'opacity,transform'});
   if(cards.length>20) gsap.set(Array.from(cards).slice(20), {opacity:1, y:0});
 }
 function animateSheet(){
-  gsap.fromTo('#sheetBody', {opacity:0, x:24}, {opacity:1, x:0, duration:.4, ease:'power2.out', clearProps:'all'});
+  gsap.fromTo('#sheetBody', {opacity:0, x:24}, {opacity:1, x:0, duration:.4, ease:'power2.out', clearProps:'opacity,transform'});
 }
 function animateTabs(){
-  gsap.fromTo('.tab', {opacity:0, y:6}, {opacity:1, y:0, duration:.4, stagger:.03, ease:'power2.out', clearProps:'all'});
+  gsap.fromTo('.tab', {opacity:0, y:6}, {opacity:1, y:0, duration:.4, stagger:.03, ease:'power2.out', clearProps:'opacity,transform'});
 }
 
 /* === 即時補價：讀取後端快取 live.json（避開 TWSE CORS） === */
@@ -828,7 +828,7 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   document.getElementById('headerDate').textContent=d.date; document.getElementById('headerTime').textContent=d.updated||'';
   allStocks=d.stocks||[]; computeDerived(); renderSummary(); renderLobby();
   _stockMap=new Map(allStocks.map(s=>[s.code,s]));
-  gsap.fromTo('header', {opacity:0, y:-10}, {opacity:1, y:0, duration:.5, ease:'power2.out', clearProps:'all', onComplete:animateAll});
+  gsap.fromTo('header', {opacity:0, y:-10}, {opacity:1, y:0, duration:.5, ease:'power2.out', clearProps:'opacity,transform', onComplete:animateAll});
   fetch('data/heatmap.json').then(r=>r.json()).then(h=>{ _heat=h||{industries:[]}; }).catch(()=>{});
   fetch('data/etf.json').then(r=>r.json()).then(e=>{ window.__etf=e.etfs||{}; window.__concepts=e.concepts||{}; window.__peers=e.peers||{}; buildPeerCache(); }).catch(()=>{});
   // 即時補價：TWSE API（上市 + 上櫃分批）
