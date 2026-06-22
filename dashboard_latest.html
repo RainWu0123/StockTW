@@ -798,60 +798,28 @@ function animateTabs(){
   gsap.fromTo('.tab', {opacity:0, y:6}, {opacity:1, y:0, duration:.4, stagger:.03, ease:'power2.out'});
 }
 
-/* === 即時 TWSE 補價 === */
+/* === 即時補價：讀取後端快取 live.json（避開 TWSE CORS） === */
 async function refreshPrices(){
-  if(!allStocks.length) return;
-  const codes = allStocks.map(s=>s.code);
-  const BATCH = 20;
-  for(let i=0; i<codes.length; i+=BATCH){
-    const batch = codes.slice(i, i+BATCH);
-    const ch = batch.map(c=>`tse_${c}.tw`).join('|');
-    try {
-      const url = `https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${encodeURIComponent(ch)}&json=1`;
-      const resp = await fetch(url);
-      const data = await resp.json();
-      const arr = data.msgArray || [];
-      const updated = new Set();
-      arr.forEach(item=>{
-        const code = String(item.c||'');
-        const s = allStocks.find(x=>x.code===code);
-        if(!s) return;
-        const z = parseFloat(item.z);
-        const y = parseFloat(item.y);
-        if(!isNaN(z) && !isNaN(y) && y>0){
-          s.price = z;
-          s.pct = ((z-y)/y)*100;
-        }
-        if(item.v !== undefined) s.vol = parseInt(item.v,10)||0;
-        updated.add(code);
-      });
-      // 若某些代碼未回傳（可能是上櫃股），補抓 otc
-      const missing = batch.filter(c=>!updated.has(c));
-      if(missing.length){
-        const otcCh = missing.map(c=>`otc_${c}.tw`).join('|');
-        try {
-          const r2 = await fetch(`https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${encodeURIComponent(otcCh)}&json=1`);
-          const d2 = await r2.json();
-          (d2.msgArray||[]).forEach(item=>{
-            const code = String(item.c||'');
-            const s = allStocks.find(x=>x.code===code);
-            if(!s) return;
-            const z = parseFloat(item.z);
-            const y = parseFloat(item.y);
-            if(!isNaN(z) && !isNaN(y) && y>0){
-              s.price = z;
-              s.pct = ((z-y)/y)*100;
-            }
-            if(item.v !== undefined) s.vol = parseInt(item.v,10)||0;
-          });
-        } catch(e){}
-      }
-    } catch(e){}
-    // 避免又塊打 API
-    if(i+BATCH < codes.length) await new Promise(r=>setTimeout(r, 300));
+  try {
+    const r = await fetch('data/live.json?_=' + Date.now());
+    const d = await r.json();
+    const prices = d.prices || {};
+    allStocks.forEach(s => {
+      const p = prices[s.code];
+      if(!p) return;
+      if(p.price) s.price = p.price;
+      if(p.pct != null) s.pct = p.pct;
+      if(p.vol) s.vol = p.vol;
+      if(p.name) s.name = p.name;
+    });
+    _stockMap = new Map(allStocks.map(s=>[s.code,s]));
+    renderLobby();
+    // 每 30 秒自動刷新
+    setTimeout(refreshPrices, 30000);
+  } catch(e){
+    // 失敗時 10 秒後重試
+    setTimeout(refreshPrices, 10000);
   }
-  _stockMap=new Map(allStocks.map(s=>[s.code,s]));
-  renderLobby();
 }
 
 /* === Init === */
