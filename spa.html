@@ -477,7 +477,7 @@ function renderLobby(){
     const q = (document.getElementById('searchBox').value||'').toLowerCase();
     const rows = allStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
     rows.sort(sortFn);
-    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag ${s.tier_cls||('tier-'+((s.tier||'T4').toLowerCase()))}">${s.tier||'T4'}</span></td></tr>`).join('');
+    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag tier-t4">#${s.rank||'--'}</span></td></tr>`).join('');
     document.getElementById('countLabel').textContent = rows.length+' / '+(allStocks.length||0)+' 檔';
   });
 }
@@ -488,12 +488,12 @@ function computeDerived(){
 }
 
 function renderSummary(){
-  const t1=allStocks.filter(s=>s.tier==='T1').length,t2=allStocks.filter(s=>s.tier==='T2').length,t3=allStocks.filter(s=>s.tier==='T3'||s.tier==='T4').length;
+  const top=allStocks.filter(s=>(s.rank||0)<=10).length, mid=allStocks.filter(s=>(s.rank||0)>10 && (s.rank||0)<=40).length, rest=allStocks.filter(s=>(s.rank||0)>40).length;
   document.getElementById('summaryCards').innerHTML=[
     '<div class="card"><h2>追蹤標的</h2><div class="big">'+(allStocks.length||0)+'</div></div>',
-    '<div class="card"><h2>T1 營收確認型</h2><div class="big">'+t1+'</div></div>',
+    '<div class="card"><h2>前 10 名</h2><div class="big">'+top+'</div></div>',
     '<div class="card"><h2>T2 動能爆發型</h2><div class="big">'+t2+'</div></div>',
-    '<div class="card"><h2>T3/T4 觀察</h2><div class="big">'+t3+'</div></div>'
+    '<div class="card"><h2>41 名以後</h2><div class="big">'+rest+'</div></div>'
   ].join('');
 }
 
@@ -751,7 +751,7 @@ function renderDetail(code){
     <div class="kv" style="margin-top:10px">
       <div><b>收盤價</b><span class="${pctClass(s.pct)}">${s.price} ${s.pct>0?'+':''}${s.pct}%</span></div>
       <div><b>成交張數</b><span>${(s.vol||0).toLocaleString()}</span></div>
-      <div><b>分級</b><span class="tier-tag ${s.tier_cls||('tier-'+((s.tier||'T4').toLowerCase()))}">${s.tier||'T4'} ${s.tier_label||''}</span></div>
+      <div><b>排名</b><span class="tier-tag tier-t4">#${s.rank||'--'} / ${allStocks.length||0}</span></div><div><b>綜合分數</b><span class="tier-tag tier-t4">${s.score!=null?s.score:'--'}</span></div>
       <div><b>量化評分</b><span>${s.score!=null?s.score:'--'}</span></div>
       <div><b>近期趨勢</b><span>1日 ${s.day_pct!=null?(s.day_pct>0?'+':'')+s.day_pct+'%':'--'} · 1週 ${s.week_pct!=null?(s.week_pct>0?'+':'')+s.week_pct+'%':'--'} · 1月 ${s.month_pct!=null?(s.month_pct>0?'+':'')+s.month_pct+'%':'--'}</span></div>
       <div><b>大單/漲停基因</b><span>${(s.bigOrder||0).toFixed(2)} / ${s.limitGene?'有':'無'}</span></div>
