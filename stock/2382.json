@@ -1,0 +1,24 @@
+{
+  "code": "2382",
+  "name": "廣達",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2382",
+    "name": "廣達",
+    "price": 380.0,
+    "pct": 0.8,
+    "vol": 18618,
+    "score": 52.95,
+    "hold": "--",
+    "note": "ETF成分股(00981A)",
+    "industry": "AI/伺服器",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

@@ -1,0 +1,24 @@
+{
+  "code": "3038",
+  "name": "台達化",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3038",
+    "name": "台達化",
+    "price": 22.95,
+    "pct": 1.1,
+    "vol": 440,
+    "score": 45.32,
+    "hold": "--",
+    "note": "ETF成分股(00981A/00991A)",
+    "industry": "石化",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

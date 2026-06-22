@@ -1,0 +1,24 @@
+{
+  "code": "2884",
+  "name": "玉山金",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2884",
+    "name": "玉山金",
+    "price": 35.8,
+    "pct": -0.14,
+    "vol": 105517,
+    "score": 44.32,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

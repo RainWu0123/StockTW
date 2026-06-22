@@ -147,7 +147,8 @@ tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
 .tier-t1 { background: #122e26; color: var(--green); border: 1px solid rgba(52,211,153,.2); }
 .tier-t2 { background: #14263a; color: var(--accent); border: 1px solid rgba(90,169,255,.2); }
 .tier-t3 { background: #3a2714; color: var(--orange); border: 1px solid rgba(245,158,11,.22); }
-.tier-t4 { background: #221a1a; color: #9aa1ad; border: 1px solid rgba(156,163,175,.15); }
+.tier-t4 { background: transparent; color: var(--muted); border: 1px solid rgba(156,163,175,.15); }
+.neutral { background: transparent; color: var(--muted); border: 1px solid rgba(156,163,175,.15); }
 .pill.ok    { background: #122e26; color: var(--green); border: 1px solid rgba(52,211,153,.2); }
 .pill.warn  { background: #3a2714; color: var(--orange); border: 1px solid rgba(245,158,11,.22); }
 .pill.bad   { background: #361018; color: var(--red);   border: 1px solid rgba(248,113,113,.22); }
@@ -386,7 +387,7 @@ body.sheet-open { overflow: hidden; }
         <option value="limitGene">漲停基因</option>
       </select>
       <button onclick="setSort('default')">重置</button>
-      <span class="tier-tag tier-t4" style="background:#1c2230" id="countLabel"></span>
+      <span class="tier-tag neutral" style="background:#1c2230" id="countLabel"></span>
     </div>
     <div class="table-wrap">
       <table id="snapshotTable">
@@ -413,7 +414,7 @@ body.sheet-open { overflow: hidden; }
 
   <main id="page-etf" class="section"><div class="section-body"><div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。選 ETF 可看成分股；選「全部追蹤」看所有含 ETF 標記的個股。</div><div class="ctrl" style="margin-top:6px"><select id="etfSel" onchange="renderEtf()"><option value="">全部追蹤</option><option value="0050">0050 台灣50</option><option value="00981A">00981A 永豐臺灣科技</option><option value="00991A">00991A 中信關鍵半導體</option><option value="00988A">00988A 富邦台灣優質</option></select></div><div id="etfList"></div></div></main>
 
-  <main id="page-portfolio" class="section"><div class="section-body"><div class="alert">組合資料儲存在瀏覽器 localStorage，請定期 Export。可由此快速組成。</div><div class="ctrl" style="margin-top:6px"><input type="text" id="pfCode" placeholder="代號" style="width:110px"><input type="number" id="pfShares" placeholder="張數" style="width:100px"><input type="number" id="pfCost" placeholder="持有價" step="0.5" style="width:100px"><button onclick="addPf()">加入</button><button onclick="clearPf()">清空</button><button onclick="exportPf()">Exp</button><button onclick="importPf()">Imp</button><span class="tier-tag tier-t4" style="background:#1c2230" id="pfCount">0 檔</span></div><div class="grid grid-4" id="pfCards"></div><div class="card" style="margin-top:10px"><h2>風險提示</h2><div id="pfRisk" style="font-size:13px"></div></div></div></main>
+  <main id="page-portfolio" class="section"><div class="section-body"><div class="alert">組合資料儲存在瀏覽器 localStorage，請定期 Export。可由此快速組成。</div><div class="ctrl" style="margin-top:6px"><input type="text" id="pfCode" placeholder="代號" style="width:110px"><input type="number" id="pfShares" placeholder="張數" style="width:100px"><input type="number" id="pfCost" placeholder="持有價" step="0.5" style="width:100px"><button onclick="addPf()">加入</button><button onclick="clearPf()">清空</button><button onclick="exportPf()">Exp</button><button onclick="importPf()">Imp</button><span class="tier-tag neutral" style="background:#1c2230" id="pfCount">0 檔</span></div><div class="grid grid-4" id="pfCards"></div><div class="card" style="margin-top:10px"><h2>風險提示</h2><div id="pfRisk" style="font-size:13px"></div></div></div></main>
 
 </div>
 
@@ -477,7 +478,7 @@ function renderLobby(){
     const q = (document.getElementById('searchBox').value||'').toLowerCase();
     const rows = allStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
     rows.sort(sortFn);
-    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag tier-t4">#${s.rank||'--'}</span></td></tr>`).join('');
+    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag neutral">#${s.rank||'--'}</span></td></tr>`).join('');
     document.getElementById('countLabel').textContent = rows.length+' / '+(allStocks.length||0)+' 檔';
   });
 }
@@ -751,7 +752,7 @@ function renderDetail(code){
     <div class="kv" style="margin-top:10px">
       <div><b>收盤價</b><span class="${pctClass(s.pct)}">${s.price} ${s.pct>0?'+':''}${s.pct}%</span></div>
       <div><b>成交張數</b><span>${(s.vol||0).toLocaleString()}</span></div>
-      <div><b>排名</b><span class="tier-tag tier-t4">#${s.rank||'--'} / ${allStocks.length||0}</span></div><div><b>綜合分數</b><span class="tier-tag tier-t4">${s.score!=null?s.score:'--'}</span></div>
+      <div><b>排名</b><span class="tier-tag neutral">#${s.rank||'--'} / ${allStocks.length||0}</span></div><div><b>綜合分數</b><span class="tier-tag neutral">${s.score!=null?s.score:'--'}</span></div>
       <div><b>量化評分</b><span>${s.score!=null?s.score:'--'}</span></div>
       <div><b>近期趨勢</b><span>1日 ${s.day_pct!=null?(s.day_pct>0?'+':'')+s.day_pct+'%':'--'} · 1週 ${s.week_pct!=null?(s.week_pct>0?'+':'')+s.week_pct+'%':'--'} · 1月 ${s.month_pct!=null?(s.month_pct>0?'+':'')+s.month_pct+'%':'--'}</span></div>
       <div><b>大單/漲停基因</b><span>${(s.bigOrder||0).toFixed(2)} / ${s.limitGene?'有':'無'}</span></div>

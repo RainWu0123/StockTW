@@ -1,0 +1,24 @@
+{
+  "code": "1216",
+  "name": "統一",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "1216",
+    "name": "統一",
+    "price": 74.3,
+    "pct": -0.54,
+    "vol": 14784,
+    "score": 40.62,
+    "hold": "--",
+    "note": "ETF成分股(00988A)",
+    "industry": "食品",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

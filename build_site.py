@@ -32,12 +32,7 @@ for s in data['stocks']:
     c = s['code']
     sc = score_map.get(c, {})
     s['score'] = s.get('score', sc.get('score'))
-    s['tier'] = s.get('tier', sc.get('tier', 'T4'))
-    s['tier_label'] = s.get('tier_label', {
-        'T1': '營收確認型', 'T2': '動能爆發型', 'T3': '題材短打型', 'T4': '觀察/不追'
-    }.get(s['tier'], '觀察/不追'))
-    s['tier_cls'] = s.get('tier_cls', 'tier-' + s['tier'].lower())
-    s['hold'] = s.get('hold', {'T1': '7-30天', 'T2': '1-7天', 'T3': '1-3天', 'T4': '--'}.get(s['tier'], '--'))
+    s['hold'] = s.get('hold', '--')
     s['note'] = s.get('note', '')
     if 'industry' not in s: s['industry'] = ''
     h = heat_map.get(c, {})

@@ -1,0 +1,24 @@
+{
+  "code": "3045",
+  "name": "台灣大",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3045",
+    "name": "台灣大",
+    "price": 118.5,
+    "pct": 0.0,
+    "vol": 11163,
+    "score": 40.99,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

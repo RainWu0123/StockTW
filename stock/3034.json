@@ -1,0 +1,24 @@
+{
+  "code": "3034",
+  "name": "聯詠",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3034",
+    "name": "聯詠",
+    "price": 567.0,
+    "pct": 9.88,
+    "vol": 10684,
+    "score": 79.12,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 1,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

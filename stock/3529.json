@@ -1,0 +1,24 @@
+{
+  "code": "3529",
+  "name": "力旺",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3529",
+    "name": "力旺",
+    "price": 3180.0,
+    "pct": -2.75,
+    "vol": 452,
+    "score": 37.84,
+    "hold": "--",
+    "note": "ETF成分股(00991A)",
+    "industry": "IC/設計",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

@@ -28,7 +28,16 @@
       "52WeekHigh": 26.95,
       "52WeekLow": 20.25,
       "averageVolume10days": 33378694,
-      "rank": 64
+      "rank": 64,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "1102",
@@ -62,7 +71,16 @@
       "52WeekHigh": 44.2,
       "52WeekLow": 32.4,
       "averageVolume10days": 16347469,
-      "rank": 30
+      "rank": 30,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "1216",
@@ -92,7 +110,16 @@
       "52WeekHigh": 87.2,
       "52WeekLow": 68.5,
       "averageVolume10days": 14307244,
-      "rank": 60
+      "rank": 60,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "1301",
@@ -122,7 +149,16 @@
       "52WeekHigh": 56.3,
       "52WeekLow": 33.4,
       "averageVolume10days": 43664876,
-      "rank": 20
+      "rank": 20,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "1303",
@@ -152,7 +188,16 @@
       "52WeekHigh": 152.5,
       "52WeekLow": 26.25,
       "averageVolume10days": 74573867,
-      "rank": 9
+      "rank": 9,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "1326",
@@ -186,7 +231,16 @@
       "52WeekHigh": 59.0,
       "52WeekLow": 21.75,
       "averageVolume10days": 28219995,
-      "rank": 19
+      "rank": 19,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2002",
@@ -216,7 +270,16 @@
       "52WeekHigh": 21.6,
       "52WeekLow": 17.6,
       "averageVolume10days": 93367595,
-      "rank": 24
+      "rank": 24,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2301",
@@ -250,7 +313,16 @@
       "52WeekHigh": 262.0,
       "52WeekLow": 105.5,
       "averageVolume10days": 26887020,
-      "rank": 14
+      "rank": 14,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2303",
@@ -280,7 +352,16 @@
       "52WeekHigh": 160.0,
       "52WeekLow": 40.1,
       "averageVolume10days": 315066219,
-      "rank": 8
+      "rank": 8,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2308",
@@ -310,7 +391,16 @@
       "52WeekHigh": 2585.0,
       "52WeekLow": 396.0,
       "averageVolume10days": 11532661,
-      "rank": 45
+      "rank": 45,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2313",
@@ -340,7 +430,16 @@
       "52WeekHigh": 305.5,
       "52WeekLow": 52.9,
       "averageVolume10days": 73118370,
-      "rank": 63
+      "rank": 63,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2317",
@@ -370,7 +469,16 @@
       "52WeekHigh": 314.0,
       "52WeekLow": 152.0,
       "averageVolume10days": 71987522,
-      "rank": 44
+      "rank": 44,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2327",
@@ -400,7 +508,16 @@
       "52WeekHigh": 1120.0,
       "52WeekLow": 111.75,
       "averageVolume10days": 65310660,
-      "rank": 47
+      "rank": 47,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2330",
@@ -430,7 +547,16 @@
       "52WeekHigh": 2510.0,
       "52WeekLow": 1015.0,
       "averageVolume10days": 33683670,
-      "rank": 15
+      "rank": 15,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2337",
@@ -464,7 +590,16 @@
       "52WeekHigh": 185.5,
       "52WeekLow": 18.15,
       "averageVolume10days": 48399048,
-      "rank": 3
+      "rank": 3,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2344",
@@ -494,7 +629,16 @@
       "52WeekHigh": 233.5,
       "52WeekLow": 16.5,
       "averageVolume10days": 236813431,
-      "rank": 23
+      "rank": 23,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2345",
@@ -524,7 +668,16 @@
       "52WeekHigh": 2695.0,
       "52WeekLow": 699.0,
       "averageVolume10days": 3059226,
-      "rank": 4
+      "rank": 4,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2356",
@@ -558,7 +711,16 @@
       "52WeekHigh": 88.6,
       "52WeekLow": 38.55,
       "averageVolume10days": 49379845,
-      "rank": 54
+      "rank": 54,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2360",
@@ -592,7 +754,16 @@
       "52WeekHigh": 2795.0,
       "52WeekLow": 341.5,
       "averageVolume10days": 2483510,
-      "rank": 33
+      "rank": 33,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2368",
@@ -626,7 +797,16 @@
       "52WeekHigh": 1580.0,
       "52WeekLow": 262.0,
       "averageVolume10days": 6068614,
-      "rank": 16
+      "rank": 16,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2375",
@@ -656,7 +836,16 @@
       "52WeekHigh": 228.0,
       "52WeekLow": 53.5,
       "averageVolume10days": 13067503,
-      "rank": 66
+      "rank": 66,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2379",
@@ -690,7 +879,16 @@
       "52WeekHigh": 900.0,
       "52WeekLow": 438.0,
       "averageVolume10days": 6076121,
-      "rank": 10
+      "rank": 10,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2382",
@@ -720,7 +918,16 @@
       "52WeekHigh": 438.0,
       "52WeekLow": 252.5,
       "averageVolume10days": 37975358,
-      "rank": 29
+      "rank": 29,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2383",
@@ -750,7 +957,16 @@
       "52WeekHigh": 6045.0,
       "52WeekLow": 825.0,
       "averageVolume10days": 2435076,
-      "rank": 5
+      "rank": 5,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2395",
@@ -780,7 +996,16 @@
       "52WeekHigh": 539.0,
       "52WeekLow": 271.0,
       "averageVolume10days": 3080272,
-      "rank": 39
+      "rank": 39,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2404",
@@ -810,7 +1035,16 @@
       "52WeekHigh": 1430.0,
       "52WeekLow": 598.0,
       "averageVolume10days": 4769285,
-      "rank": 21
+      "rank": 21,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2408",
@@ -840,7 +1074,16 @@
       "52WeekHigh": 505.0,
       "52WeekLow": 40.2,
       "averageVolume10days": 118330692,
-      "rank": 1
+      "rank": 1,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2412",
@@ -870,7 +1113,16 @@
       "52WeekHigh": 147.0,
       "52WeekLow": 128.0,
       "averageVolume10days": 12879364,
-      "rank": 59
+      "rank": 59,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2449",
@@ -904,7 +1156,16 @@
       "52WeekHigh": 364.5,
       "52WeekLow": 98.2,
       "averageVolume10days": 24753093,
-      "rank": 6
+      "rank": 6,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2454",
@@ -934,7 +1195,16 @@
       "52WeekHigh": 4970.0,
       "52WeekLow": 1130.0,
       "averageVolume10days": 11750167,
-      "rank": 26
+      "rank": 26,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2603",
@@ -968,7 +1238,16 @@
       "52WeekHigh": 242.5,
       "52WeekLow": 175.0,
       "averageVolume10days": 25640342,
-      "rank": 67
+      "rank": 67,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2609",
@@ -1002,7 +1281,16 @@
       "52WeekHigh": 74.7,
       "52WeekLow": 47.35,
       "averageVolume10days": 48681219,
-      "rank": 42
+      "rank": 42,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2610",
@@ -1036,7 +1324,16 @@
       "52WeekHigh": 23.5,
       "52WeekLow": 17.7,
       "averageVolume10days": 69768325,
-      "rank": 41
+      "rank": 41,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2615",
@@ -1070,7 +1367,16 @@
       "52WeekHigh": 98.9,
       "52WeekLow": 73.0,
       "averageVolume10days": 12914270,
-      "rank": 57
+      "rank": 57,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2618",
@@ -1104,7 +1410,16 @@
       "52WeekHigh": 43.7,
       "52WeekLow": 32.15,
       "averageVolume10days": 66604166,
-      "rank": 32
+      "rank": 32,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2881",
@@ -1134,7 +1449,16 @@
       "52WeekHigh": 141.0,
       "52WeekLow": 78.14634,
       "averageVolume10days": 57514395,
-      "rank": 34
+      "rank": 34,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2882",
@@ -1164,7 +1488,16 @@
       "52WeekHigh": 117.5,
       "52WeekLow": 60.6,
       "averageVolume10days": 46692919,
-      "rank": 25
+      "rank": 25,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2884",
@@ -1198,7 +1531,16 @@
       "52WeekHigh": 36.6,
       "52WeekLow": 29.4,
       "averageVolume10days": 60569275,
-      "rank": 51
+      "rank": 51,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2886",
@@ -1232,7 +1574,16 @@
       "52WeekHigh": 46.0,
       "52WeekLow": 37.85,
       "averageVolume10days": 37748158,
-      "rank": 37
+      "rank": 37,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2890",
@@ -1266,7 +1617,16 @@
       "52WeekHigh": 40.75,
       "52WeekLow": 22.969051,
       "averageVolume10days": 64208165,
-      "rank": 40
+      "rank": 40,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2892",
@@ -1300,7 +1660,16 @@
       "52WeekHigh": 32.8,
       "52WeekLow": 27.2,
       "averageVolume10days": 59746021,
-      "rank": 43
+      "rank": 43,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3005",
@@ -1330,7 +1699,16 @@
       "52WeekHigh": 167.5,
       "52WeekLow": 95.1,
       "averageVolume10days": 4927965,
-      "rank": 62
+      "rank": 62,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3008",
@@ -1360,7 +1738,16 @@
       "52WeekHigh": 5360.0,
       "52WeekLow": 2020.0,
       "averageVolume10days": 3361483,
-      "rank": 55
+      "rank": 55,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3017",
@@ -1390,7 +1777,16 @@
       "52WeekHigh": 3010.0,
       "52WeekLow": 722.0,
       "averageVolume10days": 3732416,
-      "rank": 36
+      "rank": 36,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3034",
@@ -1424,7 +1820,16 @@
       "52WeekHigh": 567.0,
       "52WeekLow": 352.0,
       "averageVolume10days": 5171241,
-      "rank": 13
+      "rank": 13,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3037",
@@ -1458,7 +1863,16 @@
       "52WeekHigh": 1130.0,
       "52WeekLow": 98.3,
       "averageVolume10days": 20775323,
-      "rank": 18
+      "rank": 18,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3038",
@@ -1488,7 +1902,16 @@
       "52WeekHigh": 25.4,
       "52WeekLow": 19.9,
       "averageVolume10days": 354758,
-      "rank": 48
+      "rank": 48,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3045",
@@ -1522,7 +1945,16 @@
       "52WeekHigh": 121.5,
       "52WeekLow": 104.0,
       "averageVolume10days": 11971844,
-      "rank": 58
+      "rank": 58,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3231",
@@ -1556,7 +1988,16 @@
       "52WeekHigh": 201.0,
       "52WeekLow": 109.0,
       "averageVolume10days": 51107168,
-      "rank": 27
+      "rank": 27,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3443",
@@ -1586,7 +2027,16 @@
       "52WeekHigh": 5950.0,
       "52WeekLow": 1035.0,
       "averageVolume10days": 2402002,
-      "rank": 28
+      "rank": 28,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3529",
@@ -1616,7 +2066,16 @@
       "52WeekHigh": null,
       "52WeekLow": null,
       "averageVolume10days": null,
-      "rank": 65
+      "rank": 65,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3653",
@@ -1650,7 +2109,16 @@
       "52WeekHigh": 5685.0,
       "52WeekLow": 1265.0,
       "averageVolume10days": 1693660,
-      "rank": 56
+      "rank": 56,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3665",
@@ -1684,7 +2152,16 @@
       "52WeekHigh": 3010.0,
       "52WeekLow": 746.62067,
       "averageVolume10days": 3327987,
-      "rank": 35
+      "rank": 35,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3711",
@@ -1714,7 +2191,16 @@
       "52WeekHigh": 674.0,
       "52WeekLow": 138.0,
       "averageVolume10days": 20460351,
-      "rank": 7
+      "rank": 7,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "4904",
@@ -1748,7 +2234,16 @@
       "52WeekHigh": 113.5,
       "52WeekLow": 80.7,
       "averageVolume10days": 13348205,
-      "rank": 50
+      "rank": 50,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "4938",
@@ -1782,7 +2277,16 @@
       "52WeekHigh": 102.5,
       "52WeekLow": 67.5,
       "averageVolume10days": 34100799,
-      "rank": 61
+      "rank": 61,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "5269",
@@ -1812,7 +2316,16 @@
       "52WeekHigh": 2030.0,
       "52WeekLow": 1040.0,
       "averageVolume10days": 1104421,
-      "rank": 38
+      "rank": 38,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "5880",
@@ -1846,7 +2359,16 @@
       "52WeekHigh": 25.631067,
       "52WeekLow": 22.55,
       "averageVolume10days": 29970963,
-      "rank": 46
+      "rank": 46,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6166",
@@ -1876,7 +2398,16 @@
       "52WeekHigh": 165.0,
       "52WeekLow": 53.6,
       "averageVolume10days": 3631326,
-      "rank": 22
+      "rank": 22,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6239",
@@ -1906,7 +2437,16 @@
       "52WeekHigh": 387.0,
       "52WeekLow": 116.0,
       "averageVolume10days": 36940427,
-      "rank": 52
+      "rank": 52,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6285",
@@ -1936,7 +2476,16 @@
       "52WeekHigh": 336.5,
       "52WeekLow": 96.0,
       "averageVolume10days": 17007958,
-      "rank": 53
+      "rank": 53,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6442",
@@ -1966,7 +2515,16 @@
       "52WeekHigh": 2540.0,
       "52WeekLow": 429.0,
       "averageVolume10days": 1219704,
-      "rank": 12
+      "rank": 12,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6505",
@@ -2001,7 +2559,16 @@
       "52WeekHigh": 68.2,
       "52WeekLow": 34.9,
       "averageVolume10days": 8518706,
-      "rank": 49
+      "rank": 49,
+      "industry": "",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6770",
@@ -2031,7 +2598,16 @@
       "52WeekHigh": 94.5,
       "52WeekLow": 14.5,
       "averageVolume10days": 132725951,
-      "rank": 11
+      "rank": 11,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6830",
@@ -2061,7 +2637,16 @@
       "52WeekHigh": 1000.0,
       "52WeekLow": 116.0,
       "averageVolume10days": 1752099,
-      "rank": 17
+      "rank": 17,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "7610",
@@ -2091,7 +2676,16 @@
       "52WeekHigh": 2545.0,
       "52WeekLow": 55.0716,
       "averageVolume10days": 422272,
-      "rank": 2
+      "rank": 2,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6269",
@@ -2121,10 +2715,19 @@
       "52WeekHigh": 87.5,
       "52WeekLow": 45.7,
       "averageVolume10days": 12044687,
-      "rank": 31
+      "rank": 31,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     }
   ],
-  "updated": "2026-06-22T11:32:51.539278",
+  "updated": "2026-06-22T11:56:32.961313",
   "etf_universe": {
     "2330": [
       "0050",
