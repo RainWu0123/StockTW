@@ -22,13 +22,7 @@ def load_snapshot():
     return d.get("date", ""), d.get("stocks", [])
 
 def tier_of(code):
-    TIER = {
-        "2327":"T1","2308":"T1","2330":"T1","2383":"T1","2454":"T1",
-        "2344":"T2","2408":"T2","3017":"T2","3711":"T2","6166":"T2","2303":"T2",
-        "6442":"T3","2375":"T3","7610":"T3",
-        "2313":"T4","2395":"T4","6285":"T4","3443":"T4","3008":"T4","2404":"T4","6830":"T4","6239":"T4",
-    }
-    return TIER.get(code, "T4")
+    return "T4"
 
 def load_scores():
     p = os.path.join(BASE, "data", "scores.json")
@@ -337,26 +331,10 @@ def main():
         for code in sorted(stocks_map.keys()):
             s = stocks_map[code]
             sc = scores_map.get(code, {})
-            t = sc.get("tier") or tier_of(code)
-            m = tier_meta(t)
-            row = {
-                "code": s["code"],
-                "name": s["name"],
-                "price": s["price"],
-                "pct": s["pct"],
-                "vol": s["vol"],
-                "tier": t,
-                "tier_label": m.get("label", t),
-                "tier_cls": m.get("cls", "tier-t4"),
-                "tier_color": m.get("color", "#7a8599"),
-                "hold": m.get("hold", "--"),
-                "note": NOTE.get(s["code"], ""),
-                "etf_tags": etf_map.get(s["code"], []),
-            }
+            row = dict(s)
+            row["etf_tags"] = etf_map.get(code, [])
             if sc.get("score") is not None:
                 row["score"] = sc["score"]
-            if sc.get("parts"):
-                row["parts"] = sc["parts"]
             out.append(row)
 
         master_codes = set(stocks_map.keys())
@@ -366,19 +344,12 @@ def main():
             price, pct, vol = fetch_etf_price(code)
             if price is None:
                 continue
-            t = "T4"
-            m = tier_meta(t)
             row = {
                 "code": code,
                 "name": code,
                 "price": price,
                 "pct": pct,
                 "vol": vol,
-                "tier": t,
-                "tier_label": m.get("label", t),
-                "tier_cls": m.get("cls", "tier-t4"),
-                "tier_color": m.get("color", "#7a8599"),
-                "hold": m.get("hold", "--"),
                 "note": "ETF 成分追蹤",
                 "etf_tags": etf_map.get(code, []),
             }
