@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""重建所有 research_data/*.md（繁体化）"""
+"""重建所有 research_data/*.md（繁體化）"""
 import json, os
 
 DATA_DIR = '/home/ubuntu/investment'
