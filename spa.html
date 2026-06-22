@@ -798,6 +798,62 @@ function animateTabs(){
   gsap.fromTo('.tab', {opacity:0, y:6}, {opacity:1, y:0, duration:.4, stagger:.03, ease:'power2.out'});
 }
 
+/* === 即時 TWSE 補價 === */
+async function refreshPrices(){
+  if(!allStocks.length) return;
+  const codes = allStocks.map(s=>s.code);
+  const BATCH = 20;
+  for(let i=0; i<codes.length; i+=BATCH){
+    const batch = codes.slice(i, i+BATCH);
+    const ch = batch.map(c=>`tse_${c}.tw`).join('|');
+    try {
+      const url = `https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${encodeURIComponent(ch)}&json=1`;
+      const resp = await fetch(url);
+      const data = await resp.json();
+      const arr = data.msgArray || [];
+      const updated = new Set();
+      arr.forEach(item=>{
+        const code = String(item.c||'');
+        const s = allStocks.find(x=>x.code===code);
+        if(!s) return;
+        const z = parseFloat(item.z);
+        const y = parseFloat(item.y);
+        if(!isNaN(z) && !isNaN(y) && y>0){
+          s.price = z;
+          s.pct = ((z-y)/y)*100;
+        }
+        if(item.v !== undefined) s.vol = parseInt(item.v,10)||0;
+        updated.add(code);
+      });
+      // 若某些代碼未回傳（可能是上櫃股），補抓 otc
+      const missing = batch.filter(c=>!updated.has(c));
+      if(missing.length){
+        const otcCh = missing.map(c=>`otc_${c}.tw`).join('|');
+        try {
+          const r2 = await fetch(`https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${encodeURIComponent(otcCh)}&json=1`);
+          const d2 = await r2.json();
+          (d2.msgArray||[]).forEach(item=>{
+            const code = String(item.c||'');
+            const s = allStocks.find(x=>x.code===code);
+            if(!s) return;
+            const z = parseFloat(item.z);
+            const y = parseFloat(item.y);
+            if(!isNaN(z) && !isNaN(y) && y>0){
+              s.price = z;
+              s.pct = ((z-y)/y)*100;
+            }
+            if(item.v !== undefined) s.vol = parseInt(item.v,10)||0;
+          });
+        } catch(e){}
+      }
+    } catch(e){}
+    // 避免又塊打 API
+    if(i+BATCH < codes.length) await new Promise(r=>setTimeout(r, 300));
+  }
+  _stockMap=new Map(allStocks.map(s=>[s.code,s]));
+  renderLobby();
+}
+
 /* === Init === */
 fetch('data.json').then(r=>r.json()).then(d=>{
   document.getElementById('headerDate').textContent=d.date; document.getElementById('headerTime').textContent=d.updated||'';
@@ -806,6 +862,8 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   gsap.fromTo('header', {opacity:0, y:-10}, {opacity:1, y:0, duration:.5, ease:'power2.out', onComplete:animateAll});
   fetch('data/heatmap.json').then(r=>r.json()).then(h=>{ _heat=h||{industries:[]}; }).catch(()=>{});
   fetch('data/etf.json').then(r=>r.json()).then(e=>{ window.__etf=e.etfs||{}; window.__concepts=e.concepts||{}; window.__peers=e.peers||{}; buildPeerCache(); }).catch(()=>{});
+  // 即時補價：TWSE API（上市 + 上櫃分批）
+  refreshPrices();
 }).catch(e=>{ document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:var(--red);color:#fbb">data.json 讀取失敗：'+e.message+'</div>'); });
 
 const _origOpen = window.openDetail;
