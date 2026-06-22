@@ -523,6 +523,9 @@ function renderChip(){
 /* === 產業熱力 Treemap (Squarified) === */
 function squarify(items, x, y, w, h){
   const data = items.map(it=>({...it, area: Math.max(1, it.area||1)}));
+  const totalArea = data.reduce((sum, it) => sum + it.area, 0);
+  const scale = totalArea > 0 ? (w * h) / totalArea : 1;
+  data.forEach(it => it.area *= scale);
   const rects = [];
   function worst(row, rowArea, sideLen){
     if(rowArea <= 0 || sideLen <= 0) return Infinity;
@@ -726,6 +729,8 @@ function buildPeerCache(){
 
 /* === Detail === */
 function openDetail(code){
+  const sheet=document.getElementById('sheet');
+  if(sheet) sheet.classList.add('open');
   document.body.classList.add('sheet-open');
   document.getElementById('stockDetail').style.display='block';
   document.getElementById('sheetBody').innerHTML='<div style="padding:20px;text-align:center;color:var(--muted)">載入中…</div>';
