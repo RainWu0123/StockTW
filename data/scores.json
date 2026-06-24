@@ -1,68 +1,8 @@
 {
   "date": "2026-06-22",
-  "generated": "2026-06-22T11:32:51.539278",
-  "rules_version": "2026-06-20-STAR-v3",
+  "generated": "2026-06-24T13:29:45.048228",
+  "rules_version": "2026-06-23-fundamental-only",
   "stocks": [
-    {
-      "code": "2408",
-      "name": "南亞科",
-      "price": 505.0,
-      "pct": 11.36,
-      "vol": 93971,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 100.0,
-        "alpha": 80.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 52.5
-      },
-      "s1_raw": 86.0,
-      "s2_raw": 76.38,
-      "score": 86.0,
-      "rank": 1,
-      "note": "營收年增582%，外資目標490，今日創高"
-    },
-    {
-      "code": "7610",
-      "name": "聯友金屬-創",
-      "price": 2505.0,
-      "pct": 8.91,
-      "vol": 870,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 99.52,
-        "alpha": 80.0,
-        "fund_flow": 25.05,
-        "theme": 0.0,
-        "fundamental": 52.5
-      },
-      "s1_raw": 85.81,
-      "s2_raw": 76.27,
-      "score": 85.81,
-      "rank": 2,
-      "note": "地緣題材，最快進最快出"
-    },
-    {
-      "code": "2337",
-      "name": "旺宏",
-      "price": 185.5,
-      "pct": 10.09,
-      "vol": 132843,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 95.59,
-        "alpha": 80.0,
-        "fund_flow": 25.07,
-        "theme": 0.0,
-        "fundamental": 47.35
-      },
-      "s1_raw": 84.24,
-      "s2_raw": 74.0,
-      "score": 84.24,
-      "rank": 3,
-      "note": "ETF 成分追蹤"
-    },
     {
       "code": "2345",
       "name": "鴻準",
@@ -70,238 +10,30 @@
       "pct": 5.92,
       "vol": 3150,
       "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 93.1,
-        "alpha": 80.0,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 57.21
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 83.24,
-      "s2_raw": 75.83,
-      "score": 83.24,
-      "rank": 4,
+      "score": 33.5,
+      "rank": 1,
       "note": "ETF成分股(00991A)"
     },
     {
-      "code": "2383",
-      "name": "台光電",
-      "price": 5825.0,
-      "pct": 6.01,
-      "vol": 1765,
+      "code": "2360",
+      "name": "致茂",
+      "price": 2310.0,
+      "pct": 0.22,
+      "vol": 2502,
       "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 91.61,
-        "alpha": 80.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 53.5
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 82.64,
-      "s2_raw": 74.53,
-      "score": 82.64,
-      "rank": 5,
-      "note": "NVIDIA M9供應商，今日+7.69%"
-    },
-    {
-      "code": "2449",
-      "name": "京元電子",
-      "price": 339.0,
-      "pct": 9.89,
-      "vol": 78538,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 88.02,
-        "alpha": 80.0,
-        "fund_flow": 25.08,
-        "theme": 0.0,
-        "fundamental": 33.72
-      },
-      "s1_raw": 81.21,
-      "s2_raw": 68.71,
-      "score": 81.21,
-      "rank": 6,
+      "score": 33.5,
+      "rank": 2,
       "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "3711",
-      "name": "日月光",
-      "price": 674.0,
-      "pct": 9.24,
-      "vol": 34043,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 87.58,
-        "alpha": 80.0,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 53.34
-      },
-      "s1_raw": 81.03,
-      "s2_raw": 73.49,
-      "score": 81.03,
-      "rank": 7,
-      "note": "CoWoS溢最強，先進封裝占比持續提升"
-    },
-    {
-      "code": "2303",
-      "name": "聯電",
-      "price": 160.0,
-      "pct": 9.59,
-      "vol": 63848,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 85.83,
-        "alpha": 80.0,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 59.1
-      },
-      "s1_raw": 80.33,
-      "s2_raw": 74.48,
-      "score": 80.33,
-      "rank": 8,
-      "note": "ADR 25%，爆量29萬張，矽光子題材"
-    },
-    {
-      "code": "1303",
-      "name": "台塑化",
-      "price": 152.5,
-      "pct": 9.71,
-      "vol": 56524,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 85.69,
-        "alpha": 80.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 53.3
-      },
-      "s1_raw": 80.28,
-      "s2_raw": 73.0,
-      "score": 80.28,
-      "rank": 9,
-      "note": "ETF成分股(0050)"
-    },
-    {
-      "code": "2379",
-      "name": "瑞昱",
-      "price": 900.0,
-      "pct": 9.89,
-      "vol": 6921,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 85.6,
-        "alpha": 80.0,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 44.87
-      },
-      "s1_raw": 80.24,
-      "s2_raw": 70.87,
-      "score": 80.24,
-      "rank": 10,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "price": 81.6,
-      "pct": 10.42,
-      "vol": 131242,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 83.48,
-        "alpha": 80.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 38.87
-      },
-      "s1_raw": 79.39,
-      "s2_raw": 68.84,
-      "score": 79.39,
-      "rank": 11,
-      "note": "ETF成分股(00981A/00991A)"
-    },
-    {
-      "code": "6442",
-      "name": "光聖",
-      "price": 2085.0,
-      "pct": 7.47,
-      "vol": 1333,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 82.82,
-        "alpha": 80.0,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 51.47
-      },
-      "s1_raw": 79.13,
-      "s2_raw": 71.83,
-      "score": 79.13,
-      "rank": 12,
-      "note": "CPO最純台廠，外資買超最兇"
-    },
-    {
-      "code": "3034",
-      "name": "聯詠",
-      "price": 567.0,
-      "pct": 9.88,
-      "vol": 10684,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 82.8,
-        "alpha": 80.0,
-        "fund_flow": 25.05,
-        "theme": 0.0,
-        "fundamental": 44.78
-      },
-      "s1_raw": 79.12,
-      "s2_raw": 70.16,
-      "score": 79.12,
-      "rank": 13,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2301",
-      "name": "光寶科",
-      "price": 231.5,
-      "pct": 9.72,
-      "vol": 44354,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 82.03,
-        "alpha": 80.0,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 49.16
-      },
-      "s1_raw": 78.81,
-      "s2_raw": 71.06,
-      "score": 78.81,
-      "rank": 14,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2330",
-      "name": "台積電",
-      "price": 2510.0,
-      "pct": 4.58,
-      "vol": 39077,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 90.27,
-        "alpha": 62.48,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 60.88
-      },
-      "s1_raw": 78.6,
-      "s2_raw": 73.41,
-      "score": 78.6,
-      "rank": 15,
-      "note": "CoWoS/2奈米確定性最高"
     },
     {
       "code": "2368",
@@ -310,98 +42,30 @@
       "pct": 3.33,
       "vol": 4924,
       "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 89.8,
-        "alpha": 54.98,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 61.39
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 76.92,
-      "s2_raw": 72.3,
-      "score": 76.92,
-      "rank": 16,
+      "score": 33.5,
+      "rank": 3,
       "note": "ETF 成分追蹤"
     },
     {
-      "code": "6830",
-      "name": "汎銓",
-      "price": 608.0,
-      "pct": 7.8,
-      "vol": 948,
+      "code": "2383",
+      "name": "台光電",
+      "price": 5825.0,
+      "pct": 6.01,
+      "vol": 1765,
       "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 75.37,
-        "alpha": 80.0,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 39.29
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 76.15,
-      "s2_raw": 66.92,
-      "score": 76.15,
-      "rank": 17,
-      "note": "今日漲停但成交783張，流動性差"
-    },
-    {
-      "code": "3037",
-      "name": "欣興",
-      "price": 1005.0,
-      "pct": 3.5,
-      "vol": 26100,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 85.04,
-        "alpha": 56.0,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 56.79
-      },
-      "s1_raw": 75.22,
-      "s2_raw": 70.11,
-      "score": 75.22,
-      "rank": 18,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "1326",
-      "name": "台化",
-      "price": 56.2,
-      "pct": 3.5,
-      "vol": 32969,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 83.28,
-        "alpha": 56.0,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 35.63
-      },
-      "s1_raw": 74.51,
-      "s2_raw": 64.39,
-      "score": 74.51,
-      "rank": 19,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "1301",
-      "name": "台塑",
-      "price": 52.4,
-      "pct": 3.15,
-      "vol": 51436,
-      "dimensions": {
-        "liquidity": 100.0,
-        "momentum": 78.23,
-        "alpha": 53.9,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 50.56
-      },
-      "s1_raw": 72.07,
-      "s2_raw": 66.54,
-      "score": 72.07,
-      "rank": 20,
-      "note": "ETF成分股(0050)"
+      "score": 33.5,
+      "rank": 4,
+      "note": "NVIDIA M9供應商，今日+7.69%"
     },
     {
       "code": "2404",
@@ -410,118 +74,30 @@
       "pct": 1.99,
       "vol": 1759,
       "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 77.55,
-        "alpha": 31.94,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 71.73
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 62.91,
-      "s2_raw": 65.37,
-      "score": 65.37,
-      "rank": 21,
+      "score": 33.5,
+      "rank": 5,
       "note": "無明顯催化劑"
     },
     {
-      "code": "6166",
-      "name": "凌華",
-      "price": 158.0,
-      "pct": 2.27,
-      "vol": 4052,
+      "code": "3017",
+      "name": "奇鋐",
+      "price": 2420.0,
+      "pct": 0.0,
+      "vol": 3026,
       "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 77.69,
-        "alpha": 33.62,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 57.52
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 63.3,
-      "s2_raw": 62.1,
-      "score": 63.3,
-      "rank": 22,
-      "note": "Edge AI題材，今日漲停"
-    },
-    {
-      "code": "2344",
-      "name": "華邦電",
-      "price": 222.0,
-      "pct": 1.6,
-      "vol": 398033,
-      "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 78.44,
-        "alpha": 29.6,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 50.98
-      },
-      "s1_raw": 62.8,
-      "s2_raw": 60.05,
-      "score": 62.8,
-      "rank": 23,
-      "note": "DRAM超循環，營收+181%，法人狂買"
-    },
-    {
-      "code": "2002",
-      "name": "中鋼",
-      "price": 19.5,
-      "pct": 2.9,
-      "vol": 128895,
-      "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 67.2,
-        "alpha": 37.4,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 34.16
-      },
-      "s1_raw": 59.86,
-      "s2_raw": 54.21,
-      "score": 59.86,
-      "rank": 24,
-      "note": "ETF成分股(0050/00988A)"
-    },
-    {
-      "code": "2882",
-      "name": "開發金",
-      "price": 113.0,
-      "pct": -3.0,
-      "vol": 33990,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 96.76,
-        "alpha": 21.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 71.88
-      },
-      "s1_raw": 53.4,
-      "s2_raw": 58.56,
-      "score": 58.56,
-      "rank": 25,
-      "note": "ETF成分股(0050/00988A)"
-    },
-    {
-      "code": "2454",
-      "name": "聯發科",
-      "price": 4465.0,
-      "pct": 1.59,
-      "vol": 10816,
-      "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 61.85,
-        "alpha": 29.54,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 31.43
-      },
-      "s1_raw": 56.15,
-      "s2_raw": 51.01,
-      "score": 56.15,
-      "rank": 26,
-      "note": "AI ASIC，今日-1.57%小拉，Momentum仍強"
+      "score": 33.5,
+      "rank": 6,
+      "note": "液冷散熱台廠第一，訂單能見度到2029"
     },
     {
       "code": "3231",
@@ -530,17 +106,13 @@
       "pct": 0.31,
       "vol": 45016,
       "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 51.58,
-        "alpha": 11.86,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 81.34
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 44.0,
-      "s2_raw": 55.26,
-      "score": 55.26,
-      "rank": 27,
+      "score": 33.5,
+      "rank": 7,
       "note": "ETF 成分追蹤"
     },
     {
@@ -550,18 +122,46 @@
       "pct": -4.04,
       "vol": 2820,
       "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 87.16,
-        "alpha": 27.24,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 58.55
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 50.81,
-      "s2_raw": 53.77,
-      "score": 53.77,
-      "rank": 28,
+      "score": 33.5,
+      "rank": 8,
       "note": "高檔拉回，等止穩再說"
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "price": 2150.0,
+      "pct": -0.69,
+      "vol": 13432,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 22.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 32.75,
+      "rank": 9,
+      "note": "AI 電源+液冷雙主軸，盤整後還有空間"
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "price": 2510.0,
+      "pct": 4.58,
+      "vol": 39077,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 22.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 32.75,
+      "rank": 10,
+      "note": "CoWoS/2奈米確定性最高"
     },
     {
       "code": "2382",
@@ -570,118 +170,14 @@
       "pct": 0.8,
       "vol": 18618,
       "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 56.28,
-        "alpha": 14.8,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 65.63
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 8.0,
+        "valuation": 0.0
       },
-      "s1_raw": 46.47,
-      "s2_raw": 52.95,
-      "score": 52.95,
-      "rank": 29,
+      "score": 32.45,
+      "rank": 11,
       "note": "ETF成分股(00981A)"
-    },
-    {
-      "code": "1102",
-      "name": "亞泥",
-      "price": 36.35,
-      "pct": 1.11,
-      "vol": 19784,
-      "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 38.25,
-        "alpha": 26.66,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 62.34
-      },
-      "s1_raw": 46.13,
-      "s2_raw": 52.41,
-      "score": 52.41,
-      "rank": 30,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "6269",
-      "name": "台郡",
-      "price": 87.5,
-      "pct": 9.65,
-      "vol": 0,
-      "dimensions": {
-        "liquidity": 5.0,
-        "momentum": 85.86,
-        "alpha": 80.0,
-        "fund_flow": 25.0,
-        "theme": 0.0,
-        "fundamental": 36.0
-      },
-      "s1_raw": 51.84,
-      "s2_raw": 49.71,
-      "score": 51.84,
-      "rank": 31,
-      "note": "原始追蹤標的"
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "price": 41.65,
-      "pct": -2.34,
-      "vol": 53795,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 72.39,
-        "alpha": 17.04,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 68.47
-      },
-      "s1_raw": 42.86,
-      "s2_raw": 51.03,
-      "score": 51.03,
-      "rank": 32,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2360",
-      "name": "致茂",
-      "price": 2310.0,
-      "pct": 0.22,
-      "vol": 2502,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 52.92,
-        "alpha": 11.32,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 62.11
-      },
-      "s1_raw": 44.43,
-      "s2_raw": 50.71,
-      "score": 50.71,
-      "rank": 33,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2881",
-      "name": "國泰金",
-      "price": 138.5,
-      "pct": 0.0,
-      "vol": 24104,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 58.81,
-        "alpha": 10.0,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 72.58
-      },
-      "s1_raw": 40.52,
-      "s2_raw": 50.6,
-      "score": 50.6,
-      "rank": 34,
-      "note": "ETF成分股(0050/00988A)"
     },
     {
       "code": "3665",
@@ -690,57 +186,93 @@
       "pct": -6.13,
       "vol": 4807,
       "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 75.89,
-        "alpha": 33.0,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 51.35
+        "roe": 50.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 47.46,
-      "s2_raw": 50.02,
-      "score": 50.02,
-      "rank": 35,
+      "score": 32.25,
+      "rank": 12,
       "note": "ETF 成分追蹤"
     },
     {
-      "code": "3017",
-      "name": "奇鋐",
-      "price": 2420.0,
-      "pct": 0.0,
-      "vol": 3026,
+      "code": "6442",
+      "name": "光聖",
+      "price": 2085.0,
+      "pct": 7.47,
+      "vol": 1333,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 52.26,
-        "alpha": 10.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 75.8
+        "roe": 50.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 37.91,
-      "s2_raw": 49.77,
-      "score": 49.77,
-      "rank": 36,
-      "note": "液冷散熱台廠第一，訂單能見度到2029"
+      "score": 32.25,
+      "rank": 13,
+      "note": "CPO最純台廠，外資買超最兇"
     },
     {
-      "code": "2886",
-      "name": "兆豐金",
-      "price": 44.75,
-      "pct": -2.4,
-      "vol": 52956,
+      "code": "7610",
+      "name": "聯友金屬-創",
+      "price": 2505.0,
+      "pct": 8.91,
+      "vol": 870,
       "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 74.2,
-        "alpha": 17.4,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 58.61
+        "roe": 50.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
       },
-      "s1_raw": 43.66,
-      "s2_raw": 49.07,
-      "score": 49.07,
-      "rank": 37,
+      "score": 31.25,
+      "rank": 14,
+      "note": "地緣題材，最快進最快出"
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "price": 41.65,
+      "pct": -2.34,
+      "vol": 53795,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 31.0,
+      "rank": 15,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "price": 499.5,
+      "pct": 0.81,
+      "vol": 2924,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 30.55,
+      "rank": 16,
+      "note": "Edge AI存股型，短線動能不足"
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "price": 3840.0,
+      "pct": -2.54,
+      "vol": 1315,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 28.75,
+      "rank": 17,
       "note": "ETF 成分追蹤"
     },
     {
@@ -750,57 +282,157 @@
       "pct": 0.35,
       "vol": 754,
       "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 38.0,
-        "alpha": 12.1,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 68.84
+        "roe": 40.0,
+        "revenueGrowth": 22.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 38.62,
-      "s2_raw": 48.78,
-      "score": 48.78,
-      "rank": 38,
+      "score": 27.75,
+      "rank": 18,
       "note": "ETF成分股(00991A)"
     },
     {
-      "code": "2395",
-      "name": "研華",
-      "price": 499.5,
-      "pct": 0.81,
-      "vol": 2924,
+      "code": "2327",
+      "name": "國巨",
+      "price": 1065.0,
+      "pct": -1.39,
+      "vol": 58977,
       "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 54.0,
-        "alpha": 14.86,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 47.25
+        "roe": 40.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 45.57,
-      "s2_raw": 47.8,
-      "score": 47.8,
-      "rank": 39,
-      "note": "Edge AI存股型，短線動能不足"
+      "score": 27.25,
+      "rank": 19,
+      "note": "00981A/00992A/00991A 核心持股，今日漲停創高"
     },
     {
-      "code": "2890",
-      "name": "永豐金",
-      "price": 39.8,
-      "pct": -0.13,
-      "vol": 93427,
+      "code": "2379",
+      "name": "瑞昱",
+      "price": 900.0,
+      "pct": 9.89,
+      "vol": 6921,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 51.01,
-        "alpha": 10.78,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 66.37
+        "roe": 50.0,
+        "revenueGrowth": 8.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
       },
-      "s1_raw": 37.56,
-      "s2_raw": 47.22,
-      "score": 47.22,
-      "rank": 40,
+      "score": 27.0,
+      "rank": 20,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "price": 505.0,
+      "pct": 11.36,
+      "vol": 93971,
+      "dimensions": {
+        "roe": 40.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 26.25,
+      "rank": 21,
+      "note": "營收年增582%，外資目標490，今日創高"
+    },
+    {
+      "code": "2881",
+      "name": "國泰金",
+      "price": 138.5,
+      "pct": 0.0,
+      "vol": 24104,
+      "dimensions": {
+        "roe": 40.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 26.25,
+      "rank": 22,
+      "note": "ETF成分股(0050/00988A)"
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "price": 231.5,
+      "pct": 9.72,
+      "vol": 44354,
+      "dimensions": {
+        "roe": 40.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 25.55,
+      "rank": 23,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "price": 339.0,
+      "pct": 9.89,
+      "vol": 78538,
+      "dimensions": {
+        "roe": 40.0,
+        "revenueGrowth": 22.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 25.5,
+      "rank": 24,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "price": 4465.0,
+      "pct": 1.59,
+      "vol": 10816,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 25.0,
+      "rank": 25,
+      "note": "AI ASIC，今日-1.57%小拉，Momentum仍強"
+    },
+    {
+      "code": "3005",
+      "name": "神基",
+      "price": 100.5,
+      "pct": -0.99,
+      "vol": 6013,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 25.0,
+      "rank": 26,
+      "note": "ETF成分股(00981A)"
+    },
+    {
+      "code": "3034",
+      "name": "聯詠",
+      "price": 567.0,
+      "pct": 9.88,
+      "vol": 10684,
+      "dimensions": {
+        "roe": 50.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 25.0,
+      "rank": 27,
       "note": "ETF 成分追蹤"
     },
     {
@@ -810,337 +442,13 @@
       "pct": -0.91,
       "vol": 56695,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 49.54,
-        "alpha": 15.46,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 64.95
+        "roe": 40.0,
+        "revenueGrowth": 10.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
       },
-      "s1_raw": 37.91,
-      "s2_raw": 47.2,
-      "score": 47.2,
-      "rank": 41,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2609",
-      "name": "陽明",
-      "price": 52.3,
-      "pct": 1.36,
-      "vol": 37796,
-      "dimensions": {
-        "liquidity": 85.0,
-        "momentum": 36.3,
-        "alpha": 28.16,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 41.68
-      },
-      "s1_raw": 45.65,
-      "s2_raw": 46.97,
-      "score": 46.97,
-      "rank": 42,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2892",
-      "name": "第一金",
-      "price": 32.3,
-      "pct": -0.62,
-      "vol": 46600,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 52.57,
-        "alpha": 13.72,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 61.58
-      },
-      "s1_raw": 38.77,
-      "s2_raw": 46.85,
-      "score": 46.85,
-      "rank": 43,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "price": 268.5,
-      "pct": -0.74,
-      "vol": 63545,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 50.78,
-        "alpha": 14.44,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 61.2
-      },
-      "s1_raw": 38.2,
-      "s2_raw": 46.42,
-      "score": 46.42,
-      "rank": 44,
-      "note": "ETF成分股(0050/00988A)"
-    },
-    {
-      "code": "2308",
-      "name": "台達電",
-      "price": 2150.0,
-      "pct": -0.69,
-      "vol": 13432,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 53.34,
-        "alpha": 14.14,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 58.45
-      },
-      "s1_raw": 39.16,
-      "s2_raw": 46.33,
-      "score": 46.33,
-      "rank": 45,
-      "note": "AI 電源+液冷雙主軸，盤整後還有空間"
-    },
-    {
-      "code": "5880",
-      "name": "合庫金",
-      "price": 24.45,
-      "pct": -1.41,
-      "vol": 22988,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 53.64,
-        "alpha": 11.46,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 59.31
-      },
-      "s1_raw": 38.75,
-      "s2_raw": 46.21,
-      "score": 46.21,
-      "rank": 46,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2327",
-      "name": "國巨",
-      "price": 1065.0,
-      "pct": -1.39,
-      "vol": 58977,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 65.3,
-        "alpha": 11.34,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 46.78
-      },
-      "s1_raw": 43.39,
-      "s2_raw": 45.98,
-      "score": 45.98,
-      "rank": 47,
-      "note": "00981A/00992A/00991A 核心持股，今日漲停創高"
-    },
-    {
-      "code": "3038",
-      "name": "台達化",
-      "price": 22.95,
-      "pct": 1.1,
-      "vol": 440,
-      "dimensions": {
-        "liquidity": 61.06,
-        "momentum": 45.28,
-        "alpha": 26.6,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 46.15
-      },
-      "s1_raw": 41.75,
-      "s2_raw": 45.32,
-      "score": 45.32,
-      "rank": 48,
-      "note": "ETF成分股(00981A/00991A)"
-    },
-    {
-      "code": "6505",
-      "name": "台塑化",
-      "price": 54.0,
-      "pct": 0.56,
-      "vol": 7823,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 38.7,
-        "alpha": 13.36,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 51.36
-      },
-      "s1_raw": 39.15,
-      "s2_raw": 44.78,
-      "score": 44.78,
-      "rank": 49,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "4904",
-      "name": "遠傳",
-      "price": 108.0,
-      "pct": -0.92,
-      "vol": 43116,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 52.84,
-        "alpha": 15.52,
-        "fund_flow": 25.08,
-        "theme": 0.0,
-        "fundamental": 51.17
-      },
-      "s1_raw": 39.24,
-      "s2_raw": 44.6,
-      "score": 44.6,
-      "rank": 50,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2884",
-      "name": "玉山金",
-      "price": 35.8,
-      "pct": -0.14,
-      "vol": 105517,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 45.72,
-        "alpha": 10.84,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 60.01
-      },
-      "s1_raw": 35.46,
-      "s2_raw": 44.32,
-      "score": 44.32,
-      "rank": 51,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "6239",
-      "name": "力成",
-      "price": 366.0,
-      "pct": -0.27,
-      "vol": 61252,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 51.92,
-        "alpha": 11.62,
-        "fund_flow": 25.04,
-        "theme": 0.0,
-        "fundamental": 52.36
-      },
-      "s1_raw": 38.09,
-      "s2_raw": 44.07,
-      "score": 44.07,
-      "rank": 52,
-      "note": "動能中等，漲幅可能已被反映"
-    },
-    {
-      "code": "6285",
-      "name": "啟碁",
-      "price": 268.0,
-      "pct": -2.19,
-      "vol": 14388,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 66.08,
-        "alpha": 16.14,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 43.92
-      },
-      "s1_raw": 40.16,
-      "s2_raw": 43.18,
-      "score": 43.18,
-      "rank": 53,
-      "note": "網通+NB+低軌，無明確AI爆發點"
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "price": 67.8,
-      "pct": -0.15,
-      "vol": 62503,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 38.67,
-        "alpha": 10.9,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 60.41
-      },
-      "s1_raw": 32.65,
-      "s2_raw": 42.66,
-      "score": 42.66,
-      "rank": 54,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "3008",
-      "name": "大立光",
-      "price": 5185.0,
-      "pct": -0.48,
-      "vol": 1697,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 50.82,
-        "alpha": 12.88,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 45.8
-      },
-      "s1_raw": 37.9,
-      "s2_raw": 42.34,
-      "score": 42.34,
-      "rank": 55,
-      "note": "營收確認佳但基期高"
-    },
-    {
-      "code": "3653",
-      "name": "健策",
-      "price": 3840.0,
-      "pct": -2.54,
-      "vol": 1315,
-      "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 68.08,
-        "alpha": 18.24,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 36.96
-      },
-      "s1_raw": 41.38,
-      "s2_raw": 42.25,
-      "score": 42.25,
-      "rank": 56,
-      "note": "ETF 成分追蹤"
-    },
-    {
-      "code": "2615",
-      "name": "萬海",
-      "price": 80.5,
-      "pct": 0.12,
-      "vol": 6942,
-      "dimensions": {
-        "liquidity": 70.0,
-        "momentum": 23.89,
-        "alpha": 10.72,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 56.93
-      },
-      "s1_raw": 32.7,
-      "s2_raw": 42.07,
-      "score": 42.07,
-      "rank": 57,
+      "score": 24.3,
+      "rank": 28,
       "note": "ETF 成分追蹤"
     },
     {
@@ -1150,98 +458,142 @@
       "pct": 0.0,
       "vol": 11163,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 40.35,
-        "alpha": 10.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 52.6
+        "roe": 40.0,
+        "revenueGrowth": 8.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
       },
-      "s1_raw": 33.14,
-      "s2_raw": 40.99,
-      "score": 40.99,
-      "rank": 58,
+      "score": 23.8,
+      "rank": 29,
       "note": "ETF 成分追蹤"
     },
     {
-      "code": "2412",
-      "name": "中華電",
-      "price": 144.5,
-      "pct": 0.0,
-      "vol": 8233,
+      "code": "2890",
+      "name": "永豐金",
+      "price": 39.8,
+      "pct": -0.13,
+      "vol": 93427,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 42.18,
-        "alpha": 10.0,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 49.64
+        "roe": 30.0,
+        "revenueGrowth": 22.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 33.87,
-      "s2_raw": 40.71,
-      "score": 40.71,
-      "rank": 59,
-      "note": "ETF成分股(0050)"
-    },
-    {
-      "code": "1216",
-      "name": "統一",
-      "price": 74.3,
-      "pct": -0.54,
-      "vol": 14784,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 32.01,
-        "alpha": 13.24,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 57.5
-      },
-      "s1_raw": 30.45,
-      "s2_raw": 40.62,
-      "score": 40.62,
-      "rank": 60,
-      "note": "ETF成分股(00988A)"
-    },
-    {
-      "code": "4938",
-      "name": "和碩",
-      "price": 82.0,
-      "pct": -1.56,
-      "vol": 22391,
-      "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 46.67,
-        "alpha": 12.36,
-        "fund_flow": 25.02,
-        "theme": 0.0,
-        "fundamental": 42.8
-      },
-      "s1_raw": 36.14,
-      "s2_raw": 40.48,
-      "score": 40.48,
-      "rank": 61,
+      "score": 22.75,
+      "rank": 30,
       "note": "ETF 成分追蹤"
     },
     {
-      "code": "3005",
-      "name": "神基",
-      "price": 100.5,
-      "pct": -0.99,
-      "vol": 6013,
+      "code": "6239",
+      "name": "力成",
+      "price": 366.0,
+      "pct": -0.27,
+      "vol": 61252,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 30.05,
-        "alpha": 15.94,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 55.26
+        "roe": 30.0,
+        "revenueGrowth": 22.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
       },
-      "s1_raw": 30.21,
-      "s2_raw": 39.98,
-      "score": 39.98,
-      "rank": 62,
-      "note": "ETF成分股(00981A)"
+      "score": 22.75,
+      "rank": 31,
+      "note": "動能中等，漲幅可能已被反映"
+    },
+    {
+      "code": "2356",
+      "name": "英業達",
+      "price": 67.8,
+      "pct": -0.15,
+      "vol": 62503,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 22.25,
+      "rank": 32,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "price": 1005.0,
+      "pct": 3.5,
+      "vol": 26100,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 22.25,
+      "rank": 33,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "6166",
+      "name": "凌華",
+      "price": 158.0,
+      "pct": 2.27,
+      "vol": 4052,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 22.25,
+      "rank": 34,
+      "note": "Edge AI題材，今日漲停"
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "price": 268.5,
+      "pct": -0.74,
+      "vol": 63545,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 21.8,
+      "rank": 35,
+      "note": "ETF成分股(0050/00988A)"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "price": 222.0,
+      "pct": 1.6,
+      "vol": 398033,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 21.25,
+      "rank": 36,
+      "note": "DRAM超循環，營收+181%，法人狂買"
+    },
+    {
+      "code": "3711",
+      "name": "日月光",
+      "price": 674.0,
+      "pct": 9.24,
+      "vol": 34043,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 21.0,
+      "rank": 37,
+      "note": "CoWoS溢最強，先進封裝占比持續提升"
     },
     {
       "code": "2313",
@@ -1250,78 +602,254 @@
       "pct": -0.19,
       "vol": 28046,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 44.59,
-        "alpha": 11.14,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 42.17
+        "roe": 30.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
       },
-      "s1_raw": 35.06,
-      "s2_raw": 39.61,
-      "score": 39.61,
-      "rank": 63,
+      "score": 20.55,
+      "rank": 38,
       "note": "AI載板+低軌衛星，等255以下"
     },
     {
-      "code": "1101",
-      "name": "台泥",
-      "price": 24.35,
-      "pct": -0.81,
-      "vol": 40246,
+      "code": "2884",
+      "name": "玉山金",
+      "price": 35.8,
+      "pct": -0.14,
+      "vol": 105517,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 43.39,
-        "alpha": 14.86,
-        "fund_flow": 25.03,
-        "theme": 0.0,
-        "fundamental": 40.56
+        "roe": 30.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
       },
-      "s1_raw": 35.33,
-      "s2_raw": 39.48,
-      "score": 39.48,
-      "rank": 64,
+      "score": 20.55,
+      "rank": 39,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "price": 160.0,
+      "pct": 9.59,
+      "vol": 63848,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 10.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 19.75,
+      "rank": 40,
+      "note": "ADR 25%，爆量29萬張，矽光子題材"
+    },
+    {
+      "code": "1216",
+      "name": "統一",
+      "price": 74.3,
+      "pct": -0.54,
+      "vol": 14784,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 8.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 18.8,
+      "rank": 41,
       "note": "ETF成分股(00988A)"
     },
     {
-      "code": "3529",
-      "name": "力旺",
-      "price": 3180.0,
-      "pct": -2.75,
-      "vol": 452,
+      "code": "4904",
+      "name": "遠傳",
+      "price": 108.0,
+      "pct": -0.92,
+      "vol": 43116,
       "dimensions": {
-        "liquidity": 35.0,
-        "momentum": 51.67,
-        "alpha": 19.5,
-        "fund_flow": 25.0,
-        "theme": 0.0,
-        "fundamental": 35.0
+        "roe": 30.0,
+        "revenueGrowth": 8.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
       },
-      "s1_raw": 35.07,
-      "s2_raw": 37.84,
-      "score": 37.84,
-      "rank": 65,
-      "note": "ETF成分股(00991A)"
+      "score": 18.8,
+      "rank": 42,
+      "note": "ETF 成分追蹤"
     },
     {
-      "code": "2375",
-      "name": "凱美",
-      "price": 219.0,
-      "pct": 0.0,
-      "vol": 32758,
+      "code": "3008",
+      "name": "大立光",
+      "price": 5185.0,
+      "pct": -0.48,
+      "vol": 1697,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 45.15,
-        "alpha": 10.0,
-        "fund_flow": 25.06,
-        "theme": 0.0,
-        "fundamental": 30.66
+        "roe": 30.0,
+        "revenueGrowth": 10.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
       },
-      "s1_raw": 35.06,
-      "s2_raw": 36.72,
-      "score": 36.72,
-      "rank": 66,
-      "note": "AI電感/MLCC彈性最大，00981A掃貨"
+      "score": 17.5,
+      "rank": 43,
+      "note": "營收確認佳但基期高"
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "price": 44.75,
+      "pct": -2.4,
+      "vol": 52956,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 15.55,
+      "rank": 44,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "price": 32.3,
+      "pct": -0.62,
+      "vol": 46600,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 15.55,
+      "rank": 45,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "price": 80.5,
+      "pct": 0.12,
+      "vol": 6942,
+      "dimensions": {
+        "roe": 30.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 15.0,
+      "rank": 46,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "price": 81.6,
+      "pct": 10.42,
+      "vol": 131242,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 15.0,
+      "rank": 47,
+      "note": "ETF成分股(00981A/00991A)"
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "price": 24.45,
+      "pct": -1.41,
+      "vol": 22988,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 10.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 14.3,
+      "rank": 48,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "1303",
+      "name": "台塑化",
+      "price": 152.5,
+      "pct": 9.71,
+      "vol": 56524,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 8.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 14.25,
+      "rank": 49,
+      "note": "ETF成分股(0050)"
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "price": 268.0,
+      "pct": -2.19,
+      "vol": 14388,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 8.0,
+        "earningsGrowth": 12.0,
+        "valuation": 0.0
+      },
+      "score": 13.8,
+      "rank": 50,
+      "note": "網通+NB+低軌，無明確AI爆發點"
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "price": 144.5,
+      "pct": 0.0,
+      "vol": 8233,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 10.0,
+        "earningsGrowth": 8.0,
+        "valuation": 0.0
+      },
+      "score": 13.7,
+      "rank": 51,
+      "note": "ETF成分股(0050)"
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "price": 36.35,
+      "pct": 1.11,
+      "vol": 19784,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 12.25,
+      "rank": 52,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "price": 54.0,
+      "pct": 0.56,
+      "vol": 7823,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 12.25,
+      "rank": 53,
+      "note": "ETF 成分追蹤"
     },
     {
       "code": "2603",
@@ -1330,18 +858,222 @@
       "pct": -0.52,
       "vol": 15103,
       "dimensions": {
-        "liquidity": 50.0,
-        "momentum": 26.74,
-        "alpha": 13.12,
-        "fund_flow": 25.01,
-        "theme": 0.0,
-        "fundamental": 45.41
+        "roe": 20.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
       },
-      "s1_raw": 28.32,
-      "s2_raw": 36.26,
-      "score": 36.26,
-      "rank": 67,
+      "score": 10.0,
+      "rank": 54,
       "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "3038",
+      "name": "台達化",
+      "price": 22.95,
+      "pct": 1.1,
+      "vol": 440,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 10.0,
+      "rank": 55,
+      "note": "ETF成分股(00981A/00991A)"
+    },
+    {
+      "code": "4938",
+      "name": "和碩",
+      "price": 82.0,
+      "pct": -1.56,
+      "vol": 22391,
+      "dimensions": {
+        "roe": 20.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 10.0,
+      "rank": 56,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2375",
+      "name": "凱美",
+      "price": 219.0,
+      "pct": 0.0,
+      "vol": 32758,
+      "dimensions": {
+        "roe": 10.0,
+        "revenueGrowth": 15.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 8.75,
+      "rank": 57,
+      "note": "AI電感/MLCC彈性最大，00981A掃貨"
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "price": 56.2,
+      "pct": 3.5,
+      "vol": 32969,
+      "dimensions": {
+        "roe": 10.0,
+        "revenueGrowth": 8.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 7.0,
+      "rank": 58,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "price": 185.5,
+      "pct": 10.09,
+      "vol": 132843,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 6.25,
+      "rank": 59,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2882",
+      "name": "開發金",
+      "price": 113.0,
+      "pct": -3.0,
+      "vol": 33990,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 6.25,
+      "rank": 60,
+      "note": "ETF成分股(0050/00988A)"
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "price": 52.3,
+      "pct": 1.36,
+      "vol": 37796,
+      "dimensions": {
+        "roe": 10.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 5.0,
+      "rank": 61,
+      "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "6830",
+      "name": "汎銓",
+      "price": 608.0,
+      "pct": 7.8,
+      "vol": 948,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 20.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 5.0,
+      "rank": 62,
+      "note": "今日漲停但成交783張，流動性差"
+    },
+    {
+      "code": "6269",
+      "name": "台郡",
+      "price": 87.5,
+      "pct": 9.65,
+      "vol": 0,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 10.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 2.5,
+      "rank": 63,
+      "note": "原始追蹤標的"
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "price": 24.35,
+      "pct": -0.81,
+      "vol": 40246,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 2.25,
+      "rank": 64,
+      "note": "ETF成分股(00988A)"
+    },
+    {
+      "code": "1301",
+      "name": "台塑",
+      "price": 52.4,
+      "pct": 3.15,
+      "vol": 51436,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 15.0,
+        "valuation": 0.0
+      },
+      "score": 2.25,
+      "rank": 65,
+      "note": "ETF成分股(0050)"
+    },
+    {
+      "code": "2002",
+      "name": "中鋼",
+      "price": 19.5,
+      "pct": 2.9,
+      "vol": 128895,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 0.0,
+      "rank": 66,
+      "note": "ETF成分股(0050/00988A)"
+    },
+    {
+      "code": "3529",
+      "name": "力旺",
+      "price": 3180.0,
+      "pct": -2.75,
+      "vol": 452,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 0.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 0.0,
+      "rank": 67,
+      "note": "ETF成分股(00991A)"
     }
   ]
 }

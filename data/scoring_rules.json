@@ -1,123 +1,48 @@
 {
-  "version": "2026-06-20-STAR-v3",
-  "description": "五維雙軌分級系統 v3 — 隔日沖 + 波段 獨立權重",
-  "tracks": {
-    "S1": {
-      "label": "隔日沖 (1-2天)",
-      "hold_days": "1-2天",
-      "weights": {
-        "liquidity": 30,
-        "momentum": 40,
-        "alpha": 20,
-        "fund_flow": 0,
-        "theme": 10,
-        "fundamental": 0
-      },
-      "min_score": 65,
-      "action": {
-        "position": "重倉",
-        "hold_days": "1-2天",
-        "stop_loss_pct": -3,
-        "take_profit_pct": 5,
-        "exit_note": "T+0/T+1，量價齊升才留"
-      },
-      "macro_bound": false
-    },
-    "S2": {
-      "label": "波段 (5-20天)",
-      "hold_days": "5-20天",
-      "weights": {
-        "liquidity": 20,
-        "momentum": 25,
-        "alpha": 15,
-        "fund_flow": 25,
-        "theme": 10,
-        "fundamental": 25
-      },
-      "min_score": 60,
-      "action": {
-        "position": "半倉",
-        "hold_days": "5-20天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 10,
-        "exit_note": "基本面+法人+趨勢共振"
-      },
-      "macro_bound": true
-    },
-    "A": {
-      "min_score": 48,
-      "action": {
-        "position": "半倉",
-        "hold_days": "3-10天",
-        "stop_loss_pct": -5,
-        "take_profit_pct": 8
-      }
-    },
-    "B": {
-      "min_score": 32,
-      "action": {
-        "position": "觀望",
-        "hold_days": "10-20天",
-        "stop_loss_pct": -7,
-        "take_profit_pct": 12
-      }
-    },
-    "C": {
-      "min_score": 15,
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      }
-    },
-    "D": {
-      "min_score": 0,
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      }
-    },
-    "E": {
-      "label": "前置過濾不合格",
-      "action": {
-        "position": "不碰",
-        "hold_days": "-",
-        "stop_loss_pct": 0,
-        "take_profit_pct": 0
-      }
-    }
+  "version": "2026-06-23-fundamental-only",
+  "description": "基本面選股系統 — 參考《別再看股價了》理念：只看 ROE/營收成長/EPS成長/PE，砍掉所有價格噪聲",
+  "philosophy": "股價是結果，不是原因。好公司會自己反映在財務數據上。",
+  "weights": {
+    "roe": 50,
+    "revenueGrowth": 25,
+    "earningsGrowth": 15,
+    "valuation": 10
   },
-  "pre_filters": {
-    "min_turnover": 3000,
-    "liquidity_decay_days": 3,
-    "liquidity_decay_threshold": 0.7
+  "roe_tiers": [
+    {"threshold": 0.20, "score": 50},
+    {"threshold": 0.15, "score": 40},
+    {"threshold": 0.10, "score": 30},
+    {"threshold": 0.05, "score": 20},
+    {"threshold": 0.00, "score": 10},
+    {"threshold": -9.99, "score": 0}
+  ],
+  "revenue_growth_tiers": [
+    {"threshold": 0.50, "score": 25},
+    {"threshold": 0.30, "score": 22},
+    {"threshold": 0.20, "score": 20},
+    {"threshold": 0.10, "score": 15},
+    {"threshold": 0.05, "score": 10},
+    {"threshold": 0.00, "score": 8},
+    {"threshold": -9.99, "score": 0}
+  ],
+  "earnings_growth_tiers": [
+    {"threshold": 0.30, "score": 15},
+    {"threshold": 0.10, "score": 12},
+    {"threshold": 0.00, "score": 8},
+    {"threshold": -9.99, "score": 0}
+  ],
+  "valuation_tiers": [
+    {"threshold": 0, "threshold_type": "lt", "pe": 15, "score": 10},
+    {"threshold": 0, "threshold_type": "lt", "pe": 25, "score": 8},
+    {"threshold": 0, "threshold_type": "lt", "pe": 35, "score": 5},
+    {"threshold": 0, "threshold_type": "lt", "pe": 50, "score": 2},
+    {"threshold": 0, "threshold_type": "default", "score": 0}
+  ],
+  "data_requirements": {
+    "roe": "優先採 yfinance info.returnOnEquity，若無資料則以 trailingPE + revenueGrowth 估算",
+    "revenueGrowth": "data.json 內 revenueGrowth",
+    "earningsGrowth": "data.json 內 earningsGrowth",
+    "trailingPE": "data.json 內 trailingPE"
   },
-  "dimensions": {
-    "liquidity": "成交金額 + 價量攻勢",
-    "momentum": "日漲跌 + 營收成長 + 位置",
-    "alpha": "相對強弱 + 爆發度",
-    "fund_flow": "機構持倉 + 量比",
-    "theme": "題材（暫為0）",
-    "fundamental": "PE + 營收成長 + EPS成長"
-  },
-  "special_adjustments": {
-    "limit_up_liquidity_fix": true,
-    "margin_ratio_cap": 0.15,
-    "ex_rights_adjustment_days": 8,
-    "fx_sensitivity_threshold": 0.5,
-    "fx_impact_factor": 0.02
-  },
-  "macro": {
-    "enabled": true,
-    "s1_bound": false,
-    "s2_bound": true,
-    "regime_multipliers": {
-      "loose": 1.1,
-      "normal": 1.0,
-      "tight": 0.8
-    }
-  }
+  "output": "單一綜合分數 0-100，按分數排名。不輸出 tier。"
 }
