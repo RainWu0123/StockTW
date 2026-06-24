@@ -1,0 +1,24 @@
+{
+  "code": "6269",
+  "name": "台郡",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6269",
+    "name": "台郡",
+    "price": 87.5,
+    "pct": 9.65,
+    "vol": 0,
+    "score": 2.5,
+    "hold": "--",
+    "note": "原始追蹤標的",
+    "industry": "PCB/載板",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 1,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

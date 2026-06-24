@@ -1,0 +1,24 @@
+{
+  "code": "6770",
+  "name": "力積電",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6770",
+    "name": "力積電",
+    "price": 81.6,
+    "pct": 10.42,
+    "vol": 131242,
+    "score": 15.0,
+    "hold": "--",
+    "note": "ETF成分股(00981A/00991A)",
+    "industry": "IC/代工",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 1,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

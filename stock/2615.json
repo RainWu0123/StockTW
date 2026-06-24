@@ -1,0 +1,24 @@
+{
+  "code": "2615",
+  "name": "萬海",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2615",
+    "name": "萬海",
+    "price": 80.5,
+    "pct": 0.12,
+    "vol": 6942,
+    "score": 15.0,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

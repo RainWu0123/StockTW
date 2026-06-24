@@ -31,9 +31,7 @@ else:
 for s in data['stocks']:
     c = s['code']
     sc = score_map.get(c, {})
-    s['score'] = s.get('score', sc.get('score'))
-    s['hold'] = s.get('hold', '--')
-    s['note'] = s.get('note', '')
+    s['score'] = sc.get('score', s.get('score'))
     if 'industry' not in s: s['industry'] = ''
     h = heat_map.get(c, {})
     for k in ('day_pct', 'week_pct', 'month_pct'):

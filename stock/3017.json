@@ -1,0 +1,24 @@
+{
+  "code": "3017",
+  "name": "奇鋐",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3017",
+    "name": "奇鋐",
+    "price": 2420.0,
+    "pct": 0.0,
+    "vol": 3026,
+    "score": 33.5,
+    "hold": "--",
+    "note": "液冷散熱台廠第一，訂單能見度到2029",
+    "industry": "AI/散熱",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

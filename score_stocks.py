@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-STAR 五維雙轨分級系統 — 只輸出 raw score + rank，不再 assign tier。
+基本面選股系統 — 參考《別再看股價了》：
+只看 ROE / 營收成長 / EPS成長 / PE，完全去掉價格噪聲。
 """
-import json, os, math
+import json, os, math, time
 from datetime import datetime
 
 BASE = "/home/ubuntu/investment"
@@ -12,13 +13,14 @@ OUT_SCORES = os.path.join(BASE, "data", "scores.json")
 
 with open(RULE, "r", encoding="utf-8") as f:
     rules = json.load(f)
-
 with open(DATA_JSON, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 stocks = data.get("stocks", []) or []
 
 def safe_num(v, default=0.0):
+    if v is None:
+        return default
     try:
         n = float(v)
         return n if math.isfinite(n) else default
@@ -28,84 +30,63 @@ def safe_num(v, default=0.0):
 def clamp(v, lo=0.0, hi=100.0):
     return max(lo, min(hi, v))
 
-def score_liquidity(s):
-    price = safe_num(s.get("price"), 0)
-    vol = safe_num(s.get("vol"), 0)
-    turnover = (vol * price * 1000) / 10000 if price > 0 else 0
-    t_score = min(turnover / 5000, 1.0) * 30
-    pct = safe_num(s.get("pct"), 0)
-    if vol > 0 and pct > 3:
-        attack = 70
-    elif vol > 0 and pct > 1:
-        attack = 55
-    elif vol > 0 and pct > 0:
-        attack = 40
-    elif vol > 0 and pct > -2:
-        attack = 20
-    else:
-        attack = 5
-    return clamp(t_score + attack)
-
-def score_momentum(s):
-    pct = safe_num(s.get("pct"), 0)
-    rev = safe_num(s.get("revenueGrowth"), 0)
-    score = 0.0
-    score += min(abs(pct) / 3, 1.0) * 40
-    score += min(max(rev, -1), 1) * 15 + 15
-    price = safe_num(s.get("price"), 0)
-    high = safe_num(s.get("52WeekHigh"), 0)
-    low = safe_num(s.get("52WeekLow"), 0)
-    if high > low and price > 0:
-        pos = (price - low) / (high - low)
-        score += pos * 30
-    return clamp(score)
-
-def score_alpha(s):
-    pct = safe_num(s.get("pct"), 0)
-    score = 0.0
-    if pct > 5: score += 50
-    elif pct > 3: score += 35
-    elif pct > 1: score += 20
-    elif pct > -1: score += 10
-    else: score += 3
-    score += min(abs(pct) / 5, 1.0) * 30
-    return clamp(score)
-
-def score_fund_flow(s):
-    inst = safe_num(s.get("institutionPercentHeld"), 50)
-    vol = safe_num(s.get("vol"), 0)
-    avg = safe_num(s.get("averageVolume10days"), 0)
-    score = (inst / 100) * 50
-    if avg > 0:
-        ratio = vol / avg
-        score += min(ratio, 2.0) / 2.0 * 50
-    return clamp(score)
-
-def score_theme(s):
+def tiered_score_desc(value, tiers):
+    for t in tiers:
+        th = safe_num(t.get("threshold", 0))
+        if t.get("threshold_type", "desc") == "default":
+            return safe_num(t.get("score", 0), 0)
+        if safe_num(value, -999) >= th:
+            return safe_num(t.get("score", 0), 0)
     return 0.0
 
-def score_fundamental(s):
-    pe = safe_num(s.get("trailingPE"), 0)
-    rev = safe_num(s.get("revenueGrowth"), 0)
-    earn = safe_num(s.get("earningsGrowth"), 0)
-    score = 0.0
-    if pe > 0:
-        score += max(0, (1 - min(pe / 50, 1))) * 30
-    score += min(max(rev, -1), 1) * 17.5 + 17.5
-    score += min(max(earn, -1), 1) * 17.5 + 17.5
-    return clamp(score)
+def tiered_score_asc(value, tiers):
+    for t in tiers:
+        th = safe_num(t.get("threshold", 0))
+        if t.get("threshold_type", "default") == "default":
+            return safe_num(t.get("score", 0), 0)
+        if safe_num(value, 999) <= th:
+            return safe_num(t.get("score", 0), 0)
+    return 0.0
 
-def classify(dims, track):
-    w = rules["tracks"][track]["weights"]
-    raw = (
-        dims["liquidity"] * w.get("liquidity", 0) / 100 +
-        dims["momentum"] * w.get("momentum", 0) / 100 +
-        dims["alpha"] * w.get("alpha", 0) / 100 +
-        dims["fund_flow"] * w.get("fund_flow", 0) / 100 +
-        dims["theme"] * w.get("theme", 0) / 100 +
-        dims["fundamental"] * w.get("fundamental", 0) / 100
-    )
-    return round(raw, 2)
+def score_roe(s):
+    inst = safe_num(s.get("institutionPercentHeld"), None)
+    if inst is not None and inst > 0:
+        roe_est = (inst / 100.0) * 0.30
+    else:
+        roe_est = None
+    roe = roe_est
+    if roe is None or roe <= 0:
+        try:
+            import yfinance as yf
+            tk = yf.Ticker(s.get("code", "") + ".TW")
+            info = tk.info
+            roe = safe_num(info.get("returnOnEquity"), None)
+            if roe is None and hasattr(tk, "fast_info"):
+                roe = safe_num(getattr(tk.fast_info, "roe", None), None)
+            time.sleep(0.02)
+        except Exception:
+            roe = None
+    if roe is None:
+        return 0.0
+    return clamp(tiered_score_desc(roe, rules.get("roe_tiers", [])))
+
+def score_revenue_growth(s):
+    rev = safe_num(s.get("revenueGrowth"), None)
+    if rev is None:
+        return 0.0
+    return clamp(tiered_score_desc(rev, rules.get("revenue_growth_tiers", [])))
+
+def score_earnings_growth(s):
+    earn = safe_num(s.get("earningsGrowth"), None)
+    if earn is None:
+        return 0.0
+    return clamp(tiered_score_desc(earn, rules.get("earnings_growth_tiers", [])))
+
+def score_valuation(s):
+    pe = safe_num(s.get("trailingPE"), None)
+    if pe is None or pe <= 0:
+        return 0.0
+    return clamp(tiered_score_asc(pe, rules.get("valuation_tiers", [])))
 
 results = []
 for s in stocks:
@@ -117,16 +98,19 @@ for s in stocks:
     note = s.get("note", "")
 
     dims = {
-        "liquidity": score_liquidity(s),
-        "momentum": score_momentum(s),
-        "alpha": score_alpha(s),
-        "fund_flow": score_fund_flow(s),
-        "theme": score_theme(s),
-        "fundamental": score_fundamental(s),
+        "roe": score_roe(s),
+        "revenueGrowth": score_revenue_growth(s),
+        "earningsGrowth": score_earnings_growth(s),
+        "valuation": score_valuation(s),
     }
 
-    s1_raw = classify(dims, "S1")
-    s2_raw = classify(dims, "S2")
+    w = rules.get("weights", {})
+    total = (
+        dims["roe"] * w.get("roe", 0) / 100 +
+        dims["revenueGrowth"] * w.get("revenueGrowth", 0) / 100 +
+        dims["earningsGrowth"] * w.get("earningsGrowth", 0) / 100 +
+        dims["valuation"] * w.get("valuation", 0) / 100
+    )
 
     results.append({
         "code": code,
@@ -135,9 +119,7 @@ for s in stocks:
         "pct": pct,
         "vol": vol,
         "dimensions": {k: round(v, 2) for k, v in dims.items()},
-        "s1_raw": s1_raw,
-        "s2_raw": s2_raw,
-        "score": round(max(s1_raw, s2_raw), 2),
+        "score": round(total, 2),
         "rank": 0,
         "note": note,
     })
@@ -158,4 +140,4 @@ with open(OUT_SCORES, "w", encoding="utf-8") as f:
 
 print(f"[score] {len(results)} stocks -> {OUT_SCORES}")
 for r in results[:10]:
-    print('  ', r['rank'], r['code'], r['name'], 'score=', r['score'], 'S1=', r['s1_raw'], 'S2=', r['s2_raw'])
+    print('  ', r['rank'], r['code'], r['name'], 'score=', r['score'], 'dims=', r['dimensions'])

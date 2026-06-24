@@ -1,0 +1,24 @@
+{
+  "code": "2002",
+  "name": "中鋼",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2002",
+    "name": "中鋼",
+    "price": 19.5,
+    "pct": 2.9,
+    "vol": 128895,
+    "score": 0.0,
+    "hold": "--",
+    "note": "ETF成分股(0050/00988A)",
+    "industry": "鋼鐵",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

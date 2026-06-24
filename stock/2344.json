@@ -1,0 +1,24 @@
+{
+  "code": "2344",
+  "name": "華邦電",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2344",
+    "name": "華邦電",
+    "price": 222.0,
+    "pct": 1.6,
+    "vol": 398033,
+    "score": 21.25,
+    "hold": "--",
+    "note": "DRAM超循環，營收+181%，法人狂買",
+    "industry": "DRAM",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

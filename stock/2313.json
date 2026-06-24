@@ -1,0 +1,24 @@
+{
+  "code": "2313",
+  "name": "華通",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2313",
+    "name": "華通",
+    "price": 259.5,
+    "pct": -0.19,
+    "vol": 28046,
+    "score": 20.55,
+    "hold": "--",
+    "note": "AI載板+低軌衛星，等255以下",
+    "industry": "PCB/載板",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

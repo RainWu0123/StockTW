@@ -1,0 +1,24 @@
+{
+  "code": "6285",
+  "name": "啟碁",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6285",
+    "name": "啟碁",
+    "price": 268.0,
+    "pct": -2.19,
+    "vol": 14388,
+    "score": 13.8,
+    "hold": "--",
+    "note": "網通+NB+低軌，無明確AI爆發點",
+    "industry": "網通",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

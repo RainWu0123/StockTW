@@ -1,0 +1,24 @@
+{
+  "code": "1303",
+  "name": "台塑化",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "1303",
+    "name": "台塑化",
+    "price": 152.5,
+    "pct": 9.71,
+    "vol": 56524,
+    "score": 14.25,
+    "hold": "--",
+    "note": "ETF成分股(0050)",
+    "industry": "石化",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 1,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

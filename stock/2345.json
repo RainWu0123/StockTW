@@ -1,0 +1,24 @@
+{
+  "code": "2345",
+  "name": "鴻準",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2345",
+    "name": "鴻準",
+    "price": 2595.0,
+    "pct": 5.92,
+    "vol": 3150,
+    "score": 33.5,
+    "hold": "--",
+    "note": "ETF成分股(00991A)",
+    "industry": "電子",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

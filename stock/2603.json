@@ -1,0 +1,24 @@
+{
+  "code": "2603",
+  "name": "長榮",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2603",
+    "name": "長榮",
+    "price": 193.0,
+    "pct": -0.52,
+    "vol": 15103,
+    "score": 10.0,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

@@ -1,0 +1,24 @@
+{
+  "code": "2408",
+  "name": "南亞科",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2408",
+    "name": "南亞科",
+    "price": 505.0,
+    "pct": 11.36,
+    "vol": 93971,
+    "score": 26.25,
+    "hold": "--",
+    "note": "營收年增582%，外資目標490，今日創高",
+    "industry": "DRAM",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 1,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

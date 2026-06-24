@@ -1,0 +1,24 @@
+{
+  "code": "6830",
+  "name": "汎銓",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6830",
+    "name": "汎銓",
+    "price": 608.0,
+    "pct": 7.8,
+    "vol": 948,
+    "score": 5.0,
+    "hold": "--",
+    "note": "今日漲停但成交783張，流動性差",
+    "industry": "IC/代工",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

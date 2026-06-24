@@ -1,0 +1,24 @@
+{
+  "code": "2337",
+  "name": "旺宏",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2337",
+    "name": "旺宏",
+    "price": 185.5,
+    "pct": 10.09,
+    "vol": 132843,
+    "score": 6.25,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 1,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

@@ -1,0 +1,24 @@
+{
+  "code": "7610",
+  "name": "聯友金屬-創",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "7610",
+    "name": "聯友金屬-創",
+    "price": 2505.0,
+    "pct": 8.91,
+    "vol": 870,
+    "score": 31.25,
+    "hold": "--",
+    "note": "地緣題材，最快進最快出",
+    "industry": "工業/網通",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

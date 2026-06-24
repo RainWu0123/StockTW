@@ -1,0 +1,24 @@
+{
+  "code": "2303",
+  "name": "聯電",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2303",
+    "name": "聯電",
+    "price": 160.0,
+    "pct": 9.59,
+    "vol": 63848,
+    "score": 19.75,
+    "hold": "--",
+    "note": "ADR 25%，爆量29萬張，矽光子題材",
+    "industry": "IC/代工",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 1,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

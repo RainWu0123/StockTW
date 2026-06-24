@@ -1,0 +1,24 @@
+{
+  "code": "2609",
+  "name": "陽明",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2609",
+    "name": "陽明",
+    "price": 52.3,
+    "pct": 1.36,
+    "vol": 37796,
+    "score": 5.0,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

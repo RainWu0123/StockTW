@@ -1,0 +1,24 @@
+{
+  "code": "2327",
+  "name": "國巨",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2327",
+    "name": "國巨",
+    "price": 1065.0,
+    "pct": -1.39,
+    "vol": 58977,
+    "score": 27.25,
+    "hold": "--",
+    "note": "00981A/00992A/00991A 核心持股，今日漲停創高",
+    "industry": "被動元件",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

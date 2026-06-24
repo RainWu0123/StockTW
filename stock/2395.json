@@ -1,0 +1,24 @@
+{
+  "code": "2395",
+  "name": "研華",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2395",
+    "name": "研華",
+    "price": 499.5,
+    "pct": 0.81,
+    "vol": 2924,
+    "score": 30.55,
+    "hold": "--",
+    "note": "Edge AI存股型，短線動能不足",
+    "industry": "工業/邊緣",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

@@ -1,0 +1,24 @@
+{
+  "code": "2881",
+  "name": "國泰金",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2881",
+    "name": "國泰金",
+    "price": 138.5,
+    "pct": 0.0,
+    "vol": 24104,
+    "score": 26.25,
+    "hold": "--",
+    "note": "ETF成分股(0050/00988A)",
+    "industry": "金控",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

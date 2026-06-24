@@ -1,0 +1,24 @@
+{
+  "code": "1102",
+  "name": "亞泥",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "1102",
+    "name": "亞泥",
+    "price": 36.35,
+    "pct": 1.11,
+    "vol": 19784,
+    "score": 12.25,
+    "hold": "--",
+    "note": "ETF 成分追蹤",
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}
