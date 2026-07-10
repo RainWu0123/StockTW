@@ -1,0 +1,412 @@
+[
+  {
+    "filename": "1101_台泥.md",
+    "ticker_code": "1101",
+    "claimed_name": "台泥",
+    "verified_name": "台泥",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，研究 depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "1216_統一.md",
+    "ticker_code": "1216",
+    "claimed_name": "統一",
+    "verified_name": "統一企業",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，研究 depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "1301_台塑.md",
+    "ticker_code": "1301",
+    "claimed_name": "台塑",
+    "verified_name": "台塑",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，研究 depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "1303_台塑化.md",
+    "ticker_code": "1303",
+    "claimed_name": "台塑化",
+    "verified_name": "台塑化",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，研究 depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2002_中鋼.md",
+    "ticker_code": "2002",
+    "claimed_name": "中鋼",
+    "verified_name": "中國鋼鐵",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，研究 depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2303_聯電.md",
+    "ticker_code": "2303",
+    "claimed_name": "聯電",
+    "verified_name": "聯電",
+    "name_match": true,
+    "issues": "內容較完整：7 節、99 行；仍偏重描述，量化追蹤深度中等，research depth_score 4/5。",
+    "content_lines": 99,
+    "depth_score": 4
+  },
+  {
+    "filename": "2308_台達電.md",
+    "ticker_code": "2308",
+    "claimed_name": "台達電",
+    "verified_name": "台達電",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2313_華通.md",
+    "ticker_code": "2313",
+    "claimed_name": "華通",
+    "verified_name": "華通",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2317_鴻海.md",
+    "ticker_code": "2317",
+    "claimed_name": "鴻海",
+    "verified_name": "鴻海",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2327_國巨.md",
+    "ticker_code": "2327",
+    "claimed_name": "國巨",
+    "verified_name": "國巨",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2330_台積電.md",
+    "ticker_code": "2330",
+    "claimed_name": "台積電",
+    "verified_name": "台積電",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2344_華邦電.md",
+    "ticker_code": "2344",
+    "claimed_name": "華邦電",
+    "verified_name": "華邦電",
+    "name_match": true,
+    "issues": "內容可再補強：TWSE公告 2448 有異常交易註記，需確認無誤；standardization gap noted in prior review context.",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2345_鴻準.md",
+    "ticker_code": "2345",
+    "claimed_name": "鴻準",
+    "verified_name": "智邦",
+    "name_match": false,
+    "issues": "名稱錯誤：2345 正確名稱應為智邦，非鴻準；深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2375_凱美.md",
+    "ticker_code": "2375",
+    "claimed_name": "凱美",
+    "verified_name": "凱美",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2382_廣達.md",
+    "ticker_code": "2382",
+    "claimed_name": "廣達",
+    "verified_name": "廣達",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2383_台光電.md",
+    "ticker_code": "2383",
+    "claimed_name": "台光電",
+    "verified_name": "台光電",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2395_研華.md",
+    "ticker_code": "2395",
+    "claimed_name": "研華",
+    "verified_name": "研華",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2404_漢唐.md",
+    "ticker_code": "2404",
+    "claimed_name": "漢唐",
+    "verified_name": "漢唐",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2408_南亞科.md",
+    "ticker_code": "2408",
+    "claimed_name": "南亞科",
+    "verified_name": "南亞科",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2412_中華電.md",
+    "ticker_code": "2412",
+    "claimed_name": "中華電",
+    "verified_name": "中華電信",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2454_聯發科.md",
+    "ticker_code": "2454",
+    "claimed_name": "聯發科",
+    "verified_name": "聯發科",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2881_國泰金.md",
+    "ticker_code": "2881",
+    "claimed_name": "國泰金",
+    "verified_name": "富邦金",
+    "name_match": false,
+    "issues": "名稱錯誤：2881 正確名稱應為富邦金，非國泰金；深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "2882_開發金.md",
+    "ticker_code": "2882",
+    "claimed_name": "開發金",
+    "verified_name": "國泰金",
+    "name_match": false,
+    "issues": "名稱錯誤：2882 正確名稱應為國泰金，非開發金；深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "3005_神基.md",
+    "ticker_code": "3005",
+    "claimed_name": "神基",
+    "verified_name": "神基",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "3008_大立光.md",
+    "ticker_code": "3008",
+    "claimed_name": "大立光",
+    "verified_name": "大立光",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "3017_奇鋐.md",
+    "ticker_code": "3017",
+    "claimed_name": "奇鋐",
+    "verified_name": "奇鋐",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "3038_台達化.md",
+    "ticker_code": "3038",
+    "claimed_name": "台達化",
+    "verified_name": "全台",
+    "name_match": false,
+    "issues": "名稱錯誤：3038 正確名稱應為全台，非台達化；深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "3443_創意.md",
+    "ticker_code": "3443",
+    "claimed_name": "創意",
+    "verified_name": "創意",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "3529_力旺.md",
+    "ticker_code": "3529",
+    "claimed_name": "力旺",
+    "verified_name": "力旺",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "3711_日月光.md",
+    "ticker_code": "3711",
+    "claimed_name": "日月光",
+    "verified_name": "日月光投控",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "5269_華豐.md",
+    "ticker_code": "5269",
+    "claimed_name": "華豐",
+    "verified_name": "祥碩",
+    "name_match": false,
+    "issues": "檔案名稱為華豐，但 5269 對應正確研究應為 祥碩（祥碩科技）；名稱錯誤且深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "6166_凌華.md",
+    "ticker_code": "6166",
+    "claimed_name": "凌華",
+    "verified_name": "凌華",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "6239_台郡.md",
+    "ticker_code": "6239",
+    "claimed_name": "台郡",
+    "verified_name": "力成",
+    "name_match": false,
+    "issues": "檔案名稱為台郡，但 6239 正確名稱應為 力成；名稱錯誤且深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "6285_啟碁.md",
+    "ticker_code": "6285",
+    "claimed_name": "啟碁",
+    "verified_name": "啟碁",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "6415_矽力.md",
+    "ticker_code": "6415",
+    "claimed_name": "矽力",
+    "verified_name": "矽力*-KY",
+    "name_match": true,
+    "issues": "名稱規範建議補 '-KY'；內容較豐富共 181 行、有數字段落，但未使用標準化編號標題；research depth_score 3/5。",
+    "content_lines": 181,
+    "depth_score": 3
+  },
+  {
+    "filename": "6442_光聖.md",
+    "ticker_code": "6442",
+    "claimed_name": "光聖",
+    "verified_name": "光聖",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "6505_必定.md",
+    "ticker_code": "6505",
+    "claimed_name": "必定",
+    "verified_name": "台塑化",
+    "name_match": false,
+    "issues": "檔案名稱為必定，但 6505 正確名稱應為 台塑化；名稱錯誤且深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "6770_力積電.md",
+    "ticker_code": "6770",
+    "claimed_name": "力積電",
+    "verified_name": "力積電",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "6830_汎銓.md",
+    "ticker_code": "6830",
+    "claimed_name": "汎銓",
+    "verified_name": "汎銓",
+    "name_match": true,
+    "issues": "深度不足：內容僅模板化 3 節，約 27 行，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "7610_聯友金屬創.md",
+    "ticker_code": "7610",
+    "claimed_name": "聯友金屬創",
+    "verified_name": "聯友金屬-創",
+    "name_match": true,
+    "issues": "名稱規範與TWSE略有出入，建議全銜為「聯友金屬-創」；深度不足，research depth_score 1/5。",
+    "content_lines": 27,
+    "depth_score": 1
+  },
+  {
+    "filename": "摘要_KP49期_20260704.md",
+    "ticker_code": "",
+    "claimed_name": "",
+    "verified_name": "",
+    "name_match": true,
+    "issues": "此檔為研究摘要/期號筆記，非個股研究檔，10 節、106 行。",
+    "content_lines": 106,
+    "depth_score": 5
+  }
+]
