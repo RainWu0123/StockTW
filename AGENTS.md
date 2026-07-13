@@ -1,0 +1,30 @@
+# Investment Workspace — AGENTS.md
+
+## 專案概述
+台股研究與儀表板系統。包含個股深度研究、即時數據、排名評分、GitHub Pages 發布。
+
+## 目錄結構
+- `research/` — 個股深度研究報告，唯一落點
+  - 個股：`{代碼}_{名稱}.md`（例：`2330_台積電.md`）
+  - 專題：`摘要_{主題}_{YYYYMMDD}.md`
+- `data/` — JSON 資料檔（etf.json, live.json, scores.json, heatmap.json 等）
+- `stock/` — 個股原始資料（每檔一個 JSON，代碼為檔名）
+- `index.html` / `spa.html` — 儀表板前端
+- `*.py` — 資料抓取、評分、建站腳本
+- `deploy_pages.sh` — GitHub Pages 部署腳本
+
+## 規範
+- **語言**：所有研究報告、註解、輸出統一使用**繁體中文**
+- **研究檔名**：`{代碼}_{名稱}.md`，不用簡體
+- **數據來源**：TWSE API + 即時補價，必須附來源日期
+- **評分系統**：ROE + 營收成長 + 盈餘成長 + 估值，輸出排序與分數
+
+## Dashboard Pipeline
+1. `fetch_live.py` — 抓 TWSE 收盤價 → `data/live.json`
+2. `score_stocks.py` — 跑評分 → `data/scores.json`
+3. `build_site.py` — 建站 → 更新 stock/ 目錄 + index.html
+4. `deploy_pages.sh` — git push 到 GitHub Pages
+
+## Git 規範
+- 遠端 `origin/main` 為權威來源
+- 有 conflict 時：`git fetch origin && git reset --hard origin/main` 再 apply patch
