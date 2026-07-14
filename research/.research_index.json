@@ -4,727 +4,582 @@
     {
       "file": "1101_台泥.md",
       "chars": 807,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "1101",
-      "price": 22.7
+      "code": "1101"
     },
     {
       "file": "1216_統一.md",
       "chars": 794,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "1216",
-      "price": 78.5
+      "code": "1216"
     },
     {
       "file": "1301_台塑.md",
       "chars": 814,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "1301",
-      "price": 63.6
+      "code": "1301"
     },
     {
       "file": "1303_南亞.md",
       "chars": 914,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "1303",
-      "price": 210.0
+      "code": "1303"
     },
     {
       "file": "1326_台化.md",
       "chars": 1370,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "1326",
-      "price": 67.0
+      "code": "1326"
     },
     {
       "file": "2002_中鋼.md",
       "chars": 898,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "2002",
-      "price": 18.5
+      "code": "2002"
     },
     {
       "file": "2301_光寶科.md",
       "chars": 1368,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "2301",
-      "price": 212.5
+      "code": "2301"
     },
     {
       "file": "2303_聯電.md",
       "chars": 2014,
-      "last_verified": "2026-07-14",
-      "confidence": "高",
-      "code": "2303",
-      "price": 151.0
+      "code": "2303"
     },
     {
       "file": "2308_台達電.md",
       "chars": 982,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "2308",
-      "price": 1855.0
+      "code": "2308"
     },
     {
       "file": "2313_華通.md",
       "chars": 895,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "2313",
-      "price": 225.5
+      "code": "2313"
     },
     {
       "file": "2317_鴻海.md",
       "chars": 835,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "2317",
-      "price": 235.5
+      "code": "2317"
     },
     {
       "file": "2327_國巨.md",
       "chars": 1139,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "2327",
-      "price": 778.0
+      "code": "2327"
     },
     {
       "file": "2330_台積電.md",
       "chars": 3220,
-      "last_verified": "2026-07-14",
-      "confidence": "高",
-      "code": "2330",
-      "price": 2420.0
+      "code": "2330"
     },
     {
       "file": "2337_旺宏.md",
       "chars": 1365,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "2337",
-      "price": 139.5
+      "code": "2337"
     },
     {
       "file": "2344_華邦電.md",
       "chars": 1093,
-      "last_verified": "2026-07-14",
-      "confidence": "中",
-      "code": "2344",
-      "price": 164.5
+      "code": "2344"
     },
     {
       "file": "2345_智邦.md",
       "chars": 3262,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "2345",
-      "price": 2280.0
+      "code": "2345"
     },
     {
       "file": "2356_英業達.md",
       "chars": 1382,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "2356",
-      "price": 63.7
+      "code": "2356"
     },
     {
       "file": "2368_金像電.md",
       "chars": 1377,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "2368",
-      "price": 1015.0
+      "code": "2368"
     },
     {
       "file": "2375_凱美.md",
       "chars": 882,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "2375",
-      "price": 172.0
+      "code": "2375"
     },
     {
       "file": "2382_廣達.md",
       "chars": 1278,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "2382",
-      "price": 380.0
+      "code": "2382"
     },
     {
       "file": "2383_台光電.md",
       "chars": 954,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "2383",
-      "price": 4970.0
+      "code": "2383"
     },
     {
       "file": "2395_研華.md",
       "chars": 810,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "2395",
-      "price": 529.0
+      "code": "2395"
     },
     {
       "file": "2404_漢唐.md",
       "chars": 842,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "2404",
-      "price": 1185.0
+      "code": "2404"
     },
     {
       "file": "2408_南亞科.md",
       "chars": 935,
-      "last_verified": "2026-07-14",
-      "confidence": "中",
-      "code": "2408",
-      "price": 448.0
+      "code": "2408"
     },
     {
       "file": "2412_中華電.md",
       "chars": 817,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "2412",
-      "price": 133.0
+      "code": "2412"
     },
     {
       "file": "2449_京元電子.md",
       "chars": 1385,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "2449",
-      "price": 291.5
+      "code": "2449"
     },
     {
       "file": "2454_聯發科.md",
       "chars": 1670,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "2454",
-      "price": 3660.0
+      "code": "2454"
     },
     {
       "file": "2881_富邦金.md",
       "chars": 3463,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "2881",
-      "price": 125.0
+      "code": "2881"
     },
     {
       "file": "2882_國泰金.md",
       "chars": 857,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "2882",
-      "price": 96.1
+      "code": "2882"
     },
     {
       "file": "3005_神基.md",
       "chars": 3234,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "3005",
-      "price": 114.5
+      "code": "3005"
     },
     {
       "file": "3008_大立光.md",
       "chars": 828,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "3008",
-      "price": 4265.0
+      "code": "3008"
     },
     {
       "file": "3017_奇鋐.md",
       "chars": 967,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "3017",
-      "price": 2120.0
+      "code": "3017"
     },
     {
       "file": "3026_禾伸堂.md",
       "chars": 1423,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
       "code": "3026"
     },
     {
       "file": "3037_欣興.md",
       "chars": 1402,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "3037",
-      "price": 874.0
+      "code": "3037"
     },
     {
       "file": "3038_全台.md",
       "chars": 830,
-      "last_verified": "2026-07-14",
-      "confidence": "C",
-      "code": "3038",
-      "price": 20.85
+      "code": "3038"
     },
     {
       "file": "3231_緯創.md",
       "chars": 1399,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "3231",
-      "price": 142.5
+      "code": "3231"
     },
     {
       "file": "3443_創意.md",
       "chars": 1110,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "3443",
-      "price": 4020.0
+      "code": "3443"
     },
     {
       "file": "3529_力旺.md",
       "chars": 838,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "3529",
-      "price": 2415.0
+      "code": "3529"
     },
     {
       "file": "3653_健策.md",
       "chars": 1367,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
-      "code": "3653",
-      "price": 3070.0
+      "code": "3653"
     },
     {
       "file": "3711_日月光.md",
       "chars": 911,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "3711",
-      "price": 641.0
+      "code": "3711"
     },
     {
       "file": "5269_祥碩.md",
       "chars": 1025,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "5269",
-      "price": 1525.0
+      "code": "5269"
     },
     {
       "file": "5274_信驊.md",
       "chars": 1456,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
       "code": "5274"
     },
     {
       "file": "6166_凌華.md",
       "chars": 908,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "6166",
-      "price": 132.5
+      "code": "6166"
     },
     {
       "file": "6239_力成.md",
       "chars": 885,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "6239",
-      "price": 304.0
+      "code": "6239"
     },
     {
       "file": "6285_啟碁.md",
       "chars": 932,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "code": "6285",
-      "price": 247.5
+      "code": "6285"
     },
     {
       "file": "6415_矽力.md",
       "chars": 1779,
-      "last_verified": "2026-07-14",
-      "confidence": "中高",
       "code": "6415"
     },
     {
       "file": "6442_光聖.md",
       "chars": 906,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "6442",
-      "price": 1315.0
+      "code": "6442"
     },
     {
       "file": "6505_台塑化.md",
       "chars": 883,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "6505",
-      "price": 66.2
+      "code": "6505"
     },
     {
       "file": "6669_緯穎.md",
       "chars": 1460,
-      "last_verified": "2026-07-14",
-      "confidence": "B+",
       "code": "6669"
     },
     {
       "file": "6770_力積電.md",
       "chars": 888,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "6770",
-      "price": 69.2
+      "code": "6770"
     },
     {
       "file": "6830_汎銓.md",
       "chars": 893,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "code": "6830",
-      "price": 379.0
+      "code": "6830"
     },
     {
       "file": "7610_聯友金屬創.md",
       "chars": 4142,
-      "last_verified": "2026-07-14",
-      "confidence": "中",
-      "code": "7610",
-      "price": 2430.0
+      "code": "7610"
     }
   ],
   "topics": [
     {
       "file": "摘要_EP676_台股強勢族群_Meta_NeoCloud_20260704.md",
-      "chars": 1559,
-      "last_verified": "2026-07-14",
-      "confidence": "中"
+      "chars": 1559
     },
     {
       "file": "摘要_KP49期_20260704.md",
-      "chars": 2163,
-      "last_verified": "2026-07-14",
-      "confidence": "中"
+      "chars": 2163
     },
     {
       "file": "摘要_KP55期_Datadog可觀測層_20260708.md",
-      "chars": 3913,
-      "last_verified": "2026-07-14",
-      "confidence": "中高"
+      "chars": 3913
     },
     {
       "file": "摘要_MMPaM_EP206_ETF狂潮_20260712.md",
-      "chars": 5039,
-      "last_verified": "2026-07-14",
-      "confidence": "高"
+      "chars": 5039
     },
     {
       "file": "摘要_SK海力士暴跌_KIS下調_LTA定價模式_20260713.md",
-      "chars": 3866,
-      "last_verified": "2026-07-14",
-      "confidence": "高"
+      "chars": 3866
     },
     {
       "file": "摘要_早晨財經速解讀_20260709.md",
-      "chars": 2876,
-      "last_verified": "2026-07-14",
-      "confidence": "中高"
+      "chars": 2876
     },
     {
       "file": "摘要_研究品質評分_20260714.md",
-      "chars": 9147,
-      "last_verified": "2026-07-14",
-      "confidence": null
+      "chars": 9147
     },
     {
       "file": "摘要_股癌2026H1全景_20260714.md",
-      "chars": 12542,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 12600
     },
     {
       "file": "摘要_股癌2026觀點庫_20260714.md",
-      "chars": 4772,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 4819
+    },
+    {
+      "file": "摘要_股癌EP624_20260103.md",
+      "chars": 681,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP625_20260107.md",
+      "chars": 611,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP626_20260110.md",
+      "chars": 559,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP627_20260114.md",
+      "chars": 589,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP628_20260117.md",
+      "chars": 593,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP629_20260121.md",
+      "chars": 641,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP630_20260124.md",
+      "chars": 668,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP631_20260128.md",
+      "chars": 585,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP632_20260131.md",
+      "chars": 572,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP633_20260204.md",
+      "chars": 560,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP634_20260207.md",
+      "chars": 572,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP635_20260211.md",
+      "chars": 590,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP636_20260214.md",
+      "chars": 668,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP637_20260218.md",
+      "chars": 595,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP638_20260221.md",
+      "chars": 618,
+      "tier": "C",
+      "mode": "story"
+    },
+    {
+      "file": "摘要_股癌EP639_20260225.md",
+      "chars": 575,
+      "tier": "C",
+      "mode": "story"
     },
     {
       "file": "摘要_股癌EP640_20260228.md",
       "chars": 603,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP641_20260304.md",
       "chars": 600,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP642_20260307.md",
       "chars": 547,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP643_20260311.md",
       "chars": 637,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP644_20260314.md",
       "chars": 610,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP645_20260318.md",
       "chars": 601,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP646_20260321.md",
       "chars": 598,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP647_20260325.md",
       "chars": 637,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP648_20260328.md",
       "chars": 613,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP649_20260401.md",
       "chars": 594,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP650_20260404.md",
       "chars": 619,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP651_20260408.md",
       "chars": 610,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP652_20260411.md",
       "chars": 566,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP653_20260415.md",
       "chars": 615,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP654_20260418.md",
       "chars": 597,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "B"
+      "tier": "B"
     },
     {
       "file": "摘要_股癌EP655_20260422.md",
       "chars": 612,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP656_20260425.md",
       "chars": 608,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP657_20260429.md",
       "chars": 730,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP658_20260502.md",
       "chars": 649,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP659_20260506.md",
       "chars": 629,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP660_20260509.md",
       "chars": 595,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP661_20260513.md",
       "chars": 564,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP662_20260516.md",
       "chars": 530,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP663_20260520.md",
       "chars": 577,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP664_20260523.md",
       "chars": 642,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP665_20260527.md",
       "chars": 585,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP666_20260530.md",
       "chars": 542,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP667_20260603.md",
       "chars": 569,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP668_20260606.md",
       "chars": 607,
-      "last_verified": "2026-07-14",
-      "confidence": "B",
-      "relevance_tier": "A"
+      "tier": "A"
     },
     {
       "file": "摘要_股癌EP669_20260610.md",
-      "chars": 536,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 536
     },
     {
       "file": "摘要_股癌EP670_20260613.md",
-      "chars": 522,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 522
     },
     {
       "file": "摘要_股癌EP671_20260617.md",
-      "chars": 523,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 523
     },
     {
       "file": "摘要_股癌EP673_20260624.md",
-      "chars": 526,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 526
     },
     {
       "file": "摘要_股癌EP674_20260627.md",
-      "chars": 538,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 538
     },
     {
       "file": "摘要_股癌EP675_20260701.md",
-      "chars": 532,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 532
     },
     {
       "file": "摘要_股癌EP677_20260708.md",
-      "chars": 652,
-      "last_verified": "2026-07-14",
-      "confidence": "B+"
+      "chars": 652
     },
     {
       "file": "摘要_股癌EP678_20260711.md",
-      "chars": 1783,
-      "last_verified": "2026-07-14",
-      "confidence": "中"
+      "chars": 1783
+    },
+    {
+      "file": "摘要_股癌故事線_2025Q4至2026H1_20260714.md",
+      "chars": 17841,
+      "mode": "story"
     },
     {
       "file": "摘要_記憶體定價與頂部確認_三星Q2案例_20260708.md",
-      "chars": 2968,
-      "last_verified": "2026-07-14",
-      "confidence": "高"
+      "chars": 2968
     }
   ]
 }
