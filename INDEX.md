@@ -76,9 +76,12 @@
 ### 3.1 專題摘要（含品質評分檔）
 
 **股癌入口（消化完成 2026-07-14）**：
-1. **Skill（執行層）**：`gooaye-perspective` — 寫／審研究時載入
-2. **AI 可解析**：`research/gooaye_digest.json`
-3. **人讀判斷**：`research/摘要_股癌消化筆記_20260714.md`
+1. **Skill（女媧蒸餾 · 執行層）**：`gooaye-perspective`  
+   - 路徑：`~/.hermes/skills/investment/gooaye-perspective/`  
+   - 底稿：`references/research/01–06` + `FIDELITY.md`  
+   - 上游方法：[nuwa-skill](https://github.com/alchaincyf/nuwa-skill)  
+2. **AI 可解析**：`research/gooaye_digest.json`  
+3. **人讀判斷**：`research/摘要_股癌消化筆記_20260714.md`  
 4. 索引／編年：觀點庫、H1 全景、故事線
 
 | 檔案 | 主題 |
