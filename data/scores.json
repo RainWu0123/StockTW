@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "generated": "2026-07-13T14:00:39.616310",
+  "generated": "2026-07-14T14:01:25.131461",
   "rules_version": "2026-06-23-fundamental-only",
   "stocks": [
     {
@@ -324,22 +324,6 @@
       "note": "ETF 成分追蹤"
     },
     {
-      "code": "2408",
-      "name": "南亞科",
-      "price": 505.0,
-      "pct": 11.36,
-      "vol": 93971,
-      "dimensions": {
-        "roe": 40.0,
-        "revenueGrowth": 25.0,
-        "earningsGrowth": 0.0,
-        "valuation": 0.0
-      },
-      "score": 26.25,
-      "rank": 21,
-      "note": "營收年增582%，外資目標490，今日創高"
-    },
-    {
       "code": "2881",
       "name": "國泰金",
       "price": 138.5,
@@ -352,7 +336,7 @@
         "valuation": 0.0
       },
       "score": 26.25,
-      "rank": 22,
+      "rank": 21,
       "note": "ETF成分股(0050/00988A)"
     },
     {
@@ -368,7 +352,7 @@
         "valuation": 0.0
       },
       "score": 25.55,
-      "rank": 23,
+      "rank": 22,
       "note": "ETF 成分追蹤"
     },
     {
@@ -384,7 +368,7 @@
         "valuation": 0.0
       },
       "score": 25.5,
-      "rank": 24,
+      "rank": 23,
       "note": "ETF 成分追蹤"
     },
     {
@@ -400,7 +384,7 @@
         "valuation": 0.0
       },
       "score": 25.0,
-      "rank": 25,
+      "rank": 24,
       "note": "AI ASIC，今日-1.57%小拉，Momentum仍強"
     },
     {
@@ -416,7 +400,7 @@
         "valuation": 0.0
       },
       "score": 25.0,
-      "rank": 26,
+      "rank": 25,
       "note": "ETF成分股(00981A)"
     },
     {
@@ -432,7 +416,7 @@
         "valuation": 0.0
       },
       "score": 25.0,
-      "rank": 27,
+      "rank": 26,
       "note": "ETF 成分追蹤"
     },
     {
@@ -448,7 +432,7 @@
         "valuation": 0.0
       },
       "score": 24.3,
-      "rank": 28,
+      "rank": 27,
       "note": "ETF 成分追蹤"
     },
     {
@@ -464,7 +448,7 @@
         "valuation": 0.0
       },
       "score": 23.8,
-      "rank": 29,
+      "rank": 28,
       "note": "ETF 成分追蹤"
     },
     {
@@ -480,7 +464,7 @@
         "valuation": 0.0
       },
       "score": 22.75,
-      "rank": 30,
+      "rank": 29,
       "note": "ETF 成分追蹤"
     },
     {
@@ -496,7 +480,7 @@
         "valuation": 0.0
       },
       "score": 22.75,
-      "rank": 31,
+      "rank": 30,
       "note": "動能中等，漲幅可能已被反映"
     },
     {
@@ -512,7 +496,7 @@
         "valuation": 0.0
       },
       "score": 22.25,
-      "rank": 32,
+      "rank": 31,
       "note": "ETF 成分追蹤"
     },
     {
@@ -528,7 +512,7 @@
         "valuation": 0.0
       },
       "score": 22.25,
-      "rank": 33,
+      "rank": 32,
       "note": "ETF 成分追蹤"
     },
     {
@@ -544,7 +528,7 @@
         "valuation": 0.0
       },
       "score": 22.25,
-      "rank": 34,
+      "rank": 33,
       "note": "Edge AI題材，今日漲停"
     },
     {
@@ -560,7 +544,7 @@
         "valuation": 0.0
       },
       "score": 21.8,
-      "rank": 35,
+      "rank": 34,
       "note": "ETF成分股(0050/00988A)"
     },
     {
@@ -576,7 +560,7 @@
         "valuation": 0.0
       },
       "score": 21.25,
-      "rank": 36,
+      "rank": 35,
       "note": "DRAM超循環，營收+181%，法人狂買"
     },
     {
@@ -592,7 +576,7 @@
         "valuation": 0.0
       },
       "score": 21.0,
-      "rank": 37,
+      "rank": 36,
       "note": "CoWoS溢最強，先進封裝占比持續提升"
     },
     {
@@ -608,7 +592,7 @@
         "valuation": 0.0
       },
       "score": 20.55,
-      "rank": 38,
+      "rank": 37,
       "note": "AI載板+低軌衛星，等255以下"
     },
     {
@@ -624,7 +608,7 @@
         "valuation": 0.0
       },
       "score": 20.55,
-      "rank": 39,
+      "rank": 38,
       "note": "ETF 成分追蹤"
     },
     {
@@ -640,7 +624,7 @@
         "valuation": 0.0
       },
       "score": 19.75,
-      "rank": 40,
+      "rank": 39,
       "note": "ADR 25%，爆量29萬張，矽光子題材"
     },
     {
@@ -656,7 +640,7 @@
         "valuation": 0.0
       },
       "score": 18.8,
-      "rank": 41,
+      "rank": 40,
       "note": "ETF成分股(00988A)"
     },
     {
@@ -672,7 +656,7 @@
         "valuation": 0.0
       },
       "score": 18.8,
-      "rank": 42,
+      "rank": 41,
       "note": "ETF 成分追蹤"
     },
     {
@@ -688,7 +672,7 @@
         "valuation": 0.0
       },
       "score": 17.5,
-      "rank": 43,
+      "rank": 42,
       "note": "營收確認佳但基期高"
     },
     {
@@ -704,7 +688,7 @@
         "valuation": 0.0
       },
       "score": 15.55,
-      "rank": 44,
+      "rank": 43,
       "note": "ETF 成分追蹤"
     },
     {
@@ -720,7 +704,7 @@
         "valuation": 0.0
       },
       "score": 15.55,
-      "rank": 45,
+      "rank": 44,
       "note": "ETF 成分追蹤"
     },
     {
@@ -736,7 +720,7 @@
         "valuation": 0.0
       },
       "score": 15.0,
-      "rank": 46,
+      "rank": 45,
       "note": "ETF 成分追蹤"
     },
     {
@@ -752,7 +736,7 @@
         "valuation": 0.0
       },
       "score": 15.0,
-      "rank": 47,
+      "rank": 46,
       "note": "ETF成分股(00981A/00991A)"
     },
     {
@@ -768,7 +752,7 @@
         "valuation": 0.0
       },
       "score": 14.3,
-      "rank": 48,
+      "rank": 47,
       "note": "ETF 成分追蹤"
     },
     {
@@ -784,7 +768,7 @@
         "valuation": 0.0
       },
       "score": 14.25,
-      "rank": 49,
+      "rank": 48,
       "note": "ETF成分股(0050)"
     },
     {
@@ -800,7 +784,7 @@
         "valuation": 0.0
       },
       "score": 13.8,
-      "rank": 50,
+      "rank": 49,
       "note": "網通+NB+低軌，無明確AI爆發點"
     },
     {
@@ -816,7 +800,7 @@
         "valuation": 0.0
       },
       "score": 13.7,
-      "rank": 51,
+      "rank": 50,
       "note": "ETF成分股(0050)"
     },
     {
@@ -832,7 +816,7 @@
         "valuation": 0.0
       },
       "score": 12.25,
-      "rank": 52,
+      "rank": 51,
       "note": "ETF 成分追蹤"
     },
     {
@@ -848,7 +832,7 @@
         "valuation": 0.0
       },
       "score": 12.25,
-      "rank": 53,
+      "rank": 52,
       "note": "ETF 成分追蹤"
     },
     {
@@ -864,7 +848,7 @@
         "valuation": 0.0
       },
       "score": 10.0,
-      "rank": 54,
+      "rank": 53,
       "note": "ETF 成分追蹤"
     },
     {
@@ -880,7 +864,7 @@
         "valuation": 0.0
       },
       "score": 10.0,
-      "rank": 55,
+      "rank": 54,
       "note": "ETF成分股(00981A/00991A)"
     },
     {
@@ -896,7 +880,7 @@
         "valuation": 0.0
       },
       "score": 10.0,
-      "rank": 56,
+      "rank": 55,
       "note": "ETF 成分追蹤"
     },
     {
@@ -912,7 +896,7 @@
         "valuation": 0.0
       },
       "score": 8.75,
-      "rank": 57,
+      "rank": 56,
       "note": "AI電感/MLCC彈性最大，00981A掃貨"
     },
     {
@@ -928,7 +912,7 @@
         "valuation": 0.0
       },
       "score": 7.0,
-      "rank": 58,
+      "rank": 57,
       "note": "ETF 成分追蹤"
     },
     {
@@ -944,8 +928,24 @@
         "valuation": 0.0
       },
       "score": 6.25,
-      "rank": 59,
+      "rank": 58,
       "note": "ETF 成分追蹤"
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "price": 505.0,
+      "pct": 11.36,
+      "vol": 93971,
+      "dimensions": {
+        "roe": 0.0,
+        "revenueGrowth": 25.0,
+        "earningsGrowth": 0.0,
+        "valuation": 0.0
+      },
+      "score": 6.25,
+      "rank": 59,
+      "note": "營收年增582%，外資目標490，今日創高"
     },
     {
       "code": "2882",
