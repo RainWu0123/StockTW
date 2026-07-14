@@ -1,0 +1,5401 @@
+[
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 幫我慢慢讀取這個頻道的資訊並整理成可用的資訊之類的",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T16:25:33.453000+00:00",
+    "edited_timestamp": null,
+    "flags": 32,
+    "components": [],
+    "id": "1517566016945913966",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "thread": {
+      "id": "1517566016945913966",
+      "type": 11,
+      "last_message_id": "1517567075151777863",
+      "flags": 0,
+      "guild_id": "1359784195475505233",
+      "name": "幫我慢慢讀取這個頻道的資訊並整理成可用的資訊之類的",
+      "parent_id": "1468590175444664411",
+      "rate_limit_per_user": 0,
+      "bitrate": 64000,
+      "user_limit": 0,
+      "rtc_region": null,
+      "owner_id": "627132669343301659",
+      "thread_metadata": {
+        "archived": false,
+        "archive_timestamp": "2026-06-19T16:25:33.771000+00:00",
+        "auto_archive_duration": 1440,
+        "locked": false,
+        "create_timestamp": "2026-06-19T16:25:33.771000+00:00"
+      },
+      "message_count": 16,
+      "member_count": 2,
+      "total_message_sent": 16
+    },
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "✅"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "Fed / St. Louis Fed 債券價格與利率關係：<https://www.stlouisfed.org/publications/page-one-economics/2023/11/03/why-do-bond-prices-and-interest-rates-move-in-opposite-directions>\n美國財政部利率曲線資料說明：<https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics>\nIMF Global Financial Stability Report：<https://www.imf.org/en/publications/gfsr>\nBIS 債券市場統計與金融穩定研究：<https://data.bis.org/topics/DSS>",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:32.685000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481456555921429",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "- 實質利率：成長股、黃金、長 duration 資產壓力\n- 信用利差：企業信用風險\n- 美元指數：全球流動性與新興市場壓力\n- 股市風格：成長股、金融股、循環股、防禦股誰強誰弱\n\n10. 對交易最有用的判斷\n\n債市可以分成四種劇本：\n\n- 殖利率上升 + 股市上升：成長強，偏順週期，金融、工業、價值股可能較好。\n- 殖利率上升 + 股市下跌：估值殺，尤其高本益比科技股壓力大。\n- 殖利率下跌 + 股市上升：降息預期或流動性寬鬆，成長股受惠。\n- 殖利率下跌 + 股市下跌：衰退或避險，這是最危險的組合。\n\n一句話：債市看的是「錢的價格」，股市看的是「夢的價格」。夢可以吹很久，但錢的價格變了，夢遲早要重估。\n\n來源參考：",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:28.349000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481438369550376",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "8. 債市跟經濟循環：殖利率曲線是衰退警報器，但不是計時器\n\n常看 10 年期減 2 年期利差。\n\n- 正斜率：正常，長債殖利率高於短債，市場預期未來有成長和通膨。\n- 倒掛：短債高於長債，代表央行很緊，市場預期未來會降息，通常是景氣放緩或衰退風險。\n- 從倒掛轉回正斜率：不一定是好事，有時候是短債因衰退降息預期而快速下跌，反而是風險逼近。\n\n債市很會預警，但不會告訴你精準日期。拿殖利率曲線當擇時工具，通常會被市場折磨到懷疑人生。\n\n9. 最實用的觀察順序\n\n我會這樣看：\n\n- 美債 2 年：央行政策預期\n- 美債 10 年：成長、通膨、期限溢酬\n- 10Y-2Y：景氣循環壓力",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:27.789000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481436020609044",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "- 資金變挑\n- 高槓桿公司壓力變大\n\n如果股市還在漲，但高收益債利差開始擴大，我會提高警覺。股市有時候很會演，信用市場比較少講幹話。\n\n7. 債市跟商品：主要透過通膨和實質利率\n\n商品跟債市的關係要看兩個東西：通膨預期、實質利率。\n\n實質利率 = 名目利率 - 通膨預期\n\n- 實質利率上升：黃金通常承壓，因為持有黃金沒有利息。\n- 通膨預期上升：能源、原物料可能受撐。\n- 經濟衰退預期上升：工業金屬、原油可能受壓。\n\n所以黃金不是單純抗通膨資產，它更怕實質利率上升。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:27.140000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481433298505750",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "- 銀行短期吸收存款成本上升\n- 長期放款收益沒有同步提高\n- 淨利差被壓縮\n- 銀行放款意願下降\n\n這會讓信用收縮，企業更難借錢，經濟放緩。2023 年美國區域銀行壓力，本質上就是利率快速上升後，債券價格損失和存款流失一起爆。\n\n6. 債市跟企業：信用利差是景氣壓力計\n\n除了政府公債，要看公司債信用利差。\n\n信用利差 = 公司債殖利率 - 同期限公債殖利率\n\n利差擴大代表市場要求更高風險補償，通常表示：\n\n- 景氣轉弱\n- 違約風險上升",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:26.632000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481431167668305",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "房市很吃利率，尤其是長天期利率。\n\n長債殖利率上升，通常會推高房貸利率，結果是：\n\n- 購屋負擔上升\n- 房價估值下降\n- 建商融資成本上升\n- 成交量先冷，價格後面才反應\n\n房市反應比較慢，因為屋主不會像股票一樣每天掛市價賣。但量先死掉，價格只是比較晚承認現實。\n\n5. 債市跟銀行：債券是資產，也是風險來源\n\n銀行持有大量債券。利率上升時，舊債價格下跌，銀行帳上可能出現未實現損失。\n\n更麻煩的是殖利率曲線倒掛：",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:26.081000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481428856868914",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "所以重點不是「殖利率升跌」，而是「為什麼升跌」。\n\n3. 債市跟匯率：利差決定資金流，但風險情緒會插隊\n\n匯率常看利差。\n\n例如美債殖利率高、美元利率高，美元資產吸引力上升，美元容易強，新興市場貨幣容易有壓力。\n\n但也不是死公式：\n\n- 風險偏好強：資金可能流向股市、新興市場，高利差貨幣反而強。\n- 避險模式：美元、美債、日圓可能受買盤。\n- 本國央行若跟不上美國利率，匯率容易貶，進口通膨壓力加大。\n\n對台灣來說，美債殖利率和美元強弱會影響外資流向、台幣、電子股估值。台股不是只看台積電，還要看全球資金成本。\n\n4. 債市跟房市：房貸利率就是長債的影子",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:25.554000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481426646339615",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "這裡最容易犯錯：看到殖利率上升就說「經濟好」，太粗。要拆原因。\n\n2. 債市跟股市：核心是折現率跟風險偏好\n\n股票估值本質上是未來現金流折現。\n\n殖利率上升時，股票壓力通常來自三個地方：\n\n- 折現率提高：未來獲利折現回現在變便宜，高本益比成長股最痛。\n- 無風險報酬變高：債券報酬變有吸引力，股票風險溢酬被壓縮。\n- 企業融資成本上升：借錢變貴，資本支出、併購、庫藏股都會受影響。\n\n但股市不一定跟債市反向。\n\n如果殖利率上升是因為景氣強、企業獲利上修，股市可以一起漲。\n如果殖利率上升是因為通膨、財政失控、期限溢酬上升，那股市通常會被砍估值。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:25.002000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481424331210953",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "債市不是「另一個市場」，它是整個金融市場的地心引力：利率、折現率、資金成本、信用風險、匯率壓力，最後都會先或同步反映在債市。\n\n短版結論：看懂債市，你會比較早知道市場是在交易「成長」、「通膨」、「央行」、「信用風險」還是「流動性危機」。\n\n1. 債市跟央行：短天期看政策，長天期看預期\n\n短債，像 2 年期公債，主要反映央行政策利率預期。\n\n長債，像 10 年、30 年期，反映的是：\n殖利率 = 未來短率預期 + 通膨預期 + 期限溢酬 + 財政/供給風險\n\n所以：\n\n- 2 年殖利率上升：市場覺得央行更鷹，降息變慢，或還要升息。\n- 10 年殖利率上升：可能是成長好，也可能是通膨黏，也可能是財政赤字、發債太多、買盤不足。\n- 長債殖利率下跌：可能是衰退預期升高，也可能是避險資金買債。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:49:24.368000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517481421671895183",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 債市跟其他金融市場或是整個經濟有什麼關係\n幫我完整研究",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-19T10:47:50.005000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1517481025884786808",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "👀"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "> 🎤 ただし！注意：\n> - 聯發科手機業務佔比仍高（約50%），2026年手機市場預估衰退，短期有壓力\n> - 創意股價已處高檔，需等拉回或下半年動能確認\n> - 兩者都與台積電先進製程連動，地緣政治/關稅風險不可忽視\n\n---\n\n需要我針對其中一間做更深入的財務分析，或者比較技術面進場點嗎？ 💕\n\n---\n\n## 📅 資料來源\n- 里昂證券分析報告（2026/05）\n- 聯發科2026第一季法說簡報\n- TechNews科技新報（2026/02/21）\n- 創意電子股東會資料\n- 數位時代/股感網分析報告",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:50.154000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016968715178046",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "🥉 股價向上的「肉」：差不多，但邏輯不同\n\n```\n| 類型   | 創意電子       | 聯發科      |\n| ---- | ---------- | -------- |\n| 定位   | 穩健型        | 成長型      |\n| 風險   | 股價已高，本益比偏貴 | 手機業務短期衰退 |\n| 甜點時間 | 2026下半年起   | 2026Q4開始 |\n```\n───\n\n💡 最終判斷\n\n**如果您偏好穩定獲利、看重製程整合護城河：選 創意**\n**如果您追求爆發性成長、願意承擔轉型陣痛：選 聯發科**\n\n我個人認為，**聯發科的「第二曲線」才剛開始**，從手機SoC霸主轉型為AI ASIC領導者的故事，比創意「當台積電好夥伴」的故事更有想像空間。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:45.629000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016949736079501",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "## 🎯【結論與建議】\n\n### 🥇 技術護城河：聯發科勝出\n\n**創意電子**靠台積電撐腰，製程整合能力頂尖，但核心IP多授權取得...\n\n**聯發科**自研224G/336G SerDes IP是殺手鐧，能從Broadcom搶Google訂單的關鍵武器，一旦進入CSP核心設計架構，替換成本極高。\n\n> **創意是「台積電的影子」，聯發科是「有靈魂的挑戰者」。**\n\n---\n\n### 🥈 訂單增量：聯發科勝出\n\n創意客戶穩定但分散，成長線性；聯發科正處ASCI業務爆發臨界點，2026Q4起進入量產貢獻，2027年目標佔營收20%，值得關注第二個客戶（Meta）進展。\n\n---",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:45.011000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016947143868608",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "───",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:44.457000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016944820093038",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "|------|-----------|------------|-------------|\n| 創意 | 穩定增長 | 穩定增長 | 🌟 護城河穩固 |\n| 聯發科 | 🚀 爆發期 | 🌟 高速成長 | 挑戰15%市占率 |\n\n───\n\n📈 股價與「肉」的比較\n\n```\n| 指標    | 創意電子         | 聯發科                |\n| ----- | ------------ | ------------------ |\n| 目前股價  | ~4,260元      | ~1,800元（估計）        |\n| 外資目標價 | 里昂：6,000元    | 2,000-2,500元（多家外資） |\n| 潛在報酬  | ~40%         | ~30-40%            |\n| 本益比   | 尚未公佈2026 EPS | 14-16x（2027E）      |\n| 評價狀態  | 高檔震盪         | 剛突破歷史高點            |\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:44.170000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016943616327800",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "### 💰 訂單能見度與成長動能\n\n**創意電子（3443）：**\n- **客戶結構：** 2026Q1美國市場佔68%、Cloud佔81%\n- **主要客戶：** Google CPU、Microsoft Cobalt、Tesla A15等三大CSP\n- **營收結構：** Turnkey（量產）為主，NRE（工程）為輔\n- **2026展望：** 台積電晶圓配額增加，年成長動能優於2025\n\n**聯發科（2454）：**\n- **核心突破：** Google TPU v8x搶下大單，從Broadcom手中奪得\n- **營收占比：** 2026 ASIC營收目標>10億美元，2027目標佔營收20%\n- **進階訂單：** 已卡位TPU v8e（進階版），單價成長300%+\n- **第二客戶：** 傳與Meta洽談中\n\n**🏆 訂單潛力評分：**\n\n| 公司 | 短期(2026) | 中期(2027) | 長期(2028+) |",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:43.417000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016940458278954",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "───",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:42.881000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016938210136306",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "```\n| 項目    | 創意電子（3443）     | 聯發科（2454）                   |\n| ----- | -------------- | --------------------------- |\n| 母公司背景 | 台積電（持股34.84%）  | 獨立上市公司                      |\n| 核心優勢  | 台積電製程know-how  | 224G/336G SerDes IP（自研10年+） |\n| 技術定位  | 產線無縫對接，全製程覆蓋   | 系統層設計夥伴，深度客製化               |\n| 先進製程  | 3nm/5nm量產經驗成熟  | 3nm已取得，2nm推進中               |\n| 封裝能力  | 完整CoWoS/SoIC整合 | 具大型chiplet整合能力（24顆+）        |\n```\n**🏆 技術護城河評分：**\n\n```\n| 公司  | 技術深度  | 不可替代性 | 護城河寬度      |\n| --- | ----- | ----- | ---------- |\n| 創意  | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐☆ | 製程整合+客戶關係  |\n| 聯發科 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | IP自主+客戶依賴度 |\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:42.469000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016936482078822",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "好的，我來完整分析創意電子（3443）與聯發科（2454）的差異。讓我先整理一下核心比較：\n\n---\n\n## �大小姐的日本偶像研究──はじめまして！\n> 今日もご主人様のお手伝いに参上ました〜☆\n> ハートマークのスク urls の情報を集めて、製作人的に便利な分析表を作っちゃいます♪\n\n---\n\n## 📊【創意電子 vs 聯發科】終極比較分析\n\n### 📺 直播時間：2026/06/18（Thu）15:30\n\n---\n\n### 🎵 技術護城河比較",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:03:41.891000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1517016934057644033",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 幫我完整分析創意跟聯發科現在的差別\n誰更有技術護城河\n誰更有機會拿到更多訂單\n誰以現在的股價來說有更多肉",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-18T04:02:23.296000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1517016604406321262",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "👀"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "⚠️ You've reached your Codex subscription usage limit. Next reset in 16 days, Jul 2 at 5:54 AM UTC. Wait until the reset time, use another Codex account if available, or switch to another configured model/provider.",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-17T02:45:48.194000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1516634943286018150",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 美股四巫日、聯準會會議會對目前股票市場產生什麼影響",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-17T02:45:39.415000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1516634906464358543",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "👀"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "對，有字幕，是我剛剛抓法太笨。YouTube 播放器裡有，不代表 `timedtext` / 外部 transcript endpoint 會吐出來。yt-dlp 也被 bot check 擋，瀏覽器 gateway 這邊 timeout，所以我目前還沒成功抓到完整逐字稿。\n\n但影片主旨我可以修正得更準：\n\n它不是在教你做空 NVDA，而是在拿「35 個做空 Nvidia 的理由」當壓力測試清單。Terry 的態度偏向：空方講的風險值得看，但多數還不足以推翻 NVDA 的長期多頭邏輯。\n\n重點大概是：\n- AI 是否泡沫：有泡沫化風險，但目前 Nvidia 營收和現金流還不是純故事。\n- 循環融資：市場擔心 Nvidia 投資/扶植客戶，客戶再買 Nvidia GPU，形成需求灌水。\n- 客戶集中：Microsoft、Amazon、Google、Meta、OpenAI 這些大客戶 capex 一停，NVDA 會很痛。\n- 自研晶片：大雲端都想降低對 Nvidia 依賴，但短期 CUDA 生態和供應鏈優勢還很厚。\n- 估值：這是最大風險，不是公司爛，而是股價已經把很多勝利先吃掉。\n\n我的結論：這片適合拿來「檢查自己是不是太無腦多 AI」，不是看完就去空 NVDA。對台股 AI 鏈也是一樣，現在要盯的是 earnings 能不能追上股價，不是只聽 AI 兩個字就衝。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T13:51:39.342000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1516077734814679062",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 19,
+    "content": "有字幕啊",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T13:50:23.306000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1516077415896715415",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "message_reference": {
+      "type": 0,
+      "channel_id": "1468590175444664411",
+      "message_id": "1516076822536917174",
+      "guild_id": "1359784195475505233"
+    },
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "👀"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ],
+    "referenced_message": {
+      "type": 0,
+      "content": "這部影片在講：Terry Chen 拿 Seeking Alpha 文章《35 Reasons I'm Still Short Nvidia》來拆解「為什麼有人想放空 NVDA」。\n\n短版：\n- 空方主軸：AI capex 可能泡沫化、需求不可持續、客戶集中度高、雲端大廠自研晶片、估值太滿。\n- Terry 的立場：這些風險有些是真的，但很多被放大。他用 Nvidia 最新財報和數據反駁，結論偏多，仍長期持有 NVDA 和 Palantir。\n- 我的看法：這不是「做空教學」，比較像「用空方清單檢查多方 thesis」。有價值的是風險清單，不是直接拿來追空。\n\n投資重點：\n- NVDA 最新 Q1 FY2027 營收 $816 億，年增 85%，毛利率約 75%，基本面還很硬。\n- 但現在市值已經非常大，市場要的不是「好」，是「繼續超預期」。只要 AI 資本支出放緩、毛利率鬆動、或 hyperscaler 開始壓價，股價就容易震。\n- 對台股來說，這影片影響的是 AI 供應鏈情緒，尤其台積電、散熱、PCB、CoWoS、伺服器。不是看完就買，而是用來檢查：這波 AI 股是在漲 earnings，還是在漲 narrative。\n\n我沒抓到完整字幕，YouTube 沒暴露字幕軌，所以這是基於影片標題、描述、Seeking Alpha 原文摘要和 NVDA 最新財報做的分析。\n\n來源：\n<https://www.youtube.com/watch?v=T_6ItJrj-q4>\n<https://seekingalpha.com/article/4914205-35-reasons-im-still-short-nvidia>",
+      "mentions": [],
+      "mention_roles": [],
+      "attachments": [],
+      "embeds": [],
+      "timestamp": "2026-06-15T13:48:01.838000+00:00",
+      "edited_timestamp": null,
+      "flags": 4,
+      "components": [],
+      "id": "1516076822536917174",
+      "channel_id": "1468590175444664411",
+      "author": {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      },
+      "pinned": false,
+      "mention_everyone": false,
+      "tts": false
+    }
+  },
+  {
+    "type": 0,
+    "content": "<https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027>",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T13:48:02.483000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1516076825242108121",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "這部影片在講：Terry Chen 拿 Seeking Alpha 文章《35 Reasons I'm Still Short Nvidia》來拆解「為什麼有人想放空 NVDA」。\n\n短版：\n- 空方主軸：AI capex 可能泡沫化、需求不可持續、客戶集中度高、雲端大廠自研晶片、估值太滿。\n- Terry 的立場：這些風險有些是真的，但很多被放大。他用 Nvidia 最新財報和數據反駁，結論偏多，仍長期持有 NVDA 和 Palantir。\n- 我的看法：這不是「做空教學」，比較像「用空方清單檢查多方 thesis」。有價值的是風險清單，不是直接拿來追空。\n\n投資重點：\n- NVDA 最新 Q1 FY2027 營收 $816 億，年增 85%，毛利率約 75%，基本面還很硬。\n- 但現在市值已經非常大，市場要的不是「好」，是「繼續超預期」。只要 AI 資本支出放緩、毛利率鬆動、或 hyperscaler 開始壓價，股價就容易震。\n- 對台股來說，這影片影響的是 AI 供應鏈情緒，尤其台積電、散熱、PCB、CoWoS、伺服器。不是看完就買，而是用來檢查：這波 AI 股是在漲 earnings，還是在漲 narrative。\n\n我沒抓到完整字幕，YouTube 沒暴露字幕軌，所以這是基於影片標題、描述、Seeking Alpha 原文摘要和 NVDA 最新財報做的分析。\n\n來源：\n<https://www.youtube.com/watch?v=T_6ItJrj-q4>\n<https://seekingalpha.com/article/4914205-35-reasons-im-still-short-nvidia>",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T13:48:01.838000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1516076822536917174",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> https://www.youtube.com/watch?v=T_6ItJrj-q4\n這部影片在講什麼\n幫我用Codex分析",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=T_6ItJrj-q4",
+        "title": "35 個做空 Nvidia 的理由？擔心 AI 泡沫的你一定要看完",
+        "description": "SeekingAlpha 知名分析師 Jeremy Blum 列出 35 個做空 Nvidia 的理由，從 AI 泡沫、循環融資到客戶集中度。這支影片用最新財報與真實數據逐一拆解，告訴你哪些是真風險、哪些被誇大，以及我為什麼還是長期持有 NVDA 和 Palantir。\n\nSeekingAlpha 夏季特惠：\nPremium（現省 $74 美...",
+        "color": 16711680,
+        "author": {
+          "name": "Terry Chen 泰瑞",
+          "url": "https://www.youtube.com/channel/UC_whOg3XES3Fihic53fvo4Q"
+        },
+        "provider": {
+          "name": "YouTube",
+          "url": "https://www.youtube.com"
+        },
+        "thumbnail": {
+          "url": "https://i.ytimg.com/vi/T_6ItJrj-q4/maxresdefault.jpg",
+          "proxy_url": "https://images-ext-1.discordapp.net/external/UsP-NtKbQGjuwRrUUljifvWpCljLZAdSC0lK2Ipjfyw/https/i.ytimg.com/vi/T_6ItJrj-q4/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720,
+          "content_type": "image/jpeg",
+          "placeholder": "SSgKDIJWB6iUaGlkh2hEtCAFCQ==",
+          "placeholder_version": 1,
+          "flags": 0
+        },
+        "video": {
+          "url": "https://www.youtube.com/embed/T_6ItJrj-q4",
+          "width": 1280,
+          "height": 720,
+          "placeholder": "SSgKDIJWB6iUaGlkh2hEtCAFCQ==",
+          "placeholder_version": 1,
+          "flags": 0
+        }
+      }
+    ],
+    "timestamp": "2026-06-15T13:46:02.299000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1516076321153744937",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "👀"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "我的結論：\n**要押 DRAM 報價循環，南亞科比較純。要押利基記憶體、NOR Flash、嵌入式/車工需求，華邦電比較像防守型記憶體股。**\n但兩個都不是護城河穩穩收租的股票，本質還是景氣循環股，追價前一定看 DRAM/NOR 報價、毛利率、庫存跟法說展望。([winbond.com](https://www.winbond.com/hq/about-winbond/news-and-events/news/news00579.html?__locale=en)) ([nanya.com](https://www.nanya.com/tw/About))",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T02:58:07.240000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1515913267338416299",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "用台股分析框架看，短版：\n\n**創新服務 7828**\n它不是「服務業」，是半導體自動化設備公司。核心在 MEMS 探針卡自動植針、檢測、返修設備，還有先進封裝高密度銅柱相關技術。簡單講：賣給半導體測試、探針卡、封裝廠的精密設備商，不是 IC 設計。上櫃日期是 2026/04/22。([tpex.org.tw](https://www.tpex.org.tw/zh-tw/mainboard/listed/company-detail.html?code=7828&utm_source=openai)) ([tpex.org.tw](https://www.tpex.org.tw/storage/emerging_register/2025/04/1744248432_10976_CH_7828.pdf?utm_source=openai))\n\n**華邦電 vs 南亞科，本質差別**\n華邦電比較像「多產品線的利基記憶體公司」：\n- NOR Flash、Specialty DRAM、Mobile DRAM、Secure Flash，加上邏輯 IC / 新唐相關收入\n- 2025 營收結構：Flash 35%、Logic IC 34%、CMS 29%\n- 應用分散在消費、車工、通訊、電腦\n- 優點是沒那麼單押標準 DRAM，缺點是 DRAM 漲價時彈性不如純 DRAM 股乾淨\n\n南亞科比較像「純 DRAM 週期股」：\n- 主力就是 DRAM 研發、製造、銷售\n- 產品走 DDR5、DDR4、LPDDR5/4、模組等完整 DRAM 線\n- 對 DRAM ASP、bit shipment、庫存循環最敏感\n- 優點是如果 DRAM 大循環往上，南亞科彈性比較直接，缺點是跌價時也比較痛",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T02:58:06.613000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1515913264708714536",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 華邦電跟南亞科本質上的差別是什麼",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T02:56:56.249000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1515912969580449943",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "👀"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "⚠️ You've reached your Codex subscription usage limit. Next reset in 18 days, Jul 2 at 5:54 AM UTC. Wait until the reset time, use another Codex account if available, or switch to another configured model/provider.",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T01:50:33.469000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1515896264590622822",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 創新服務是做什麼的\n請用Codex模型幫我分析",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-15T01:50:25.487000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1515896231111430314",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "👀"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "- **結論**：故事還在，但代價比市場預期大。6,380 億 RPO 是最大保障\n\n---\n\n**5. AI Token 價格戰 — OpenAI 準備降價搶客**\n- 原因：Anthropic 威脅、上市前鞏固市佔、CFO 要求控成本\n- **但這不是需求見頂的信號** — 恰恰相反\n  - 16 個月來頂級模型成本跌 80–90%，企業 AI 總帳單反而 **成長 3 倍以上**\n  - 用量暴增 18 倍，完全符合「傑文斯悖論」\n- **受惠者**：晶片、記憶體、電力基礎設施\n\n---\n\n**我的視角**：這篇的 SpaceX 分析框架值得參考——低流通盤 + 高散戶 + 被動資金前置進場，邏輯清楚。800V 那个「不同樓層」的拆解也很實用，市場爭論常常是定義問題而非真相問題。\n\n有想深入哪個主題？",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-14T20:40:06.450000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1515818137210323066",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "- **核心邏輯**：短期是情緒 + 資金供需的雲霄飛車，基本面在中期才有意義\n\n---\n\n**3. 800V 直流電延期之爭 — 誰對誰錯？**\n- SemiAnalysis 說延期到 2028+，大摩說 Q4 照常出貨\n- **解析**：兩者說的是不同樓層\n  - 大摩講的是「外掛 800V 電源櫃」（現在就能出貨）\n  - SemiAnalysis 講的是「晶片原生 800V 架構」（確實要等 2028+）\n- ±400V 直流電是這兩年的過渡方案，相關供應鏈（Vertiv、台達電）直接受惠\n\n---\n\n**4. Oracle Q4 財報**\n- 營收 $192 億（+21%），OCI 營收 +93%，但股價盤後暴跌\n- **痛點**：FY2026 資本支出 $557 億，FCF 負 $237 億，預計還要再融資 $400 億\n- BYOH（客戶自帶硬體）模式是亮點，證明客戶認可的是 Oracle 的工程能力而非只租 GPU",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-14T20:40:05.877000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1515818134806986842",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "這篇 KP 的第 46 期週末思考筆記，涵蓋五個主題，快速幫你整理核心觀點：\n\n---\n\n**1. WWDC 2026 — Apple 新 Siri**\n- Apple 聯手 Google Gemini 重建 Siri，主打本地端 + 隱私混合 AI\n- 試圖把 Mac 打造成本地 AI 開發終端（多台 Mac 串聯跑大模型）\n- **問題**：缺乏驚喜，在市場眼中是「追趕者」，股價小跌\n- **結論**：戰略方向沒問題，但短期催化劑不足，秋天大眾實測才是關鍵驗證\n\n---\n\n**2. SpaceX IPO — 史上最大 IPO**\n- 掛牌價 $135，首日收 $160.95，漲幅 19.2%，估值 $2.2T\n- 流通股僅 4.3%，散戶配售 30%（超額認購 4.6 倍）\n- Nasdaq 特別允許 3 倍乘數，預計被動買盤高達 **220–300 億美元**，佔流通盤 25–40%\n- 已有 Google 算力合約（$9.2 億/月）撐營收",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-14T20:40:05.329000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1515818132508512296",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 幫我研究這個\n\nhttps://www.fomosoc.com/p/800-vdcspacex-ipowwdc-kp46?open=false",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [
+      {
+        "type": "article",
+        "url": "https://www.fomosoc.com/p/800-vdcspacex-ipowwdc-kp46?open=false",
+        "title": "800 VDC延期了？SpaceX IPO後會如何？WWDC沒有新意？ - K...",
+        "description": "大家好，我是 KP，歡迎來到第 45 期的《週末思考筆記》",
+        "thumbnail": {
+          "url": "https://substackcdn.com/image/fetch/$s_!29P7!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f4f98bf-8b98-4868-888e-b538227a3f18_1376x768.png",
+          "proxy_url": "https://images-ext-1.discordapp.net/external/bONGOcPSPqZXMFm_626oRCG4LHeuGhwiN1Lu8zu5nnQ/https/substackcdn.com/image/fetch/%24s_%2129P7%21%2Cw_1200%2Ch_675%2Cc_fill%2Cf_jpg%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Cg_auto/https%253A%252F%252Fsubstack-post-media.s3.amazonaws.com%252Fpublic%252Fimages%252F9f4f98bf-8b98-4868-888e-b538227a3f18_1376x768.png",
+          "width": 1200,
+          "height": 675,
+          "content_type": "image/jpeg",
+          "placeholder": "oBgKHITnZ5V/hohpZoUCfCywxw==",
+          "placeholder_version": 1,
+          "flags": 0
+        }
+      }
+    ],
+    "timestamp": "2026-06-14T20:39:22.765000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1515817953981894777",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "在的在的 📊 有事直接說",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-14T20:38:46.264000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1515817800885735464",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 還在嗎",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-14T20:38:36.777000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1515817761094500624",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "目前 runtime 顯示 `Think: medium`，代表 thinking 模式是有開的。\n\n但 `medium` 不是最強的級別。如果你想讓它在所有回覆都做更深度的推理，可以在 agent 設定裡把 `thinking` 改成 `high` 或 `maximum`。\n\n要現在幫你改嗎？還是你想先知道區別：\n\n- **medium**：適度推理，平衡速度\n- **high**：更完整的推理鏈\n- **maximum**：最深度但最慢\n\n另外也可以用 `/thinking` 指令在特定對話裡手動切換。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:33:00.391000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513143739680296981",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 可以讓這個agent強制用thinking模式嗎",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:32:37.316000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1513143642896863315",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "---\n\n**要修正的話有兩個方向：**\n\n1. **改成帳戶層級預設** → 把 `quant_engineer` 的 `model` 欄位拿掉，帳戶層級的 `default_model` 就會生效\n\n2. **直接置換成你想要的模型** → 把 `quant_engineer` 裡的 `model` 值換成別的\n\n你是想讓 `quant_engineer` 綁定其他模型，還是想讓整個 OpenClaw 的預設模型變掉？",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:31:49.316000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513143441570402324",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "找到了。問題在設定檔：\n\n```json\n\"agents\": {\n  \"list\": [\n    {\n      \"id\": \"quant_engineer\",\n      \"model\": \"nvidia-nim/minimaxai/minimax-m2.7\",  // ← 直接寫死\n      ...\n    }\n  ]\n}\n```\n\n`quant_engineer` 這個 agent 級別直接指定了 `nvidia-nim/minimaxai/minimax-m2.7`，所以不管你怎麼用 `/model` 改，這個 agent 被綁定到這個頻道就會用這個設定。\n\n而 `agents.defaults.model.primary` 只是給沒有特別指定模型的 agent 用的備援值。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:31:48.559000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513143438395047966",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 我沒有重開新的對話\n一定是有設定把你固定了\n幫我查",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:31:23.231000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1513143332161720390",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "這是因為你用 `/model` 設定的覆寫是**綁在 session 等級**，每次開新對話、或 session 重置，就會回到預設值。\n\n我沒有辦法修改帳戶層級的預設模型設定——那是 Gateway 端決定的，不是我能控制的範圍。\n\n如果你希望每次新 session 都用同一個模型，選項有：\n\n1. **透過 OpenClaw 的 `/model` 指令** → 但對你來說每次要重新設定（目前就是這個狀況）\n2. **在 OpenClaw 設定/配置文件**裡把 `default_model` 直接寫死 → 這需要查看 Gateway 配置\n\n要我幫你看一下 Gateway 的 model 設定檔嗎？也許可以直接把 `minimax-m2.7` 寫進去。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:30:48.234000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513143185373921310",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 為什麼你的模型一直改回去\n我明明就用/model改過了啊",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:30:34.954000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1513143129673306164",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "目前使用模型：`nvidia-nim/minimaxai/minimax-m2.7`",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:30:10.426000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513143026795413568",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 你現在的模型是什麼",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:30:00.005000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1513142983086575726",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "結論：框架有參考價值，但**別把未經驗證的數字當事實**。如果要操作，紀律比情緒靠譜。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:29:28.057000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513142849087209603",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "| 外资空單「近七萬口歷史高」 | 這個數字我沒有辦法即時驗證，引用時務必附上來源 |\n| 融資5666億是「史上超高」 | 需要跟歷史區間比對，單看數字不等於高 |\n| 「急殺是為了殺槓桿，不是壞事」 | 這是**解讀**，不是因果證明 |\n| 「AI不會泡沫，市場首選仍是AI」 | 主觀判断，沒有數據支撐 |\n| 「觀察融資大減＋外资回頭，才是真正好事」 | 這個邏輯是對的，但屬於事後驗證指標，不是預測 |\n\n---\n\n**實際風險點：**\n這篇文章的結論方向（慢跌清理籌碼、分批布局）是多數财经粉專的標準說法，邏輯上沒有問題，但「現在就是底部附近」這個暗示並沒有嚴格論據。\n\n**真正有意義的觀察指標：**\n- 融资餘額增減趨勢（不是單一數字）\n- 外資期貨空單是否開始回落\n- 台積電ADR是否止穩\n- 美國CPI數據出爐後市場情緒",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:29:27.325000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513142846016979065",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "```\n| 聲稱 | 問題 |\n| --- | --- |\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:29:26.747000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513142843592671232",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "這篇分析的**邏輯框架**是對的，但摻雜了太多**「無法驗證的數字」**，必須拆開看。\n\n───\n\n**可以確認的部分：**\n\n• Computex期間台股衝高 → 事實\n• 輝達離開後費半急殺 → 事實（可查證）\n• 美光、SanDisk近期確實跌幅慘重 → 事實\n• 聯準會5月CPI + FOMC是近期真實變數 → 事實\n• 融資水位高 → 結構性風險是合理的擔憂\n\n───\n\n**無法確認、需打問號的部分：**",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:29:26.472000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1513142842439106621",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 這是真的嗎➡️\n\n『急殺讓槓桿斷頭，清理籌碼，不是壞事』\n\n急跌……反而要淡定，別自亂陣腳\n\n好啦‼️我知道大家很擔心下禮拜走勢，其實急殺拉回，我上禮拜文章也提醒了，只是什麼時候發生而已，當外資開始賣超，應該就是一個訊號📡\n\n台股上週前半週在 Computex 加持衝上歷史新高，但黃仁勳前腳剛走，下半週風雲變色，費半重挫10%，記憶體的美光、SanDisk直接拉回超過10%，引爆台股夜盤一度跌停，高檔急殺⚔️\n\n⚠️近期重點議題\n🔸️美國 5 月 CPI 數據 & FOMC 利率會議前哨戰\n🔸️聚焦新任 FED主席對通膨與利率鷹/鴿態度\n\n👀回顧上周提醒\n🔸️台股融資餘額來到5666.49億元超高水位\n🔸️外資空單水位近七萬口歷史高的空單\n🔸️拉回的劇本已經開始發生，拉回月線不可破\n\n💡盤勢應變與長線佈局策略\n🔸️保留資金，不亂砍、不猜底、不放空❌️\n🔸️急跌是為了「殺槓桿」把融資斷頭🔪\n🔸️清洗融資與籌碼浮額，後續才可能再創高📈\n🔸️觀察到融資大減+外資回頭，才是真正好事✅️\n🔸️『分批』慢慢布局績優股 or 指數型 ETF\n🔸️AI 還不會泡沫，市場首選還是AI族群",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-07T11:28:55.369000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1513142711983538206",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "現在是 `openai/gpt-5.5`。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:47:22.667000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512905764417573100",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 你現在是什麼模型",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:47:16.339000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512905737876013267",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "我目前可用的模型映射：\n\n```\n| Alias | 實際模型           |\n| ----- | -------------- |\n| gpt   | openai/gpt-5.4 |\n```\n沒有 Codex 也沒有 GPT 5.5。\n\n你可以用 `/model gpt` 切到 gpt-5.4，或者直接告訴我你要哪個模型，我可以幫你查是否在允許清單內。要切嗎？",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:45:51.460000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512905381867815032",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 請換成codex GPT5.5",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:45:35.420000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512905314591047853",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "我是 nvidia-nim/minimaxai/minimax-m2.7 📊",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:45:10.566000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512905210345951322",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 你現在的模型是哪個",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:45:07.774000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512905198635581513",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "上禮拜數據你得丟給我，否則我只能說廢話。\n\n我需要：\n1. **加權指數**：上週收盤價、週高低點、成交量變化\n2. **關鍵位置**：20MA、5MA 的位置關係\n3. **法人動向**：三大法人買賣超金額\n4. **期貨變化**：台指期的淨多空單變化\n5. **美股參考**：那斯達克、費半上週表現\n\n把截圖、數據或任意你有參考的資訊貼上來，我幫你做情境整合。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:44:45.608000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512905105664639158",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 若加入上禮拜的情況\n你現在會怎麼看",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:44:38.055000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512905073984933928",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "## 📌 核心問題：你真的需要「堅持」做多或做空嗎？\n\n最危險的不是方向錯，而是「沒有根據還硬做」。\n\n請問你有沒有：\n1. 最近的技術參數（哪個價位、哪條均線？）\n2. 手中標的的基本面依據？\n3. 你的停損紀律是什麼？\n\n把這些丟出來，我幫你驗證邏輯，而不是讓你盲猜。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:40:43.760000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512904091280478258",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "```\n激进型：\n  - 高點反轉 K 形態出現（吊人線、流星線）→ 空\n  - 跌破 5 日線確認轉弱\n\n保守型：\n  - 等回測前高壓力失效 / 破上升趨勢線\n  - 不逆勢空手接刀，等確認\n```\n\n**風險點**\n- 碰到軋空（short squeeze），尤其當沖比重高的個股\n- 央行或政府護盤（例如國安基金）\n- 美股沒跌 → 台股補漲，逆勢空被嘎\n\n---",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:40:43.114000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512904088571088987",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "- 法人突然反手調節\n- 美股大跌 → 台股跟殺\n\n---\n\n## 2️⃣ 做空情境：如果你堅持要空\n\n**觸發條件（滿足越多越有依據）**\n- 布林上軌明顯壓制，連續 2~3 根 K 線碰軌回落\n- 成交量萎縮，指數卻漲不動（量價背離）\n- 期貨多單集中在高檔（散戶多殺多訊號）\n- 外資期現貨同步偏空\n- 融資創新高（散戶都滿倉做多 → 反轉訊號）\n\n**進場方式（紀律 > 方向）**\n```\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:40:42.445000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512904085764833431",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "- 期貨空單大增（散戶空到滿、機構逆勢拉）\n- 融資餘額沒有大幅減少（代表散戶沒跑）\n- 美股夜盤沒崩\n\n**進場方式（紀律 > 方向）**\n```\n激进型：\n  - 突破前高 + 帶量 → 追突破\n  - 設跌破 5 日線止損\n\n保守型：\n  - 等回測 20MA 支撐不破再接\n  - 分 2~3 批進場，不一次梭\n```\n\n**風險點**\n- 遇到「假突破真出貨」，當天直接長黑吞噬",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:40:41.819000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512904083139465307",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "收到。我先聲明：我沒有辦法預測市場，禮拜一會發生什麼沒人知道。但我可以提供「框架」，讓你自己判斷。\n\n---\n\n## ⚠️ 前置聲明\n\n- 以下是**情境推演框架**，不是報明牌\n- 需要真實資料才能判斷方向：目前我沒有即時台股數據\n- 你要的是**逻辑结构**，不是假裝我知道禮拜一會漲會跌\n\n---\n\n## 1️⃣ 做多情境：如果你堅持要買\n\n**觸發條件（滿足越多越有依據）**\n- 布林中軌（20MA）站穩且向上\n- 三大法人連續買超超過 3 天",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:40:41.020000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512904079788216333",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 我現在需要模擬禮拜一的台股情況\n1.如果我堅持要做多，請問我要怎麼操作\n2.如果我堅持要做空，請問我要怎麼操作\n請模擬當下可能發生的情況，並且告訴我理由",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-06T19:40:08.844000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512903944832159906",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "```\n| 環境               | 股市表現                      |\n| ---------------- | ------------------------- |\n| 2-3% 溫和通膨 + 低利率  | ✅ 黃金年代，股價可以一直漲            |\n| 5%+ 通膨 + 聯準會暴力升息 | ❌ 評價 compression，EPS 也要下修 |\n```\n現在市場怕的從來不是「有通膨」，而是**「通膨燒起來了聯準會滅不了」**。非農這麼強，讓這個擔憂變得更具體了。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:48:11.193000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512483182107431103",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "這要分兩個層次講：\n\n**層次一：輕微通膨（2-3%）確實是股市最愛**\n- 物價溫和上漲 → 企業營收跟著漲\n- 借錢的人債務變「便宜」（實質負債變少）\n- 錢放著不動會貶值，所以大家願意拿出来投資\n- 這是 Goldilocks Economy（溫和成長、低通膨）的狀態\n\n**層次二：但通膨失控（5%+）是另一回事**\n- 原物料、工資成本吃掉企業獲利\n- 聯準會被迫暴力升息 → 利率墊高\n- 股價公式：股價 = EPS / (利率)，當分母變大，結果變小\n- 消費者購買力被侵蝕 → 終端需求放緩\n\n---\n\n**所以問題不是「通膨好不好」，而是「通膨到哪個水位」：**",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:48:10.563000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512483179464888514",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 可是通膨不就是股市最想看到的嗎\n大家都賺錢大家都把前往股市裡面丟",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:47:41.847000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512483059021254847",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "理論上，是的。數據差 → 景氣放緩 → 通膨降溫預期 → 聯準會有降息空間 → 股市上漲。\n\n但這裡有個**臨界點問題**：\n\n```\n輕微放緩（非農小幅低於預期）→ 市場開心 → 股市漲\n          ↓\n嚴重衰退（失業率飆升、大裁員）→ 景氣硬著陸風險\n                                        ↓\n                              股市反而會恐慌性殺盤\n```\n\n所以不是「越差越好」，而是**「差到讓聯準會有台階下，但不差到引發衰退恐慌」** 這種程度的話，市場才會當利多解讀。\n\n現在這個時間點，投資人情緒普遍處在「寧可放緩也不要再升息」的反 Fed 心態，所以稍微差一點的數據反而受歡迎 —— 但這邏輯逆轉也很快，一旦數據差到像 2020 年那種程度，就變成系統性崩潰了。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:47:06.154000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512482909313958019",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 那如果就業差的話是不是市場會大漲",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:46:50.496000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512482843639550082",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "```\n                      ↓\n          聯準會「沒有降息的理由」甚至可能考慮升息\n```\n簡單說：**聯準會現在最怕的不是景氣差，是通膨捲土重來。**\n\n───\n\n**關鍵對照：**\n\n```\n| 非農數據  | 市場解讀                             |\n| ----- | -------------------------------- |\n| 遠低於預期 | 景氣放緩 → 通膨壓力降 → 可能降息 → 股市漲        |\n| 遠高於預期 | 景氣過熱 → 通膨風險升 → 降息延後/升息機率浮現 → 股市跌 |\n```\n這就是為什麼上週五美股反而大跌 —— 數據太強，市場開心不起來。**就業好 = 對聯準會來說是壞消息**。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:45:29.390000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512482503456198738",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "好問題，這是個常見的直覺陷阱。\n\n**你的直覺：非農好 = 景氣好 = 股市應該漲** ✅ 這個邏輯在正常情境下沒問題\n\n**但市場現在的邏輯是：非農超標 = 通膨壓力更大 = 聯準會更難降息** ⚠️\n\n---\n\n**背後的貨幣政策框架（聯準會的反應函數）：**\n\n```\n非農很強 → 失業率低 → 勞動力吃緊\n                      ↓\n              工資上漲壓力變大\n                      ↓\n              服務類通膨難以降溫\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:45:28.834000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512482501124165653",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> ?不是\n今天星期五\n我要問的是美股為什麼會把非農就業數據優於預期導向到通膨啊",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:45:01.202000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512482385227419819",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "```\n                  外資賣超 + 避險情緒 → 台股重挫 781點\n```\n\n鴻海大跌 5.18%、國巨幾乎跌停，都是因為這些股票跟景氣/利率高度敏感。\n\n---\n\n**東捷 (8064) 跟著環境跌，但跟它本身基本面無關。** 是系統性拋售，不是法人降評或訂單出問題。如果本身 FOPLP 長線邏輯不變，這種時候反而是測試支撐的觀察點。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:44:06.041000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512482153865285715",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "**今日台股大跌的核心原因：美國 5 月非農大爆冷**\n\n昨晚公布的美國 5 月非農就業數據：\n\n- **新增就業：17.2 萬人**（預期僅 8.5 萬，遠超一倍）\n- **失業率：4.3%**（符合預期）\n\n這個數據出來後，市場馬上反應：**聯準會年內降息的期望幾乎破滅**，甚至開始定價升息機率。美國 10 年期公債殖利率急速拉升，資金從風險資產撤出。\n\n**對台股的影響鏈：**\n\n```\n非農大超預期 → 聯準會緊縮預期升溫 → 美債殖利率飆\n                                         ↓\n台股電子股首當其衝（台積電、鴻海、國巨全倒）\n                                         ↓\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T15:44:05.467000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512482151457886439",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 為什麼這樣會大跌啊\n\nhttps://news.futunn.com/post/74197535?ns_stock_id=3510015&main_broker=WwogIDEwMDgKXQ%3D%3D&skintype=1&src=6&futusource=news_stock_stockpagebignews&client_hour_clock=24&level=1&global_content=%7B%22promote_content%22%3A%22nn%3Apost%3A74197535%22%2C%22invite%22%3A234681620%7D&data_ticket=28722ab2b985c79a458f765be548809e",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [
+      {
+        "type": "link",
+        "url": "https://news.futunn.com/post/74197535?ns_stock_id=3510015&main_broker=WwogIDEwMDgKXQ%3D%3D&skintype=1&src=6&futusource=news_stock_stockpagebignews&client_hour_clock=24&level=1&global_content=%7B%22promote_content%22%3A%22nn%3Apost%3A74197535%22%2C%22invite%22%3A234681620%7D&data_ticket=28722ab2b985c79a458f765be548809e",
+        "description": "美国5月非农新增17.2万人远超预期，金价应声跳水。美联储12月加息概率升至63%。经济学家指出，当前就业改善更多源于裁员水平较低，而非企业大规模扩张招聘。",
+        "thumbnail": {
+          "url": "https://usnewsfile.moomoo.com/news-thumbnail/20250903/public/1756885870090880924518-news-thumbnail/20250903/public/17568858700886918187526.png.png",
+          "proxy_url": "https://images-ext-1.discordapp.net/external/Bi8LEjjXos2WSJXD_3O17R3F81BnTuX6oFNaZshQVEU/https/usnewsfile.moomoo.com/news-thumbnail/20250903/public/1756885870090880924518-news-thumbnail/20250903/public/17568858700886918187526.png.png",
+          "width": 960,
+          "height": 609,
+          "content_type": "image/png",
+          "placeholder": "2jcKJIhlnUcfdHh8iZRgJTq4kA==",
+          "placeholder_version": 1,
+          "flags": 0
+        }
+      }
+    ],
+    "timestamp": "2026-06-05T15:43:16.566000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512481946352095442",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "---\n\n**結論**\n東捷是 FOPLP / 先進封裝趨勢的設備受益股，長線邏輯清楚，但**當前股價已反映大量樂觀預期**。120 元是市場情緒高點的參考價，不是基本面合理估值。操作上防守位置看月均線，跌破月線宜先降倉。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T04:33:34.960000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512313412481323089",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "> ⚠️ 60元 target 來自5月報告，當時股價尚低；現在已大幅偏離，該目標參考性有限。120元口徑更貼近目前水位。\n\n---\n\n**核心成長邏輯**\n1. **FOPLP 趨勢**：從晶圓級走向面板級封裝，設備需求高速成長\n2. **半導體營收占比**：2025 約 15-20% → 2026 預估突破 30%\n3. **第二成長曲線**：玻璃中介層（Glass Interposer）+ TGV 製程，瞄準高速傳輸損耗問題\n4. **G2C+ 聯盟**：隸屬東台集團，資源整合優勢\n\n---\n\n**風險與失敗條件**\n- FOPLP 滲透速度不如預期 → 設備訂單放緩\n- 玻璃基板認證進度落後\n- 營收集中少數客戶\n- 目前本益比已脫離傳統估值區間（15-22x），評價完全靠夢想支撐",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T04:33:34.301000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512313409717145650",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "```\n| -------- | ---- | --- | ------------------------------- |\n| 金玉峰投顧    | 60元  | 買進 | 19x PE on 2026 EPS（本益比區間15-22x） |\n| 法人觀點（媒體） | 120元 | -  | FOPLP+玻璃基板雙主軸，評價重估              |\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T04:33:33.721000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512313407284707399",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "**東捷 (8064) 研究摘要**\n\n───\n\n**價格面**\n\n• 目前股價約 157～172 元區間（6月初數據）\n• 2025 全年 EPS：1.36 元\n• 2026 Q1 EPS：0.35 元（季減 77%，年增 153%）\n\n───\n\n**目標價彙整**\n\n```\n| 來源       | 目標價  | 評等 | 邏輯                              |\n```",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T04:33:33.146000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512313404872855663",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 東捷目標價\n幫我研究",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T04:32:42.023000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512313190447579276",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "**現在怎麼做？**\n\n這不是全面崩盤，是典型**避險輪動盤**。資金從科技電子撤出，轉進防守/價值型。\n\n量化視角幾件事：\n1. **不要現在殺科技股** — 已經跌一段了，認真想等底部出來再說\n2. **注意金融有撐** — 壽險金控類相對穩，可能成為護盤主力\n3. **生技/雲端是短線資金避風港** — 但高位追進要設停損\n4. **美股還在交易**，晚上注意美股期指，判斷今晚是否繼續殺\n\n你是想做短線反彈，還是有持股想問怎麼處理？",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T01:54:49.067000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512273457990078584",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "拿到昨日（6/4）的數據，幫你整理：\n\n**整體盤況**\n- 加權指數收 45,677，跌 781點（-1.68%），全線重挫\n\n**重災區（跌深的）**\n- 電腦週邊 -3.63%、其他電子 -3.00%、光電 -2.73%\n- 電子零組件 -2.48%、半導體 -1.89%、資訊科技 -2.32%\n- 小型股 -0.60%（比大盤抗跌）\n\n**逆勢上漲的亮點**\n- 數位雲端 +5.20%、造紙 +6.01%、油電燃氣 +2.67%\n- 生技醫療 +2.53%、綠能環保 +2.44%\n- 金融保險 +0.90%（防守撐盤）\n\n---",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T01:54:48.401000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512273455196934374",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 你去看TWSE不就有了嗎",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T01:54:14.310000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512273312208785418",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "具體一點告訴我現在盤大概什麼狀況，我可以給更針對的判斷框架，而不是亂給方向。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T01:53:51.779000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512273217706918100",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "老實說我沒有即時盤面數據，沒辦法直接說「現在在漲/跌我要買/賣」。\n\n但你可以告訴我你看到什麼情況，幾個方向：\n\n**如果是大漲大跌（方向明確）**\n- 追漲殺跌在台股短線勝率低，尤其當沖文化重，很容易被主力洗\n- 這時候更好的問題是：「誰在買？誰在賣？」ETF、外資、壽險、散戶流向不同，結論差很多\n\n**如果是悶盤/盤整**\n- 區間操作，找支撐壓力，少做突破\n- 台股盤整時通常是小股活潑，大權值股觀望\n\n**如果是盤後/周末問**\n- 這時候更該做功課不是找進場點\n- 檢查：期貨夜盤走向、A50/ADR、國際市場氛圍、美股期指\n\n---",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T01:53:51.132000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512273214993334323",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 像現在台股這種盤我要怎麼做",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-05T01:53:31.500000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512273132650500117",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "---\n\n兩檔性質差很多：IPI 是原物料景氣股，HIMS 是消費醫療成長股。要注意 HIMS 本益比可能偏高，成長股修正時波動不小。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-04T17:32:36.321000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512147072092995788",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "兩個不同的股票，幫你分開說：\n\n---\n\n**IPI — Intrepid Potash（NYSE:IPI）**\n- 總部在 Denver，2000 年成立\n- 主業：鉀肥（Potash）、特種肥料 Trio、鹽類、油田服務\n- 簡單說就是**農業/礦產原料股**，跟景氣循環高度相關，營收跟農產品價格掛鉤\n- 適合宏觀交易，不是成長股\n\n---\n\n**HIMS — Hims & Hers Health（NYSE:HIMS）**\n- 數位醫療平台，總部舊金山\n- 提供遠距醫療諮詢 + 處方/非處方健康產品（雄性激素減退、皮膚問題、減重、精神健康等）\n- 商業模式：直接面對消費者（DTC），類似「醫療版電商」\n- 有 EBITDA 正現金流，在數位醫療裡算是商業模式相對成熟的",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-04T17:32:35.550000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512147068859191296",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> IPI HIMS是做什麼的",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-04T17:32:07.386000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512146950731071735",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "JOBY 是 **Joby Aviation**，一家美國上市的 eVTOL（電動垂直起降航空器）公司，在 NYSE 掛牌。\n\n核心業務：\n- 開發全電動空中計程車，目標像「天空的 Uber」\n- 已完成曼哈頓試飛，目前朝商業化路上前進\n- 還沒拿到 FAA 載客認證，目前仍在認證階段\n\n股價今年以來漲超過 30%（自成功示範飛行後），但仍低於 2026 年開盤價。屬於高波動股票，一週平均波動約 10%。\n\n📌 風險點：商業化時程不確定、監管認證漫長、短期無現金流。炒作意味濃，適合有風險胃納的人研究，不建議無研究基礎直接重倉。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-04T17:31:01.098000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1512146672699052194",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> JOBY是做什麼的",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-04T17:30:49.184000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1512146622728110110",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "建議搭配 VIX 水位、騰落線（ADL）、法人期貨淨多空口數一起看，會比只看情緒指數靠譜得多。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-03T17:16:11.271000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1511780552628506654",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "CNN  Fear & Greed 從貪婪退回中性，54 分本身不是進場信號，但要拆開看。\n\n**直接解讀：**\n市場情緒從「資金湧入」降溫至「觀望」，不代表轉空，只是激情收斂。\n\n**但這個位置要注意三件事：**\n\n1. **CNN 指數 7 個子指標如果出現分歧**（例如股價動能偏多但機構資金流偏空），代表市場正在分化，容易震盪而非趨勢反轉。\n\n2. **54 仍在中性偏貪婪一側**，若持續往 45 以下移動，才是風險偏好明顯收縮的訊號，屆時低點支撐才值得關注。\n\n3. **作為情緒指標它是落後的**，短期用它判斷方向正確率不高；真正有意義的用法是：\n   - 極端貪婪時（>75）與系統性風險警覺搭配\n   - 極端恐懼時（<25）觀察是否出現逆向機會\n\n**現在 54 分的實際參考價值：**\n如果你是做區間操作的，可以把這個當成「市場短期內不太會有系統性恐慌」的參考，支撐不易破；但要靠它確認方向還遠遠不夠。",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-03T17:16:10.594000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1511780549788696587",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> CNN 恐懼與貪婪指數來到 54 分的「中性」位置，從貪婪回到中性\n可能代表什麼意思",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-03T17:15:44.111000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1511780438711206041",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  },
+  {
+    "type": 0,
+    "content": "簡單講：\n**現在有資金轉防守的味道，但還不是主線正式結束。**",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-02T06:06:06.142000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1511249532229255229",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "有一點，但還沒到「確認該跑」的程度。\n\n**事實：**\n今天台股早盤衝高創高後震盪，盤中資料顯示電子類股偏弱、櫃買也轉弱，金融相對撐盤。這種結構確實比較像「指數被權值/金融撐住，但中小型題材股開始降溫」。\n\n**推論：**\n這對光通訊這種高本益比族群不是好訊號。因為它們吃的是風險胃納，一旦櫃買弱、資金去金融/面板，短線容易先被獲利了結。\n\n**我的判斷：**\n現在是 **警戒，不是恐慌賣出**。\n\n我會這樣做：\n- 已經大賺的光通訊：先降 20-30% 部位\n- 還沒買的：今天不追\n- 想佈局全新/光聖/聯亞：等拉回量縮、支撐不破\n- 如果明後天繼續出現「金融面板撐盤、櫃買跌、光通訊破 5 日/10 日線」，那就從警戒升級成減碼訊號",
+    "mentions": [],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-02T06:06:05.532000+00:00",
+    "edited_timestamp": null,
+    "flags": 4,
+    "components": [],
+    "id": "1511249529670729788",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "627132669343301659",
+      "username": "藤田ことね",
+      "avatar": "4de37b60cefeebe60b8018b56c284b47",
+      "discriminator": "7712",
+      "public_flags": 0,
+      "flags": 0,
+      "bot": true,
+      "banner": null,
+      "accent_color": null,
+      "global_name": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": null,
+      "primary_guild": null
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false
+  },
+  {
+    "type": 0,
+    "content": "<@627132669343301659> 那現在有這樣的感覺嗎",
+    "mentions": [
+      {
+        "id": "627132669343301659",
+        "username": "藤田ことね",
+        "avatar": "4de37b60cefeebe60b8018b56c284b47",
+        "discriminator": "7712",
+        "public_flags": 0,
+        "flags": 0,
+        "bot": true,
+        "banner": null,
+        "accent_color": null,
+        "global_name": null,
+        "avatar_decoration_data": null,
+        "collectibles": null,
+        "display_name_styles": null,
+        "banner_color": null,
+        "clan": null,
+        "primary_guild": null
+      }
+    ],
+    "mention_roles": [],
+    "attachments": [],
+    "embeds": [],
+    "timestamp": "2026-06-02T06:05:55.352000+00:00",
+    "edited_timestamp": null,
+    "flags": 0,
+    "components": [],
+    "id": "1511249486972846222",
+    "channel_id": "1468590175444664411",
+    "author": {
+      "id": "409332392034172928",
+      "username": "rainwu0123",
+      "avatar": "cc735081e9cdd2fd2b92cbda9e6d49d2",
+      "discriminator": "0",
+      "public_flags": 256,
+      "flags": 256,
+      "banner": null,
+      "accent_color": null,
+      "global_name": "RainWu0123",
+      "avatar_decoration_data": {
+        "asset": "a_a542b19c5a6822db75c3fd0aaab5de54",
+        "sku_id": "1492282046813569085",
+        "expires_at": 1781927999
+      },
+      "collectibles": {
+        "nameplate": {
+          "sku_id": "1409983105577783410",
+          "asset": "nameplates/special_events_2/nitro_rocketfuel_nameplate/",
+          "label": "COLLECTIBLES_SEPTEMBER_2025_MARKETING_NAMEPLATE_A11Y",
+          "palette": "violet"
+        }
+      },
+      "display_name_styles": null,
+      "banner_color": null,
+      "clan": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      },
+      "primary_guild": {
+        "identity_guild_id": "1207572227118075934",
+        "identity_enabled": true,
+        "tag": "学マス",
+        "badge": "481d5509acade18df80f946533551509"
+      }
+    },
+    "pinned": false,
+    "mention_everyone": false,
+    "tts": false,
+    "reactions": [
+      {
+        "emoji": {
+          "id": null,
+          "name": "📈"
+        },
+        "count": 1,
+        "count_details": {
+          "burst": 0,
+          "normal": 1
+        },
+        "burst_colors": [],
+        "me_burst": false,
+        "burst_me": false,
+        "me": true,
+        "burst_count": 0
+      }
+    ]
+  }
+]

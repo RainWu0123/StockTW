@@ -1,0 +1,35 @@
+---
+name: tw-stock-dashboard
+description: "Discord 台股分析工作台：個股分析、盤前/盤後 briefing、族群動態、制度過濾。"
+entries:
+  - trigger: "!stock <ticker> [tech|chip|risk|all]"
+    action: "analyze_ticker"
+    output: "embedded discord report"
+  - trigger: "!brief [pre|post]"
+    action: "daily_briefing"
+    output: "TWSE/OTC summary + big movers"
+  - trigger: "!board"
+    action: "sector_rotation"
+    output: "top/bottom sectors + chip flow summary"
+  - trigger: "!rules"
+    action: "institutional_calendar"
+    output: "designated securities, ex-dividend, futures expiry"
+  - trigger: "!quality"
+    action: "data_quality_report"
+    output: "recent data gaps, stale fields, estimated vs real-time flags"
+data_sources:
+  - yfinance  # real-time / delayed price-volume
+  - twse  # T+1 institutional holdings (last resort: fallback to yfinance estimates)
+  - rules  # institutional calendar: designated securities, ex-dividend, delivery rules
+processing:
+  - renormalized_price: true
+  - lag_aware_institutional: true
+  - institutional_cooldown_filter: true
+  - margin_call_pressure_flag: true
+model_routing:
+  fast: "stepfun/step-3.7-flash:free"
+  deep: "local-qwen2.5-coder-32b"
+output:
+  style: "concise, actionable"
+  language: "zh-TW"
+  timestamp: "UTC+8"
