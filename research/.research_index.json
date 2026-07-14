@@ -47,6 +47,17 @@
       "price": 210.0
     },
     {
+      "file": "1326_台化.md",
+      "chars": 1370,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B",
+      "status": "active",
+      "code": "1326",
+      "name": "台化",
+      "price": 67.0
+    },
+    {
       "file": "2002_中鋼.md",
       "chars": 898,
       "lines": 62,
@@ -56,6 +67,17 @@
       "code": "2002",
       "name": "中鋼",
       "price": 18.5
+    },
+    {
+      "file": "2301_光寶科.md",
+      "chars": 1368,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B",
+      "status": "active",
+      "code": "2301",
+      "name": "光寶科",
+      "price": 212.5
     },
     {
       "file": "2303_聯電.md",
@@ -124,6 +146,17 @@
       "price": 2420.0
     },
     {
+      "file": "2337_旺宏.md",
+      "chars": 1365,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B",
+      "status": "active",
+      "code": "2337",
+      "name": "旺宏",
+      "price": 139.5
+    },
+    {
       "file": "2344_華邦電.md",
       "chars": 1093,
       "lines": 66,
@@ -144,6 +177,28 @@
       "code": "2345",
       "name": "智邦",
       "price": 2280.0
+    },
+    {
+      "file": "2356_英業達.md",
+      "chars": 1382,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B+",
+      "status": "active",
+      "code": "2356",
+      "name": "英業達",
+      "price": 63.7
+    },
+    {
+      "file": "2368_金像電.md",
+      "chars": 1377,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B+",
+      "status": "active",
+      "code": "2368",
+      "name": "金像電",
+      "price": 1015.0
     },
     {
       "file": "2375_凱美.md",
@@ -223,6 +278,17 @@
       "price": 133.0
     },
     {
+      "file": "2449_京元電子.md",
+      "chars": 1385,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B",
+      "status": "active",
+      "code": "2449",
+      "name": "京元電子",
+      "price": 291.5
+    },
+    {
       "file": "2454_聯發科.md",
       "chars": 1670,
       "lines": 98,
@@ -289,6 +355,29 @@
       "price": 2120.0
     },
     {
+      "file": "3026_禾伸堂.md",
+      "chars": 1423,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B",
+      "status": "active",
+      "code": "3026",
+      "name": "禾伸堂",
+      "price": 815,
+      "price_note": "yahoo_2026-07-14"
+    },
+    {
+      "file": "3037_欣興.md",
+      "chars": 1402,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B+",
+      "status": "active",
+      "code": "3037",
+      "name": "欣興",
+      "price": 874.0
+    },
+    {
       "file": "3038_全台.md",
       "chars": 830,
       "lines": 59,
@@ -298,6 +387,17 @@
       "code": "3038",
       "name": "全台",
       "price": 20.85
+    },
+    {
+      "file": "3231_緯創.md",
+      "chars": 1399,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B+",
+      "status": "active",
+      "code": "3231",
+      "name": "緯創",
+      "price": 142.5
     },
     {
       "file": "3443_創意.md",
@@ -322,6 +422,17 @@
       "price": 2415.0
     },
     {
+      "file": "3653_健策.md",
+      "chars": 1367,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B+",
+      "status": "active",
+      "code": "3653",
+      "name": "健策",
+      "price": 3070.0
+    },
+    {
       "file": "3711_日月光.md",
       "chars": 911,
       "lines": 62,
@@ -342,6 +453,18 @@
       "code": "5269",
       "name": "祥碩",
       "price": 1525.0
+    },
+    {
+      "file": "5274_信驊.md",
+      "chars": 1456,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B",
+      "status": "active",
+      "code": "5274",
+      "name": "信驊",
+      "price": 12985,
+      "price_note": "yahoo_2026-07-14"
     },
     {
       "file": "6166_凌華.md",
@@ -407,6 +530,18 @@
       "code": "6505",
       "name": "台塑化",
       "price": 66.2
+    },
+    {
+      "file": "6669_緯穎.md",
+      "chars": 1460,
+      "lines": 84,
+      "last_verified": "2026-07-14",
+      "confidence": "B+",
+      "status": "active",
+      "code": "6669",
+      "name": "緯穎",
+      "price": 4905,
+      "price_note": "yahoo_2026-07-14"
     },
     {
       "file": "6770_力積電.md",
