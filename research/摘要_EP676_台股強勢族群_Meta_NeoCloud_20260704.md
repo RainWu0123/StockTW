@@ -1,3 +1,11 @@
+---
+last_verified: "2026-07-14"
+confidence: "低"
+status: "incomplete"
+---
+
+> **品質註記（2026-07-14）**：本檔仍為片段筆記（缺完整結構／劇本），**不建議單獨引用作決策**。待補完或與 `摘要_股癌EP678_20260711.md` 合併。
+
 # EP676：股癌 2026-07-04
 
 **來源**：https://www.youtube.com/watch?v=FqSGUclc5lQ
