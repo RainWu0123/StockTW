@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "id": "gooaye_digest_2026",
+  "title": "股癌2026消化知識（AI可解析）",
+  "last_verified": "2026-07-14",
+  "confidence": "B+",
+  "status": "complete_for_2026_h1",
+  "language": "zh-Hant",
+  "source_primary": "https://whatmkreallysaid.com/",
+  "source_type": "unofficial_transcript_plus_episode_summaries",
+  "not_investment_advice": true,
+  "must_revalidate_with": ["company_filings", "monthly_revenue", "earnings_calls"],
+  "human_notes_md": "research/摘要_股癌消化筆記_20260714.md",
+  "related_md": [
+    "research/摘要_股癌2026觀點庫_20260714.md",
+    "research/摘要_股癌2026H1全景_20260714.md",
+    "research/摘要_股癌故事線_2025Q4至2026H1_20260714.md"
+  ],
+  "coverage": {
+    "deep_read_episodes": [630, 637, 642, 655, 660, 662, 663, 666, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678],
+    "indexed_episodes": {"from": 624, "to": 678},
+    "story_prelude": "2025-Q4 selected",
+    "stopped_before": "2025-H1 full deep-dive not required for live book"
+  },
+  "core_theses": [
+    {
+      "id": "T1_supply_demand_layers",
+      "statement": "缺貨漲價必須拆層：需求driven / 成本轉嫁 / 外溢二供 / 自我實現掃貨；不是一聽到漲價就買。",
+      "use_when": ["passive_components", "power_semis", "memory", "any_price_hike_story"],
+      "agent_rule": "Writing research: label price-hike type explicitly; if unknown, confidence <= B and list as open question."
+    },
+    {
+      "id": "T2_tech_vs_product",
+      "statement": "市場常把 R&D pathfinding 當已量產產品交易（CPO/800V/Kyber/Semi-Analysis 標題）。",
+      "use_when": ["optical", "power_architecture", "advanced_packaging_roadmap"],
+      "agent_rule": "If thesis depends on unshipped roadmap, tag risk=rd_narrative and do not use as sole buy reason."
+    },
+    {
+      "id": "T3_capital_prefers_visible_numbers",
+      "statement": "震盪後資金偏向流動性好、短週期看得見營收/獲利的標的；本夢比需要大盤新高環境。",
+      "use_when": ["valuation", "neocloud", "high_multiple_growth"],
+      "agent_rule": "High-multiple dream names: require either market_regime=risk_on_new_highs OR visible_near_term_numbers; else downrank."
+    },
+    {
+      "id": "T4_narrative_false_kill",
+      "statement": "光銅之爭、窄快/寬慢輪動顯示敘事極端化會錯殺聯想股；時間可平反。",
+      "use_when": ["optical", "copper", "sector_rotation_inside_theme"],
+      "agent_rule": "Prefer intra-theme rotation analysis over all-or-nothing theme death."
+    },
+    {
+      "id": "T5_valuation_is_who_bids_next",
+      "statement": "估值重點是買完後誰抬轎；成長股價值常後置。",
+      "use_when": ["valuation", "memory_cycle", "growth"],
+      "agent_rule": "Do not equate low PE with edge; state expected next buyer (foreign/institution/retail/theme)."
+    },
+    {
+      "id": "T6_meta_neocloud_double_down",
+      "statement": "Meta 算力出租≠退賽，是 double down；舊 GPU 可 inference/出租；大玩家進租賃→單價趨穩→本夢比倍數收斂風險。",
+      "use_when": ["ai_server", "odm", "neocloud"],
+      "agent_rule": "Server ODM reports should mention pricing/ROIC visibility risk if thesis is pure multiple expansion."
+    }
+  ],
+  "frameworks": [
+    {
+      "id": "F_price_hike_funnel",
+      "name": "漲價鏈漏斗",
+      "steps": [
+        "identify_true_shortage_owner",
+        "classify_hike_type",
+        "check_allocation_or_order_stop",
+        "map_tw_second_source_spillover",
+        "watch_capacity_expansion_stance",
+        "fish_tail_signal_when_revenue_guessing_dominates"
+      ],
+      "fish_tail_signal": "市場開始用月營收開出來猜下個月是否更好＝接近敘事終局附近"
+    },
+    {
+      "id": "F_trade_rules",
+      "name": "操作尺",
+      "rules": [
+        {"id": "R_quarter_ma", "rule": "失守季線後反彈預設解套賣壓", "script_field": "sell_or_trim_conditions"},
+        {"id": "R_no_chase_leader", "rule": "降槓/清洗期勿盲追當日最強", "script_field": "entry"},
+        {"id": "R_rebalance", "rule": "季底/rebalance 可解釋無基本面壞消息的砸盤", "script_field": "noise_sources"},
+        {"id": "R_disposition", "rule": "處置鎖倉改變持有與調節彈性", "script_field": "liquidity"},
+        {"id": "R_no_mainstream", "rule": "找不到任何主流可做＝提高系統風險警戒", "script_field": "regime"}
+      ]
+    }
+  ],
+  "stance": {
+    "agree": [
+      "T1_supply_demand_layers",
+      "T2_tech_vs_product",
+      "T3_capital_prefers_visible_numbers",
+      "T4_narrative_false_kill",
+      "R_quarter_ma"
+    ],
+    "hold_pending_data": [
+      "台系功率相對美股IDM更強是否持續",
+      "被動少擴產導致週期拉長是否成立",
+      "Meta租賃壓價對ODM毛利方向"
+    ],
+    "disagree_or_downweight": [
+      "高週轉處置股浪潮經驗不可複製為建議",
+      "節目隨口標的權重=認真推薦",
+      "Tesla/SpaceX信仰倉進預設配置"
+    ]
+  },
+  "timeline_arc": [
+    {"phase": "2026Q1_open", "themes": ["satellite_spacex", "memory", "tsmc_capex"], "role": "story_and_setup"},
+    {"phase": "2026Q1_software_wash", "themes": ["software_selloff", "hard_tech_attention"], "role": "context"},
+    {"phase": "2026Q1_optics_glass", "themes": ["optical_copper_debate", "glass_substrate"], "role": "context"},
+    {"phase": "2026Q2_meltup", "themes": ["leverage", "relative_deprivation", "disposition_stocks"], "role": "context"},
+    {"phase": "2026Q2_passive_tide", "themes": ["passive_hikes", "mature_node", "computex"], "role": "live_primary"},
+    {"phase": "2026Q3_power_meta", "themes": ["power_discrete", "meta_neocloud", "optical_rotation", "semi_analysis_noise"], "role": "live_primary"}
+  ],
+  "ticker_map": [
+    {"code": "2327", "name": "國巨", "frameworks": ["F_price_hike_funnel", "T1_supply_demand_layers"], "priority": "A"},
+    {"code": "3026", "name": "禾伸堂", "frameworks": ["F_price_hike_funnel", "T1_supply_demand_layers"], "priority": "A"},
+    {"code": "2375", "name": "凱美", "frameworks": ["F_price_hike_funnel"], "priority": "A"},
+    {"code": "2308", "name": "台達電", "frameworks": ["T2_tech_vs_product", "F_trade_rules"], "priority": "A"},
+    {"code": "3017", "name": "奇鋐", "frameworks": ["T2_tech_vs_product"], "priority": "A"},
+    {"code": "3653", "name": "健策", "frameworks": ["T2_tech_vs_product"], "priority": "A"},
+    {"code": "2344", "name": "華邦電", "frameworks": ["T5_valuation_is_who_bids_next", "T1_supply_demand_layers"], "priority": "A", "note": "host largely exited memory narrative"},
+    {"code": "2408", "name": "南亞科", "frameworks": ["T5_valuation_is_who_bids_next"], "priority": "A"},
+    {"code": "2337", "name": "旺宏", "frameworks": ["T5_valuation_is_who_bids_next"], "priority": "A"},
+    {"code": "6669", "name": "緯穎", "frameworks": ["T6_meta_neocloud_double_down", "T3_capital_prefers_visible_numbers"], "priority": "A"},
+    {"code": "2382", "name": "廣達", "frameworks": ["T6_meta_neocloud_double_down"], "priority": "A"},
+    {"code": "2356", "name": "英業達", "frameworks": ["T6_meta_neocloud_double_down"], "priority": "A"},
+    {"code": "3231", "name": "緯創", "frameworks": ["T6_meta_neocloud_double_down"], "priority": "A"},
+    {"code": "2345", "name": "智邦", "frameworks": ["T4_narrative_false_kill", "T3_capital_prefers_visible_numbers"], "priority": "A"},
+    {"code": "6442", "name": "光聖", "frameworks": ["T4_narrative_false_kill"], "priority": "A"},
+    {"code": "6285", "name": "啟碁", "frameworks": ["T4_narrative_false_kill"], "priority": "A"},
+    {"code": "3037", "name": "欣興", "frameworks": ["T3_capital_prefers_visible_numbers"], "priority": "A"},
+    {"code": "2383", "name": "台光電", "frameworks": ["T3_capital_prefers_visible_numbers"], "priority": "A"},
+    {"code": "2368", "name": "金像電", "frameworks": ["T3_capital_prefers_visible_numbers"], "priority": "A"},
+    {"code": "2454", "name": "聯發科", "frameworks": ["T1_supply_demand_layers"], "priority": "A", "note": "demand vs cost pass-through"},
+    {"code": "3443", "name": "創意", "frameworks": ["T1_supply_demand_layers", "T2_tech_vs_product"], "priority": "A"},
+    {"code": "5274", "name": "信驊", "frameworks": ["T3_capital_prefers_visible_numbers", "T5_valuation_is_who_bids_next"], "priority": "A"},
+    {"code": "2330", "name": "台積電", "frameworks": ["F_trade_rules"], "priority": "A", "note": "safe-haven after outer themes break, not always underweight"},
+    {"code": "2313", "name": "華通", "frameworks": ["T5_valuation_is_who_bids_next"], "priority": "C_story", "note": "satellite cycle teaching case; not Jul-2026 primary"}
+  ],
+  "agent_instructions": [
+    "Before rewriting AI/hardware/passive/power/optical/memory stock research in this repo, load this JSON and 摘要_股癌消化筆記_20260714.md.",
+    "Never treat Gooaye claims as facts; always pair with dated revenue or filings.",
+    "When applying a thesis, write framework_id in the stock report calibration section.",
+    "Story-tier (C) content may be cited as narrative history only, never as sole entry trigger.",
+    "If user asks for 聯電級 depth, use frameworks here for argument structure, company-specific sources for facts."
+  ],
+  "completion": {
+    "digest_done": true,
+    "ai_readable_artifact": true,
+    "human_readable_artifact": true,
+    "indexed_in_index_md": true,
+    "wired_into_agents_md": true,
+    "stock_body_injection": "calibration_section_on_priority_tickers",
+    "not_done": [
+      "full 聯電級 rewrite of all 52 stocks",
+      "power second-tier and leadframe new files if desired"
+    ]
+  }
+}

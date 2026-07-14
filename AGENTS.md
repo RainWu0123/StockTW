@@ -5,6 +5,9 @@
 
 ## 先讀
 - **總索引（引用地圖）**：`/home/ubuntu/investment/INDEX.md`
+- **股癌校準（寫 AI／硬體／被動／功率／光通／記憶體個股前）**：
+  - AI：`research/gooaye_digest.json`
+  - 人：`research/摘要_股癌消化筆記_20260714.md`
 - 本檔：工作規範與 pipeline
 
 ## 目錄結構
