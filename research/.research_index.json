@@ -8,7 +8,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "1101",
       "name": "台泥",
       "price": 22.7
@@ -19,7 +18,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "1216",
       "name": "統一",
       "price": 78.5
@@ -30,7 +28,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "1301",
       "name": "台塑",
       "price": 63.6
@@ -41,7 +38,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "1303",
       "name": "南亞",
       "price": 210.0
@@ -52,7 +48,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "1326",
       "name": "台化",
       "price": 67.0
@@ -63,7 +58,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "2002",
       "name": "中鋼",
       "price": 18.5
@@ -74,7 +68,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "2301",
       "name": "光寶科",
       "price": 212.5
@@ -85,7 +78,6 @@
       "lines": 96,
       "last_verified": "2026-07-14",
       "confidence": "高",
-      "status": "active",
       "code": "2303",
       "name": "聯電",
       "price": 151.0
@@ -96,7 +88,6 @@
       "lines": 65,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "2308",
       "name": "台達電",
       "price": 1855.0
@@ -107,7 +98,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "2313",
       "name": "華通",
       "price": 225.5
@@ -118,7 +108,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "2317",
       "name": "鴻海",
       "price": 235.5
@@ -129,7 +118,6 @@
       "lines": 74,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "2327",
       "name": "國巨",
       "price": 778.0
@@ -140,7 +128,6 @@
       "lines": 167,
       "last_verified": "2026-07-14",
       "confidence": "高",
-      "status": "active",
       "code": "2330",
       "name": "台積電",
       "price": 2420.0
@@ -151,7 +138,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "2337",
       "name": "旺宏",
       "price": 139.5
@@ -162,7 +148,6 @@
       "lines": 66,
       "last_verified": "2026-07-14",
       "confidence": "中",
-      "status": "active",
       "code": "2344",
       "name": "華邦電",
       "price": 164.5
@@ -173,7 +158,6 @@
       "lines": 165,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "2345",
       "name": "智邦",
       "price": 2280.0
@@ -184,7 +168,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "2356",
       "name": "英業達",
       "price": 63.7
@@ -195,7 +178,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "2368",
       "name": "金像電",
       "price": 1015.0
@@ -206,7 +188,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "2375",
       "name": "凱美",
       "price": 172.0
@@ -217,7 +198,6 @@
       "lines": 81,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "2382",
       "name": "廣達",
       "price": 380.0
@@ -228,7 +208,6 @@
       "lines": 65,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "2383",
       "name": "台光電",
       "price": 4970.0
@@ -239,7 +218,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "2395",
       "name": "研華",
       "price": 529.0
@@ -250,7 +228,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "2404",
       "name": "漢唐",
       "price": 1185.0
@@ -261,7 +238,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "中",
-      "status": "active",
       "code": "2408",
       "name": "南亞科",
       "price": 448.0
@@ -272,7 +248,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "2412",
       "name": "中華電",
       "price": 133.0
@@ -283,7 +258,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "2449",
       "name": "京元電子",
       "price": 291.5
@@ -294,7 +268,6 @@
       "lines": 98,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "2454",
       "name": "聯發科",
       "price": 3660.0
@@ -305,7 +278,6 @@
       "lines": 159,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "2881",
       "name": "富邦金",
       "price": 125.0
@@ -316,7 +288,6 @@
       "lines": 56,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "2882",
       "name": "國泰金",
       "price": 96.1
@@ -327,7 +298,6 @@
       "lines": 154,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "3005",
       "name": "神基",
       "price": 114.5
@@ -338,7 +308,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "3008",
       "name": "大立光",
       "price": 4265.0
@@ -349,7 +318,6 @@
       "lines": 66,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "3017",
       "name": "奇鋐",
       "price": 2120.0
@@ -360,11 +328,8 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "3026",
-      "name": "禾伸堂",
-      "price": 815,
-      "price_note": "yahoo_2026-07-14"
+      "name": "禾伸堂"
     },
     {
       "file": "3037_欣興.md",
@@ -372,7 +337,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "3037",
       "name": "欣興",
       "price": 874.0
@@ -383,7 +347,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "C",
-      "status": "active",
       "code": "3038",
       "name": "全台",
       "price": 20.85
@@ -394,7 +357,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "3231",
       "name": "緯創",
       "price": 142.5
@@ -405,7 +367,6 @@
       "lines": 67,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "3443",
       "name": "創意",
       "price": 4020.0
@@ -416,7 +377,6 @@
       "lines": 59,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "3529",
       "name": "力旺",
       "price": 2415.0
@@ -427,7 +387,6 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "3653",
       "name": "健策",
       "price": 3070.0
@@ -438,7 +397,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "3711",
       "name": "日月光",
       "price": 641.0
@@ -449,7 +407,6 @@
       "lines": 63,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "5269",
       "name": "祥碩",
       "price": 1525.0
@@ -460,11 +417,8 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "5274",
-      "name": "信驊",
-      "price": 12985,
-      "price_note": "yahoo_2026-07-14"
+      "name": "信驊"
     },
     {
       "file": "6166_凌華.md",
@@ -472,7 +426,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "6166",
       "name": "凌華",
       "price": 132.5
@@ -483,7 +436,6 @@
       "lines": 55,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "6239",
       "name": "力成",
       "price": 304.0
@@ -494,7 +446,6 @@
       "lines": 63,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "6285",
       "name": "啟碁",
       "price": 247.5
@@ -505,7 +456,6 @@
       "lines": 95,
       "last_verified": "2026-07-14",
       "confidence": "中高",
-      "status": "active",
       "code": "6415",
       "name": "矽力"
     },
@@ -515,7 +465,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "6442",
       "name": "光聖",
       "price": 1315.0
@@ -526,7 +475,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "6505",
       "name": "台塑化",
       "price": 66.2
@@ -537,11 +485,8 @@
       "lines": 84,
       "last_verified": "2026-07-14",
       "confidence": "B+",
-      "status": "active",
       "code": "6669",
-      "name": "緯穎",
-      "price": 4905,
-      "price_note": "yahoo_2026-07-14"
+      "name": "緯穎"
     },
     {
       "file": "6770_力積電.md",
@@ -549,7 +494,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "6770",
       "name": "力積電",
       "price": 69.2
@@ -560,7 +504,6 @@
       "lines": 62,
       "last_verified": "2026-07-14",
       "confidence": "B",
-      "status": "active",
       "code": "6830",
       "name": "汎銓",
       "price": 379.0
@@ -571,7 +514,6 @@
       "lines": 177,
       "last_verified": "2026-07-14",
       "confidence": "中",
-      "status": "active",
       "code": "7610",
       "name": "聯友金屬創",
       "price": 2430.0
@@ -583,72 +525,119 @@
       "chars": 1559,
       "lines": 67,
       "last_verified": "2026-07-14",
-      "confidence": "中",
-      "status": "active"
+      "confidence": "中"
     },
     {
       "file": "摘要_KP49期_20260704.md",
       "chars": 2163,
       "lines": 115,
       "last_verified": "2026-07-14",
-      "confidence": "中",
-      "status": "active"
+      "confidence": "中"
     },
     {
       "file": "摘要_KP55期_Datadog可觀測層_20260708.md",
       "chars": 3913,
       "lines": 196,
       "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "status": "active"
+      "confidence": "中高"
     },
     {
       "file": "摘要_MMPaM_EP206_ETF狂潮_20260712.md",
       "chars": 5039,
       "lines": 184,
       "last_verified": "2026-07-14",
-      "confidence": "高",
-      "status": "active"
+      "confidence": "高"
     },
     {
       "file": "摘要_SK海力士暴跌_KIS下調_LTA定價模式_20260713.md",
       "chars": 3866,
       "lines": 150,
       "last_verified": "2026-07-14",
-      "confidence": "高",
-      "status": "active"
+      "confidence": "高"
     },
     {
       "file": "摘要_早晨財經速解讀_20260709.md",
       "chars": 2876,
       "lines": 160,
       "last_verified": "2026-07-14",
-      "confidence": "中高",
-      "status": "active"
+      "confidence": "中高"
     },
     {
       "file": "摘要_研究品質評分_20260714.md",
       "chars": 9147,
       "lines": 223,
       "last_verified": "2026-07-14",
-      "confidence": null,
-      "status": null
+      "confidence": null
+    },
+    {
+      "file": "摘要_股癌2026觀點庫_20260714.md",
+      "chars": 4704,
+      "lines": 145,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
+    },
+    {
+      "file": "摘要_股癌EP669_20260610.md",
+      "chars": 536,
+      "lines": 28,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
+    },
+    {
+      "file": "摘要_股癌EP670_20260613.md",
+      "chars": 522,
+      "lines": 27,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
+    },
+    {
+      "file": "摘要_股癌EP671_20260617.md",
+      "chars": 523,
+      "lines": 28,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
+    },
+    {
+      "file": "摘要_股癌EP673_20260624.md",
+      "chars": 526,
+      "lines": 27,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
+    },
+    {
+      "file": "摘要_股癌EP674_20260627.md",
+      "chars": 538,
+      "lines": 27,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
+    },
+    {
+      "file": "摘要_股癌EP675_20260701.md",
+      "chars": 532,
+      "lines": 27,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
+    },
+    {
+      "file": "摘要_股癌EP677_20260708.md",
+      "chars": 652,
+      "lines": 27,
+      "last_verified": "2026-07-14",
+      "confidence": "B+"
     },
     {
       "file": "摘要_股癌EP678_20260711.md",
       "chars": 1783,
       "lines": 82,
       "last_verified": "2026-07-14",
-      "confidence": "中",
-      "status": "active"
+      "confidence": "中"
     },
     {
       "file": "摘要_記憶體定價與頂部確認_三星Q2案例_20260708.md",
       "chars": 2968,
       "lines": 123,
       "last_verified": "2026-07-14",
-      "confidence": "高",
-      "status": "active"
+      "confidence": "高"
     }
   ]
 }
