@@ -1,0 +1,526 @@
+{
+  "2330": {
+    "觸及布林下軌": {
+      "no_filter": {
+        "count": 4,
+        "win_rate": 100.0,
+        "wilson_95ci": "[51.0%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 5.24,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 22.83,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "站上MA20": {
+      "no_filter": {
+        "count": 2,
+        "win_rate": 50.0,
+        "wilson_95ci": "[9.5%, 90.5%]",
+        "statistically_significant": false,
+        "avg_return": -0.93,
+        "profit_factor": 0.18,
+        "max_drawdown": 2.27,
+        "sharpe": -7.78,
+        "bull_triggers": 2,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 2,
+        "win_rate": 50.0,
+        "wilson_95ci": "[9.5%, 90.5%]",
+        "statistically_significant": false,
+        "avg_return": -0.93,
+        "profit_factor": 0.18,
+        "max_drawdown": 2.27,
+        "sharpe": -7.78,
+        "bull_triggers": 2,
+        "bear_triggers": 0
+      },
+      "with_filter_and_stoploss": {
+        "count": 2,
+        "win_rate": 50.0,
+        "wilson_95ci": "[9.5%, 90.5%]",
+        "statistically_significant": false,
+        "avg_return": -0.93,
+        "profit_factor": 0.18,
+        "max_drawdown": 2.27,
+        "sharpe": -7.78,
+        "bull_triggers": 2,
+        "bear_triggers": 0
+      }
+    },
+    "MA5黃金交叉MA20": {
+      "no_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 2.96,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 2.96,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_filter_and_stoploss": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 2.96,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      }
+    },
+    "布林壓縮後突破": {
+      "no_filter": {
+        "count": 2,
+        "win_rate": 0.0,
+        "wilson_95ci": "[0%, 65.8%]",
+        "statistically_significant": false,
+        "avg_return": -6.86,
+        "profit_factor": 0.0,
+        "max_drawdown": 13.26,
+        "sharpe": -52.7,
+        "bull_triggers": 2,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 2,
+        "win_rate": 0.0,
+        "wilson_95ci": "[0%, 65.8%]",
+        "statistically_significant": false,
+        "avg_return": -6.86,
+        "profit_factor": 0.0,
+        "max_drawdown": 13.26,
+        "sharpe": -52.7,
+        "bull_triggers": 2,
+        "bear_triggers": 0
+      },
+      "with_filter_and_stoploss": {
+        "count": 2,
+        "win_rate": 0.0,
+        "wilson_95ci": "[0%, 65.8%]",
+        "statistically_significant": false,
+        "avg_return": -5.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 9.75,
+        "sharpe": -794.36,
+        "bull_triggers": 2,
+        "bear_triggers": 0
+      }
+    },
+    "KD低檔黃金交叉": {
+      "no_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "乖離率<-7%回升": {
+      "no_filter": {
+        "count": 2,
+        "win_rate": 50.0,
+        "wilson_95ci": "[9.5%, 90.5%]",
+        "statistically_significant": false,
+        "avg_return": 2.49,
+        "profit_factor": 3.2,
+        "max_drawdown": 2.27,
+        "sharpe": 5.87,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 1,
+        "win_rate": 0.0,
+        "wilson_95ci": "[0%, 79.3%]",
+        "statistically_significant": false,
+        "avg_return": -2.27,
+        "profit_factor": 0.0,
+        "max_drawdown": 2.27,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_filter_and_stoploss": {
+        "count": 1,
+        "win_rate": 0.0,
+        "wilson_95ci": "[0%, 79.3%]",
+        "statistically_significant": false,
+        "avg_return": -2.27,
+        "profit_factor": 0.0,
+        "max_drawdown": 2.27,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      }
+    },
+    "MACD黃金交叉": {
+      "no_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 0.42,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 0.42,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_filter_and_stoploss": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 0.42,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      }
+    }
+  },
+  "2454": {
+    "觸及布林下軌": {
+      "no_filter": {
+        "count": 2,
+        "win_rate": 100.0,
+        "wilson_95ci": "[34.2%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 10.73,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 219.6,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "站上MA20": {
+      "no_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 1.28,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "MA5黃金交叉MA20": {
+      "no_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 0.38,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 0.38,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      },
+      "with_filter_and_stoploss": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 0.38,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 1,
+        "bear_triggers": 0
+      }
+    },
+    "布林壓縮後突破": {
+      "no_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "KD低檔黃金交叉": {
+      "no_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "乖離率<-7%回升": {
+      "no_filter": {
+        "count": 5,
+        "win_rate": 60.0,
+        "wilson_95ci": "[23.1%, 88.2%]",
+        "statistically_significant": false,
+        "avg_return": 2.64,
+        "profit_factor": 1.47,
+        "max_drawdown": 26.1,
+        "sharpe": 2.6,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "MACD黃金交叉": {
+      "no_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 1.28,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    }
+  },
+  "2308": {
+    "觸及布林下軌": {
+      "no_filter": {
+        "count": 4,
+        "win_rate": 100.0,
+        "wilson_95ci": "[51.0%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 4.6,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 18.99,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "站上MA20": {
+      "no_filter": {
+        "count": 1,
+        "win_rate": 100.0,
+        "wilson_95ci": "[20.7%, 100%]",
+        "statistically_significant": false,
+        "avg_return": 3.86,
+        "profit_factor": Infinity,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "MA5黃金交叉MA20": {
+      "no_filter": {
+        "count": 1,
+        "win_rate": 0.0,
+        "wilson_95ci": "[0%, 79.3%]",
+        "statistically_significant": false,
+        "avg_return": -1.4,
+        "profit_factor": 0.0,
+        "max_drawdown": 1.4,
+        "sharpe": 0.0,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "布林壓縮後突破": {
+      "no_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "KD低檔黃金交叉": {
+      "no_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "乖離率<-7%回升": {
+      "no_filter": {
+        "count": 5,
+        "win_rate": 80.0,
+        "wilson_95ci": "[37.6%, 96.4%]",
+        "statistically_significant": false,
+        "avg_return": 3.28,
+        "profit_factor": 2.18,
+        "max_drawdown": 13.9,
+        "sharpe": 4.98,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    },
+    "MACD黃金交叉": {
+      "no_filter": {
+        "count": 2,
+        "win_rate": 50.0,
+        "wilson_95ci": "[9.5%, 90.5%]",
+        "statistically_significant": false,
+        "avg_return": -3.21,
+        "profit_factor": 0.66,
+        "max_drawdown": 18.62,
+        "sharpe": -2.34,
+        "bull_triggers": 0,
+        "bear_triggers": 0
+      },
+      "with_trend_filter": {
+        "count": 0,
+        "note": "insufficient triggers"
+      },
+      "with_filter_and_stoploss": {
+        "count": 0,
+        "note": "insufficient triggers"
+      }
+    }
+  }
+}
