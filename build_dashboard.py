@@ -26,14 +26,14 @@ for s in stocks:
         key = theme.split('/')[0]
         themes_seen[key] = themes_seen.get(key,0)+1
     rows.append(f'''<tr>
-<td><a href="https://tw.stock.yahoo.com/quote/{s['code']}.TW" target="_blank">{s['code']}</a><br><small>{esc(s['name'])}</small></td>
-<td>{s.get('price','—')}</td>
-<td class="{'up' if (s.get('pct') or 0)>=0 else 'down'}">{(s.get('pct') or 0):+.2f}%</td>
-<td>{s.get('score','—')}</td>
-<td><span class="chip">{esc(theme or '未標記')}</span></td>
-<td><b>{s['target'] if s.get('target') else '—'}</b></td>
-<td>{dist_badge(s)}</td>
-<td>{esc((s.get('industry') or '')[:8])}</td>
+<td data-label="">{s['code']} <a href="https://tw.stock.yahoo.com/quote/{s['code']}.TW" target="_blank">{esc(s['name'])}</a></td>
+<td data-label="現價">{s.get('price','—')}</td>
+<td data-label="漲跌" class="{'up' if (s.get('pct') or 0)>=0 else 'down'}">{(s.get('pct') or 0):+.2f}%</td>
+<td data-label="評分">{s.get('score','—')}</td>
+<td data-label="主題"><span class="chip">{esc(theme or '未標記')}</span></td>
+<td data-label="目標價"><b>{s['target'] if s.get('target') else '—'}</b></td>
+<td data-label="距離">{dist_badge(s)}</td>
+<td data-label="產業">{esc((s.get('industry') or '')[:8])}</td>
 </tr>''')
 
 theme_chips = ''.join(
