@@ -189,7 +189,7 @@
     },
     {
       "code": "1303",
-      "name": "台塑化",
+      "name": "南亞",
       "industry": "石化",
       "price": 192.0,
       "pct": 3.23,
@@ -529,6 +529,22 @@
       "pe": "15.48"
     },
     {
+      "code": "2312",
+      "name": "金寶",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "電子代工",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
       "code": "2313",
       "name": "華通",
       "industry": "PCB/載板",
@@ -624,7 +640,7 @@
     },
     {
       "code": "2327",
-      "name": "國巨",
+      "name": "國巨*",
       "industry": "被動元件",
       "price": 554.0,
       "pct": -1.42,
@@ -816,7 +832,7 @@
     },
     {
       "code": "2345",
-      "name": "鴻準",
+      "name": "智邦",
       "industry": "電子",
       "price": 2035.0,
       "pct": -3.33,
@@ -860,6 +876,22 @@
       "etf0050": 1.06,
       "etf00981A": 4.74,
       "pe": "16.48"
+    },
+    {
+      "code": "2348",
+      "name": "海悅",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "房代銷",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2356",
@@ -1113,6 +1145,22 @@
       "watchlist": "video_momentum"
     },
     {
+      "code": "2378",
+      "name": "鴻準",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "機構件/精密零件",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
       "code": "2379",
       "name": "瑞昱",
       "price": 714.0,
@@ -1256,6 +1304,22 @@
       "researchTheme": "AI高速CCL/M8-M9材料",
       "lastVerified": "2026-08-22",
       "pe": "34.89"
+    },
+    {
+      "code": "2385",
+      "name": "群光",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "電源/鍵盤代工",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2395",
@@ -1799,6 +1863,22 @@
       "lastVerified": "2026-08-22"
     },
     {
+      "code": "2637",
+      "name": "慧洋-KY",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "散裝航運",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
       "code": "2880",
       "name": "華南金",
       "industry": "",
@@ -1817,7 +1897,7 @@
     },
     {
       "code": "2881",
-      "name": "國泰金",
+      "name": "富邦金",
       "industry": "金控",
       "price": 134.0,
       "pct": 4.69,
@@ -1864,7 +1944,7 @@
     },
     {
       "code": "2882",
-      "name": "開發金",
+      "name": "國泰金",
       "industry": "金控",
       "price": 100.5,
       "pct": 2.87,
@@ -2219,8 +2299,8 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 400.0,
-      "targetDist": -70.8,
+      "target": 150.0,
+      "targetDist": -22.0,
       "researchTheme": "強固型運算",
       "researchFile": "research/3005_神基.md",
       "lastVerified": "2026-08-22",
@@ -2443,7 +2523,7 @@
     },
     {
       "code": "3038",
-      "name": "台達化",
+      "name": "全台",
       "industry": "石化",
       "price": 20.6,
       "pct": 0.49,
@@ -2552,6 +2632,22 @@
       "researchTheme": "InP磊晶/光通訊上游",
       "researchFile": "research/3081_聯亞.md",
       "lastVerified": "2026-08-19",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "3163",
+      "name": "波若威",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "光纖連接/CPO",
+      "researchFile": "",
+      "lastVerified": "",
       "etf0050": null,
       "etf00981A": null
     },
@@ -3114,6 +3210,22 @@
       "etf00981A": null
     },
     {
+      "code": "5515",
+      "name": "建準",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "散熱風扇",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
       "code": "5880",
       "name": "合庫金",
       "price": 25.05,
@@ -3420,8 +3532,8 @@
       "pct": null,
       "vol": null,
       "score": null,
-      "target": 3500.0,
-      "targetDist": -87.3,
+      "target": 585.0,
+      "targetDist": -23.8,
       "researchTheme": "",
       "researchFile": "research/6415_矽力.md",
       "lastVerified": "2026-07-14",
