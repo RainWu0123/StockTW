@@ -13,7 +13,7 @@ h1{font-size:1.6rem;margin-bottom:4px}.sub{color:var(--muted);margin-bottom:20px
 .tchip span{color:var(--muted);margin-left:4px}
 .tchip.on{background:var(--accent);color:#000;border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:auto}
-table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:1000px}
+table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:1150px}
 th{background:#1c2128;color:var(--muted);padding:10px 12px;text-align:left;position:sticky;top:0;cursor:pointer;user-select:none;white-space:nowrap}
 td{padding:9px 12px;border-top:1px solid var(--border);vertical-align:top}
 tr:hover td{background:#1c2128}
@@ -22,6 +22,8 @@ tr:hover td{background:#1c2128}
 .etf{display:inline-block;font-size:.62rem;border-radius:4px;padding:1px 5px;margin-left:4px;vertical-align:middle}
 .e50{background:#1f3a5f;color:#79b8ff;border:1px solid #2d4a6f}
 .e981{background:#3a2f1f;color:#e2b45a;border:1px solid #5a4a2d}
+td[title]{cursor:help;position:relative}
+@media(hover:hover){td[title]:hover::after{content:attr(title);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#1c2128;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:.78rem;color:var(--ink);white-space:nowrap;z-index:99;box-shadow:0 4px 16px rgba(0,0,0,.5);pointer-events:none}}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 @media(max-width:720px){body{padding:12px}.stats{grid-template-columns:repeat(2,1fr)}}
@@ -29,14 +31,14 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <h1>📊 StockTW 台股研究儀表板</h1>
 <p class="sub">更新時間：2026-08-22T10:47 ｜ 資料來源：官方財報＋TWSE 收盤｜目標價為本系統 Bear/Base/Bull 的 Base 情境（12 個月）</p>
 <div class="stats">
-<div class="stat"><b>105</b><span>收錄個股</span></div>
-<div class="stat"><b>95</b><span>有 Base 目標價</span></div>
+<div class="stat"><b>104</b><span>收錄個股</span></div>
+<div class="stat"><b>94</b><span>有 Base 目標價</span></div>
 <div class="stat"><b style="color:var(--red)">32</b><span>已達標／透支</span></div>
-<div class="stat"><b style="color:var(--warn)">15</b><span>接近 ±10%</span></div>
+<div class="stat"><b style="color:var(--warn)">16</b><span>接近 ±10%</span></div>
 </div>
-<div class="tbar" id="themes"><button class="tchip" onclick="filterTheme(this)" data-t="金融控股">金融控股 <span>12</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電信">電信 <span>3</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電子代工">電子代工 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="貨櫃航運">貨櫃航運 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="PCB">PCB <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI機櫃組裝">AI機櫃組裝 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="石化循環">石化循環 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="InP磊晶">InP磊晶 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI ASIC設計服務">AI ASIC設計服務 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="房代銷">房代銷 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電競PC">電競PC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="機構件">機構件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電源">電源 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="散裝航運">散裝航運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="光纖連接">光纖連接 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="觸控">觸控 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="低軌衛星機構件">低軌衛星機構件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="散熱風扇">散熱風扇 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="SMT打件">SMT打件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="晶圓測試卡">晶圓測試卡 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NOR Flash">NOR Flash <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="邊緣運算">邊緣運算 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI網通交換器">AI網通交換器 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="航空客運+貨運">航空客運+貨運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="高階PCB">高階PCB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NPU">NPU <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI晶片測試">AI晶片測試 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI網通設備">AI網通設備 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="晶圓代工">晶圓代工 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI機櫃ODM">AI機櫃ODM <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NAND控制晶片">NAND控制晶片 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="航空客運">航空客運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="MLCC">MLCC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="煉油">煉油 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="記憶體封測">記憶體封測 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電源">AI電源 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="半導體分析">半導體分析 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="強固型運算">強固型運算 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="被動元件">被動元件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI散熱">AI散熱 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電子材料">AI電子材料 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ABF">ABF <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電源模組">電源模組 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI封測">AI封測 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI伺服器二線追趕者">AI伺服器二線追趕者 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="鋼鐵循環">鋼鐵循環 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="驅動IC">驅動IC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電源第二供應商">AI電源第二供應商 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="PC品牌">PC品牌 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="半導體廠務工程">半導體廠務工程 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="綠能轉型">綠能轉型 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ASIC">ASIC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="利基記憶體">利基記憶體 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="食品通路龍頭">食品通路龍頭 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI晶圓代工">AI晶圓代工 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="工業電腦">工業電腦 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ABF載板">ABF載板 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="USB">USB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NBR乳膠">NBR乳膠 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="貨櫃航運近洋線">貨櫃航運近洋線 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="伺服器管理晶片">伺服器管理晶片 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI高速CCL">AI高速CCL <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI伺服器直供ODM">AI伺服器直供ODM <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="網通SoC">網通SoC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="DRAM超級週期">DRAM超級週期 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="通訊光纖">通訊光纖 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="網通PCB">網通PCB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="光學鏡頭">光學鏡頭 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="光通訊">光通訊 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="鉸鏈">鉸鏈 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="氣動元件">氣動元件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="伺服器機殼">伺服器機殼 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="精密模具">精密模具 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="測試設備">測試設備 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="線束">線束 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="測試介面">測試介面 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="封裝材料">封裝材料 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="金屬製品">金屬製品 <span>1</span></button></div>
+<div class="tbar" id="themes"><button class="tchip" onclick="filterTheme(this)" data-t="金融控股">金融控股 <span>12</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電信">電信 <span>3</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電子代工">電子代工 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="PCB">PCB <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI機櫃組裝">AI機櫃組裝 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="石化循環">石化循環 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="InP磊晶">InP磊晶 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI ASIC設計服務">AI ASIC設計服務 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="房代銷">房代銷 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電競PC">電競PC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="機構件">機構件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電源">電源 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="散裝航運">散裝航運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="光纖連接">光纖連接 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="觸控">觸控 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="低軌衛星機構件">低軌衛星機構件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="散熱風扇">散熱風扇 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="SMT打件">SMT打件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NOR Flash">NOR Flash <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="邊緣運算">邊緣運算 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI網通交換器">AI網通交換器 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="航空客運+貨運">航空客運+貨運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="高階PCB">高階PCB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NPU">NPU <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI晶片測試">AI晶片測試 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI網通設備">AI網通設備 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="晶圓代工">晶圓代工 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI機櫃ODM">AI機櫃ODM <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NAND控制晶片">NAND控制晶片 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="航空客運">航空客運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="MLCC">MLCC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="煉油">煉油 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="記憶體封測">記憶體封測 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電源">AI電源 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="半導體分析">半導體分析 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="強固型運算">強固型運算 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="被動元件">被動元件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI散熱">AI散熱 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電子材料">AI電子材料 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ABF">ABF <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電源模組">電源模組 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI封測">AI封測 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI伺服器二線追趕者">AI伺服器二線追趕者 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="鋼鐵循環">鋼鐵循環 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="驅動IC">驅動IC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電源第二供應商">AI電源第二供應商 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="PC品牌">PC品牌 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="半導體廠務工程">半導體廠務工程 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="綠能轉型">綠能轉型 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ASIC">ASIC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="利基記憶體">利基記憶體 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="食品通路龍頭">食品通路龍頭 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI晶圓代工">AI晶圓代工 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="工業電腦">工業電腦 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="貨櫃遠洋航運">貨櫃遠洋航運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ABF載板">ABF載板 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="USB">USB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="NBR乳膠">NBR乳膠 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="貨櫃航運近洋線">貨櫃航運近洋線 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="伺服器管理晶片">伺服器管理晶片 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI高速CCL">AI高速CCL <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI伺服器直供ODM">AI伺服器直供ODM <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="網通SoC">網通SoC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="DRAM超級週期">DRAM超級週期 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="貨櫃航運">貨櫃航運 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="通訊光纖">通訊光纖 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="網通PCB">網通PCB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="光學鏡頭">光學鏡頭 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="光通訊">光通訊 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="鉸鏈">鉸鏈 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="氣動元件">氣動元件 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="伺服器機殼">伺服器機殼 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="精密模具">精密模具 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="測試設備">測試設備 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="線束">線束 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="測試介面">測試介面 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="封裝材料">封裝材料 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="金屬製品">金屬製品 <span>1</span></button></div>
 <div class="card"><table id="tbl">
-<thead><tr><th data-k="code">代碼/名稱</th><th data-k="price">現價</th><th data-k="pct">漲跌</th><th data-k="score">評分</th><th>主題</th><th data-k="target">Base目標價</th><th data-k="targetDist">距離</th><th>ETF</th><th>產業</th></tr></thead>
+<thead><tr><th data-k="code">代碼/名稱</th><th data-k="price">現價</th><th data-k="pct">漲跌</th><th data-k="score">評分</th><th>主題</th><th data-k="target">Base目標價</th><th data-k="targetDist">距離</th><th>ETF</th><th data-k="">短線</th><th data-k="">長線</th><th>產業</th></tr></thead>
 <tbody><tr>
 <td data-label="">1102 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">亞泥</a></td>
 <td data-label="現價">34.95</td>
@@ -47,6 +49,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+0.7%偏多<br>營收衰退-11%">10<br><small>偏多</small></td><td data-label="長線" class="" title="基本面分62/100<br>盈餘成長37%">8<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2312 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">金寶</a></td>
@@ -58,6 +61,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">2348 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">海悅</a></td>
@@ -69,6 +73,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">2377 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2377_微星.md" target="_blank">微星</a></td>
@@ -80,6 +85,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">無報價</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">2378 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">鴻準</a></td>
@@ -91,6 +97,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">2385 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">群光</a></td>
@@ -102,6 +109,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">2637 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">慧洋-KY</a></td>
@@ -113,6 +121,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">3163 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">波若威</a></td>
@@ -124,6 +133,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">3673 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3673_TPK-KY.md" target="_blank">TPK-KY</a></td>
@@ -135,6 +145,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">無報價</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">5243 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/5243_乙盛-KY.md" target="_blank">乙盛-KY</a></td>
@@ -146,6 +157,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">無報價</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">5515 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">建準</a></td>
@@ -157,6 +169,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">6269 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">台郡</a></td>
@@ -168,6 +181,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">PCB/載板</td>
+<td data-label="短線" class="down" title="日跌-1.9%偏空">-10<br><small>中性</small></td><td data-label="長線" class="" title="">0<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">6278 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6278_台表科.md" target="_blank">台表科</a></td>
@@ -179,6 +193,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">無報價</span></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">7769 <a href="https://github.com/RainWu0123/StockTW/blob/main/" target="_blank">鴻勁</a><span class="etf e50">0050</span></td>
@@ -190,17 +205,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><span class="muted">—</span></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
-</tr>
-<tr>
-<td data-label="">3038 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3038_全台.md" target="_blank">全台</a></td>
-<td data-label="現價">20.6</td>
-<td data-label="漲跌" class="up">+0.49%</td>
-<td data-label="評分">10.0</td>
-<td data-label="主題"><span class="chip">晶圓測試卡/探針卡</span></td>
-<td data-label="目標價"><b>1300.0</b></td>
-<td data-label="距離"><b class="down">-98.4%</b></td>
-<td data-label="ETF"><span class="muted">—</span></td>
-<td data-label="產業">石化</td>
+<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>
 </tr>
 <tr>
 <td data-label="">2337 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2337_旺宏.md" target="_blank">旺宏</a></td>
@@ -212,6 +217,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-44.3%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標44%，安全邊際大<br>營收年增71%">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">6166 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6166_凌華.md" target="_blank">凌華</a></td>
@@ -223,6 +229,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-40.8%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">工業/網通</td>
+<td data-label="短線" class="down" title="日跌-1.7%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標41%，安全邊際大<br>基本面分58/100">48<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">2363 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2363_矽統.md" target="_blank">矽統</a></td>
@@ -234,6 +241,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-36.6%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標37%，安全邊際大<br>基本面偏弱(0)">22<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2345 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2345_智邦.md" target="_blank">智邦</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -245,6 +253,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-36.4%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">電子</td>
+<td data-label="短線" class="down" title="日跌-3.3%弱勢">-20<br><small>偏空</small></td><td data-label="長線" class="up" title="現價低於目標36%，安全邊際大<br>基本面分57/100">66<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">2610 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2610_華航.md" target="_blank">華航</a></td>
@@ -256,6 +265,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-36.3%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+2.0%偏多">10<br><small>偏多</small></td><td data-label="長線" class="up" title="現價低於目標36%，安全邊際大<br>基本面分65/100">43<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">2368 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2368_金像電.md" target="_blank">金像電</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -267,6 +277,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-35.7%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-5.8%弱勢">-20<br><small>偏空</small></td><td data-label="長線" class="up" title="現價低於目標36%，安全邊際大<br>基本面分61/100">66<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">3529 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3529_力旺.md" target="_blank">力旺</a></td>
@@ -278,6 +289,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-34.7%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">IC/設計</td>
+<td data-label="短線" class="down" title="日跌-2.5%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標35%，安全邊際大">30<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2449 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2449_京元電子.md" target="_blank">京元電子</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -289,6 +301,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-33.7%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-1.3%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標34%，安全邊際大<br>盈餘衰退-47%">43<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">6285 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6285_啟碁.md" target="_blank">啟碁</a></td>
@@ -300,17 +313,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-32.7%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">網通</td>
-</tr>
-<tr>
-<td data-label="">2609 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2609_陽明.md" target="_blank">陽明</a></td>
-<td data-label="現價">64.0</td>
-<td data-label="漲跌" class="up">+6.14%</td>
-<td data-label="評分">5.0</td>
-<td data-label="主題"><span class="chip">貨櫃航運</span></td>
-<td data-label="目標價"><b>95.0</b></td>
-<td data-label="距離"><b class="down">-32.6%</b></td>
-<td data-label="ETF"><span class="muted">—</span></td>
-<td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-0.6%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標33%，安全邊際大<br>盈餘成長23%">35<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">6770 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6770_力積電.md" target="_blank">力積電</a></td>
@@ -322,6 +325,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-31.6%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">IC/代工</td>
+<td data-label="短線" class="" title="日漲+1.6%偏多">10<br><small>偏多</small></td><td data-label="長線" class="up" title="現價低於目標32%，安全邊際大">30<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">3231 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3231_緯創.md" target="_blank">緯創</a><span class="etf e50">0050</span></td>
@@ -333,6 +337,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-31.2%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-2.5%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標31%，安全邊際大<br>基本面分81/100">68<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">8299 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/8299_群聯.md" target="_blank">群聯</a></td>
@@ -344,6 +349,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-30.8%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="現價低於目標31%，安全邊際大<br>基本面偏弱(0)">22<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2618 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2618_長榮航.md" target="_blank">長榮航</a></td>
@@ -355,6 +361,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-29.0%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+0.8%偏多<br>接近52W高點（位置90%）">15<br><small>偏多</small></td><td data-label="長線" class="up" title="低於目標29%，有空間<br>基本面分68/100">33<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">3026 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3026_禾伸堂.md" target="_blank">禾伸堂</a></td>
@@ -366,6 +373,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-29.0%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="低於目標29%，有空間<br>基本面偏弱(0)">12<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">6505 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6505_台塑化.md" target="_blank">台塑化</a><span class="etf e50">0050</span></td>
@@ -377,6 +385,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-27.8%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="up" title="日漲+3.8%強勢<br>接近52W高點（位置123%）">25<br><small>買進</small></td><td data-label="長線" class="up" title="低於目標28%，有空間<br>基本面分51/100">43<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">6239 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6239_力成.md" target="_blank">力成</a></td>
@@ -388,6 +397,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-26.7%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">IC/封測</td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標27%，有空間<br>基本面分52/100">46<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">2308 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2308_台達電.md" target="_blank">台達電</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -399,6 +409,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-23.9%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">電源/散熱</td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標24%，有空間<br>基本面分58/100">56<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">6415 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6415_矽力.md" target="_blank">矽力</a></td>
@@ -410,6 +421,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-23.8%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="低於目標24%，有空間<br>基本面偏弱(0)">12<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">6830 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6830_汎銓.md" target="_blank">汎銓</a></td>
@@ -421,17 +433,19 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-23.0%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">IC/代工</td>
+<td data-label="短線" class="up" title="日漲+10.0%強勢">20<br><small>買進</small></td><td data-label="長線" class="up" title="低於目標23%，有空間">20<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">3005 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3005_神基.md" target="_blank">神基</a></td>
 <td data-label="現價">117.0</td>
 <td data-label="漲跌" class="down">-0.43%</td>
 <td data-label="評分">25.0</td>
-<td data-label="主題"><span class="chip">強固型運算</span></td>
+<td data-label="主題"><span class="chip">強固型運算/國防+邊緣AI</span></td>
 <td data-label="目標價"><b>150.0</b></td>
 <td data-label="距離"><b class="down">-22.0%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">AI/伺服器</td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標22%，有空間<br>基本面分55/100">28<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2327 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2327_國巨.md" target="_blank">國巨*</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -443,6 +457,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-20.9%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">被動元件</td>
+<td data-label="短線" class="down" title="日跌-1.4%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標21%，有空間<br>盈餘成長45%">35<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">3045 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3045_台灣大.md" target="_blank">台灣大</a><span class="etf e50">0050</span></td>
@@ -454,6 +469,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-20.7%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標21%，有空間<br>基本面分53/100">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">3017 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3017_奇鋐.md" target="_blank">奇鋐</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -465,6 +481,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-20.4%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">AI/散熱</td>
+<td data-label="短線" class="down" title="日跌-4.0%弱勢<br>接近52W高點（位置94%）">-15<br><small>偏空</small></td><td data-label="長線" class="up" title="低於目標20%，有空間<br>基本面分76/100">63<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">1303 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/1303_南亞.md" target="_blank">南亞</a><span class="etf e50">0050</span></td>
@@ -476,6 +493,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-20.0%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">石化</td>
+<td data-label="短線" class="up" title="日漲+3.2%強勢<br>接近52W高點（位置131%）">25<br><small>買進</small></td><td data-label="長線" class="up" title="低於目標20%，有空間<br>基本面分53/100">43<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">8046 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/8046_南電.md" target="_blank">南電</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -487,6 +505,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-18.9%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標19%，有空間<br>基本面偏弱(0)">22<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2375 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2375_凱美.md" target="_blank">凱美</a></td>
@@ -498,6 +517,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-18.3%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">被動元件</td>
+<td data-label="短線" class="down" title="日跌-2.0%偏空">-10<br><small>中性</small></td><td data-label="長線" class="" title="低於目標18%，有空間<br>盈餘衰退-36%">15<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">2313 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2313_華通.md" target="_blank">華通</a></td>
@@ -509,6 +529,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-17.9%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">PCB/載板</td>
+<td data-label="短線" class="down" title="日跌-1.8%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標18%，有空間<br>盈餘成長14%">25<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">5880 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/5880_合庫金.md" target="_blank">合庫金</a><span class="etf e50">0050</span></td>
@@ -520,6 +541,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-16.5%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+1.0%偏多">10<br><small>偏多</small></td><td data-label="長線" class="up" title="低於目標16%，有空間<br>基本面分59/100">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">3711 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3711_日月光.md" target="_blank">日月光</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -531,6 +553,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-16.1%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">IC/封測</td>
+<td data-label="短線" class="down" title="日跌-0.5%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標16%，有空間<br>基本面分53/100">48<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">2356 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2356_英業達.md" target="_blank">英業達</a></td>
@@ -542,6 +565,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-15.8%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+1.9%偏多">10<br><small>偏多</small></td><td data-label="長線" class="up" title="低於目標16%，有空間<br>基本面分60/100">33<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2002 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2002_中鋼.md" target="_blank">中鋼</a></td>
@@ -553,6 +577,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-15.4%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">鋼鐵</td>
+<td data-label="短線" class="" title="日漲+0.5%偏多">10<br><small>偏多</small></td><td data-label="長線" class="up" title="低於目標15%，有空間">20<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2382 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2382_廣達.md" target="_blank">廣達</a><span class="etf e50">0050</span></td>
@@ -564,6 +589,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-15.4%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">AI/伺服器</td>
+<td data-label="短線" class="down" title="日跌-1.7%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標15%，有空間<br>基本面分66/100">41<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">2317 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2317_鴻海.md" target="_blank">鴻海</a><span class="etf e50">0050</span></td>
@@ -575,6 +601,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-15.3%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">EMS</td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標15%，有空間<br>基本面分61/100">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">3034 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3034_聯詠.md" target="_blank">聯詠</a></td>
@@ -586,6 +613,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-14.5%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+0.6%偏多<br>營收衰退-15%">10<br><small>偏多</small></td><td data-label="長線" class="" title="低於目標14%<br>盈餘衰退-28%">0<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2303 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2303_聯電.md" target="_blank">聯電</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -597,6 +625,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-13.7%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">IC/代工</td>
+<td data-label="短線" class="" title="日漲+0.9%偏多">10<br><small>偏多</small></td><td data-label="長線" class="up" title="低於目標14%<br>基本面分59/100">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2881 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2881_富邦金.md" target="_blank">富邦金</a><span class="etf e50">0050</span></td>
@@ -608,6 +637,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-13.5%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">金控</td>
+<td data-label="短線" class="up" title="日漲+4.7%強勢">20<br><small>買進</small></td><td data-label="長線" class="up" title="低於目標14%<br>基本面分73/100">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2301 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2301_光寶科.md" target="_blank">光寶科</a><span class="etf e50">0050</span></td>
@@ -619,6 +649,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-13.0%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日跌-2.2%偏空<br>接近52W高點（位置99%）">-5<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標13%<br>盈餘成長11%">20<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2882 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2882_國泰金.md" target="_blank">國泰金</a><span class="etf e50">0050</span></td>
@@ -630,6 +661,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-12.6%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">金控</td>
+<td data-label="短線" class="up" title="日漲+2.9%強勢">20<br><small>買進</small></td><td data-label="長線" class="up" title="低於目標13%<br>基本面分72/100">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2357 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2357_華碩.md" target="_blank">華碩</a><span class="etf e50">0050</span></td>
@@ -641,6 +673,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-12.3%</b></td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="低於目標12%<br>基本面偏弱(0)">7<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2404 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2404_漢唐.md" target="_blank">漢唐</a></td>
@@ -652,6 +685,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-11.7%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">設備</td>
+<td data-label="短線" class="down" title="日跌-1.4%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標12%<br>基本面分72/100">43<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">1326 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/1326_台化.md" target="_blank">台化</a></td>
@@ -663,6 +697,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-11.6%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="up" title="日漲+2.9%強勢<br>接近52W高點（位置103%）">25<br><small>買進</small></td><td data-label="長線" class="" title="低於目標12%">10<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">1101 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/1101_台泥.md" target="_blank">台泥</a></td>
@@ -674,6 +709,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離"><b class="down">-11.2%</b></td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">水泥</td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="低於目標11%<br>盈餘成長37%">15<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">2883 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2883_凱基金.md" target="_blank">凱基金</a><span class="etf e50">0050</span></td>
@@ -685,6 +721,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="低於目標10%<br>基本面偏弱(0)">7<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2454 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2454_聯發科.md" target="_blank">聯發科</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -696,6 +733,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">IC/設計</td>
+<td data-label="短線" class="up" title="日漲+2.4%強勢">20<br><small>買進</small></td><td data-label="長線" class="up" title="低於目標10%<br>0050成分股（被動資金支撐）">20<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2344 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2344_華邦電.md" target="_blank">華邦電</a><span class="etf e50">0050</span></td>
@@ -707,6 +745,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">DRAM</td>
+<td data-label="短線" class="up" title="日漲+2.5%強勢">20<br><small>買進</small></td><td data-label="長線" class="up" title="低於目標10%<br>基本面分51/100">31<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">1216 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/1216_統一.md" target="_blank">統一</a><span class="etf e50">0050</span></td>
@@ -718,6 +757,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">食品</td>
+<td data-label="短線" class="down" title="日跌-0.9%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標9%<br>基本面分58/100">28<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2330 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2330_台積電.md" target="_blank">台積電</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -729,6 +769,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">IC/代工</td>
+<td data-label="短線" class="" title="日漲+1.5%偏多<br>接近52W高點（位置93%）">15<br><small>偏多</small></td><td data-label="長線" class="up" title="低於目標7%<br>基本面分61/100">46<br><small>強力買進</small></td>
 </tr>
 <tr>
 <td data-label="">2395 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2395_研華.md" target="_blank">研華</a><span class="etf e50">0050</span></td>
@@ -740,6 +781,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">工業/邊緣</td>
+<td data-label="短線" class="down" title="日跌-3.6%弱勢<br>接近52W高點（位置141%）">-15<br><small>偏空</small></td><td data-label="長線" class="up" title="低於目標7%<br>盈餘成長22%">20<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2412 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2412_中華電.md" target="_blank">中華電</a><span class="etf e50">0050</span></td>
@@ -751,6 +793,19 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">電信</td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="低於目標6%<br>0050成分股（被動資金支撐）">15<br><small>偏多</small></td>
+</tr>
+<tr>
+<td data-label="">2609 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2609_陽明.md" target="_blank">陽明</a></td>
+<td data-label="現價">64.0</td>
+<td data-label="漲跌" class="up">+6.14%</td>
+<td data-label="評分">5.0</td>
+<td data-label="主題"><span class="chip">貨櫃遠洋航運</span></td>
+<td data-label="目標價"><b>68.0</b></td>
+<td data-label="距離">🟡 接近</td>
+<td data-label="ETF"><span class="muted">—</span></td>
+<td data-label="產業"></td>
+<td data-label="短線" class="up" title="日漲+6.1%強勢<br>營收衰退-15%">20<br><small>買進</small></td><td data-label="長線" class="" title="低於目標6%<br>盈餘衰退-82%">0<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">3037 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3037_欣興.md" target="_blank">欣興</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -762,6 +817,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-4.8%弱勢<br>接近52W高點（位置96%）">-15<br><small>偏空</small></td><td data-label="長線" class="up" title="低於目標6%<br>基本面分57/100">38<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">5269 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/5269_祥碩_wrong.md" target="_blank">華豐</a></td>
@@ -773,6 +829,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">電子</td>
+<td data-label="短線" class="down" title="日跌-0.7%偏空">-10<br><small>中性</small></td><td data-label="長線" class="up" title="低於目標6%<br>基本面分69/100">36<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">2108 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2108_南帝.md" target="_blank">南帝</a></td>
@@ -784,6 +841,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="基本面偏弱(0)">-8<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">1301 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/1301_台塑.md" target="_blank">台塑</a></td>
@@ -795,6 +853,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">石化</td>
+<td data-label="短線" class="up" title="日漲+2.8%強勢<br>接近52W高點（位置114%）">25<br><small>買進</small></td><td data-label="長線" class="" title="基本面分51/100<br>盈餘成長6336%">13<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">2615 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2615_萬海.md" target="_blank">萬海</a></td>
@@ -806,6 +865,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="up" title="日漲+9.7%強勢<br>接近52W高點（位置199%）">25<br><small>買進</small></td><td data-label="長線" class="" title="基本面分57/100">8<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">5274 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/5274_信驊.md" target="_blank">信驊</a></td>
@@ -817,6 +877,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="基本面偏弱(0)">-8<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">3081 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3081_聯亞.md" target="_blank">聯亞</a></td>
@@ -828,6 +889,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="基本面偏弱(0)">-8<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">4904 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/4904_遠傳.md" target="_blank">遠傳</a><span class="etf e50">0050</span></td>
@@ -839,6 +901,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🟡 接近</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="基本面分51/100<br>盈餘成長14%">18<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">2383 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2383_台光電.md" target="_blank">台光電</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -850,6 +913,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業">IC/載板</td>
+<td data-label="短線" class="down" title="日跌-5.1%弱勢<br>接近52W高點（位置93%）">-15<br><small>偏空</small></td><td data-label="長線" class="up" title="基本面分54/100<br>盈餘成長53%">36<br><small>買進</small></td>
 </tr>
 <tr>
 <td data-label="">6669 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6669_緯穎.md" target="_blank">緯穎</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -861,6 +925,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="" title="基本面偏弱(0)<br>0050成分股（被動資金支撐）">2<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2379 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2379_瑞昱.md" target="_blank">瑞昱</a></td>
@@ -872,6 +937,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+1.6%偏多">10<br><small>偏多</small></td><td data-label="長線" class="down" title="已超越目標5%，透支">-20<br><small>偏空</small></td>
 </tr>
 <tr>
 <td data-label="">2884 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2884_玉山金.md" target="_blank">玉山金</a><span class="etf e50">0050</span></td>
@@ -883,6 +949,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+1.7%偏多<br>接近52W高點（位置119%）">15<br><small>偏多</small></td><td data-label="長線" class="" title="已超越目標6%，透支<br>基本面分60/100">-2<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">4971 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/4971_IET-KY.md" target="_blank">IET-KY</a></td>
@@ -894,6 +961,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標7%，透支<br>基本面偏弱(0)">-28<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">2886 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2886_兆豐金.md" target="_blank">兆豐金</a><span class="etf e50">0050</span></td>
@@ -905,6 +973,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+1.2%偏多<br>接近52W高點（位置112%）">15<br><small>偏多</small></td><td data-label="長線" class="" title="已超越目標12%，透支<br>基本面分59/100">-2<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2892 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2892_第一金.md" target="_blank">第一金</a><span class="etf e50">0050</span></td>
@@ -916,6 +985,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+1.1%偏多<br>接近52W高點（位置115%）">15<br><small>偏多</small></td><td data-label="長線" class="" title="已超越目標12%，透支<br>基本面分62/100">-2<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2890 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2890_永豐金.md" target="_blank">永豐金</a><span class="etf e50">0050</span></td>
@@ -927,6 +997,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+0.6%偏多<br>接近52W高點（位置94%）">15<br><small>偏多</small></td><td data-label="長線" class="" title="已超越目標13%，透支<br>基本面分66/100">6<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2885 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2885_元大金.md" target="_blank">元大金</a><span class="etf e50">0050</span></td>
@@ -938,6 +1009,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標14%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">2891 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2891_中信金.md" target="_blank">中信金</a><span class="etf e50">0050</span></td>
@@ -949,6 +1021,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標16%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">2887 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2887_台新新光金.md" target="_blank">台新新光金</a><span class="etf e50">0050</span></td>
@@ -960,6 +1033,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標16%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">2880 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2880_華南金.md" target="_blank">華南金</a><span class="etf e50">0050</span></td>
@@ -971,6 +1045,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標20%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">4938 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/4938_和碩.md" target="_blank">和碩</a></td>
@@ -982,6 +1057,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-1.2%偏空<br>營收衰退-10%">-10<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標36%，透支<br>盈餘衰退-64%">-30<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">2408 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2408_南亞科.md" target="_blank">南亞科</a><span class="etf e50">0050</span></td>
@@ -993,6 +1069,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">DRAM</td>
+<td data-label="短線" class="up" title="日漲+2.1%強勢<br>接近52W高點（位置105%）">25<br><small>買進</small></td><td data-label="長線" class="" title="已超越目標39%，透支<br>基本面分52/100">1<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">2603 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2603_長榮.md" target="_blank">長榮</a><span class="etf e50">0050</span></td>
@@ -1004,6 +1081,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="up" title="日漲+2.2%強勢<br>接近52W高點（位置113%）">25<br><small>買進</small></td><td data-label="長線" class="down" title="已超越目標40%，透支<br>盈餘衰退-70%">-25<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">4979 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/4979_華星光.md" target="_blank">華星光</a><span class="etf e981">00981A</span></td>
@@ -1015,6 +1093,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標44%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">6274 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6274_台燿.md" target="_blank">台燿</a><span class="etf e981">00981A</span></td>
@@ -1026,6 +1105,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標66%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">3008 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3008_大立光.md" target="_blank">大立光</a><span class="etf e50">0050</span></td>
@@ -1037,6 +1117,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">光學</td>
+<td data-label="短線" class="" title="日漲+1.7%偏多<br>接近52W高點（位置107%）">15<br><small>偏多</small></td><td data-label="長線" class="down" title="已超越目標75%，透支<br>0050成分股（被動資金支撐）">-15<br><small>偏空</small></td>
 </tr>
 <tr>
 <td data-label="">6442 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6442_光聖.md" target="_blank">光聖</a></td>
@@ -1048,6 +1129,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">AI/伺服器</td>
+<td data-label="短線" class="down" title="日跌-1.9%偏空">-10<br><small>中性</small></td><td data-label="長線" class="" title="已超越目標91%，透支<br>基本面分51/100">-2<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">3443 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3443_創意.md" target="_blank">創意</a><span class="etf e50">0050</span></td>
@@ -1059,6 +1141,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業">IC/設計</td>
+<td data-label="短線" class="" title="日跌-0.5%偏空<br>接近52W高點（位置93%）">-5<br><small>中性</small></td><td data-label="長線" class="" title="已超越目標93%，透支<br>基本面分59/100">11<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">3661 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3661_世芯-KY.md" target="_blank">世芯-KY</a><span class="etf e50">0050</span></td>
@@ -1070,6 +1153,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標106%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">2059 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2059_川湖.md" target="_blank">川湖</a><span class="etf e50">0050</span></td>
@@ -1081,6 +1165,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標106%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">4958 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/4958_臻鼎-KY.md" target="_blank">臻鼎-KY</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -1092,6 +1177,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標120%，透支<br>基本面偏弱(0)">-18<br><small>偏空</small></td>
 </tr>
 <tr>
 <td data-label="">6805 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6805_富世達.md" target="_blank">富世達</a><span class="etf e981">00981A</span></td>
@@ -1103,6 +1189,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標121%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">1590 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/1590_亞德客-KY.md" target="_blank">亞德客-KY</a><span class="etf e981">00981A</span></td>
@@ -1114,6 +1201,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標121%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">8210 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/8210_勤誠.md" target="_blank">勤誠</a><span class="etf e981">00981A</span></td>
@@ -1125,6 +1213,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標170%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">6187 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6187_萬潤.md" target="_blank">萬潤</a><span class="etf e981">00981A</span></td>
@@ -1136,6 +1225,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標199%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">2360 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/2360_致茂.md" target="_blank">致茂</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -1147,6 +1237,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-1.9%偏空">-10<br><small>中性</small></td><td data-label="長線" class="" title="已超越目標200%，透支<br>基本面分62/100">16<br><small>偏多</small></td>
 </tr>
 <tr>
 <td data-label="">3665 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3665_貿聯-KY.md" target="_blank">貿聯-KY</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -1158,6 +1249,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="日漲+1.1%偏多">10<br><small>偏多</small></td><td data-label="長線" class="" title="已超越目標355%，透支<br>基本面分51/100">3<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">6223 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/6223_旺矽.md" target="_blank">旺矽</a><span class="etf e981">00981A</span></td>
@@ -1169,6 +1261,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="" title="">0<br><small>中性</small></td><td data-label="長線" class="down" title="已超越目標507%，透支<br>基本面偏弱(0)">-23<br><small>賣出</small></td>
 </tr>
 <tr>
 <td data-label="">3653 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/3653_健策.md" target="_blank">健策</a><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
@@ -1180,6 +1273,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="etf e50">0050</span><span class="etf e981">00981A</span></td>
 <td data-label="產業"></td>
+<td data-label="短線" class="down" title="日跌-3.7%弱勢<br>接近52W高點（位置93%）">-15<br><small>偏空</small></td><td data-label="長線" class="down" title="已超越目標1698%，透支<br>0050成分股（被動資金支撐）">-10<br><small>中性</small></td>
 </tr>
 <tr>
 <td data-label="">7610 <a href="https://github.com/RainWu0123/StockTW/blob/main/research/7610_聯友金屬創.md" target="_blank">聯友金屬-創</a></td>
@@ -1191,6 +1285,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 <td data-label="距離">🔴 已達標</td>
 <td data-label="ETF"><span class="muted">—</span></td>
 <td data-label="產業">工業/網通</td>
+<td data-label="短線" class="up" title="日漲+8.9%強勢<br>接近52W高點（位置98%）">25<br><small>買進</small></td><td data-label="長線" class="" title="已超越目標4075%，透支<br>基本面分52/100">-4<br><small>中性</small></td>
 </tr></tbody></table></div>
 <footer>StockTW Research Dashboard ｜ 目標價不构成投資建議 ｜ 資料截止 2026-08-22</footer>
 </div>

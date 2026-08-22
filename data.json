@@ -45,7 +45,27 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "0.81"
+      "pe": "0.81",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "低於目標11%",
+            "盈餘成長37%"
+          ]
+        },
+        "qt_combined": {
+          "score": 9.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "1102",
@@ -91,7 +111,30 @@
       "in_ai_etf": true,
       "etf0050": null,
       "etf00981A": null,
-      "pe": "0.67"
+      "pe": "0.67",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+0.7%偏多",
+            "營收衰退-11%"
+          ]
+        },
+        "qt_long": {
+          "score": 8,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "基本面分62/100",
+            "盈餘成長37%"
+          ]
+        },
+        "qt_combined": {
+          "score": 8.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "1216",
@@ -138,7 +181,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.39,
       "etf00981A": null,
-      "pe": "3.23"
+      "pe": "3.23",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-0.9%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 28,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標9%",
+            "基本面分58/100",
+            "盈餘成長28%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 12.8,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "1301",
@@ -185,7 +252,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "0.66"
+      "pe": "0.66",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+2.8%強勢",
+            "接近52W高點（位置114%）",
+            "營收衰退-11%"
+          ]
+        },
+        "qt_long": {
+          "score": 13,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "基本面分51/100",
+            "盈餘成長6336%"
+          ]
+        },
+        "qt_combined": {
+          "score": 17.8,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "1303",
@@ -232,7 +323,32 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.93,
       "etf00981A": null,
-      "pe": "3.19"
+      "pe": "3.19",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+3.2%強勢",
+            "接近52W高點（位置131%）"
+          ]
+        },
+        "qt_long": {
+          "score": 43,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標20%，有空間",
+            "基本面分53/100",
+            "盈餘成長3046%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 35.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "1326",
@@ -283,7 +399,29 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "0.68"
+      "pe": "0.68",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+2.9%強勢",
+            "接近52W高點（位置103%）"
+          ]
+        },
+        "qt_long": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "低於目標12%"
+          ]
+        },
+        "qt_combined": {
+          "score": 16.0,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "1590",
@@ -300,7 +438,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": 0.24,
-      "pe": "5.24"
+      "pe": "5.24",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標121%，透支",
+            "基本面偏弱(0)",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2002",
@@ -347,7 +506,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "0.99"
+      "pe": "0.99",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+0.5%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標15%，有空間"
+          ]
+        },
+        "qt_combined": {
+          "score": 16.0,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2059",
@@ -364,7 +544,28 @@
       "lastVerified": "",
       "etf0050": 0.78,
       "etf00981A": null,
-      "pe": "37.79"
+      "pe": "37.79",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標106%，透支",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2108",
@@ -381,7 +582,26 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "1.05"
+      "pe": "1.05",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -8,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": -4.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2301",
@@ -432,7 +652,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.54,
       "etf00981A": null,
-      "pe": "6.18"
+      "pe": "6.18",
+      "qt": {
+        "qt_short": {
+          "score": -5,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-2.2%偏空",
+            "接近52W高點（位置99%）"
+          ]
+        },
+        "qt_long": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標13%",
+            "盈餘成長11%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 10.0,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2303",
@@ -479,7 +723,32 @@
       "targetDist": -13.7,
       "researchTheme": "",
       "lastVerified": "2026-07-14",
-      "pe": "3.29"
+      "pe": "3.29",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+0.9%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標14%",
+            "基本面分59/100",
+            "盈餘成長108%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 26.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2308",
@@ -526,7 +795,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 3.43,
       "etf00981A": 3.38,
-      "pe": "15.48"
+      "pe": "15.48",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 56,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標24%，有空間",
+            "基本面分58/100",
+            "盈餘成長101%",
+            "營收年增34%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 33.6,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2312",
@@ -589,7 +882,29 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "5.24"
+      "pe": "5.24",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.8%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標18%，有空間",
+            "盈餘成長14%"
+          ]
+        },
+        "qt_combined": {
+          "score": 11.0,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2317",
@@ -636,7 +951,29 @@
       "lastVerified": "2026-08-22",
       "etf0050": 3.01,
       "etf00981A": null,
-      "pe": "1.80"
+      "pe": "1.80",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標15%，有空間",
+            "基本面分61/100",
+            "盈餘成長18%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 22.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2327",
@@ -683,7 +1020,31 @@
       "targetDist": -20.9,
       "researchTheme": "被動元件/AI電源周邊",
       "lastVerified": "2026-08-22",
-      "pe": "6.44"
+      "pe": "6.44",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.4%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 35,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標21%，有空間",
+            "盈餘成長45%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 17.0,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2330",
@@ -730,7 +1091,34 @@
       "lastVerified": "2026-08-22",
       "etf0050": 57.71,
       "etf00981A": 9.04,
-      "pe": "9.72"
+      "pe": "9.72",
+      "qt": {
+        "qt_short": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.5%偏多",
+            "接近52W高點（位置93%）"
+          ]
+        },
+        "qt_long": {
+          "score": 46,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標7%",
+            "基本面分61/100",
+            "盈餘成長58%",
+            "營收年增35%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 33.6,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2337",
@@ -781,7 +1169,27 @@
       "targetDist": -44.3,
       "researchTheme": "NOR Flash/利基記憶體",
       "lastVerified": "2026-07-14",
-      "pe": "3.92"
+      "pe": "3.92",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "現價低於目標44%，安全邊際大",
+            "營收年增71%"
+          ]
+        },
+        "qt_combined": {
+          "score": 22.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2344",
@@ -828,7 +1236,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.52,
       "etf00981A": null,
-      "pe": "4.94"
+      "pe": "4.94",
+      "qt": {
+        "qt_short": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+2.5%強勢"
+          ]
+        },
+        "qt_long": {
+          "score": 31,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標10%",
+            "基本面分51/100",
+            "營收年增91%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 26.6,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2345",
@@ -875,7 +1307,33 @@
       "lastVerified": "2026-08-22",
       "etf0050": 1.06,
       "etf00981A": 4.74,
-      "pe": "16.48"
+      "pe": "16.48",
+      "qt": {
+        "qt_short": {
+          "score": -20,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "日跌-3.3%弱勢"
+          ]
+        },
+        "qt_long": {
+          "score": 66,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "現價低於目標36%，安全邊際大",
+            "基本面分57/100",
+            "盈餘成長63%",
+            "營收年增64%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 31.6,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2348",
@@ -942,7 +1400,30 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "3.03"
+      "pe": "3.03",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.9%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": 33,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標16%，有空間",
+            "基本面分60/100",
+            "盈餘成長43%"
+          ]
+        },
+        "qt_combined": {
+          "score": 23.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2357",
@@ -959,7 +1440,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.63,
       "etf00981A": null,
-      "pe": "2.27"
+      "pe": "2.27",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 7,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "低於目標12%",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 4.2,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2360",
@@ -1010,7 +1512,33 @@
       "target": 700.0,
       "targetDist": 200.0,
       "researchTheme": "測試設備/電池測試",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.9%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 16,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "已超越目標200%，透支",
+            "基本面分62/100",
+            "盈餘成長82%",
+            "營收年增73%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 5.6,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2363",
@@ -1027,7 +1555,27 @@
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "0.53"
+      "pe": "0.53",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 22,
+          "signal": "🟢 買進",
+          "reasons": [
+            "現價低於目標37%，安全邊際大",
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": 13.2,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2368",
@@ -1078,7 +1626,33 @@
       "targetDist": -35.7,
       "researchTheme": "高階PCB/AI伺服器板",
       "lastVerified": "2026-08-22",
-      "pe": "11.84"
+      "pe": "11.84",
+      "qt": {
+        "qt_short": {
+          "score": -20,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "日跌-5.8%弱勢"
+          ]
+        },
+        "qt_long": {
+          "score": 66,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "現價低於目標36%，安全邊際大",
+            "基本面分61/100",
+            "盈餘成長91%",
+            "營收年增60%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 31.6,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2375",
@@ -1125,7 +1699,29 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "1.25"
+      "pe": "1.25",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-2.0%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "低於目標18%，有空間",
+            "盈餘衰退-36%"
+          ]
+        },
+        "qt_combined": {
+          "score": 5.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2377",
@@ -1209,7 +1805,28 @@
       "target": 680.0,
       "targetDist": 5.0,
       "researchTheme": "網通SoC/類比IC",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.6%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": -20,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "已超越目標5%，透支"
+          ]
+        },
+        "qt_combined": {
+          "score": -8.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2382",
@@ -1256,7 +1873,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.88,
       "etf00981A": null,
-      "pe": "5.09"
+      "pe": "5.09",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.7%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 41,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標15%，有空間",
+            "基本面分66/100",
+            "營收年增67%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 20.6,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2383",
@@ -1303,7 +1944,33 @@
       "targetDist": 3.3,
       "researchTheme": "AI高速CCL/M8-M9材料",
       "lastVerified": "2026-08-22",
-      "pe": "34.89"
+      "pe": "34.89",
+      "qt": {
+        "qt_short": {
+          "score": -15,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "日跌-5.1%弱勢",
+            "接近52W高點（位置93%）"
+          ]
+        },
+        "qt_long": {
+          "score": 36,
+          "signal": "🟢 買進",
+          "reasons": [
+            "基本面分54/100",
+            "盈餘成長53%",
+            "營收年增52%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 15.6,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2385",
@@ -1366,7 +2033,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.32,
       "etf00981A": null,
-      "pe": "10.19"
+      "pe": "10.19",
+      "qt": {
+        "qt_short": {
+          "score": -15,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "日跌-3.6%弱勢",
+            "接近52W高點（位置141%）"
+          ]
+        },
+        "qt_long": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標7%",
+            "盈餘成長22%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 6.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2404",
@@ -1413,7 +2104,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "11.18"
+      "pe": "11.18",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.4%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 43,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標12%",
+            "基本面分72/100",
+            "盈餘成長54%",
+            "營收年增76%"
+          ]
+        },
+        "qt_combined": {
+          "score": 21.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2408",
@@ -1460,7 +2175,32 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.55,
       "etf00981A": null,
-      "pe": "5.65"
+      "pe": "5.65",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+2.1%強勢",
+            "接近52W高點（位置105%）"
+          ]
+        },
+        "qt_long": {
+          "score": 1,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標39%，透支",
+            "基本面分52/100",
+            "營收年增583%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 10.6,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2412",
@@ -1507,7 +2247,27 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.52,
       "etf00981A": null,
-      "pe": "2.89"
+      "pe": "2.89",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "低於目標6%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 9.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2449",
@@ -1558,7 +2318,32 @@
       "targetDist": -33.7,
       "researchTheme": "AI晶片測試",
       "lastVerified": "2026-08-22",
-      "pe": "4.53"
+      "pe": "4.53",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.3%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 43,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "現價低於目標34%，安全邊際大",
+            "盈餘衰退-47%",
+            "營收年增39%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 21.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2454",
@@ -1605,7 +2390,30 @@
       "lastVerified": "2026-08-22",
       "etf0050": 5.69,
       "etf00981A": 6.42,
-      "pe": "14.26"
+      "pe": "14.26",
+      "qt": {
+        "qt_short": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+2.4%強勢"
+          ]
+        },
+        "qt_long": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標10%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 20.0,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2603",
@@ -1656,7 +2464,32 @@
       "target": 180.0,
       "targetDist": 39.7,
       "researchTheme": "貨櫃航運",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+2.2%強勢",
+            "接近52W高點（位置113%）",
+            "營收衰退-21%"
+          ]
+        },
+        "qt_long": {
+          "score": -25,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標40%，透支",
+            "盈餘衰退-70%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -5.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2609",
@@ -1707,7 +2540,30 @@
       "target": 68.0,
       "targetDist": -5.9,
       "researchTheme": "貨櫃遠洋航運",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+6.1%強勢",
+            "營收衰退-15%"
+          ]
+        },
+        "qt_long": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "低於目標6%",
+            "盈餘衰退-82%"
+          ]
+        },
+        "qt_combined": {
+          "score": 8.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2610",
@@ -1758,7 +2614,30 @@
       "target": 32.0,
       "targetDist": -36.3,
       "researchTheme": "航空客運+貨運",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+2.0%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": 43,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "現價低於目標36%，安全邊際大",
+            "基本面分65/100",
+            "盈餘成長23%"
+          ]
+        },
+        "qt_combined": {
+          "score": 29.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2615",
@@ -1809,7 +2688,29 @@
       "target": 130.0,
       "targetDist": -4.2,
       "researchTheme": "貨櫃航運近洋線",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+9.7%強勢",
+            "接近52W高點（位置199%）"
+          ]
+        },
+        "qt_long": {
+          "score": 8,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "基本面分57/100"
+          ]
+        },
+        "qt_combined": {
+          "score": 14.8,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2618",
@@ -1860,7 +2761,31 @@
       "target": 60.0,
       "targetDist": -29.0,
       "researchTheme": "航空客運",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+0.8%偏多",
+            "接近52W高點（位置90%）"
+          ]
+        },
+        "qt_long": {
+          "score": 33,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標29%，有空間",
+            "基本面分68/100",
+            "盈餘成長40%"
+          ]
+        },
+        "qt_combined": {
+          "score": 25.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2637",
@@ -1893,7 +2818,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.36,
       "etf00981A": null,
-      "pe": "2.26"
+      "pe": "2.26",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標20%，透支",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2881",
@@ -1940,7 +2886,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 1.08,
       "etf00981A": null,
-      "pe": "2.05"
+      "pe": "2.05",
+      "qt": {
+        "qt_short": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+4.7%強勢"
+          ]
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標14%",
+            "基本面分73/100",
+            "營收年增176%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 30.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2882",
@@ -1987,7 +2957,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.94,
       "etf00981A": null,
-      "pe": "2.01"
+      "pe": "2.01",
+      "qt": {
+        "qt_short": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+2.9%強勢"
+          ]
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標13%",
+            "基本面分72/100",
+            "營收年增94%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 30.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2883",
@@ -2004,7 +2998,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.48,
       "etf00981A": null,
-      "pe": "1.58"
+      "pe": "1.58",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 7,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "低於目標10%",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 4.2,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2884",
@@ -2055,7 +3070,32 @@
       "target": 36.0,
       "targetDist": 5.6,
       "researchTheme": "金融控股/無壽險純銀行+證券",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.7%偏多",
+            "接近52W高點（位置119%）"
+          ]
+        },
+        "qt_long": {
+          "score": -2,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標6%，透支",
+            "基本面分60/100",
+            "盈餘成長15%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 4.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2885",
@@ -2072,7 +3112,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.72,
       "etf00981A": null,
-      "pe": "2.38"
+      "pe": "2.38",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標14%，透支",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2886",
@@ -2123,7 +3184,32 @@
       "target": 42.0,
       "targetDist": 11.8,
       "researchTheme": "金融控股/公股無壽險",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.2%偏多",
+            "接近52W高點（位置112%）"
+          ]
+        },
+        "qt_long": {
+          "score": -2,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標12%，透支",
+            "基本面分59/100",
+            "盈餘成長16%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 4.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2887",
@@ -2140,7 +3226,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.86,
       "etf00981A": null,
-      "pe": "1.63"
+      "pe": "1.63",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標16%，透支",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2890",
@@ -2191,7 +3298,33 @@
       "target": 35.0,
       "targetDist": 13.1,
       "researchTheme": "金融控股/銀行+證券",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+0.6%偏多",
+            "接近52W高點（位置94%）"
+          ]
+        },
+        "qt_long": {
+          "score": 6,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標13%，透支",
+            "基本面分66/100",
+            "盈餘成長38%",
+            "營收年增39%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 9.6,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2891",
@@ -2208,7 +3341,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 1.16,
       "etf00981A": null,
-      "pe": "2.32"
+      "pe": "2.32",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標16%，透支",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "2892",
@@ -2259,7 +3413,32 @@
       "target": 30.0,
       "targetDist": 12.2,
       "researchTheme": "金融控股/公股銀行主導",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.1%偏多",
+            "接近52W高點（位置115%）"
+          ]
+        },
+        "qt_long": {
+          "score": -2,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標12%，透支",
+            "基本面分62/100",
+            "盈餘成長26%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 4.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3005",
@@ -2306,7 +3485,27 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "2.87"
+      "pe": "2.87",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 28,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標22%，有空間",
+            "基本面分55/100"
+          ]
+        },
+        "qt_combined": {
+          "score": 16.8,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3008",
@@ -2353,7 +3552,30 @@
       "targetDist": 75.3,
       "researchTheme": "光學鏡頭",
       "lastVerified": "2026-08-22",
-      "pe": "3.83"
+      "pe": "3.83",
+      "qt": {
+        "qt_short": {
+          "score": 15,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.7%偏多",
+            "接近52W高點（位置107%）"
+          ]
+        },
+        "qt_long": {
+          "score": -15,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "已超越目標75%，透支",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -3.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3017",
@@ -2400,7 +3622,34 @@
       "targetDist": -20.4,
       "researchTheme": "AI散熱/水冷",
       "lastVerified": "2026-08-22",
-      "pe": "20.38"
+      "pe": "20.38",
+      "qt": {
+        "qt_short": {
+          "score": -15,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "日跌-4.0%弱勢",
+            "接近52W高點（位置94%）"
+          ]
+        },
+        "qt_long": {
+          "score": 63,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標20%，有空間",
+            "基本面分76/100",
+            "盈餘成長146%",
+            "營收年增110%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 31.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3026",
@@ -2417,7 +3666,27 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "10.26"
+      "pe": "10.26",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 12,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "低於目標29%，有空間",
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": 7.2,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3034",
@@ -2468,7 +3737,30 @@
       "target": 620.0,
       "targetDist": -14.5,
       "researchTheme": "驅動IC/SoC",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+0.6%偏多",
+            "營收衰退-15%"
+          ]
+        },
+        "qt_long": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "低於目標14%",
+            "盈餘衰退-28%"
+          ]
+        },
+        "qt_combined": {
+          "score": 4.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3037",
@@ -2519,7 +3811,33 @@
       "lastVerified": "2026-08-19",
       "etf0050": 1.5,
       "etf00981A": 4.87,
-      "pe": "13.93"
+      "pe": "13.93",
+      "qt": {
+        "qt_short": {
+          "score": -15,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "日跌-4.8%弱勢",
+            "接近52W高點（位置96%）"
+          ]
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標6%",
+            "基本面分57/100",
+            "盈餘成長446%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 16.8,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3045",
@@ -2570,7 +3888,29 @@
       "target": 145.0,
       "targetDist": -20.7,
       "researchTheme": "電信/AI資料中心/momo",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標21%，有空間",
+            "基本面分53/100",
+            "盈餘成長12%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 22.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3081",
@@ -2586,7 +3926,26 @@
       "researchFile": "research/3081_聯亞.md",
       "lastVerified": "2026-08-19",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -8,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": -4.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3163",
@@ -2653,7 +4012,32 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.55,
       "etf00981A": null,
-      "pe": "2.88"
+      "pe": "2.88",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-2.5%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 68,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "現價低於目標31%，安全邊際大",
+            "基本面分81/100",
+            "盈餘成長60%",
+            "營收年增144%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 36.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3443",
@@ -2700,7 +4084,33 @@
       "targetDist": 93.1,
       "researchTheme": "AI ASIC設計服務",
       "lastVerified": "2026-08-22",
-      "pe": "55.73"
+      "pe": "55.73",
+      "qt": {
+        "qt_short": {
+          "score": -5,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-0.5%偏空",
+            "接近52W高點（位置93%）"
+          ]
+        },
+        "qt_long": {
+          "score": 11,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "已超越目標93%，透支",
+            "基本面分59/100",
+            "盈餘成長72%",
+            "營收年增63%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 4.6,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3529",
@@ -2746,7 +4156,28 @@
       "target": 3300.0,
       "targetDist": -34.7,
       "researchTheme": "NPU/IP授權",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-2.5%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 30,
+          "signal": "🟢 買進",
+          "reasons": [
+            "現價低於目標35%，安全邊際大"
+          ]
+        },
+        "qt_combined": {
+          "score": 14.0,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3653",
@@ -2797,7 +4228,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.48,
       "etf00981A": 2.84,
-      "pe": "33.57"
+      "pe": "33.57",
+      "qt": {
+        "qt_short": {
+          "score": -15,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "日跌-3.7%弱勢",
+            "接近52W高點（位置93%）"
+          ]
+        },
+        "qt_long": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標1698%，透支",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -12.0,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3661",
@@ -2814,7 +4269,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.29,
       "etf00981A": null,
-      "pe": "5.29"
+      "pe": "5.29",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標106%，透支",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3665",
@@ -2865,7 +4341,32 @@
       "target": 500.0,
       "targetDist": 355.0,
       "researchTheme": "線束/AI伺服器線纜",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.1%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": 3,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標355%，透支",
+            "基本面分51/100",
+            "盈餘成長40%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 5.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "3673",
@@ -2929,7 +4430,32 @@
       "lastVerified": "2026-08-22",
       "etf0050": 1.96,
       "etf00981A": 3.15,
-      "pe": "6.63"
+      "pe": "6.63",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-0.5%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 48,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標16%，有空間",
+            "基本面分53/100",
+            "盈餘成長88%",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 24.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "4904",
@@ -2980,7 +4506,28 @@
       "target": 105.0,
       "targetDist": -2.4,
       "researchTheme": "電信/企業ICT/數位服務",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 18,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "基本面分51/100",
+            "盈餘成長14%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 10.8,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "4938",
@@ -3031,7 +4578,30 @@
       "target": 65.0,
       "targetDist": 36.3,
       "researchTheme": "電子代工/組裝",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.2%偏空",
+            "營收衰退-10%"
+          ]
+        },
+        "qt_long": {
+          "score": -30,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標36%，透支",
+            "盈餘衰退-64%"
+          ]
+        },
+        "qt_combined": {
+          "score": -22.0,
+          "signal": "🔴 賣出",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "4958",
@@ -3048,7 +4618,29 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.35,
       "etf00981A": 0.24,
-      "pe": "3.17"
+      "pe": "3.17",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -18,
+          "signal": "🟠 偏空",
+          "reasons": [
+            "已超越目標120%，透支",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -10.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "4971",
@@ -3064,7 +4656,27 @@
       "researchFile": "research/4971_IET-KY.md",
       "lastVerified": "2026-08-19",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -28,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標7%，透支",
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": -16.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "4979",
@@ -3080,7 +4692,28 @@
       "researchFile": "research/4979_華星光.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
-      "etf00981A": 0.24
+      "etf00981A": 0.24,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標44%，透支",
+            "基本面偏弱(0)",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "5243",
@@ -3144,7 +4777,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "2.93"
+      "pe": "2.93",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-0.7%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 36,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標6%",
+            "基本面分69/100",
+            "盈餘成長51%",
+            "營收年增39%"
+          ]
+        },
+        "qt_combined": {
+          "score": 17.6,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "5274",
@@ -3160,7 +4817,26 @@
       "researchFile": "research/5274_信驊.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -8,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": -4.8,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "5515",
@@ -3227,7 +4903,31 @@
       "target": 30.0,
       "targetDist": -16.5,
       "researchTheme": "金融控股/公股低估值",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.0%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": 38,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標16%，有空間",
+            "基本面分59/100",
+            "盈餘成長20%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 26.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6166",
@@ -3274,7 +4974,30 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "4.18"
+      "pe": "4.18",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.7%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 48,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "現價低於目標41%，安全邊際大",
+            "基本面分58/100",
+            "盈餘成長407%"
+          ]
+        },
+        "qt_combined": {
+          "score": 24.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6187",
@@ -3290,7 +5013,28 @@
       "researchFile": "research/6187_萬潤.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
-      "etf00981A": 0.43
+      "etf00981A": 0.43,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標199%，透支",
+            "基本面偏弱(0)",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6223",
@@ -3306,7 +5050,28 @@
       "researchFile": "research/6223_旺矽.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
-      "etf00981A": 4.48
+      "etf00981A": 4.48,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標507%，透支",
+            "基本面偏弱(0)",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6239",
@@ -3353,7 +5118,29 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "3.46"
+      "pe": "3.46",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 46,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標27%，有空間",
+            "基本面分52/100",
+            "盈餘成長59%",
+            "營收年增38%"
+          ]
+        },
+        "qt_combined": {
+          "score": 27.6,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6269",
@@ -3395,7 +5182,26 @@
       "in_ai_etf": true,
       "etf0050": null,
       "etf00981A": null,
-      "pe": "0.97"
+      "pe": "0.97",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.9%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_combined": {
+          "score": -4.0,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6274",
@@ -3411,7 +5217,28 @@
       "researchFile": "research/6274_台燿.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
-      "etf00981A": 2.02
+      "etf00981A": 2.02,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標66%，透支",
+            "基本面偏弱(0)",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6278",
@@ -3475,7 +5302,29 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "3.18"
+      "pe": "3.18",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-0.6%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": 35,
+          "signal": "🟢 買進",
+          "reasons": [
+            "現價低於目標33%，安全邊際大",
+            "盈餘成長23%"
+          ]
+        },
+        "qt_combined": {
+          "score": 17.0,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6415",
@@ -3492,7 +5341,27 @@
       "lastVerified": "2026-07-14",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "4.54"
+      "pe": "4.54",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 12,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "低於目標24%，有空間",
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": 7.2,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6442",
@@ -3539,7 +5408,30 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "9.16"
+      "pe": "9.16",
+      "qt": {
+        "qt_short": {
+          "score": -10,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "日跌-1.9%偏空"
+          ]
+        },
+        "qt_long": {
+          "score": -2,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標91%，透支",
+            "基本面分51/100",
+            "盈餘成長66%"
+          ]
+        },
+        "qt_combined": {
+          "score": -5.2,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6505",
@@ -3591,7 +5483,32 @@
       "targetDist": -27.8,
       "researchTheme": "煉油/石化",
       "lastVerified": "2026-07-14",
-      "pe": "1.48"
+      "pe": "1.48",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+3.8%強勢",
+            "接近52W高點（位置123%）"
+          ]
+        },
+        "qt_long": {
+          "score": 43,
+          "signal": "🟢 強力買進",
+          "reasons": [
+            "低於目標28%，有空間",
+            "基本面分51/100",
+            "盈餘成長453%",
+            "0050成分股（被動資金支撐）"
+          ]
+        },
+        "qt_combined": {
+          "score": 35.8,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6669",
@@ -3608,7 +5525,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": 0.67,
       "etf00981A": 4.8,
-      "pe": "8.51"
+      "pe": "8.51",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 2,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 1.2,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6770",
@@ -3655,7 +5593,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "2.50"
+      "pe": "2.50",
+      "qt": {
+        "qt_short": {
+          "score": 10,
+          "signal": "🟡 偏多",
+          "reasons": [
+            "日漲+1.6%偏多"
+          ]
+        },
+        "qt_long": {
+          "score": 30,
+          "signal": "🟢 買進",
+          "reasons": [
+            "現價低於目標32%，安全邊際大"
+          ]
+        },
+        "qt_combined": {
+          "score": 22.0,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6805",
@@ -3672,7 +5631,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": 0.92,
-      "pe": "14.48"
+      "pe": "14.48",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標121%，透支",
+            "基本面偏弱(0)",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "6830",
@@ -3719,7 +5699,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "7.40"
+      "pe": "7.40",
+      "qt": {
+        "qt_short": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+10.0%強勢"
+          ]
+        },
+        "qt_long": {
+          "score": 20,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標23%，有空間"
+          ]
+        },
+        "qt_combined": {
+          "score": 20.0,
+          "signal": "🟢 買進",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "7610",
@@ -3766,7 +5767,31 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "pe": "26.27"
+      "pe": "26.27",
+      "qt": {
+        "qt_short": {
+          "score": 25,
+          "signal": "🟢 買進",
+          "reasons": [
+            "日漲+8.9%強勢",
+            "接近52W高點（位置98%）"
+          ]
+        },
+        "qt_long": {
+          "score": -4,
+          "signal": "⚪ 中性",
+          "reasons": [
+            "已超越目標4075%，透支",
+            "基本面分52/100",
+            "營收年增484%"
+          ]
+        },
+        "qt_combined": {
+          "score": 7.6,
+          "signal": "⚪ 中性",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "7769",
@@ -3800,7 +5825,29 @@
       "lastVerified": "2026-08-19",
       "etf0050": 0.25,
       "etf00981A": 3.04,
-      "pe": "14.89"
+      "pe": "14.89",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 22,
+          "signal": "🟢 買進",
+          "reasons": [
+            "低於目標19%，有空間",
+            "基本面偏弱(0)",
+            "0050成分股（被動資金支撐）",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": 13.2,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "8210",
@@ -3817,7 +5864,28 @@
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": 0.83,
-      "pe": "9.49"
+      "pe": "9.49",
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": -23,
+          "signal": "🔴 賣出",
+          "reasons": [
+            "已超越目標170%，透支",
+            "基本面偏弱(0)",
+            "00981A成分股（主動基金布局）"
+          ]
+        },
+        "qt_combined": {
+          "score": -13.8,
+          "signal": "🟠 偏空",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     },
     {
       "code": "8299",
@@ -3833,7 +5901,27 @@
       "researchFile": "research/8299_群聯.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "qt": {
+        "qt_short": {
+          "score": 0,
+          "signal": "⚪ 中性",
+          "reasons": []
+        },
+        "qt_long": {
+          "score": 22,
+          "signal": "🟢 買進",
+          "reasons": [
+            "現價低於目標31%，安全邊際大",
+            "基本面偏弱(0)"
+          ]
+        },
+        "qt_combined": {
+          "score": 13.2,
+          "signal": "🟡 偏多",
+          "note": "短線40%＋長線60%加權"
+        }
+      }
     }
   ],
   "updated": "2026-08-22T10:47:40.099301",

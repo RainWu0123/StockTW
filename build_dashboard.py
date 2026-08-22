@@ -8,6 +8,19 @@ BASE = Path('/home/ubuntu/investment')
 data = json.loads((BASE/'data.json').read_text(encoding='utf-8'))
 stocks = sorted(data['stocks'], key=lambda s: s.get('targetDist') if s.get('targetDist') is not None else -999)
 
+def qt_cells(s):
+    q = s.get('qt', {})
+    if not q:
+        return '<td data-label="短線"><span class="muted">—</span></td><td data-label="長線"><span class="muted">—</span></td>'
+    sh, lg = q.get('qt_short',{}), q.get('qt_long',{})
+    def cell(d, label):
+        score = d.get('score','')
+        signal = d.get('signal','')
+        cls = 'up' if isinstance(score,(int,float)) and score >= 20 else ('down' if isinstance(score,(int,float)) and score <= -10 else '')
+        reasons = '<br>'.join(d.get('reasons',[])[:2])
+        return f'<td data-label="{label}" class="{cls}" title="{reasons}">{score}<br><small>{signal.split(" ")[-1] if " " in signal else signal}</small></td>'
+    return cell(sh,'短線') + cell(lg,'長線')
+
 def etf_badges(s):
     b=''
     if s.get('etf0050'): b+=f'<span class="etf e50">0050</span>'
@@ -42,6 +55,7 @@ for s in stocks:
 <td data-label="距離">{dist_badge(s)}</td>
 <td data-label="ETF">{etf_badges(s) or '<span class="muted">—</span>'}</td>
 <td data-label="產業">{esc((s.get('industry') or '')[:8])}</td>
+{qt_cells(s)}
 </tr>''')
 
 theme_chips = ''.join(
@@ -68,7 +82,7 @@ h1{font-size:1.6rem;margin-bottom:4px}.sub{color:var(--muted);margin-bottom:20px
 .tchip span{color:var(--muted);margin-left:4px}
 .tchip.on{background:var(--accent);color:#000;border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:auto}
-table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:1000px}
+table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:1150px}
 th{background:#1c2128;color:var(--muted);padding:10px 12px;text-align:left;position:sticky;top:0;cursor:pointer;user-select:none;white-space:nowrap}
 td{padding:9px 12px;border-top:1px solid var(--border);vertical-align:top}
 tr:hover td{background:#1c2128}
@@ -77,6 +91,8 @@ tr:hover td{background:#1c2128}
 .etf{display:inline-block;font-size:.62rem;border-radius:4px;padding:1px 5px;margin-left:4px;vertical-align:middle}
 .e50{background:#1f3a5f;color:#79b8ff;border:1px solid #2d4a6f}
 .e981{background:#3a2f1f;color:#e2b45a;border:1px solid #5a4a2d}
+td[title]{cursor:help;position:relative}
+@media(hover:hover){td[title]:hover::after{content:attr(title);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#1c2128;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:.78rem;color:var(--ink);white-space:nowrap;z-index:99;box-shadow:0 4px 16px rgba(0,0,0,.5);pointer-events:none}}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 @media(max-width:720px){body{padding:12px}.stats{grid-template-columns:repeat(2,1fr)}}
@@ -91,7 +107,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 </div>
 <div class="tbar" id="themes">THEME_CHIPS</div>
 <div class="card"><table id="tbl">
-<thead><tr><th data-k="code">代碼/名稱</th><th data-k="price">現價</th><th data-k="pct">漲跌</th><th data-k="score">評分</th><th>主題</th><th data-k="target">Base目標價</th><th data-k="targetDist">距離</th><th>ETF</th><th>產業</th></tr></thead>
+<thead><tr><th data-k="code">代碼/名稱</th><th data-k="price">現價</th><th data-k="pct">漲跌</th><th data-k="score">評分</th><th>主題</th><th data-k="target">Base目標價</th><th data-k="targetDist">距離</th><th>ETF</th><th data-k="">短線</th><th data-k="">長線</th><th>產業</th></tr></thead>
 <tbody>ROWS</tbody></table></div>
 <footer>StockTW Research Dashboard ｜ 目標價不构成投資建議 ｜ 資料截止 DATA_CUTOFF</footer>
 </div>
