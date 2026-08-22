@@ -1,847 +1,734 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-<title>台股 AI 投資追蹤 Pro</title>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StockTW 台股研究儀表板</title>
 <style>
-/* === 基礎層 === */
-:root {
-  --bg: #0b0d12;
-  --surface: #13161e;
-  --surface2: #181c26;
-  --surface3: #1f2433;
-  --text: #e6eaf2;
-  --muted: #7d899d;
-  --accent: #5aa9ff;
-  --gold: #d4a853;
-  --green: #34d399;
-  --red: #f87171;
-  --orange: #f59e0b;
-  --border: #252b3a;
-  --shadow-raise: 0 6px 24px rgba(0,0,0,.55), 0 1px 2px rgba(255,255,255,.03) inset;
-  --shadow-press: 0 2px 6px rgba(0,0,0,.5), 0 1px 0 rgba(0,0,0,.3) inset;
-  --radius: 14px;
-  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-}
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); -webkit-font-smoothing: antialiased; }
-body {
-  background:
-    radial-gradient(1200px 800px at 10% -10%, rgba(90,169,255,.06), transparent 55%),
-    radial-gradient(900px 600px at 90% 110%, rgba(212,168,83,.05), transparent 55%),
-    linear-gradient(180deg, #0d1017 0%, #0b0e15 50%, #0a0c11 100%);
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-a { color: var(--accent); text-decoration: none; }
-
-/* === 頂部列 === */
-.topbar {
-  position: sticky; top: 0; z-index: 50;
-  padding: 14px 16px;
-  background: linear-gradient(180deg, rgba(18,21,30,.95), rgba(12,14,20,.9));
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-}
-.topbar::after {
-  content: "";
-  position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(212,168,83,.35), transparent);
-}
-.brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-.brand h1 {
-  margin: 0; font-size: 18px; font-weight: 700; letter-spacing: .2px;
-  background: linear-gradient(180deg,#fff,#c8cdd8 55%,#8b95a8);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-}
-.brand .date { font-size: 12px; color: var(--muted); }
-.brand .time { font-size: 11px; color: var(--muted); font-weight: 400; }
-
-/* === Tab 列 === */
-.tabs {
-  display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 14px 0;
-  position: sticky; top: 66px; z-index: 40;
-}
-.tab {
-  position: relative;
-  padding: 10px 16px; border-radius: 12px;
-  background: linear-gradient(180deg, #181c26, #151922);
-  color: var(--muted); font-size: 14px; font-weight: 600;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-press);
-  cursor: pointer; user-select: none;
-  transition: color .2s, border-color .2s, box-shadow .2s, transform .15s;
-}
-.tab:active { transform: translateY(1px); }
-.tab:hover:not(.active) { color: var(--text); border-color: #303849; }
-.tab.active {
-  color: var(--text);
-  background: linear-gradient(180deg, #1e2433, #181d28);
-  border-color: #3a4258;
-  box-shadow: var(--shadow-raise);
-}
-.tab.active::before {
-  content: ""; position: absolute; inset: -1px; border-radius: 13px;
-  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.015));
-  pointer-events: none;
-}
-
-/* === 通用容器 === */
-.container { max-width: 1400px; margin: 0 auto; padding: 14px; }
-
-/* === 卡片 === */
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px 16px;
-  box-shadow: var(--shadow-press);
-  position: relative;
-}
-.card h2 {
-  margin: 0 0 10px; font-size: 11px; font-weight: 700;
-  color: var(--muted); text-transform: uppercase; letter-spacing: .8px;
-}
-.big { font-size: 28px; font-weight: 800; letter-spacing: -.3px; }
-
-/* === Grid 響應 === */
-.grid { display: grid; gap: 12px; }
-.grid-4 { grid-template-columns: repeat(4, 1fr); }
-@media (max-width: 1100px) { .grid-4 { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 640px) { .grid-4 { grid-template-columns: 1fr; } }
-
-/* === 表格（橫向捲動） === */
-.table-wrap {
-  overflow: auto; border-radius: var(--radius);
-  border: 1px solid var(--border); background: var(--surface);
-  box-shadow: var(--shadow-press);
-}
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-th {
-  position: sticky; top: 0; z-index: 2;
-  padding: 12px 10px; text-align: left; white-space: nowrap;
-  color: var(--muted); font-weight: 700; font-size: 12px;
-  background: linear-gradient(180deg, #1c2130, #181c26);
-  border-bottom: 1px solid var(--border);
-  cursor: pointer; user-select: none;
-}
-th:hover { color: var(--text); }
-td { padding: 11px 10px; border-bottom: 1px solid #1b2130; }
-tr { transition: background .12s; }
-tr:hover td { background: rgba(255,255,255,.02); }
-
-/* 分級左色條 */
-tr.tier-row-t1 td { border-left: 3px solid var(--green); }
-tr.tier-row-t2 td { border-left: 3px solid var(--accent); }
-tr.tier-row-t3 td { border-left: 3px solid var(--orange); }
-tr.tier-row-t4 td { border-left: 3px solid #6b7280; }
-
-/* === 標籤/膠囊 === */
-.tier-tag, .pill {
-  display: inline-flex; align-items: center;
-  padding: 4px 10px; border-radius: 999px;
-  font-size: 11px; font-weight: 700; letter-spacing: .3px;
-}
-.tier-t1 { background: #122e26; color: var(--green); border: 1px solid rgba(52,211,153,.2); }
-.tier-t2 { background: #14263a; color: var(--accent); border: 1px solid rgba(90,169,255,.2); }
-.tier-t3 { background: #3a2714; color: var(--orange); border: 1px solid rgba(245,158,11,.22); }
-.tier-t4 { background: transparent; color: var(--muted); border: 1px solid rgba(156,163,175,.15); }
-.neutral { background: transparent; color: var(--muted); border: 1px solid rgba(156,163,175,.15); }
-.pill.ok    { background: #122e26; color: var(--green); border: 1px solid rgba(52,211,153,.2); }
-.pill.warn  { background: #3a2714; color: var(--orange); border: 1px solid rgba(245,158,11,.22); }
-.pill.bad   { background: #361018; color: var(--red);   border: 1px solid rgba(248,113,113,.22); }
-
-/* === 控制列 === */
-.ctrl { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; align-items: center; }
-.ctrl input, .ctrl select, .ctrl button {
-  background: linear-gradient(180deg, #151922, #12161e);
-  color: var(--text); border: 1px solid var(--border);
-  border-radius: 10px; padding: 10px 12px; font-size: 14px;
-  box-shadow: var(--shadow-press);
-  outline: none;
-}
-.ctrl input:focus, .ctrl select:focus { border-color: var(--accent); }
-.ctrl button:active { transform: translateY(1px); }
-
-/* === 警示列 === */
-.alert {
-  padding: 12px 14px; border-radius: 12px;
-  background: linear-gradient(180deg, #1e1a22, #1a1620);
-  border: 1px solid #342840; color: #e3cbff;
-  font-size: 13px; margin: 10px 0;
-  display: flex; align-items: center; gap: 8px;
-}
-.alert::before { content: "ℹ️"; font-size: 14px; flex-shrink: 0; }
-
-/* === 產業 Treemap (Bloomberg / TradingView) === */
-.heat-wrap {
-  position: relative;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-press);
-}
-.heat-container {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  margin: 0 auto;
-}
-.heat-tile {
-  position: absolute;
-  border-radius: 3px;
-  overflow: hidden;
-  cursor: pointer;
-  border: 1px solid rgba(255,255,255,0.06);
-  transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s, border-color .18s;
-  display: flex; flex-direction: column; justify-content: space-between;
-}
-.heat-tile:hover {
-  z-index: 20;
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 12px 32px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.15);
-}
-.heat-tile-inner {
-  padding: 10px 12px; height: 100%;
-  display: flex; flex-direction: column; justify-content: space-between;
-  pointer-events: none; position: relative; z-index: 1;
-}
-.industry-title { font-size: 14px; font-weight: 700; }
-.arrow { margin-left: auto; color: var(--muted); font-size: 11px; transition: transform .25s; }
-.expanded .arrow { transform: rotate(180deg); }
-.heat-tile-name {
-  font-size: 11px; font-weight: 800; color: rgba(255,255,255,0.92);
-  line-height: 1.2; letter-spacing: .2px; text-transform: uppercase;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-}
-.heat-tile-meta { margin-top: auto; }
-.heat-tile-pct {
-  font-size: 18px; font-weight: 800; letter-spacing: -.3px; line-height: 1;
-}
-.heat-tile-count {
-  font-size: 10px; color: rgba(255,255,255,0.5); font-weight: 600; margin-top: 3px;
-}
-.heat-tile .expand-icon {
-  position: absolute; bottom: 6px; right: 8px;
-  width: 18px; height: 18px; border-radius: 50%;
-  background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 9px; color: rgba(255,255,255,0.85); line-height: 1;
-  transition: transform .25s, opacity .25s;
-  opacity: 0; pointer-events: none;
-}
-.heat-tile:hover .expand-icon { opacity: 1; }
-.heat-tile.expanded .expand-icon { transform: rotate(180deg); opacity: 1; }
-.heat-tile-body {
-  position: absolute; inset: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.25) 65%, transparent 100%);
-  padding: 10px 12px; display: none;
-  flex-wrap: wrap; gap: 5px; align-content: flex-end;
-  opacity: 0; z-index: 2;
-}
-.heat-tile.expanded .heat-tile-body { display: flex; }
-.heat-tile-body.collapsed { display: none !important; }
-.stock-tag {
-  display: inline-flex; align-items: center; gap: 5px;
-  padding: 4px 8px; border-radius: 6px;
-  background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.18);
-  color: #fff; font-size: 11px; font-weight: 600;
-  backdrop-filter: blur(4px); pointer-events: auto;
-  transition: background .15s;
-}
-.stock-tag:hover { background: rgba(0,0,0,0.8); border-color: rgba(255,255,255,0.35); }
-.heat-tooltip {
-  position: fixed; z-index: 999;
-  background: rgba(10,12,18,0.96);
-  border: 1px solid var(--border);
-  border-radius: 10px; padding: 12px 14px;
-  box-shadow: 0 12px 32px rgba(0,0,0,.75);
-  backdrop-filter: blur(12px);
-  pointer-events: none;
-  opacity: 0; transition: opacity .12s;
-  font-size: 12px; max-width: 260px;
-}
-.heat-tooltip.visible { opacity: 1; }
-.heat-tooltip .tt-name { font-weight: 800; font-size: 13px; color: #fff; }
-.heat-tooltip .tt-count { color: var(--muted); margin-top: 2px; }
-.heat-tooltip .tt-pct { font-size: 16px; font-weight: 800; margin-top: 6px; }
-.heat-tooltip .tt-stocks { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
-.heat-legend {
-  display: flex; align-items: center; gap: 8px; padding: 8px 12px;
-  font-size: 11px; color: var(--muted); font-weight: 600;
-}
-.heat-legend-bar {
-  flex: 1; height: 6px; border-radius: 3px;
-  background: linear-gradient(90deg, var(--red), #374151, var(--green));
-}
-.heat-legend-label { font-size: 10px; }
-@media (max-width: 768px) {
-  .heat-container { aspect-ratio: 4 / 3; }
-  .heat-tile-inner { padding: 7px 9px; }
-  .heat-tile-name { font-size: 9px; }
-  .heat-tile-pct { font-size: 14px; }
-  .heat-tile-count { font-size: 9px; }
-}
-@media (max-width: 480px) {
-  .heat-container { aspect-ratio: 1 / 1; }
-  .heat-tile { border-radius: 2px; }
-}
-
-/* === Sheet === */
-.backdrop {
-  position: fixed; inset: 0; background: rgba(0,0,0,.55);
-  z-index: 90; display: none;
-  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-}
-.sheet {
-  position: fixed; right: 0; top: 0; bottom: 0;
-  width: min(800px, 94vw);
-  background: linear-gradient(180deg, #13161e, #0f1218);
-  border-left: 1px solid var(--border);
-  z-index: 100; overflow: auto; padding: 18px;
-  transform: translateX(104%);
-  transition: transform .22s ease;
-  box-shadow: -8px 0 28px rgba(0,0,0,.6);
-}
-.sheet.open { transform: translateX(0); }
-.sheet h2 { margin: 0 0 10px; font-size: 16px; }
-.sheet .back { text-align: right; margin-bottom: 10px; }
-.sheet .back button {
-  padding: 10px 14px; border-radius: 10px;
-  background: linear-gradient(180deg, #1e2430, #181d28);
-  color: var(--text); border: 1px solid var(--border);
-  box-shadow: var(--shadow-press); cursor: pointer;
-}
-
-/* === 明細網格 === */
-.kv {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px;
-}
-@media (max-width: 640px) { .kv { grid-template-columns: 1fr; } }
-.kv div {
-  padding: 12px; border-radius: 10px;
-  background: linear-gradient(180deg, #181d28, #14171f);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-press);
-}
-.kv b {
-  display: block; color: var(--muted); font-size: 10px; font-weight: 700;
-  text-transform: uppercase; letter-spacing: .8px;
-}
-body.sheet-open { overflow: hidden; }
-.kv span { display: block; margin-top: 4px; font-size: 15px; font-weight: 700; }
-
-/* 頁面區塊（折疊） */
-.section { display: none; }
-.section.active { display: block; margin-top: 14px; }
-.footer {
-  color: var(--muted); font-size: 12px; margin-top: 18px; padding-top: 10px;
-  border-top: 1px solid var(--border);
-  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
-}
-
-/* 文字修飾 */
-.up { color: var(--green); }
-.down { color: var(--red); }
-.muted { color: var(--muted); }
-</style>
-<script src="gsap.min.js"></script>
-</head>
-<body>
-
-<div class="topbar">
-  <div class="brand">
-    <h1>🎯 台股 AI 投資追蹤 Pro</h1>
-    <span class="date" id="headerDate">--</span>
-    <span class="time" id="headerTime"></span>
-  </div>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--ink:#e6edf3;--muted:#7d8590;--green:#3fb950;--red:#f85149;--accent:#58a6ff;--warn:#d29922}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--ink);font-family:-apple-system,"Noto Sans TC",sans-serif;line-height:1.6;padding:24px}
+.wrap{max-width:1280px;margin:0 auto}
+h1{font-size:1.6rem;margin-bottom:4px}.sub{color:var(--muted);margin-bottom:20px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:20px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px}
+.stat b{font-size:1.5rem;display:block}.stat span{color:var(--muted);font-size:.85rem}
+.tbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tchip{background:var(--card);border:1px solid var(--border);color:var(--ink);border-radius:99px;padding:5px 14px;cursor:pointer;font-size:.88rem}
+.tchip span{color:var(--muted);margin-left:4px}
+.tchip.on{background:var(--accent);color:#000;border-color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:900px}
+th{background:#1c2128;color:var(--muted);padding:10px 12px;text-align:left;position:sticky;top:0;cursor:pointer;user-select:none;white-space:nowrap}
+td{padding:9px 12px;border-top:1px solid var(--border);vertical-align:top}
+tr:hover td{background:#1c2128}
+.up{color:var(--green)}.down{color:var(--red)}.muted{color:var(--muted)}
+.chip{display:inline-block;background:#21262d;border:1px solid var(--border);border-radius:6px;padding:2px 8px;font-size:.8rem}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
+@media(max-width:720px){body{padding:12px}.stats{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><div class="wrap">
+<h1>📊 StockTW 台股研究儀表板</h1>
+<p class="sub">更新時間：2026-08-22T10:47 ｜ 資料來源：官方財報＋TWSE 收盤｜目標價為本系統 Bear/Base/Bull 的 Base 情境（12 個月）</p>
+<div class="stats">
+<div class="stat"><b>67</b><span>收錄個股</span></div>
+<div class="stat"><b>37</b><span>有 Base 目標價</span></div>
+<div class="stat"><b style="color:var(--red)">4</b><span>已達標／透支</span></div>
+<div class="stat"><b style="color:var(--warn)">9</b><span>接近 ±10%</span></div>
 </div>
-
-<div class="tabs" id="navTabs">
-  <div class="tab active" data-page="lobby"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="1.97 2.00 6.05 6.05" style="width:18px;height:18px;margin-right:6px;vertical-align:-4px;"><path d="M4.746 2.125a1 1 0 0 1 .508 0c.233.06.437.243.845.608a.06.06 0 0 0 .101-.045V2.6a.5.5 0 0 1 1 0v.779c0 .158 0 .237.028.308l.014.031c.034.069.093.121.211.227l.37.331A.596.596 0 0 1 7.5 5.311a.36.36 0 0 0-.313.354L7.18 7.127c-.001.21-.002.315-.029.401a.6.6 0 0 1-.397.395c-.086.027-.191.027-.402.027-.14 0-.21 0-.268-.018a.4.4 0 0 1-.266-.264C5.8 7.61 5.8 7.539 5.8 7.398V6.65a.8.8 0 1 0-1.6 0v.74c0 .149 0 .223-.02.283a.4.4 0 0 1-.256.257c-.06.02-.136.02-.284.02-.223 0-.335 0-.425-.03a.6.6 0 0 1-.386-.384c-.03-.09-.03-.203-.03-.426V5.69a.36.36 0 0 0-.31-.36.604.604 0 0 1-.32-1.047L3.9 2.733c.408-.365.612-.547.845-.608"/></svg>大廳</div>
-  <div class="tab" data-page="signals"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="1.60 1.60 6.80 6.80" style="width:18px;height:18px;margin-right:6px;vertical-align:-4px;"><path d="M5 1.6A3.4 3.4 0 1 1 5 8.4 3.4 3.4 0 0 1 5 1.6m-.55 2.658a.451.451 0 0 0-.25.826l.052.034c.13.088.209.235.209.392v.64a.35.35 0 0 1-.153.288l-.108.07a.451.451 0 0 0 .25.827h1.1a.451.451 0 0 0 .25-.826l-.108-.071a.35.35 0 0 1-.153-.289v-.802c0-.458 0-.688-.118-.847a.6.6 0 0 0-.123-.123c-.16-.119-.39-.12-.848-.12m.473-1.808a.616.616 0 1 0 0 1.232.616.616 0 0 0 0-1.232"/></svg>信號</div>
-  <div class="tab" data-page="chip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="1.10 1.10 7.80 7.80" style="width:18px;height:18px;margin-right:6px;vertical-align:-4px;"><path d="M2.3 3.584v-.03c0-.558 0-.837.158-1.023a1 1 0 0 1 .073-.073c.185-.158.465-.158 1.023-.158h.03c.21 0 .315 0 .379-.043l.026-.02c.057-.05.091-.183.16-.449.084-.326.302-.688.851-.688.55 0 .767.362.851.688.069.266.103.399.16.45l.026.02c.064.042.169.042.38.042h.029c.558 0 .837 0 1.023.158q.039.034.073.073c.158.186.158.465.158 1.023v.03c0 .21 0 .315.043.379l.02.026c.05.057.183.091.449.16.326.084.688.302.688.851 0 .55-.362.767-.688.851-.266.069-.399.103-.45.16l-.02.026c-.042.064-.042.169-.042.38v.029c0 .558 0 .837-.158 1.023a1 1 0 0 1-.073.073c-.186.158-.465.158-1.023.158h-.03c-.21 0-.315 0-.379.043l-.026.02c-.057.05-.091.183-.16.449-.084.326-.302.688-.851.688-.55 0-.767-.362-.851-.688-.069-.266-.103-.399-.16-.45l-.026-.02c-.064-.042-.169-.042-.38-.042h-.029c-.558 0-.838 0-1.023-.158a1 1 0 0 1-.073-.073C2.3 7.283 2.3 7.004 2.3 6.446v-.03c0-.21 0-.315-.043-.379l-.02-.026c-.05-.057-.183-.091-.449-.16C1.462 5.767 1.1 5.549 1.1 5c0-.55.362-.767.688-.851.266-.069.399-.103.45-.16l.02-.026c.042-.064.042-.169.042-.38"/></svg>籌碼</div>
-  <div class="tab" data-page="heat"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2.10 2.10 5.80 5.80" style="width:18px;height:18px;margin-right:6px;vertical-align:-4px;"><path d="M6.195 2.11c.197-.049.35.144.31.342-.447 2.196.895 2.204.895 4.001 0 .535-.238 1.002-.587 1.366-.164.171-.439.043-.493-.188-.201-.845-.76-1.677-1.32-1.678-.558 0-1.118.837-1.32 1.679-.055.23-.33.358-.494.187-.349-.364-.586-.83-.586-1.366 0-.737.227-1.63.945-2.574.144-.19.434-.115.507.112.461 1.43.322-1.43 2.143-1.881"/></svg>產業熱力</div>
-  <div class="tab" data-page="etf"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="1.78 1.78 6.42 6.42" style="width:18px;height:18px;margin-right:6px;vertical-align:-4px;"><path d="M5.049 1.784c.223.011.43.121.844.341l1.876 1 .025.013a.6.6 0 0 1 .306.51v.072a.6.6 0 0 1-.58.58.27.27 0 0 0-.27.27v2.08c0 .047 0 .07.003.089a.3.3 0 0 0 .258.259C7.531 7 7.554 7 7.6 7a.601.601 0 0 1 0 1.2H2.4a.6.6 0 1 1 0-1.2c.046 0 .07 0 .089-.002a.3.3 0 0 0 .258-.26c.003-.018.003-.041.003-.088V4.57a.27.27 0 0 0-.27-.27.6.6 0 0 1-.58-.58v-.072a.6.6 0 0 1 .306-.51l.025-.014 1.876-.999c.414-.22.62-.33.844-.34a1 1 0 0 1 .098 0M5.45 6.55c0 .14 0 .21.023.265a.3.3 0 0 0 .163.162C5.69 7 5.76 7 5.9 7s.21 0 .264-.023a.3.3 0 0 0 .163-.162c.023-.055.023-.125.023-.265v-1.8c0-.14 0-.21-.023-.265a.3.3 0 0 0-.163-.162C6.11 4.3 6.04 4.3 5.9 4.3c-.14 0-.21 0-.264.023a.3.3 0 0 0-.163.162c-.023.055-.023.125-.023.265zm-1.8 0c0 .14 0 .21.023.265a.3.3 0 0 0 .163.162C3.89 7 3.96 7 4.1 7c.14 0 .21 0 .264-.023a.3.3 0 0 0 .163-.162c.023-.055.023-.125.023-.265v-1.8c0-.14 0-.21-.023-.265a.3.3 0 0 0-.163-.162C4.31 4.3 4.24 4.3 4.1 4.3s-.21 0-.264.023a.3.3 0 0 0-.163.162c-.023.055-.023.125-.023.265z"/></svg>ETF</div>
-  <div class="tab" data-page="portfolio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="2.00 2.00 6.00 6.00" style="width:18px;height:18px;margin-right:6px;vertical-align:-4px;"><path d="M8 5.85c0 .75 0 1.124-.191 1.387a1 1 0 0 1-.221.222c-.263.191-.638.191-1.388.191H3.8c-.75 0-1.125 0-1.388-.191a1 1 0 0 1-.22-.222C2 6.974 2 6.6 2 5.85v-.08c0-.3 0-.45.076-.555a.4.4 0 0 1 .089-.089c.105-.076.255-.076.555-.076H3.9a.4.4 0 0 1 .4.4.7.7 0 0 0 1.4 0 .4.4 0 0 1 .4-.4h1.18c.3 0 .45 0 .555.076a.4.4 0 0 1 .089.089C8 5.32 8 5.47 8 5.77zm-2.52-3.5c1.049 0 1.574 0 1.942.267q.179.13.31.31c.115.159.18.347.218.594.041.274.062.411-.012.534a.4.4 0 0 1-.089.104c-.11.091-.269.091-.584.091h-4.53c-.316 0-.473 0-.584-.091a.4.4 0 0 1-.09-.104c-.073-.123-.052-.26-.011-.534.037-.247.102-.435.218-.594q.13-.18.31-.31c.367-.267.893-.267 1.942-.267z"/></svg>資產</div>
+<div class="tbar" id="themes"><button class="tchip" onclick="filterTheme(this)" data-t="AI機櫃組裝">AI機櫃組裝 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="金融控股">金融控股 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="石化循環">石化循環 <span>2</span></button><button class="tchip" onclick="filterTheme(this)" data-t="晶圓測試卡">晶圓測試卡 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="強固型運算">強固型運算 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="邊緣運算">邊緣運算 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI網通交換器">AI網通交換器 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI網通設備">AI網通設備 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="晶圓代工">晶圓代工 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI機櫃ODM">AI機櫃ODM <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="記憶體封測">記憶體封測 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電源">AI電源 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="半導體分析">半導體分析 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電子材料">AI電子材料 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電源模組">電源模組 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="PCB">PCB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI封測">AI封測 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI伺服器二線追趕者">AI伺服器二線追趕者 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="鋼鐵循環">鋼鐵循環 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI電源第二供應商">AI電源第二供應商 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="半導體廠務工程">半導體廠務工程 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="綠能轉型">綠能轉型 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ASIC">ASIC <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="利基記憶體">利基記憶體 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="食品通路龍頭">食品通路龍頭 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="AI晶圓代工">AI晶圓代工 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="工業電腦">工業電腦 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="電信">電信 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="ABF載板">ABF載板 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="USB">USB <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="DRAM超級週期">DRAM超級週期 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="光通訊">光通訊 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="封裝材料">封裝材料 <span>1</span></button><button class="tchip" onclick="filterTheme(this)" data-t="金屬製品">金屬製品 <span>1</span></button></div>
+<div class="card"><table id="tbl">
+<thead><tr><th data-k="code">代碼/名稱</th><th data-k="price">現價</th><th data-k="pct">漲跌</th><th data-k="score">評分</th><th>主題</th><th data-k="target">Base目標價</th><th data-k="targetDist">距離</th><th>產業</th></tr></thead>
+<tbody><tr>
+<td><a href="https://tw.stock.yahoo.com/quote/1102.TW" target="_blank">1102</a><br><small>亞泥</small></td>
+<td>34.95</td>
+<td class="up">+0.72%</td>
+<td>12.25</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2303.TW" target="_blank">2303</a><br><small>聯電</small></td>
+<td>116.5</td>
+<td class="up">+0.87%</td>
+<td>29.75</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>IC/代工</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2327.TW" target="_blank">2327</a><br><small>國巨</small></td>
+<td>554.0</td>
+<td class="down">-1.42%</td>
+<td>27.25</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>被動元件</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2337.TW" target="_blank">2337</a><br><small>旺宏</small></td>
+<td>122.5</td>
+<td class="up">+0.41%</td>
+<td>26.25</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2360.TW" target="_blank">2360</a><br><small>致茂</small></td>
+<td>2100.0</td>
+<td class="down">-1.87%</td>
+<td>8.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2368.TW" target="_blank">2368</a><br><small>金像電</small></td>
+<td>965.0</td>
+<td class="down">-5.85%</td>
+<td>33.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2379.TW" target="_blank">2379</a><br><small>瑞昱</small></td>
+<td>714.0</td>
+<td class="up">+1.56%</td>
+<td>27.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2383.TW" target="_blank">2383</a><br><small>台光電</small></td>
+<td>5680.0</td>
+<td class="down">-5.10%</td>
+<td>33.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>IC/載板</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2449.TW" target="_blank">2449</a><br><small>京元電子</small></td>
+<td>232.0</td>
+<td class="down">-1.28%</td>
+<td>25.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2603.TW" target="_blank">2603</a><br><small>長榮</small></td>
+<td>251.5</td>
+<td class="up">+2.24%</td>
+<td>10.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2609.TW" target="_blank">2609</a><br><small>陽明</small></td>
+<td>64.0</td>
+<td class="up">+6.14%</td>
+<td>5.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2610.TW" target="_blank">2610</a><br><small>華航</small></td>
+<td>20.4</td>
+<td class="up">+2.00%</td>
+<td>24.3</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2615.TW" target="_blank">2615</a><br><small>萬海</small></td>
+<td>124.5</td>
+<td class="up">+9.69%</td>
+<td>15.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2618.TW" target="_blank">2618</a><br><small>長榮航</small></td>
+<td>42.6</td>
+<td class="up">+0.83%</td>
+<td>31.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2884.TW" target="_blank">2884</a><br><small>玉山金</small></td>
+<td>38.0</td>
+<td class="up">+1.74%</td>
+<td>20.55</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2886.TW" target="_blank">2886</a><br><small>兆豐金</small></td>
+<td>46.95</td>
+<td class="up">+1.19%</td>
+<td>15.55</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2890.TW" target="_blank">2890</a><br><small>永豐金</small></td>
+<td>39.6</td>
+<td class="up">+0.64%</td>
+<td>22.75</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2892.TW" target="_blank">2892</a><br><small>第一金</small></td>
+<td>33.65</td>
+<td class="up">+1.05%</td>
+<td>15.55</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3008.TW" target="_blank">3008</a><br><small>大立光</small></td>
+<td>5610.0</td>
+<td class="up">+1.72%</td>
+<td>17.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>光學</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3017.TW" target="_blank">3017</a><br><small>奇鋐</small></td>
+<td>2865.0</td>
+<td class="down">-4.02%</td>
+<td>33.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>AI/散熱</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3034.TW" target="_blank">3034</a><br><small>聯詠</small></td>
+<td>530.0</td>
+<td class="up">+0.57%</td>
+<td>25.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3045.TW" target="_blank">3045</a><br><small>台灣大</small></td>
+<td>115.0</td>
+<td class="up">+0.00%</td>
+<td>23.8</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3443.TW" target="_blank">3443</a><br><small>創意</small></td>
+<td>5600.0</td>
+<td class="down">-0.53%</td>
+<td>33.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>IC/設計</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3529.TW" target="_blank">3529</a><br><small>力旺</small></td>
+<td>2155.0</td>
+<td class="down">-2.49%</td>
+<td>0.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>IC/設計</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3665.TW" target="_blank">3665</a><br><small>貿聯-KY</small></td>
+<td>2275.0</td>
+<td class="up">+1.11%</td>
+<td>32.25</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/4904.TW" target="_blank">4904</a><br><small>遠傳</small></td>
+<td>102.5</td>
+<td class="up">+0.49%</td>
+<td>18.8</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/4938.TW" target="_blank">4938</a><br><small>和碩</small></td>
+<td>88.6</td>
+<td class="down">-1.23%</td>
+<td>10.0</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/5880.TW" target="_blank">5880</a><br><small>合庫金</small></td>
+<td>25.05</td>
+<td class="up">+1.01%</td>
+<td>14.3</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6505.TW" target="_blank">6505</a><br><small>台塑化</small></td>
+<td>75.8</td>
+<td class="up">+3.84%</td>
+<td>12.25</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6269.TW" target="_blank">6269</a><br><small>台郡</small></td>
+<td>62.4</td>
+<td class="down">-1.89%</td>
+<td>2.5</td>
+<td><span class="chip">未標記</span></td>
+<td><b>—</b></td>
+<td><span class="muted">—</span></td>
+<td>PCB/載板</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3038.TW" target="_blank">3038</a><br><small>台達化</small></td>
+<td>20.6</td>
+<td class="up">+0.49%</td>
+<td>10.0</td>
+<td><span class="chip">晶圓測試卡/探針卡</span></td>
+<td><b>1300.0</b></td>
+<td><b class="down">-98.4%</b></td>
+<td>石化</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3005.TW" target="_blank">3005</a><br><small>神基</small></td>
+<td>117.0</td>
+<td class="down">-0.43%</td>
+<td>25.0</td>
+<td><span class="chip">強固型運算</span></td>
+<td><b>400.0</b></td>
+<td><b class="down">-70.8%</b></td>
+<td>AI/伺服器</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6166.TW" target="_blank">6166</a><br><small>凌華</small></td>
+<td>118.5</td>
+<td class="down">-1.66%</td>
+<td>22.25</td>
+<td><span class="chip">邊緣運算/機器人</span></td>
+<td><b>200.0</b></td>
+<td><b class="down">-40.8%</b></td>
+<td>工業/網通</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2345.TW" target="_blank">2345</a><br><small>鴻準</small></td>
+<td>2035.0</td>
+<td class="down">-3.33%</td>
+<td>33.5</td>
+<td><span class="chip">AI網通交換器/800G-1.6T/ASIC加速卡</span></td>
+<td><b>3200.0</b></td>
+<td><b class="down">-36.4%</b></td>
+<td>電子</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6285.TW" target="_blank">6285</a><br><small>啟碁</small></td>
+<td>235.5</td>
+<td class="down">-0.63%</td>
+<td>13.8</td>
+<td><span class="chip">AI網通設備/衛星</span></td>
+<td><b>350.0</b></td>
+<td><b class="down">-32.7%</b></td>
+<td>網通</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6770.TW" target="_blank">6770</a><br><small>力積電</small></td>
+<td>68.4</td>
+<td class="up">+1.63%</td>
+<td>15.0</td>
+<td><span class="chip">晶圓代工/記憶體</span></td>
+<td><b>100.0</b></td>
+<td><b class="down">-31.6%</b></td>
+<td>IC/代工</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3231.TW" target="_blank">3231</a><br><small>緯創</small></td>
+<td>175.5</td>
+<td class="down">-2.50%</td>
+<td>33.5</td>
+<td><span class="chip">AI機櫃ODM/NeoCloud先鋒</span></td>
+<td><b>255.0</b></td>
+<td><b class="down">-31.2%</b></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6239.TW" target="_blank">6239</a><br><small>力成</small></td>
+<td>267.5</td>
+<td class="down">-0.37%</td>
+<td>22.75</td>
+<td><span class="chip">記憶體封測</span></td>
+<td><b>365.0</b></td>
+<td><b class="down">-26.7%</b></td>
+<td>IC/封測</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2308.TW" target="_blank">2308</a><br><small>台達電</small></td>
+<td>1750.0</td>
+<td class="up">+0.29%</td>
+<td>32.75</td>
+<td><span class="chip">AI電源/液冷散熱/HVDC</span></td>
+<td><b>2300.0</b></td>
+<td><b class="down">-23.9%</b></td>
+<td>電源/散熱</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6830.TW" target="_blank">6830</a><br><small>汎銓</small></td>
+<td>462.0</td>
+<td class="up">+10.00%</td>
+<td>5.0</td>
+<td><span class="chip">半導體分析/檢測</span></td>
+<td><b>600.0</b></td>
+<td><b class="down">-23.0%</b></td>
+<td>IC/代工</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/1303.TW" target="_blank">1303</a><br><small>台塑化</small></td>
+<td>192.0</td>
+<td class="up">+3.23%</td>
+<td>14.25</td>
+<td><span class="chip">AI電子材料/CCL</span></td>
+<td><b>240.0</b></td>
+<td><b class="down">-20.0%</b></td>
+<td>石化</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2375.TW" target="_blank">2375</a><br><small>凱美</small></td>
+<td>122.5</td>
+<td class="down">-2.00%</td>
+<td>8.75</td>
+<td><span class="chip">電源模組/散熱</span></td>
+<td><b>150.0</b></td>
+<td><b class="down">-18.3%</b></td>
+<td>被動元件</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2313.TW" target="_blank">2313</a><br><small>華通</small></td>
+<td>213.5</td>
+<td class="down">-1.84%</td>
+<td>20.55</td>
+<td><span class="chip">PCB/載板</span></td>
+<td><b>260.0</b></td>
+<td><b class="down">-17.9%</b></td>
+<td>PCB/載板</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3711.TW" target="_blank">3711</a><br><small>日月光</small></td>
+<td>587.0</td>
+<td class="down">-0.51%</td>
+<td>26.0</td>
+<td><span class="chip">AI封測/先進封裝</span></td>
+<td><b>700.0</b></td>
+<td><b class="down">-16.1%</b></td>
+<td>IC/封測</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2356.TW" target="_blank">2356</a><br><small>英業達</small></td>
+<td>65.7</td>
+<td class="up">+1.86%</td>
+<td>22.25</td>
+<td><span class="chip">AI伺服器二線追趕者</span></td>
+<td><b>78.0</b></td>
+<td><b class="down">-15.8%</b></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2002.TW" target="_blank">2002</a><br><small>中鋼</small></td>
+<td>19.45</td>
+<td class="up">+0.52%</td>
+<td>0.0</td>
+<td><span class="chip">鋼鐵循環</span></td>
+<td><b>23.0</b></td>
+<td><b class="down">-15.4%</b></td>
+<td>鋼鐵</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2382.TW" target="_blank">2382</a><br><small>廣達</small></td>
+<td>321.5</td>
+<td class="down">-1.68%</td>
+<td>32.45</td>
+<td><span class="chip">AI機櫃組裝/L11</span></td>
+<td><b>380.0</b></td>
+<td><b class="down">-15.4%</b></td>
+<td>AI/伺服器</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2317.TW" target="_blank">2317</a><br><small>鴻海</small></td>
+<td>245.5</td>
+<td class="down">-0.41%</td>
+<td>21.8</td>
+<td><span class="chip">AI機櫃組裝</span></td>
+<td><b>290.0</b></td>
+<td><b class="down">-15.3%</b></td>
+<td>EMS</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2881.TW" target="_blank">2881</a><br><small>國泰金</small></td>
+<td>134.0</td>
+<td class="up">+4.69%</td>
+<td>26.25</td>
+<td><span class="chip">金融控股</span></td>
+<td><b>155.0</b></td>
+<td><b class="down">-13.5%</b></td>
+<td>金控</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2301.TW" target="_blank">2301</a><br><small>光寶科</small></td>
+<td>261.0</td>
+<td class="down">-2.25%</td>
+<td>30.55</td>
+<td><span class="chip">AI電源第二供應商</span></td>
+<td><b>300.0</b></td>
+<td><b class="down">-13.0%</b></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2882.TW" target="_blank">2882</a><br><small>開發金</small></td>
+<td>100.5</td>
+<td class="up">+2.87%</td>
+<td>6.25</td>
+<td><span class="chip">金融控股</span></td>
+<td><b>115.0</b></td>
+<td><b class="down">-12.6%</b></td>
+<td>金控</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2404.TW" target="_blank">2404</a><br><small>漢唐</small></td>
+<td>1060.0</td>
+<td class="down">-1.40%</td>
+<td>33.5</td>
+<td><span class="chip">半導體廠務工程</span></td>
+<td><b>1200.0</b></td>
+<td><b class="down">-11.7%</b></td>
+<td>設備</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/1326.TW" target="_blank">1326</a><br><small>台化</small></td>
+<td>60.1</td>
+<td class="up">+2.91%</td>
+<td>7.0</td>
+<td><span class="chip">石化循環</span></td>
+<td><b>68.0</b></td>
+<td><b class="down">-11.6%</b></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/1101.TW" target="_blank">1101</a><br><small>台泥</small></td>
+<td>24.85</td>
+<td class="up">+0.20%</td>
+<td>2.25</td>
+<td><span class="chip">綠能轉型/低碳建材</span></td>
+<td><b>28.0</b></td>
+<td><b class="down">-11.2%</b></td>
+<td>水泥</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2454.TW" target="_blank">2454</a><br><small>聯發科</small></td>
+<td>3790.0</td>
+<td class="up">+2.43%</td>
+<td>25.0</td>
+<td><span class="chip">ASIC/手機SoC</span></td>
+<td><b>4200.0</b></td>
+<td>🟡 接近</td>
+<td>IC/設計</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2344.TW" target="_blank">2344</a><br><small>華邦電</small></td>
+<td>181.0</td>
+<td class="up">+2.55%</td>
+<td>21.25</td>
+<td><span class="chip">利基記憶體/DDR4+SLC NAND+NOR</span></td>
+<td><b>200.0</b></td>
+<td>🟡 接近</td>
+<td>DRAM</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/1216.TW" target="_blank">1216</a><br><small>統一</small></td>
+<td>77.5</td>
+<td class="down">-0.90%</td>
+<td>18.8</td>
+<td><span class="chip">食品通路龍頭</span></td>
+<td><b>85.0</b></td>
+<td>🟡 接近</td>
+<td>食品</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2330.TW" target="_blank">2330</a><br><small>台積電</small></td>
+<td>2410.0</td>
+<td class="up">+1.47%</td>
+<td>32.75</td>
+<td><span class="chip">AI晶圓代工/先進製程</span></td>
+<td><b>2600.0</b></td>
+<td>🟡 接近</td>
+<td>IC/代工</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2395.TW" target="_blank">2395</a><br><small>研華</small></td>
+<td>649.0</td>
+<td class="down">-3.57%</td>
+<td>30.55</td>
+<td><span class="chip">工業電腦/邊緣AI</span></td>
+<td><b>700.0</b></td>
+<td>🟡 接近</td>
+<td>工業/邊緣</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2412.TW" target="_blank">2412</a><br><small>中華電</small></td>
+<td>136.5</td>
+<td class="up">+0.00%</td>
+<td>13.7</td>
+<td><span class="chip">電信/資料中心</span></td>
+<td><b>145.0</b></td>
+<td>🟡 接近</td>
+<td>電信</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3037.TW" target="_blank">3037</a><br><small>欣興</small></td>
+<td>1085.0</td>
+<td class="down">-4.82%</td>
+<td>32.25</td>
+<td><span class="chip">ABF載板/AI封裝基板</span></td>
+<td><b>1150.0</b></td>
+<td>🟡 接近</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/5269.TW" target="_blank">5269</a><br><small>華豐</small></td>
+<td>1415.0</td>
+<td class="down">-0.70%</td>
+<td>27.75</td>
+<td><span class="chip">USB/PCIe 控制晶片</span></td>
+<td><b>1500.0</b></td>
+<td>🟡 接近</td>
+<td>電子</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/1301.TW" target="_blank">1301</a><br><small>台塑</small></td>
+<td>59.4</td>
+<td class="up">+2.77%</td>
+<td>2.25</td>
+<td><span class="chip">石化循環/集團控股</span></td>
+<td><b>62.0</b></td>
+<td>🟡 接近</td>
+<td>石化</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/2408.TW" target="_blank">2408</a><br><small>南亞科</small></td>
+<td>528.0</td>
+<td class="up">+2.13%</td>
+<td>6.25</td>
+<td><span class="chip">DRAM超級週期/標準DRAM</span></td>
+<td><b>380.0</b></td>
+<td>🔴 已達標</td>
+<td>DRAM</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/6442.TW" target="_blank">6442</a><br><small>光聖</small></td>
+<td>1525.0</td>
+<td class="down">-1.93%</td>
+<td>32.25</td>
+<td><span class="chip">光通訊/矽光</span></td>
+<td><b>800.0</b></td>
+<td>🔴 已達標</td>
+<td>AI/伺服器</td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/3653.TW" target="_blank">3653</a><br><small>健策</small></td>
+<td>5395.0</td>
+<td class="down">-3.66%</td>
+<td>28.75</td>
+<td><span class="chip">封裝材料/AI載板材料</span></td>
+<td><b>300.0</b></td>
+<td>🔴 已達標</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://tw.stock.yahoo.com/quote/7610.TW" target="_blank">7610</a><br><small>聯友金屬-創</small></td>
+<td>2505.0</td>
+<td class="up">+8.91%</td>
+<td>31.25</td>
+<td><span class="chip">金屬製品</span></td>
+<td><b>60.0</b></td>
+<td>🔴 已達標</td>
+<td>工業/網通</td>
+</tr></tbody></table></div>
+<footer>StockTW Research Dashboard ｜ 目標價不构成投資建議 ｜ 資料截止 2026-08-22</footer>
 </div>
-
-<div class="container">
-
-  <main id="page-lobby" class="section active"><div class="section-body">
-    <div class="grid grid-4" id="summaryCards"><div class="card"><h2>載入中…</h2></div></div>
-    <div class="alert">欄位：代號 / 公司 / 現價 / 漲跌 / 量能 / 大單代理 / 漲停基因 / 持有邏輯 / 分級。可排序列、搜尋；點公司名可看個股詳情。</div>
-    <div class="ctrl">
-      <input type="text" id="searchBox" placeholder="🔍 搜尋名稱或代號" oninput="renderLobby()">
-      <select id="sortSel" onchange="setSort(this.value)">
-        <option value="default">預設分級</option>
-        <option value="pct">漲跌幅</option>
-        <option value="vol">成交量</option>
-        <option value="price">股價</option>
-        <option value="score">評分</option>
-        <option value="bigOrder">大單代理</option>
-        <option value="limitGene">漲停基因</option>
-      </select>
-      <button onclick="setSort('default')">重置</button>
-      <span class="tier-tag neutral" style="background:#1c2230" id="countLabel"></span>
-    </div>
-    <div class="table-wrap">
-      <table id="snapshotTable">
-        <thead><tr>
-          <th onclick="setSort('code')">代號</th>
-          <th onclick="setSort('name')">公司</th>
-          <th onclick="setSort('price')">收盤</th>
-          <th onclick="setSort('pct')">漲跌</th>
-          <th onclick="setSort('vol')">成交</th>
-          <th onclick="setSort('score')">評分</th>
-          <th>大單</th><th>漲停</th><th>持有</th>
-          <th onclick="setSort('rank')">排名</th>
-        </tr></thead>
-        <tbody id="snapshotBody"></tbody>
-      </table>
-    </div>
-  </main>
-
-  <main id="page-signals" class="section"><div class="section-body"><div class="alert">前端即時偵測：大單代理 / 漲停基因 / 爆量突破。</div><div id="signalList"></div></div></main>
-
-  <main id="page-chip" class="section"><div class="section-body"><div class="alert">成交額分位替代換手率異形偵測。</div><div id="chipList"></div></div></main>
-
-  <main id="page-heat" class="section"><div class="section-body"><div class="alert">依產業族群分群：點擊色塊可展開成分股。面積越大代表檔數越多。</div><div class="heat-wrap"><div class="heat-container" id="heatView"></div><div class="heat-legend" id="heatLegend"></div></div><div id="industryDetail" style="margin-top:10px"></div></div></main>
-
-  <main id="page-etf" class="section"><div class="section-body"><div class="alert">追蹤 0050 / 00981A / 00991A / 00988A 成分股與系統標的的重疊。選 ETF 可看成分股；選「全部追蹤」看所有含 ETF 標記的個股。</div><div class="ctrl" style="margin-top:6px"><select id="etfSel" onchange="renderEtf()"><option value="">全部追蹤</option><option value="0050">0050 台灣50</option><option value="00981A">00981A 永豐臺灣科技</option><option value="00991A">00991A 中信關鍵半導體</option><option value="00988A">00988A 富邦台灣優質</option></select></div><div id="etfList"></div></div></main>
-
-  <main id="page-portfolio" class="section"><div class="section-body"><div class="alert">組合資料儲存在瀏覽器 localStorage，請定期 Export。可由此快速組成。</div><div class="ctrl" style="margin-top:6px"><input type="text" id="pfCode" placeholder="代號" style="width:110px"><input type="number" id="pfShares" placeholder="張數" style="width:100px"><input type="number" id="pfCost" placeholder="持有價" step="0.5" style="width:100px"><button onclick="addPf()">加入</button><button onclick="clearPf()">清空</button><button onclick="exportPf()">Exp</button><button onclick="importPf()">Imp</button><span class="tier-tag neutral" style="background:#1c2230" id="pfCount">0 檔</span></div><div class="grid grid-4" id="pfCards"></div><div class="card" style="margin-top:10px"><h2>風險提示</h2><div id="pfRisk" style="font-size:13px"></div></div></div></main>
-
-</div>
-
-<div class="footer">
-  <span>Hermes 動態儀表板 · 前端即時渲染 · 熱力图已依產業分群 · 個股詳情頁於點擊後開啟 · ETF 成分擴展至追蹤</span>
-  <span class="muted">Skeuomorphic UI · 2026</span>
-</div>
-
-<div id="stockDetail" class="backdrop" onclick="if(event.target===this)closeSheet()">
-  <div class="sheet" id="sheet">
-    <div class="back"><button onclick="closeSheet()">✕ 關閉</button></div>
-    <div id="sheetBody"></div>
-  </div>
-</div>
-
-<div id="heatTooltip" class="heat-tooltip"></div>
-
 <script>
-let allStocks=[], currentSort='default', currentDir=1, _heat={industries:[]}, _raf=null;
-
-// 快取細節渲染所需的 Map 與同業卡片，避免每次點擊都重算
-let _stockMap=null;
-let _peerCache={};
-
-document.querySelectorAll('#navTabs .tab').forEach(t=>{
-  t.addEventListener('click', ()=>{
-    document.querySelectorAll('#navTabs .tab').forEach(x=>x.classList.remove('active'));
-    t.classList.add('active');
-    const page = t.getAttribute('data-page');
-    ['lobby','signals','chip','heat','etf','portfolio'].forEach(p=>{
-      const el = document.getElementById('page-'+p);
-      if(!el) return;
-      el.classList.toggle('active', p===page);
-    });
-    if(page==='heat'){ renderHeat(); animateAll(); }
-    if(page==='signals') renderSignals();
-    if(page==='chip') renderChip();
-    if(page==='etf') renderEtf();
-    if(page==='portfolio') renderPf();
-    window.scrollTo({top:0, behavior:'instant'});
+let curTheme=null;
+function filterTheme(btn){
+  const t=btn.dataset.t;
+  document.querySelectorAll('.tchip').forEach(b=>b.classList.remove('on'));
+  if(curTheme===t){curTheme=null}else{curTheme=t;btn.classList.add('on')}
+  document.querySelectorAll('#tbl tbody tr').forEach(tr=>{
+    const chip=tr.querySelector('.chip');
+    tr.style.display=(curTheme===null||chip.textContent.trim().startsWith(curTheme))?'':'none';
+  });
+}
+document.querySelectorAll('th[data-k]').forEach(th=>{
+  th.addEventListener('click',()=>{
+    const k=th.dataset.k, tb=document.querySelector('#tbl tbody');
+    const asc=!(th.dataset.asc==='1');
+    th.dataset.asc=asc?'1':'0';
+    [...tb.rows].sort((a,b)=>{
+      let x=a.cells[th.cellIndex].innerText.replace('%','').replace(/[+🔴🟡]/g,'').trim();
+      let y=b.cells[th.cellIndex].innerText.replace('%','').replace(/[+🔴🟡]/g,'').trim();
+      const nx=parseFloat(x),ny=parseFloat(y);
+      if(!isNaN(nx)&&!isNaN(ny))return asc?nx-ny:ny-nx;
+      return asc?x.localeCompare(y):y.localeCompare(x);
+    }).forEach(r=>tb.appendChild(r));
   });
 });
-
-function pctClass(p){ return p>0?'up':p<0?'down':'muted'; }
-function toggleSection(id){ document.getElementById(id).classList.toggle('active'); }
-function setSort(k){ if(currentSort===k) currentDir*=-1; else{currentSort=k;currentDir=1;} renderLobby(); }
-
-function sortFn(a,b){
-  const k=currentSort;
-  if(currentSort==='default') return a.rank - b.rank;
-  let av=a[k],bv=b[k];
-  if(['score','bigOrder','limitGene','pct','price','vol'].indexOf(k)>=0) return (av-bv)*currentDir;
-  if(typeof av==='string') av=av.toLowerCase(); if(typeof bv==='string') bv=bv.toLowerCase();
-  return av<bv?-1*currentDir:av>bv?1*currentDir:0;
-}
-
-function renderLobby(){
-  if(_raf) cancelAnimationFrame(_raf);
-  _raf = requestAnimationFrame(()=>{
-    _raf = null;
-    const q = (document.getElementById('searchBox').value||'').toLowerCase();
-    const rows = allStocks.filter(s=>(s.name||'').toLowerCase().includes(q)||(s.code||'').includes(q));
-    rows.sort(sortFn);
-    document.getElementById('snapshotBody').innerHTML = rows.map(s=>`<tr class="tier-row"><td>${s.code}</td><td><a href="javascript:void(0)" onclick="openDetail('${s.code}')" style="color:var(--accent);font-weight:700;cursor:pointer">${s.name||s.code}</a><div style="font-size:11px;color:var(--muted);margin-top:2px">${s.note||''}</div></td><td style="font-weight:700">${s.price}</td><td class="${pctClass(s.pct)}">${s.pct>0?'+':''}${s.pct}%</td><td>${(s.vol||0).toLocaleString()}</td><td style="font-weight:700">${s.score!=null?s.score:'--'}</td><td>${(s.bigOrder||0).toFixed(2)}</td><td>${s.limitGene?'🔴':'⬜'}</td><td>${s.hold||'--'}</td><td><span class="tier-tag neutral">#${s.rank||'--'}</span></td></tr>`).join('');
-    document.getElementById('countLabel').textContent = rows.length+' / '+(allStocks.length||0)+' 檔';
-  });
-}
-
-function computeDerived(){
-  const n=allStocks.length, avgVol=n?allStocks.reduce((a,x)=>a+(x.vol||0),0)/n:1, avgAmt=n?allStocks.reduce((a,x)=>a+(x.price||0)*(x.vol||0)*1000,0)/n:1;
-  allStocks.forEach(s=>{ s.bigOrder=avgAmt?(s.price||0)*(s.vol||0)*1000/avgAmt:1; s.limitGene=((s.pct||0)>=9.5 && (s.vol||0)<avgVol*0.5)?1:0; s.breakoutVol=(s.vol||0)>avgVol*2?1:0; });
-}
-
-function renderSummary(){
-  const top=allStocks.filter(s=>(s.rank||0)<=10).length, mid=allStocks.filter(s=>(s.rank||0)>10 && (s.rank||0)<=40).length, rest=allStocks.filter(s=>(s.rank||0)>40).length;
-  document.getElementById('summaryCards').innerHTML=[
-    '<div class="card"><h2>追蹤標的</h2><div class="big">'+(allStocks.length||0)+'</div></div>',
-    '<div class="card"><h2>前 10 名</h2><div class="big">'+top+'</div></div>',
-    '<div class="card"><h2>11 ~ 40 名</h2><div class="big">'+mid+'</div></div>',
-    '<div class="card"><h2>41 名以後</h2><div class="big">'+rest+'</div></div>'
-  ].join('');
-}
-
-function renderSignals(){
-  const list=allStocks.filter(s=>(s.bigOrder||0)>1.2||s.limitGene||s.breakoutVol).sort((a,b)=>(b.bigOrder||0)-(a.bigOrder||0));
-  document.getElementById('signalList').innerHTML=list.map(s=>{
-    const tags=[];
-    if((s.bigOrder||0)>1.2) tags.push('<span class="pill ok">大單</span>');
-    if(s.limitGene) tags.push('<span class="pill warn">漲停基因</span>');
-    if(s.breakoutVol) tags.push('<span class="pill warn">爆量</span>');
-    return `<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div><div class="arrow">▶</div></div><div style="margin-top:6px">${tags.join(' ')}</div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div><div class="muted" style="font-size:12px;margin-top:4px">成交 ${(s.vol||0).toLocaleString()} 張</div></div>`;
-  }).join('') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無符合信號標的。</div>';
-}
-
-function renderChip(){
-  if(!allStocks.length) return;
-  const avgAmt=allStocks.reduce((a,x)=>a+(x.price||0)*(x.vol||0)*1000,0)/allStocks.length;
-  const list=allStocks.slice().sort((a,b)=>(b.price*b.vol*1000/avgAmt)-(a.price*a.vol*1000/avgAmt));
-  document.getElementById('chipList').innerHTML='<div class="grid grid-4">'+list.map(s=>{
-    const proxy=avgAmt?s.price*s.vol*1000/avgAmt:1;
-    return `<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="muted" style="font-size:12px;margin-top:4px">成交額分位 ${Math.round(proxy*50)}%</div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div></div>`;
-  }).join('')+'</div>';
-}
-
-/* === 產業熱力：可展開卡片 === */
-/* === 產業熱力 Treemap (Squarified) === */
-function squarify(items, x, y, w, h){
-  const data = items.map(it=>({...it, area: Math.max(1, it.area||1)}));
-  const totalArea = data.reduce((sum, it) => sum + it.area, 0);
-  const scale = totalArea > 0 ? (w * h) / totalArea : 1;
-  data.forEach(it => it.area *= scale);
-  const rects = [];
-  function worst(row, rowArea, sideLen){
-    if(rowArea <= 0 || sideLen <= 0) return Infinity;
-    const stripW = rowArea / sideLen;
-    let worst = 0;
-    for(const r of row){
-      const itemH = r.area / stripW;
-      const ar = Math.max(stripW / itemH, itemH / stripW);
-      worst = Math.max(worst, ar);
-    }
-    return worst;
-  }
-  function lay(row, stripW, cx, cy, cw, ch){
-    let offset = 0;
-    for(const r of row){
-      const itemLen = r.area / stripW;
-      if(cw >= ch){
-        rects.push({...r, x: cx, y: cy+offset, w: stripW, h: itemLen});
-      } else {
-        rects.push({...r, x: cx+offset, y: cy, w: itemLen, h: stripW});
-      }
-      offset += itemLen;
-    }
-  }
-  function rec(children, cx, cy, cw, ch){
-    if(!children.length) return;
-    if(children.length === 1){ rects.push({...children[0], x:cx, y:cy, w:cw, h:ch}); return; }
-    if(cw <= 0 || ch <= 0) return;
-    const isWide = cw >= ch;
-    const sideLen = isWide ? ch : cw;
-    const row = [];
-    let rowArea = 0;
-    for(let i = 0; i < children.length; i++){
-      const c = children[i];
-      const nextRow = [...row, c];
-      const nextRowArea = rowArea + c.area;
-      const curWorst = row.length === 0 ? Infinity : worst(row, rowArea, sideLen);
-      const newWorst = worst(nextRow, nextRowArea, sideLen);
-      if(newWorst <= curWorst){
-        row.push(c); rowArea += c.area;
-      } else {
-        break;
-      }
-    }
-    const stripW = rowArea / sideLen;
-    lay(row, stripW, cx, cy, cw, ch);
-    if(isWide){
-      rec(children.slice(row.length), cx+stripW, cy, cw-stripW, ch);
-    } else {
-      rec(children.slice(row.length), cx, cy+stripW, cw, ch-stripW);
-    }
-  }
-  rec(data, x, y, w, h);
-  return rects;
-}
-
-function colorShade(hex, pct){
-  let num = parseInt(hex.replace('#',''), 16), amt = Math.round(2.55 * pct);
-  let R = Math.min(255, (num >> 16) + amt);
-  let G = Math.min(255, ((num >> 8) & 0x00FF) + amt);
-  let B = Math.min(255, (num & 0x0000FF) + amt);
-  return '#' + (0x1000000 + R * 0x10000 + G * 0x100 + B).toString(16).slice(1);
-}
-
-function heatColor(pct){
-  if(pct >= 5) return '#059669';
-  if(pct >= 3) return '#047857';
-  if(pct >= 1) return '#065f46';
-  if(pct > 0) return '#064e3b';
-  if(pct > -0.5) return '#1f2937';
-  if(pct > -3) return '#991b1b';
-  if(pct > -5) return '#7f1d1d';
-  return '#450a0a';
-}
-
-function toggleIndustry(el){
-  const body = el.querySelector('.heat-tile-body');
-  if(!body) return;
-  const wasExpanded = el.classList.contains('expanded');
-  document.querySelectorAll('.heat-tile.expanded').forEach(tile=>{
-    if(tile !== el){
-      tile.classList.remove('expanded');
-      const b=tile.querySelector('.heat-tile-body');
-      if(b){ gsap.to(b, {opacity:0, y:-4, duration:.15, ease:'power1.in', onComplete:()=>b.classList.add('collapsed')}); }
-    }
-  });
-  if(wasExpanded){
-    el.classList.remove('expanded');
-    gsap.to(body, {opacity:0, y:-4, duration:.2, ease:'power1.in', onComplete:()=>body.classList.add('collapsed')});
-  } else {
-    el.classList.add('expanded');
-    body.classList.remove('collapsed');
-    gsap.fromTo(body, {opacity:0, y:6}, {opacity:1, y:0, duration:.32, ease:'power2.out'});
-  }
-}
-
-function renderHeat(){
-  const industries = _heat.industries || [];
-  if(!industries.length){
-    document.getElementById('heatView').innerHTML='<div class="alert" style="border-color:#252a36;color:var(--muted)">暫無產業數據</div>';
-    if(document.getElementById('heatLegend')) document.getElementById('heatLegend').innerHTML='';
-    return;
-  }
-  const map = new Map(allStocks.map(s=>[s.code,s]));
-  const sorted = industries.map(x=>({...x, area: Math.max(1, x.total||1)})).sort((a,b)=>b.area - a.area);
-  const container = document.getElementById('heatView');
-  const rect = container.getBoundingClientRect();
-  const w = rect.width || 800, h = rect.height || 500;
-  const tiles = squarify(sorted, 0, 0, w, h);
-  container.innerHTML = tiles.map(x=>{
-    const base = heatColor(x.avg_pct);
-    const light = colorShade(base, 18);
-    const bgGrad = 'linear-gradient(160deg, '+light+', '+base+')';
-    const pctStr = x.avg_pct != null ? (x.avg_pct>0?'+':'')+x.avg_pct.toFixed(2)+'%' : '--%';
-    const pctRaw = x.avg_pct != null ? x.avg_pct.toFixed(2) : '0';
-    const chips = (x.codes||'').split(',').map(c=>{
-      const s = map.get(c); if(!s) return '';
-      return '<span class="stock-tag" onclick="event.stopPropagation();openDetail(\''+s.code+'\')">'+s.code+' '+s.name+'</span>';
-    }).join('');
-    return '<div class="heat-tile" onclick="toggleIndustry(this)" style="left:'+((x.x/w)*100)+'%;top:'+((x.y/h)*100)+'%;width:'+((x.w/w)*100)+'%;height:'+((x.h/h)*100)+'%;background:'+bgGrad+';" data-tooltip-industry="'+x.industry+'" data-tooltip-pct="'+pctStr+'" data-tooltip-pct-raw="'+pctRaw+'" data-tooltip-count="'+(x.total||0)+'" data-tooltip-stocks="'+chips.replace(/"/g,'&quot;')+'"><div class="heat-tile-inner"><div class="heat-tile-name">'+x.industry+'</div><div class="heat-tile-meta"><div class="heat-tile-pct '+pctClass(x.avg_pct)+'">'+pctStr+'</div><div class="heat-tile-count">'+(x.total||0)+' 檔</div></div></div><div class="expand-icon">▾</div><div class="heat-tile-body collapsed"><div style="width:100%;display:flex;flex-wrap:wrap;gap:5px">'+chips+'</div></div></div>';
-  }).join('');
-  const legend = document.getElementById('heatLegend');
-  if(legend) legend.innerHTML = '<span class="heat-legend-label">弱</span><div class="heat-legend-bar"></div><span class="heat-legend-label">強</span>';
-  if(!container._boundEvt){
-    container._boundEvt = true;
-    container.addEventListener('mouseover', (e)=>{
-      const tile = e.target.closest('.heat-tile');
-      const tooltip = document.getElementById('heatTooltip');
-      if(!tile || !tooltip){ if(tooltip) tooltip.classList.remove('visible'); return; }
-      const name = tile.dataset.tooltipIndustry;
-      const pct = tile.dataset.tooltipPct;
-      const pctRaw = tile.dataset.tooltipPctRaw;
-      const count = tile.dataset.tooltipCount;
-      const stocks = tile.dataset.tooltipStocks;
-      const pctCls = pctClass(parseFloat(pctRaw));
-      tooltip.innerHTML = '<div class="tt-name">'+name+'</div><div class="tt-count">'+count+' 檔成分股</div><div class="tt-pct '+pctCls+'">'+pct+'</div><div class="tt-stocks">'+stocks+'</div>';
-      tooltip.classList.add('visible');
-    });
-    container.addEventListener('mousemove', (e)=>{
-      const tooltip = document.getElementById('heatTooltip');
-      if(!tooltip) return;
-      tooltip.style.left = (e.clientX + 12)+'px';
-      tooltip.style.top = (e.clientY + 12)+'px';
-    });
-    container.addEventListener('mouseleave', (e)=>{
-      const tooltip = document.getElementById('heatTooltip');
-      if(tooltip) tooltip.classList.remove('visible');
-    });
-  }
-}
-
-function renderEtf(){
-  const code=document.getElementById('etfSel').value;
-  let list=[];
-  if(!code){
-    list=allStocks.filter(s=>(s.etf_tags||[]).length>0).sort((a,b)=>a.code.localeCompare(b.code));
-  } else {
-    const codes=new Set((window.__etf||{})[code]||[]);
-    const map=new Map(allStocks.map(s=>[s.code,s]));
-    list=[...codes].map(c=>map.get(c)).filter(Boolean);
-  }
-  document.getElementById('etfList').innerHTML=list.length?'<div class="grid grid-4">'+list.map(s=>`<div class="card"><div class="industry-head"><div class="industry-title">${s.name} <span class="muted" style="font-weight:400;font-size:12px">${s.code}</span></div></div><div class="muted" style="font-size:11px;margin-top:4px">${(s.etf_tags||[]).join(', ')}</div><div class="big pct-${pctClass(s.pct)}" style="margin-top:6px;font-size:20px">${s.price!=null?s.price:'--'} <span style="font-size:13px" class="pct-${pctClass(s.pct)}">${s.pct!=null?(s.pct>0?'+':'')+s.pct+'%':'--%'}</span></div></div>`).join('')+'</div>':'<div class="alert" style="border-color:#252a36;color:var(--muted)">目前無符合條件的成分股。</div>';
-}
-
-/* === Portfolio === */
-function loadPf(){ try{return JSON.parse(localStorage.getItem('portfolio')||'[]');}catch(e){return [];} }
-function savePf(p){ localStorage.setItem('portfolio',JSON.stringify(p)); renderPf(); }
-function addPf(){
-  const code=document.getElementById('pfCode').value.trim(),
-        shares=parseInt(document.getElementById('pfShares').value||'0',10),
-        cost=parseFloat(document.getElementById('pfCost').value||'0');
-  if(!code) return alert('輸入代號');
-  const arr=loadPf(), idx=arr.findIndex(x=>x.code===code);
-  if(idx>=0){ arr[idx].shares+=shares; arr[idx].cost=(arr[idx].cost+(cost||0))/2; }
-  else arr.push({code, shares:shares||0, cost:cost||0});
-  savePf(arr);
-  ['pfCode','pfShares','pfCost'].forEach(id=>document.getElementById(id).value='');
-}
-function removePf(code){ savePf(loadPf().filter(x=>x.code!==code)); }
-function clearPf(){ if(confirm('清空全部？')){ localStorage.removeItem('portfolio'); renderPf();} }
-function exportPf(){
-  const blob=new Blob([localStorage.getItem('portfolio')||'[]'],{type:'application/json'});
-  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='portfolio.json'; a.click();
-}
-function importPf(){
-  const input=document.createElement('input');
-  input.type='file'; input.accept='application/json';
-  input.onchange=e=>{ const r=new FileReader(); r.onload=()=>{ localStorage.setItem('portfolio',r.target.result); renderPf(); }; r.readAsText(input.files[0]); };
-  input.click();
-}
-function guessSector(name){ return '其他'; }
-
-function buildPeerCache(){
-  _peerCache={};
-  if(!_stockMap || !window.__peers) return;
-  Object.keys(window.__peers).forEach(code=>{
-    const peers=window.__peers[code];
-    _peerCache[code]=peers.map(c=>_stockMap.get(c)).filter(Boolean).slice(0,20);
-  });
-}
-
-/* === Detail === */
-function openDetail(code){
-  const sheet=document.getElementById('sheet');
-  if(sheet) sheet.classList.add('open');
-  document.body.classList.add('sheet-open');
-  document.getElementById('stockDetail').style.display='block';
-  document.getElementById('sheetBody').innerHTML='<div style="padding:20px;text-align:center;color:var(--muted)">載入中…</div>';
-  requestAnimationFrame(()=>renderDetail(code));
-}
-function closeSheet(){
-  const sheet=document.getElementById('sheet');
-  const backdrop=document.getElementById('stockDetail');
-  gsap.to(sheet, {x:24, opacity:0, duration:.2, ease:'power1.in', onComplete:()=>{
-    sheet.classList.remove('open');
-    sheet.style.transform='';
-    sheet.style.opacity='';
-    document.body.classList.remove('sheet-open');
-    backdrop.style.display='none';
-  }});
-}
-function renderDetail(code){
-  const s=_stockMap?_stockMap.get(code):allStocks.find(x=>x.code===code); if(!s) return;
-  const concepts=(window.__concepts||{})[code]||s.concepts||[];
-  const peerCards=_peerCache[code]||[];
-  const html=`
-    <div class="industry-head"><h2 style="margin:0">${s.name} <span class="muted" style="font-weight:400;font-size:13px">${s.code}</span></h2></div>
-    <div class="muted" style="margin-top:4px">${s.note||''}</div>
-    <div class="kv" style="margin-top:10px">
-      <div><b>收盤價</b><span class="${pctClass(s.pct)}">${s.price} ${s.pct>0?'+':''}${s.pct}%</span></div>
-      <div><b>成交張數</b><span>${(s.vol||0).toLocaleString()}</span></div>
-      <div><b>排名</b><span class="tier-tag neutral">#${s.rank||'--'} / ${allStocks.length||0}</span></div><div><b>綜合分數</b><span class="tier-tag neutral">${s.score!=null?s.score:'--'}</span></div>
-      <div><b>量化評分</b><span>${s.score!=null?s.score:'--'}</span></div>
-      <div><b>近期趨勢</b><span>1日 ${s.day_pct!=null?(s.day_pct>0?'+':'')+s.day_pct+'%':'--'} · 1週 ${s.week_pct!=null?(s.week_pct>0?'+':'')+s.week_pct+'%':'--'} · 1月 ${s.month_pct!=null?(s.month_pct>0?'+':'')+s.month_pct+'%':'--'}</span></div>
-      <div><b>大單/漲停基因</b><span>${(s.bigOrder||0).toFixed(2)} / ${s.limitGene?'有':'無'}</span></div>
-      <div><b>產業</b><span>${s.industry||guessSector(s.name)}</span></div>
-      <div><b>持有邏輯</b><span>${s.hold||'--'}</span></div>
-    </div>
-    <div class="card" style="margin-top:12px"><h2>概念股</h2><div>${concepts.map(c=>'<span class="stock-tag">'+c+'</span>').join('')||'<span class="muted" style="font-size:12px">無概念股標示</span>'}</div></div>
-    <div class="card" style="margin-top:12px"><h2>同產業 / 概念股</h2><div class="grid grid-4" style="gap:10px">${peerCards.map(x=>`<div class="card"><div class="industry-head"><div class="industry-title">${x.name}</div><div class="muted" style="font-weight:400;font-size:12px">${x.code}</div></div><div class="big pct-${pctClass(x.pct)}" style="font-size:18px;margin-top:6px">${x.price} <span style="font-size:13px" class="pct-${pctClass(x.pct)}">${x.pct!=null?(x.pct>0?'+':'')+x.pct+'%':'--%'}</span></div></div>`).join('')}</div></div>
-    <div class="card" style="margin-top:12px"><h2>交易劇本</h2><div id="holdBlock" style="font-size:13px"></div></div>
-  `;
-  const sheet=document.getElementById('sheetBody');
-  sheet.innerHTML=html;
-  gsap.fromTo('#sheet', {opacity:0, y:8}, {opacity:1, y:0, duration:.25, ease:'power2.out'});
-}
-
-function renderPf(){
-  const pf=loadPf(); const map=new Map(allStocks.map(s=>[s.code,s])); let hedge=[];
-  document.getElementById('pfCards').innerHTML=pf.map(p=>{
-    const s=map.get(p.code), price=s?s.price:null, pnl=price?(price-p.cost)*p.shares*1000:0, pct=p.cost?(price-p.cost)/p.cost*100:0, color=pnl>0?'var(--green)':pnl<0?'var(--red)':'var(--muted)';
-    if(pnl<0 && Math.abs(pct)>5) hedge.push({name:s?s.name:p.code, dist:pct});
-    return `<div class="card"><div class="industry-head"><div class="industry-title">${s?s.name:p.code}</div><div class="muted" style="font-weight:400;font-size:12px">${p.code}</div></div><div class="muted" style="font-size:12px;margin-top:4px">持有 ${p.shares} 張 · 成本 ${p.cost}</div><div class="big" style="font-size:22px;margin-top:8px;color:${color}">${price?price:'--'} <span style="font-size:13px;color:${color}">${price?((pct>0?'+':'')+pct.toFixed(2)+'%'):''}</span></div><div class="muted" style="font-size:12px;margin-top:4px">未實現盈虧 <b style="color:${color}">${price? pnl.toFixed(0):'--'}</b></div></div>`;
-  }).join('') || '<div class="alert" style="border-color:#252a36;color:var(--muted)">尚未加入任何持倉。</div>';
-  document.getElementById('pfRisk').innerHTML=hedge.length?hedge.map(h=>`<div class="pill bad">${h.name} 距成本 ${(h.dist>0?'+':'')+h.dist.toFixed(2)}%</div>`).join(''):'<span class="muted" style="font-size:12px">未偵測到風險訊號。</div>';
-}
-
-/* === GSAP Animations === */
-function animateAll(){
-  gsap.fromTo('.card', {opacity:0, y:16}, {opacity:1, y:0, duration:.45, stagger:.03, ease:'power2.out'});
-  const rows=document.querySelectorAll('#snapshotBody tr');
-  if(rows.length){
-    const show=Array.from(rows).slice(0,40);
-    gsap.fromTo(show, {opacity:0, x:-6}, {opacity:1, x:0, duration:.35, stagger:.012, ease:'power1.out'});
-    if(rows.length>40) gsap.set(Array.from(rows).slice(40), {opacity:1, x:0});
-  }
-  const cards=document.querySelectorAll('.heat-tile');
-  const show=cards.length>20?Array.from(cards).slice(0,20):cards;
-  gsap.fromTo(show, {opacity:0, y:10}, {opacity:1, y:0, duration:.4, stagger:.025, ease:'power2.out'});
-  if(cards.length>20) gsap.set(Array.from(cards).slice(20), {opacity:1, y:0});
-}
-function animateSheet(){
-  gsap.fromTo('#sheetBody', {opacity:0, x:24}, {opacity:1, x:0, duration:.4, ease:'power2.out'});
-}
-function animateTabs(){
-  gsap.fromTo('.tab', {opacity:0, y:6}, {opacity:1, y:0, duration:.4, stagger:.03, ease:'power2.out'});
-}
-
-/* === 即時補價：讀取後端快取 live.json（避開 TWSE CORS） === */
-async function refreshPrices(){
-  try {
-    const r = await fetch('data/live.json?_=' + Date.now());
-    const d = await r.json();
-    const prices = d.prices || {};
-    allStocks.forEach(s => {
-      const p = prices[s.code];
-      if(!p) return;
-      if(p.price) s.price = p.price;
-      if(p.pct != null) s.pct = p.pct;
-      if(p.vol) s.vol = p.vol;
-      if(p.name) s.name = p.name;
-    });
-    _stockMap = new Map(allStocks.map(s=>[s.code,s]));
-    renderLobby();
-    // 每 30 秒自動刷新
-    setTimeout(refreshPrices, 30000);
-  } catch(e){
-    // 失敗時 10 秒後重試
-    setTimeout(refreshPrices, 10000);
-  }
-}
-
-/* === Init === */
-fetch('data.json').then(r=>r.json()).then(d=>{
-  document.getElementById('headerDate').textContent=d.date; document.getElementById('headerTime').textContent=d.updated||'';
-  allStocks=d.stocks||[]; computeDerived(); renderSummary(); renderLobby();
-  _stockMap=new Map(allStocks.map(s=>[s.code,s]));
-  gsap.fromTo('header', {opacity:0, y:-10}, {opacity:1, y:0, duration:.5, ease:'power2.out', onComplete:animateAll});
-  fetch('data/heatmap.json').then(r=>r.json()).then(h=>{ _heat=h||{industries:[]}; }).catch(()=>{});
-  fetch('data/etf.json').then(r=>r.json()).then(e=>{ window.__etf=e.etfs||{}; window.__concepts=e.concepts||{}; window.__peers=e.peers||{}; buildPeerCache(); }).catch(()=>{});
-  // 即時補價：TWSE API（上市 + 上櫃分批）
-  refreshPrices();
-}).catch(e=>{ document.querySelector('.container').insertAdjacentHTML('afterbegin','<div class="alert" style="border-color:var(--red);color:#fbb">data.json 讀取失敗：'+e.message+'</div>'); });
-
-const _origOpen = window.openDetail;
-window.openDetail = function(code){ _origOpen(code); animateSheet(); };
-</script>
-</body>
-</html>
+</script></body></html>
