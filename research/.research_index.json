@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14",
+  "generated": "2026-08-22",
   "stocks": [
     {
       "file": "1101_台泥.md",
@@ -30,6 +30,13 @@
       "file": "2002_中鋼.md",
       "chars": 898,
       "code": "2002"
+    },
+    {
+      "file": "2108_南帝.md",
+      "chars": 6473,
+      "code": "2108",
+      "target_base": 33.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2301_光寶科.md",
@@ -73,8 +80,10 @@
     },
     {
       "file": "2344_華邦電.md",
-      "chars": 1093,
-      "code": "2344"
+      "chars": 4455,
+      "code": "2344",
+      "target_base": 185.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2345_智邦.md",
@@ -118,8 +127,10 @@
     },
     {
       "file": "2408_南亞科.md",
-      "chars": 935,
-      "code": "2408"
+      "chars": 4029,
+      "code": "2408",
+      "target_base": 380.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2412_中華電.md",
@@ -168,13 +179,22 @@
     },
     {
       "file": "3037_欣興.md",
-      "chars": 1402,
-      "code": "3037"
+      "chars": 1906,
+      "code": "3037",
+      "target_base": 1150.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "3038_全台.md",
       "chars": 830,
       "code": "3038"
+    },
+    {
+      "file": "3081_聯亞.md",
+      "chars": 7239,
+      "code": "3081",
+      "target_base": 3000.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "3231_緯創.md",
@@ -200,6 +220,13 @@
       "file": "3711_日月光.md",
       "chars": 911,
       "code": "3711"
+    },
+    {
+      "file": "4971_IET-KY.md",
+      "chars": 2043,
+      "code": "4971",
+      "target_base": 550.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "5269_祥碩.md",
@@ -260,6 +287,20 @@
       "file": "7610_聯友金屬創.md",
       "chars": 4142,
       "code": "7610"
+    },
+    {
+      "file": "8046_南電.md",
+      "chars": 1911,
+      "code": "8046",
+      "target_base": 1400.0,
+      "tracked_at": "2026-08-22"
+    },
+    {
+      "file": "8299_群聯.md",
+      "chars": 4417,
+      "code": "8299",
+      "target_base": 3000.0,
+      "tracked_at": "2026-08-22"
     }
   ],
   "topics": [

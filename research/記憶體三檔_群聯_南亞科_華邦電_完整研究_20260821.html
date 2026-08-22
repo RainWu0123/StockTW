@@ -1,0 +1,503 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>記憶體三檔完整研究，校正版</title><style>:root{--bg:#f4f6f8;--paper:#fff;--ink:#17212b;--accent:#0b6bcb;--line:#dbe2e8;--warn:#fff3cd}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",sans-serif;line-height:1.75}main{max-width:1050px;margin:28px auto;padding:0 20px 60px}.hero,article{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:28px 34px;margin-bottom:24px;box-shadow:0 8px 30px rgba(20,40,60,.06)}h1{font-size:2rem;margin:.1em 0 .4em}h2{margin-top:1.7em;padding-bottom:.3em;border-bottom:2px solid var(--line)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}.cards div{border:1px solid var(--line);border-radius:12px;padding:16px}.cards b,.cards span{display:block}.cards strong{display:block;font-size:1.8rem;color:var(--accent);margin:.2em 0}.warning{background:var(--warn);border-radius:10px;padding:12px 16px}table{width:100%;border-collapse:collapse;margin:1em 0;font-size:.95rem}th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}th{background:#eef3f7}blockquote{border-left:4px solid var(--accent);margin:1em 0;padding:.6em 1em;background:#f4f8fc}code{background:#eef2f5;border-radius:4px;padding:.15em .35em}pre{background:#17212b;color:#e8f0f7;padding:15px;border-radius:10px;overflow:auto}a{color:var(--accent);word-break:break-all}@media(max-width:760px){.cards{grid-template-columns:1fr}.hero,article{padding:20px}h1{font-size:1.55rem}}</style></head><body><main><section class="hero"><h1>群聯、南亞科、華邦電完整研究，官方財報校正版</h1><p>資料截止：2026-08-21。估值期間：未來12個月。</p><div class="cards"><div><b>群聯 8299</b><strong>3,000 元</strong><span>合理區間 2,700～3,300</span></div><div><b>南亞科 2408</b><strong>380 元</strong><span>合理區間 350～420</span></div><div><b>華邦電 2344</b><strong>185 元</strong><span>合理區間 170～200</span></div></div><p class="warning">校正重點：納入群聯負營業現金流與權益法利益、南亞科私募稀釋、華邦電可轉債完全稀釋股數。舊版2,380／600／235元目標價作廢。</p></section><article><h1>群聯（8299）：低成本NAND庫存創造暴利，AI儲存能否接棒才是估值核心</h1>
+<blockquote>
+<p><strong>結論：以2026年8月20日收盤1,995元為基準，我給群聯12個月目標價3,000元，合理區間2,700～3,300元，判斷HOLD／偏多。這是將官方資料推導的未來四季稀釋EPS約300元乘以10倍，而非把Q2高達65.3%的毛利率直接永久化。群聯品質是三檔最佳，但917.9億元存貨與負營業現金流讓它不能套純IC設計估值。</strong>[20][21][17]</p>
+</blockquote>
+<h2>Q2財報：歷史新高，但已處在週期高峰區</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th style="text-align: right;">2026Q2</th>
+<th style="text-align: right;">QoQ</th>
+<th style="text-align: right;">YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>營收</td>
+<td style="text-align: right;">678.88億元</td>
+<td style="text-align: right;">+65.7%</td>
+<td style="text-align: right;">+279.5%</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">65.3%</td>
+<td style="text-align: right;">+約4個百分點</td>
+<td style="text-align: right;">+約36個百分點</td>
+</tr>
+<tr>
+<td>營益率</td>
+<td style="text-align: right;">38.8%</td>
+<td style="text-align: right;">+2.6個百分點</td>
+<td style="text-align: right;">+25.7個百分點</td>
+</tr>
+<tr>
+<td>稅後淨利</td>
+<td style="text-align: right;">262.17億元</td>
+<td style="text-align: right;">+72.8%</td>
+<td style="text-align: right;">約35倍</td>
+</tr>
+<tr>
+<td>EPS</td>
+<td style="text-align: right;">118.57元</td>
+<td style="text-align: right;">Q1為68.8元</td>
+<td style="text-align: right;">歷史新高</td>
+</tr>
+</tbody>
+</table>
+<p>上半年營收1,088.55億元、EPS 187.43元，董事會配發60元現金股利，配發率約32%。[2]</p>
+<p>Q2毛利率遠高於群聯歷史常態，主要來自：</p>
+<ol>
+<li>NAND價格上漲，低成本庫存形成巨大價差。</li>
+<li>企業級SSD與AI儲存產品占比提高。</li>
+<li>控制器、韌體與模組整合，讓群聯可把NAND加工成高附加價值方案。</li>
+<li>市場供給吃緊，群聯有能力把有限NAND配置給高毛利客戶。</li>
+</ol>
+<p>但管理層也承認，隨新採購NAND成本提高，毛利率必然正常化。Q2 EPS不能直接乘四。[1][3]</p>
+<h2>商業模式：控制器只是核心，收入靠完整儲存方案放大</h2>
+<p>群聯的價值鏈是：</p>
+<pre><code class="language-text">向NAND原廠／通路採購wafer
+→ 加入自研控制器、韌體與驗證
+→ 製成企業SSD、嵌入式、工控、車載及AI系統模組
+→ 取得高於純晶圓／低階模組的溢價
+</code></pre>
+<p>它的護城河不是「持有很多NAND」，而是：</p>
+<ul>
+<li>控制器與韌體共同設計。</li>
+<li>長期design-in與客製化驗證。</li>
+<li>能將不同NAND顆粒轉成穩定產品。</li>
+<li>在供貨吃緊時仍能保證企業客戶長期供應。</li>
+<li>從Boot Drive、Main Drive延伸到AI Data Platform與aiDAPTIV。</li>
+</ul>
+<p>若只靠庫存價差，群聯終究是週期股；若企業SSD與AI資料平台能提高正常化毛利率，它才有資格獲得比傳統模組廠更高的估值。</p>
+<h2>AI營收已達38%，但真正的新平台收入仍小</h2>
+<p>公司法說指出，AI Ecosystem Solutions約占Q2營收38%，企業級主硬碟占整體營收30%以上；AI Networking單季新增6個design wins，PCIe Gen6企業SSD已有客戶等待執行。[1]</p>
+<p>但必須拆開：</p>
+<ul>
+<li>企業SSD、Boot Drive、Main Drive：已是實質營收。</li>
+<li>aiDAPTIV／AI Data Platform：已商轉，但目前收入仍小。</li>
+<li>醫療、銀行、中小企業案例：代表產品驗證，不等於已形成大型年約收入。</li>
+</ul>
+<p>因此，我不把「AI平台」當成Q2暴利的主要來源；目前主要獲利仍是NAND上漲＋低成本庫存＋高價值SSD。</p>
+<h2>917億元庫存是護城河，也是最大地雷</h2>
+<p>Q2存貨917.92億元，存貨周轉天數297天，雖低於Q1的315天，仍高於去年同期221天；現金與流動金融資產約337.99億元。[3]</p>
+<p>群聯認為這些庫存主要對應CSP、OEM、企業級與工控等非零售客戶，部分專案供貨週期長達24個月。6、7月又投入逾4.5億美元購買低於原廠合約價的NAND。[3]</p>
+<p>多頭版本：</p>
+<pre><code class="language-text">低價取得NAND
+→ 鎖定未來長約供貨
+→ NAND續漲＋企業SSD放量
+→ 庫存轉成高毛利營收
+</code></pre>
+<p>空頭版本：</p>
+<pre><code class="language-text">NAND供應恢復／價格反轉
+→ 客戶延後拉貨
+→ 917億元庫存跌價
+→ 毛利率與營業現金流同步崩落
+</code></pre>
+<p>後續不能只看EPS，要盯存貨金額、周轉天數、跌價損失、短期借款與營業現金流。</p>
+<h2>現金流與稀釋：財報獲利尚未轉成股東現金</h2>
+<p>2026H1稅前淨利489.73億元，但存貨增加575.46億元、應收帳款增加247.77億元，營業現金流反而為負148.73億元；期末315.47億元現金主要受312.5億元公司債支撐。基本EPS 187.43元，稀釋EPS177.01元，差距約5.6%；另有私募普通股上限1,800萬股與可轉債潛在稀釋。[21]</p>
+<p>Q2有89.6%營收來自含NAND的模組，控制器僅6.1%。AI Ecosystem占38%同時包含eSSD、aiDAPTIV、AI PC、Networking與Boot Drive，不能把38%全部當成高毛利企業SSD。公司未拆分eSSD、軟體平台與各產品線毛利率。[20][21]</p>
+<p>另有部分權益法投資未經獨立會計師核閱，上半年權益法利益約63.42億元、約貢獻EPS 24.87元。估值時不把這部分視為永久性本業獲利。[21]</p>
+<h2>同業財報：NAND上行是真的，但已不是低預期階段</h2>
+<p>Micron FQ3 NAND ASP季增約85%、NAND營收99億美元；SK hynix Q2 DRAM與NAND均大幅漲價；Samsung也表示server DRAM、eSSD與HBM需求讓市場維持供不應求。[14][15][16]</p>
+<p>這證明群聯的需求與價格不是自說自話。但當原廠毛利率逼近歷史極端、所有市場參與者都知道缺貨時，後續股價更看「漲幅是否再超預期」，而不是只看價格仍在漲。</p>
+<h2>法人報告：共識高度分歧</h2>
+<ul>
+<li>FactSet 13位分析師：2026 EPS中位數359.86元、2027中位數249.84元，目標價2,998元；2027 EPS最低127.58元、最高589.42元，分歧極大。[4]</li>
+<li>未揭露本土法人：2026／2027 EPS 401／336.12元，因NAND漲幅收斂把目標價由3,200降至2,700元，2027給8倍PE。[5]</li>
+<li>其他公開報告區間約2,950～4,000元，但多數建立在2026 EPS 360～415元與高毛利延續。</li>
+</ul>
+<p>目標價分歧的根源不是AI需求，而是2027低成本庫存紅利消失後，正常化EPS到底是150、250還是400元。</p>
+<h2>自建估值</h2>
+<table>
+<thead>
+<tr>
+<th>情境</th>
+<th style="text-align: right;">2027正常化EPS</th>
+<th style="text-align: right;">PE</th>
+<th style="text-align: right;">目標價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空頭</td>
+<td style="text-align: right;">185元</td>
+<td style="text-align: right;">8倍</td>
+<td style="text-align: right;">1,480元</td>
+</tr>
+<tr>
+<td><strong>基準</strong></td>
+<td style="text-align: right;"><strong>300元</strong></td>
+<td style="text-align: right;"><strong>10倍</strong></td>
+<td style="text-align: right;"><strong>3,000元</strong></td>
+</tr>
+<tr>
+<td>多頭</td>
+<td style="text-align: right;">420元</td>
+<td style="text-align: right;">12倍</td>
+<td style="text-align: right;">5,040元</td>
+</tr>
+</tbody>
+</table>
+<p>基準EPS介於FactSet中位數249.84元與樂觀法人336元之間。官方財報模型可推得約322元，但我下修至300元並只給10倍，反映負營業現金流、權益法利益、稀釋與NAND存貨風險。目標價因此由初版2,380元修正為3,000元，不採官方模型可推導的3,860元樂觀值。</p>
+<h2>操作與否決條件</h2>
+<ul>
+<li>1,800～1,950元：可觀察分批，不一次追滿。</li>
+<li>1,500～1,700元：若NAND報價與企業SSD未轉弱，風險報酬較好。</li>
+<li>2,700～3,300元：基準合理與逐步減碼區。</li>
+<li>3,500元以上：必須看到營業現金流轉正及AI平台收入分拆，不只靠庫存價差。</li>
+</ul>
+<p>否決條件：NAND合約價季增轉負、庫存天數升破330天、存貨跌價增加、AI Ecosystem占比停滯、企業SSD design win未轉出貨、營業現金流落後淨利兩季以上。</p>
+<h2>Sources</h2>
+<p>[1] https://www.phison.com/investor-relations/shareholder-services/investor-meeting-information — 群聯2026Q2法說
+[2] https://news.cnyes.com/news/id/6575693 — 群聯2026Q2財報公告
+[3] https://money.udn.com/money/story/11074/9689988 — 群聯Q2庫存與現金
+[4] https://news.cnyes.com/news/id/6575155 — 群聯FactSet財測
+[5] https://www.ftnn.com.tw/news/570125 — 群聯本土法人2700目標
+[14] https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx — Micron FQ3 2026 official
+[15] https://news.skhynix.com/en/q2-2026-business-results — SK hynix Q2 2026 official
+[16] https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results — Samsung Q2 2026 official
+[17] https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=otc_8299.tw&amp;json=1&amp;delay=0
+[20] https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_CN_Official_uploaded-version.pdf — 群聯2026Q2官方法說簡報
+[21] https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf — 群聯2026H1核閱財報</p></article><article><h1>南亞科（2408）：DRAM價格創造近80%毛利率，最大風險是把高峰當常態</h1>
+<blockquote>
+<p><strong>結論：以2026年8月20日收盤517元為基準，我把南亞科12個月目標價由初版600元下修至380元，合理區間350～420元，判斷REDUCE／不追價。正式核閱財報顯示私募後股數增加約10.2%，而517元已接近需要未來12月EPS 65～75元與長時間高毛利的Bull情境。</strong>[22][23][18]</p>
+</blockquote>
+<h2>先糾正定位：南亞科不是HBM3E／HBM4核心供應商</h2>
+<p>南亞科主力仍為DDR5、LPDDR5／5X、DDR4、LPDDR4／4X、DDR3等DRAM。公司已增加AI基礎設施與伺服器產品，H1相關營收占比超過20%，並發展客製化AI、WoW與先進封裝合作，但目前不能把它直接等同SK hynix、Micron、Samsung的HBM供應商。[6]</p>
+<p>正確投資論點是：全球三大廠把先進產能與資本支出優先投向HBM、server DRAM與高階產品，排擠傳統DRAM供給，南亞科因此享受DDR4／LPDDR／DDR5價格與產品組合紅利。</p>
+<h2>Q2財報：出貨沒增加，價格就把獲利推到歷史極端</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th style="text-align: right;">2026Q2</th>
+<th style="text-align: right;">QoQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>營收</td>
+<td style="text-align: right;">825.49億元</td>
+<td style="text-align: right;">+68.2%</td>
+</tr>
+<tr>
+<td>ASP</td>
+<td style="text-align: right;">季增逾60%</td>
+<td style="text-align: right;">主要成長來源</td>
+</tr>
+<tr>
+<td>位元出貨</td>
+<td style="text-align: right;">約持平</td>
+<td style="text-align: right;">無量增</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">79.5%</td>
+<td style="text-align: right;">+11.6個百分點</td>
+</tr>
+<tr>
+<td>營益率</td>
+<td style="text-align: right;">73.7%</td>
+<td style="text-align: right;">+12.4個百分點</td>
+</tr>
+<tr>
+<td>稅後淨利</td>
+<td style="text-align: right;">501.92億元</td>
+<td style="text-align: right;">+92.6%</td>
+</tr>
+<tr>
+<td>EPS</td>
+<td style="text-align: right;">14.66元</td>
+<td style="text-align: right;">Q1為8.41元</td>
+</tr>
+</tbody>
+</table>
+<p>H1 EPS 23.38元、每股淨值93.49元。[6]</p>
+<p>這張財報的Driver Chain非常乾淨：</p>
+<pre><code class="language-text">HBM與server DRAM排擠供給
+→ 傳統DRAM供不應求
+→ 南亞科Q2 ASP季增逾60%
+→ 位元出貨持平但毛利率升至79.5%
+→ EPS跳升至14.66元
+</code></pre>
+<p>所以後續最重要的不是單月營收創高，而是ASP增幅是否由+60%降到+20%、持平，最後轉跌。</p>
+<h2>同業財報確認超級週期，但也顯示獲利率已在高峰區</h2>
+<p>Micron FQ3 DRAM ASP季增約60%、NAND ASP約85%，毛利率約85%；SK hynix Q2營益率76%；Samsung Memory也創營收與營業利益新高，並預期H2 server DRAM、eSSD與HBM持續供不應求。[14][15][16]</p>
+<p>這支持南亞科Q3價格仍強。但當全球原廠毛利率都在70%～80%以上，市場已經知道供應短缺，任何「漲幅低於預期」都可能被當成週期見頂。</p>
+<h2>LTA提高能見度，不等於鎖定毛利率</h2>
+<p>公司正與客戶把單季合約拉長為年度甚至多年LTA；市場報導稱LTA覆蓋可能接近一半產能，且AI相關占比將提高。[9]</p>
+<p>但公開資訊未完整揭露：</p>
+<ul>
+<li>固定價與浮動價比例。</li>
+<li>Take-or-pay條款。</li>
+<li>客戶取消或重談條件。</li>
+<li>每年價格重設方式。</li>
+</ul>
+<p>LTA可以保出貨，不一定保79.5%毛利率。若合約跟隨市場價格調整，DRAM轉跌時EPS仍會下降。</p>
+<h2>5A新廠是長期升級，也是3466億元資本豪賭</h2>
+<p>董事會把2026資本支出上限由520億提高至697億元；2026～2029年5A新廠第一階段資本支出上限3,466億元，目標月產能35,900片，最終規畫45,000片，導入1B／1C／1D／1E與EUV。2027下半年投片，2028月產30,000片，2029提高至35,900片。[7]</p>
+<p>正面：</p>
+<ul>
+<li>補上先進製程與成本競爭力。</li>
+<li>提高DDR5、LPDDR5與客製化AI產品能力。</li>
+<li>產能開出時間晚，短期不會立刻破壞供需。</li>
+</ul>
+<p>風險：</p>
+<ul>
+<li>大額設備預付款、折舊與EUV學習曲線。</li>
+<li>2028～2029若產業供給同步開出，可能踩到週期下行。</li>
+<li>新廠還沒營收前，現金流與ROIC先承壓。</li>
+</ul>
+<p>公司法說揭露全產能投資估計約4,800億元；董事會後續核准的3,466億元是5A新廠階段性資本支出上限，兩者口徑不能混為同一個總額。[7][23]</p>
+<h2>現金、私募與稀釋</h2>
+<p>Q2核閱財報顯示，6月底現金及約當現金2,176.03億元，扣除公司債與長期借款後淨金融現金約1,992億元；H1營業現金流874.08億元，簡化自由現金流約805.52億元。南亞科的資產負債表不是問題，問題是新股與高峰估值。[22]</p>
+<p>公司私募增發約3.516億股、約稀釋10.2%，由Kioxia、SanDisk、Solidigm等策略投資人參與；H1基本EPS 23.38元，稀釋EPS22.48元。初版估值未完整納入此分母變化，必須修正。[22]</p>
+<h2>法人報告</h2>
+<ul>
+<li>FactSet 14位分析師：2026 EPS中位數57.72元、2027中位數82.64元，目標價548元；2027 EPS區間46.22～93.08元。[8]</li>
+<li>未揭露法人：2026 EPS 75.1元、目標價720元，假設Q3 ASP再漲50%。</li>
+<li>另一份未揭露法人：2027 EPS 140.92元、目標價1,000元，重押LTA、AI占比與產品升級。[9]</li>
+<li>早期報告目標545～650元，多採2026 EPS約54元×10倍，或2027 EPS約92元×7倍。</li>
+</ul>
+<p>1000元情境不是不可能，但需要2027 EPS約125～141元且市場仍願意給7～8倍PE；這遠高於FactSet共識。</p>
+<h2>自建估值</h2>
+<table>
+<thead>
+<tr>
+<th>情境</th>
+<th style="text-align: right;">2027正常化EPS</th>
+<th style="text-align: right;">PE</th>
+<th style="text-align: right;">目標價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空頭</td>
+<td style="text-align: right;">25.4元</td>
+<td style="text-align: right;">約10倍</td>
+<td style="text-align: right;">250元</td>
+</tr>
+<tr>
+<td><strong>基準</strong></td>
+<td style="text-align: right;"><strong>48.7元</strong></td>
+<td style="text-align: right;"><strong>約8倍</strong></td>
+<td style="text-align: right;"><strong>380元</strong></td>
+</tr>
+<tr>
+<td>多頭</td>
+<td style="text-align: right;">78.4元</td>
+<td style="text-align: right;">約7倍</td>
+<td style="text-align: right;">545元</td>
+</tr>
+</tbody>
+</table>
+<p>基準情境假設未來12月營收4,200億元、淨利率40%，採私募後股數計算EPS約48.7元；P/E價值約390元，前瞻BVPS 125元×3倍約375元，交叉取380元。FactSet 82.64元與樂觀法人140.92元均高於官方財報稀釋後的保守邊界，前者可能未完整反映最新私募與週期回落。</p>
+<p>P/B交叉檢查：517元約為Q2每股淨值93.53元的5.5倍，已經隱含高ROE延續；即使Bull目標545元，上行也只有約5%。</p>
+<h2>操作與否決條件</h2>
+<ul>
+<li>350～400元：才進入基準合理區。</li>
+<li>300～350元：若ASP與同業指引未轉弱，可觀察分批。</li>
+<li>500～545元：接近Bull上限，持有者應設停利條件。</li>
+<li>545元以上：不靠更高ASP與EPS上修就沒有安全邊際。</li>
+</ul>
+<p>否決條件：DRAM ASP季增跌破10%後轉負、位元出貨下降、高階產品占比停滯、LTA被重談、5A CapEx再大幅上修、Micron／SK hynix／Samsung同時轉向擴產或下修價格展望。</p>
+<h2>Sources</h2>
+<p>[6] https://www.nanya.com/en/IR/16/Press%20Release?IRId=13150 — 南亞科2026Q2官方財報
+[7] https://news.cnyes.com/news/id/6561041 — 南亞科5A資本支出
+[8] https://news.cnyes.com/news/id/6524536 — 南亞科FactSet財測
+[9] https://www.ftnn.com.tw/news/569112 — 南亞科法人1000目標
+[14] https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx — Micron FQ3 2026 official
+[15] https://news.skhynix.com/en/q2-2026-business-results — SK hynix Q2 2026 official
+[16] https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results — Samsung Q2 2026 official
+[18] https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_2408.tw&amp;json=1&amp;delay=0
+[22] https://doc.twse.com.tw/server-java/t57sb01?co_id=2408&amp;colorchg=1&amp;mtype=A&amp;seamon=&amp;step=1&amp;year= — 南亞科2026Q2核閱財報
+[23] https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf — 南亞科2026Q2官方法說</p></article><article><h1>華邦電（2344）：利基記憶體進入高毛利週期，但別把它當HBM替代品</h1>
+<blockquote>
+<p><strong>結論：以2026年8月20日收盤176.5元為基準，我把華邦電12個月目標價由初版235元下修至185元，合理區間170～200元，評價NEUTRAL。初版2027 EPS 45元沒有正確納入47.2億股完全稀釋股數，數學上過度樂觀；官方分部模型的Base EPS約15.1元、Base價182元，機率加權約185元。</strong>[25][11][19]</p>
+</blockquote>
+<h2>正確定位：AI外溢受惠，不是AI伺服器主記憶體供應商</h2>
+<p>華邦電主要業務：</p>
+<ul>
+<li>CMS（Customized Memory Solution）：Specialty DRAM、DDR3／DDR4等客製化記憶體。</li>
+<li>Flash：NOR Flash、SLC NAND與Code Storage Flash。</li>
+<li>Logic IC：主要包含子公司新唐等邏輯事業。</li>
+<li>新產品：CUBE、Si-Cap、先進16nm DRAM。</li>
+</ul>
+<p>它不是HBM大廠，也不是AI GPU主記憶體供應商。真正受惠路徑是：三大記憶體廠把先進產能轉去HBM與server DRAM，造成利基DRAM、NOR、SLC NAND供給收縮；同時AI交換器、網路設備、車用與工控提高記憶體容量。[10][11]</p>
+<h2>Q2財報：價格與產品組合把獲利推到新高</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th style="text-align: right;">2026Q2</th>
+<th style="text-align: right;">QoQ</th>
+<th style="text-align: right;">YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>合併營收</td>
+<td style="text-align: right;">598.43億元</td>
+<td style="text-align: right;">+56.4%</td>
+<td style="text-align: right;">+184.7%</td>
+</tr>
+<tr>
+<td>合併毛利率</td>
+<td style="text-align: right;">66.2%</td>
+<td style="text-align: right;">+13個百分點</td>
+<td style="text-align: right;">+44個百分點</td>
+</tr>
+<tr>
+<td>營益率</td>
+<td style="text-align: right;">48.4%</td>
+<td style="text-align: right;">+16個百分點</td>
+<td style="text-align: right;">轉正</td>
+</tr>
+<tr>
+<td>母公司淨利</td>
+<td style="text-align: right;">243.17億元</td>
+<td style="text-align: right;">+140.4%</td>
+<td style="text-align: right;">轉盈</td>
+</tr>
+<tr>
+<td>EPS</td>
+<td style="text-align: right;">5.40元</td>
+<td style="text-align: right;">Q1為2.25元</td>
+<td style="text-align: right;">歷史高檔</td>
+</tr>
+<tr>
+<td>H1 EPS</td>
+<td style="text-align: right;">7.65元</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>記憶體本業Q2營收517億元、毛利率70.3%、營益率56.9%、稼動率100%。[10][11]</p>
+<h2>分部拆解：CMS最強，但不是全部公司</h2>
+<p>Q2營收組合：[10]</p>
+<table>
+<thead>
+<tr>
+<th>分部</th>
+<th style="text-align: right;">營收占比</th>
+<th>主要訊號</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CMS</td>
+<td style="text-align: right;">53%</td>
+<td>ASP季增約100%，AI與產品組合帶動</td>
+</tr>
+<tr>
+<td>Flash</td>
+<td style="text-align: right;">33%</td>
+<td>24nm／32nm SLC NAND增加，ASP季增約40%</td>
+</tr>
+<tr>
+<td>Logic IC</td>
+<td style="text-align: right;">13%</td>
+<td>新唐等，毛利率約38%～39%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td style="text-align: right;">1%</td>
+<td>軟體與服務等</td>
+</tr>
+</tbody>
+</table>
+<p>CMS位元出貨季減約低十位數，但ASP翻倍，與南亞科相同，Q2營收爆發主要靠價格而非出貨量。Flash則同時有量價改善。</p>
+<p>因此合併估值不能只看記憶體70.3%毛利率；新唐與邏輯事業會稀釋整體毛利，也提供週期分散。</p>
+<h2>NOR與SLC NAND是華邦最難被簡化的優勢</h2>
+<ul>
+<li>NOR Flash服務程式碼儲存、車用、工控、網通與高容量AI交換器。</li>
+<li>SLC NAND強調耐用性與可靠度，24nm、32nm產品比重提高。</li>
+<li>Specialty DRAM客戶規格分散、驗證期長，價格敏感度低於完全標準化商品。</li>
+<li>AI伺服器機架與交換器提升NOR容量，由512Mb、1Gb到2Gb以上，推升單機價值量。</li>
+</ul>
+<p>這讓華邦電的正常化獲利理應比純消費記憶體廠穩，但仍無法消除DRAM／Flash價格週期。</p>
+<h2>16nm與89B擴產：2027先吃製程紅利，2029才有大量新產能</h2>
+<p>16nm產能擴充按計畫進行，2027開始顯著貢獻；高雄產能目標由月產1.5萬片提高至2.4萬片，良率由約88%往90%提升。Module B預計2027動工、2029量產，導入EUV與14nm／12nm製程。[11]</p>
+<p>2026 CapEx預估約395億元，上半年約70億元，支出高峰仍在後面。</p>
+<p>正面：</p>
+<ul>
+<li>製程微縮提高每片晶圓bit產出與成本競爭力。</li>
+<li>大量新增產能要到2029，2027供需仍可能偏緊。</li>
+<li>LTA提前鎖定2029／2030客戶需求。</li>
+</ul>
+<p>風險：</p>
+<ul>
+<li>高雄新廠、EUV與先進製程折舊。</li>
+<li>16nm爬坡若良率不如預期，成本效益延後。</li>
+<li>大量舉債或發債會提高財務費用。</li>
+</ul>
+<h2>存貨與現金流</h2>
+<p>Q2存貨約257.87億元，年增約19%，但相對營收增速溫和；Q1營業現金流123.66億元，顯示獲利開始轉成現金。公司為擴產已增加融資與公司債，不能只看單季EPS。[11]</p>
+<p>後續應盯：營業現金流、CapEx、淨負債、存貨周轉、新唐現金流與合併自由現金流。</p>
+<p>H1營業現金流356.72億元，扣除設備支出80.88億元後簡化自由現金流約275.84億元；但應收帳款由160.71億元升至374.39億元，備抵損失也提高，後續需檢查營收停止成長時應收款是否仍增加。[25]</p>
+<p>華邦持有新唐48.97%但仍具控制力，因此新唐全額併入營收，歸母利益只按實際權益分配。新唐Q2營收79.41億元、營業損失3.33億元、EPS負0.58元，短期不是獲利引擎。[25][26]</p>
+<p>海外可轉債若全數轉換，股數由約45億股升至47.2億股、稀釋約4.9%；本估值採完全稀釋股數。這是初版EPS推估需要下修的主因。[25]</p>
+<h2>同業交叉驗證</h2>
+<p>Micron、SK hynix、Samsung Q2／FQ3均確認server DRAM、eSSD、HBM需求強，供給受限，DRAM與NAND ASP大幅上升。[14][15][16]</p>
+<p>對華邦的意義不是它會拿到HBM訂單，而是大廠產能轉移讓Specialty DRAM、NOR、SLC NAND的供給更緊。若三大廠重新回頭擴產傳統產品，華邦的利基溢價會收縮。</p>
+<h2>法人報告</h2>
+<ul>
+<li>FactSet 10位分析師：2026 EPS中位數24.87元、2027中位數50.05元，目標價238元；2027 EPS區間26.43～69.97元。[12]</li>
+<li>未揭露本土法人：2026／2027 EPS 27／59.9元，目標價350元，假設Q3 DRAM再漲50%、Flash再漲30%，2027毛利率突破80%。[13]</li>
+<li>其他外資／共識目標約236～238元，與FactSet接近。</li>
+</ul>
+<p>350元需要2027 EPS約60元與接近6倍PE，且合併毛利率持續極高；屬多頭而非基準。</p>
+<h2>自建估值</h2>
+<table>
+<thead>
+<tr>
+<th>情境</th>
+<th style="text-align: right;">2027正常化EPS</th>
+<th style="text-align: right;">PE</th>
+<th style="text-align: right;">目標價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空頭</td>
+<td style="text-align: right;">9.1元</td>
+<td style="text-align: right;">9倍</td>
+<td style="text-align: right;">82元</td>
+</tr>
+<tr>
+<td><strong>基準</strong></td>
+<td style="text-align: right;"><strong>15.1元</strong></td>
+<td style="text-align: right;"><strong>12倍</strong></td>
+<td style="text-align: right;"><strong>182元</strong></td>
+</tr>
+<tr>
+<td>多頭</td>
+<td style="text-align: right;">21.2元</td>
+<td style="text-align: right;">14倍</td>
+<td style="text-align: right;">297元</td>
+</tr>
+</tbody>
+</table>
+<p>基準假設2027合併營收2,380億元、歸母淨利率30%，以47.2億股計算EPS約15.1元。FactSet 50.05元與樂觀法人59.9元若採相同股數，分別需要約2,362億與2,827億元歸母淨利，幾乎等於甚至超過本模型全年營收，除非營收與ASP再大幅跳升，否則不能採為基準。</p>
+<h2>操作與否決條件</h2>
+<ul>
+<li>170～190元：基準合理區，不追價。</li>
+<li>140～150元：接近Base打八折，才有較明顯安全邊際。</li>
+<li>200～230元：已開始交易Bull機率。</li>
+<li>297元以上：超過官方分部模型Bull價，需新的營收與獲利證據。</li>
+</ul>
+<p>否決條件：CMS ASP季增降至個位數後轉負、Flash價格轉跌、16nm良率停滯、新唐明顯拖累合併獲利、CapEx與負債上升但營業現金流不跟、NOR市占下降、LTA未轉成實際出貨。</p>
+<h2>Sources</h2>
+<p>[10] https://www.winbond.com/hq/about-winbond/news-and-events/news/news00582.html?__locale=en — 華邦電2026Q2官方財報
+[11] https://www.winbond.com/export/sites/winbond/about-winbond/investor/investor-conference/2Q26-investor-conference_EN_Final.pdf — 華邦電2026Q2法說簡報
+[12] https://news.cnyes.com/news/id/6579002 — 華邦電FactSet財測
+[13] https://www.ftnn.com.tw/news/568380 — 華邦電法人350目標
+[14] https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx — Micron FQ3 2026 official
+[15] https://news.skhynix.com/en/q2-2026-business-results — SK hynix Q2 2026 official
+[16] https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results — Samsung Q2 2026 official
+[19] https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_2344.tw&amp;json=1&amp;delay=0
+[25] https://www.winbond.com/export/sites/winbond/about-winbond/investor/financial-information/financial-reports/financial/2026Q2-Consolidated-Financial-Report.pdf — 華邦電2026Q2核閱財報
+[26] https://www.nuvoton.com/export/sites/nuvoton/about-nuvoton/investors/2026Q2.pdf — 新唐2026Q2法說</p></article></main></body></html>
