@@ -1091,6 +1091,23 @@
       "pe": "1.25"
     },
     {
+      "code": "2377",
+      "name": "微星",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "電競PC/AI Agent/顯示卡",
+      "researchFile": "research/摘要_AI硬體周邊補漲五虎_影片查核_20260822.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null,
+      "watchlist": "video_momentum"
+    },
+    {
       "code": "2379",
       "name": "瑞昱",
       "price": 714.0,
@@ -2732,6 +2749,23 @@
       "pe": "9.52"
     },
     {
+      "code": "3673",
+      "name": "TPK-KY",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "觸控/半導體TGV/奕力IC",
+      "researchFile": "research/摘要_AI硬體周邊補漲五虎_影片查核_20260822.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null,
+      "watchlist": "video_momentum"
+    },
+    {
       "code": "3711",
       "name": "日月光",
       "industry": "IC/封測",
@@ -2918,6 +2952,23 @@
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": 0.24
+    },
+    {
+      "code": "5243",
+      "name": "乙盛-KY",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "低軌衛星/伺服器機構件",
+      "researchFile": "research/摘要_AI硬體周邊補漲五虎_影片查核_20260822.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null,
+      "watchlist": "video_momentum"
     },
     {
       "code": "5269",
@@ -3211,6 +3262,23 @@
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": 2.02
+    },
+    {
+      "code": "6278",
+      "name": "台表科",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "AI PCBA/SMT打件/光通訊模組",
+      "researchFile": "research/摘要_AI硬體周邊補漲五虎_影片查核_20260822.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null,
+      "watchlist": "video_momentum"
     },
     {
       "code": "6285",
