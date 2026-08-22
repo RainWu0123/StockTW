@@ -42,7 +42,9 @@
       "targetDist": -11.2,
       "researchTheme": "綠能轉型/低碳建材",
       "researchFile": "research/1101_台泥.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "1102",
@@ -85,7 +87,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "1216",
@@ -129,7 +133,9 @@
       "targetDist": -8.8,
       "researchTheme": "食品通路龍頭",
       "researchFile": "research/1216_統一.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.39,
+      "etf00981A": null
     },
     {
       "code": "1301",
@@ -173,7 +179,9 @@
       "targetDist": -4.2,
       "researchTheme": "石化循環/集團控股",
       "researchFile": "research/1301_台塑.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "1303",
@@ -217,7 +225,9 @@
       "targetDist": -20.0,
       "researchTheme": "AI電子材料/CCL",
       "researchFile": "research/1303_南亞.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.93,
+      "etf00981A": null
     },
     {
       "code": "1326",
@@ -265,7 +275,25 @@
       "targetDist": -11.6,
       "researchTheme": "石化循環",
       "researchFile": "research/1326_台化.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "1590",
+      "name": "亞德客-KY",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": 0.24
     },
     {
       "code": "2002",
@@ -309,7 +337,41 @@
       "targetDist": -15.4,
       "researchTheme": "鋼鐵循環",
       "researchFile": "research/2002_中鋼.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 6500.0,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "research/2059_川湖.md",
+      "lastVerified": "",
+      "etf0050": 0.78,
+      "etf00981A": null
+    },
+    {
+      "code": "2108",
+      "name": "南帝",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 33.0,
+      "targetDist": null,
+      "researchTheme": "NBR乳膠/耐油橡膠",
+      "researchFile": "research/2108_南帝.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2301",
@@ -357,7 +419,9 @@
       "targetDist": -13.0,
       "researchTheme": "AI電源第二供應商",
       "researchFile": "research/2301_光寶科.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.54,
+      "etf00981A": null
     },
     {
       "code": "2303",
@@ -396,7 +460,14 @@
       "limitGene": 1,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 1.35,
+      "etf00981A": 3.69,
+      "researchFile": "research/2303_聯電.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "lastVerified": "2026-07-14"
     },
     {
       "code": "2308",
@@ -440,7 +511,9 @@
       "targetDist": -23.9,
       "researchTheme": "AI電源/液冷散熱/HVDC",
       "researchFile": "research/2308_台達電.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 3.43,
+      "etf00981A": 3.38
     },
     {
       "code": "2313",
@@ -484,7 +557,9 @@
       "targetDist": -17.9,
       "researchTheme": "PCB/載板",
       "researchFile": "research/2313_華通.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2317",
@@ -528,7 +603,9 @@
       "targetDist": -15.3,
       "researchTheme": "AI機櫃組裝",
       "researchFile": "research/2317_鴻海.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 3.01,
+      "etf00981A": null
     },
     {
       "code": "2327",
@@ -567,7 +644,14 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.91,
+      "etf00981A": 4.43,
+      "researchFile": "research/2327_國巨.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "被動元件/AI電源周邊",
+      "lastVerified": "2026-08-22"
     },
     {
       "code": "2330",
@@ -611,7 +695,9 @@
       "targetDist": -7.3,
       "researchTheme": "AI晶圓代工/先進製程",
       "researchFile": "research/2330_台積電.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 57.71,
+      "etf00981A": 9.04
     },
     {
       "code": "2337",
@@ -654,7 +740,14 @@
       "limitGene": 1,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null,
+      "researchFile": "research/2337_旺宏.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "NOR Flash/利基記憶體",
+      "lastVerified": "2026-07-14"
     },
     {
       "code": "2344",
@@ -698,7 +791,9 @@
       "targetDist": -9.5,
       "researchTheme": "利基記憶體/DDR4+SLC NAND+NOR",
       "researchFile": "research/2344_華邦電.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.52,
+      "etf00981A": null
     },
     {
       "code": "2345",
@@ -742,7 +837,9 @@
       "targetDist": -36.4,
       "researchTheme": "AI網通交換器/800G-1.6T/ASIC加速卡",
       "researchFile": "research/2345_智邦.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 1.06,
+      "etf00981A": 4.74
     },
     {
       "code": "2356",
@@ -790,7 +887,25 @@
       "targetDist": -15.8,
       "researchTheme": "AI伺服器二線追趕者",
       "researchFile": "research/2356_英業達.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.63,
+      "etf00981A": null
     },
     {
       "code": "2360",
@@ -833,7 +948,25 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.79,
+      "etf00981A": 0.25
+    },
+    {
+      "code": "2363",
+      "name": "矽統",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 80.0,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "research/2363_矽統.md",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2368",
@@ -876,7 +1009,14 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.36,
+      "etf00981A": 2.09,
+      "researchFile": "research/2368_金像電.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "高階PCB/AI伺服器板",
+      "lastVerified": "2026-08-22"
     },
     {
       "code": "2375",
@@ -920,7 +1060,9 @@
       "targetDist": -18.3,
       "researchTheme": "電源模組/散熱",
       "researchFile": "research/2375_凱美.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2379",
@@ -963,7 +1105,9 @@
       "limitGene": 1,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2382",
@@ -1007,7 +1151,9 @@
       "targetDist": -15.4,
       "researchTheme": "AI機櫃組裝/L11",
       "researchFile": "research/2382_廣達.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.88,
+      "etf00981A": null
     },
     {
       "code": "2383",
@@ -1046,7 +1192,14 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 1.72,
+      "etf00981A": 7.77,
+      "researchFile": "research/2383_台光電.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "AI高速CCL/M8-M9材料",
+      "lastVerified": "2026-08-22"
     },
     {
       "code": "2395",
@@ -1090,7 +1243,9 @@
       "targetDist": -7.3,
       "researchTheme": "工業電腦/邊緣AI",
       "researchFile": "research/2395_研華.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.32,
+      "etf00981A": null
     },
     {
       "code": "2404",
@@ -1134,7 +1289,9 @@
       "targetDist": -11.7,
       "researchTheme": "半導體廠務工程",
       "researchFile": "research/2404_漢唐.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2408",
@@ -1178,7 +1335,9 @@
       "targetDist": 38.9,
       "researchTheme": "DRAM超級週期/標準DRAM",
       "researchFile": "research/2408_南亞科.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.55,
+      "etf00981A": null
     },
     {
       "code": "2412",
@@ -1222,7 +1381,9 @@
       "targetDist": -5.9,
       "researchTheme": "電信/資料中心",
       "researchFile": "research/2412_中華電.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.52,
+      "etf00981A": null
     },
     {
       "code": "2449",
@@ -1265,7 +1426,14 @@
       "limitGene": 1,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.27,
+      "etf00981A": 0.59,
+      "researchFile": "research/2449_京元電子.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "AI晶片測試",
+      "lastVerified": "2026-08-22"
     },
     {
       "code": "2454",
@@ -1309,7 +1477,9 @@
       "targetDist": -9.8,
       "researchTheme": "ASIC/手機SoC",
       "researchFile": "research/2454_聯發科.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 5.69,
+      "etf00981A": 6.42
     },
     {
       "code": "2603",
@@ -1352,7 +1522,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.26,
+      "etf00981A": null
     },
     {
       "code": "2609",
@@ -1395,7 +1567,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2610",
@@ -1438,7 +1612,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2615",
@@ -1481,7 +1657,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "2618",
@@ -1524,7 +1702,25 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.36,
+      "etf00981A": null
     },
     {
       "code": "2881",
@@ -1568,7 +1764,9 @@
       "targetDist": -13.5,
       "researchTheme": "金融控股",
       "researchFile": "research/2881_富邦金.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 1.08,
+      "etf00981A": null
     },
     {
       "code": "2882",
@@ -1612,7 +1810,25 @@
       "targetDist": -12.6,
       "researchTheme": "金融控股",
       "researchFile": "research/2882_國泰金.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.94,
+      "etf00981A": null
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.48,
+      "etf00981A": null
     },
     {
       "code": "2884",
@@ -1655,7 +1871,25 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.61,
+      "etf00981A": null
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.72,
+      "etf00981A": null
     },
     {
       "code": "2886",
@@ -1698,7 +1932,25 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.56,
+      "etf00981A": null
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.86,
+      "etf00981A": null
     },
     {
       "code": "2890",
@@ -1741,7 +1993,25 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.52,
+      "etf00981A": null
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 1.16,
+      "etf00981A": null
     },
     {
       "code": "2892",
@@ -1784,7 +2054,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.38,
+      "etf00981A": null
     },
     {
       "code": "3005",
@@ -1828,7 +2100,9 @@
       "targetDist": -70.8,
       "researchTheme": "強固型運算",
       "researchFile": "research/3005_神基.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "3008",
@@ -1867,7 +2141,14 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.52,
+      "etf00981A": null,
+      "researchFile": "research/3008_大立光.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "光學鏡頭",
+      "lastVerified": "2026-08-22"
     },
     {
       "code": "3017",
@@ -1906,7 +2187,30 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 1.0,
+      "etf00981A": 4.56,
+      "researchFile": "research/3017_奇鋐.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "AI散熱/水冷",
+      "lastVerified": "2026-08-22"
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 900.0,
+      "targetDist": null,
+      "researchTheme": "MLCC/高容值被動件",
+      "researchFile": "research/3026_禾伸堂.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "3034",
@@ -1949,7 +2253,9 @@
       "limitGene": 1,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "3037",
@@ -1997,7 +2303,9 @@
       "targetDist": -5.7,
       "researchTheme": "ABF載板/AI封裝基板",
       "researchFile": "research/3037_欣興.md",
-      "lastVerified": "2026-08-19"
+      "lastVerified": "2026-08-19",
+      "etf0050": 1.5,
+      "etf00981A": 4.87
     },
     {
       "code": "3038",
@@ -2041,7 +2349,9 @@
       "targetDist": -98.4,
       "researchTheme": "晶圓測試卡/探針卡",
       "researchFile": "research/3038_全台.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "3045",
@@ -2084,7 +2394,25 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.16,
+      "etf00981A": null
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 3000.0,
+      "targetDist": null,
+      "researchTheme": "InP磊晶/光通訊上游",
+      "researchFile": "research/3081_聯亞.md",
+      "lastVerified": "2026-08-19",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "3231",
@@ -2132,7 +2460,9 @@
       "targetDist": -31.2,
       "researchTheme": "AI機櫃ODM/NeoCloud先鋒",
       "researchFile": "research/3231_緯創.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.55,
+      "etf00981A": null
     },
     {
       "code": "3443",
@@ -2171,7 +2501,14 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.43,
+      "etf00981A": null,
+      "researchFile": "research/3443_創意.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "AI ASIC設計服務",
+      "lastVerified": "2026-08-22"
     },
     {
       "code": "3529",
@@ -2210,7 +2547,14 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null,
+      "researchFile": "research/3529_力旺.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "NPU/IP授權",
+      "lastVerified": "2026-08-22"
     },
     {
       "code": "3653",
@@ -2258,7 +2602,25 @@
       "targetDist": 1698.3,
       "researchTheme": "封裝材料/AI載板材料",
       "researchFile": "research/3653_健策.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.48,
+      "etf00981A": 2.84
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.29,
+      "etf00981A": null
     },
     {
       "code": "3665",
@@ -2301,7 +2663,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.4,
+      "etf00981A": 3.74
     },
     {
       "code": "3711",
@@ -2345,7 +2709,9 @@
       "targetDist": -16.1,
       "researchTheme": "AI封測/先進封裝",
       "researchFile": "research/3711_日月光.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": 1.96,
+      "etf00981A": 3.15
     },
     {
       "code": "4904",
@@ -2388,7 +2754,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.18,
+      "etf00981A": null
     },
     {
       "code": "4938",
@@ -2431,7 +2799,57 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.35,
+      "etf00981A": 0.24
+    },
+    {
+      "code": "4971",
+      "name": "IET-KY",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 550.0,
+      "targetDist": null,
+      "researchTheme": "InP磊晶/光通訊+國防",
+      "researchFile": "research/4971_IET-KY.md",
+      "lastVerified": "2026-08-19",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": 0.24
     },
     {
       "code": "5269",
@@ -2474,8 +2892,26 @@
       "target": 1500.0,
       "targetDist": -5.7,
       "researchTheme": "USB/PCIe 控制晶片",
-      "researchFile": "research/5269_祥碩.md",
-      "lastVerified": "2026-08-22"
+      "researchFile": "research/5269_祥碩_wrong.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "5274",
+      "name": "信驊",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 16000.0,
+      "targetDist": null,
+      "researchTheme": "伺服器管理晶片/BMC",
+      "researchFile": "research/5274_信驊.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "5880",
@@ -2518,7 +2954,9 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.27,
+      "etf00981A": null
     },
     {
       "code": "6166",
@@ -2562,7 +3000,41 @@
       "targetDist": -40.8,
       "researchTheme": "邊緣運算/機器人",
       "researchFile": "research/6166_凌華.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": 0.43
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": 4.48
     },
     {
       "code": "6239",
@@ -2606,7 +3078,66 @@
       "targetDist": -26.7,
       "researchTheme": "記憶體封測",
       "researchFile": "research/6239_力成.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "6269",
+      "name": "台郡",
+      "industry": "PCB/載板",
+      "price": 62.4,
+      "pct": -1.89,
+      "vol": 1350,
+      "score": 2.5,
+      "note": "原始追蹤標的",
+      "s1_raw": 51.84,
+      "s2_raw": 49.71,
+      "dimensions": {
+        "liquidity": 5.0,
+        "momentum": 85.86,
+        "alpha": 80.0,
+        "fund_flow": 25.0,
+        "theme": 0.0,
+        "fundamental": 36.0
+      },
+      "beta": null,
+      "marketCap": 28046462500.0,
+      "trailingPE": null,
+      "revenueGrowth": 0.057,
+      "earningsGrowth": null,
+      "institutionPercentHeld": null,
+      "52WeekHigh": 87.5,
+      "52WeekLow": 45.7,
+      "averageVolume10days": 12044687,
+      "rank": 31,
+      "hold": "--",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 1,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true,
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": 2.02
     },
     {
       "code": "6285",
@@ -2650,7 +3181,25 @@
       "targetDist": -32.7,
       "researchTheme": "AI網通設備/衛星",
       "researchFile": "research/6285_啟碁.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "6415",
+      "name": "矽力",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "research/6415_矽力.md",
+      "lastVerified": "2026-07-14",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "6442",
@@ -2694,7 +3243,9 @@
       "targetDist": 90.6,
       "researchTheme": "光通訊/矽光",
       "researchFile": "research/6442_光聖.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "6505",
@@ -2738,7 +3289,30 @@
       "limitGene": 0,
       "breakoutVol": 0,
       "concepts": [],
-      "in_ai_etf": true
+      "in_ai_etf": true,
+      "etf0050": 0.08,
+      "etf00981A": null,
+      "researchFile": "research/6505_台塑化.md",
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "煉油/石化",
+      "lastVerified": "2026-07-14"
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 6000.0,
+      "targetDist": null,
+      "researchTheme": "AI伺服器直供ODM/ASIC機櫃",
+      "researchFile": "research/6669_緯穎.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": 0.67,
+      "etf00981A": 4.8
     },
     {
       "code": "6770",
@@ -2782,7 +3356,25 @@
       "targetDist": -31.6,
       "researchTheme": "晶圓代工/記憶體",
       "researchFile": "research/6770_力積電.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": 0.92
     },
     {
       "code": "6830",
@@ -2826,7 +3418,9 @@
       "targetDist": -23.0,
       "researchTheme": "半導體分析/檢測",
       "researchFile": "research/6830_汎銓.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
       "code": "7610",
@@ -2870,46 +3464,73 @@
       "targetDist": 4075.0,
       "researchTheme": "金屬製品",
       "researchFile": "research/7610_聯友金屬創.md",
-      "lastVerified": "2026-08-22"
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     },
     {
-      "code": "6269",
-      "name": "台郡",
-      "industry": "PCB/載板",
-      "price": 62.4,
-      "pct": -1.89,
-      "vol": 1350,
-      "score": 2.5,
-      "note": "原始追蹤標的",
-      "s1_raw": 51.84,
-      "s2_raw": 49.71,
-      "dimensions": {
-        "liquidity": 5.0,
-        "momentum": 85.86,
-        "alpha": 80.0,
-        "fund_flow": 25.0,
-        "theme": 0.0,
-        "fundamental": 36.0
-      },
-      "beta": null,
-      "marketCap": 28046462500.0,
-      "trailingPE": null,
-      "revenueGrowth": 0.057,
-      "earningsGrowth": null,
-      "institutionPercentHeld": null,
-      "52WeekHigh": 87.5,
-      "52WeekLow": 45.7,
-      "averageVolume10days": 12044687,
-      "rank": 31,
-      "hold": "--",
-      "day_pct": 0.0,
-      "week_pct": 0.0,
-      "month_pct": 0.0,
-      "bigOrder": 1.0,
-      "limitGene": 1,
-      "breakoutVol": 0,
-      "concepts": [],
-      "in_ai_etf": true
+      "code": "7769",
+      "name": "未知(代碼待確認)",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": 0.37,
+      "etf00981A": null
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 1400.0,
+      "targetDist": null,
+      "researchTheme": "ABF/BT載板",
+      "researchFile": "research/8046_南電.md",
+      "lastVerified": "2026-08-19",
+      "etf0050": 0.25,
+      "etf00981A": 3.04
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": null,
+      "targetDist": null,
+      "researchTheme": "",
+      "researchFile": "",
+      "lastVerified": "",
+      "etf0050": null,
+      "etf00981A": 0.83
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "industry": "",
+      "price": null,
+      "pct": null,
+      "vol": null,
+      "score": null,
+      "target": 3000.0,
+      "targetDist": null,
+      "researchTheme": "NAND控制晶片/eSSD/AI儲存",
+      "researchFile": "research/8299_群聯.md",
+      "lastVerified": "2026-08-22",
+      "etf0050": null,
+      "etf00981A": null
     }
   ],
   "updated": "2026-08-22T10:47:40.099301",

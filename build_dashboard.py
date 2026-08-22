@@ -8,6 +8,12 @@ BASE = Path('/home/ubuntu/investment')
 data = json.loads((BASE/'data.json').read_text(encoding='utf-8'))
 stocks = sorted(data['stocks'], key=lambda s: s.get('targetDist') if s.get('targetDist') is not None else -999)
 
+def etf_badges(s):
+    b=''
+    if s.get('etf0050'): b+=f'<span class="etf e50">0050</span>'
+    if s.get('etf00981A'): b+=f'<span class="etf e981">00981A</span>'
+    return b
+
 def esc(s): return str(s).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
 
 def dist_badge(s):
@@ -21,18 +27,20 @@ def dist_badge(s):
 rows = []
 themes_seen = {}
 for s in stocks:
+    s.setdefault('researchFile',''); s.setdefault('researchTheme',''); s.setdefault('etf0050',None); s.setdefault('etf00981A',None)
     theme = s.get('researchTheme','')
     if theme:
         key = theme.split('/')[0]
         themes_seen[key] = themes_seen.get(key,0)+1
     rows.append(f'''<tr>
-<td data-label="">{s['code']} <a href="https://tw.stock.yahoo.com/quote/{s['code']}.TW" target="_blank">{esc(s['name'])}</a></td>
+<td data-label="">{s['code']} <a href="https://github.com/RainWu0123/StockTW/blob/main/{s['researchFile']}" target="_blank">{esc(s['name'])}</a>{etf_badges(s)}</td>
 <td data-label="現價">{s.get('price','—')}</td>
 <td data-label="漲跌" class="{'up' if (s.get('pct') or 0)>=0 else 'down'}">{(s.get('pct') or 0):+.2f}%</td>
 <td data-label="評分">{s.get('score','—')}</td>
 <td data-label="主題"><span class="chip">{esc(theme or '未標記')}</span></td>
 <td data-label="目標價"><b>{s['target'] if s.get('target') else '—'}</b></td>
 <td data-label="距離">{dist_badge(s)}</td>
+<td data-label="ETF">{etf_badges(s) or '<span class="muted">—</span>'}</td>
 <td data-label="產業">{esc((s.get('industry') or '')[:8])}</td>
 </tr>''')
 
@@ -60,12 +68,15 @@ h1{font-size:1.6rem;margin-bottom:4px}.sub{color:var(--muted);margin-bottom:20px
 .tchip span{color:var(--muted);margin-left:4px}
 .tchip.on{background:var(--accent);color:#000;border-color:var(--accent)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:auto}
-table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:900px}
+table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:1000px}
 th{background:#1c2128;color:var(--muted);padding:10px 12px;text-align:left;position:sticky;top:0;cursor:pointer;user-select:none;white-space:nowrap}
 td{padding:9px 12px;border-top:1px solid var(--border);vertical-align:top}
 tr:hover td{background:#1c2128}
 .up{color:var(--green)}.down{color:var(--red)}.muted{color:var(--muted)}
 .chip{display:inline-block;background:#21262d;border:1px solid var(--border);border-radius:6px;padding:2px 8px;font-size:.8rem}
+.etf{display:inline-block;font-size:.62rem;border-radius:4px;padding:1px 5px;margin-left:4px;vertical-align:middle}
+.e50{background:#1f3a5f;color:#79b8ff;border:1px solid #2d4a6f}
+.e981{background:#3a2f1f;color:#e2b45a;border:1px solid #5a4a2d}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 @media(max-width:720px){body{padding:12px}.stats{grid-template-columns:repeat(2,1fr)}}
@@ -80,7 +91,7 @@ footer{color:var(--muted);font-size:.82rem;margin-top:20px;text-align:center}
 </div>
 <div class="tbar" id="themes">THEME_CHIPS</div>
 <div class="card"><table id="tbl">
-<thead><tr><th data-k="code">代碼/名稱</th><th data-k="price">現價</th><th data-k="pct">漲跌</th><th data-k="score">評分</th><th>主題</th><th data-k="target">Base目標價</th><th data-k="targetDist">距離</th><th>產業</th></tr></thead>
+<thead><tr><th data-k="code">代碼/名稱</th><th data-k="price">現價</th><th data-k="pct">漲跌</th><th data-k="score">評分</th><th>主題</th><th data-k="target">Base目標價</th><th data-k="targetDist">距離</th><th>ETF</th><th>產業</th></tr></thead>
 <tbody>ROWS</tbody></table></div>
 <footer>StockTW Research Dashboard ｜ 目標價不构成投資建議 ｜ 資料截止 DATA_CUTOFF</footer>
 </div>
