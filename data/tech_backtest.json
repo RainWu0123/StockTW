@@ -1,0 +1,712 @@
+{
+  "2330": {
+    "MA5黃金交叉MA20": {
+      "hold_5d": {
+        "count": 7,
+        "win_rate": 71.4,
+        "avg_return": 2.85,
+        "max_return": 6.65,
+        "min_return": -1.8
+      },
+      "hold_10d": {
+        "count": 7,
+        "win_rate": 71.4,
+        "avg_return": 2.74,
+        "max_return": 12.37,
+        "min_return": -4.9
+      }
+    },
+    "MA5跌破MA20": {
+      "hold_5d": {
+        "count": 6,
+        "win_rate": 83.3,
+        "avg_return": 3.14,
+        "max_return": 7.11,
+        "min_return": -1.86
+      },
+      "hold_10d": {
+        "count": 6,
+        "win_rate": 66.7,
+        "avg_return": 5.25,
+        "max_return": 19.23,
+        "min_return": -2.39
+      }
+    },
+    "站上MA20": {
+      "hold_5d": {
+        "count": 12,
+        "win_rate": 66.7,
+        "avg_return": 2.73,
+        "max_return": 10.48,
+        "min_return": -3.15
+      },
+      "hold_10d": {
+        "count": 12,
+        "win_rate": 50.0,
+        "avg_return": 1.95,
+        "max_return": 14.33,
+        "min_return": -9.84
+      }
+    },
+    "KD低檔黃金交叉(<25)": {
+      "hold_5d": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_return": 2.91,
+        "max_return": 2.91,
+        "min_return": 2.91
+      },
+      "hold_10d": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_return": 6.95,
+        "max_return": 6.95,
+        "min_return": 6.95
+      }
+    },
+    "KD高檔死亡交叉(>75)": {
+      "hold_5d": {
+        "count": 14,
+        "win_rate": 50.0,
+        "avg_return": -0.33,
+        "max_return": 7.64,
+        "min_return": -8.35
+      },
+      "hold_10d": {
+        "count": 14,
+        "win_rate": 85.7,
+        "avg_return": 2.58,
+        "max_return": 12.07,
+        "min_return": -6.58
+      }
+    },
+    "RSI<30超賣": {
+      "hold_5d": {
+        "count": 0
+      },
+      "hold_10d": {
+        "count": 0
+      }
+    },
+    "RSI>70超買": {
+      "hold_5d": {
+        "count": 27,
+        "win_rate": 70.4,
+        "avg_return": 0.7,
+        "max_return": 6.12,
+        "min_return": -8.35
+      },
+      "hold_10d": {
+        "count": 27,
+        "win_rate": 74.1,
+        "avg_return": 1.79,
+        "max_return": 9.78,
+        "min_return": -6.58
+      }
+    },
+    "MACD黃金交叉": {
+      "hold_5d": {
+        "count": 9,
+        "win_rate": 55.6,
+        "avg_return": 0.74,
+        "max_return": 6.67,
+        "min_return": -2.9
+      },
+      "hold_10d": {
+        "count": 9,
+        "win_rate": 55.6,
+        "avg_return": 1.61,
+        "max_return": 13.09,
+        "min_return": -5.48
+      }
+    },
+    "MACD死亡交叉": {
+      "hold_5d": {
+        "count": 8,
+        "win_rate": 75.0,
+        "avg_return": 1.96,
+        "max_return": 4.49,
+        "min_return": -1.58
+      },
+      "hold_10d": {
+        "count": 8,
+        "win_rate": 87.5,
+        "avg_return": 5.15,
+        "max_return": 10.7,
+        "min_return": -1.64
+      }
+    },
+    "觸及布林下軌": {
+      "hold_5d": {
+        "count": 5,
+        "win_rate": 100.0,
+        "avg_return": 6.41,
+        "max_return": 11.08,
+        "min_return": 1.75
+      },
+      "hold_10d": {
+        "count": 5,
+        "win_rate": 100.0,
+        "avg_return": 9.92,
+        "max_return": 18.47,
+        "min_return": 5.04
+      }
+    },
+    "觸及布林上軌": {
+      "hold_5d": {
+        "count": 22,
+        "win_rate": 50.0,
+        "avg_return": 0.26,
+        "max_return": 11.44,
+        "min_return": -7.01
+      },
+      "hold_10d": {
+        "count": 22,
+        "win_rate": 54.5,
+        "avg_return": 1.83,
+        "max_return": 11.76,
+        "min_return": -6.52
+      }
+    },
+    "布林通道壓縮(<8%)": {
+      "hold_5d": {
+        "count": 17,
+        "win_rate": 76.5,
+        "avg_return": 3.08,
+        "max_return": 11.02,
+        "min_return": -2.63
+      },
+      "hold_10d": {
+        "count": 17,
+        "win_rate": 47.1,
+        "avg_return": 1.63,
+        "max_return": 14.33,
+        "min_return": -10.73
+      }
+    },
+    "乖離率<-7%": {
+      "hold_5d": {
+        "count": 2,
+        "win_rate": 100.0,
+        "avg_return": 8.29,
+        "max_return": 9.32,
+        "min_return": 7.26
+      },
+      "hold_10d": {
+        "count": 2,
+        "win_rate": 100.0,
+        "avg_return": 10.1,
+        "max_return": 10.43,
+        "min_return": 9.77
+      }
+    },
+    "乖離率>+7%": {
+      "hold_5d": {
+        "count": 28,
+        "win_rate": 57.1,
+        "avg_return": 0.14,
+        "max_return": 5.96,
+        "min_return": -8.35
+      },
+      "hold_10d": {
+        "count": 28,
+        "win_rate": 64.3,
+        "avg_return": 1.32,
+        "max_return": 9.25,
+        "min_return": -6.58
+      }
+    },
+    "多頭排列(MA5>10>20)": {
+      "hold_5d": {
+        "count": 8,
+        "win_rate": 62.5,
+        "avg_return": 1.6,
+        "max_return": 6.12,
+        "min_return": -3.01
+      },
+      "hold_10d": {
+        "count": 8,
+        "win_rate": 62.5,
+        "avg_return": 2.47,
+        "max_return": 12.37,
+        "min_return": -5.11
+      }
+    }
+  },
+  "2454": {
+    "MA5黃金交叉MA20": {
+      "hold_5d": {
+        "count": 4,
+        "win_rate": 75.0,
+        "avg_return": 5.16,
+        "max_return": 21.51,
+        "min_return": -3.4
+      },
+      "hold_10d": {
+        "count": 4,
+        "win_rate": 75.0,
+        "avg_return": 12.81,
+        "max_return": 52.03,
+        "min_return": -3.88
+      }
+    },
+    "MA5跌破MA20": {
+      "hold_5d": {
+        "count": 3,
+        "win_rate": 66.7,
+        "avg_return": 4.03,
+        "max_return": 8.12,
+        "min_return": -2.55
+      },
+      "hold_10d": {
+        "count": 3,
+        "win_rate": 33.3,
+        "avg_return": -0.73,
+        "max_return": 2.9,
+        "min_return": -3.68
+      }
+    },
+    "站上MA20": {
+      "hold_5d": {
+        "count": 5,
+        "win_rate": 80.0,
+        "avg_return": 3.61,
+        "max_return": 17.28,
+        "min_return": -7.84
+      },
+      "hold_10d": {
+        "count": 5,
+        "win_rate": 80.0,
+        "avg_return": 13.26,
+        "max_return": 50.31,
+        "min_return": -14.65
+      }
+    },
+    "KD低檔黃金交叉(<25)": {
+      "hold_5d": {
+        "count": 3,
+        "win_rate": 66.7,
+        "avg_return": 2.09,
+        "max_return": 10.58,
+        "min_return": -7.26
+      },
+      "hold_10d": {
+        "count": 3,
+        "win_rate": 66.7,
+        "avg_return": 7.48,
+        "max_return": 29.69,
+        "min_return": -15.78
+      }
+    },
+    "KD高檔死亡交叉(>75)": {
+      "hold_5d": {
+        "count": 15,
+        "win_rate": 46.7,
+        "avg_return": 4.75,
+        "max_return": 32.82,
+        "min_return": -12.37
+      },
+      "hold_10d": {
+        "count": 15,
+        "win_rate": 66.7,
+        "avg_return": 13.4,
+        "max_return": 66.05,
+        "min_return": -10.0
+      }
+    },
+    "RSI<30超賣": {
+      "hold_5d": {
+        "count": 2,
+        "win_rate": 100.0,
+        "avg_return": 9.04,
+        "max_return": 10.58,
+        "min_return": 7.51
+      },
+      "hold_10d": {
+        "count": 2,
+        "win_rate": 100.0,
+        "avg_return": 30.55,
+        "max_return": 31.4,
+        "min_return": 29.69
+      }
+    },
+    "RSI>70超買": {
+      "hold_5d": {
+        "count": 38,
+        "win_rate": 60.5,
+        "avg_return": 6.83,
+        "max_return": 39.08,
+        "min_return": -14.73
+      },
+      "hold_10d": {
+        "count": 38,
+        "win_rate": 73.7,
+        "avg_return": 15.42,
+        "max_return": 64.11,
+        "min_return": -11.57
+      }
+    },
+    "MACD黃金交叉": {
+      "hold_5d": {
+        "count": 7,
+        "win_rate": 57.1,
+        "avg_return": 3.03,
+        "max_return": 17.28,
+        "min_return": -5.25
+      },
+      "hold_10d": {
+        "count": 7,
+        "win_rate": 57.1,
+        "avg_return": 9.45,
+        "max_return": 50.31,
+        "min_return": -4.55
+      }
+    },
+    "MACD死亡交叉": {
+      "hold_5d": {
+        "count": 7,
+        "win_rate": 57.1,
+        "avg_return": 6.69,
+        "max_return": 35.18,
+        "min_return": -6.06
+      },
+      "hold_10d": {
+        "count": 7,
+        "win_rate": 71.4,
+        "avg_return": 11.47,
+        "max_return": 43.42,
+        "min_return": -4.68
+      }
+    },
+    "觸及布林下軌": {
+      "hold_5d": {
+        "count": 7,
+        "win_rate": 100.0,
+        "avg_return": 6.81,
+        "max_return": 11.28,
+        "min_return": 0.27
+      },
+      "hold_10d": {
+        "count": 7,
+        "win_rate": 71.4,
+        "avg_return": 12.69,
+        "max_return": 31.4,
+        "min_return": -9.43
+      }
+    },
+    "觸及布林上軌": {
+      "hold_5d": {
+        "count": 20,
+        "win_rate": 70.0,
+        "avg_return": 7.97,
+        "max_return": 31.17,
+        "min_return": -12.37
+      },
+      "hold_10d": {
+        "count": 20,
+        "win_rate": 70.0,
+        "avg_return": 18.05,
+        "max_return": 64.11,
+        "min_return": -10.45
+      }
+    },
+    "布林通道壓縮(<8%)": {
+      "hold_5d": {
+        "count": 6,
+        "win_rate": 83.3,
+        "avg_return": 3.96,
+        "max_return": 10.11,
+        "min_return": -3.4
+      },
+      "hold_10d": {
+        "count": 6,
+        "win_rate": 100.0,
+        "avg_return": 4.0,
+        "max_return": 5.63,
+        "min_return": 2.38
+      }
+    },
+    "乖離率<-7%": {
+      "hold_5d": {
+        "count": 24,
+        "win_rate": 66.7,
+        "avg_return": 3.32,
+        "max_return": 26.98,
+        "min_return": -14.14
+      },
+      "hold_10d": {
+        "count": 24,
+        "win_rate": 54.2,
+        "avg_return": 8.42,
+        "max_return": 42.18,
+        "min_return": -15.78
+      }
+    },
+    "乖離率>+7%": {
+      "hold_5d": {
+        "count": 70,
+        "win_rate": 58.6,
+        "avg_return": 5.41,
+        "max_return": 39.08,
+        "min_return": -14.73
+      },
+      "hold_10d": {
+        "count": 70,
+        "win_rate": 58.6,
+        "avg_return": 10.96,
+        "max_return": 66.05,
+        "min_return": -11.57
+      }
+    },
+    "多頭排列(MA5>10>20)": {
+      "hold_5d": {
+        "count": 8,
+        "win_rate": 75.0,
+        "avg_return": 4.24,
+        "max_return": 16.89,
+        "min_return": -3.36
+      },
+      "hold_10d": {
+        "count": 8,
+        "win_rate": 37.5,
+        "avg_return": 5.13,
+        "max_return": 37.73,
+        "min_return": -4.29
+      }
+    }
+  },
+  "2308": {
+    "MA5黃金交叉MA20": {
+      "hold_5d": {
+        "count": 5,
+        "win_rate": 40.0,
+        "avg_return": 1.21,
+        "max_return": 9.15,
+        "min_return": -2.58
+      },
+      "hold_10d": {
+        "count": 5,
+        "win_rate": 20.0,
+        "avg_return": -3.58,
+        "max_return": 7.07,
+        "min_return": -12.7
+      }
+    },
+    "MA5跌破MA20": {
+      "hold_5d": {
+        "count": 4,
+        "win_rate": 75.0,
+        "avg_return": 11.28,
+        "max_return": 22.72,
+        "min_return": -2.93
+      },
+      "hold_10d": {
+        "count": 4,
+        "win_rate": 75.0,
+        "avg_return": 6.88,
+        "max_return": 23.24,
+        "min_return": -14.0
+      }
+    },
+    "站上MA20": {
+      "hold_5d": {
+        "count": 9,
+        "win_rate": 100.0,
+        "avg_return": 7.63,
+        "max_return": 21.61,
+        "min_return": 0.62
+      },
+      "hold_10d": {
+        "count": 9,
+        "win_rate": 66.7,
+        "avg_return": 6.73,
+        "max_return": 24.75,
+        "min_return": -5.24
+      }
+    },
+    "KD低檔黃金交叉(<25)": {
+      "hold_5d": {
+        "count": 3,
+        "win_rate": 100.0,
+        "avg_return": 9.35,
+        "max_return": 17.73,
+        "min_return": 4.72
+      },
+      "hold_10d": {
+        "count": 3,
+        "win_rate": 66.7,
+        "avg_return": 10.7,
+        "max_return": 19.46,
+        "min_return": -2.62
+      }
+    },
+    "KD高檔死亡交叉(>75)": {
+      "hold_5d": {
+        "count": 13,
+        "win_rate": 61.5,
+        "avg_return": 2.15,
+        "max_return": 15.14,
+        "min_return": -8.37
+      },
+      "hold_10d": {
+        "count": 13,
+        "win_rate": 61.5,
+        "avg_return": 3.49,
+        "max_return": 21.43,
+        "min_return": -10.96
+      }
+    },
+    "RSI<30超賣": {
+      "hold_5d": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_return": 10.37,
+        "max_return": 10.37,
+        "min_return": 10.37
+      },
+      "hold_10d": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_return": 19.73,
+        "max_return": 19.73,
+        "min_return": 19.73
+      }
+    },
+    "RSI>70超買": {
+      "hold_5d": {
+        "count": 32,
+        "win_rate": 56.2,
+        "avg_return": 1.27,
+        "max_return": 12.89,
+        "min_return": -14.39
+      },
+      "hold_10d": {
+        "count": 32,
+        "win_rate": 53.1,
+        "avg_return": 1.95,
+        "max_return": 21.29,
+        "min_return": -13.35
+      }
+    },
+    "MACD黃金交叉": {
+      "hold_5d": {
+        "count": 9,
+        "win_rate": 44.4,
+        "avg_return": -1.44,
+        "max_return": 12.2,
+        "min_return": -18.62
+      },
+      "hold_10d": {
+        "count": 9,
+        "win_rate": 55.6,
+        "avg_return": 1.27,
+        "max_return": 21.02,
+        "min_return": -12.7
+      }
+    },
+    "MACD死亡交叉": {
+      "hold_5d": {
+        "count": 8,
+        "win_rate": 25.0,
+        "avg_return": -1.55,
+        "max_return": 19.2,
+        "min_return": -12.76
+      },
+      "hold_10d": {
+        "count": 8,
+        "win_rate": 87.5,
+        "avg_return": 10.39,
+        "max_return": 33.7,
+        "min_return": -6.52
+      }
+    },
+    "觸及布林下軌": {
+      "hold_5d": {
+        "count": 6,
+        "win_rate": 100.0,
+        "avg_return": 9.3,
+        "max_return": 22.72,
+        "min_return": 2.53
+      },
+      "hold_10d": {
+        "count": 6,
+        "win_rate": 66.7,
+        "avg_return": 8.09,
+        "max_return": 23.24,
+        "min_return": -7.33
+      }
+    },
+    "觸及布林上軌": {
+      "hold_5d": {
+        "count": 15,
+        "win_rate": 53.3,
+        "avg_return": 1.58,
+        "max_return": 12.16,
+        "min_return": -9.39
+      },
+      "hold_10d": {
+        "count": 15,
+        "win_rate": 66.7,
+        "avg_return": 6.48,
+        "max_return": 21.02,
+        "min_return": -12.7
+      }
+    },
+    "布林通道壓縮(<8%)": {
+      "hold_5d": {
+        "count": 0
+      },
+      "hold_10d": {
+        "count": 0
+      }
+    },
+    "乖離率<-7%": {
+      "hold_5d": {
+        "count": 22,
+        "win_rate": 59.1,
+        "avg_return": 4.6,
+        "max_return": 31.59,
+        "min_return": -7.45
+      },
+      "hold_10d": {
+        "count": 22,
+        "win_rate": 40.9,
+        "avg_return": 3.83,
+        "max_return": 28.2,
+        "min_return": -14.82
+      }
+    },
+    "乖離率>+7%": {
+      "hold_5d": {
+        "count": 62,
+        "win_rate": 58.1,
+        "avg_return": 1.04,
+        "max_return": 15.14,
+        "min_return": -14.39
+      },
+      "hold_10d": {
+        "count": 62,
+        "win_rate": 54.8,
+        "avg_return": 3.07,
+        "max_return": 21.43,
+        "min_return": -17.18
+      }
+    },
+    "多頭排列(MA5>10>20)": {
+      "hold_5d": {
+        "count": 7,
+        "win_rate": 57.1,
+        "avg_return": 0.64,
+        "max_return": 12.16,
+        "min_return": -7.16
+      },
+      "hold_10d": {
+        "count": 7,
+        "win_rate": 42.9,
+        "avg_return": 1.7,
+        "max_return": 20.36,
+        "min_return": -10.81
+      }
+    }
+  }
+}
