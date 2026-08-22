@@ -4,32 +4,44 @@
     {
       "file": "1101_台泥.md",
       "chars": 807,
-      "code": "1101"
+      "code": "1101",
+      "target_base": 28.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "1216_統一.md",
       "chars": 794,
-      "code": "1216"
+      "code": "1216",
+      "target_base": 85.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "1301_台塑.md",
       "chars": 814,
-      "code": "1301"
+      "code": "1301",
+      "target_base": 62.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "1303_南亞.md",
       "chars": 914,
-      "code": "1303"
+      "code": "1303",
+      "target_base": 240.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "1326_台化.md",
       "chars": 1370,
-      "code": "1326"
+      "code": "1326",
+      "target_base": 68.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2002_中鋼.md",
       "chars": 898,
-      "code": "2002"
+      "code": "2002",
+      "target_base": 23.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2108_南帝.md",
@@ -41,7 +53,9 @@
     {
       "file": "2301_光寶科.md",
       "chars": 1368,
-      "code": "2301"
+      "code": "2301",
+      "target_base": 300.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2303_聯電.md",
@@ -61,7 +75,9 @@
     {
       "file": "2317_鴻海.md",
       "chars": 835,
-      "code": "2317"
+      "code": "2317",
+      "target_base": 290.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2327_國巨.md",
@@ -71,7 +87,9 @@
     {
       "file": "2330_台積電.md",
       "chars": 3220,
-      "code": "2330"
+      "code": "2330",
+      "target_base": 2600.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2337_旺宏.md",
@@ -82,7 +100,7 @@
       "file": "2344_華邦電.md",
       "chars": 4455,
       "code": "2344",
-      "target_base": 185.0,
+      "target_base": 200.0,
       "tracked_at": "2026-08-22"
     },
     {
@@ -93,7 +111,9 @@
     {
       "file": "2356_英業達.md",
       "chars": 1382,
-      "code": "2356"
+      "code": "2356",
+      "target_base": 78.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2368_金像電.md",
@@ -108,7 +128,9 @@
     {
       "file": "2382_廣達.md",
       "chars": 1278,
-      "code": "2382"
+      "code": "2382",
+      "target_base": 380.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2383_台光電.md",
@@ -145,7 +167,9 @@
     {
       "file": "2454_聯發科.md",
       "chars": 1670,
-      "code": "2454"
+      "code": "2454",
+      "target_base": 4200.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "2881_富邦金.md",
@@ -199,7 +223,9 @@
     {
       "file": "3231_緯創.md",
       "chars": 1399,
-      "code": "3231"
+      "code": "3231",
+      "target_base": 255.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "3443_創意.md",
@@ -219,7 +245,9 @@
     {
       "file": "3711_日月光.md",
       "chars": 911,
-      "code": "3711"
+      "code": "3711",
+      "target_base": 700.0,
+      "tracked_at": "2026-08-22"
     },
     {
       "file": "4971_IET-KY.md",
