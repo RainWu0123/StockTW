@@ -65,7 +65,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "1102",
@@ -134,7 +140,9 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "1216",
@@ -205,7 +213,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "1301",
@@ -276,7 +290,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "1303",
@@ -348,7 +368,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "1326",
@@ -421,21 +447,27 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "1590",
       "name": "亞德客-KY",
       "industry": "",
       "price": 1435.0,
-      "pct": null,
-      "vol": null,
+      "pct": 1.06,
+      "vol": 858,
       "score": null,
-      "target": 650.0,
-      "targetDist": 120.8,
-      "researchTheme": "氣動元件/自動化",
+      "target": 1600.0,
+      "targetDist": -10.3,
+      "researchTheme": "氣動元件、中國自動化、人形機器人電動缸題材",
       "researchFile": "research/1590_亞德客-KY.md",
-      "lastVerified": "2026-08-22",
+      "lastVerified": "2026-08-23",
       "etf0050": null,
       "etf00981A": 0.24,
       "pe": "5.24",
@@ -459,7 +491,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-28",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "未達標"
     },
     {
       "code": "2002",
@@ -527,21 +565,27 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2059",
       "name": "川湖",
       "industry": "",
       "price": 13385.0,
-      "pct": null,
-      "vol": null,
+      "pct": -3.88,
+      "vol": 596,
       "score": null,
-      "target": 6500.0,
-      "targetDist": 105.9,
-      "researchTheme": "",
+      "target": 12000.0,
+      "targetDist": 11.5,
+      "researchTheme": "AI伺服器滑軌壟斷/安全件IP/毛利率87%/萬金股",
       "researchFile": "research/2059_川湖.md",
-      "lastVerified": "",
+      "lastVerified": "2026-08-22",
       "etf0050": 0.78,
       "etf00981A": null,
       "pe": "37.79",
@@ -565,15 +609,21 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "2108",
       "name": "南帝",
       "industry": "",
       "price": 31.4,
-      "pct": null,
-      "vol": null,
+      "pct": 6.44,
+      "vol": 2551,
       "score": null,
       "target": 33.0,
       "targetDist": -4.8,
@@ -601,7 +651,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-21",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2301",
@@ -645,9 +701,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 300.0,
-      "targetDist": -13.0,
-      "researchTheme": "AI電源第二供應商",
+      "target": 280.0,
+      "targetDist": -6.8,
+      "researchTheme": "AI電源轉型/800V HVDC Power Rack 11月量產/BBU/DenseLight磷化銦CPO",
       "researchFile": "research/2301_光寶科.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.54,
@@ -676,7 +732,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2303",
@@ -719,10 +781,10 @@
       "etf0050": 1.35,
       "etf00981A": 3.69,
       "researchFile": "research/2303_聯電.md",
-      "target": 135.0,
-      "targetDist": -13.7,
-      "researchTheme": "",
-      "lastVerified": "2026-07-14",
+      "target": 131.0,
+      "targetDist": -11.1,
+      "researchTheme": "成熟製程復甦/矽光子+先進封裝轉型/Intel 12奈米/稼動率90%",
+      "lastVerified": "2026-08-22",
       "pe": "3.29",
       "qt": {
         "qt_short": {
@@ -748,7 +810,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2308",
@@ -788,9 +856,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 2300.0,
-      "targetDist": -23.9,
-      "researchTheme": "AI電源/液冷散熱/HVDC",
+      "target": 2400.0,
+      "targetDist": -27.1,
+      "researchTheme": "AI電源龍頭/±400V Q3量產/HVDC 2027滲透20%/液冷Sidecar 260KW",
       "researchFile": "research/2308_台達電.md",
       "lastVerified": "2026-08-22",
       "etf0050": 3.43,
@@ -819,15 +887,21 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2312",
       "name": "金寶",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 31.05,
+      "pct": -0.96,
+      "vol": 6480,
       "score": null,
       "target": null,
       "targetDist": null,
@@ -835,7 +909,9 @@
       "researchFile": "",
       "lastVerified": "",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "2313",
@@ -875,9 +951,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 260.0,
-      "targetDist": -17.9,
-      "researchTheme": "PCB/載板",
+      "target": 324.0,
+      "targetDist": -34.1,
+      "researchTheme": "HDI龍頭轉型/mSAP光模組/低軌衛星V3獨供/2028千億營收目標",
       "researchFile": "research/2313_華通.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -904,7 +980,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2317",
@@ -944,9 +1026,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 290.0,
-      "targetDist": -15.3,
-      "researchTheme": "AI機櫃組裝",
+      "target": 415.0,
+      "targetDist": -40.8,
+      "researchTheme": "AI機櫃ODM龍頭/ASIC市占四成/800G交換器/CPO/垂直整合",
       "researchFile": "research/2317_鴻海.md",
       "lastVerified": "2026-08-22",
       "etf0050": 3.01,
@@ -973,7 +1055,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2327",
@@ -1016,9 +1104,9 @@
       "etf0050": 0.91,
       "etf00981A": 4.43,
       "researchFile": "research/2327_國巨.md",
-      "target": 700.0,
-      "targetDist": -20.9,
-      "researchTheme": "被動元件/AI電源周邊",
+      "target": 1280.0,
+      "targetDist": -56.7,
+      "researchTheme": "被動元件超級週期/BB值2.2暴衝/AI溢價長約/本益比去槓桿殺估值",
       "lastVerified": "2026-08-22",
       "pe": "6.44",
       "qt": {
@@ -1044,7 +1132,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2330",
@@ -1084,9 +1178,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 2600.0,
-      "targetDist": -7.3,
-      "researchTheme": "AI晶圓代工/先進製程",
+      "target": 3100.0,
+      "targetDist": -22.3,
+      "researchTheme": "先進製程壟斷/CoWoS爆單/2奈米爬坡/亞利桑那獲利證明",
       "researchFile": "research/2330_台積電.md",
       "lastVerified": "2026-08-22",
       "etf0050": 57.71,
@@ -1118,7 +1212,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2337",
@@ -1165,10 +1265,10 @@
       "etf0050": null,
       "etf00981A": null,
       "researchFile": "research/2337_旺宏.md",
-      "target": 220.0,
-      "targetDist": -44.3,
-      "researchTheme": "NOR Flash/利基記憶體",
-      "lastVerified": "2026-07-14",
+      "target": 218.0,
+      "targetDist": -43.8,
+      "researchTheme": "利基記憶體/NOR+SLC NAND+eMMC結構性缺貨/毛利率64%→80%/大摩NAND首選",
+      "lastVerified": "2026-08-22",
       "pe": "3.92",
       "qt": {
         "qt_short": {
@@ -1189,7 +1289,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2344",
@@ -1229,9 +1335,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 200.0,
-      "targetDist": -9.5,
-      "researchTheme": "利基記憶體/DDR4+SLC NAND+NOR",
+      "target": 120.0,
+      "targetDist": 50.8,
+      "researchTheme": "利基型記憶體超級週期/CMS ASP翻倍/LTA排到2030/16nm良率88%",
       "researchFile": "research/2344_華邦電.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.52,
@@ -1260,7 +1366,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "透支"
     },
     {
       "code": "2345",
@@ -1300,9 +1412,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 3200.0,
-      "targetDist": -36.4,
-      "researchTheme": "AI網通交換器/800G-1.6T/ASIC加速卡",
+      "target": 3688.0,
+      "targetDist": -44.8,
+      "researchTheme": "AI網通/Trainium3放量+Switch Tray/1.6T+OCS+CPO/輝達Spectrum 6新客戶",
       "researchFile": "research/2345_智邦.md",
       "lastVerified": "2026-08-22",
       "etf0050": 1.06,
@@ -1333,15 +1445,21 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2348",
       "name": "海悅",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 72.4,
+      "pct": 0.84,
+      "vol": 499,
       "score": null,
       "target": null,
       "targetDist": null,
@@ -1349,7 +1467,9 @@
       "researchFile": "",
       "lastVerified": "",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "2356",
@@ -1393,9 +1513,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 78.0,
-      "targetDist": -15.8,
-      "researchTheme": "AI伺服器二線追趕者",
+      "target": 75.0,
+      "targetDist": -12.4,
+      "researchTheme": "AI伺服器主板L6→L10/L11/ASIC德州廠/通用伺服器回春",
       "researchFile": "research/2356_英業達.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -1423,19 +1543,25 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2357",
       "name": "華碩",
       "industry": "",
       "price": 921.0,
-      "pct": null,
-      "vol": null,
+      "pct": 0.88,
+      "vol": 1647,
       "score": null,
       "target": 1050.0,
       "targetDist": -12.3,
-      "researchTheme": "PC品牌/AI伺服器機架",
+      "researchTheme": "PC品牌/AI伺服器機架/HGX+GB300",
       "researchFile": "research/2357_華碩.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.63,
@@ -1461,7 +1587,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2360",
@@ -1509,10 +1641,10 @@
       "etf00981A": 0.25,
       "pe": "26.96",
       "researchFile": "research/2360_致茂.md",
-      "target": 700.0,
-      "targetDist": 200.0,
-      "researchTheme": "測試設備/電池測試",
-      "lastVerified": "2026-08-22",
+      "target": 2400.0,
+      "targetDist": -12.5,
+      "researchTheme": "量測/ATE、半導體SLT、CPO光電測試、HVDC電源測試",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": -10,
@@ -1538,15 +1670,21 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-30",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "未達標"
     },
     {
       "code": "2363",
       "name": "矽統",
       "industry": "",
       "price": 50.7,
-      "pct": null,
-      "vol": null,
+      "pct": -0.59,
+      "vol": 1754,
       "score": null,
       "target": 80.0,
       "targetDist": -36.6,
@@ -1575,7 +1713,11 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "researchMaturity": null,
+      "researchAgeDays": null,
+      "researchStatus": "未驗證",
+      "targetStatus": "低估"
     },
     {
       "code": "2368",
@@ -1622,9 +1764,9 @@
       "etf0050": 0.36,
       "etf00981A": 2.09,
       "researchFile": "research/2368_金像電.md",
-      "target": 1500.0,
-      "targetDist": -35.7,
-      "researchTheme": "高階PCB/AI伺服器板",
+      "target": 1800.0,
+      "targetDist": -46.4,
+      "researchTheme": "AI伺服器PCB/Trainium3市占70%+Trainium4+TPU/HDI良率追平/Q3毛利率36.6%",
       "lastVerified": "2026-08-22",
       "pe": "11.84",
       "qt": {
@@ -1652,7 +1794,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2375",
@@ -1721,24 +1869,36 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2377",
       "name": "微星",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 141.5,
+      "pct": 1.07,
+      "vol": 4925,
       "score": null,
       "target": 155.0,
-      "targetDist": null,
+      "targetDist": -8.7,
       "researchTheme": "電競PC/顯示卡/AI Agent",
       "researchFile": "research/2377_微星.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "watchlist": "video_momentum"
+      "watchlist": "video_momentum",
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2378",
@@ -1754,7 +1914,9 @@
       "researchFile": "",
       "lastVerified": "",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "2379",
@@ -1802,9 +1964,9 @@
       "etf00981A": null,
       "pe": "7.30",
       "researchFile": "research/2379_瑞昱.md",
-      "target": 680.0,
-      "targetDist": 5.0,
-      "researchTheme": "網通SoC/類比IC",
+      "target": 717.0,
+      "targetDist": -0.4,
+      "researchTheme": "網通IC龍頭/漲價轉嫁/Wi-Fi7+車用乙太網路/100G PHY 2027Q1",
       "lastVerified": "2026-08-22",
       "qt": {
         "qt_short": {
@@ -1826,7 +1988,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2382",
@@ -1866,9 +2034,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 380.0,
-      "targetDist": -15.4,
-      "researchTheme": "AI機櫃組裝/L11",
+      "target": 450.0,
+      "targetDist": -28.6,
+      "researchTheme": "AI伺服器ODM/機櫃L10+L11/NeoCloud/ASIC伺服器",
       "researchFile": "research/2382_廣達.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.88,
@@ -1897,7 +2065,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2383",
@@ -1940,9 +2114,9 @@
       "etf0050": 1.72,
       "etf00981A": 7.77,
       "researchFile": "research/2383_台光電.md",
-      "target": 5500.0,
-      "targetDist": 3.3,
-      "researchTheme": "AI高速CCL/M8-M9材料",
+      "target": 10200.0,
+      "targetDist": -44.3,
+      "researchTheme": "CCL全球第一/M9獨家量產/交換器M9市占100%/2028產能1100萬張",
       "lastVerified": "2026-08-22",
       "pe": "34.89",
       "qt": {
@@ -1970,15 +2144,21 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2385",
       "name": "群光",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 106.0,
+      "pct": -0.93,
+      "vol": 1472,
       "score": null,
       "target": null,
       "targetDist": null,
@@ -1986,7 +2166,9 @@
       "researchFile": "",
       "lastVerified": "",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "2395",
@@ -2026,9 +2208,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 700.0,
-      "targetDist": -7.3,
-      "researchTheme": "工業電腦/邊緣AI",
+      "target": 760.0,
+      "targetDist": -14.6,
+      "researchTheme": "邊緣AI落地/工業電腦景氣上升/BB值1.4+/IWS軟硬整合平台",
       "researchFile": "research/2395_研華.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.32,
@@ -2057,7 +2239,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2404",
@@ -2097,9 +2285,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 1200.0,
-      "targetDist": -11.7,
-      "researchTheme": "半導體廠務工程",
+      "target": 1700.0,
+      "targetDist": -37.6,
+      "researchTheme": "無塵室廠務/在手訂單1939億能見度到2030/台積電美光建廠循環",
       "researchFile": "research/2404_漢唐.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -2128,7 +2316,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2408",
@@ -2168,9 +2362,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 380.0,
-      "targetDist": 38.9,
-      "researchTheme": "DRAM超級週期/標準DRAM",
+      "target": 580.0,
+      "targetDist": -9.0,
+      "researchTheme": "DRAM超級週期/毛利率79.5%超台積電/LTA+DDR4短缺/EUV 1C-1E",
       "researchFile": "research/2408_南亞科.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.55,
@@ -2200,7 +2394,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2412",
@@ -2242,7 +2442,7 @@
       "in_ai_etf": true,
       "target": 145.0,
       "targetDist": -5.9,
-      "researchTheme": "電信/資料中心",
+      "researchTheme": "IDC市占78%/AIDC園區/IOWN全光網路/類公債+AI選擇權",
       "researchFile": "research/2412_中華電.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.52,
@@ -2267,7 +2467,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2449",
@@ -2314,9 +2520,9 @@
       "etf0050": 0.27,
       "etf00981A": 0.59,
       "researchFile": "research/2449_京元電子.md",
-      "target": 350.0,
-      "targetDist": -33.7,
-      "researchTheme": "AI晶片測試",
+      "target": 348.0,
+      "targetDist": -33.3,
+      "researchTheme": "AI GPU/ASIC最終測試/Rubin遞延Q4放量/美國設廠/測試時間紅利",
       "lastVerified": "2026-08-22",
       "pe": "4.53",
       "qt": {
@@ -2343,7 +2549,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2454",
@@ -2383,9 +2595,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 4200.0,
-      "targetDist": -9.8,
-      "researchTheme": "ASIC/手機SoC",
+      "target": 6800.0,
+      "targetDist": -44.3,
+      "researchTheme": "AI ASIC量產元年/資料中心SAM 800億美元/手機衰退對沖",
       "researchFile": "research/2454_聯發科.md",
       "lastVerified": "2026-08-22",
       "etf0050": 5.69,
@@ -2413,7 +2625,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "2603",
@@ -2461,10 +2679,10 @@
       "etf00981A": null,
       "pe": "0.97",
       "researchFile": "research/2603_長榮.md",
-      "target": 180.0,
-      "targetDist": 39.7,
-      "researchTheme": "貨櫃航運",
-      "lastVerified": "2026-08-22",
+      "target": 230.0,
+      "targetDist": 9.3,
+      "researchTheme": "貨櫃航運、遠洋線、紅海繞航、運力供需",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": 25,
@@ -2489,7 +2707,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-14",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "已達標"
     },
     {
       "code": "2609",
@@ -2563,7 +2787,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2610",
@@ -2611,10 +2841,10 @@
       "etf00981A": null,
       "pe": "1.25",
       "researchFile": "research/2610_華航.md",
-      "target": 32.0,
-      "targetDist": -36.3,
-      "researchTheme": "航空客運+貨運",
-      "lastVerified": "2026-08-22",
+      "target": 27.0,
+      "targetDist": -24.4,
+      "researchTheme": "航空客運、AI空運貨運、燃油成本敏感度",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": 10,
@@ -2637,7 +2867,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-16",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "未達標"
     },
     {
       "code": "2615",
@@ -2685,10 +2921,10 @@
       "etf00981A": null,
       "pe": "1.21",
       "researchFile": "research/2615_萬海.md",
-      "target": 130.0,
-      "targetDist": -4.2,
-      "researchTheme": "貨櫃航運近洋線",
-      "lastVerified": "2026-08-22",
+      "target": 140.0,
+      "targetDist": -11.1,
+      "researchTheme": "貨櫃航運、近洋線、中東/印度/北美航線、運價循環",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": 25,
@@ -2710,7 +2946,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-21",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "未達標"
     },
     {
       "code": "2618",
@@ -2758,10 +3000,10 @@
       "etf00981A": null,
       "pe": "1.65",
       "researchFile": "research/2618_長榮航.md",
-      "target": 60.0,
-      "targetDist": -29.0,
-      "researchTheme": "航空客運",
-      "lastVerified": "2026-08-22",
+      "target": 48.0,
+      "targetDist": -11.2,
+      "researchTheme": "航空客運、AI空運貨運、機隊擴張、燃油/匯率風險",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": 15,
@@ -2785,15 +3027,21 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-13",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "未達標"
     },
     {
       "code": "2637",
       "name": "慧洋-KY",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 102.0,
+      "pct": 7.71,
+      "vol": 17699,
       "score": null,
       "target": null,
       "targetDist": null,
@@ -2801,15 +3049,17 @@
       "researchFile": "",
       "lastVerified": "",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "2880",
       "name": "華南金",
       "industry": "",
       "price": 39.6,
-      "pct": null,
-      "vol": null,
+      "pct": 2.06,
+      "vol": 17388,
       "score": null,
       "target": 33.0,
       "targetDist": 20.0,
@@ -2839,7 +3089,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "透支"
     },
     {
       "code": "2881",
@@ -2910,7 +3166,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2882",
@@ -2981,19 +3243,25 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "2883",
       "name": "凱基金",
       "industry": "",
       "price": 31.55,
-      "pct": null,
-      "vol": null,
+      "pct": 3.78,
+      "vol": 48690,
       "score": null,
       "target": 35.0,
       "targetDist": -9.9,
-      "researchTheme": "金融控股/壽險+證券高成長",
+      "researchTheme": "金融控股/壽險+證券雙引擎/台股量能受惠",
       "researchFile": "research/2883_凱基金.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.48,
@@ -3019,7 +3287,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "2884",
@@ -3095,21 +3369,27 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "2885",
       "name": "元大金",
       "industry": "",
       "price": 64.0,
-      "pct": null,
-      "vol": null,
+      "pct": 3.06,
+      "vol": 22686,
       "score": null,
-      "target": 56.0,
-      "targetDist": 14.3,
-      "researchTheme": "金融控股/證券龍頭",
+      "target": 60.0,
+      "targetDist": 6.7,
+      "researchTheme": "金融控股、證券龍頭、台股成交量Beta、財富管理",
       "researchFile": "research/2885_元大金.md",
-      "lastVerified": "2026-08-22",
+      "lastVerified": "2026-08-23",
       "etf0050": 0.72,
       "etf00981A": null,
       "pe": "2.38",
@@ -3133,7 +3413,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-12",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "已達標"
     },
     {
       "code": "2886",
@@ -3209,19 +3495,25 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "2887",
       "name": "台新新光金",
       "industry": "",
       "price": 37.25,
-      "pct": null,
-      "vol": null,
+      "pct": 3.62,
+      "vol": 55412,
       "score": null,
       "target": 32.0,
       "targetDist": 16.4,
-      "researchTheme": "金融控股/新新併綜效",
+      "researchTheme": "金融控股/合併綜效/壽險CSM水庫",
       "researchFile": "research/2887_台新新光金.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.86,
@@ -3247,7 +3539,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "2890",
@@ -3295,10 +3593,10 @@
       "etf00981A": null,
       "pe": "2.16",
       "researchFile": "research/2890_永豐金.md",
-      "target": 35.0,
-      "targetDist": 13.1,
-      "researchTheme": "金融控股/銀行+證券",
-      "lastVerified": "2026-08-22",
+      "target": 40.0,
+      "targetDist": -1.0,
+      "researchTheme": "金融控股、銀行與證券雙引擎、京城銀行併入、高ROE",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": 15,
@@ -3324,19 +3622,25 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-16",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "接近"
     },
     {
       "code": "2891",
       "name": "中信金",
       "industry": "",
       "price": 65.0,
-      "pct": null,
-      "vol": null,
+      "pct": 2.52,
+      "vol": 51113,
       "score": null,
-      "target": 56.0,
-      "targetDist": 16.1,
-      "researchTheme": "金融控股/壽險+銀行雙引擎",
+      "target": 58.0,
+      "targetDist": 12.1,
+      "researchTheme": "金融控股/壽險+銀行雙引擎/IFRS 17轉型",
       "researchFile": "research/2891_中信金.md",
       "lastVerified": "2026-08-22",
       "etf0050": 1.16,
@@ -3362,7 +3666,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "2892",
@@ -3410,10 +3720,10 @@
       "etf00981A": null,
       "pe": "1.63",
       "researchFile": "research/2892_第一金.md",
-      "target": 30.0,
-      "targetDist": 12.2,
-      "researchTheme": "金融控股/公股銀行主導",
-      "lastVerified": "2026-08-22",
+      "target": 34.0,
+      "targetDist": -1.0,
+      "researchTheme": "公股金控、第一銀行、AI企業融資、現金股息",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": 15,
@@ -3438,7 +3748,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-14",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "接近"
     },
     {
       "code": "3005",
@@ -3505,7 +3821,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3008",
@@ -3548,9 +3870,9 @@
       "etf0050": 0.52,
       "etf00981A": null,
       "researchFile": "research/3008_大立光.md",
-      "target": 3200.0,
-      "targetDist": 75.3,
-      "researchTheme": "光學鏡頭",
+      "target": 5150.0,
+      "targetDist": 8.9,
+      "researchTheme": "可變光圈量產/2027潛望+主鏡頭同步升級/CPO光纖陣列新引擎",
       "lastVerified": "2026-08-22",
       "pe": "3.83",
       "qt": {
@@ -3575,7 +3897,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "3017",
@@ -3618,9 +3946,9 @@
       "etf0050": 1.0,
       "etf00981A": 4.56,
       "researchFile": "research/3017_奇鋐.md",
-      "target": 3600.0,
-      "targetDist": -20.4,
-      "researchTheme": "AI散熱/水冷",
+      "target": 4005.0,
+      "targetDist": -28.5,
+      "researchTheme": "AI散熱龍頭/ASIC元年+VPD水冷板3000元價值/水冷占比29%→45%",
       "lastVerified": "2026-08-22",
       "pe": "20.38",
       "qt": {
@@ -3649,15 +3977,21 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3026",
       "name": "禾伸堂",
       "industry": "",
       "price": 639.0,
-      "pct": null,
-      "vol": null,
+      "pct": -10.0,
+      "vol": 12780,
       "score": null,
       "target": 900.0,
       "targetDist": -29.0,
@@ -3686,7 +4020,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3034",
@@ -3734,9 +4074,9 @@
       "etf00981A": null,
       "pe": "4.68",
       "researchFile": "research/3034_聯詠.md",
-      "target": 620.0,
-      "targetDist": -14.5,
-      "researchTheme": "驅動IC/SoC",
+      "target": 530.0,
+      "targetDist": 0.0,
+      "researchTheme": "顯示驅動IC龍頭/邊緣AI視覺SoC/OLED DDIC 22nm/矽通膨轉嫁",
       "lastVerified": "2026-08-22",
       "qt": {
         "qt_short": {
@@ -3760,7 +4100,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "3037",
@@ -3804,11 +4150,11 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 1150.0,
-      "targetDist": -5.7,
-      "researchTheme": "ABF載板/AI封裝基板",
+      "target": 1400.0,
+      "targetDist": -22.5,
+      "researchTheme": "ABF載板賣方市場/AI占比70%/ASIC市占70%+/EMIB-T量產/長期毛利率50-60%目標",
       "researchFile": "research/3037_欣興.md",
-      "lastVerified": "2026-08-19",
+      "lastVerified": "2026-08-22",
       "etf0050": 1.5,
       "etf00981A": 4.87,
       "pe": "13.93",
@@ -3837,7 +4183,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3045",
@@ -3910,15 +4262,21 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3081",
       "name": "聯亞",
       "industry": "",
       "price": 2920.0,
-      "pct": null,
-      "vol": null,
+      "pct": 5.04,
+      "vol": 4752,
       "score": null,
       "target": 3000.0,
       "targetDist": -2.7,
@@ -3945,15 +4303,21 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-19",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 4,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "3163",
       "name": "波若威",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 783.0,
+      "pct": 6.39,
+      "vol": 2676,
       "score": null,
       "target": null,
       "targetDist": null,
@@ -3961,7 +4325,9 @@
       "researchFile": "",
       "lastVerified": "",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "3231",
@@ -4005,9 +4371,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 255.0,
-      "targetDist": -31.2,
-      "researchTheme": "AI機櫃ODM/NeoCloud先鋒",
+      "target": 280.0,
+      "targetDist": -37.3,
+      "researchTheme": "AI伺服器ODM/機架L10+L11/交換器代工/AMD MI400",
       "researchFile": "research/3231_緯創.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.55,
@@ -4037,7 +4403,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "3443",
@@ -4080,9 +4452,9 @@
       "etf0050": 0.43,
       "etf00981A": null,
       "researchFile": "research/3443_創意.md",
-      "target": 2900.0,
-      "targetDist": 93.1,
-      "researchTheme": "AI ASIC設計服務",
+      "target": 6500.0,
+      "targetDist": -13.8,
+      "researchTheme": "ASIC設計服務/台積電先進封裝協同/北美CSP CPU+ASIC/CPO",
       "lastVerified": "2026-08-22",
       "pe": "55.73",
       "qt": {
@@ -4110,7 +4482,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3529",
@@ -4153,9 +4531,9 @@
       "etf0050": null,
       "etf00981A": null,
       "researchFile": "research/3529_力旺.md",
-      "target": 3300.0,
-      "targetDist": -34.7,
-      "researchTheme": "NPU/IP授權",
+      "target": 3330.0,
+      "targetDist": -35.3,
+      "researchTheme": "IP授權/eNVM/PUF安全IP/AI資料中心/權利金模式",
       "lastVerified": "2026-08-22",
       "qt": {
         "qt_short": {
@@ -4177,7 +4555,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "3653",
@@ -4221,9 +4605,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 300.0,
-      "targetDist": 1698.3,
-      "researchTheme": "封裝材料/AI載板材料",
+      "target": 6725.0,
+      "targetDist": -19.8,
+      "researchTheme": "AI均熱片/毛利率46.8%新高/Rubin Ultra單價翻倍+CPU Socket第四引擎",
       "researchFile": "research/3653_健策.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.48,
@@ -4252,19 +4636,25 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3661",
       "name": "世芯-KY",
       "industry": "",
       "price": 3700.0,
-      "pct": null,
-      "vol": null,
+      "pct": -1.33,
+      "vol": 1287,
       "score": null,
-      "target": 1800.0,
-      "targetDist": 105.6,
-      "researchTheme": "AI ASIC設計服務",
+      "target": 6100.0,
+      "targetDist": -39.3,
+      "researchTheme": "AI ASIC設計服務龍頭/Trainium 3放量→T4接棒/2奈米獨家/2029成長軌跡",
       "researchFile": "research/3661_世芯-KY.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.29,
@@ -4290,7 +4680,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "3665",
@@ -4338,9 +4734,9 @@
       "etf00981A": 3.74,
       "pe": "9.52",
       "researchFile": "research/3665_貿聯-KY.md",
-      "target": 500.0,
-      "targetDist": 355.0,
-      "researchTheme": "線束/AI伺服器線纜",
+      "target": 3430.0,
+      "targetDist": -33.7,
+      "researchTheme": "AI線束/HPC連10季成長/Credo AEC主力/Interplex Datacom 8.5億美元併購",
       "lastVerified": "2026-08-22",
       "qt": {
         "qt_short": {
@@ -4366,24 +4762,36 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "3673",
       "name": "TPK-KY",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 63.3,
+      "pct": -2.76,
+      "vol": 6884,
       "score": null,
       "target": 75.0,
-      "targetDist": null,
+      "targetDist": -15.6,
       "researchTheme": "觸控/半導體TGV/奕力IC",
       "researchFile": "research/3673_TPK-KY.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "watchlist": "video_momentum"
+      "watchlist": "video_momentum",
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "3711",
@@ -4423,9 +4831,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 700.0,
-      "targetDist": -16.1,
-      "researchTheme": "AI封測/先進封裝",
+      "target": 750.0,
+      "targetDist": -21.7,
+      "researchTheme": "先進封裝LEAP倍增/ATM毛利率破30%/CoWoS後段OS委外/CPO Q4量產",
       "researchFile": "research/3711_日月光.md",
       "lastVerified": "2026-08-22",
       "etf0050": 1.96,
@@ -4455,7 +4863,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "4904",
@@ -4527,7 +4941,13 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "4938",
@@ -4575,10 +4995,10 @@
       "etf00981A": null,
       "pe": "1.15",
       "researchFile": "research/4938_和碩.md",
-      "target": 65.0,
-      "targetDist": 36.3,
-      "researchTheme": "電子代工/組裝",
-      "lastVerified": "2026-08-22",
+      "target": 95.0,
+      "targetDist": -6.7,
+      "researchTheme": "電子代工、AI伺服器組裝、消費性電子",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": -10,
@@ -4601,19 +5021,25 @@
           "signal": "🔴 賣出",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-13",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "接近"
     },
     {
       "code": "4958",
       "name": "臻鼎-KY",
       "industry": "",
       "price": 441.0,
-      "pct": null,
-      "vol": null,
+      "pct": -4.75,
+      "vol": 27200,
       "score": null,
-      "target": 200.0,
-      "targetDist": 120.5,
-      "researchTheme": "PCB/載板",
+      "target": 920.0,
+      "targetDist": -52.1,
+      "researchTheme": "PCB龍頭/AI伺服器HDI/光模組mSAP/IC載板/800億資本支出",
       "researchFile": "research/4958_臻鼎-KY.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.35,
@@ -4640,15 +5066,21 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "4971",
       "name": "IET-KY",
       "industry": "",
       "price": 588.0,
-      "pct": null,
-      "vol": null,
+      "pct": 1.38,
+      "vol": 5067,
       "score": null,
       "target": 550.0,
       "targetDist": 6.9,
@@ -4676,21 +5108,27 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-19",
+      "confidence": "中低",
+      "researchMaturity": null,
+      "researchAgeDays": 4,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "4979",
       "name": "華星光",
       "industry": "",
       "price": 577.0,
-      "pct": null,
-      "vol": null,
+      "pct": 1.23,
+      "vol": 18675,
       "score": null,
-      "target": 400.0,
-      "targetDist": 44.2,
-      "researchTheme": "通訊光纖/光纜",
+      "target": 430.0,
+      "targetDist": 34.2,
+      "researchTheme": "光通訊、800G ZR光模組、CW Laser磊晶、矽光子/CPO供應鏈",
       "researchFile": "research/4979_華星光.md",
-      "lastVerified": "2026-08-22",
+      "lastVerified": "2026-08-23",
       "etf0050": null,
       "etf00981A": 0.24,
       "qt": {
@@ -4713,24 +5151,36 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-14",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "透支"
     },
     {
       "code": "5243",
       "name": "乙盛-KY",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 87.3,
+      "pct": -1.13,
+      "vol": 450,
       "score": null,
       "target": 90.0,
-      "targetDist": null,
+      "targetDist": -3.0,
       "researchTheme": "低軌衛星機構件/AI伺服器",
       "researchFile": "research/5243_乙盛-KY.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "watchlist": "video_momentum"
+      "watchlist": "video_momentum",
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "5269",
@@ -4801,19 +5251,25 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "接近"
     },
     {
       "code": "5274",
       "name": "信驊",
       "industry": "",
       "price": 15350.0,
-      "pct": null,
-      "vol": null,
+      "pct": -2.54,
+      "vol": 153,
       "score": null,
-      "target": 16000.0,
-      "targetDist": -4.1,
-      "researchTheme": "伺服器管理晶片/BMC",
+      "target": 22000.0,
+      "targetDist": -30.2,
+      "researchTheme": "BMC壟斷80%/AST2700放量/AI ASIC市占提升/漲價轉嫁成功",
       "researchFile": "research/5274_信驊.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -4836,15 +5292,21 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "5515",
       "name": "建準",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 55.7,
+      "pct": 2.77,
+      "vol": 1064,
       "score": null,
       "target": null,
       "targetDist": null,
@@ -4852,7 +5314,9 @@
       "researchFile": "",
       "lastVerified": "",
       "etf0050": null,
-      "etf00981A": null
+      "etf00981A": null,
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "5880",
@@ -4900,10 +5364,10 @@
       "etf00981A": null,
       "pe": "1.39",
       "researchFile": "research/5880_合庫金.md",
-      "target": 30.0,
-      "targetDist": -16.5,
-      "researchTheme": "金融控股/公股低估值",
-      "lastVerified": "2026-08-22",
+      "target": 28.0,
+      "targetDist": -10.5,
+      "researchTheme": "公股金控、銀行放款、壽險與證券低基期回升、低PB股息",
+      "lastVerified": "2026-08-23",
       "qt": {
         "qt_short": {
           "score": 10,
@@ -4927,7 +5391,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-14",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "未達標"
     },
     {
       "code": "6166",
@@ -4967,9 +5437,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 200.0,
-      "targetDist": -40.8,
-      "researchTheme": "邊緣運算/機器人",
+      "target": 110.0,
+      "targetDist": 7.7,
+      "researchTheme": "邊緣AI平台/顯示運算+71%/機器人控制器10專案/法博智能（鴻海49%）",
       "researchFile": "research/6166_凌華.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -4997,19 +5467,25 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "已達標"
     },
     {
       "code": "6187",
       "name": "萬潤",
       "industry": "",
       "price": 1195.0,
-      "pct": null,
-      "vol": null,
+      "pct": -5.53,
+      "vol": 4413,
       "score": null,
-      "target": 400.0,
-      "targetDist": 198.7,
-      "researchTheme": "精密模具/測試",
+      "target": 1550.0,
+      "targetDist": -22.9,
+      "researchTheme": "先進封裝設備/點膠機CoWoS高市占/CPO設備Q4交貨/封裝新技術元年",
       "researchFile": "research/6187_萬潤.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5034,19 +5510,25 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "6223",
       "name": "旺矽",
       "industry": "",
       "price": 5465.0,
-      "pct": null,
-      "vol": null,
+      "pct": -3.27,
+      "vol": 778,
       "score": null,
-      "target": 900.0,
-      "targetDist": 507.2,
-      "researchTheme": "測試介面/探針卡",
+      "target": 8000.0,
+      "targetDist": -31.7,
+      "researchTheme": "探針卡雙雄/VPC+MEMS漲價/CPO測試設備Insertion 2/3/獲利CAGR 112%",
       "researchFile": "research/6223_旺矽.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5071,7 +5553,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "6239",
@@ -5111,9 +5599,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 365.0,
-      "targetDist": -26.7,
-      "researchTheme": "記憶體封測",
+      "target": 384.0,
+      "targetDist": -30.3,
+      "researchTheme": "記憶體封測漲價/FOPLP全球首家/CPO光引擎（博通）/AMD合作",
       "researchFile": "research/6239_力成.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5140,7 +5628,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "6269",
@@ -5201,19 +5695,21 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "6274",
       "name": "台燿",
       "industry": "",
       "price": 1495.0,
-      "pct": null,
-      "vol": null,
+      "pct": -5.08,
+      "vol": 5278,
       "score": null,
-      "target": 900.0,
-      "targetDist": 66.1,
-      "researchTheme": "網通PCB/交換器板",
+      "target": 3010.0,
+      "targetDist": -50.3,
+      "researchTheme": "高階CCL/M7+占比39%再漲15%/泰國二期試產/供不應求到2028",
       "researchFile": "research/6274_台燿.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5238,24 +5734,36 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "6278",
       "name": "台表科",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 187.0,
+      "pct": 3.89,
+      "vol": 17060,
       "score": null,
       "target": 210.0,
-      "targetDist": null,
+      "targetDist": -11.0,
       "researchTheme": "SMT打件/AI伺服器PCBA/光通訊",
       "researchFile": "research/6278_台表科.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
-      "watchlist": "video_momentum"
+      "watchlist": "video_momentum",
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "6285",
@@ -5295,9 +5803,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 350.0,
-      "targetDist": -32.7,
-      "researchTheme": "AI網通設備/衛星",
+      "target": 340.0,
+      "targetDist": -30.7,
+      "researchTheme": "低軌衛星（SpaceX）/800G交換器量產/WiFi7/5G FWA/OCS驗證中",
       "researchFile": "research/6285_啟碁.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5324,21 +5832,27 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "6415",
       "name": "矽力",
       "industry": "",
       "price": 445.5,
-      "pct": null,
-      "vol": null,
+      "pct": -0.56,
+      "vol": 1923,
       "score": null,
-      "target": 585.0,
-      "targetDist": -23.8,
-      "researchTheme": "",
-      "researchFile": "research/6415_矽力.md",
-      "lastVerified": "2026-07-14",
+      "target": 650.0,
+      "targetDist": -31.5,
+      "researchTheme": "PMIC轉型資料中心+車用/800G光模組/VCORE進AI ASIC/12吋製程平台",
+      "researchFile": "research/6415_矽力-KY.md",
+      "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,
       "pe": "4.54",
@@ -5361,7 +5875,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "6442",
@@ -5401,9 +5921,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 800.0,
-      "targetDist": 90.6,
-      "researchTheme": "光通訊/矽光",
+      "target": 2500.0,
+      "targetDist": -39.0,
+      "researchTheme": "光被動元件/高芯數光纖/TPU供應鏈/光纜漲價循環",
       "researchFile": "research/6442_光聖.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5431,7 +5951,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "6505",
@@ -5508,19 +6034,25 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 40,
+      "researchStatus": "需重驗",
+      "targetStatus": "未達標"
     },
     {
       "code": "6669",
       "name": "緯穎",
       "industry": "",
       "price": 6255.0,
-      "pct": null,
-      "vol": null,
+      "pct": -1.11,
+      "vol": 693,
       "score": null,
-      "target": 6000.0,
-      "targetDist": 4.2,
-      "researchTheme": "AI伺服器直供ODM/ASIC機櫃",
+      "target": 7000.0,
+      "targetDist": -10.6,
+      "researchTheme": "AI伺服器ODM直銷模式/ASIC Trainium/Helios/液冷機櫃",
       "researchFile": "research/6669_緯穎.md",
       "lastVerified": "2026-08-22",
       "etf0050": 0.67,
@@ -5546,7 +6078,13 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "6770",
@@ -5586,9 +6124,9 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 100.0,
-      "targetDist": -31.6,
-      "researchTheme": "晶圓代工/記憶體",
+      "target": 85.0,
+      "targetDist": -19.5,
+      "researchTheme": "DRAM漲價45%/3D AI Foundry（矽電容+WoW）/美光PWF/毛利率回50%",
       "researchFile": "research/6770_力積電.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5614,19 +6152,25 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "6805",
       "name": "富世達",
       "industry": "",
       "price": 1765.0,
-      "pct": null,
-      "vol": null,
+      "pct": -4.59,
+      "vol": 834,
       "score": null,
-      "target": 800.0,
-      "targetDist": 120.6,
-      "researchTheme": "鉸鏈/筆電樞紐",
+      "target": 2615.0,
+      "targetDist": -32.5,
+      "researchTheme": "AI伺服器滑軌+水冷QD/樞紐轉型/PBMC容錯快接頭/2027產能倍增",
       "researchFile": "research/6805_富世達.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5652,7 +6196,13 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "6830",
@@ -5692,11 +6242,11 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 600.0,
-      "targetDist": -23.0,
-      "researchTheme": "半導體分析/檢測",
+      "target": 520.0,
+      "targetDist": -11.2,
+      "researchTheme": "半導體分析/檢測、AI晶片研發分析、矽光子Debug設備",
       "researchFile": "research/6830_汎銓.md",
-      "lastVerified": "2026-08-22",
+      "lastVerified": "2026-08-23",
       "etf0050": null,
       "etf00981A": null,
       "pe": "7.40",
@@ -5720,7 +6270,13 @@
           "signal": "🟢 買進",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-18",
+      "confidence": "中",
+      "researchMaturity": 80,
+      "researchAgeDays": 0,
+      "researchStatus": "可用",
+      "targetStatus": "未達標"
     },
     {
       "code": "7610",
@@ -5760,8 +6316,6 @@
       "breakoutVol": 0,
       "concepts": [],
       "in_ai_etf": true,
-      "target": 60.0,
-      "targetDist": 4075.0,
       "researchTheme": "金屬製品",
       "researchFile": "research/7610_聯友金屬創.md",
       "lastVerified": "2026-08-22",
@@ -5791,15 +6345,21 @@
           "signal": "⚪ 中性",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-07-14",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "無目標"
     },
     {
       "code": "7769",
       "name": "鴻勁",
       "industry": "",
-      "price": null,
-      "pct": null,
-      "vol": null,
+      "price": 6405.0,
+      "pct": -0.77,
+      "vol": 306,
       "score": null,
       "target": null,
       "targetDist": null,
@@ -5808,21 +6368,23 @@
       "lastVerified": "",
       "etf0050": 0.37,
       "etf00981A": null,
-      "pe": "20.29"
+      "pe": "20.29",
+      "researchStatus": "無研究",
+      "targetStatus": "無目標"
     },
     {
       "code": "8046",
       "name": "南電",
       "industry": "",
       "price": 1135.0,
-      "pct": null,
-      "vol": null,
+      "pct": -5.02,
+      "vol": 11283,
       "score": null,
-      "target": 1400.0,
-      "targetDist": -18.9,
-      "researchTheme": "ABF/BT載板",
+      "target": 1600.0,
+      "targetDist": -29.1,
+      "researchTheme": "ABF/BT載板漲價循環/CoPoS玻璃載板/毛利率擴張至2027",
       "researchFile": "research/8046_南電.md",
-      "lastVerified": "2026-08-19",
+      "lastVerified": "2026-08-22",
       "etf0050": 0.25,
       "etf00981A": 3.04,
       "pe": "14.89",
@@ -5847,19 +6409,25 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     },
     {
       "code": "8210",
       "name": "勤誠",
       "industry": "",
       "price": 944.0,
-      "pct": null,
-      "vol": null,
+      "pct": -2.07,
+      "vol": 974,
       "score": null,
-      "target": 350.0,
-      "targetDist": 169.7,
-      "researchTheme": "伺服器機殼",
+      "target": 1482.0,
+      "targetDist": -36.3,
+      "researchTheme": "AI伺服器機殼/Rack機櫃解決方案/CDU液冷機櫃/六大CSP/馬來西亞廠",
       "researchFile": "research/8210_勤誠.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5885,19 +6453,25 @@
           "signal": "🟠 偏空",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "高",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "低估"
     },
     {
       "code": "8299",
       "name": "群聯",
       "industry": "",
       "price": 2075.0,
-      "pct": null,
-      "vol": null,
+      "pct": 4.01,
+      "vol": 3154,
       "score": null,
-      "target": 3000.0,
-      "targetDist": -30.8,
-      "researchTheme": "NAND控制晶片/eSSD/AI儲存",
+      "target": 2750.0,
+      "targetDist": -24.5,
+      "researchTheme": "NAND超級週期/eSSD主碟/AI Data Platform/庫存槓桿/毛利率正常化風險",
       "researchFile": "research/8299_群聯.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
@@ -5921,10 +6495,16 @@
           "signal": "🟡 偏多",
           "note": "短線40%＋長線60%加權"
         }
-      }
+      },
+      "sourcesAsOf": "2026-08-22",
+      "confidence": "中",
+      "researchMaturity": null,
+      "researchAgeDays": 1,
+      "researchStatus": "未分級",
+      "targetStatus": "未達標"
     }
   ],
-  "updated": "2026-08-22T10:47:40.099301",
+  "updated": "2026-08-23T16:28:00",
   "etf_universe": {
     "2330": [
       "0050",
@@ -6112,5 +6692,27 @@
     ]
   },
   "date": "2026-06-22",
-  "scoring_rules_version": "2026-06-20-STAR-v3"
+  "scoring_rules_version": "2026-06-20-STAR-v3",
+  "research_summary": {
+    "stocks_total": 104,
+    "research_files": 106,
+    "targets_mapped": 93,
+    "stale_days": 30,
+    "generated": "2026-08-23T16:28:00",
+    "status_counts": {
+      "未分級": 79,
+      "無研究": 10,
+      "可用": 13,
+      "未驗證": 1,
+      "需重驗": 1
+    },
+    "target_status_counts": {
+      "未達標": 37,
+      "無目標": 11,
+      "接近": 17,
+      "已達標": 11,
+      "低估": 25,
+      "透支": 3
+    }
+  }
 }
