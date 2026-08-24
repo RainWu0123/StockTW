@@ -9,6 +9,7 @@ sources_as_of: "2026-07-14"
 theme: "USB/PCIe 控制晶片"
 target_base: "1500"
 target_date: "2026-08-22"
+research_maturity: "3"
 ---
 
 # 祥碩 (5269) 深度研究報告

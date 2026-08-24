@@ -68,9 +68,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 42,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -141,8 +141,13 @@
           "note": "短線40%＋長線60%加權"
         }
       },
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "researchTheme": "未分類",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null,
+      "researchFile": "research/1102_亞泥.md"
     },
     {
       "code": "1216",
@@ -216,9 +221,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 40,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -293,9 +298,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 35,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -371,9 +376,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -450,9 +455,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 35,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -495,7 +500,7 @@
       "sourcesAsOf": "2026-07-28",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "未達標"
     },
@@ -568,9 +573,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -612,9 +617,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -654,9 +659,9 @@
       },
       "sourcesAsOf": "2026-08-21",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 57,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -735,9 +740,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -813,9 +818,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -890,9 +895,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -903,15 +908,16 @@
       "pct": -0.96,
       "vol": 6480,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "電子代工",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/2312_金寶.md",
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "2313",
@@ -983,9 +989,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -1058,9 +1064,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -1135,9 +1141,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -1215,9 +1221,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -1292,9 +1298,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -1369,9 +1375,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "透支"
     },
     {
@@ -1448,9 +1454,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -1461,15 +1467,16 @@
       "pct": 0.84,
       "vol": 499,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "房代銷",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/2348_海悅.md",
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "2356",
@@ -1546,9 +1553,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -1590,9 +1597,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 65,
+      "researchAgeDays": 2,
+      "researchStatus": "草稿",
       "targetStatus": "未達標"
     },
     {
@@ -1674,7 +1681,7 @@
       "sourcesAsOf": "2026-07-30",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "未達標"
     },
@@ -1714,7 +1721,7 @@
           "note": "短線40%＋長線60%加權"
         }
       },
-      "researchMaturity": null,
+      "researchMaturity": 15,
       "researchAgeDays": null,
       "researchStatus": "未驗證",
       "targetStatus": "低估"
@@ -1797,9 +1804,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -1872,9 +1879,9 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 11,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -1895,9 +1902,9 @@
       "watchlist": "video_momentum",
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -1908,15 +1915,16 @@
       "pct": null,
       "vol": null,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "機構件/精密零件",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/2378_鴻準.md",
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "2379",
@@ -1991,9 +1999,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -2068,9 +2076,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -2147,9 +2155,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -2160,15 +2168,16 @@
       "pct": -0.93,
       "vol": 1472,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "電源/鍵盤代工",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/2385_群光.md",
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "2395",
@@ -2242,9 +2251,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -2319,9 +2328,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -2397,9 +2406,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -2470,9 +2479,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -2552,9 +2561,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -2628,9 +2637,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -2711,7 +2720,7 @@
       "sourcesAsOf": "2026-08-14",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "已達標"
     },
@@ -2790,9 +2799,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -2871,7 +2880,7 @@
       "sourcesAsOf": "2026-08-16",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "未達標"
     },
@@ -2950,7 +2959,7 @@
       "sourcesAsOf": "2026-08-21",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "未達標"
     },
@@ -3031,7 +3040,7 @@
       "sourcesAsOf": "2026-08-13",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "未達標"
     },
@@ -3043,15 +3052,16 @@
       "pct": 7.71,
       "vol": 17699,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "散裝航運",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/2637_慧洋-KY.md",
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "2880",
@@ -3092,9 +3102,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "透支"
     },
     {
@@ -3169,9 +3179,9 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 42,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -3246,9 +3256,9 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 11,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -3290,9 +3300,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 55,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -3372,9 +3382,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -3417,7 +3427,7 @@
       "sourcesAsOf": "2026-08-12",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "已達標"
     },
@@ -3498,9 +3508,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -3542,9 +3552,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 55,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -3626,7 +3636,7 @@
       "sourcesAsOf": "2026-08-16",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "接近"
     },
@@ -3669,9 +3679,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 55,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -3752,7 +3762,7 @@
       "sourcesAsOf": "2026-08-14",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "接近"
     },
@@ -3824,9 +3834,9 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -3900,9 +3910,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -3980,9 +3990,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4023,9 +4033,9 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 11,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4103,9 +4113,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -4186,9 +4196,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4265,9 +4275,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4306,9 +4316,9 @@
       },
       "sourcesAsOf": "2026-08-19",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 4,
-      "researchStatus": "未分級",
+      "researchMaturity": 49,
+      "researchAgeDays": 5,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -4319,15 +4329,16 @@
       "pct": 6.39,
       "vol": 2676,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "光纖連接/CPO",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/3163_波若威.md",
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "3231",
@@ -4406,9 +4417,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -4485,9 +4496,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4558,9 +4569,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -4639,9 +4650,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4683,9 +4694,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -4765,9 +4776,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -4788,9 +4799,9 @@
       "watchlist": "video_momentum",
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4866,9 +4877,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -4944,9 +4955,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -5025,7 +5036,7 @@
       "sourcesAsOf": "2026-08-13",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "接近"
     },
@@ -5069,9 +5080,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -5111,9 +5122,9 @@
       },
       "sourcesAsOf": "2026-08-19",
       "confidence": "中低",
-      "researchMaturity": null,
-      "researchAgeDays": 4,
-      "researchStatus": "未分級",
+      "researchMaturity": 31,
+      "researchAgeDays": 5,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -5155,7 +5166,7 @@
       "sourcesAsOf": "2026-08-14",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "透支"
     },
@@ -5177,9 +5188,9 @@
       "watchlist": "video_momentum",
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -5254,9 +5265,9 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 3,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "接近"
     },
     {
@@ -5295,9 +5306,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -5308,15 +5319,16 @@
       "pct": 2.77,
       "vol": 1064,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "散熱風扇",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/5515_建準.md",
       "lastVerified": "",
       "etf0050": null,
       "etf00981A": null,
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "5880",
@@ -5395,7 +5407,7 @@
       "sourcesAsOf": "2026-08-14",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "未達標"
     },
@@ -5470,9 +5482,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "已達標"
     },
     {
@@ -5513,9 +5525,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -5556,9 +5568,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -5631,9 +5643,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -5696,8 +5708,13 @@
           "note": "短線40%＋長線60%加權"
         }
       },
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "researchTheme": "未分類",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null,
+      "researchFile": "research/6269_台郡.md"
     },
     {
       "code": "6274",
@@ -5737,9 +5754,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -5760,9 +5777,9 @@
       "watchlist": "video_momentum",
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -5835,9 +5852,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -5878,9 +5895,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -5954,9 +5971,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -6037,8 +6054,8 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 40,
+      "researchMaturity": 11,
+      "researchAgeDays": 41,
       "researchStatus": "需重驗",
       "targetStatus": "未達標"
     },
@@ -6081,9 +6098,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -6155,9 +6172,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -6199,9 +6216,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -6274,7 +6291,7 @@
       "sourcesAsOf": "2026-08-18",
       "confidence": "中",
       "researchMaturity": 80,
-      "researchAgeDays": 0,
+      "researchAgeDays": 1,
       "researchStatus": "可用",
       "targetStatus": "未達標"
     },
@@ -6348,9 +6365,9 @@
       },
       "sourcesAsOf": "2026-07-14",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 68,
+      "researchAgeDays": 2,
+      "researchStatus": "草稿",
       "targetStatus": "無目標"
     },
     {
@@ -6361,16 +6378,17 @@
       "pct": -0.77,
       "vol": 306,
       "score": null,
-      "target": null,
-      "targetDist": null,
-      "researchTheme": "",
-      "researchFile": "",
+      "researchTheme": "未分類",
+      "researchFile": "research/7769_鴻勁.md",
       "lastVerified": "",
       "etf0050": 0.37,
       "etf00981A": null,
       "pe": "20.29",
-      "researchStatus": "無研究",
-      "targetStatus": "無目標"
+      "researchStatus": "未驗證",
+      "targetStatus": "無目標",
+      "confidence": "低",
+      "researchMaturity": 10,
+      "researchAgeDays": null
     },
     {
       "code": "8046",
@@ -6412,9 +6430,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 32,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     },
     {
@@ -6456,9 +6474,9 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "高",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "低估"
     },
     {
@@ -6498,13 +6516,13 @@
       },
       "sourcesAsOf": "2026-08-22",
       "confidence": "中",
-      "researchMaturity": null,
-      "researchAgeDays": 1,
-      "researchStatus": "未分級",
+      "researchMaturity": 47,
+      "researchAgeDays": 2,
+      "researchStatus": "淺層",
       "targetStatus": "未達標"
     }
   ],
-  "updated": "2026-08-23T16:28:00",
+  "updated": "2026-08-24T00:51:23",
   "etf_universe": {
     "2330": [
       "0050",
@@ -6695,15 +6713,15 @@
   "scoring_rules_version": "2026-06-20-STAR-v3",
   "research_summary": {
     "stocks_total": 104,
-    "research_files": 106,
+    "research_files": 116,
     "targets_mapped": 93,
     "stale_days": 30,
-    "generated": "2026-08-23T16:28:00",
+    "generated": "2026-08-24T00:51:23",
     "status_counts": {
-      "未分級": 79,
-      "無研究": 10,
+      "淺層": 77,
+      "未驗證": 11,
       "可用": 13,
-      "未驗證": 1,
+      "草稿": 2,
       "需重驗": 1
     },
     "target_status_counts": {

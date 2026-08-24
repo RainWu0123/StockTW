@@ -10,6 +10,7 @@ sources_as_of: "2026-08-19"
 target_base: "550"
 target_date: "2026-08-19"
 theme: "InP磊晶/光通訊+國防"
+research_maturity: "31"
 ---
 
 # IET-KY（4971）：訂單已到，真正的瓶頸是InP基板

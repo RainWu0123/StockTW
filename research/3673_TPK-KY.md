@@ -9,6 +9,7 @@ sources_as_of: "2026-08-22"
 theme: "觸控/半導體TGV/奕力IC"
 target_base: "75"
 target_date: "2026-08-22"
+research_maturity: "32"
 ---
 
 # TPK-KY（3673）
