@@ -1,144 +1,144 @@
 {
   "status_counts": {
-    "淺層": 77,
-    "未驗證": 11,
+    "淺層": 60,
+    "未驗證": 10,
     "可用": 13,
-    "草稿": 2,
+    "草稿": 20,
     "需重驗": 1
   },
   "target_status_counts": {
     "未達標": 37,
     "無目標": 11,
     "接近": 17,
+    "透支": 3,
     "已達標": 11,
-    "低估": 25,
-    "透支": 3
+    "低估": 25
   },
   "watch_list": {
     "1216": {
       "code": "1216",
       "name": "統一",
       "targetStatus": "接近",
-      "targetDist": -8.8,
+      "targetDist": -8.9,
       "researchStatus": "淺層"
     },
     "1301": {
       "code": "1301",
       "name": "台塑",
       "targetStatus": "接近",
-      "targetDist": -4.2,
+      "targetDist": -8.1,
       "researchStatus": "淺層"
     },
     "2059": {
       "code": "2059",
       "name": "川湖",
-      "targetStatus": "已達標",
-      "targetDist": 11.5,
+      "targetStatus": "透支",
+      "targetDist": 20.1,
       "researchStatus": "淺層"
     },
     "2108": {
       "code": "2108",
       "name": "南帝",
       "targetStatus": "接近",
-      "targetDist": -4.8,
+      "targetDist": -8.3,
       "researchStatus": "淺層"
     },
     "2301": {
       "code": "2301",
       "name": "光寶科",
+      "targetStatus": "已達標",
+      "targetDist": 2.5,
+      "researchStatus": "淺層"
+    },
+    "2303": {
+      "code": "2303",
+      "name": "聯電",
       "targetStatus": "接近",
-      "targetDist": -6.8,
+      "targetDist": -5.7,
       "researchStatus": "淺層"
     },
     "2313": {
       "code": "2313",
       "name": "華通",
       "targetStatus": "低估",
-      "targetDist": -34.1,
+      "targetDist": -34.4,
       "researchStatus": "淺層"
     },
     "2317": {
       "code": "2317",
       "name": "鴻海",
       "targetStatus": "低估",
-      "targetDist": -40.8,
-      "researchStatus": "淺層"
+      "targetDist": -41.3,
+      "researchStatus": "草稿"
     },
     "2327": {
       "code": "2327",
       "name": "國巨*",
       "targetStatus": "低估",
-      "targetDist": -56.7,
-      "researchStatus": "淺層"
+      "targetDist": -57.0,
+      "researchStatus": "草稿"
     },
     "2337": {
       "code": "2337",
       "name": "旺宏",
       "targetStatus": "低估",
-      "targetDist": -43.8,
+      "targetDist": -43.1,
       "researchStatus": "淺層"
     },
     "2344": {
       "code": "2344",
       "name": "華邦電",
       "targetStatus": "透支",
-      "targetDist": 50.8,
-      "researchStatus": "淺層"
+      "targetDist": 47.5,
+      "researchStatus": "草稿"
     },
     "2345": {
       "code": "2345",
       "name": "智邦",
       "targetStatus": "低估",
-      "targetDist": -44.8,
-      "researchStatus": "淺層"
+      "targetDist": -43.9,
+      "researchStatus": "草稿"
     },
     "2363": {
       "code": "2363",
       "name": "矽統",
       "targetStatus": "低估",
-      "targetDist": -36.6,
+      "targetDist": -36.7,
       "researchStatus": "未驗證"
     },
     "2368": {
       "code": "2368",
       "name": "金像電",
       "targetStatus": "低估",
-      "targetDist": -46.4,
+      "targetDist": -47.3,
       "researchStatus": "淺層"
     },
     "2377": {
       "code": "2377",
       "name": "微星",
       "targetStatus": "接近",
-      "targetDist": -8.7,
+      "targetDist": -7.1,
       "researchStatus": "淺層"
     },
     "2379": {
       "code": "2379",
       "name": "瑞昱",
       "targetStatus": "接近",
-      "targetDist": -0.4,
+      "targetDist": -0.1,
       "researchStatus": "淺層"
     },
     "2383": {
       "code": "2383",
       "name": "台光電",
       "targetStatus": "低估",
-      "targetDist": -44.3,
-      "researchStatus": "淺層"
+      "targetDist": -46.8,
+      "researchStatus": "草稿"
     },
     "2404": {
       "code": "2404",
       "name": "漢唐",
       "targetStatus": "低估",
-      "targetDist": -37.6,
-      "researchStatus": "淺層"
-    },
-    "2408": {
-      "code": "2408",
-      "name": "南亞科",
-      "targetStatus": "接近",
-      "targetDist": -9.0,
+      "targetDist": -37.4,
       "researchStatus": "淺層"
     },
     "2412": {
@@ -152,112 +152,105 @@
       "code": "2449",
       "name": "京元電子",
       "targetStatus": "低估",
-      "targetDist": -33.3,
+      "targetDist": -31.3,
       "researchStatus": "淺層"
     },
     "2454": {
       "code": "2454",
       "name": "聯發科",
       "targetStatus": "低估",
-      "targetDist": -44.3,
-      "researchStatus": "淺層"
+      "targetDist": -44.6,
+      "researchStatus": "草稿"
     },
     "2603": {
       "code": "2603",
       "name": "長榮",
       "targetStatus": "已達標",
-      "targetDist": 9.3,
+      "targetDist": 8.9,
       "researchStatus": "可用"
     },
     "2609": {
       "code": "2609",
       "name": "陽明",
       "targetStatus": "接近",
-      "targetDist": -5.9,
+      "targetDist": -5.1,
       "researchStatus": "淺層"
     },
     "2880": {
       "code": "2880",
       "name": "華南金",
-      "targetStatus": "透支",
-      "targetDist": 20.0,
-      "researchStatus": "淺層"
-    },
-    "2883": {
-      "code": "2883",
-      "name": "凱基金",
-      "targetStatus": "接近",
-      "targetDist": -9.9,
+      "targetStatus": "已達標",
+      "targetDist": 18.9,
       "researchStatus": "淺層"
     },
     "2884": {
       "code": "2884",
       "name": "玉山金",
       "targetStatus": "已達標",
-      "targetDist": 5.6,
+      "targetDist": 6.0,
       "researchStatus": "淺層"
     },
     "2885": {
       "code": "2885",
       "name": "元大金",
       "targetStatus": "已達標",
-      "targetDist": 6.7,
+      "targetDist": 4.0,
       "researchStatus": "可用"
     },
     "2886": {
       "code": "2886",
       "name": "兆豐金",
       "targetStatus": "已達標",
-      "targetDist": 11.8,
+      "targetDist": 11.5,
       "researchStatus": "淺層"
     },
     "2887": {
       "code": "2887",
       "name": "台新新光金",
       "targetStatus": "已達標",
-      "targetDist": 16.4,
+      "targetDist": 14.1,
       "researchStatus": "淺層"
     },
     "2890": {
       "code": "2890",
       "name": "永豐金",
       "targetStatus": "接近",
-      "targetDist": -1.0,
+      "targetDist": -2.6,
       "researchStatus": "可用"
     },
     "2891": {
       "code": "2891",
       "name": "中信金",
       "targetStatus": "已達標",
-      "targetDist": 12.1,
+      "targetDist": 9.7,
       "researchStatus": "淺層"
     },
     "2892": {
       "code": "2892",
       "name": "第一金",
       "targetStatus": "接近",
-      "targetDist": -1.0,
+      "targetDist": -1.3,
       "researchStatus": "可用"
     },
     "3008": {
       "code": "3008",
       "name": "大立光",
       "targetStatus": "已達標",
-      "targetDist": 8.9,
-      "researchStatus": "淺層"
+      "targetDist": 4.6,
+      "researchStatus": "草稿"
     },
     "3034": {
       "code": "3034",
       "name": "聯詠",
       "targetStatus": "已達標",
-      "targetDist": 0.0,
-      "researchStatus": "淺層"
+      "targetDist": 2.3,
+      "researchStatus": "草稿"
     },
     "3081": {
       "code": "3081",
       "name": "聯亞",
       "targetStatus": "接近",
-      "targetDist": -2.7,
+      "targetDist": -7.8,
       "researchStatus": "淺層"
     },
     "3231": {
@@ -271,140 +264,147 @@
       "code": "3529",
       "name": "力旺",
       "targetStatus": "低估",
-      "targetDist": -35.3,
+      "targetDist": -33.9,
       "researchStatus": "淺層"
     },
     "3661": {
       "code": "3661",
       "name": "世芯-KY",
       "targetStatus": "低估",
-      "targetDist": -39.3,
+      "targetDist": -38.8,
       "researchStatus": "淺層"
     },
     "3665": {
       "code": "3665",
       "name": "貿聯-KY",
       "targetStatus": "低估",
-      "targetDist": -33.7,
+      "targetDist": -40.2,
       "researchStatus": "淺層"
     },
     "4904": {
       "code": "4904",
       "name": "遠傳",
       "targetStatus": "接近",
-      "targetDist": -2.4,
+      "targetDist": -3.3,
       "researchStatus": "淺層"
     },
     "4938": {
       "code": "4938",
       "name": "和碩",
       "targetStatus": "接近",
-      "targetDist": -6.7,
+      "targetDist": -6.0,
       "researchStatus": "可用"
     },
     "4958": {
       "code": "4958",
       "name": "臻鼎-KY",
       "targetStatus": "低估",
-      "targetDist": -52.1,
+      "targetDist": -52.7,
       "researchStatus": "淺層"
     },
     "4971": {
       "code": "4971",
       "name": "IET-KY",
-      "targetStatus": "已達標",
-      "targetDist": 6.9,
-      "researchStatus": "淺層"
+      "targetStatus": "接近",
+      "targetDist": -3.6,
+      "researchStatus": "草稿"
     },
     "4979": {
       "code": "4979",
       "name": "華星光",
       "targetStatus": "透支",
-      "targetDist": 34.2,
+      "targetDist": 27.2,
       "researchStatus": "可用"
     },
     "5243": {
       "code": "5243",
       "name": "乙盛-KY",
       "targetStatus": "接近",
-      "targetDist": -3.0,
+      "targetDist": -0.8,
       "researchStatus": "淺層"
     },
     "5269": {
       "code": "5269",
       "name": "華豐",
       "targetStatus": "接近",
-      "targetDist": -5.7,
+      "targetDist": -6.7,
       "researchStatus": "淺層"
     },
     "5274": {
       "code": "5274",
       "name": "信驊",
       "targetStatus": "低估",
-      "targetDist": -30.2,
+      "targetDist": -31.3,
       "researchStatus": "淺層"
     },
     "6166": {
       "code": "6166",
       "name": "凌華",
       "targetStatus": "已達標",
-      "targetDist": 7.7,
+      "targetDist": 8.2,
       "researchStatus": "淺層"
     },
     "6223": {
       "code": "6223",
       "name": "旺矽",
       "targetStatus": "低估",
-      "targetDist": -31.7,
-      "researchStatus": "淺層"
-    },
-    "6239": {
-      "code": "6239",
-      "name": "力成",
-      "targetStatus": "低估",
-      "targetDist": -30.3,
+      "targetDist": -30.4,
       "researchStatus": "淺層"
     },
     "6274": {
       "code": "6274",
       "name": "台燿",
       "targetStatus": "低估",
-      "targetDist": -50.3,
+      "targetDist": -51.7,
       "researchStatus": "淺層"
     },
     "6285": {
       "code": "6285",
       "name": "啟碁",
       "targetStatus": "低估",
-      "targetDist": -30.7,
+      "targetDist": -32.2,
       "researchStatus": "淺層"
     },
     "6415": {
       "code": "6415",
       "name": "矽力",
       "targetStatus": "低估",
-      "targetDist": -31.5,
+      "targetDist": -30.8,
       "researchStatus": "淺層"
     },
     "6442": {
       "code": "6442",
       "name": "光聖",
       "targetStatus": "低估",
-      "targetDist": -39.0,
+      "targetDist": -41.6,
       "researchStatus": "淺層"
+    },
+    "6505": {
+      "code": "6505",
+      "name": "台塑化",
+      "targetStatus": "低估",
+      "targetDist": -33.4,
+      "researchStatus": "需重驗"
+    },
+    "6669": {
+      "code": "6669",
+      "name": "緯穎",
+      "targetStatus": "接近",
+      "targetDist": -10.0,
+      "researchStatus": "草稿"
     },
     "6805": {
       "code": "6805",
       "name": "富世達",
       "targetStatus": "低估",
-      "targetDist": -32.5,
+      "targetDist": -34.6,
       "researchStatus": "淺層"
     },
     "8210": {
       "code": "8210",
       "name": "勤誠",
       "targetStatus": "低估",
-      "targetDist": -36.3,
+      "targetDist": -34.8,
       "researchStatus": "淺層"
     }
   }
