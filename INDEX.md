@@ -66,7 +66,7 @@
 | 2301 | 光寶科 | AI、ASIC、CPO、光通訊、散熱、液冷、電源、PCB | 280 | 高 | 2026-08-24 | [`research/2301_光寶科.md`](research/2301_光寶科.md) |
 | 2303 | 聯電 | AI、CPO、CoWoS、矽光子、電源、DRAM、記憶體 | 131 | 中高 | 2026-08-24 | [`research/2303_聯電.md`](research/2303_聯電.md) |
 | 2308 | 台達電 | AI、散熱、液冷、電源、伺服器 | 2400 | 高 | 2026-08-24 | [`research/2308_台達電.md`](research/2308_台達電.md) |
-| 2312 | 金寶 | 待補主題標籤 |  | 低 |  | [`research/2312_金寶.md`](research/2312_金寶.md) |
+| 2312 | 金寶 | EMS、儲存設備、網通、印表機、AI伺服器L10、HVDC電源、全球製造 | 38 | 中 | 2026-08-25 | [`research/2312_金寶.md`](research/2312_金寶.md) |
 | 2313 | 華通 | AI、CPO、NPO、光模組、ABF、BT、CCL、PCB | 324 | 高 | 2026-08-24 | [`research/2313_華通.md`](research/2313_華通.md) |
 | 2317 | 鴻海 | AI、ASIC、CPO、光通訊、液冷、電源、記憶體、伺服器 | 415 | 高 | 2026-08-24 | [`research/2317_鴻海.md`](research/2317_鴻海.md) |
 | 2327 | 國巨 | AI、記憶體、伺服器 | 1280 | 高 | 2026-08-24 | [`research/2327_國巨.md`](research/2327_國巨.md) |
@@ -74,7 +74,7 @@
 | 2337 | 旺宏 | NOR Flash、SLC NAND、eMMC、AI伺服器、車用記憶體、擴產 | 180 | 中高 | 2026-08-25 | [`research/2337_旺宏.md`](research/2337_旺宏.md) |
 | 2344 | 華邦電 | AI、DRAM、NAND、記憶體、封測 | 120 | 高 | 2026-08-24 | [`research/2344_華邦電.md`](research/2344_華邦電.md) |
 | 2345 | 智邦 | AI、ASIC、CPO、NPO、液冷、電源、PCB、HBM | 3688 | 高 | 2026-08-24 | [`research/2345_智邦.md`](research/2345_智邦.md) |
-| 2348 | 海悅 | 待補主題標籤 |  | 低 |  | [`research/2348_海悅.md`](research/2348_海悅.md) |
+| 2348 | 海悅 | 房屋代銷、營建投資、建案完工認列、預售推案、房貸管制 | 105 | 中 | 2026-08-25 | [`research/2348_海悅.md`](research/2348_海悅.md) |
 | 2356 | 英業達 | AI、ASIC、伺服器、CPU | 75 | 高 | 2026-08-24 | [`research/2356_英業達.md`](research/2356_英業達.md) |
 | 2357 | 華碩 | AI、記憶體、伺服器 | 1050 | 高 | 2026-08-22 | [`research/2357_華碩.md`](research/2357_華碩.md) |
 | 2360 | 致茂 | AI、ASIC、CPO、光通訊、電源、封測、伺服器 | 2400 | 中 | 2026-08-23 | [`research/2360_致茂.md`](research/2360_致茂.md) |

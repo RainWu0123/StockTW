@@ -234,7 +234,19 @@
       "entity_path": "entities/2312_金寶.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "EMS",
+        "儲存設備",
+        "網通",
+        "印表機",
+        "AI伺服器L10",
+        "HVDC電源",
+        "全球製造"
+      ],
+      "target_base": "38",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2313",
@@ -359,7 +371,17 @@
       "entity_path": "entities/2348_海悅.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "房屋代銷",
+        "營建投資",
+        "建案完工認列",
+        "預售推案",
+        "房貸管制"
+      ],
+      "target_base": "105",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2356",
