@@ -723,7 +723,17 @@
       "entity_path": "entities/2880_華南金.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "公股金控",
+        "華南銀行",
+        "證券與創投",
+        "財管",
+        "股利"
+      ],
+      "target_base": "33",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2881",
@@ -743,7 +753,17 @@
       "entity_path": "entities/2882_國泰金.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "壽險金控",
+        "國泰世華",
+        "IFRS17",
+        "外匯與利率",
+        "資本市場"
+      ],
+      "target_base": "115",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2883",
@@ -761,7 +781,17 @@
       "entity_path": "entities/2884_玉山金.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "銀行金控",
+        "玉山銀行",
+        "海外布局",
+        "三商壽合併",
+        "證券與投信"
+      ],
+      "target_base": "36",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2885",
