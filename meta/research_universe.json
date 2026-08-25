@@ -1551,10 +1551,16 @@
       "status": "active",
       "themes": [
         "AI",
+        "伺服器",
+        "滑軌",
+        "GB300",
+        "Vera Rubin",
         "ASIC",
-        "液冷",
-        "伺服器"
-      ]
+        "液冷"
+      ],
+      "last_verified": "2026-08-25",
+      "target_base": "760",
+      "confidence": "中"
     },
     {
       "code": "6669",
