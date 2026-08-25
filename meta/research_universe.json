@@ -772,8 +772,17 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI"
-      ]
+        "壽險金控",
+        "富邦人壽",
+        "台北富邦銀行",
+        "FVOCI",
+        "CSM",
+        "海外金融"
+      ],
+      "target_base": "155",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2882",
@@ -840,7 +849,17 @@
       "entity_path": "entities/2886_兆豐金.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "公股金控",
+        "兆豐銀行",
+        "海外金融",
+        "外匯與聯貸",
+        "證券與非銀"
+      ],
+      "target_base": "42",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2887",
@@ -1212,15 +1231,17 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "光通訊",
-        "電源",
-        "記憶體",
-        "晶圓代工",
-        "伺服器",
-        "低軌衛星",
-        "CPU"
-      ]
+        "IP授權",
+        "eNVM",
+        "PUF安全IP",
+        "3奈米與2奈米",
+        "AI資料中心",
+        "權利金"
+      ],
+      "target_base": "3330",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "3533",
