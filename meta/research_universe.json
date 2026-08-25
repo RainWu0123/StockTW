@@ -136,7 +136,17 @@
       "entity_path": "entities/2002_中鋼.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "鋼鐵循環",
+        "精緻鋼",
+        "台灣內需",
+        "產線整併",
+        "綠色鋼"
+      ],
+      "target_base": "23",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2059",
@@ -600,8 +610,17 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI"
-      ]
+        "5G行動",
+        "高速寬頻",
+        "企業ICT",
+        "AIDC",
+        "IDC與國際業務",
+        "股利"
+      ],
+      "target_base": "145",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2449",
@@ -673,7 +692,17 @@
       "entity_path": "entities/2609_陽明.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "貨櫃航運",
+        "歐美航線",
+        "SCFI",
+        "船隊與聯盟",
+        "燃油與地緣政治"
+      ],
+      "target_base": "68",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2610",
