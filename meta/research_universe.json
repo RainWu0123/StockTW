@@ -405,10 +405,18 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "記憶體",
-        "伺服器"
-      ]
+        "PC品牌",
+        "AI伺服器",
+        "HGX",
+        "NVL72",
+        "GB300",
+        "商用PC",
+        "顯示卡"
+      ],
+      "target_base": "1050",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2360",
@@ -472,12 +480,16 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "散熱",
-        "液冷",
-        "電源",
-        "伺服器"
-      ]
+        "被動元件",
+        "鋁電解與固態電容",
+        "車用與工控",
+        "AI電源",
+        "產品組合"
+      ],
+      "target_base": "160",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2376",
@@ -576,7 +588,18 @@
       "entity_path": "entities/2385_群光.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "鍵盤",
+        "影像與視訊會議",
+        "商用PC",
+        "AI PC",
+        "邊緣AI",
+        "泰國製造"
+      ],
+      "target_base": "230",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2395",
