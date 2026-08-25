@@ -788,7 +788,18 @@
       "entity_path": "entities/2637_慧洋-KY.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "散裝航運",
+        "BDI與BPI",
+        "Handysize",
+        "節能船隊",
+        "指數型租約",
+        "船舶處分"
+      ],
+      "target_base": "105",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2880",
@@ -1711,7 +1722,18 @@
       "entity_path": "entities/6269_台郡.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "軟硬結合板",
+        "FPC",
+        "智慧手機",
+        "AI伺服器漏液感測",
+        "智慧眼鏡",
+        "產品轉型"
+      ],
+      "target_base": "65",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "6274",
