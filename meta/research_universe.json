@@ -112,9 +112,15 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "伺服器"
-      ]
+        "AI伺服器滑軌",
+        "安全件",
+        "IP與專利",
+        "高毛利",
+        "美國產能"
+      ],
+      "target_base": "12000",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "2108",
@@ -776,9 +782,16 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "工業電腦"
-      ]
+        "強固型電腦",
+        "無人機",
+        "AI機櫃",
+        "BBU",
+        "車用機構件",
+        "國防"
+      ],
+      "target_base": "135",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "3008",
@@ -1724,12 +1737,15 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "ASIC",
-        "液冷",
-        "伺服器",
-        "手機"
-      ]
+        "AI伺服器滑軌",
+        "液冷QD",
+        "Trainium3",
+        "Vera Rubin",
+        "摺疊手機樞紐"
+      ],
+      "target_base": "2400",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "6830",
