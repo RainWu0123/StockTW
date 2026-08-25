@@ -150,7 +150,7 @@
 | 4971 | IET-KY | AI、CPO、光通訊、光模組 | 550 | 中 | 2026-08-24 | [`research/4971_IET-KY.md`](research/4971_IET-KY.md) |
 | 4979 | 華星光 | AI、CPO、矽光子、光通訊、光模組 | 430 | 中 | 2026-08-23 | [`research/4979_華星光.md`](research/4979_華星光.md) |
 | 5243 | 乙盛-KY | AI伺服器機構件、低軌衛星、汽車、新能源、Out of China | 90 | 中 | 2026-08-25 | [`research/5243_乙盛-KY.md`](research/5243_乙盛-KY.md) |
-| 5269 | 祥碩_wrong | AI、伺服器 | 1500 | 中 | 2026-08-22 | [`research/5269_祥碩_wrong.md`](research/5269_祥碩_wrong.md) |
+| 5269 | 祥碩 | 高速介面控制IC、PCIe Switch、USB4、ASIC、Edge AI、車用影像 | 1500 | 中高 | 2026-08-25 | [`research/5269_祥碩.md`](research/5269_祥碩.md) |
 | 5274 | 信驊 | AI、ASIC、BMC、載板、封測、伺服器、AST2700、遠端管理 | 20000 | 中高 | 2026-08-25 | [`research/5274_信驊.md`](research/5274_信驊.md) |
 | 5880 | 合庫金 | AI | 28 | 中 | 2026-08-23 | [`research/5880_合庫金.md`](research/5880_合庫金.md) |
 | 6166 | 凌華 | AI、PCB、工業電腦、面板 | 110 | 中 | 2026-08-22 | [`research/6166_凌華.md`](research/6166_凌華.md) |

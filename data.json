@@ -5196,7 +5196,7 @@
     },
     {
       "code": "5269",
-      "name": "華豐",
+      "name": "祥碩",
       "industry": "電子",
       "price": 1400.0,
       "pct": -1.06,
@@ -5235,7 +5235,7 @@
       "target": 1500.0,
       "targetDist": -6.7,
       "researchTheme": "USB/PCIe 控制晶片",
-      "researchFile": "research/5269_祥碩_wrong.md",
+      "researchFile": "research/5269_祥碩.md",
       "lastVerified": "2026-08-22",
       "etf0050": null,
       "etf00981A": null,

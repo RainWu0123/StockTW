@@ -1584,15 +1584,23 @@
     },
     {
       "code": "5269",
-      "name": "祥碩_wrong",
-      "research_path": "research/5269_祥碩_wrong.md",
-      "entity_path": "entities/5269_祥碩_wrong.md",
+      "name": "祥碩",
+      "research_path": "research/5269_祥碩.md",
+      "entity_path": "entities/5269_祥碩.md",
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "伺服器"
-      ]
+        "高速介面控制IC",
+        "PCIe Switch",
+        "USB4",
+        "ASIC",
+        "Edge AI",
+        "車用影像"
+      ],
+      "last_verified": "2026-08-25",
+      "target_base": "1500",
+      "confidence": "中高",
+      "research_maturity": 80
     },
     {
       "code": "5274",
