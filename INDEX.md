@@ -157,7 +157,7 @@
 | 6166 | 凌華 | AI、PCB、工業電腦、面板 | 110 | 中 | 2026-08-22 | [`research/6166_凌華.md`](research/6166_凌華.md) |
 | 6187 | 萬潤 | CPO、CoWoS、矽光子、散熱 | 1550 | 高 | 2026-08-24 | [`research/6187_萬潤.md`](research/6187_萬潤.md) |
 | 6196 | 帆宣 | AI、CoWoS、HBM | 650 | 高 | 2026-08-22 | [`research/6196_帆宣.md`](research/6196_帆宣.md) |
-| 6223 | 旺矽 | AI、ASIC、CPO、CPU | 8000 | 高 | 2026-08-22 | [`research/6223_旺矽.md`](research/6223_旺矽.md) |
+| 6223 | 旺矽 | AI、ASIC、CPO、CPU、探針卡、MEMS、VPC、測試設備 | 7500 | 中高 | 2026-08-25 | [`research/6223_旺矽.md`](research/6223_旺矽.md) |
 | 6239 | 力成 | AI、CPO、CoWoS、DRAM、NAND、HBM、記憶體、封測 | 384 | 高 | 2026-08-24 | [`research/6239_力成.md`](research/6239_力成.md) |
 | 6269 | 台郡 | 待補主題標籤 |  | 低 |  | [`research/6269_台郡.md`](research/6269_台郡.md) |
 | 6274 | 台燿 | ASIC、CCL、低軌衛星 | 3010 | 高 | 2026-08-22 | [`research/6274_台燿.md`](research/6274_台燿.md) |

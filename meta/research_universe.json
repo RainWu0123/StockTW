@@ -1441,8 +1441,15 @@
         "AI",
         "ASIC",
         "CPO",
-        "CPU"
-      ]
+        "CPU",
+        "探針卡",
+        "MEMS",
+        "VPC",
+        "測試設備"
+      ],
+      "last_verified": "2026-08-25",
+      "target_base": "7500",
+      "confidence": "中高"
     },
     {
       "code": "6239",
