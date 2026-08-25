@@ -414,8 +414,15 @@
       "status": "active",
       "themes": [
         "AI",
-        "伺服器"
-      ]
+        "電競PC",
+        "顯示卡",
+        "AI PC",
+        "AI伺服器",
+        "地端AI"
+      ],
+      "last_verified": "2026-08-25",
+      "target_base": "155",
+      "confidence": "中"
     },
     {
       "code": "2378",
