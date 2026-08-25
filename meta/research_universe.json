@@ -1018,12 +1018,16 @@
       "status": "active",
       "themes": [
         "AI",
-        "記憶體",
         "伺服器",
-        "網通",
-        "CPU",
-        "手機"
-      ]
+        "機櫃",
+        "ODM",
+        "交換器",
+        "Vera Rubin",
+        "MI450"
+      ],
+      "target_base": "270",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "3324",
@@ -1139,9 +1143,16 @@
       "themes": [
         "AI",
         "ASIC",
-        "HBM",
-        "CPU"
-      ]
+        "3奈米",
+        "2奈米",
+        "CSP",
+        "車用ADAS",
+        "NRE",
+        "量產"
+      ],
+      "target_base": "5800",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "3665",
@@ -1197,8 +1208,15 @@
       "themes": [
         "AI",
         "伺服器",
-        "CPU"
-      ]
+        "機櫃",
+        "AMD",
+        "MI355",
+        "全球在地化",
+        "AIoT"
+      ],
+      "target_base": "125",
+      "confidence": "中",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "3711",

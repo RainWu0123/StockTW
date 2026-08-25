@@ -128,18 +128,18 @@
 | 3081 | 聯亞 | AI、CPO、光通訊、光模組、記憶體、手機 | 3000 | 中 | 2026-08-24 | [`research/3081_聯亞.md`](research/3081_聯亞.md) |
 | 2351 | 順德 | AI、散熱、電源、車用、連接器 | 105 | 中 | 2026-08-25 | [`research/2351_順德.md`](research/2351_順德.md) |
 | 3163 | 波若威 | CPO、NPO、矽光子、光模組 |  | 中 | 2026-08-24 | [`research/3163_波若威.md`](research/3163_波若威.md) |
-| 3231 | 緯創 | AI、記憶體、伺服器、網通、CPU、手機 | 280 | 高 | 2026-08-22 | [`research/3231_緯創.md`](research/3231_緯創.md) |
+| 3231 | 緯創 | AI、伺服器、機櫃、ODM、交換器、Vera Rubin、MI450 | 270 | 中高 | 2026-08-25 | [`research/3231_緯創.md`](research/3231_緯創.md) |
 | 3324 | 雙鴻 | AI、散熱、液冷、水冷板、CDU、QD、DIMM、ASIC、Rubin | 1350 | 中高 | 2026-08-25 | [`research/3324_雙鴻.md`](research/3324_雙鴻.md) |
 | 3443 | 創意 | AI、ASIC、CPO、CoWoS、HBM、CPU | 5600 | 中高 | 2026-08-25 | [`research/3443_創意.md`](research/3443_創意.md) |
 | 3449 | 京元電 | AI、ASIC、CPO、散熱、封測、CPU | 380 | 高 | 2026-08-22 | [`research/3449_京元電.md`](research/3449_京元電.md) |
 | 3529 | 力旺 | AI、光通訊、電源、記憶體、晶圓代工、伺服器、低軌衛星、CPU | 3330 | 高 | 2026-08-22 | [`research/3529_力旺.md`](research/3529_力旺.md) |
 | 3533 | 嘉澤 | AI、CPO、NPO、散熱、液冷、PCB、記憶體、伺服器 | 2400 | 高 | 2026-08-24 | [`research/3533_嘉澤.md`](research/3533_嘉澤.md) |
 | 3653 | 健策 | AI、散熱、GPU、CPU、ASIC、均熱片 | 6100 | 中高 | 2026-08-25 | [`research/3653_健策.md`](research/3653_健策.md) |
-| 3661 | 世芯-KY | AI、ASIC、HBM、CPU | 6100 | 高 | 2026-08-22 | [`research/3661_世芯-KY.md`](research/3661_世芯-KY.md) |
+| 3661 | 世芯-KY | AI、ASIC、3奈米、2奈米、CSP、車用ADAS、NRE、量產 | 5800 | 中高 | 2026-08-25 | [`research/3661_世芯-KY.md`](research/3661_世芯-KY.md) |
 | 3665 | 貿聯-KY | AI、電源、伺服器 | 3430 | 高 | 2026-08-22 | [`research/3665_貿聯-KY.md`](research/3665_貿聯-KY.md) |
 | 3673 | TPK-KY | CoWoS、封測 | 75 | 中 | 2026-08-22 | [`research/3673_TPK-KY.md`](research/3673_TPK-KY.md) |
 | 3680 | 家登 | AI、EUV、FOUP、先進製程、先進封裝、半導體載具 | 650 | 中高 | 2026-08-25 | [`research/3680_家登.md`](research/3680_家登.md) |
-| 3706 | 神達 | AI、伺服器、CPU | 130 | 中 | 2026-08-22 | [`research/3706_神達.md`](research/3706_神達.md) |
+| 3706 | 神達 | AI、伺服器、機櫃、AMD、MI355、全球在地化、AIoT | 125 | 中 | 2026-08-25 | [`research/3706_神達.md`](research/3706_神達.md) |
 | 3711 | 日月光 | AI、ASIC、CPO、CoWoS、DRAM、HBM、記憶體、封測 | 750 | 高 | 2026-08-24 | [`research/3711_日月光.md`](research/3711_日月光.md) |
 | 4904 | 遠傳 | AI、記憶體、低軌衛星 | 105 | 中 | 2026-08-22 | [`research/4904_遠傳.md`](research/4904_遠傳.md) |
 | 4938 | 和碩 | AI、電源、CCL、PCB、記憶體、伺服器、CPU | 95 | 中 | 2026-08-23 | [`research/4938_和碩.md`](research/4938_和碩.md) |
