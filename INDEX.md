@@ -138,7 +138,7 @@
 | 3661 | 世芯-KY | AI、ASIC、HBM、CPU | 6100 | 高 | 2026-08-22 | [`research/3661_世芯-KY.md`](research/3661_世芯-KY.md) |
 | 3665 | 貿聯-KY | AI、電源、伺服器 | 3430 | 高 | 2026-08-22 | [`research/3665_貿聯-KY.md`](research/3665_貿聯-KY.md) |
 | 3673 | TPK-KY | CoWoS、封測 | 75 | 中 | 2026-08-22 | [`research/3673_TPK-KY.md`](research/3673_TPK-KY.md) |
-| 3680 | 家登 | 面板 | 710 | 高 | 2026-08-22 | [`research/3680_家登.md`](research/3680_家登.md) |
+| 3680 | 家登 | AI、EUV、FOUP、先進製程、先進封裝、半導體載具 | 650 | 中高 | 2026-08-25 | [`research/3680_家登.md`](research/3680_家登.md) |
 | 3706 | 神達 | AI、伺服器、CPU | 130 | 中 | 2026-08-22 | [`research/3706_神達.md`](research/3706_神達.md) |
 | 3711 | 日月光 | AI、ASIC、CPO、CoWoS、DRAM、HBM、記憶體、封測 | 750 | 高 | 2026-08-24 | [`research/3711_日月光.md`](research/3711_日月光.md) |
 | 4904 | 遠傳 | AI、記憶體、低軌衛星 | 105 | 中 | 2026-08-22 | [`research/4904_遠傳.md`](research/4904_遠傳.md) |
@@ -163,8 +163,8 @@
 | 6274 | 台燿 | ASIC、CCL、低軌衛星 | 3010 | 高 | 2026-08-22 | [`research/6274_台燿.md`](research/6274_台燿.md) |
 | 6278 | 台表科 | AI、光通訊、光模組、PCB、HDI、DRAM、記憶體、載板 | 210 | 中高 | 2026-08-24 | [`research/6278_台表科.md`](research/6278_台表科.md) |
 | 6285 | 啟碁 | AI、記憶體、網通、低軌衛星 | 340 | 高 | 2026-08-24 | [`research/6285_啟碁.md`](research/6285_啟碁.md) |
-| 6415 | 矽力-KY | AI、ASIC、光模組、電源、晶圓代工 | 650 | 中 | 2026-08-22 | [`research/6415_矽力-KY.md`](research/6415_矽力-KY.md) |
-| 6442 | 光聖 | AI、CPO | 2500 | 中 | 2026-08-22 | [`research/6442_光聖.md`](research/6442_光聖.md) |
+| 6415 | 矽力-KY | AI、PMIC、資料中心、車用、VCORE、光模組 | 480 | 中 | 2026-08-25 | [`research/6415_矽力-KY.md`](research/6415_矽力-KY.md) |
+| 6442 | 光聖 | AI、光通訊、CPO、高芯數光纖、資料中心、RF | 2200 | 中 | 2026-08-25 | [`research/6442_光聖.md`](research/6442_光聖.md) |
 | 6505 | 台塑化 | 塑化 | 105 | 中 | 2026-07-14 | [`research/6505_台塑化.md`](research/6505_台塑化.md) |
 | 6515 | 穎崴 | AI、CPO、矽光子、封測、手機 | 12000 | 高 | 2026-08-22 | [`research/6515_穎崴.md`](research/6515_穎崴.md) |
 | 6584 | 南俊國際 | AI、伺服器、滑軌、GB300、Vera Rubin、ASIC、液冷 | 760 | 中 | 2026-08-25 | [`research/6584_南俊國際.md`](research/6584_南俊國際.md) |

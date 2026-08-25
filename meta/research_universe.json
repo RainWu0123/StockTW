@@ -1176,8 +1176,16 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "面板"
-      ]
+        "AI",
+        "EUV",
+        "FOUP",
+        "先進製程",
+        "先進封裝",
+        "半導體載具"
+      ],
+      "target_base": "650",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "3706",
@@ -1538,11 +1546,15 @@
       "status": "active",
       "themes": [
         "AI",
-        "ASIC",
-        "光模組",
-        "電源",
-        "晶圓代工"
-      ]
+        "PMIC",
+        "資料中心",
+        "車用",
+        "VCORE",
+        "光模組"
+      ],
+      "target_base": "480",
+      "confidence": "中",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "6442",
@@ -1553,8 +1565,15 @@
       "status": "active",
       "themes": [
         "AI",
-        "CPO"
-      ]
+        "光通訊",
+        "CPO",
+        "高芯數光纖",
+        "資料中心",
+        "RF"
+      ],
+      "target_base": "2200",
+      "confidence": "中",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "6505",
