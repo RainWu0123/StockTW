@@ -129,7 +129,7 @@
 | 2351 | 順德 | AI、散熱、電源、車用、連接器 | 105 | 中 | 2026-08-25 | [`research/2351_順德.md`](research/2351_順德.md) |
 | 3163 | 波若威 | CPO、NPO、矽光子、光模組 |  | 中 | 2026-08-24 | [`research/3163_波若威.md`](research/3163_波若威.md) |
 | 3231 | 緯創 | AI、記憶體、伺服器、網通、CPU、手機 | 280 | 高 | 2026-08-22 | [`research/3231_緯創.md`](research/3231_緯創.md) |
-| 3324 | 雙鴻 | AI、散熱、液冷、DRAM | 1400 | 高 | 2026-08-22 | [`research/3324_雙鴻.md`](research/3324_雙鴻.md) |
+| 3324 | 雙鴻 | AI、散熱、液冷、水冷板、CDU、QD、DIMM、ASIC、Rubin | 1350 | 中高 | 2026-08-25 | [`research/3324_雙鴻.md`](research/3324_雙鴻.md) |
 | 3443 | 創意 | AI、ASIC、CPO、CoWoS、HBM、CPU | 5600 | 中高 | 2026-08-25 | [`research/3443_創意.md`](research/3443_創意.md) |
 | 3449 | 京元電 | AI、ASIC、CPO、散熱、封測、CPU | 380 | 高 | 2026-08-22 | [`research/3449_京元電.md`](research/3449_京元電.md) |
 | 3529 | 力旺 | AI、光通訊、電源、記憶體、晶圓代工、伺服器、低軌衛星、CPU | 3330 | 高 | 2026-08-22 | [`research/3529_力旺.md`](research/3529_力旺.md) |

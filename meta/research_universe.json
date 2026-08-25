@@ -1030,8 +1030,16 @@
         "AI",
         "散熱",
         "液冷",
-        "DRAM"
-      ]
+        "水冷板",
+        "CDU",
+        "QD",
+        "DIMM",
+        "ASIC",
+        "Rubin"
+      ],
+      "last_verified": "2026-08-25",
+      "target_base": "1350",
+      "confidence": "中高"
     },
     {
       "code": "3443",
