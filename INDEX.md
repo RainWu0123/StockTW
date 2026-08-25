@@ -1,278 +1,186 @@
-# 投資知識庫總索引（唯一入口）
+# 台股研究全庫 Index（法人研究＋LLMwiki 薄入口）
 
-**更新日期**：2026-08-03  
-**根目錄**：`/home/ubuntu/investment/`  
-**方法論（非研究本體）**：`/home/ubuntu/guides/`
+更新日期：2026-08-25
+根目錄：`/home/ubuntu/investment/`
 
-之後引用股票／投資內容，**先讀本檔**，再跳到對應路徑。不要再從 home 根目錄或散落路徑猜。
+> 使用方式：先用本檔按代碼、產業／供應鏈、主題查找，再進入完整研究檔。薄入口只負責定位與聯想，不取代研究報告。
 
----
+## 研究狀態
 
-## 1. 權威落點（Canonical）
+- 已掃描股票研究檔：**116 檔**
+- 批次 A：15/15 完成。
+- 批次 B：19/19 完成。
+- 研究唯一落點：`research/{代碼}_{公司}.md`
+- 即時資料 `data/live.json` 僅供查價，本 Index 不寫入或修改。
 
-| 類型 | 路徑 | 用途 | 命名 |
-|------|------|------|------|
-| **個股研究** | `research/{代碼}_{名稱}.md` | 深度研究唯一落點 | `2330_台積電.md` |
-| **專題摘要** | `research/摘要_{主題}_{YYYYMMDD}.md` | 外部內容／宏觀／Podcast | `摘要_股癌EP678_20260711.md` |
-| **儀表板數據** | `data/*.json` | live / scores / etf / heatmap | 腳本寫入 |
-| **個股 JSON 頁** | `stock/{代碼}.json` | 建站用原始頁資料 | `2330.json` |
-| **前端／部署** | `index.html`、`spa.html`、`deploy_pages.sh` | GitHub Pages | — |
-| **方法論／模板** | `/home/ubuntu/guides/` | 報告模板、系統指南 | 非個股研究 |
-| **歷史／散檔歸檔** | `archive/` | Discord 備份、圓桌、legacy 腳本 | 只讀為主 |
-| **本索引** | `INDEX.md` | 引用地圖 | 本檔 |
-| **Agent 規範** | `AGENTS.md` | 本 repo 工作規則 | 本 repo |
+## 依供應鏈／主題定位
 
-### 引用規則（給 agent / 製作人）
+- **AI**：[1101 台泥](research/1101_台泥.md)、[1301 台塑](research/1301_台塑.md)、[1303 南亞](research/1303_南亞.md)、[1326 台化](research/1326_台化.md)、[2059 川湖](research/2059_川湖.md)、[2301 光寶科](research/2301_光寶科.md)、[2303 聯電](research/2303_聯電.md)、[2308 台達電](research/2308_台達電.md)、[2313 華通](research/2313_華通.md)、[2317 鴻海](research/2317_鴻海.md)、[2327 國巨](research/2327_國巨.md)、[2330 台積電](research/2330_台積電.md)、[2337 旺宏](research/2337_旺宏.md)、[2344 華邦電](research/2344_華邦電.md)、[2345 智邦](research/2345_智邦.md)、[2356 英業達](research/2356_英業達.md)、[2357 華碩](research/2357_華碩.md)、[2360 致茂](research/2360_致茂.md)、[2363 矽統](research/2363_矽統.md)、[2368 金像電](research/2368_金像電.md)、[2375 凱美](research/2375_凱美.md)、[2376 技嘉](research/2376_技嘉.md)、[2377 微星](research/2377_微星.md)、[2379 瑞昱](research/2379_瑞昱.md)、[2382 廣達](research/2382_廣達.md)、[2383 台光電](research/2383_台光電.md)、[2395 研華](research/2395_研華.md)、[2408 南亞科](research/2408_南亞科.md)、[2412 中華電](research/2412_中華電.md)、[2449 京元電子](research/2449_京元電子.md)、[2454 聯發科](research/2454_聯發科.md)、[2610 華航](research/2610_華航.md)、[2618 長榮航](research/2618_長榮航.md)、[2881 富邦金](research/2881_富邦金.md)、[2885 元大金](research/2885_元大金.md)、[2892 第一金](research/2892_第一金.md)、[3005 神基](research/3005_神基.md)、[3008 大立光](research/3008_大立光.md)、[3017 奇鋐](research/3017_奇鋐.md)、[3026 禾伸堂](research/3026_禾伸堂.md)、[3034 聯詠](research/3034_聯詠.md)、[3037 欣興](research/3037_欣興.md)、[3045 台灣大](research/3045_台灣大.md)、[3081 聯亞](research/3081_聯亞.md)、[3231 緯創](research/3231_緯創.md)、[3324 雙鴻](research/3324_雙鴻.md)、[3443 創意](research/3443_創意.md)、[3449 京元電](research/3449_京元電.md)、[3529 力旺](research/3529_力旺.md)、[3533 嘉澤](research/3533_嘉澤.md)、[3653 健策](research/3653_健策.md)、[3661 世芯-KY](research/3661_世芯-KY.md)、[3665 貿聯-KY](research/3665_貿聯-KY.md)、[3706 神達](research/3706_神達.md)、[3711 日月光](research/3711_日月光.md)、[4904 遠傳](research/4904_遠傳.md)、[4938 和碩](research/4938_和碩.md)、[4953 緯軟](research/4953_緯軟.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[4971 IET-KY](research/4971_IET-KY.md)、[4979 華星光](research/4979_華星光.md)、[5243 乙盛-KY](research/5243_乙盛-KY.md)、[5269 祥碩_wrong](research/5269_祥碩_wrong.md)、[5274 信驊](research/5274_信驊.md)、[5880 合庫金](research/5880_合庫金.md)、[6166 凌華](research/6166_凌華.md)、[6196 帆宣](research/6196_帆宣.md)、[6223 旺矽](research/6223_旺矽.md)、[6239 力成](research/6239_力成.md)、[6278 台表科](research/6278_台表科.md)、[6285 啟碁](research/6285_啟碁.md)、[6415 矽力-KY](research/6415_矽力-KY.md)、[6442 光聖](research/6442_光聖.md)、[6515 穎崴](research/6515_穎崴.md)、[6584 南俊國際](research/6584_南俊國際.md)、[6669 緯穎](research/6669_緯穎.md)、[6715 嘉基](research/6715_嘉基.md)、[6770 力積電](research/6770_力積電.md)、[6805 富世達](research/6805_富世達.md)、[6830 汎銓](research/6830_汎銓.md)、[7610 聯友金屬創](research/7610_聯友金屬創.md)、[8046 南電](research/8046_南電.md)、[8210 勤誠](research/8210_勤誠.md)、[8299 群聯](research/8299_群聯.md)
+- **CPO**：[2301 光寶科](research/2301_光寶科.md)、[2303 聯電](research/2303_聯電.md)、[2313 華通](research/2313_華通.md)、[2317 鴻海](research/2317_鴻海.md)、[2345 智邦](research/2345_智邦.md)、[2360 致茂](research/2360_致茂.md)、[2449 京元電子](research/2449_京元電子.md)、[2454 聯發科](research/2454_聯發科.md)、[3008 大立光](research/3008_大立光.md)、[3017 奇鋐](research/3017_奇鋐.md)、[3081 聯亞](research/3081_聯亞.md)、[3163 波若威](research/3163_波若威.md)、[3443 創意](research/3443_創意.md)、[3449 京元電](research/3449_京元電.md)、[3533 嘉澤](research/3533_嘉澤.md)、[3711 日月光](research/3711_日月光.md)、[4971 IET-KY](research/4971_IET-KY.md)、[4979 華星光](research/4979_華星光.md)、[6187 萬潤](research/6187_萬潤.md)、[6223 旺矽](research/6223_旺矽.md)、[6239 力成](research/6239_力成.md)、[6442 光聖](research/6442_光聖.md)、[6515 穎崴](research/6515_穎崴.md)、[6715 嘉基](research/6715_嘉基.md)、[6830 汎銓](research/6830_汎銓.md)
+- **NPO**：[2313 華通](research/2313_華通.md)、[2345 智邦](research/2345_智邦.md)、[3163 波若威](research/3163_波若威.md)、[3533 嘉澤](research/3533_嘉澤.md)、[6715 嘉基](research/6715_嘉基.md)
+- **CoWoS**：[2108 南帝](research/2108_南帝.md)、[2303 聯電](research/2303_聯電.md)、[2330 台積電](research/2330_台積電.md)、[2454 聯發科](research/2454_聯發科.md)、[3443 創意](research/3443_創意.md)、[3673 TPK-KY](research/3673_TPK-KY.md)、[3711 日月光](research/3711_日月光.md)、[6187 萬潤](research/6187_萬潤.md)、[6196 帆宣](research/6196_帆宣.md)、[6239 力成](research/6239_力成.md)、[6770 力積電](research/6770_力積電.md)
+- **矽光子**：[2303 聯電](research/2303_聯電.md)、[3163 波若威](research/3163_波若威.md)、[4979 華星光](research/4979_華星光.md)、[6187 萬潤](research/6187_萬潤.md)、[6515 穎崴](research/6515_穎崴.md)、[6830 汎銓](research/6830_汎銓.md)
+- **光通訊**：[2301 光寶科](research/2301_光寶科.md)、[2317 鴻海](research/2317_鴻海.md)、[2360 致茂](research/2360_致茂.md)、[2379 瑞昱](research/2379_瑞昱.md)、[3081 聯亞](research/3081_聯亞.md)、[3529 力旺](research/3529_力旺.md)、[4971 IET-KY](research/4971_IET-KY.md)、[4979 華星光](research/4979_華星光.md)、[6278 台表科](research/6278_台表科.md)、[6715 嘉基](research/6715_嘉基.md)
+- **光模組**：[2313 華通](research/2313_華通.md)、[3037 欣興](research/3037_欣興.md)、[3081 聯亞](research/3081_聯亞.md)、[3163 波若威](research/3163_波若威.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[4971 IET-KY](research/4971_IET-KY.md)、[4979 華星光](research/4979_華星光.md)、[6278 台表科](research/6278_台表科.md)、[6415 矽力-KY](research/6415_矽力-KY.md)、[6715 嘉基](research/6715_嘉基.md)、[6830 汎銓](research/6830_汎銓.md)
+- **散熱**：[2301 光寶科](research/2301_光寶科.md)、[2308 台達電](research/2308_台達電.md)、[2375 凱美](research/2375_凱美.md)、[2449 京元電子](research/2449_京元電子.md)、[3017 奇鋐](research/3017_奇鋐.md)、[3026 禾伸堂](research/3026_禾伸堂.md)、[3324 雙鴻](research/3324_雙鴻.md)、[3449 京元電](research/3449_京元電.md)、[3533 嘉澤](research/3533_嘉澤.md)、[3653 健策](research/3653_健策.md)、[6187 萬潤](research/6187_萬潤.md)
+- **液冷**：[2301 光寶科](research/2301_光寶科.md)、[2308 台達電](research/2308_台達電.md)、[2317 鴻海](research/2317_鴻海.md)、[2345 智邦](research/2345_智邦.md)、[2375 凱美](research/2375_凱美.md)、[3017 奇鋐](research/3017_奇鋐.md)、[3324 雙鴻](research/3324_雙鴻.md)、[3533 嘉澤](research/3533_嘉澤.md)、[6584 南俊國際](research/6584_南俊國際.md)、[6669 緯穎](research/6669_緯穎.md)、[6805 富世達](research/6805_富世達.md)、[8210 勤誠](research/8210_勤誠.md)
+- **電源**：[2301 光寶科](research/2301_光寶科.md)、[2303 聯電](research/2303_聯電.md)、[2308 台達電](research/2308_台達電.md)、[2317 鴻海](research/2317_鴻海.md)、[2345 智邦](research/2345_智邦.md)、[2360 致茂](research/2360_致茂.md)、[2375 凱美](research/2375_凱美.md)、[3529 力旺](research/3529_力旺.md)、[3665 貿聯-KY](research/3665_貿聯-KY.md)、[4938 和碩](research/4938_和碩.md)、[5243 乙盛-KY](research/5243_乙盛-KY.md)、[6415 矽力-KY](research/6415_矽力-KY.md)、[6770 力積電](research/6770_力積電.md)
+- **ABF**：[1303 南亞](research/1303_南亞.md)、[2313 華通](research/2313_華通.md)、[3037 欣興](research/3037_欣興.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[8046 南電](research/8046_南電.md)
+- **BT**：[1303 南亞](research/1303_南亞.md)、[2313 華通](research/2313_華通.md)、[3037 欣興](research/3037_欣興.md)、[8046 南電](research/8046_南電.md)
+- **CCL**：[1303 南亞](research/1303_南亞.md)、[2313 華通](research/2313_華通.md)、[2368 金像電](research/2368_金像電.md)、[2383 台光電](research/2383_台光電.md)、[4938 和碩](research/4938_和碩.md)、[6274 台燿](research/6274_台燿.md)
+- **PCB**：[1303 南亞](research/1303_南亞.md)、[2301 光寶科](research/2301_光寶科.md)、[2313 華通](research/2313_華通.md)、[2345 智邦](research/2345_智邦.md)、[2368 金像電](research/2368_金像電.md)、[2383 台光電](research/2383_台光電.md)、[2395 研華](research/2395_研華.md)、[3037 欣興](research/3037_欣興.md)、[3533 嘉澤](research/3533_嘉澤.md)、[4938 和碩](research/4938_和碩.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[6166 凌華](research/6166_凌華.md)、[6278 台表科](research/6278_台表科.md)、[8046 南電](research/8046_南電.md)
+- **HDI**：[2313 華通](research/2313_華通.md)、[2368 金像電](research/2368_金像電.md)、[3037 欣興](research/3037_欣興.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[6278 台表科](research/6278_台表科.md)
+- **mSAP**：[2313 華通](research/2313_華通.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)
+- **DRAM**：[1303 南亞](research/1303_南亞.md)、[2303 聯電](research/2303_聯電.md)、[2344 華邦電](research/2344_華邦電.md)、[2379 瑞昱](research/2379_瑞昱.md)、[2395 研華](research/2395_研華.md)、[2408 南亞科](research/2408_南亞科.md)、[3034 聯詠](research/3034_聯詠.md)、[3324 雙鴻](research/3324_雙鴻.md)、[3711 日月光](research/3711_日月光.md)、[6239 力成](research/6239_力成.md)、[6278 台表科](research/6278_台表科.md)、[6770 力積電](research/6770_力積電.md)
+- **NAND**：[2337 旺宏](research/2337_旺宏.md)、[2344 華邦電](research/2344_華邦電.md)、[2408 南亞科](research/2408_南亞科.md)、[6239 力成](research/6239_力成.md)、[8299 群聯](research/8299_群聯.md)
+- **HBM**：[2345 智邦](research/2345_智邦.md)、[2408 南亞科](research/2408_南亞科.md)、[3443 創意](research/3443_創意.md)、[3661 世芯-KY](research/3661_世芯-KY.md)、[3711 日月光](research/3711_日月光.md)、[6196 帆宣](research/6196_帆宣.md)、[6239 力成](research/6239_力成.md)
+- **記憶體**：[1560 中砂](research/1560_中砂.md)、[2303 聯電](research/2303_聯電.md)、[2317 鴻海](research/2317_鴻海.md)、[2327 國巨](research/2327_國巨.md)、[2337 旺宏](research/2337_旺宏.md)、[2344 華邦電](research/2344_華邦電.md)、[2345 智邦](research/2345_智邦.md)、[2357 華碩](research/2357_華碩.md)、[2379 瑞昱](research/2379_瑞昱.md)、[2382 廣達](research/2382_廣達.md)、[2395 研華](research/2395_研華.md)、[2404 漢唐](research/2404_漢唐.md)、[2408 南亞科](research/2408_南亞科.md)、[2454 聯發科](research/2454_聯發科.md)、[3008 大立光](research/3008_大立光.md)、[3026 禾伸堂](research/3026_禾伸堂.md)、[3034 聯詠](research/3034_聯詠.md)、[3081 聯亞](research/3081_聯亞.md)、[3231 緯創](research/3231_緯創.md)、[3529 力旺](research/3529_力旺.md)、[3533 嘉澤](research/3533_嘉澤.md)、[3711 日月光](research/3711_日月光.md)、[4904 遠傳](research/4904_遠傳.md)、[4938 和碩](research/4938_和碩.md)、[6239 力成](research/6239_力成.md)、[6278 台表科](research/6278_台表科.md)、[6285 啟碁](research/6285_啟碁.md)、[6669 緯穎](research/6669_緯穎.md)、[6770 力積電](research/6770_力積電.md)、[8299 群聯](research/8299_群聯.md)
+- **載板**：[1303 南亞](research/1303_南亞.md)、[2313 華通](research/2313_華通.md)、[2454 聯發科](research/2454_聯發科.md)、[3037 欣興](research/3037_欣興.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[5274 信驊](research/5274_信驊.md)、[6278 台表科](research/6278_台表科.md)、[8046 南電](research/8046_南電.md)
+- **封測**：[2344 華邦電](research/2344_華邦電.md)、[2360 致茂](research/2360_致茂.md)、[2379 瑞昱](research/2379_瑞昱.md)、[2408 南亞科](research/2408_南亞科.md)、[3034 聯詠](research/3034_聯詠.md)、[3449 京元電](research/3449_京元電.md)、[3673 TPK-KY](research/3673_TPK-KY.md)、[3711 日月光](research/3711_日月光.md)、[5274 信驊](research/5274_信驊.md)、[6239 力成](research/6239_力成.md)、[6515 穎崴](research/6515_穎崴.md)
+- **晶圓代工**：[2363 矽統](research/2363_矽統.md)、[2404 漢唐](research/2404_漢唐.md)、[3529 力旺](research/3529_力旺.md)、[6415 矽力-KY](research/6415_矽力-KY.md)
+- **伺服器**：[1101 台泥](research/1101_台泥.md)、[2059 川湖](research/2059_川湖.md)、[2301 光寶科](research/2301_光寶科.md)、[2308 台達電](research/2308_台達電.md)、[2313 華通](research/2313_華通.md)、[2317 鴻海](research/2317_鴻海.md)、[2327 國巨](research/2327_國巨.md)、[2337 旺宏](research/2337_旺宏.md)、[2345 智邦](research/2345_智邦.md)、[2356 英業達](research/2356_英業達.md)、[2357 華碩](research/2357_華碩.md)、[2360 致茂](research/2360_致茂.md)、[2368 金像電](research/2368_金像電.md)、[2375 凱美](research/2375_凱美.md)、[2376 技嘉](research/2376_技嘉.md)、[2377 微星](research/2377_微星.md)、[2382 廣達](research/2382_廣達.md)、[2383 台光電](research/2383_台光電.md)、[2395 研華](research/2395_研華.md)、[2408 南亞科](research/2408_南亞科.md)、[2618 長榮航](research/2618_長榮航.md)、[3017 奇鋐](research/3017_奇鋐.md)、[3026 禾伸堂](research/3026_禾伸堂.md)、[3037 欣興](research/3037_欣興.md)、[3231 緯創](research/3231_緯創.md)、[3529 力旺](research/3529_力旺.md)、[3533 嘉澤](research/3533_嘉澤.md)、[3665 貿聯-KY](research/3665_貿聯-KY.md)、[3706 神達](research/3706_神達.md)、[4938 和碩](research/4938_和碩.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[5243 乙盛-KY](research/5243_乙盛-KY.md)、[5269 祥碩_wrong](research/5269_祥碩_wrong.md)、[5274 信驊](research/5274_信驊.md)、[6278 台表科](research/6278_台表科.md)、[6584 南俊國際](research/6584_南俊國際.md)、[6669 緯穎](research/6669_緯穎.md)、[6715 嘉基](research/6715_嘉基.md)、[6805 富世達](research/6805_富世達.md)、[8210 勤誠](research/8210_勤誠.md)
+- **網通**：[2345 智邦](research/2345_智邦.md)、[2368 金像電](research/2368_金像電.md)、[2379 瑞昱](research/2379_瑞昱.md)、[3037 欣興](research/3037_欣興.md)、[3231 緯創](research/3231_緯創.md)、[6278 台表科](research/6278_台表科.md)、[6285 啟碁](research/6285_啟碁.md)、[8046 南電](research/8046_南電.md)
+- **低軌衛星**：[2301 光寶科](research/2301_光寶科.md)、[2313 華通](research/2313_華通.md)、[2383 台光電](research/2383_台光電.md)、[3529 力旺](research/3529_力旺.md)、[4904 遠傳](research/4904_遠傳.md)、[5243 乙盛-KY](research/5243_乙盛-KY.md)、[6274 台燿](research/6274_台燿.md)、[6285 啟碁](research/6285_啟碁.md)
+- **工業電腦**：[2395 研華](research/2395_研華.md)、[3005 神基](research/3005_神基.md)、[6166 凌華](research/6166_凌華.md)
+- **連接器**：[2317 鴻海](research/2317_鴻海.md)、[3533 嘉澤](research/3533_嘉澤.md)、[6715 嘉基](research/6715_嘉基.md)
+- **CPU**：[2317 鴻海](research/2317_鴻海.md)、[2330 台積電](research/2330_台積電.md)、[2356 英業達](research/2356_英業達.md)、[2395 研華](research/2395_研華.md)、[2449 京元電子](research/2449_京元電子.md)、[2454 聯發科](research/2454_聯發科.md)、[3037 欣興](research/3037_欣興.md)、[3231 緯創](research/3231_緯創.md)、[3443 創意](research/3443_創意.md)、[3449 京元電](research/3449_京元電.md)、[3529 力旺](research/3529_力旺.md)、[3533 嘉澤](research/3533_嘉澤.md)、[3653 健策](research/3653_健策.md)、[3661 世芯-KY](research/3661_世芯-KY.md)、[3706 神達](research/3706_神達.md)、[4938 和碩](research/4938_和碩.md)、[6223 旺矽](research/6223_旺矽.md)、[6715 嘉基](research/6715_嘉基.md)、[8046 南電](research/8046_南電.md)
+- **手機**：[2317 鴻海](research/2317_鴻海.md)、[2454 聯發科](research/2454_聯發科.md)、[3008 大立光](research/3008_大立光.md)、[3034 聯詠](research/3034_聯詠.md)、[3081 聯亞](research/3081_聯亞.md)、[3231 緯創](research/3231_緯創.md)、[4958 臻鼎-KY](research/4958_臻鼎-KY.md)、[6278 台表科](research/6278_台表科.md)、[6515 穎崴](research/6515_穎崴.md)、[6805 富世達](research/6805_富世達.md)、[8299 群聯](research/8299_群聯.md)
+- **面板**：[3034 聯詠](research/3034_聯詠.md)、[3680 家登](research/3680_家登.md)、[3711 日月光](research/3711_日月光.md)、[6166 凌華](research/6166_凌華.md)、[6239 力成](research/6239_力成.md)
+- **塑化**：[1301 台塑](research/1301_台塑.md)、[1303 南亞](research/1303_南亞.md)、[1326 台化](research/1326_台化.md)、[6505 台塑化](research/6505_台塑化.md)
 
-1. 個股：寫完整路徑  
-   `research/2330_台積電.md` 或絕對路徑 `/home/ubuntu/investment/research/2330_台積電.md`
-2. 專題：同樣用 `research/摘要_*.md`
-3. 方法論：用 `/home/ubuntu/guides/...`，**不要**塞進 research/
-4. 歷史 Discord 討論：`archive/discord/`
-5. 圓桌紀錄：`archive/roundtable/`
-6. 禁止再寫入：`/home/ubuntu/*.md` 根目錄、`.gemini/history/investment`、空的 `obsidian-wiki/台股研究`
+## 全庫研究清單
 
----
+| 代碼 | 公司 | 供應鏈／主題 | Base target | 信心 | 驗證日 | 完整研究 |
+|---:|---|---|---:|---|---|---|
+| 1101 | 台泥 | AI、伺服器 | 28 | 中 | 2026-08-22 | [`research/1101_台泥.md`](research/1101_台泥.md) |
+| 1102 | 亞泥 | 待補主題標籤 |  | 低 |  | [`research/1102_亞泥.md`](research/1102_亞泥.md) |
+| 1216 | 統一 | 待補主題標籤 | 85 | 高 | 2026-08-22 | [`research/1216_統一.md`](research/1216_統一.md) |
+| 1301 | 台塑 | AI、塑化 | 62 | 中 | 2026-08-22 | [`research/1301_台塑.md`](research/1301_台塑.md) |
+| 1303 | 南亞 | AI、ABF、BT、CCL、PCB、DRAM、載板、塑化 | 240 | 高 | 2026-08-24 | [`research/1303_南亞.md`](research/1303_南亞.md) |
+| 1326 | 台化 | AI、塑化 | 68 | 中 | 2026-08-22 | [`research/1326_台化.md`](research/1326_台化.md) |
+| 1560 | 中砂 | 記憶體 | 805 | 高 | 2026-08-22 | [`research/1560_中砂.md`](research/1560_中砂.md) |
+| 1590 | 亞德客-KY | 待補主題標籤 | 1600 | 中 | 2026-08-23 | [`research/1590_亞德客-KY.md`](research/1590_亞德客-KY.md) |
+| 2002 | 中鋼 | 待補主題標籤 | 23 | 中 | 2026-08-22 | [`research/2002_中鋼.md`](research/2002_中鋼.md) |
+| 2059 | 川湖 | AI、伺服器 | 12000 | 高 | 2026-08-22 | [`research/2059_川湖.md`](research/2059_川湖.md) |
+| 2108 | 南帝 | CoWoS | 33 | 中 | 2026-08-22 | [`research/2108_南帝.md`](research/2108_南帝.md) |
+| 2301 | 光寶科 | AI、ASIC、CPO、光通訊、散熱、液冷、電源、PCB | 280 | 高 | 2026-08-24 | [`research/2301_光寶科.md`](research/2301_光寶科.md) |
+| 2303 | 聯電 | AI、CPO、CoWoS、矽光子、電源、DRAM、記憶體 | 131 | 中高 | 2026-08-24 | [`research/2303_聯電.md`](research/2303_聯電.md) |
+| 2308 | 台達電 | AI、散熱、液冷、電源、伺服器 | 2400 | 高 | 2026-08-24 | [`research/2308_台達電.md`](research/2308_台達電.md) |
+| 2312 | 金寶 | 待補主題標籤 |  | 低 |  | [`research/2312_金寶.md`](research/2312_金寶.md) |
+| 2313 | 華通 | AI、CPO、NPO、光模組、ABF、BT、CCL、PCB | 324 | 高 | 2026-08-24 | [`research/2313_華通.md`](research/2313_華通.md) |
+| 2317 | 鴻海 | AI、ASIC、CPO、光通訊、液冷、電源、記憶體、伺服器 | 415 | 高 | 2026-08-24 | [`research/2317_鴻海.md`](research/2317_鴻海.md) |
+| 2327 | 國巨 | AI、記憶體、伺服器 | 1280 | 高 | 2026-08-24 | [`research/2327_國巨.md`](research/2327_國巨.md) |
+| 2330 | 台積電 | AI、ASIC、CoWoS、CPU | 3100 | 高 | 2026-08-24 | [`research/2330_台積電.md`](research/2330_台積電.md) |
+| 2337 | 旺宏 | AI、NAND、記憶體、伺服器 | 218 | 高 | 2026-08-22 | [`research/2337_旺宏.md`](research/2337_旺宏.md) |
+| 2344 | 華邦電 | AI、DRAM、NAND、記憶體、封測 | 120 | 高 | 2026-08-24 | [`research/2344_華邦電.md`](research/2344_華邦電.md) |
+| 2345 | 智邦 | AI、ASIC、CPO、NPO、液冷、電源、PCB、HBM | 3688 | 高 | 2026-08-24 | [`research/2345_智邦.md`](research/2345_智邦.md) |
+| 2348 | 海悅 | 待補主題標籤 |  | 低 |  | [`research/2348_海悅.md`](research/2348_海悅.md) |
+| 2356 | 英業達 | AI、ASIC、伺服器、CPU | 75 | 高 | 2026-08-24 | [`research/2356_英業達.md`](research/2356_英業達.md) |
+| 2357 | 華碩 | AI、記憶體、伺服器 | 1050 | 高 | 2026-08-22 | [`research/2357_華碩.md`](research/2357_華碩.md) |
+| 2360 | 致茂 | AI、ASIC、CPO、光通訊、電源、封測、伺服器 | 2400 | 中 | 2026-08-23 | [`research/2360_致茂.md`](research/2360_致茂.md) |
+| 2363 | 矽統 | AI、晶圓代工 | 80 |  |  | [`research/2363_矽統.md`](research/2363_矽統.md) |
+| 2368 | 金像電 | AI、ASIC、CCL、PCB、HDI、伺服器、網通 | 1800 | 高 | 2026-08-22 | [`research/2368_金像電.md`](research/2368_金像電.md) |
+| 2375 | 凱美 | AI、散熱、液冷、電源、伺服器 | 150 | 中 | 2026-08-22 | [`research/2375_凱美.md`](research/2375_凱美.md) |
+| 2376 | 技嘉 | AI、伺服器 | 490 | 高 | 2026-08-22 | [`research/2376_技嘉.md`](research/2376_技嘉.md) |
+| 2377 | 微星 | AI、伺服器 | 155 | 中 | 2026-08-22 | [`research/2377_微星.md`](research/2377_微星.md) |
+| 2378 | 鴻準 | 待補主題標籤 |  | 低 |  | [`research/2378_鴻準.md`](research/2378_鴻準.md) |
+| 2379 | 瑞昱 | AI、光通訊、DRAM、記憶體、封測、網通 | 717 | 高 | 2026-08-22 | [`research/2379_瑞昱.md`](research/2379_瑞昱.md) |
+| 2382 | 廣達 | AI、ASIC、記憶體、伺服器 | 450 | 高 | 2026-08-24 | [`research/2382_廣達.md`](research/2382_廣達.md) |
+| 2383 | 台光電 | AI、CCL、PCB、伺服器、低軌衛星 | 10200 | 高 | 2026-08-24 | [`research/2383_台光電.md`](research/2383_台光電.md) |
+| 2385 | 群光 | 待補主題標籤 |  | 低 |  | [`research/2385_群光.md`](research/2385_群光.md) |
+| 2395 | 研華 | AI、PCB、DRAM、記憶體、伺服器、工業電腦、CPU | 700 | 高 | 2026-08-24 | [`research/2395_研華.md`](research/2395_研華.md) |
+| 2404 | 漢唐 | 記憶體、晶圓代工 | 1700 | 高 | 2026-08-24 | [`research/2404_漢唐.md`](research/2404_漢唐.md) |
+| 2408 | 南亞科 | AI、DRAM、NAND、HBM、記憶體、封測、伺服器 | 580 | 高 | 2026-08-24 | [`research/2408_南亞科.md`](research/2408_南亞科.md) |
+| 2412 | 中華電 | AI | 145 | 高 | 2026-08-22 | [`research/2412_中華電.md`](research/2412_中華電.md) |
+| 2449 | 京元電子 | AI、ASIC、CPO、散熱、CPU | 348 | 高 | 2026-08-22 | [`research/2449_京元電子.md`](research/2449_京元電子.md) |
+| 2454 | 聯發科 | AI、ASIC、CPO、CoWoS、記憶體、載板、CPU、手機 | 6800 | 高 | 2026-08-24 | [`research/2454_聯發科.md`](research/2454_聯發科.md) |
+| 2603 | 長榮 | 待補主題標籤 | 230 | 中 | 2026-08-23 | [`research/2603_長榮.md`](research/2603_長榮.md) |
+| 2609 | 陽明 | 待補主題標籤 | 68 | 中 | 2026-08-22 | [`research/2609_陽明.md`](research/2609_陽明.md) |
+| 2610 | 華航 | AI | 27 | 中 | 2026-08-23 | [`research/2610_華航.md`](research/2610_華航.md) |
+| 2615 | 萬海 | 待補主題標籤 | 140 | 中 | 2026-08-23 | [`research/2615_萬海.md`](research/2615_萬海.md) |
+| 2618 | 長榮航 | AI、伺服器 | 48 | 中 | 2026-08-23 | [`research/2618_長榮航.md`](research/2618_長榮航.md) |
+| 2637 | 慧洋-KY | 待補主題標籤 |  | 低 |  | [`research/2637_慧洋-KY.md`](research/2637_慧洋-KY.md) |
+| 2880 | 華南金 | 待補主題標籤 | 33 | 中 | 2026-08-22 | [`research/2880_華南金.md`](research/2880_華南金.md) |
+| 2881 | 富邦金 | AI | 155 | 中 | 2026-08-22 | [`research/2881_富邦金.md`](research/2881_富邦金.md) |
+| 2882 | 國泰金 | 待補主題標籤 | 115 | 中 | 2026-08-22 | [`research/2882_國泰金.md`](research/2882_國泰金.md) |
+| 2883 | 凱基金 | 待補主題標籤 | 35 | 高 | 2026-08-22 | [`research/2883_凱基金.md`](research/2883_凱基金.md) |
+| 2884 | 玉山金 | 待補主題標籤 | 36 | 中 | 2026-08-22 | [`research/2884_玉山金.md`](research/2884_玉山金.md) |
+| 2885 | 元大金 | AI | 60 | 中 | 2026-08-23 | [`research/2885_元大金.md`](research/2885_元大金.md) |
+| 2886 | 兆豐金 | 待補主題標籤 | 42 | 中 | 2026-08-22 | [`research/2886_兆豐金.md`](research/2886_兆豐金.md) |
+| 2887 | 台新新光金 | 待補主題標籤 | 32 | 高 | 2026-08-22 | [`research/2887_台新新光金.md`](research/2887_台新新光金.md) |
+| 2890 | 永豐金 | 待補主題標籤 | 40 | 中 | 2026-08-23 | [`research/2890_永豐金.md`](research/2890_永豐金.md) |
+| 2891 | 中信金 | 待補主題標籤 | 58 | 高 | 2026-08-22 | [`research/2891_中信金.md`](research/2891_中信金.md) |
+| 2892 | 第一金 | AI | 34 | 中 | 2026-08-23 | [`research/2892_第一金.md`](research/2892_第一金.md) |
+| 3005 | 神基 | AI、工業電腦 | 150 | 中 | 2026-08-22 | [`research/3005_神基.md`](research/3005_神基.md) |
+| 3008 | 大立光 | AI、CPO、記憶體、手機 | 5150 | 高 | 2026-08-24 | [`research/3008_大立光.md`](research/3008_大立光.md) |
+| 3017 | 奇鋐 | AI、ASIC、CPO、散熱、液冷、伺服器 | 4005 | 高 | 2026-08-24 | [`research/3017_奇鋐.md`](research/3017_奇鋐.md) |
+| 3026 | 禾伸堂 | AI、散熱、記憶體、伺服器 | 900 | 中 | 2026-08-22 | [`research/3026_禾伸堂.md`](research/3026_禾伸堂.md) |
+| 3034 | 聯詠 | AI、ASIC、DRAM、記憶體、封測、手機、面板 | 530 | 高 | 2026-08-24 | [`research/3034_聯詠.md`](research/3034_聯詠.md) |
+| 3037 | 欣興 | AI、ASIC、光模組、ABF、BT、PCB、HDI、載板 | 1400 | 高 | 2026-08-24 | [`research/3037_欣興.md`](research/3037_欣興.md) |
+| 3045 | 台灣大 | AI | 145 | 中 | 2026-08-22 | [`research/3045_台灣大.md`](research/3045_台灣大.md) |
+| 3081 | 聯亞 | AI、CPO、光通訊、光模組、記憶體、手機 | 3000 | 中 | 2026-08-24 | [`research/3081_聯亞.md`](research/3081_聯亞.md) |
+| 3163 | 波若威 | CPO、NPO、矽光子、光模組 |  | 中 | 2026-08-24 | [`research/3163_波若威.md`](research/3163_波若威.md) |
+| 3231 | 緯創 | AI、記憶體、伺服器、網通、CPU、手機 | 280 | 高 | 2026-08-22 | [`research/3231_緯創.md`](research/3231_緯創.md) |
+| 3324 | 雙鴻 | AI、散熱、液冷、DRAM | 1400 | 高 | 2026-08-22 | [`research/3324_雙鴻.md`](research/3324_雙鴻.md) |
+| 3443 | 創意 | AI、ASIC、CPO、CoWoS、HBM、CPU | 6500 | 高 | 2026-08-22 | [`research/3443_創意.md`](research/3443_創意.md) |
+| 3449 | 京元電 | AI、ASIC、CPO、散熱、封測、CPU | 380 | 高 | 2026-08-22 | [`research/3449_京元電.md`](research/3449_京元電.md) |
+| 3529 | 力旺 | AI、光通訊、電源、記憶體、晶圓代工、伺服器、低軌衛星、CPU | 3330 | 高 | 2026-08-22 | [`research/3529_力旺.md`](research/3529_力旺.md) |
+| 3533 | 嘉澤 | AI、CPO、NPO、散熱、液冷、PCB、記憶體、伺服器 | 2400 | 高 | 2026-08-24 | [`research/3533_嘉澤.md`](research/3533_嘉澤.md) |
+| 3653 | 健策 | AI、散熱、CPU | 6725 | 高 | 2026-08-22 | [`research/3653_健策.md`](research/3653_健策.md) |
+| 3661 | 世芯-KY | AI、ASIC、HBM、CPU | 6100 | 高 | 2026-08-22 | [`research/3661_世芯-KY.md`](research/3661_世芯-KY.md) |
+| 3665 | 貿聯-KY | AI、電源、伺服器 | 3430 | 高 | 2026-08-22 | [`research/3665_貿聯-KY.md`](research/3665_貿聯-KY.md) |
+| 3673 | TPK-KY | CoWoS、封測 | 75 | 中 | 2026-08-22 | [`research/3673_TPK-KY.md`](research/3673_TPK-KY.md) |
+| 3680 | 家登 | 面板 | 710 | 高 | 2026-08-22 | [`research/3680_家登.md`](research/3680_家登.md) |
+| 3706 | 神達 | AI、伺服器、CPU | 130 | 中 | 2026-08-22 | [`research/3706_神達.md`](research/3706_神達.md) |
+| 3711 | 日月光 | AI、ASIC、CPO、CoWoS、DRAM、HBM、記憶體、封測 | 750 | 高 | 2026-08-24 | [`research/3711_日月光.md`](research/3711_日月光.md) |
+| 4904 | 遠傳 | AI、記憶體、低軌衛星 | 105 | 中 | 2026-08-22 | [`research/4904_遠傳.md`](research/4904_遠傳.md) |
+| 4938 | 和碩 | AI、電源、CCL、PCB、記憶體、伺服器、CPU | 95 | 中 | 2026-08-23 | [`research/4938_和碩.md`](research/4938_和碩.md) |
+| 4953 | 緯軟 | AI | 160 | 中 | 2026-08-22 | [`research/4953_緯軟.md`](research/4953_緯軟.md) |
+| 4958 | 臻鼎-KY | AI、ASIC、光模組、ABF、PCB、HDI、mSAP、載板 | 920 | 高 | 2026-08-22 | [`research/4958_臻鼎-KY.md`](research/4958_臻鼎-KY.md) |
+| 4971 | IET-KY | AI、CPO、光通訊、光模組 | 550 | 中 | 2026-08-24 | [`research/4971_IET-KY.md`](research/4971_IET-KY.md) |
+| 4979 | 華星光 | AI、CPO、矽光子、光通訊、光模組 | 430 | 中 | 2026-08-23 | [`research/4979_華星光.md`](research/4979_華星光.md) |
+| 5243 | 乙盛-KY | AI、電源、伺服器、低軌衛星 | 90 | 中 | 2026-08-22 | [`research/5243_乙盛-KY.md`](research/5243_乙盛-KY.md) |
+| 5269 | 祥碩_wrong | AI、伺服器 | 1500 | 中 | 2026-08-22 | [`research/5269_祥碩_wrong.md`](research/5269_祥碩_wrong.md) |
+| 5274 | 信驊 | AI、ASIC、載板、封測、伺服器 | 22000 | 高 | 2026-08-22 | [`research/5274_信驊.md`](research/5274_信驊.md) |
+| 5515 | 建準 | 待補主題標籤 |  | 低 |  | [`research/5515_建準.md`](research/5515_建準.md) |
+| 5880 | 合庫金 | AI | 28 | 中 | 2026-08-23 | [`research/5880_合庫金.md`](research/5880_合庫金.md) |
+| 6166 | 凌華 | AI、PCB、工業電腦、面板 | 110 | 中 | 2026-08-22 | [`research/6166_凌華.md`](research/6166_凌華.md) |
+| 6187 | 萬潤 | CPO、CoWoS、矽光子、散熱 | 1550 | 高 | 2026-08-24 | [`research/6187_萬潤.md`](research/6187_萬潤.md) |
+| 6196 | 帆宣 | AI、CoWoS、HBM | 650 | 高 | 2026-08-22 | [`research/6196_帆宣.md`](research/6196_帆宣.md) |
+| 6223 | 旺矽 | AI、ASIC、CPO、CPU | 8000 | 高 | 2026-08-22 | [`research/6223_旺矽.md`](research/6223_旺矽.md) |
+| 6239 | 力成 | AI、CPO、CoWoS、DRAM、NAND、HBM、記憶體、封測 | 384 | 高 | 2026-08-24 | [`research/6239_力成.md`](research/6239_力成.md) |
+| 6269 | 台郡 | 待補主題標籤 |  | 低 |  | [`research/6269_台郡.md`](research/6269_台郡.md) |
+| 6274 | 台燿 | ASIC、CCL、低軌衛星 | 3010 | 高 | 2026-08-22 | [`research/6274_台燿.md`](research/6274_台燿.md) |
+| 6278 | 台表科 | AI、光通訊、光模組、PCB、HDI、DRAM、記憶體、載板 | 210 | 中高 | 2026-08-24 | [`research/6278_台表科.md`](research/6278_台表科.md) |
+| 6285 | 啟碁 | AI、記憶體、網通、低軌衛星 | 340 | 高 | 2026-08-24 | [`research/6285_啟碁.md`](research/6285_啟碁.md) |
+| 6415 | 矽力-KY | AI、ASIC、光模組、電源、晶圓代工 | 650 | 中 | 2026-08-22 | [`research/6415_矽力-KY.md`](research/6415_矽力-KY.md) |
+| 6442 | 光聖 | AI、CPO | 2500 | 中 | 2026-08-22 | [`research/6442_光聖.md`](research/6442_光聖.md) |
+| 6505 | 台塑化 | 塑化 | 105 | 中 | 2026-07-14 | [`research/6505_台塑化.md`](research/6505_台塑化.md) |
+| 6515 | 穎崴 | AI、CPO、矽光子、封測、手機 | 12000 | 高 | 2026-08-22 | [`research/6515_穎崴.md`](research/6515_穎崴.md) |
+| 6584 | 南俊國際 | AI、ASIC、液冷、伺服器 | 1022 | 高 | 2026-08-22 | [`research/6584_南俊國際.md`](research/6584_南俊國際.md) |
+| 6669 | 緯穎 | AI、ASIC、液冷、記憶體、伺服器 | 7000 | 高 | 2026-08-24 | [`research/6669_緯穎.md`](research/6669_緯穎.md) |
+| 6715 | 嘉基 | AI、CPO、NPO、光通訊、光模組、伺服器、連接器、CPU | 180 | 中 | 2026-08-22 | [`research/6715_嘉基.md`](research/6715_嘉基.md) |
+| 6770 | 力積電 | AI、CoWoS、電源、DRAM、記憶體 | 85 | 中 | 2026-08-24 | [`research/6770_力積電.md`](research/6770_力積電.md) |
+| 6805 | 富世達 | AI、ASIC、液冷、伺服器、手機 | 2615 | 高 | 2026-08-22 | [`research/6805_富世達.md`](research/6805_富世達.md) |
+| 6830 | 汎銓 | AI、CPO、矽光子、光模組 | 520 | 中 | 2026-08-23 | [`research/6830_汎銓.md`](research/6830_汎銓.md) |
+| 7610 | 聯友金屬創 | AI |  | 中 | 2026-08-22 | [`research/7610_聯友金屬創.md`](research/7610_聯友金屬創.md) |
+| 7769 | 鴻勁 | 待補主題標籤 |  | 低 |  | [`research/7769_鴻勁.md`](research/7769_鴻勁.md) |
+| 8046 | 南電 | AI、ASIC、ABF、BT、PCB、載板、網通、CPU | 1600 | 高 | 2026-08-24 | [`research/8046_南電.md`](research/8046_南電.md) |
+| 8210 | 勤誠 | AI、ASIC、液冷、伺服器 | 1482 | 高 | 2026-08-22 | [`research/8210_勤誠.md`](research/8210_勤誠.md) |
+| 8299 | 群聯 | AI、NAND、記憶體、手機 | 2750 | 中 | 2026-08-24 | [`research/8299_群聯.md`](research/8299_群聯.md) |
 
-## 2. 目錄樹（精簡）
+## 跨標的聯想入口
 
-```
-/home/ubuntu/investment/
-├── INDEX.md              ← 你在這
-├── AGENTS.md             ← 工作規範
-├── research/             ← 研究唯一落點（52 個股 + 9 專題）
-├── data/                 ← 即時與評分 JSON
-├── stock/                ← 67 檔個股 JSON
-├── archive/
-│   ├── discord/          ← 投資頻道全量備份 + 摘要
-│   ├── roundtable/       ← 2026-06 多代理圓桌
-│   ├── notes/            ← 籌碼 AI 等零散筆記
-│   └── legacy-scripts/   ← 舊 tw-stock-dashboard 副本
-├── meta/                 ← 元資料（可擴充）
-├── *.py / deploy_pages.sh
-└── index.html / spa.html / data.json / etf.json / market.json
-```
+- **AI 伺服器／組裝**：2317 鴻海、2382 廣達、2356 英業達、6669 緯穎。
+- **AI 電源／液冷**：2308 台達電、2301 光寶科、3017 奇鋐、6187 萬潤。
+- **ABF／高階載板**：3037 欣興、8046 南電、6239 力成。
+- **CCL／高速材料**：2383 台光電、1303 南亞。
+- **光通訊／矽光**：3081 聯亞、4971 IET-KY、3163 波若威、2345 智邦、2313 華通。
+- **記憶體週期**：2408 南亞科、2344 華邦電、6770 力積電、8299 群聯。
+- **成熟製程／特殊製程**：2330 台積電、2303 聯電、2454 聯發科。
 
-旁系（**不搬、只標記**）：
+## 薄入口規則
 
-| 路徑 | 狀態 | 說明 |
-|------|------|------|
-| `/home/ubuntu/guides/` | 正式 | 方法論；與 research 分離 |
-| `/home/ubuntu/tw-stock-dashboard/` | legacy 殘留 | 原檔仍在；副本在 `archive/legacy-scripts/`；有 `MOVED.md` |
-| `/home/ubuntu/obsidian-wiki/台股研究/` | 空 | 未使用，勿當落點 |
-| `/home/ubuntu/.gemini/{history,tmp}/investment/` | 工具殘渣 | 停止使用 |
-| `/home/ubuntu/.openclaw/workspace/tw-stock-multiagent/` | 另一系統 | OpenClaw 產物，非 Hermes 權威 |
-| `~/.hermes/skills/taiwan-stock/`、`investment/`、`equity-research-analyst/` | Skills | 流程；產物仍寫 research/ |
-| `~/.hermes/skill-bundles/stock-research.yaml` | Bundle | TSA + 劇本 + 回顧 + ERA |
-| `~/.hermes/memory/roundtable-stock-*.md` | 記憶副本 | 內容已 copy 到 archive/roundtable/ |
-
----
-
-## 3. research/ 現況清單（2026-07-14）
-
-**書寫品質評分（決定改/不改）**：`research/摘要_研究品質評分_20260714.md`
-（48 檔八維打分；P0 必須先動，P3 可先引用）
-
-**四大科技巨頭AI估值續作（2026-08-19）**：`research/摘要_FOMOSoc四大巨頭AI估值框架_20260819.md`
-（Microsoft／Amazon／Alphabet／Meta；官方財報核對、PE／SOTP與情境估值）
-
-**Fabrinet（FN）美股光通訊製造平台（2026-08-19）**：`research/FN_Fabrinet.md`
-（FY2026 Q4、Data Center／DCI／HPC、NPO／CPO、現金流、客戶集中與情境估值）
-
-**台指期月結算日效應回測（2026-08-19）**：`research/摘要_台指期月結算日效應_20260819.md`
-（2024～2026共32次月結算；結算日、前後日與非結算日比較、策略檢驗）
-
-### 3.1 專題摘要（含品質評分檔）
-
-**股癌入口（消化完成 2026-07-14）**：
-1. **Skill（女媧蒸餾 · 執行層）**：`gooaye-perspective`  
-   - 路徑：`~/.hermes/skills/investment/gooaye-perspective/`  
-   - 底稿：`references/research/01–06` + `FIDELITY.md`  
-   - 上游方法：[nuwa-skill](https://github.com/alchaincyf/nuwa-skill)  
-2. **AI 可解析**：`research/gooaye_digest.json`  
-3. **人讀判斷**：`research/摘要_股癌消化筆記_20260714.md`  
-4. 索引／編年：觀點庫、H1 全景、故事線
-
-| 檔案 | 主題 |
-|------|------|
-| skill `gooaye-perspective` | **怎麼用股癌框架做事** |
-| `gooaye_digest.json` | 機器可讀 theses／ticker_map |
-| `摘要_股癌消化筆記_20260714.md` | 人讀消化 |
-| `摘要_股癌2026觀點庫_20260714.md` | 6–7 月論點索引 |
-| `摘要_股癌2026H1全景_20260714.md` | H1 全景分級 |
-| `摘要_股癌故事線_2025Q4至2026H1_20260714.md` | 故事編年 |
-| `摘要_股癌EP678_20260711.md` | 股癌 EP678 光通／Meta |
-| `摘要_股癌EP677_20260708.md` | 股癌 EP677 槓桿／Semi-Analysis |
-| `摘要_EP676_台股強勢族群_Meta_NeoCloud_20260704.md` | 股癌 EP676 / Meta NeoCloud |
-| `摘要_股癌EP675_20260701.md` | 股癌 EP675 動能／IC 設計 |
-| `摘要_股癌EP674_20260627.md` | 股癌 EP674 上半年／蘋果漲價 |
-| `摘要_股癌EP673_20260624.md` | 股癌 EP673 電阻漲浪 |
-| `摘要_股癌EP671_20260617.md` | 股癌 EP671 離散／功率 |
-| `摘要_股癌EP670_20260613.md` | 股癌 EP670 SpaceX／估值 |
-| `摘要_股癌EP669_20260610.md` | 股癌 EP669 信仰考 |
-| `摘要_股癌EP6xx_*.md` | EP640–668 等 A/B 分集（見 H1 全景） |
-| `摘要_KP49期_20260704.md` | KP 思考 49 期 |
-| `摘要_KP55期_Datadog可觀測層_20260708.md` | KP55 / Datadog |
-| `摘要_MMPaM_EP206_ETF狂潮_20260712.md` | M 平方 Podcast ETF 狂潮 |
-| `摘要_SK海力士暴跌_KIS下調_LTA定價模式_20260713.md` | 海力士 / LTA 定價 |
-| `摘要_早晨財經速解讀_20260709.md` | 早晨財經 |
-| `摘要_記憶體定價與頂部確認_三星Q2案例_20260708.md` | 三星 Q2 / 記憶體頂部 |
-| `摘要_研究品質評分_20260714.md` | 書寫品質評分 |
-| `摘要_AgentX推理基準_CUDA護城河_20260824.md` | SemiAnalysis AgentX/InferenceXv3 分診素材（AI 硬體鏈受惠排序） |
-| `空方交易教科書_臺灣認售權證版_20260803.md` | 空方研究、認售權證篩選、定價參數與風控 |
-
-### 3.2 個股研究（52）
-
-**2026-07-14 新增觀察池（12）**：緯穎、信驊、欣興、健策、英業達、緯創、旺宏、金像電、京元電子、光寶科、台化、禾伸堂。
-
-| 代碼 | 檔案 | 備註 |
-|------|------|------|
-| 1101 | `1101_台泥.md` | |
-| 1216 | `1216_統一.md` | |
-| 1301 | `1301_台塑.md` | |
-| 1303 | `1303_南亞.md` | |
-| 1326 | `1326_台化.md` | **新** 0050／台塑系 |
-| 2002 | `2002_中鋼.md` | |
-| 2108 | `2108_南帝.md` | 2026-08-21新建：NBR乳膠、耐油橡膠、Q2復甦、南美特與目標價 |
-| 2301 | `2301_光寶科.md` | **新** 電源對照 |
-| 2303 | `2303_聯電.md` | 核實較完整 |
-| 2308 | `2308_台達電.md` | AI 電源／散熱 |
-| 2313 | `2313_華通.md` | |
-| 2317 | `2317_鴻海.md` | |
-| 2327 | `2327_國巨.md` | |
-| 2330 | `2330_台積電.md` | 深度重寫 |
-| 2337 | `2337_旺宏.md` | **新** 記憶體 |
-| 2344 | `2344_華邦電.md` | 2026-08-21重寫：CMS／Flash／新唐、Q2財報、CapEx、目標價 |
-| 2345 | `2345_智邦.md` | 深度重寫 |
-| 2356 | `2356_英業達.md` | **新** server 代工 |
-| 2368 | `2368_金像電.md` | **新** 高階 PCB |
-| 2375 | `2375_凱美.md` | |
-| 2382 | `2382_廣達.md` | AI 鏈加深 |
-| 2383 | `2383_台光電.md` | AI 鏈加深 |
-| 2395 | `2395_研華.md` | |
-| 2404 | `2404_漢唐.md` | |
-| 2408 | `2408_南亞科.md` | 2026-08-21重寫：DRAM Q2、5A新廠、LTA、同業與目標價 |
-| 2412 | `2412_中華電.md` | |
-| 2449 | `2449_京元電子.md` | **新** 測試 |
-| 2454 | `2454_聯發科.md` | |
-| 2881 | `2881_富邦金.md` | 深度重寫 |
-| 2882 | `2882_國泰金.md` | |
-| 3005 | `3005_神基.md` | 深度重寫 |
-| 3008 | `3008_大立光.md` | |
-| 3017 | `3017_奇鋐.md` | AI 鏈加深 |
-| 3026 | `3026_禾伸堂.md` | **新** 00991A／被動 |
-| 3037 | `3037_欣興.md` | 2026-08-19 重寫：Q2正常化EPS、AI載板、537億CAPEX、目標價 |
-| 3038 | `3038_全台.md` | |
-| 3081 | `3081_聯亞.md` | 2026-08-19 更新：7月EPS 2.07、InP漲價查證、目標價 |
-| 3231 | `3231_緯創.md` | **新** server |
-| 3443 | `3443_創意.md` | |
-| 3529 | `3529_力旺.md` | |
-| 3653 | `3653_健策.md` | **新** 散熱 |
-| 3711 | `3711_日月光.md` | |
-| 4971 | `4971_IET-KY.md` | 2026-08-19 新建：Q1/Q2前瞻、InP料源、法人與目標價 |
-| 5269 | `5269_祥碩.md` | 6 月年減警示 |
-| 5274 | `5274_信驊.md` | **新** BMC 00991A |
-| 6166 | `6166_凌華.md` | |
-| 6239 | `6239_力成.md` | |
-| 6285 | `6285_啟碁.md` | |
-| 6415 | `6415_矽力.md` | 核實更新 |
-| 6442 | `6442_光聖.md` | |
-| 6505 | `6505_台塑化.md` | |
-| 6669 | `6669_緯穎.md` | **新** AI server 純度 |
-| 6770 | `6770_力積電.md` | |
-| 6830 | `6830_汎銓.md` | |
-| 7610 | `7610_聯友金屬創.md` | 深度重寫 |
-| 8046 | `8046_南電.md` | 2026-08-19 新建：Q2本業、ABF/BT漲價、468億CAPEX、目標價 |
-| 8299 | `8299_群聯.md` | 2026-08-21新建：AI儲存、917億庫存、NAND週期、法人與目標價 |
-
-深度索引：`research/.research_index.json`（2026-08-21 更新，含記憶體三檔最新研究）。
-
-### 3.3 儀表板資料
-
-| 檔案 | 用途 |
-|------|------|
-| `data/live.json` | TWSE 即時／收盤補價 |
-| `data/scores.json` | 評分排序 |
-| `data/etf.json` / 根目錄 `etf.json` | ETF 追蹤 |
-| `data/heatmap.json` | 熱力 |
-| `data/scoring_rules.json` | 評分規則 |
-| `data/backtest_20d.json` | 回測 |
-| `stock/*.json`（67） | 個股建站頁 |
-| 根 `data.json` / `market.json` | 前端讀取 |
-
----
-
-## 4. archive/ 內容
-
-| 子目錄 | 內容 | 引用時 |
-|--------|------|--------|
-| `archive/discord/` | `investment_channel_all.json`（全量）、`latest_100.json`、`investment_channel_summary.md` | 歷史討論／劇本追溯 |
-| `archive/roundtable/` | expert_meeting、R2/R3 反駁、chip analyst、hermes memory 副本 | 2026-06 圓桌 |
-| `archive/notes/` | `tw_stock_ai_suggestions.md`（籌碼訓練建議） | 系統設計靈感 |
-| `archive/legacy-scripts/tw-stock-dashboard/` | briefing / decision / discord_send 舊腳本 | 勿當正式 pipeline |
-
-### 2026-07-14 從 home 根目錄搬入
-
-| 原路徑 | 新路徑 |
-|--------|--------|
-| `/home/ubuntu/investment_channel_*.json|md` | `archive/discord/` |
-| `/home/ubuntu/round*.md`、`expert_meeting_report.md` | `archive/roundtable/` |
-| `/home/ubuntu/tw_stock_ai_suggestions.md` | `archive/notes/` |
-| （副本）`tw-stock-dashboard/*` | `archive/legacy-scripts/tw-stock-dashboard/` |
-
-根目錄留下 stub 指標（`investment_channel_summary.md`、`tw_stock_ai_suggestions.md`、`tw-stock-dashboard/MOVED.md`），避免舊連結完全斷掉。
-
-### 命名修正
-
-- `research/EP676_...` → `research/摘要_EP676_台股強勢族群_Meta_NeoCloud_20260704.md`（對齊專題規範）
-
----
-
-## 5. guides/ 中與投資相關
-
-| 檔案 | 用途 |
-|------|------|
-| `research-report-template.md` | 個股研究表頭（last_verified / confidence） |
-| `authoritative-references.md` | 權威來源列表（含本 knowledge base） |
-| `harness-engineering-backtest-plan.md` | harness 回測計劃（系統，非個股） |
-
-其餘 guides 多為 Hermes／coding 方法論，不是台股研究本體。
-
----
-
-## 6. Skills／Cron 對口
-
-| 能力 | Skill / Job | 寫入落點 |
-|------|-------------|---------|
-| 個股決策 | `taiwan-stock-analyst` | 讀 data/ + research/ |
-| 長報告 | `equity-research-analyst` | `research/{代碼}_{名稱}.md` |
-| 外部內容留檔 | `investment-research-archive` | `research/摘要_*.md` |
-| 劇本檢核 | `investment-playbook-review` | 通常不另存；結論可回寫 research |
-| 交易回顧 | `trade-review` | 依 skill |
-| 儀表板 | `tw-stock-dashboard` | data/、stock/、deploy |
-| 晨報／盤後 | `morning-briefing` / `eod-analysis` | 輸出可落 research 或 cron output |
-| Bundle | `~/.hermes/skill-bundles/stock-research.yaml` | 同上 |
-
----
-
-## 7. 之後新增內容 checklist
-
-- [ ] 個股 → 只寫 `research/{代碼}_{名稱}.md`
-- [ ] 專題／Podcast／新聞摘要 → 只寫 `research/摘要_{主題}_{YYYYMMDD}.md`
-- [ ] 新檔表頭用 `guides/research-report-template.md`
-- [ ] 繁體中文；來源 + 日期 + 信心
-- [ ] 更新本 INDEX 的清單節（或至少 git commit 訊息標清檔名）
-- [ ] 不要往 home 根、obsidian 空資料夾、gemini tmp 塞研究
-
----
-
-## 8. 已知缺口
-
-1. 多數個股仍是「營收＋劇本」合格線，未達法人完整八塊；watchlist 優先加深
-2. 光通二線（上詮 3363、波若威 3163）、雙鴻 3324 等尚未建檔（非本次必須）
-3. `investment-research-archive` 舊步驟若寫 `YYYY-MM-DD_主題.md` → 以本 INDEX + `摘要_` 規範為準
-4. OpenClaw multiagent 與 Hermes investment 未合併（有意分離）
-
----
-
-*整理 session：2026-07-14。目標：一處可引用、路徑可驗證、散檔可追溯。觀察池 2026-07-14 擴充至 52 檔。*
+- 需要投資判斷時，必須回到完整研究檔，檢查最新來源、估值、風險與賣出條件。
+- 目標價、EPS、現價都帶日期，禁止把市場傳言當訂單事實。
+- `obsidian-wiki/entities/` 對應頁提供主題、上下游與關聯標的的快速跳轉。
