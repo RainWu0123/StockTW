@@ -369,14 +369,15 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
+        "AI伺服器PCB",
+        "高階交換器",
         "ASIC",
-        "CCL",
-        "PCB",
         "HDI",
-        "伺服器",
-        "網通"
-      ]
+        "泰國產能"
+      ],
+      "target_base": "1600",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "2375",
@@ -1182,9 +1183,15 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "CoWoS",
-        "封測"
-      ]
+        "觸控模組",
+        "奕力IC",
+        "TGV玻璃基板",
+        "先進封裝",
+        "泰國產能"
+      ],
+      "target_base": "70",
+      "confidence": "中",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "3680",
@@ -1369,11 +1376,15 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "電源",
-        "伺服器",
-        "低軌衛星"
-      ]
+        "AI伺服器機構件",
+        "低軌衛星",
+        "汽車",
+        "新能源",
+        "Out of China"
+      ],
+      "target_base": "90",
+      "confidence": "中",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "5269",

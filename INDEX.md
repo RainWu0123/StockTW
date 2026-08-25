@@ -137,7 +137,7 @@
 | 3653 | 健策 | AI、散熱、GPU、CPU、ASIC、均熱片 | 6100 | 中高 | 2026-08-25 | [`research/3653_健策.md`](research/3653_健策.md) |
 | 3661 | 世芯-KY | AI、ASIC、3奈米、2奈米、CSP、車用ADAS、NRE、量產 | 5800 | 中高 | 2026-08-25 | [`research/3661_世芯-KY.md`](research/3661_世芯-KY.md) |
 | 3665 | 貿聯-KY | AI資料中心、線束、HPC、AEC、電源互連、半導體設備、Interplex Datacom | 3300 | 中高 | 2026-08-25 | [`research/3665_貿聯-KY.md`](research/3665_貿聯-KY.md) |
-| 3673 | TPK-KY | CoWoS、封測 | 75 | 中 | 2026-08-22 | [`research/3673_TPK-KY.md`](research/3673_TPK-KY.md) |
+| 3673 | TPK-KY | 觸控模組、奕力IC、TGV玻璃基板、先進封裝、泰國產能 | 70 | 中 | 2026-08-25 | [`research/3673_TPK-KY.md`](research/3673_TPK-KY.md) |
 | 3680 | 家登 | AI、EUV、FOUP、先進製程、先進封裝、半導體載具 | 650 | 中高 | 2026-08-25 | [`research/3680_家登.md`](research/3680_家登.md) |
 | 3706 | 神達 | AI、伺服器、機櫃、AMD、MI355、全球在地化、AIoT | 125 | 中 | 2026-08-25 | [`research/3706_神達.md`](research/3706_神達.md) |
 | 3711 | 日月光 | AI、ASIC、CPO、CoWoS、DRAM、HBM、記憶體、封測 | 750 | 高 | 2026-08-24 | [`research/3711_日月光.md`](research/3711_日月光.md) |
@@ -149,7 +149,7 @@
 | 4958 | 臻鼎-KY | AI、ASIC、光模組、ABF、PCB、HDI、mSAP、載板 | 920 | 高 | 2026-08-22 | [`research/4958_臻鼎-KY.md`](research/4958_臻鼎-KY.md) |
 | 4971 | IET-KY | AI、CPO、光通訊、光模組 | 550 | 中 | 2026-08-24 | [`research/4971_IET-KY.md`](research/4971_IET-KY.md) |
 | 4979 | 華星光 | AI、CPO、矽光子、光通訊、光模組 | 430 | 中 | 2026-08-23 | [`research/4979_華星光.md`](research/4979_華星光.md) |
-| 5243 | 乙盛-KY | AI、電源、伺服器、低軌衛星 | 90 | 中 | 2026-08-22 | [`research/5243_乙盛-KY.md`](research/5243_乙盛-KY.md) |
+| 5243 | 乙盛-KY | AI伺服器機構件、低軌衛星、汽車、新能源、Out of China | 90 | 中 | 2026-08-25 | [`research/5243_乙盛-KY.md`](research/5243_乙盛-KY.md) |
 | 5269 | 祥碩_wrong | AI、伺服器 | 1500 | 中 | 2026-08-22 | [`research/5269_祥碩_wrong.md`](research/5269_祥碩_wrong.md) |
 | 5274 | 信驊 | AI、ASIC、BMC、載板、封測、伺服器、AST2700、遠端管理 | 20000 | 中高 | 2026-08-25 | [`research/5274_信驊.md`](research/5274_信驊.md) |
 | 5515 | 建準 | 待補主題標籤 |  | 低 |  | [`research/5515_建準.md`](research/5515_建準.md) |
