@@ -54,6 +54,7 @@
 |---:|---|---|---|---|
 | 6226 | 光鼎 | LED封裝、LED模組、IGBT、SiC MOSFET、功率半導體 | 60分，HOLD／觀察 | [`research/6226_光鼎.md`](research/6226_光鼎.md) |
 | 3234 | 光環 | CW Laser、SiPh、CPO、AI光通訊代工 | 60分，HOLD／觀察 | [`research/3234_光環.md`](research/3234_光環.md) |
+| 3490 | 單井 | 封裝模具、半導體後段設備、太陽能電站、業外收益風險 | 60分，HOLD／觀察 | [`research/3490_單井.md`](research/3490_單井.md) |
 
 ## 全庫研究清單
 
