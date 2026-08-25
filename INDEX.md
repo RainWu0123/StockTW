@@ -92,7 +92,7 @@
 | 2404 | 漢唐 | 記憶體、晶圓代工 | 1700 | 高 | 2026-08-24 | [`research/2404_漢唐.md`](research/2404_漢唐.md) |
 | 2408 | 南亞科 | AI、DRAM、NAND、HBM、記憶體、封測、伺服器 | 580 | 高 | 2026-08-24 | [`research/2408_南亞科.md`](research/2408_南亞科.md) |
 | 2412 | 中華電 | AI | 145 | 高 | 2026-08-22 | [`research/2412_中華電.md`](research/2412_中華電.md) |
-| 2449 | 京元電子 | AI、ASIC、CPO、散熱、CPU | 348 | 高 | 2026-08-22 | [`research/2449_京元電子.md`](research/2449_京元電子.md) |
+| 2449 | 京元電子 | AI、ASIC、CPO、散熱、封測、CPU、Burn-in、Rubin | 348 | 中高 | 2026-08-25 | [`research/2449_京元電子.md`](research/2449_京元電子.md) |
 | 2455 | 全新 | AI、光通訊、矽光子、手機、光模組 | 240 | 中高 | 2026-08-25 | [`research/2455_全新.md`](research/2455_全新.md) |
 | 2454 | 聯發科 | AI、ASIC、CPO、CoWoS、記憶體、載板、CPU、手機 | 6800 | 高 | 2026-08-24 | [`research/2454_聯發科.md`](research/2454_聯發科.md) |
 | 2603 | 長榮 | 待補主題標籤 | 230 | 中 | 2026-08-23 | [`research/2603_長榮.md`](research/2603_長榮.md) |

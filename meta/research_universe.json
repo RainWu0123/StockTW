@@ -561,8 +561,14 @@
         "ASIC",
         "CPO",
         "散熱",
-        "CPU"
-      ]
+        "封測",
+        "CPU",
+        "Burn-in",
+        "Rubin"
+      ],
+      "last_verified": "2026-08-25",
+      "target_base": "348",
+      "confidence": "中高"
     },
     {
       "code": "2455",
@@ -1063,7 +1069,7 @@
       "research_path": "research/3449_京元電.md",
       "entity_path": "entities/3449_京元電.md",
       "required_maturity": 75,
-      "status": "active",
+      "status": "quarantine",
       "themes": [
         "AI",
         "ASIC",
@@ -1071,7 +1077,8 @@
         "散熱",
         "封測",
         "CPU"
-      ]
+      ],
+      "note": "代碼疑似誤植，TWSE 官方京元電子為 2449，待隔離修復"
     },
     {
       "code": "3529",
