@@ -22,7 +22,17 @@
       "entity_path": "entities/1102_亞泥.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "水泥",
+        "電力",
+        "裕民與遠東新轉投資",
+        "能源成本",
+        "減碳"
+      ],
+      "target_base": "45",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "1216",
@@ -263,11 +273,17 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "NAND",
-        "記憶體",
-        "伺服器"
-      ]
+        "NOR Flash",
+        "SLC NAND",
+        "eMMC",
+        "AI伺服器",
+        "車用記憶體",
+        "擴產"
+      ],
+      "target_base": "180",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2344",
@@ -363,9 +379,16 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "晶圓代工"
-      ]
+        "MCU",
+        "BMS",
+        "類比IC",
+        "紘康整合",
+        "聯電集團資源"
+      ],
+      "target_base": "60",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "2368",
