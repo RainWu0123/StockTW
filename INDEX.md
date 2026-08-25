@@ -136,7 +136,7 @@
 | 3533 | 嘉澤 | AI、CPO、NPO、散熱、液冷、PCB、記憶體、伺服器 | 2400 | 高 | 2026-08-24 | [`research/3533_嘉澤.md`](research/3533_嘉澤.md) |
 | 3653 | 健策 | AI、散熱、GPU、CPU、ASIC、均熱片 | 6100 | 中高 | 2026-08-25 | [`research/3653_健策.md`](research/3653_健策.md) |
 | 3661 | 世芯-KY | AI、ASIC、3奈米、2奈米、CSP、車用ADAS、NRE、量產 | 5800 | 中高 | 2026-08-25 | [`research/3661_世芯-KY.md`](research/3661_世芯-KY.md) |
-| 3665 | 貿聯-KY | AI、電源、伺服器 | 3430 | 高 | 2026-08-22 | [`research/3665_貿聯-KY.md`](research/3665_貿聯-KY.md) |
+| 3665 | 貿聯-KY | AI資料中心、線束、HPC、AEC、電源互連、半導體設備、Interplex Datacom | 3300 | 中高 | 2026-08-25 | [`research/3665_貿聯-KY.md`](research/3665_貿聯-KY.md) |
 | 3673 | TPK-KY | CoWoS、封測 | 75 | 中 | 2026-08-22 | [`research/3673_TPK-KY.md`](research/3673_TPK-KY.md) |
 | 3680 | 家登 | AI、EUV、FOUP、先進製程、先進封裝、半導體載具 | 650 | 中高 | 2026-08-25 | [`research/3680_家登.md`](research/3680_家登.md) |
 | 3706 | 神達 | AI、伺服器、機櫃、AMD、MI355、全球在地化、AIoT | 125 | 中 | 2026-08-25 | [`research/3706_神達.md`](research/3706_神達.md) |
@@ -160,13 +160,13 @@
 | 6223 | 旺矽 | AI、ASIC、CPO、CPU、探針卡、MEMS、VPC、測試設備 | 7500 | 中高 | 2026-08-25 | [`research/6223_旺矽.md`](research/6223_旺矽.md) |
 | 6239 | 力成 | AI、CPO、CoWoS、DRAM、NAND、HBM、記憶體、封測 | 384 | 高 | 2026-08-24 | [`research/6239_力成.md`](research/6239_力成.md) |
 | 6269 | 台郡 | 待補主題標籤 |  | 低 |  | [`research/6269_台郡.md`](research/6269_台郡.md) |
-| 6274 | 台燿 | ASIC、CCL、低軌衛星 | 3010 | 高 | 2026-08-22 | [`research/6274_台燿.md`](research/6274_台燿.md) |
+| 6274 | 台燿 | 高階CCL、M7、M8、AI伺服器、800G、1.6T、ASIC、泰國產能 | 2200 | 中高 | 2026-08-25 | [`research/6274_台燿.md`](research/6274_台燿.md) |
 | 6278 | 台表科 | AI、光通訊、光模組、PCB、HDI、DRAM、記憶體、載板 | 210 | 中高 | 2026-08-24 | [`research/6278_台表科.md`](research/6278_台表科.md) |
 | 6285 | 啟碁 | AI、記憶體、網通、低軌衛星 | 340 | 高 | 2026-08-24 | [`research/6285_啟碁.md`](research/6285_啟碁.md) |
 | 6415 | 矽力-KY | AI、PMIC、資料中心、車用、VCORE、光模組 | 480 | 中 | 2026-08-25 | [`research/6415_矽力-KY.md`](research/6415_矽力-KY.md) |
 | 6442 | 光聖 | AI、光通訊、CPO、高芯數光纖、資料中心、RF | 2200 | 中 | 2026-08-25 | [`research/6442_光聖.md`](research/6442_光聖.md) |
 | 6505 | 台塑化 | 塑化 | 105 | 中 | 2026-07-14 | [`research/6505_台塑化.md`](research/6505_台塑化.md) |
-| 6515 | 穎崴 | AI、CPO、矽光子、封測、手機 | 12000 | 高 | 2026-08-22 | [`research/6515_穎崴.md`](research/6515_穎崴.md) |
+| 6515 | 穎崴 | AI測試介面、Coaxial Socket、HyperSocket、MEMS探針卡、高階封裝 | 11000 | 中高 | 2026-08-25 | [`research/6515_穎崴.md`](research/6515_穎崴.md) |
 | 6584 | 南俊國際 | AI、伺服器、滑軌、GB300、Vera Rubin、ASIC、液冷 | 760 | 中 | 2026-08-25 | [`research/6584_南俊國際.md`](research/6584_南俊國際.md) |
 | 6669 | 緯穎 | AI、ASIC、液冷、記憶體、伺服器 | 7000 | 高 | 2026-08-24 | [`research/6669_緯穎.md`](research/6669_緯穎.md) |
 | 6715 | 嘉基 | AI、CPO、NPO、光通訊、光模組、伺服器、連接器、CPU | 180 | 中 | 2026-08-22 | [`research/6715_嘉基.md`](research/6715_嘉基.md) |

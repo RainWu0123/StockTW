@@ -1162,10 +1162,17 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "電源",
-        "伺服器"
-      ]
+        "AI資料中心",
+        "線束",
+        "HPC",
+        "AEC",
+        "電源互連",
+        "半導體設備",
+        "Interplex Datacom"
+      ],
+      "target_base": "3300",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "3673",
@@ -1518,10 +1525,18 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
+        "高階CCL",
+        "M7",
+        "M8",
+        "AI伺服器",
+        "800G",
+        "1.6T",
         "ASIC",
-        "CCL",
-        "低軌衛星"
-      ]
+        "泰國產能"
+      ],
+      "target_base": "2200",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "6278",
@@ -1612,12 +1627,15 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "CPO",
-        "矽光子",
-        "封測",
-        "手機"
-      ]
+        "AI測試介面",
+        "Coaxial Socket",
+        "HyperSocket",
+        "MEMS探針卡",
+        "高階封裝"
+      ],
+      "target_base": "11000",
+      "confidence": "中高",
+      "last_verified": "2026-08-25"
     },
     {
       "code": "6584",
