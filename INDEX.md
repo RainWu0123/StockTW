@@ -134,7 +134,7 @@
 | 3449 | 京元電 | AI、ASIC、CPO、散熱、封測、CPU | 380 | 高 | 2026-08-22 | [`research/3449_京元電.md`](research/3449_京元電.md) |
 | 3529 | 力旺 | AI、光通訊、電源、記憶體、晶圓代工、伺服器、低軌衛星、CPU | 3330 | 高 | 2026-08-22 | [`research/3529_力旺.md`](research/3529_力旺.md) |
 | 3533 | 嘉澤 | AI、CPO、NPO、散熱、液冷、PCB、記憶體、伺服器 | 2400 | 高 | 2026-08-24 | [`research/3533_嘉澤.md`](research/3533_嘉澤.md) |
-| 3653 | 健策 | AI、散熱、CPU | 6725 | 高 | 2026-08-22 | [`research/3653_健策.md`](research/3653_健策.md) |
+| 3653 | 健策 | AI、散熱、GPU、CPU、ASIC、均熱片 | 6100 | 中高 | 2026-08-25 | [`research/3653_健策.md`](research/3653_健策.md) |
 | 3661 | 世芯-KY | AI、ASIC、HBM、CPU | 6100 | 高 | 2026-08-22 | [`research/3661_世芯-KY.md`](research/3661_世芯-KY.md) |
 | 3665 | 貿聯-KY | AI、電源、伺服器 | 3430 | 高 | 2026-08-22 | [`research/3665_貿聯-KY.md`](research/3665_貿聯-KY.md) |
 | 3673 | TPK-KY | CoWoS、封測 | 75 | 中 | 2026-08-22 | [`research/3673_TPK-KY.md`](research/3673_TPK-KY.md) |
