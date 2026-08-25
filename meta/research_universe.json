@@ -1,0 +1,1717 @@
+{
+  "schema_version": "1.0",
+  "generated_from": "INDEX.md",
+  "generated_at": "2026-08-25",
+  "stocks": [
+    {
+      "code": "1101",
+      "name": "台泥",
+      "research_path": "research/1101_台泥.md",
+      "entity_path": "entities/1101_台泥.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "research_path": "research/1102_亞泥.md",
+      "entity_path": "entities/1102_亞泥.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "1216",
+      "name": "統一",
+      "research_path": "research/1216_統一.md",
+      "entity_path": "entities/1216_統一.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "1301",
+      "name": "台塑",
+      "research_path": "research/1301_台塑.md",
+      "entity_path": "entities/1301_台塑.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "塑化"
+      ]
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "research_path": "research/1303_南亞.md",
+      "entity_path": "entities/1303_南亞.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ABF",
+        "BT",
+        "CCL",
+        "PCB",
+        "DRAM",
+        "載板",
+        "塑化"
+      ]
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "research_path": "research/1326_台化.md",
+      "entity_path": "entities/1326_台化.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "塑化"
+      ]
+    },
+    {
+      "code": "1560",
+      "name": "中砂",
+      "research_path": "research/1560_中砂.md",
+      "entity_path": "entities/1560_中砂.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "記憶體"
+      ]
+    },
+    {
+      "code": "1590",
+      "name": "亞德客-KY",
+      "research_path": "research/1590_亞德客-KY.md",
+      "entity_path": "entities/1590_亞德客-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2002",
+      "name": "中鋼",
+      "research_path": "research/2002_中鋼.md",
+      "entity_path": "entities/2002_中鋼.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "research_path": "research/2059_川湖.md",
+      "entity_path": "entities/2059_川湖.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2108",
+      "name": "南帝",
+      "research_path": "research/2108_南帝.md",
+      "entity_path": "entities/2108_南帝.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "CoWoS"
+      ]
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "research_path": "research/2301_光寶科.md",
+      "entity_path": "entities/2301_光寶科.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "光通訊",
+        "散熱",
+        "液冷",
+        "電源",
+        "PCB"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "research_path": "research/2303_聯電.md",
+      "entity_path": "entities/2303_聯電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "CoWoS",
+        "矽光子",
+        "電源",
+        "DRAM",
+        "記憶體"
+      ]
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "research_path": "research/2308_台達電.md",
+      "entity_path": "entities/2308_台達電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "散熱",
+        "液冷",
+        "電源",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2312",
+      "name": "金寶",
+      "research_path": "research/2312_金寶.md",
+      "entity_path": "entities/2312_金寶.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "research_path": "research/2313_華通.md",
+      "entity_path": "entities/2313_華通.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "NPO",
+        "光模組",
+        "ABF",
+        "BT",
+        "CCL",
+        "PCB"
+      ]
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "research_path": "research/2317_鴻海.md",
+      "entity_path": "entities/2317_鴻海.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "光通訊",
+        "液冷",
+        "電源",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "research_path": "research/2327_國巨.md",
+      "entity_path": "entities/2327_國巨.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "research_path": "research/2330_台積電.md",
+      "entity_path": "entities/2330_台積電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CoWoS",
+        "CPU"
+      ]
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "research_path": "research/2337_旺宏.md",
+      "entity_path": "entities/2337_旺宏.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "NAND",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "research_path": "research/2344_華邦電.md",
+      "entity_path": "entities/2344_華邦電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "DRAM",
+        "NAND",
+        "記憶體",
+        "封測"
+      ]
+    },
+    {
+      "code": "2345",
+      "name": "智邦",
+      "research_path": "research/2345_智邦.md",
+      "entity_path": "entities/2345_智邦.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "NPO",
+        "液冷",
+        "電源",
+        "PCB",
+        "HBM"
+      ]
+    },
+    {
+      "code": "2348",
+      "name": "海悅",
+      "research_path": "research/2348_海悅.md",
+      "entity_path": "entities/2348_海悅.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2356",
+      "name": "英業達",
+      "research_path": "research/2356_英業達.md",
+      "entity_path": "entities/2356_英業達.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "伺服器",
+        "CPU"
+      ]
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "research_path": "research/2357_華碩.md",
+      "entity_path": "entities/2357_華碩.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "research_path": "research/2360_致茂.md",
+      "entity_path": "entities/2360_致茂.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "光通訊",
+        "電源",
+        "封測",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2363",
+      "name": "矽統",
+      "research_path": "research/2363_矽統.md",
+      "entity_path": "entities/2363_矽統.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "晶圓代工"
+      ]
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "research_path": "research/2368_金像電.md",
+      "entity_path": "entities/2368_金像電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CCL",
+        "PCB",
+        "HDI",
+        "伺服器",
+        "網通"
+      ]
+    },
+    {
+      "code": "2375",
+      "name": "凱美",
+      "research_path": "research/2375_凱美.md",
+      "entity_path": "entities/2375_凱美.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "散熱",
+        "液冷",
+        "電源",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "research_path": "research/2376_技嘉.md",
+      "entity_path": "entities/2376_技嘉.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2377",
+      "name": "微星",
+      "research_path": "research/2377_微星.md",
+      "entity_path": "entities/2377_微星.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2378",
+      "name": "鴻準",
+      "research_path": "research/2378_鴻準.md",
+      "entity_path": "entities/2378_鴻準.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2379",
+      "name": "瑞昱",
+      "research_path": "research/2379_瑞昱.md",
+      "entity_path": "entities/2379_瑞昱.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "光通訊",
+        "DRAM",
+        "記憶體",
+        "封測",
+        "網通"
+      ]
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "research_path": "research/2382_廣達.md",
+      "entity_path": "entities/2382_廣達.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "research_path": "research/2383_台光電.md",
+      "entity_path": "entities/2383_台光電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CCL",
+        "PCB",
+        "伺服器",
+        "低軌衛星"
+      ]
+    },
+    {
+      "code": "2385",
+      "name": "群光",
+      "research_path": "research/2385_群光.md",
+      "entity_path": "entities/2385_群光.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "research_path": "research/2395_研華.md",
+      "entity_path": "entities/2395_研華.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "PCB",
+        "DRAM",
+        "記憶體",
+        "伺服器",
+        "工業電腦",
+        "CPU"
+      ]
+    },
+    {
+      "code": "2404",
+      "name": "漢唐",
+      "research_path": "research/2404_漢唐.md",
+      "entity_path": "entities/2404_漢唐.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "記憶體",
+        "晶圓代工"
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "research_path": "research/2408_南亞科.md",
+      "entity_path": "entities/2408_南亞科.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "DRAM",
+        "NAND",
+        "HBM",
+        "記憶體",
+        "封測",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "research_path": "research/2412_中華電.md",
+      "entity_path": "entities/2412_中華電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "research_path": "research/2449_京元電子.md",
+      "entity_path": "entities/2449_京元電子.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "散熱",
+        "CPU"
+      ]
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "research_path": "research/2455_全新.md",
+      "entity_path": "entities/2455_全新.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "光通訊",
+        "矽光子",
+        "手機",
+        "光模組"
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "research_path": "research/2454_聯發科.md",
+      "entity_path": "entities/2454_聯發科.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "CoWoS",
+        "記憶體",
+        "載板",
+        "CPU",
+        "手機"
+      ]
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "research_path": "research/2603_長榮.md",
+      "entity_path": "entities/2603_長榮.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "research_path": "research/2609_陽明.md",
+      "entity_path": "entities/2609_陽明.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "research_path": "research/2610_華航.md",
+      "entity_path": "entities/2610_華航.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "research_path": "research/2615_萬海.md",
+      "entity_path": "entities/2615_萬海.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "research_path": "research/2618_長榮航.md",
+      "entity_path": "entities/2618_長榮航.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "2637",
+      "name": "慧洋-KY",
+      "research_path": "research/2637_慧洋-KY.md",
+      "entity_path": "entities/2637_慧洋-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "research_path": "research/2880_華南金.md",
+      "entity_path": "entities/2880_華南金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2881",
+      "name": "富邦金",
+      "research_path": "research/2881_富邦金.md",
+      "entity_path": "entities/2881_富邦金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "2882",
+      "name": "國泰金",
+      "research_path": "research/2882_國泰金.md",
+      "entity_path": "entities/2882_國泰金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "research_path": "research/2883_凱基金.md",
+      "entity_path": "entities/2883_凱基金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "research_path": "research/2884_玉山金.md",
+      "entity_path": "entities/2884_玉山金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "research_path": "research/2885_元大金.md",
+      "entity_path": "entities/2885_元大金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "research_path": "research/2886_兆豐金.md",
+      "entity_path": "entities/2886_兆豐金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "research_path": "research/2887_台新新光金.md",
+      "entity_path": "entities/2887_台新新光金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "research_path": "research/2890_永豐金.md",
+      "entity_path": "entities/2890_永豐金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "research_path": "research/2891_中信金.md",
+      "entity_path": "entities/2891_中信金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "research_path": "research/2892_第一金.md",
+      "entity_path": "entities/2892_第一金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "3005",
+      "name": "神基",
+      "research_path": "research/3005_神基.md",
+      "entity_path": "entities/3005_神基.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "工業電腦"
+      ]
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "research_path": "research/3008_大立光.md",
+      "entity_path": "entities/3008_大立光.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "記憶體",
+        "手機"
+      ]
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "research_path": "research/3017_奇鋐.md",
+      "entity_path": "entities/3017_奇鋐.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "散熱",
+        "液冷",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "research_path": "research/3026_禾伸堂.md",
+      "entity_path": "entities/3026_禾伸堂.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "散熱",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "3034",
+      "name": "聯詠",
+      "research_path": "research/3034_聯詠.md",
+      "entity_path": "entities/3034_聯詠.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "DRAM",
+        "記憶體",
+        "封測",
+        "手機",
+        "面板"
+      ]
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "research_path": "research/3037_欣興.md",
+      "entity_path": "entities/3037_欣興.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "光模組",
+        "ABF",
+        "BT",
+        "PCB",
+        "HDI",
+        "載板"
+      ]
+    },
+    {
+      "code": "3042",
+      "name": "晶技",
+      "research_path": "research/3042_晶技.md",
+      "entity_path": "entities/3042_晶技.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "光通訊",
+        "車用",
+        "手機",
+        "網通"
+      ]
+    },
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "research_path": "research/3532_台勝科.md",
+      "entity_path": "entities/3532_台勝科.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "矽晶圓",
+        "8吋",
+        "12吋",
+        "HBM",
+        "先進封裝"
+      ]
+    },
+    {
+      "code": "6182",
+      "name": "合晶",
+      "research_path": "research/6182_合晶.md",
+      "entity_path": "entities/6182_合晶.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "矽晶圓",
+        "8吋",
+        "SiC",
+        "GaN",
+        "HPC"
+      ]
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "research_path": "research/6488_環球晶.md",
+      "entity_path": "entities/6488_環球晶.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "矽晶圓",
+        "SOI",
+        "SiC",
+        "GaN",
+        "矽光子"
+      ]
+    },
+    {
+      "code": "2324",
+      "name": "仁寶",
+      "research_path": "research/2324_仁寶.md",
+      "entity_path": "entities/2324_仁寶.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器",
+        "PC",
+        "AI PC",
+        "液冷",
+        "機櫃"
+      ]
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "research_path": "research/3264_欣銓.md",
+      "entity_path": "entities/3264_欣銓.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "矽光子",
+        "晶圓測試",
+        "車用",
+        "工控"
+      ]
+    },
+    {
+      "code": "3045",
+      "name": "台灣大",
+      "research_path": "research/3045_台灣大.md",
+      "entity_path": "entities/3045_台灣大.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "research_path": "research/3081_聯亞.md",
+      "entity_path": "entities/3081_聯亞.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "光通訊",
+        "光模組",
+        "記憶體",
+        "手機"
+      ]
+    },
+    {
+      "code": "2351",
+      "name": "順德",
+      "research_path": "research/2351_順德.md",
+      "entity_path": "entities/2351_順德.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "散熱",
+        "電源",
+        "車用",
+        "連接器"
+      ]
+    },
+    {
+      "code": "3163",
+      "name": "波若威",
+      "research_path": "research/3163_波若威.md",
+      "entity_path": "entities/3163_波若威.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "CPO",
+        "NPO",
+        "矽光子",
+        "光模組"
+      ]
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "research_path": "research/3231_緯創.md",
+      "entity_path": "entities/3231_緯創.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "記憶體",
+        "伺服器",
+        "網通",
+        "CPU",
+        "手機"
+      ]
+    },
+    {
+      "code": "3324",
+      "name": "雙鴻",
+      "research_path": "research/3324_雙鴻.md",
+      "entity_path": "entities/3324_雙鴻.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "散熱",
+        "液冷",
+        "DRAM"
+      ]
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "research_path": "research/3443_創意.md",
+      "entity_path": "entities/3443_創意.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "CoWoS",
+        "HBM",
+        "CPU"
+      ]
+    },
+    {
+      "code": "3449",
+      "name": "京元電",
+      "research_path": "research/3449_京元電.md",
+      "entity_path": "entities/3449_京元電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "散熱",
+        "封測",
+        "CPU"
+      ]
+    },
+    {
+      "code": "3529",
+      "name": "力旺",
+      "research_path": "research/3529_力旺.md",
+      "entity_path": "entities/3529_力旺.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "光通訊",
+        "電源",
+        "記憶體",
+        "晶圓代工",
+        "伺服器",
+        "低軌衛星",
+        "CPU"
+      ]
+    },
+    {
+      "code": "3533",
+      "name": "嘉澤",
+      "research_path": "research/3533_嘉澤.md",
+      "entity_path": "entities/3533_嘉澤.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "NPO",
+        "散熱",
+        "液冷",
+        "PCB",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "research_path": "research/3653_健策.md",
+      "entity_path": "entities/3653_健策.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "散熱",
+        "CPU"
+      ]
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "research_path": "research/3661_世芯-KY.md",
+      "entity_path": "entities/3661_世芯-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "HBM",
+        "CPU"
+      ]
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "research_path": "research/3665_貿聯-KY.md",
+      "entity_path": "entities/3665_貿聯-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "電源",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "3673",
+      "name": "TPK-KY",
+      "research_path": "research/3673_TPK-KY.md",
+      "entity_path": "entities/3673_TPK-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "CoWoS",
+        "封測"
+      ]
+    },
+    {
+      "code": "3680",
+      "name": "家登",
+      "research_path": "research/3680_家登.md",
+      "entity_path": "entities/3680_家登.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "面板"
+      ]
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "research_path": "research/3706_神達.md",
+      "entity_path": "entities/3706_神達.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器",
+        "CPU"
+      ]
+    },
+    {
+      "code": "3711",
+      "name": "日月光",
+      "research_path": "research/3711_日月光.md",
+      "entity_path": "entities/3711_日月光.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "CoWoS",
+        "DRAM",
+        "HBM",
+        "記憶體",
+        "封測"
+      ]
+    },
+    {
+      "code": "4904",
+      "name": "遠傳",
+      "research_path": "research/4904_遠傳.md",
+      "entity_path": "entities/4904_遠傳.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "記憶體",
+        "低軌衛星"
+      ]
+    },
+    {
+      "code": "4938",
+      "name": "和碩",
+      "research_path": "research/4938_和碩.md",
+      "entity_path": "entities/4938_和碩.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "電源",
+        "CCL",
+        "PCB",
+        "記憶體",
+        "伺服器",
+        "CPU"
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "research_path": "research/4919_新唐.md",
+      "entity_path": "entities/4919_新唐.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "MCU",
+        "伺服器",
+        "車用",
+        "手機"
+      ]
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "research_path": "research/3105_穩懋.md",
+      "entity_path": "entities/3105_穩懋.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "光通訊",
+        "矽光子",
+        "手機",
+        "低軌衛星"
+      ]
+    },
+    {
+      "code": "4953",
+      "name": "緯軟",
+      "research_path": "research/4953_緯軟.md",
+      "entity_path": "entities/4953_緯軟.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "research_path": "research/4958_臻鼎-KY.md",
+      "entity_path": "entities/4958_臻鼎-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "光模組",
+        "ABF",
+        "PCB",
+        "HDI",
+        "mSAP",
+        "載板"
+      ]
+    },
+    {
+      "code": "4971",
+      "name": "IET-KY",
+      "research_path": "research/4971_IET-KY.md",
+      "entity_path": "entities/4971_IET-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "光通訊",
+        "光模組"
+      ]
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "research_path": "research/4979_華星光.md",
+      "entity_path": "entities/4979_華星光.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "矽光子",
+        "光通訊",
+        "光模組"
+      ]
+    },
+    {
+      "code": "5243",
+      "name": "乙盛-KY",
+      "research_path": "research/5243_乙盛-KY.md",
+      "entity_path": "entities/5243_乙盛-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "電源",
+        "伺服器",
+        "低軌衛星"
+      ]
+    },
+    {
+      "code": "5269",
+      "name": "祥碩_wrong",
+      "research_path": "research/5269_祥碩_wrong.md",
+      "entity_path": "entities/5269_祥碩_wrong.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "5274",
+      "name": "信驊",
+      "research_path": "research/5274_信驊.md",
+      "entity_path": "entities/5274_信驊.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "載板",
+        "封測",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "5515",
+      "name": "建準",
+      "research_path": "research/5515_建準.md",
+      "entity_path": "entities/5515_建準.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "research_path": "research/5880_合庫金.md",
+      "entity_path": "entities/5880_合庫金.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "6166",
+      "name": "凌華",
+      "research_path": "research/6166_凌華.md",
+      "entity_path": "entities/6166_凌華.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "PCB",
+        "工業電腦",
+        "面板"
+      ]
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "research_path": "research/6187_萬潤.md",
+      "entity_path": "entities/6187_萬潤.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "CPO",
+        "CoWoS",
+        "矽光子",
+        "散熱"
+      ]
+    },
+    {
+      "code": "6196",
+      "name": "帆宣",
+      "research_path": "research/6196_帆宣.md",
+      "entity_path": "entities/6196_帆宣.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CoWoS",
+        "HBM"
+      ]
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "research_path": "research/6223_旺矽.md",
+      "entity_path": "entities/6223_旺矽.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "CPO",
+        "CPU"
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "research_path": "research/6239_力成.md",
+      "entity_path": "entities/6239_力成.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "CoWoS",
+        "DRAM",
+        "NAND",
+        "HBM",
+        "記憶體",
+        "封測"
+      ]
+    },
+    {
+      "code": "6269",
+      "name": "台郡",
+      "research_path": "research/6269_台郡.md",
+      "entity_path": "entities/6269_台郡.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "research_path": "research/6274_台燿.md",
+      "entity_path": "entities/6274_台燿.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "ASIC",
+        "CCL",
+        "低軌衛星"
+      ]
+    },
+    {
+      "code": "6278",
+      "name": "台表科",
+      "research_path": "research/6278_台表科.md",
+      "entity_path": "entities/6278_台表科.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "光通訊",
+        "光模組",
+        "PCB",
+        "HDI",
+        "DRAM",
+        "記憶體",
+        "載板"
+      ]
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "research_path": "research/6285_啟碁.md",
+      "entity_path": "entities/6285_啟碁.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "記憶體",
+        "網通",
+        "低軌衛星"
+      ]
+    },
+    {
+      "code": "6415",
+      "name": "矽力-KY",
+      "research_path": "research/6415_矽力-KY.md",
+      "entity_path": "entities/6415_矽力-KY.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "光模組",
+        "電源",
+        "晶圓代工"
+      ]
+    },
+    {
+      "code": "6442",
+      "name": "光聖",
+      "research_path": "research/6442_光聖.md",
+      "entity_path": "entities/6442_光聖.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO"
+      ]
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "research_path": "research/6505_台塑化.md",
+      "entity_path": "entities/6505_台塑化.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "塑化"
+      ]
+    },
+    {
+      "code": "6515",
+      "name": "穎崴",
+      "research_path": "research/6515_穎崴.md",
+      "entity_path": "entities/6515_穎崴.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "矽光子",
+        "封測",
+        "手機"
+      ]
+    },
+    {
+      "code": "6584",
+      "name": "南俊國際",
+      "research_path": "research/6584_南俊國際.md",
+      "entity_path": "entities/6584_南俊國際.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "液冷",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "research_path": "research/6669_緯穎.md",
+      "entity_path": "entities/6669_緯穎.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "液冷",
+        "記憶體",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "6715",
+      "name": "嘉基",
+      "research_path": "research/6715_嘉基.md",
+      "entity_path": "entities/6715_嘉基.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "NPO",
+        "光通訊",
+        "光模組",
+        "伺服器",
+        "連接器",
+        "CPU"
+      ]
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "research_path": "research/6770_力積電.md",
+      "entity_path": "entities/6770_力積電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CoWoS",
+        "電源",
+        "DRAM",
+        "記憶體"
+      ]
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "research_path": "research/6805_富世達.md",
+      "entity_path": "entities/6805_富世達.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "液冷",
+        "伺服器",
+        "手機"
+      ]
+    },
+    {
+      "code": "6830",
+      "name": "汎銓",
+      "research_path": "research/6830_汎銓.md",
+      "entity_path": "entities/6830_汎銓.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "CPO",
+        "矽光子",
+        "光模組"
+      ]
+    },
+    {
+      "code": "7610",
+      "name": "聯友金屬創",
+      "research_path": "research/7610_聯友金屬創.md",
+      "entity_path": "entities/7610_聯友金屬創.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI"
+      ]
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "research_path": "research/7769_鴻勁.md",
+      "entity_path": "entities/7769_鴻勁.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": []
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "research_path": "research/8046_南電.md",
+      "entity_path": "entities/8046_南電.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "ABF",
+        "BT",
+        "PCB",
+        "載板",
+        "網通",
+        "CPU"
+      ]
+    },
+    {
+      "code": "7788",
+      "name": "松川精密",
+      "research_path": "research/7788_松川精密.md",
+      "entity_path": "entities/7788_松川精密.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "電源",
+        "車用",
+        "繼電器"
+      ]
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "research_path": "research/8210_勤誠.md",
+      "entity_path": "entities/8210_勤誠.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "ASIC",
+        "液冷",
+        "伺服器"
+      ]
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "research_path": "research/8299_群聯.md",
+      "entity_path": "entities/8299_群聯.md",
+      "required_maturity": 75,
+      "status": "active",
+      "themes": [
+        "AI",
+        "NAND",
+        "記憶體",
+        "手機"
+      ]
+    }
+  ]
+}
