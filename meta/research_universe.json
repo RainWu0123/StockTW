@@ -1616,15 +1616,6 @@
       "confidence": "中高"
     },
     {
-      "code": "5515",
-      "name": "建準",
-      "research_path": "research/5515_建準.md",
-      "entity_path": "entities/5515_建準.md",
-      "required_maturity": 75,
-      "status": "active",
-      "themes": []
-    },
-    {
       "code": "5880",
       "name": "合庫金",
       "research_path": "research/5880_合庫金.md",

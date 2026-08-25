@@ -5313,25 +5313,6 @@
       "targetStatus": "低估"
     },
     {
-      "code": "5515",
-      "name": "建準",
-      "industry": "",
-      "price": 53.4,
-      "pct": -4.13,
-      "vol": 823,
-      "score": null,
-      "researchTheme": "未分類",
-      "researchFile": "research/5515_建準.md",
-      "lastVerified": "",
-      "etf0050": null,
-      "etf00981A": null,
-      "researchStatus": "未驗證",
-      "targetStatus": "無目標",
-      "confidence": "低",
-      "researchMaturity": 10,
-      "researchAgeDays": null
-    },
-    {
       "code": "5880",
       "name": "合庫金",
       "price": 25.0,
