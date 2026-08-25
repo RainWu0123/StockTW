@@ -11,9 +11,16 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "伺服器"
-      ]
+        "海外水泥",
+        "低碳建材",
+        "能源",
+        "和平電力",
+        "Molicel與儲能"
+      ],
+      "target_base": "28",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "1102",
@@ -41,7 +48,17 @@
       "entity_path": "entities/1216_統一.md",
       "required_maturity": 75,
       "status": "active",
-      "themes": []
+      "themes": [
+        "食品製造",
+        "統一超",
+        "統一中控",
+        "消費基礎設施",
+        "中國消費"
+      ],
+      "target_base": "85",
+      "confidence": "中高",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "1301",
@@ -51,9 +68,16 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "塑化"
-      ]
+        "石化循環",
+        "PVC與PE",
+        "台塑美國",
+        "台塑化轉投資",
+        "半導體化學品"
+      ],
+      "target_base": "62",
+      "confidence": "中",
+      "last_verified": "2026-08-25",
+      "research_maturity": 80
     },
     {
       "code": "1303",
