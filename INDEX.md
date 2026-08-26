@@ -57,6 +57,13 @@
 | 3490 | 單井 | 封裝模具、半導體後段設備、太陽能電站、業外收益風險 | 60分，HOLD／觀察 | [`research/3490_單井.md`](research/3490_單井.md) |
 | 8358 | 金居 | HVLP3／4高頻高速銅箔、GP999、AI伺服器材料、CCL上游 | 80分，HOLD／觀察，高估值 | [`research/8358_金居.md`](research/8358_金居.md) |
 
+## 專題摘要（外部素材留檔）
+
+| 檔案 | 主題 |
+|---|---|
+| [`research/摘要_AgentX推理基準_CUDA護城河_20260824.md`](research/摘要_AgentX推理基準_CUDA護城河_20260824.md) | SemiAnalysis AgentX/InferenceXv3 分診素材（AI 硬體鏈受惠排序） |
+| [`research/摘要_穩定幣救美債_CLARITY_20260826.md`](research/摘要_穩定幣救美債_CLARITY_20260826.md) | KP 61 期：財政主導、貶值交易、穩定幣買美債的數學限制（付費牆後半未取得） |
+
 ## 全庫研究清單
 
 | 代碼 | 公司 | 供應鏈／主題 | Base target | 信心 | 驗證日 | 完整研究 |
