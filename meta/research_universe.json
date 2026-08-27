@@ -1183,12 +1183,35 @@
       "required_maturity": 75,
       "status": "active",
       "themes": [
-        "AI",
-        "散熱",
-        "電源",
+        "AI導線架",
+        "均熱片",
+        "800V HVDC",
         "車用",
-        "連接器"
-      ]
+        "功率半導體"
+      ],
+      "target_base": "260",
+      "confidence": "中高",
+      "last_verified": "2026-08-27",
+      "research_maturity": 80
+    },
+    {
+      "code": "3162",
+      "name": "精確",
+      "research_path": "research/3162_精確.md",
+      "entity_path": "entities/3162_精確.md",
+      "required_maturity": 60,
+      "status": "watch",
+      "themes": [
+        "新能源車電池盒",
+        "AI液冷",
+        "Manifold",
+        "CDU",
+        "Cooler Master"
+      ],
+      "target_base": "未設定",
+      "confidence": "中低",
+      "last_verified": "2026-08-27",
+      "research_maturity": 60
     },
     {
       "code": "3163",
