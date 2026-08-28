@@ -77,6 +77,7 @@
 | [`research/摘要_AgentX推理基準_CUDA護城河_20260824.md`](research/摘要_AgentX推理基準_CUDA護城河_20260824.md) | SemiAnalysis AgentX/InferenceXv3 分診素材（AI 硬體鏈受惠排序） |
 | [`research/摘要_穩定幣救美債_CLARITY_20260826.md`](research/摘要_穩定幣救美債_CLARITY_20260826.md) | KP 61 期：財政主導、貶值交易、穩定幣買美債的數學限制（付費牆後半未取得） |
 | [`research/摘要_韭菜畢業班_EP254_NVIDIA財報與散熱新玩家_20260826.md`](research/摘要_韭菜畢業班_EP254_NVIDIA財報與散熱新玩家_20260826.md) | NVIDIA 財報前瞻、順德均熱片、精確液冷、PTFE 路線逐條查核 |
+| [`research/摘要_游庭皓_輝達擴大AI需求與台美景氣分化_20260828.md`](research/摘要_游庭皓_輝達擴大AI需求與台美景氣分化_20260828.md) | NVIDIA 客群擴張、PCE 黏性、台韓利率分化、台灣連八紅與房市供給壓力 |
 
 ## 全庫研究清單
 
