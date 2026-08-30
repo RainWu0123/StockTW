@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vera Rubin 整機櫃全球供應鏈地圖</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a30;--panel2:#18233d;--text:#e9eefc;--muted:#9eacd0;--line:#2d3b60;--cyan:#64d9ff;--green:#73e0a0;--yellow:#ffd166;--red:#ff7f8f;--purple:#b69cff}*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#0b1020,#11182c 55%,#0d1730);color:var(--text);font:15px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif}a{color:var(--cyan)}.wrap{max-width:1440px;margin:auto;padding:28px}.hero{padding:42px 0 24px}.eyebrow{color:var(--cyan);letter-spacing:.12em;font-size:12px;font-weight:700}.hero h1{font-size:clamp(30px,5vw,64px);line-height:1.1;margin:10px 0}.hero p{max-width:900px;color:var(--muted);font-size:17px}.notice{border:1px solid #66572b;background:#241f12;color:#ffe9a3;padding:16px 18px;border-radius:14px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card,.rack,.section{background:rgba(18,26,48,.9);border:1px solid var(--line);border-radius:16px;padding:18px}.card strong{display:block;font-size:26px;color:var(--cyan)}.card span{color:var(--muted)}h2{font-size:28px;margin:52px 0 14px}h3{color:var(--cyan);margin-top:8px}.section{margin-top:16px}.racks{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.rack{min-height:245px}.rack .num{color:var(--purple);font-size:12px;font-weight:700}.rack h3{margin:4px 0 8px}.rack ul{padding-left:20px;margin:8px 0;color:#d8e0f6}.flow{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch}.flow .node{flex:1;min-width:155px;background:var(--panel2);border:1px solid var(--line);padding:14px;border-radius:12px}.arrow{align-self:center;color:var(--yellow);font-size:24px}.legend{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}.tag{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:700}.confirmed{background:#164b38;color:var(--green)}.probable{background:#493c13;color:var(--yellow)}.theme{background:#422235;color:#ffabc0}.unknown{background:#30384d;color:#c5cee5}.filters{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.filters input,.filters select{background:#0c1428;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:10px 12px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{width:100%;border-collapse:collapse;min-width:1120px}th,td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{background:#1a2745;color:var(--cyan);position:sticky;top:0}tr:hover td{background:rgba(100,217,255,.05)}td small{display:block;color:var(--muted)}.money{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.money .card{min-height:155px}.small{font-size:13px;color:var(--muted)}.check{color:var(--green)}.warn{color:var(--yellow)}.bad{color:var(--red)}footer{margin:55px 0 20px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted)}@media(max-width:900px){.grid,.racks,.money{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.wrap{padding:16px}.grid,.racks,.money{grid-template-columns:1fr}.hero{padding-top:20px}h2{font-size:23px;margin-top:38px}.arrow{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="eyebrow">INVESTMENT RESEARCH · 2026-08-30 · VERSION 1.0</div>
+<h1>Vera Rubin<br>整機櫃全球供應鏈地圖</h1>
+<p>從 NVIDIA Vera Rubin NVL72 的晶片、記憶體、封裝、交換器、機櫃、液冷、電力、光互連、儲存與軟體一路拆開，映射台股、美股、日股、韓股可能參與者，並標示每一層的價值捕獲方式。</p>
+<div class="notice"><b>先把邊界講清楚：</b> NVIDIA 公開的是平台架構與部分系統夥伴，不是完整供應商 BOM，也沒有公開每個零件的單價或每家公司從 Rubin 賺到的金額。本頁把「官方點名的系統夥伴」與「由既有產品能力推導的可能供應商」嚴格分開，不能把題材當成訂單。</div>
+</header>
+<div class="grid">
+<div class="card"><strong>5</strong><span>個協同工作的機櫃</span></div><div class="card"><strong>7</strong><span>顆平台核心晶片，NVIDIA 公開說法</span></div><div class="card"><strong>72</strong><span>Rubin GPU／NVL72 機櫃</span></div><div class="card"><strong>150+</strong><span>NVIDIA 所稱台灣供應鏈參與者，未逐一公開</span></div>
+</div>
+
+<h2>一、先看整個 Vera Rubin POD</h2>
+<div class="racks">
+<article class="rack"><div class="num">RACK 01 · COMPUTE</div><h3>Vera Rubin NVL72</h3><ul><li>72 Rubin GPUs</li><li>36 Vera CPUs</li><li>NVLink 6 scale-up</li><li>ConnectX-9 SuperNIC、BlueField-4 DPU</li><li>18 compute trays、9 NVLink switch trays</li><li>100% liquid-cooled</li></ul><span class="tag confirmed">官方確認</span></article>
+<article class="rack"><div class="num">RACK 02 · CPU</div><h3>Vera CPU Rack</h3><ul><li>最高 256 顆 Vera CPU</li><li>支援大量 RL／agent sandbox environments</li><li>液冷、MGX rack architecture</li><li>與 Spectrum-X Ethernet 整合</li></ul><span class="tag confirmed">官方確認</span></article>
+<article class="rack"><div class="num">RACK 03 · INFERENCE</div><h3>Groq 3 LPX Rack</h3><ul><li>256 LPU processors</li><li>128GB on-chip SRAM</li><li>640TB/s scale-up bandwidth</li><li>針對低延遲、長上下文推論</li></ul><span class="tag confirmed">官方確認</span></article>
+<article class="rack"><div class="num">RACK 04 · MEMORY</div><h3>BlueField-4 STX</h3><ul><li>AI-native context memory storage</li><li>處理大模型 KV cache</li><li>Vera CPU＋ConnectX-9</li><li>DOCA Memos storage processing</li></ul><span class="tag confirmed">官方確認</span></article>
+<article class="rack"><div class="num">RACK 05 · FABRIC</div><h3>Spectrum-6 SPX</h3><ul><li>Spectrum-X Ethernet 或 Quantum-X800 InfiniBand</li><li>跨機櫃 east-west traffic</li><li>CPO photonics 或 pluggable optics</li><li>延伸成多櫃 AI factory</li></ul><span class="tag confirmed">官方確認</span></article>
+</div>
+
+<h2>二、NVL72 一整櫃拆解</h2>
+<div class="flow">
+<div class="node"><b>晶片</b><br>Rubin GPU<br>Vera CPU<br>HBM4<br>BlueField-4<br>ConnectX-9</div><div class="arrow">→</div><div class="node"><b>封裝與模組</b><br>先進封裝<br>HBM integration<br>superchip／compute module<br>高速基板</div><div class="arrow">→</div><div class="node"><b>Compute trays</b><br>18 trays<br>PCB midplane<br>無風扇、無軟管、模組化<br>液冷 busbar</div><div class="arrow">→</div><div class="node"><b>機櫃互連</b><br>9 NVLink switch trays<br>銅纜 spine<br>ConnectX-9 scale-out<br>BlueField-4 offload</div><div class="arrow">→</div><div class="node"><b>資料中心</b><br>CDU<br>泵、冷板、QD<br>電力 shelf／busbar<br>乾冷器／電網控制</div>
+</div>
+<div class="section"><h3>官方可確認的 NVL72 數量與規格</h3><div class="tablewrap"><table><thead><tr><th>部位</th><th>數量／規格</th><th>功能</th><th>投資含義</th></tr></thead><tbody>
+<tr><td>Rubin GPU</td><td>72 顆</td><td>主要訓練與推論算力，HBM4 為高頻寬記憶體</td><td>最高價值池由 NVIDIA 控制；晶圓、封裝、HBM 是上游價值池</td></tr>
+<tr><td>Vera CPU</td><td>36 顆</td><td>主機、agent environment、工具呼叫與協同運算</td><td>CPU不再只是附屬主機，agent workload增加CPU rack需求</td></tr>
+<tr><td>NVLink 6</td><td>9 switch trays；全櫃 260TB/s scale-up bandwidth</td><td>讓72顆GPU作為單一scale-up domain運作</td><td>NVIDIA proprietary fabric提高平台黏著性；高速PCB、銅纜、交換器受惠</td></tr>
+<tr><td>ConnectX-9</td><td>DGX規格列出超過144個OSFP單埠介面</td><td>GPU端scale-out network endpoint</td><td>NIC、OSFP、光模組、交換器與高速線材價值增加</td></tr>
+<tr><td>BlueField-4</td><td>DGX規格列出18個雙埠介面</td><td>DPU、網路卸載、安全、儲存資料路徑</td><td>網路與儲存軟硬體整合，不能只看GPU數量</td></tr>
+<tr><td>Compute tray</td><td>18 trays</td><td>模組化承載GPU、CPU、DPU、電力與冷卻</td><td>機構、PCB、連接器、冷板與維修性成為整機價值</td></tr>
+<tr><td>NVLink switch tray</td><td>9 trays</td><td>GPU-to-GPU all-to-all fabric</td><td>高速交換器、低損耗材料、銅纜與散熱需求</td></tr>
+<tr><td>冷卻</td><td>100% liquid-cooled；45°C warm-water envelope</td><td>把高密度熱量帶到CDU與facility loop</td><td>冷板、manifold、QD、CDU、泵、乾冷器與設施工程</td></tr>
+</tbody></table></div></div>
+
+<h2>三、價值到底被誰賺走</h2>
+<div class="money">
+<div class="card"><h3>第一層：平台控制權</h3><p><b>NVIDIA</b>賺 GPU、CPU、NVLink、DPU、NIC、交換器、軟體與系統設計的整合溢價。最大價值池不是單顆GPU，而是把整個 rack 變成一個可部署、可管理、可擴展的平台。</p></div>
+<div class="card"><h3>第二層：稀缺元件</h3><p><b>HBM、先進封裝、高速基板、低損耗 CCL、銅箔、光互連</b>賺的是技術瓶頸與認證溢價。這些零件的議價力通常高於一般機構件，但實際 Rubin份額仍須看公司公告。</p></div>
+<div class="card"><h3>第三層：整櫃與液冷</h3><p><b>ODM、散熱、電源與機櫃整合商</b>賺的是設計導入、組裝、驗證、維修與整合，但ODM未必等於高毛利；液冷整包能力比單一冷板更有價值。</p></div>
+<div class="card"><h3>第四層：資料中心</h3><p><b>CDU、電力設備、乾冷器、電網控制、機房工程</b>賺的是每MW的基礎設施投資。Rubin提高每櫃吞吐量，不代表每櫃電力和散熱需求下降。</p></div>
+<div class="card"><h3>第五層：運算服務</h3><p><b>AWS、Microsoft、Google、Oracle、CoreWeave、Nebius等</b>把資本支出轉成GPU租用、token與企業AI服務收入，風險是利用率、租約、電力與融資成本。</p></div>
+<div class="card"><h3>不公開的部分</h3><p>目前無法由公開資料可靠拆出「每櫃美元金額」及「每家公司 Rubin 單櫃收入」。任何精確 BOM 金額都應標為模型估算，不可當成公司揭露。</p></div>
+</div>
+
+<h2>四、全球公司映射</h2>
+<div class="legend"><span class="tag confirmed">Confirmed：NVIDIA官方點名／公司官方確認</span><span class="tag probable">Probable：既有能力與平台鏈合理吻合</span><span class="tag theme">Theme-only：只有題材或二手推測</span><span class="tag unknown">Unconfirmed：目前不能確認Rubin份額</span></div>
+<div class="filters"><input id="q" placeholder="搜尋公司、代碼、零件…"><select id="market"><option value="">全部市場</option><option>台股</option><option>美股</option><option>日股</option><option>韓股</option><option>其他</option></select><select id="status"><option value="">全部證據層級</option><option value="Confirmed">Confirmed</option><option value="Probable">Probable</option><option value="Theme-only">Theme-only</option><option value="Unconfirmed">Unconfirmed</option></select></div>
+<div class="tablewrap"><table id="companies"><thead><tr><th>市場／公司</th><th>機櫃部位</th><th>關係</th><th>價值捕獲</th><th>要看什麼才算真的賺到錢</th><th>證據</th></tr></thead><tbody>
+<tr data-market="台股" data-status="Confirmed"><td><b>2330 台積電</b><small>台股 · TSMC</small></td><td>Rubin GPU、Vera、Spectrum-6等先進晶片製造</td><td><span class="tag confirmed">Confirmed for NVIDIA ecosystem</span><small>Rubin特定晶片代工份額未逐項公開</small></td><td>先進製程晶圓製造、特殊製程與高良率溢價</td><td>先進製程營收、NVIDIA相關需求、資本支出與毛利率</td><td><a href="https://www.tsmc.com/english" target="_blank">公司官網</a></td></tr>
+<tr data-market="台股" data-status="Confirmed"><td><b>2317 鴻海／Foxconn</b></td><td>系統製造、機櫃、連接器與可能的液冷整合</td><td><span class="tag confirmed">NVIDIA官方點名</span></td><td>整櫃組裝、製造服務、機構與系統整合</td><td>伺服器營收、雲端產品毛利、Rubin出貨與營運現金流</td><td><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/" target="_blank">NVIDIA名單</a></td></tr>
+<tr data-market="台股" data-status="Confirmed"><td><b>2382 廣達／QCT</b></td><td>NVL72與AI伺服器系統整合</td><td><span class="tag confirmed">NVIDIA官方點名</span></td><td>ODM組裝、驗證、出貨與服務</td><td>AI伺服器營收占比、毛利率、應收／存貨與CapEx</td><td><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/" target="_blank">NVIDIA名單</a></td></tr>
+<tr data-market="台股" data-status="Confirmed"><td><b>3231 緯創</b></td><td>AI伺服器、機櫃系統</td><td><span class="tag confirmed">NVIDIA官方點名</span></td><td>系統製造與部署服務</td><td>Rubin出貨時程、單機獲利、營運資金與融資稀釋</td><td><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Ramps-Into-Full-Production-to-Power-Agentic-AI-Factories-Worldwide/" target="_blank">NVIDIA量產名單</a></td></tr>
+<tr data-market="台股" data-status="Confirmed"><td><b>6669 緯穎</b></td><td>Cloud server、AI factory system</td><td><span class="tag confirmed">NVIDIA官方點名</span></td><td>高密度伺服器設計、製造與CSP服務</td><td>Rubin／Trainium／其他平台營收拆分、客戶集中、FCF</td><td><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/" target="_blank">NVIDIA名單</a></td></tr>
+<tr data-market="台股" data-status="Confirmed"><td><b>2356 英業達、2324 仁寶、4938 和碩、2357 華碩、2376 技嘉、2377 微星、3706 神達、3515 華擎</b></td><td>系統、主機板、伺服器與平台整合</td><td><span class="tag confirmed">NVIDIA官方點名</span><small>被點名不等於每家公司都有NVL72訂單</small></td><td>系統設計、組裝、品牌或企業通路</td><td>公司公告的Rubin產品、客戶、量產與收入，而不是名單本身</td><td><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Ramps-Into-Full-Production-to-Power-Agentic-AI-Factories-Worldwide/" target="_blank">NVIDIA名單</a></td></tr>
+<tr data-market="台股" data-status="Probable"><td><b>3711 日月光投控</b></td><td>先進封裝、測試、系統級封裝</td><td><span class="tag probable">Probable</span></td><td>封裝測試、先進封裝產能與高階IC驗證</td><td>AI封裝營收、稼動率、毛利率、CapEx與客戶認證</td><td><a href="https://www.aseglobal.com/" target="_blank">公司官網</a></td></tr>
+<tr data-market="台股" data-status="Probable"><td><b>3037 欣興、8046 南電</b></td><td>ABF載板、高速封裝基板</td><td><span class="tag probable">Probable</span></td><td>高階ABF、封裝基板尺寸與層數升級</td><td>AI ASIC／GPU載板占比、良率、ASP、稼動率與FCF</td><td><a href="https://www.unimicron.com/" target="_blank">Unimicron</a> ／ <a href="https://www.nanyapcb.com.tw/" target="_blank">南電</a></td></tr>
+<tr data-market="台股" data-status="Probable"><td><b>2383 台光電、6274 台燿、1303 南亞、8358 金居</b></td><td>M8/M9 CCL、低損耗材料、HVLP銅箔</td><td><span class="tag probable">Probable／Rubin份額未確認</span></td><td>低介電損耗、低插入損耗材料、銅箔與高頻高速傳輸溢價</td><td>M9／M10實際出貨、ASP、毛利率、第二供應商與材料良率</td><td><a href="https://www.emctw.com/" target="_blank">台光電</a></td></tr>
+<tr data-market="台股" data-status="Probable"><td><b>3017 奇鋐、3324 雙鴻</b></td><td>冷板、manifold、QD、CDU、機構整合</td><td><span class="tag probable">Probable</span></td><td>液冷模組、整櫃散熱、客製設計與高密度平台導入</td><td>Rubin實際份額、液冷營收、毛利率、存貨天數、FCF</td><td><a href="https://www.avc-group.com/" target="_blank">AVC</a></td></tr>
+<tr data-market="台股" data-status="Probable"><td><b>2308 台達電、2301 光寶科</b></td><td>電源、power shelf、CDU、資料中心基礎設施</td><td><span class="tag probable">Probable</span></td><td>電源轉換、HVDC、CDU與整體資料中心解決方案</td><td>AI電源／液冷收入、毛利、每MW價值、客戶與CapEx</td><td><a href="https://www.deltaww.com/" target="_blank">Delta</a></td></tr>
+<tr data-market="台股" data-status="Probable"><td><b>3533 嘉澤、3532 台勝科、6239 力成、2449 京元電子</b></td><td>連接器、晶圓／封測、測試與高速介面</td><td><span class="tag probable">Probable／平台份額未確認</span></td><td>socket、連接器、測試服務與高頻高速介面</td><td>Rubin新平台認證、單價、稼動率、測試時間與毛利</td><td><a href="https://investor.nvidia.com/" target="_blank">NVIDIA IR</a></td></tr>
+<tr data-market="台股" data-status="Theme-only"><td><b>4979 華星光、3081 聯亞、3163 波若威、2345 智邦</b></td><td>光模組、InP、交換器、光互連</td><td><span class="tag theme">Theme-only／部分平台相關</span></td><td>800G／1.6T optics、CPO、交換器與光纖互連</td><td>Rubin Spectrum-6採用規格、出貨客戶、光引擎ASP與良率</td><td><a href="https://www.nvidia.com/en-us/data-center/products/dsx/" target="_blank">NVIDIA DSX</a></td></tr>
+<tr data-market="台股" data-status="Theme-only"><td><b>2344 華邦電、2408 南亞科、2337 旺宏、8299 群聯</b></td><td>記憶體、SSD、KV cache storage</td><td><span class="tag theme">Theme-only／通用記憶體鏈</span></td><td>DRAM、NAND、controller與儲存層</td><td>不能只看記憶體漲價；要看Rubin／STX的實際SKU、容量、供貨與ASP</td><td><a href="https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/" target="_blank">NVL72規格</a></td></tr>
+<tr data-market="美股" data-status="Confirmed"><td><b>NVIDIA NVDA</b></td><td>全平台：GPU、CPU、NVLink、DPU、NIC、交換器、軟體</td><td><span class="tag confirmed">Confirmed</span></td><td>晶片、系統設計、CUDA／DOCA／Mission Control與平台鎖定</td><td>Rubin出貨、毛利率、存貨、應收帳款、融資平台實際落地</td><td><a href="https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/" target="_blank">NVL72</a></td></tr>
+<tr data-market="美股" data-status="Confirmed"><td><b>Supermicro SMCI</b></td><td>NVL72系統、MGX、DLC-2、CDU與機櫃整合</td><td><span class="tag confirmed">公司官方確認支援</span></td><td>整機、機櫃、液冷、部署與服務</td><td>Rubin出貨、毛利率、營運資金、保固與液冷整合價值</td><td><a href="https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Support-for-Upcoming-NVIDIA-Vera-Rubin-NVL72-HGX-Rubin-NVL8-and-Expanded-Rack-Scale-Manufacturing-Capacity-for-Liquid-Cooled-AI-Solutions/default.aspx" target="_blank">公司公告</a></td></tr>
+<tr data-market="美股" data-status="Confirmed"><td><b>Dell DELL、HPE HPE、Cisco CSCO</b></td><td>系統、企業網路與資料中心整合</td><td><span class="tag confirmed">NVIDIA官方點名／各公司Rubin份額未確認</span></td><td>伺服器、網路、企業服務與部署</td><td>Rubin產品上市、訂單、毛利與AI基礎設施收入</td><td><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/" target="_blank">NVIDIA名單</a></td></tr>
+<tr data-market="美股" data-status="Probable"><td><b>Vertiv VRT、Eaton ETN、nVent NVT</b></td><td>UPS、配電、CDU、機房熱管理與電力基礎設施</td><td><span class="tag probable">Probable／facility layer</span></td><td>每MW資料中心電力、冷卻與配電設備</td><td>AI資料中心CapEx、訂單 backlog、每MW內容值與毛利</td><td><a href="https://www.vertiv.com/" target="_blank">Vertiv</a></td></tr>
+<tr data-market="美股" data-status="Probable"><td><b>Micron MU、Broadcom AVGO、Marvell MRVL、Arista ANET、Astera Labs ALAB</b></td><td>記憶體、交換器、互連、retimer與scale-out網路</td><td><span class="tag probable">Probable／非Rubin逐項確認</span></td><td>HBM／SSD、網路ASIC、互連與資料中心網路</td><td>Rubin專案SKU、客戶、認證、收入拆分，不能用AI標籤代替</td><td><a href="https://investor.nvidia.com/" target="_blank">NVIDIA IR</a></td></tr>
+<tr data-market="日股" data-status="Probable"><td><b>Ibiden 4062、Shinko Electric 6967、Fujikura 5803、Furukawa Electric 5801</b></td><td>封裝基板、光纖、線材與高速互連</td><td><span class="tag probable">Probable／Rubin份額未確認</span></td><td>高階封裝材料、光纖與高頻高速線材</td><td>AI／GPU客戶、產品ASP、稼動率、認證與出貨</td><td><a href="https://www.ibiden.com/en/" target="_blank">Ibiden</a></td></tr>
+<tr data-market="日股" data-status="Probable"><td><b>Kioxia 285A、Advantest 6857、Renesas 6723</b></td><td>SSD／NAND、半導體測試與控制IC</td><td><span class="tag probable">Probable／平台份額未確認</span></td><td>儲存、測試設備與控制／電源IC</td><td>BlueField-4 STX實際採用、測試訂單、SSD內容值與設備訂單</td><td><a href="https://www.kioxia-holdings.com/en-jp/" target="_blank">Kioxia</a></td></tr>
+<tr data-market="韓股" data-status="Confirmed"><td><b>SK hynix 000660</b></td><td>HBM與下一代AI記憶體</td><td><span class="tag confirmed">NVIDIA官方宣布技術夥伴</span><small>Rubin單一SKU供應量仍未公開</small></td><td>HBM4／高頻寬記憶體、容量與良率溢價</td><td>HBM4量產、供貨、ASP、毛利率與NVIDIA平台實際認證</td><td><a href="https://news.skhynix.com/" target="_blank">SK hynix</a></td></tr>
+<tr data-market="韓股" data-status="Probable"><td><b>Samsung Electronics 005930、Samsung Electro-Mechanics 009150</b></td><td>HBM／記憶體、封裝材料與MLCC</td><td><span class="tag probable">Probable／Rubin份額未確認</span></td><td>記憶體、封裝、電源與被動元件</td><td>是否進入Rubin HBM4／平台供應，不能只以AI資本支出推論</td><td><a href="https://www.samsung.com/global/ir/" target="_blank">Samsung IR</a></td></tr>
+</tbody></table></div>
+
+<h2>五、台股追蹤優先級</h2>
+<div class="section"><div class="tablewrap"><table><thead><tr><th>優先級</th><th>研究群</th><th>為什麼先看</th><th>最重要的否決條件</th></tr></thead><tbody>
+<tr><td><span class="tag confirmed">A：已經在平台名單／直接系統層</span></td><td>2317、2382、3231、6669，以及 NVIDIA點名的其他台灣系統商</td><td>官方直接列為製造／系統夥伴，最接近Rubin收入，但不代表高毛利</td><td>Rubin出貨延遲、單機毛利下降、存貨與應收失控</td></tr>
+<tr><td><span class="tag probable">B：瓶頸零件／高價值材料</span></td><td>2330、3711、3037、8046、2383、6274、3017、3324、2308</td><td>零件處於晶片、封裝、材料、液冷、電源關鍵瓶頸</td><td>Rubin實際規格變更、第二供應商認證、ASP／毛利率下滑</td></tr>
+<tr><td><span class="tag theme">C：主題映射但尚未證實</span></td><td>4979、3081、3163、2345、2344、2408、2337、8299等</td><td>產品方向合理，但目前缺少Rubin逐項訂單或SKU證據</td><td>只有市場傳言、客戶名單或送樣，營收與EPS未轉換</td></tr>
+</tbody></table></div></div>
+
+<h2>六、這張地圖接下來要追什麼</h2>
+<div class="grid">
+<div class="card"><strong>1</strong><span>Rubin量產後各公司 Q3／Q4 營收是否出現斜率變化</span></div><div class="card"><strong>2</strong><span>液冷占比、單櫃價值、CDU功率與毛利率是否同步上升</span></div><div class="card"><strong>3</strong><span>HBM4、M9／M10材料與ABF載板的實際認證與第二供應商</span></div><div class="card"><strong>4</strong><span>存貨、應收帳款、營運現金流是否跟上營收成長</span></div>
+</div>
+<div class="section"><h3>最重要的研究規則</h3><ol><li><b>被 NVIDIA 點名</b>＝平台或系統夥伴資格，不等於每家公司都有同樣訂單。</li><li><b>供應鏈相關</b>＝產品能力可能吻合，不等於 Rubin已採用。</li><li><b>認證／送樣／Vendor Code</b>＝入場券，不等於量產與獲利。</li><li><b>股價上漲</b>不能證明供應關係，更不能證明公司賺到多少錢。</li><li><b>每家公司都要回到財報</b>：營收、ASP、毛利、存貨、應收帳款、現金流、CapEx與客戶集中度。</li></ol></div>
+
+<footer><b>研究結論：</b> Vera Rubin不是單一GPU升級，而是五個機櫃、七顆核心晶片、液冷、電力、網路、儲存與軟體組成的AI factory平台。最值得追的不是「誰被列入AI名單」，而是每一層的稀缺性是否轉成公司可觀察的營收、毛利與現金流。<br><br>資料截止：2026-08-30。官方架構與夥伴名單以 NVIDIA 公告與產品頁為主；公司關係若未有 Rubin逐項公告，均標為 Probable、Theme-only 或 Unconfirmed。此頁為研究地圖，不構成買賣建議。<br><br><b>主要來源：</b><br><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/" target="_blank">NVIDIA Vera Rubin Opens Agentic AI Frontier</a> · <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Ramps-Into-Full-Production-to-Power-Agentic-AI-Factories-Worldwide/" target="_blank">NVIDIA Vera Rubin Ramps Into Full Production</a> · <a href="https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/" target="_blank">NVIDIA Vera Rubin NVL72</a> · <a href="https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/" target="_blank">NVIDIA Vera Rubin POD</a> · <a href="https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Support-for-Upcoming-NVIDIA-Vera-Rubin-NVL72-HGX-Rubin-NVL8-and-Expanded-Rack-Scale-Manufacturing-Capacity-for-Liquid-Cooled-AI-Solutions/default.aspx" target="_blank">Supermicro Rubin支援公告</a> · <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx" target="_blank">NVIDIA FY2027 Q2</a></footer>
+</div>
+<script>
+const q=document.getElementById('q'),market=document.getElementById('market'),status=document.getElementById('status');
+function filter(){const text=q.value.toLowerCase(),m=market.value,s=status.value;document.querySelectorAll('#companies tbody tr').forEach(r=>{const okText=r.innerText.toLowerCase().includes(text),okM=!m||r.dataset.market===m,okS=!s||r.dataset.status===s;r.style.display=okText&&okM&&okS?'':'none'})}
+[q,market,status].forEach(x=>x.addEventListener('input',filter));
+</script>
+</body>
+</html>
