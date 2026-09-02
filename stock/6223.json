@@ -1,0 +1,22 @@
+{
+  "code": "6223",
+  "name": "旺矽",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6223",
+    "name": "旺矽",
+    "price": 5565.0,
+    "pct": 1.83,
+    "vol": 482,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

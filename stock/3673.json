@@ -1,0 +1,22 @@
+{
+  "code": "3673",
+  "name": "TPK-KY",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3673",
+    "name": "TPK-KY",
+    "price": 63.1,
+    "pct": -0.32,
+    "vol": 9142,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

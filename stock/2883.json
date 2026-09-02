@@ -1,0 +1,22 @@
+{
+  "code": "2883",
+  "name": "凱基金",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2883",
+    "name": "凱基金",
+    "price": 31.0,
+    "pct": -1.74,
+    "vol": 36612,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

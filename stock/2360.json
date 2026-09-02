@@ -5,9 +5,9 @@
   "stock": {
     "code": "2360",
     "name": "致茂",
-    "price": 2310.0,
-    "pct": 0.22,
-    "vol": 2502,
+    "price": 2070.0,
+    "pct": -1.43,
+    "vol": 839,
     "score": 8.5,
     "hold": "--",
     "note": "ETF 成分追蹤",

@@ -1,0 +1,22 @@
+{
+  "code": "4979",
+  "name": "華星光",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "4979",
+    "name": "華星光",
+    "price": 547.0,
+    "pct": -5.2,
+    "vol": 13197,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

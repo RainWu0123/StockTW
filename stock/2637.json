@@ -1,0 +1,22 @@
+{
+  "code": "2637",
+  "name": "慧洋-KY",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2637",
+    "name": "慧洋-KY",
+    "price": 97.1,
+    "pct": -4.8,
+    "vol": 21541,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

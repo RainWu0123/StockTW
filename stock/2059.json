@@ -1,0 +1,22 @@
+{
+  "code": "2059",
+  "name": "川湖",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2059",
+    "name": "川湖",
+    "price": 14410.0,
+    "pct": 7.66,
+    "vol": 509,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

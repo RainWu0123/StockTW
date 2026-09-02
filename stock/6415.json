@@ -1,0 +1,22 @@
+{
+  "code": "6415",
+  "name": "矽力",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6415",
+    "name": "矽力",
+    "price": 450.0,
+    "pct": 1.01,
+    "vol": 1637,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

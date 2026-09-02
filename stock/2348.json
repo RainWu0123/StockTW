@@ -1,0 +1,22 @@
+{
+  "code": "2348",
+  "name": "海悅",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2348",
+    "name": "海悅",
+    "price": 71.6,
+    "pct": -1.1,
+    "vol": 234,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

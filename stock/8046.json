@@ -1,0 +1,22 @@
+{
+  "code": "8046",
+  "name": "南電",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "8046",
+    "name": "南電",
+    "price": 1135.0,
+    "pct": 0.0,
+    "vol": 7300,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

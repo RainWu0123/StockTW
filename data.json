@@ -502,7 +502,15 @@
       "researchMaturity": 80,
       "researchAgeDays": 1,
       "researchStatus": "可用",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2002",
@@ -620,7 +628,15 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "透支"
+      "targetStatus": "透支",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2108",
@@ -662,7 +678,15 @@
       "researchMaturity": 57,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "接近"
+      "targetStatus": "接近",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2301",
@@ -917,7 +941,15 @@
       "targetStatus": "無目標",
       "confidence": "低",
       "researchMaturity": 10,
-      "researchAgeDays": null
+      "researchAgeDays": null,
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2313",
@@ -1476,7 +1508,15 @@
       "targetStatus": "無目標",
       "confidence": "低",
       "researchMaturity": 10,
-      "researchAgeDays": null
+      "researchAgeDays": null,
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2356",
@@ -1600,7 +1640,15 @@
       "researchMaturity": 65,
       "researchAgeDays": 2,
       "researchStatus": "草稿",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2360",
@@ -1724,7 +1772,15 @@
       "researchMaturity": 15,
       "researchAgeDays": null,
       "researchStatus": "未驗證",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2368",
@@ -1905,7 +1961,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "接近"
+      "targetStatus": "接近",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2378",
@@ -1924,7 +1988,15 @@
       "targetStatus": "無目標",
       "confidence": "低",
       "researchMaturity": 10,
-      "researchAgeDays": null
+      "researchAgeDays": null,
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2379",
@@ -2177,7 +2249,15 @@
       "targetStatus": "無目標",
       "confidence": "低",
       "researchMaturity": 10,
-      "researchAgeDays": null
+      "researchAgeDays": null,
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2395",
@@ -3061,7 +3141,15 @@
       "targetStatus": "無目標",
       "confidence": "低",
       "researchMaturity": 10,
-      "researchAgeDays": null
+      "researchAgeDays": null,
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2880",
@@ -3105,7 +3193,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "已達標"
+      "targetStatus": "已達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2881",
@@ -3303,7 +3399,15 @@
       "researchMaturity": 55,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2884",
@@ -3429,7 +3533,15 @@
       "researchMaturity": 80,
       "researchAgeDays": 1,
       "researchStatus": "可用",
-      "targetStatus": "已達標"
+      "targetStatus": "已達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2886",
@@ -3555,7 +3667,15 @@
       "researchMaturity": 55,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "已達標"
+      "targetStatus": "已達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2890",
@@ -3682,7 +3802,15 @@
       "researchMaturity": 55,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "已達標"
+      "targetStatus": "已達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "2892",
@@ -4036,7 +4164,15 @@
       "researchMaturity": 11,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3034",
@@ -4319,7 +4455,15 @@
       "researchMaturity": 49,
       "researchAgeDays": 5,
       "researchStatus": "淺層",
-      "targetStatus": "接近"
+      "targetStatus": "接近",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3163",
@@ -4339,7 +4483,15 @@
       "confidence": "中",
       "researchMaturity": 72,
       "researchAgeDays": 0,
-      "sourcesAsOf": "2026-08-24"
+      "sourcesAsOf": "2026-08-24",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3231",
@@ -4698,7 +4850,15 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3665",
@@ -4803,7 +4963,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "3711",
@@ -5084,7 +5252,15 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "4971",
@@ -5126,7 +5302,15 @@
       "researchMaturity": 72,
       "researchAgeDays": 0,
       "researchStatus": "草稿",
-      "targetStatus": "接近"
+      "targetStatus": "接近",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "4979",
@@ -5169,7 +5353,15 @@
       "researchMaturity": 80,
       "researchAgeDays": 1,
       "researchStatus": "可用",
-      "targetStatus": "透支"
+      "targetStatus": "透支",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "5243",
@@ -5192,7 +5384,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "接近"
+      "targetStatus": "接近",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "5269",
@@ -5310,7 +5510,15 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "5880",
@@ -5510,7 +5718,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6223",
@@ -5553,7 +5769,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6239",
@@ -5739,7 +5963,15 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6278",
@@ -5762,7 +5994,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6285",
@@ -5880,7 +6120,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6442",
@@ -6083,7 +6331,15 @@
       "researchMaturity": 75,
       "researchAgeDays": 0,
       "researchStatus": "草稿",
-      "targetStatus": "接近"
+      "targetStatus": "接近",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6770",
@@ -6201,7 +6457,15 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "6830",
@@ -6370,7 +6634,15 @@
       "targetStatus": "無目標",
       "confidence": "低",
       "researchMaturity": 10,
-      "researchAgeDays": null
+      "researchAgeDays": null,
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "8046",
@@ -6415,7 +6687,15 @@
       "researchMaturity": 32,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "8210",
@@ -6459,7 +6739,15 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "低估"
+      "targetStatus": "低估",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     },
     {
       "code": "8299",
@@ -6501,10 +6789,18 @@
       "researchMaturity": 47,
       "researchAgeDays": 2,
       "researchStatus": "淺層",
-      "targetStatus": "未達標"
+      "targetStatus": "未達標",
+      "day_pct": 0.0,
+      "week_pct": 0.0,
+      "month_pct": 0.0,
+      "bigOrder": 1.0,
+      "limitGene": 0,
+      "breakoutVol": 0,
+      "concepts": [],
+      "in_ai_etf": true
     }
   ],
-  "updated": "2026-08-24T22:00:26",
+  "updated": "2026-09-02T18:27:35.302649",
   "etf_universe": {
     "2330": [
       "0050",

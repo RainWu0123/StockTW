@@ -1,0 +1,22 @@
+{
+  "code": "5243",
+  "name": "乙盛-KY",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "5243",
+    "name": "乙盛-KY",
+    "price": 89.3,
+    "pct": 2.29,
+    "vol": 791,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

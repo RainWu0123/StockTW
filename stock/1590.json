@@ -1,0 +1,22 @@
+{
+  "code": "1590",
+  "name": "亞德客-KY",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "1590",
+    "name": "亞德客-KY",
+    "price": 1435.0,
+    "pct": 0.0,
+    "vol": 437,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

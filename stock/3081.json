@@ -1,0 +1,22 @@
+{
+  "code": "3081",
+  "name": "聯亞",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3081",
+    "name": "聯亞",
+    "price": 2765.0,
+    "pct": -5.31,
+    "vol": 3133,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

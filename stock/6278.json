@@ -1,0 +1,22 @@
+{
+  "code": "6278",
+  "name": "台表科",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6278",
+    "name": "台表科",
+    "price": 179.0,
+    "pct": -4.28,
+    "vol": 8502,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

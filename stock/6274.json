@@ -1,0 +1,22 @@
+{
+  "code": "6274",
+  "name": "台燿",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6274",
+    "name": "台燿",
+    "price": 1455.0,
+    "pct": -2.68,
+    "vol": 3557,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

@@ -1,0 +1,22 @@
+{
+  "code": "3661",
+  "name": "世芯-KY",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "3661",
+    "name": "世芯-KY",
+    "price": 3735.0,
+    "pct": 0.95,
+    "vol": 1062,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

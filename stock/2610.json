@@ -5,9 +5,9 @@
   "stock": {
     "code": "2610",
     "name": "華航",
-    "price": 21.8,
-    "pct": -0.91,
-    "vol": 56695,
+    "price": 20.5,
+    "pct": 0.49,
+    "vol": 29362,
     "score": 24.3,
     "hold": "--",
     "note": "ETF 成分追蹤",

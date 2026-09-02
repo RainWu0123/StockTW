@@ -1,0 +1,22 @@
+{
+  "code": "2880",
+  "name": "華南金",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2880",
+    "name": "華南金",
+    "price": 39.25,
+    "pct": -0.88,
+    "vol": 12840,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

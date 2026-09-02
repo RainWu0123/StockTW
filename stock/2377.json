@@ -1,0 +1,22 @@
+{
+  "code": "2377",
+  "name": "微星",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2377",
+    "name": "微星",
+    "price": 144.0,
+    "pct": 1.77,
+    "vol": 6132,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

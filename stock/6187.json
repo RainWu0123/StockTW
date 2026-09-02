@@ -1,0 +1,22 @@
+{
+  "code": "6187",
+  "name": "萬潤",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6187",
+    "name": "萬潤",
+    "price": 1205.0,
+    "pct": 0.84,
+    "vol": 1487,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

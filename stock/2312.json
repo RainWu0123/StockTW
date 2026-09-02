@@ -1,0 +1,22 @@
+{
+  "code": "2312",
+  "name": "金寶",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "2312",
+    "name": "金寶",
+    "price": 31.75,
+    "pct": 2.25,
+    "vol": 13210,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}

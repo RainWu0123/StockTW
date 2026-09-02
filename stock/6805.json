@@ -1,0 +1,22 @@
+{
+  "code": "6805",
+  "name": "富世達",
+  "date": "2026-06-22",
+  "stock": {
+    "code": "6805",
+    "name": "富世達",
+    "price": 1710.0,
+    "pct": -3.12,
+    "vol": 821,
+    "score": null,
+    "industry": "",
+    "day_pct": 0.0,
+    "week_pct": 0.0,
+    "month_pct": 0.0,
+    "bigOrder": 1.0,
+    "limitGene": 0,
+    "breakoutVol": 0,
+    "concepts": []
+  },
+  "peers": []
+}
