@@ -43,6 +43,8 @@ button:disabled { opacity:.6; cursor:wait; }
 .intro h1 em { color:var(--accent); font-style:normal; }
 .intro h1 br { display:none; }
 .lede { color:var(--muted); max-width:690px; margin:16px 0 0; font-size:1rem; }
+.explore-link { display:inline-flex; align-items:center; min-height:44px; margin-top:12px; color:var(--accent); font-weight:650; }
+.explore-link:hover { text-decoration:underline; }
 .asof-box { border-left:2px solid var(--accent); padding:5px 0 5px 17px; min-width:180px; }
 .asof-box span,.asof-box small { display:block; color:var(--muted); font-size:12px; }
 .asof-box strong { display:block; margin:2px 0; font-size:17px; }

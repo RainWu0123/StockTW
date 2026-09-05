@@ -1,0 +1,1550 @@
+{
+  "as_of": "2026-09-05",
+  "scope": "全球傳統可插拔 400G/800G 光通模組零件供應鏈；以 DR/FR/相干可插拔為主，圖示僅為概念層級，不視為精確 BOM；不把 CPO 當作可插拔模組內部零件。",
+  "limitations": [
+    "教學示意與代表性全球供應鏈，不是單一品牌 BOM，也不是全球公司完整名冊。",
+    "公司國家／地域與上市地不同，不代表生產地；台股 KY 公司按台股業務群組列示。",
+    "供應商採直接產品證據映射，關係不代表已認證客戶、當前訂單或市占。",
+    "只有一項歷史公司自估市占，其他未取得可比較公开百分比；不以排名、公司營收占比推算。",
+    "產品來源跨年度，存取日不是資料期；CPO、相干與主機側零件均需看旁註。"
+  ],
+  "sources": [
+    {
+      "id": "src-coherent-ictrosa-2023",
+      "title": "Coherent 140 GBaud IC-TROSA enables 800G pluggables",
+      "url": "https://www.coherent.com/news/press-releases/coherent-unveils-industry-first-140-gbaud-optical-subassembly",
+      "published": "2023-09-28",
+      "accessed": "2026-09-05",
+      "quote": "The 140 GBaud IC-TROSA is a complete coherent optical engine that includes a wavelength-tunable laser, optical amplifiers, modulators, drivers, a coherent mixer, a photodiode array, and transimpedance amplifiers."
+    },
+    {
+      "id": "src-lumentum-2dr4-2024",
+      "title": "Lumentum 800G 2×DR4 OSFP Transceiver Module",
+      "url": "https://www.lumentum.com/en/products/800g-2dr4-osfp-transceiver-module",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "Built on silicon photonics (SiPh) technology with four 1311 nm CW DFB lasers and an integrated DSP ... Featuring 2×MTP-12/APC connectors."
+    },
+    {
+      "id": "src-broadcom-bcm83822-2025",
+      "title": "Broadcom BCM83822 3-nm 800G PAM-4 Transceiver PHY",
+      "url": "https://www.broadcom.com/products/ethernet-connectivity/phy-and-poe/optical/bcm83822",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "The BCM83822-DIE ... is a 3-nm CMOS 800G (8:4) PAM-4 Transceiver PHY with Integrated Laser Driver ... to enable 800G DR4 and FR4 pluggable transceivers."
+    },
+    {
+      "id": "src-marvell-pam4",
+      "title": "Marvell PAM4 Optical DSPs",
+      "url": "https://www.marvell.com/products/pam-dsp.html",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "Marvell PAM4 optical digital signal processors (DSPs) power the optical interconnects inside the world’s cloud and AI data centers ... at 1.6T, 800G, 400G, 200G and 100G."
+    },
+    {
+      "id": "src-macom-800g",
+      "title": "MACOM 800 Gbps Optical Modules",
+      "url": "https://www.macom.com/applications/data-center/800-gbps-optical-modules",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "MACOM delivers industry widest portfolio of chip-sets for 800Gbps (8x106Gbps) optical modules. These devices are typically used with VCSEL lasers and Photodectors ... For long reach applications these devices are used with DML, EML, or silicon photonics."
+    },
+    {
+      "id": "src-mitsubishi-pd-2024",
+      "title": "Mitsubishi Electric 200Gbps PIN-PD chip for 800Gbps and 1.6Tbps",
+      "url": "https://www.mitsubishielectric.com/en/pr/2024/0820/",
+      "published": "2024-08-20",
+      "accessed": "2026-09-05",
+      "quote": "The upcoming introduction of the 200Gbps PIN-PD chip for optical reception follows Mitsubishi Electric's launch of a mass-produced chip for optical transmission, the 200Gbps ... EML."
+    },
+    {
+      "id": "src-mitsubishi-eml-share-2025",
+      "title": "Mitsubishi Electric optical devices / EML market share article",
+      "url": "https://www.mitsubishielectric.com/our-stories/articles/biz-t/opt/",
+      "published": "2025-02-10",
+      "accessed": "2026-09-05",
+      "quote": "Optical devices for data centers made by Mitsubishi Electric have the largest market share in the world, accounting for approximately 50% *1.\n\n- 1 FY2022 results of EML (Electro-absorption Modulator integrated Laser diode) for data centers: According to our research."
+    },
+    {
+      "id": "src-mitsubishi-strategy-2026",
+      "title": "Mitsubishi Electric Semiconductor & Device Business 2026 strategy",
+      "url": "https://www.mitsubishielectric.com/en/pr/2026/pdf/0529_co5.pdf",
+      "published": "2026-05-29",
+      "accessed": "2026-09-05",
+      "quote": "Maintaining our leading position and promoting next-generation developments in the optical device business for data centers ... Accelerating the development of ultra-high-speed EML chips and expanding the supply framework."
+    },
+    {
+      "id": "src-furukawa-dfb-2022",
+      "title": "Furukawa Electric high-output 100mW DFB laser diode chip",
+      "url": "https://www.furukawaelectric.com/en/release/2022/comm_202200916.html",
+      "published": "2022-09-16",
+      "accessed": "2026-09-05",
+      "quote": "Many of these transceivers are equipped with DFB laser diode chips, providing a single-wavelength, high output power light source."
+    },
+    {
+      "id": "src-sumitomo-cwdm4",
+      "title": "Sumitomo Electric FlexBeamGuidE-WD CWDM4 Mux/Demux Coupler",
+      "url": "https://www.sumitomoelectric.com/products/FlexBeamGuidE-WD",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "The PLC is designed for single-mode operation and emits output beam that is easily coupled with Silicon photonics chips and high-speed PD arrays ... 800G / 1.6T FR4/8 transceivers."
+    },
+    {
+      "id": "src-fujikura-usconec-2021",
+      "title": "Fujikura and US Conec VSFF MMC/MDC connector agreement",
+      "url": "https://www.opticalcomponent.fujikura.com/wp-content/uploads/2022/06/newsrelease20210929.pdf",
+      "published": "2021-09-29",
+      "accessed": "2026-09-05",
+      "quote": "US Conec’s ELiMENT™ MDC connector ... [is] specified in the SFP-DD, QSFP-DD and OSFP pluggable transceiver MSAs ... The collaboration ... [enables] a multi-vendor supply chain."
+    },
+    {
+      "id": "src-accelink-ar-2024",
+      "title": "Accelink Technologies 2024 Annual Report",
+      "url": "https://www.accelink.com/upload/1/cms/20250427/1745744221633.pdf",
+      "published": "2025-04-24",
+      "accessed": "2026-09-05",
+      "quote": "公司是全球少有的光电器件一站式服务提供商，具备领先的垂直集成技术能力，产品涵盖全系列光通信模块、无源器件、光波导集成产品、光纤放大器。"
+    },
+    {
+      "id": "src-lmoc-epi",
+      "title": "Consumer-LandMark Optoelectronics Corporation",
+      "url": "https://www.lmoc.com.tw/index.php?id=111&index=3&lang=en&option=module&task=pageinfo",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "850nm/940nm VCSEL Epiwafer; 1.6~2.0um DFB Epiwafer; Telecom; Data center"
+    },
+    {
+      "id": "src-iet-products",
+      "title": "產品介紹 英特磊科技股份有限公司",
+      "url": "https://www.intelliepi.com.tw/products.html",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "磷化銦(InP) HBT ... 可應用於網路、通訊、運算、儲存...；高速高頻的面射型雷射（VCSEL），光接收器（PIN），雪崩式光接收器（APD）及各種不同波長半導體雷射磊晶片，主要應用於光纖通訊與資料傳輸領域。"
+    },
+    {
+      "id": "src-luxnet-osa",
+      "title": "OPTICAL SUB-ASSEMBLY - LuxNet Corporation",
+      "url": "https://www.luxnetcorp.com.tw/en-US/optical-sub-assembly",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "This Luxnet L-AT-ID31-09 5pin 25Gbps DFB Laser LC-TOSA ... integrates DFB Laser diode with InGaAs PD ...; The LuxNet 1310nm 10G LC-ROSA ... integrates with 10G high speed InGaAs PIN chip and trans-impedance amplifier (TIA) ..."
+    },
+    {
+      "id": "src-browave-parts",
+      "title": "Optical Parts|Products|Browave Corporation",
+      "url": "https://www.browave.com/product/category/44",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "Browave’s Fiber Array can be composed by several of substrate material as Glass, Quartz or Silicon ... channel count can be up to 128ch ... The fiber array ... composed with ... receptacles, lens arrays, free space isolator arrays"
+    },
+    {
+      "id": "src-browave-splitter",
+      "title": "Optical Splitter Module|Modules|Products|Browave Corporation",
+      "url": "https://www.browave.com/product/category/43",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "1xN Optical Splitter Module is a passive components ... based on Planar lightwave circuit technology ... Available connection SC/LC/FC/MU/MTP"
+    },
+    {
+      "id": "src-ezconn-home",
+      "title": "EZconn",
+      "url": "https://www.ezconn.com/",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "EZconn's optical communication products are developed by integrating optical, electronic, mechanical and materials technologies ... 800G QSFP-DD AOC; RF coaxial connector"
+    },
+    {
+      "id": "src-truelight-osa",
+      "title": "Metal OSA w/FPC-光環科技",
+      "url": "https://www.truelight.com.tw/products-detail/OSA/",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "光接收器/光發射端次模組（ROSA/TOSA ...）、接收端/發射端金屬光學次模組含軟性印刷電路板（ROSM/TOSM ...）"
+    },
+    {
+      "id": "src-foci-array",
+      "title": "Fiber array / Polarization Maintaining Fiber Array",
+      "url": "https://www.foci.com.tw/en-gb/product/29",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "The optical fiber array is a light guide carrier that uses V grooves to fix the multi-core optical fiber on the substrate ... FOCI can provide various types of optical fiber arrays ... Fiber arrays are usually used in ... multi-channel optical modules."
+    },
+    {
+      "id": "src-foci-cpo",
+      "title": "ReLFACon | FOCI",
+      "url": "https://www.foci.com.tw/en-gb/ReLFACon_news",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "FOCI Fiber Optic Communications, Inc. launched ReLFAConTM (Reflowable Lensed Fiber Array Connector) products ... install the optical fiber array connector in the silicon photonics co-packaged optics (CPO) component ... output and input of 8~128 channels"
+    },
+    {
+      "id": "src-pcl-manufacturing",
+      "title": "Manufacturing - PCL Technologies Group",
+      "url": "http://www.pcltech.com/02-1.htm",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "PCL manufactures a wide variety of optical components and modules ... Sub-assembly ... LD TO ... PIN-TIA ... TOSA ... ROSA ... BOSA ... Module ... SFP ... QSFP+ SR AOC"
+    },
+    {
+      "id": "s1",
+      "title": "800G-OSFP112-AI and Data Center Networking",
+      "url": "https://www.innolight.com/data-center-networking/800g-osfp112",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "800G-2xLR4 OSFP112 based on EML. 8 channels of 100G-PAM4 electrical data,2 sets of 4 CWDM lanes MUX/DEMUX design,10km maximum reach via single mode fiber,case temperature range of 0℃-70℃, comply with IEEE 802.3ck and QSFP-DD MSA standards, and support CMIS5.x."
+    },
+    {
+      "id": "s2",
+      "title": "800G QSFP-DD800 (100G per lane)",
+      "url": "https://eoptolink.com/product-solutions/800g/800g-qsfp-dd800",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "Eoptolink 800G transceivers are compliant to the latest releases of the QSFP-DD800 MSAs. The firmware supports CMIS 5.0 and newer releases. We offer AOC, VR8, DR8, 2xFR4, 2xLR4 transceivers for different reach and applications. Our vertical integration for optical engines enables leading performance and power consumption."
+    },
+    {
+      "id": "s3",
+      "title": "OE Solutions' transceivers connect Korea’s 5G network",
+      "url": "https://oesolutions.com/landing-page-2-1-we-connect-korea/",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "OE Solutions is currently shipping 10s-of-thousands of optical transceivers per month for deployment in Korea’s new wireless infrastructure. These include both 10G and 25G transceivers – focusing mostly on WDM in the O-band."
+    },
+    {
+      "id": "s4",
+      "title": "OptoWiz Company Overview",
+      "url": "http://www.optowiz.com/company/overview.php",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "We are specialized in developing and manufacturing high performance optical transceiver modules for various ICT applications, such as Telecom networks (FTTx, LTE, 5G and Transmission), Datacom, Wi-Max and etc."
+    },
+    {
+      "id": "s5",
+      "title": "AT&S Empowers High-Speed Optical Module PCB Manufacturing",
+      "url": "https://ats.net/en/ats-empowers-high-speed-optical-module-pcb-manufacturing/",
+      "published": "2023-07-27",
+      "accessed": "2026-09-05",
+      "quote": "Through these partnerships, AT&S was able to achieve mass production of 100G to 400G optical module PCBs, and the 800G optical module PCB products have already passed customer verification."
+    },
+    {
+      "id": "s6",
+      "title": "Optical PCBs with Embedded Waveguides for Next Generation High Speed Applications",
+      "url": "https://www.ttm.com/sites/default/files/documents/Optical%20PCB%20%E2%80%93%20TTM%20Technologies%202020.pdf",
+      "published": "2020",
+      "accessed": "2026-09-05",
+      "quote": "The demonstrator PCB contained totally 96 optical channels with up to 2.4Tb/s capacity. The O/E PCB was fabricated using TTM’s proprietary fabrication process."
+    },
+    {
+      "id": "s7",
+      "title": "QSFP Connectors: QSFP+, zQSFP+ (QSFP28/56) and QSFP 112G",
+      "url": "https://www.te.com/en/products/connectors/high-speed-pluggable-io-connectors-and-cages/qsfp-qsfp-zqsfp.html",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "TE Connectivity’s (TE) QSFP 112G connecotrs and cages address next-generation data center needs by supporting aggregate data rates up to 400 Gbps with signal integrity, high density and superior thermal."
+    },
+    {
+      "id": "src-te-ireland",
+      "title": "TE Connectivity completes change in place of incorporation to Ireland",
+      "url": "https://www.te.com/en/about-te/news-center/corporate-news/2024/2024-09-30-te-connectivity-completes-change-in-place-of-incorporation-to-ireland.html",
+      "published": "2024-09-30",
+      "accessed": "2026-09-05",
+      "quote": "TE Connectivity plc (NYSE: TEL) today completed the change in the place of incorporation of the publicly traded parent company of TE Connectivity from Switzerland to Ireland."
+    }
+  ],
+  "components": [
+    {
+      "id": "housing",
+      "title": "外殼散熱",
+      "subtitle": "OSFP/QSFP-DD 金屬結構、熱路徑與屏蔽",
+      "role": "承載模組、控制熱阻與機械介面；不等同光學引擎。",
+      "signal": "保護、散熱與屏蔽",
+      "chain": [
+        "精密金屬/塑膠件",
+        "散熱片與導熱介面",
+        "模組機構整合"
+      ],
+      "architecture_note": "TE 的證據是主機側 cage、連接器與散熱器，不是模組內殼供應證據。本輪模組內殼廠未確認。",
+      "supplier_ids": [
+        "te-connectivity"
+      ],
+      "source_ids": [
+        "s7",
+        "src-te-ireland"
+      ],
+      "chains": [
+        {
+          "id": "shell",
+          "title": "機構／散熱",
+          "note": "本輪沒有模組內殼的直接製造證據。",
+          "stages": [
+            {
+              "id": "inner",
+              "title": "模組內殼與散熱件",
+              "description": "金屬 tray、熱路徑、屏蔽。供應商未確認。",
+              "supplier_ids": [],
+              "source_ids": [],
+              "status": "gap"
+            },
+            {
+              "id": "cage",
+              "title": "主機側 cage／連接器",
+              "description": "TE 的 QSFP connector、cage 與 heat sink 是主機板側，不是模組內殼。",
+              "supplier_ids": [
+                "te-connectivity"
+              ],
+              "source_ids": [
+                "s7",
+                "src-te-ireland"
+              ],
+              "status": "adjacent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connector",
+      "title": "光纖接口/連接",
+      "subtitle": "MPO/MTP、MDC/MMC、LC 與纖陣列",
+      "role": "把模組光路接至單模/多模光纖，影響密度、插損與 breakout。",
+      "signal": "模組與光纖的交界",
+      "chain": [
+        "MT ferrule/套管",
+        "MPO/MTP、MDC/MMC",
+        "高密度跳線與清潔"
+      ],
+      "architecture_note": "LC、MPO/MTP、MDC/MMC 依光路與規格選用，不是每顆都具備。主機側電連接器與光纖接口不同。",
+      "supplier_ids": [
+        "fujikura",
+        "usconec",
+        "tw-browave-3163",
+        "tw-ezconn-6442",
+        "tw-foci-3363"
+      ],
+      "source_ids": [
+        "src-fujikura-usconec-2021",
+        "src-browave-parts",
+        "src-browave-splitter",
+        "src-ezconn-home",
+        "src-foci-array",
+        "src-foci-cpo"
+      ],
+      "chains": [
+        {
+          "id": "optical-io",
+          "title": "模組光接口",
+          "note": "LC／MPO／MTP／MDC 依規格選用。",
+          "stages": [
+            {
+              "id": "ferrule",
+              "title": "套管／高密度連接器",
+              "description": "藤倉與 US Conec 的 VSFF／MDC 合作；波若威、上詮、光聖有連接器或光纖產品。",
+              "supplier_ids": [
+                "fujikura",
+                "usconec",
+                "tw-browave-3163",
+                "tw-foci-3363",
+                "tw-ezconn-6442"
+              ],
+              "source_ids": [
+                "src-fujikura-usconec-2021",
+                "src-browave-parts",
+                "src-foci-array",
+                "src-ezconn-home"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optics",
+      "title": "透鏡/濾波/耦光",
+      "subtitle": "PLC、Mux/Demux、透鏡、光纖陣列與耦合件",
+      "role": "完成波分、光束整形、PIC/PD/光纖耦合與隔離。",
+      "signal": "導光、耦合與分波",
+      "chain": [
+        "PLC/AWG/MZI",
+        "透鏡、隔離器、濾波器",
+        "光纖陣列與主動耦合"
+      ],
+      "architecture_note": "FR 常用波分 Mux/Demux；DR 平行單模光路不同。CPO 連接產品只作延伸角色，不表示裝在此可插拔模組內。",
+      "supplier_ids": [
+        "sumitomo",
+        "accelink",
+        "tw-browave-3163",
+        "tw-foci-3363"
+      ],
+      "source_ids": [
+        "src-sumitomo-cwdm4",
+        "src-accelink-ar-2024",
+        "src-browave-parts",
+        "src-browave-splitter",
+        "src-foci-array",
+        "src-foci-cpo"
+      ],
+      "chains": [
+        {
+          "id": "couple",
+          "title": "耦光／波分",
+          "note": "FR 常需 Mux／Demux；DR 平行單模光路較簡。",
+          "stages": [
+            {
+              "id": "plc",
+              "title": "PLC／Mux-Demux",
+              "description": "住友公開 CWDM4 coupler，應用含 800G／1.6T FR。",
+              "supplier_ids": [
+                "sumitomo",
+                "accelink"
+              ],
+              "source_ids": [
+                "src-sumitomo-cwdm4",
+                "src-accelink-ar-2024"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "fa",
+              "title": "光纖陣列／透鏡陣列",
+              "description": "波若威、上詮公開 Fiber Array，用於多通道光模組。",
+              "supplier_ids": [
+                "tw-browave-3163",
+                "tw-foci-3363"
+              ],
+              "source_ids": [
+                "src-browave-parts",
+                "src-foci-array"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laser",
+      "title": "雷射/發射端",
+      "subtitle": "VCSEL、DFB、DML、EML、可調雷射與磊晶",
+      "role": "把電訊號轉成受調變光；磊晶/雷射晶片是上游，並非整機模組廠。",
+      "signal": "發射端：把電轉成光",
+      "chain": [
+        "III-V/InP 磊晶與晶片",
+        "VCSEL/DFB/DML/EML",
+        "雷射封裝、調變器與模組整合"
+      ],
+      "architecture_note": "EML 自帶電吸收調變器；SiPh 則可採 CW 雷射加矽光調變器，不能把兩者當成同一必備 BOM。台廠磊晶、雷射封裝與整機層次不同。",
+      "supplier_ids": [
+        "mitsubishi",
+        "furukawa",
+        "tw-lmoc-3081",
+        "tw-iet-4971",
+        "tw-luxnet-4979",
+        "tw-truelight-3234",
+        "tw-pcl-4977"
+      ],
+      "source_ids": [
+        "src-mitsubishi-pd-2024",
+        "src-mitsubishi-eml-share-2025",
+        "src-mitsubishi-strategy-2026",
+        "src-furukawa-dfb-2022",
+        "src-lmoc-epi",
+        "src-iet-products",
+        "src-luxnet-osa",
+        "src-truelight-osa",
+        "src-pcl-manufacturing"
+      ],
+      "chains": [
+        {
+          "id": "inp-eml",
+          "title": "InP 發射：磊晶 → 雷射晶片 → OSA",
+          "note": "資料中心高速單模常見 EML；DFB 可作 CW 光源。兩者不是同一顆晶片。",
+          "stages": [
+            {
+              "id": "epi",
+              "title": "InP／化合物磊晶",
+              "description": "磊晶晶圓，還不是封裝好的雷射。",
+              "supplier_ids": [
+                "tw-lmoc-3081",
+                "tw-iet-4971"
+              ],
+              "source_ids": [
+                "src-lmoc-epi",
+                "src-iet-products"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "chip",
+              "title": "EML／DFB 雷射晶片",
+              "description": "三菱公開資料中心 EML；古河公開高功率 DFB。",
+              "supplier_ids": [
+                "mitsubishi",
+                "furukawa"
+              ],
+              "source_ids": [
+                "src-mitsubishi-eml-share-2025",
+                "src-furukawa-dfb-2022"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "tosa",
+              "title": "TOSA／發射次模組",
+              "description": "把雷射、監控 PD、耦光做成可組裝單元。",
+              "supplier_ids": [
+                "tw-luxnet-4979",
+                "tw-truelight-3234",
+                "tw-pcl-4977"
+              ],
+              "source_ids": [
+                "src-luxnet-osa",
+                "src-truelight-osa",
+                "src-pcl-manufacturing"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "module",
+              "title": "可插拔模組",
+              "description": "整機廠把光學引擎放進模組；不表示自製磊晶或 EML。",
+              "supplier_ids": [
+                "innolight",
+                "eoptolink",
+                "lumentum",
+                "accelink"
+              ],
+              "source_ids": [
+                "s1",
+                "s2",
+                "src-lumentum-2dr4-2024",
+                "src-accelink-ar-2024"
+              ],
+              "status": "product_role"
+            }
+          ]
+        },
+        {
+          "id": "vcsel",
+          "title": "VCSEL／短距支線",
+          "note": "聯亞、英特磊有 VCSEL 磊晶產品頁；本頁沒有足夠來源主張它們就是 800G AI 模組的主力架構。",
+          "stages": [
+            {
+              "id": "gaas-epi",
+              "title": "VCSEL 磊晶",
+              "description": "官方列出 VCSEL epiwafer／磊晶，應用含 data center 或資料傳輸。",
+              "supplier_ids": [
+                "tw-lmoc-3081",
+                "tw-iet-4971"
+              ],
+              "source_ids": [
+                "src-lmoc-epi",
+                "src-iet-products"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "vcsel-800g",
+              "title": "800G 短距模組",
+              "description": "InnoLight 產品頁有 VCSEL 型 800G，但未證明上游晶片來自哪一家。",
+              "supplier_ids": [
+                "innolight"
+              ],
+              "source_ids": [
+                "s1"
+              ],
+              "status": "adjacent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "receiver",
+      "title": "光檢測/接收端",
+      "subtitle": "PIN/PD、APD、PD array 與相干接收器",
+      "role": "將入射光轉為電流，與 TIA/相干接收光路共同決定靈敏度與頻寬。",
+      "signal": "接收端：把光轉成電",
+      "chain": [
+        "InP/GaAs PD 晶片",
+        "PIN/APD/PD array",
+        "TIA、封裝與接收器校準"
+      ],
+      "architecture_note": "PD 接收光後輸出電流，再交由 TIA 放大。本圖不是需要光學混頻器的相干 ZR 接收機。",
+      "supplier_ids": [
+        "mitsubishi",
+        "tw-iet-4971",
+        "tw-luxnet-4979",
+        "tw-truelight-3234",
+        "tw-pcl-4977"
+      ],
+      "source_ids": [
+        "src-mitsubishi-pd-2024",
+        "src-mitsubishi-eml-share-2025",
+        "src-mitsubishi-strategy-2026",
+        "src-iet-products",
+        "src-luxnet-osa",
+        "src-truelight-osa",
+        "src-pcl-manufacturing"
+      ],
+      "chains": [
+        {
+          "id": "pd-rosa",
+          "title": "接收：PD 晶片 → ROSA → 模組",
+          "note": "PIN／APD 與相干接收不是同一條光路。",
+          "stages": [
+            {
+              "id": "pd-epi",
+              "title": "PIN／APD 磊晶與晶片",
+              "description": "英特磊列 PIN／APD；三菱公開 200Gbps PIN-PD。",
+              "supplier_ids": [
+                "tw-iet-4971",
+                "mitsubishi"
+              ],
+              "source_ids": [
+                "src-iet-products",
+                "src-mitsubishi-pd-2024"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "rosa",
+              "title": "ROSA／接收次模組",
+              "description": "PD + TIA 封裝，常見於可插拔模組接收端。",
+              "supplier_ids": [
+                "tw-luxnet-4979",
+                "tw-truelight-3234",
+                "tw-pcl-4977"
+              ],
+              "source_ids": [
+                "src-luxnet-osa",
+                "src-truelight-osa",
+                "src-pcl-manufacturing"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "module",
+              "title": "可插拔模組",
+              "description": "整機組裝，不推定自製 PD。",
+              "supplier_ids": [
+                "innolight",
+                "eoptolink",
+                "lumentum"
+              ],
+              "source_ids": [
+                "s1",
+                "s2",
+                "src-lumentum-2dr4-2024"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsp",
+      "title": "DSP/driver/TIA",
+      "subtitle": "PAM4 DSP、Gearbox、FEC、雷射 driver 與 TIA",
+      "role": "處理 SerDes、均衡、FEC、監控及光電驅動/跨阻放大。",
+      "signal": "校正訊號、驅動與放大",
+      "chain": [
+        "CMOS DSP/SerDes/FEC",
+        "laser/modulator driver",
+        "TIA/clock/監控與韌體"
+      ],
+      "architecture_note": "此圖以帶 DSP 的可插拔 PAM4 模組為教學基準；LPO 可移除模組 DSP。driver、TIA 與 DSP 是不同功能，可能分立或整合。",
+      "supplier_ids": [
+        "broadcom",
+        "marvell",
+        "macom"
+      ],
+      "source_ids": [
+        "src-broadcom-bcm83822-2025",
+        "src-marvell-pam4",
+        "src-coherent-ictrosa-2023",
+        "src-macom-800g"
+      ],
+      "chains": [
+        {
+          "id": "pam4-dsp",
+          "title": "高速 IC：PAM4 DSP／PHY",
+          "note": "driver、TIA、DSP 功能可分立或整合；本頁只把這三家映射到 DSP 角色。",
+          "stages": [
+            {
+              "id": "cmos",
+              "title": "DSP／PHY 晶片",
+              "description": "Broadcom 800G PAM4 PHY；Marvell PAM4 DSP 產品線；MACOM 800G chip-set。",
+              "supplier_ids": [
+                "broadcom",
+                "marvell",
+                "macom"
+              ],
+              "source_ids": [
+                "src-broadcom-bcm83822-2025",
+                "src-marvell-pam4",
+                "src-macom-800g"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "module",
+              "title": "模組採用",
+              "description": "模組產品可內建 DSP；不表示模組廠製造這顆 IC。",
+              "supplier_ids": [
+                "lumentum",
+                "innolight",
+                "eoptolink"
+              ],
+              "source_ids": [
+                "src-lumentum-2dr4-2024",
+                "s1",
+                "s2"
+              ],
+              "status": "adjacent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "substrate",
+      "title": "PCB/封裝互連",
+      "subtitle": "高速 PCB、基板、裸 die、wire bond/flip-chip 與電源管理",
+      "role": "連接 DSP、driver、光電晶片與外部 host，承受高速訊號完整性與熱機械約束。",
+      "signal": "高速電訊號的道路",
+      "chain": [
+        "低損耗高速 PCB/基板",
+        "封裝、互連與組裝",
+        "電源、時鐘、EEPROM/CMIS"
+      ],
+      "architecture_note": "AT&S 有光模組 PCB 直接證據；TTM 是相鄰板級光互連示範。光纖陣列的玻璃 V-groove 不是此處電子 PCB。",
+      "supplier_ids": [
+        "ats",
+        "ttm-technologies"
+      ],
+      "source_ids": [
+        "s5",
+        "s6"
+      ],
+      "chains": [
+        {
+          "id": "pcb",
+          "title": "模組 PCB",
+          "note": "光纖陣列的玻璃／矽 V-groove 不是這裡的電子 PCB。",
+          "stages": [
+            {
+              "id": "hs-pcb",
+              "title": "高速光模組 PCB",
+              "description": "AT&S 官方：100G–400G 量產、800G 已過客戶驗證（2023-07-27）。",
+              "supplier_ids": [
+                "ats"
+              ],
+              "source_ids": [
+                "s5"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "oe-pcb",
+              "title": "板級光互連（相鄰）",
+              "description": "TTM 2020 嵌入波導 O/E PCB 示範，不是本圖可插拔模組內 PCB 的量產證據。",
+              "supplier_ids": [
+                "ttm-technologies"
+              ],
+              "source_ids": [
+                "s6"
+              ],
+              "status": "adjacent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "title": "整機組裝測試",
+      "subtitle": "OSA/TROSA、模組製造、校準、可靠度與量產測試",
+      "role": "把光學、晶片、PCB、機構組成可插拔模組並完成 BER、溫循與互通測試。",
+      "signal": "整合成可出貨的模組",
+      "chain": [
+        "OSA/光引擎封裝",
+        "模組組裝、主動對準與校準",
+        "可靠度、互通與出貨測試"
+      ],
+      "architecture_note": "區分 OSA 次模組與完整 transceiver。Coherent 此來源為相干光引擎旁註，韓國來源偏前傳／存取網路，不據此宣稱都參與 800G AI 數通。",
+      "supplier_ids": [
+        "coherent",
+        "lumentum",
+        "accelink",
+        "innolight",
+        "eoptolink",
+        "tw-luxnet-4979",
+        "tw-ezconn-6442",
+        "tw-truelight-3234",
+        "tw-pcl-4977",
+        "oe-solutions",
+        "optowiz"
+      ],
+      "source_ids": [
+        "src-coherent-ictrosa-2023",
+        "src-lumentum-2dr4-2024",
+        "src-accelink-ar-2024",
+        "s1",
+        "s2",
+        "src-luxnet-osa",
+        "src-ezconn-home",
+        "src-truelight-osa",
+        "src-pcl-manufacturing",
+        "s3",
+        "s4"
+      ],
+      "chains": [
+        {
+          "id": "build",
+          "title": "組裝測試",
+          "note": "韓國兩家來源偏前傳／存取網路，不外推 800G AI 數通。Coherent 本頁來源是相干光引擎。",
+          "stages": [
+            {
+              "id": "osa",
+              "title": "光學次模組",
+              "description": "TOSA／ROSA／BOSA 製造。",
+              "supplier_ids": [
+                "tw-luxnet-4979",
+                "tw-truelight-3234",
+                "tw-pcl-4977"
+              ],
+              "source_ids": [
+                "src-luxnet-osa",
+                "src-truelight-osa",
+                "src-pcl-manufacturing"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "xcvr",
+              "title": "完整 transceiver",
+              "description": "可插拔模組組裝、校準、測試。",
+              "supplier_ids": [
+                "innolight",
+                "eoptolink",
+                "lumentum",
+                "accelink",
+                "tw-ezconn-6442",
+                "tw-pcl-4977"
+              ],
+              "source_ids": [
+                "s1",
+                "s2",
+                "src-lumentum-2dr4-2024",
+                "src-accelink-ar-2024",
+                "src-ezconn-home",
+                "src-pcl-manufacturing"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "access",
+              "title": "前傳／存取（相鄰）",
+              "description": "有模組產品，但不是本圖 800G 數通主張。",
+              "supplier_ids": [
+                "oe-solutions",
+                "optowiz"
+              ],
+              "source_ids": [
+                "s3",
+                "s4"
+              ],
+              "status": "adjacent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "coherent",
+      "name": "Coherent Corp. / Finisar",
+      "ticker": "COHR",
+      "exchange": "NYSE",
+      "country": "美國",
+      "role": "光學引擎／次模組整合；本次來源為相干 IC-TROSA，僅作架構旁註，不推定其自製內部 DSP、外殼或 PCB。",
+      "component_ids": [
+        "assembly"
+      ],
+      "source_ids": [
+        "src-coherent-ictrosa-2023"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "官方產品公告未提供可核對的公司產品出貨分母市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "lumentum",
+      "name": "Lumentum Holdings",
+      "ticker": "LITE",
+      "exchange": "NASDAQ",
+      "country": "美國",
+      "role": "800G 2×DR4 OSFP 完整模組；產品採 SiPh、CW DFB 與 DSP，使用某元件不等於對外供應該晶片。",
+      "component_ids": [
+        "assembly"
+      ],
+      "source_ids": [
+        "src-lumentum-2dr4-2024"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "產品頁提供規格，不提供產品單位市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "broadcom",
+      "name": "Broadcom Inc.",
+      "ticker": "AVGO",
+      "exchange": "NASDAQ",
+      "country": "美國",
+      "role": "800G PAM4 DSP/PHY 與整合式 laser driver",
+      "component_ids": [
+        "dsp"
+      ],
+      "source_ids": [
+        "src-broadcom-bcm83822-2025"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "官方產品頁未提供產品出貨市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "marvell",
+      "name": "Marvell Technology",
+      "ticker": "MRVL",
+      "exchange": "NASDAQ",
+      "country": "美國",
+      "role": "PAM4 光學 DSP 平台；本輪引用涵蓋資料中心光互連，不據此列為雷射或整機製造商。",
+      "component_ids": [
+        "dsp"
+      ],
+      "source_ids": [
+        "src-marvell-pam4",
+        "src-coherent-ictrosa-2023"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "官方頁稱 field-proven/portfolio，未給可驗證產品分母市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "macom",
+      "name": "MACOM Technology Solutions",
+      "ticker": "MTSI",
+      "exchange": "NASDAQ",
+      "country": "美國",
+      "role": "800G 光模組 chip-set、TIA、driver 與光電元件",
+      "component_ids": [
+        "dsp"
+      ],
+      "source_ids": [
+        "src-macom-800g"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "官方頁描述產品組合與應用，不提供市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "mitsubishi",
+      "name": "Mitsubishi Electric",
+      "ticker": "6503",
+      "exchange": "Tokyo Stock Exchange",
+      "country": "日本",
+      "role": "200Gbps PIN-PD、EML、DFB/可調雷射光電晶片",
+      "component_ids": [
+        "laser",
+        "receiver"
+      ],
+      "source_ids": [
+        "src-mitsubishi-pd-2024",
+        "src-mitsubishi-eml-share-2025",
+        "src-mitsubishi-strategy-2026"
+      ],
+      "market_share": {
+        "status": "historical_estimate",
+        "value": 50,
+        "denominator": "資料中心 EML（Electro-absorption Modulator integrated Laser diode）晶片",
+        "geography": "全球",
+        "period": "FY2022",
+        "source_ids": [
+          "src-mitsubishi-eml-share-2025"
+        ],
+        "note": "約 50%；FY2022 全球資料中心 EML 晶片，公司自估，收入或出貨量口徑未揭露。2025-02-10 公布，非 2026 最新市占，也不是整顆模組市占。",
+        "component_ids": [
+          "laser"
+        ]
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "sumitomo",
+      "name": "Sumitomo Electric Industries",
+      "ticker": "5802",
+      "exchange": "Tokyo Stock Exchange",
+      "country": "日本",
+      "role": "PLC CWDM Mux/Demux 與光耦合元件；此來源不證明其供應 PD 晶片。",
+      "component_ids": [
+        "optics"
+      ],
+      "source_ids": [
+        "src-sumitomo-cwdm4"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "官方產品頁提供規格與應用，無產品市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "furukawa",
+      "name": "Furukawa Electric",
+      "ticker": "5801",
+      "exchange": "Tokyo Stock Exchange",
+      "country": "日本",
+      "role": "高輸出 DFB 雷射晶片，供應矽光子等光模組光源。",
+      "component_ids": [
+        "laser"
+      ],
+      "source_ids": [
+        "src-furukawa-dfb-2022"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "官方資料支持供應雷射晶片給模組製造商，但無產品市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "fujikura",
+      "name": "Fujikura",
+      "ticker": "5803",
+      "exchange": "Tokyo Stock Exchange",
+      "country": "日本",
+      "role": "高密度光纖、MT ferrule 與 VSFF 連接器",
+      "component_ids": [
+        "connector"
+      ],
+      "source_ids": [
+        "src-fujikura-usconec-2021"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "合作公告支持連接器供應鏈角色，無產品市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "usconec",
+      "name": "US Conec",
+      "ticker": "",
+      "exchange": "Private",
+      "country": "美國",
+      "role": "MPO/MTP、MDC/MMC、MT ferrule 高密度互連",
+      "component_ids": [
+        "connector"
+      ],
+      "source_ids": [
+        "src-fujikura-usconec-2021"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "官方合作公告支持連接器角色，私有公司且無產品市占。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "accelink",
+      "name": "Accelink Technologies / 光迅科技",
+      "ticker": "002281",
+      "exchange": "Shenzhen Stock Exchange",
+      "country": "中國",
+      "role": "光器件、400G/800G/1.6T 模組、無源器件與子系統垂直整合",
+      "component_ids": [
+        "optics",
+        "assembly"
+      ],
+      "source_ids": [
+        "src-accelink-ar-2024"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "年報含產業市場比例與公司排名敘述，但未提供本檔所需一致產品分母的公司市占，故不填。"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "innolight",
+      "name": "中際旭創（InnoLight）",
+      "ticker": "300308",
+      "exchange": "深交所創業板",
+      "country": "中國",
+      "role": "高速光模組整機／光收發模組供應商；官方頁列出 800G OSFP112 的 EML、VCSEL、PAM4、MUX/DEMUX、MPO 光連接器與 500m/2km/10km 產品能力。",
+      "component_ids": [
+        "assembly"
+      ],
+      "source_ids": [
+        "s1"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "eoptolink",
+      "name": "新易盛（Eoptolink）",
+      "ticker": "300502",
+      "exchange": "深交所創業板",
+      "country": "中國",
+      "role": "高速光模組整機／光收發模組供應商；官方 800G QSFP-DD800 頁列出 AOC、VR8、DR8、2xFR4、2xLR4、PAM4、CMIS 5.0 與 500m/2km/10km 型號，並稱具光引擎垂直整合。",
+      "component_ids": [
+        "assembly"
+      ],
+      "source_ids": [
+        "s2"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "tw-lmoc-3081",
+      "name": "聯亞光電",
+      "ticker": "3081",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "InP/GaAs光通訊磊晶片供應商；官方產品頁列出DFB、VCSEL等Epiwafer，並標示Telecom/Data center應用。",
+      "component_ids": [
+        "laser"
+      ],
+      "source_ids": [
+        "src-lmoc-epi"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3081_%E8%81%AF%E4%BA%9E.md"
+    },
+    {
+      "id": "tw-iet-4971",
+      "name": "英特磊科技（IET-KY）",
+      "ticker": "4971",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "III-V化合物半導體磊晶片供應商；官方產品頁列出InP HBT、PIN/APD、laser及VCSEL，並明示光纖通訊/資料傳輸應用。",
+      "component_ids": [
+        "laser",
+        "receiver"
+      ],
+      "source_ids": [
+        "src-iet-products"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/4971_IET-KY.md"
+    },
+    {
+      "id": "tw-luxnet-4979",
+      "name": "華星光通",
+      "ticker": "4979",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "光主動元件與光學次模組供應商；官方產品頁列出TOSA、ROSA、BOSA，並說明整合雷射/檢光器、TIA、LC port及與transceiver PCB互連。",
+      "component_ids": [
+        "laser",
+        "receiver",
+        "assembly"
+      ],
+      "source_ids": [
+        "src-luxnet-osa"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/4979_%E8%8F%AF%E6%98%9F%E5%85%89.md"
+    },
+    {
+      "id": "tw-browave-3163",
+      "name": "波若威",
+      "ticker": "3163",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "光被動元件、光纖陣列與連接器供應商；官方頁列出Fiber Array、PM connector、receptacle及光隔離器，另列PLC/FBT splitter modules。",
+      "component_ids": [
+        "connector",
+        "optics"
+      ],
+      "source_ids": [
+        "src-browave-parts",
+        "src-browave-splitter"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3163_%E6%B3%A2%E8%8B%A5%E5%A8%81.md"
+    },
+    {
+      "id": "tw-ezconn-6442",
+      "name": "光聖",
+      "ticker": "6442",
+      "exchange": "TWSE",
+      "country": "台灣",
+      "role": "光纖/光通訊元件與連接器、光收發產品供應商；官方網站列Fiber Optics Products、800G QSFP-DD AOC與RF coaxial connector，並揭示整合光/電/機構/材料技術。",
+      "component_ids": [
+        "connector",
+        "assembly"
+      ],
+      "source_ids": [
+        "src-ezconn-home"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/6442_%E5%85%89%E8%81%96.md"
+    },
+    {
+      "id": "tw-truelight-3234",
+      "name": "光環",
+      "ticker": "3234",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "光主動元件與OSA供應商；官方產品頁列Metal OSA w/FPC，包含ROSA/TOSA、ROSM/TOSM、PINTIA/APDTIA及25G/56G產品。",
+      "component_ids": [
+        "laser",
+        "receiver",
+        "assembly"
+      ],
+      "source_ids": [
+        "src-truelight-osa"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "tw-foci-3363",
+      "name": "上詮",
+      "ticker": "3363",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "光纖陣列與CPO光連接元件供應商；官方產品頁說明以V-groove/基板製作Fiber Array，支援多通道客製，並應用於多通道光模組；官方新聞另列ReLFACon CPO connector。",
+      "component_ids": [
+        "connector",
+        "optics"
+      ],
+      "source_ids": [
+        "src-foci-array",
+        "src-foci-cpo"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "tw-pcl-4977",
+      "name": "眾達-KY（PCL Technologies）",
+      "ticker": "4977",
+      "exchange": "TWSE",
+      "country": "台灣",
+      "role": "光學次組件與光收發模組製造商；官方製造頁列LD TO、PIN-TIA、TOSA、ROSA、BOSA及SFP/QSFP+等模組，屬直接產品/製造證據，不延伸推定其供應其他零件。",
+      "component_ids": [
+        "laser",
+        "receiver",
+        "assembly"
+      ],
+      "source_ids": [
+        "src-pcl-manufacturing"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較的公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "oe-solutions",
+      "name": "OE Solutions",
+      "ticker": "138360",
+      "exchange": "韓國 KOSDAQ",
+      "country": "韓國",
+      "role": "韓國光收發模組供應商，重點在無線前傳／5G 與 PON、WDM 等存取網路；官方案例稱出貨 10G 與 25G 模組，列出 25Gbps SFP28 BIDI ER-lite、25Gbps LWDM SFP28、10Gbps O-band DWDM SFP+。未以此證明 800G 能力。",
+      "component_ids": [
+        "assembly"
+      ],
+      "source_ids": [
+        "s3"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "optowiz",
+      "name": "OptoWiz",
+      "ticker": null,
+      "exchange": null,
+      "country": "韓國",
+      "role": "韓國高性能光收發模組與光無源器件供應商；官方公司頁稱其開發與製造 telecom、Datacom、5G 等 ICT 應用模組，支援 FC、GbE、SONET/SDH、FTTx MSA。官方頁未確認 800G，故不外推高速世代。",
+      "component_ids": [
+        "assembly"
+      ],
+      "source_ids": [
+        "s4"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "ats",
+      "name": "AT&S",
+      "ticker": "ATS",
+      "exchange": "維也納證券交易所",
+      "country": "奧地利",
+      "role": "光模組 PCB：2023-07-27 官方稱 100G–400G 已量產、800G 已通過客戶驗證。這是當時狀態，不等同 2026 最新量產狀態。",
+      "component_ids": [
+        "substrate"
+      ],
+      "source_ids": [
+        "s5"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "ttm-technologies",
+      "name": "TTM Technologies",
+      "ticker": "TTMI",
+      "exchange": "NASDAQ",
+      "country": "美國",
+      "role": "相鄰板級技術：2020 年嵌入波導 O/E PCB 示範。非可插拔模組內 PCB 量產供貨證據，不作直接 BOM 廠。",
+      "component_ids": [
+        "substrate"
+      ],
+      "source_ids": [
+        "s6"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    },
+    {
+      "id": "te-connectivity",
+      "name": "TE Connectivity",
+      "ticker": "TEL",
+      "exchange": "NYSE",
+      "country": "愛爾蘭",
+      "role": "主機側 QSFP 連接器、cage／外殼框架與散熱器供應商；官方列出 QSFP 112G connector and cage、single/ganged/stacked cage、thermal bridge 與 zipper heat sinks。明確屬主機板側 cage／connector，不冒充光模組內殼。 公司地域以註冊地口徑列示。",
+      "component_ids": [
+        "housing"
+      ],
+      "source_ids": [
+        "s7",
+        "src-te-ireland"
+      ],
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "全球",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "confidence": "官方產品角色已核對，非投資評等",
+      "research_status": "untracked"
+    }
+  ],
+  "chain_notes": [
+    "層級是製程／價值鏈，不是已驗證的買賣關係。",
+    "supplier_ids 只放本頁既有、有產品角色證據的公司。",
+    "EML／DFB／SiPh／VCSEL 分線，不串成同一條 BOM。"
+  ]
+}

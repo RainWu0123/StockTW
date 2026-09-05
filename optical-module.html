@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StockTW 光通模組結構與全球供應商研究圖譜">
+  <title>StockTW｜光通模組研究圖譜</title>
+  <script>try{if(localStorage.getItem('stocktw:theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+  <link rel="stylesheet" href="optical-module.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./"><span class="mark">ST</span><span>StockTW <em>研究終端</em></span></a>
+  <nav><a href="spa.html">追蹤清單</a><a href="research.html">研究報告 ↗</a></nav>
+  <button id="theme-toggle" class="icon-button" type="button" aria-label="切換主題">◐ <span>主題</span></button>
+</header>
+<main class="shell">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">HARDWARE / OPTICAL INTERCONNECT</p>
+      <h1>拆開一顆可插拔光模組。</h1>
+      <p class="lede">點零件，看它在模組裡的位置，以及對應的分層產業鏈。這是教學剖視，不是單一品牌 BOM。</p>
+    </div>
+    <div class="status-box">
+      <span>資料狀態</span>
+      <strong id="data-status">載入中…</strong>
+      <small id="data-asof">正在讀取來源</small>
+    </div>
+  </section>
+  <section class="notice-panel">
+    <strong>研究邊界</strong>
+    <p>可插拔模組概念圖，非特定型號。CPO 不是本圖內部零件。產品角色確認 ≠ 已驗證客戶供應關係。沒有同口徑分母就不填市占。</p>
+  </section>
+  <section class="controls" aria-label="圖譜篩選">
+    <div class="control-group"><label for="country-filter">供應商國家</label><select id="country-filter"><option value="">全球</option></select></div>
+    <div class="control-group"><label for="component-filter">零件</label><select id="component-filter"><option value="">全部零件</option></select></div>
+    <label class="toggle"><input id="tracked-only" type="checkbox"><span class="switch" aria-hidden="true"></span>只看已追蹤</label>
+    <button id="retry" class="button" type="button" hidden>重新載入</button>
+  </section>
+  <section id="load-state" class="state" role="status">正在載入光通模組資料…</section>
+  <section class="module-layout" id="module-workspace" hidden>
+    <div class="diagram-panel panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / MODULE CUTAWAY</p>
+          <h2>開蓋剖視 · 點零件拆產業鏈</h2>
+        </div>
+        <div class="legend">
+          <span><i class="electric"></i>電氣端</span>
+          <span><i class="optic"></i>光纖端</span>
+        </div>
+      </div>
+      <div class="svg-wrap">
+        <svg id="module-svg" viewBox="0 0 1160 360" role="group" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">可互動光通模組開蓋剖視</title>
+          <desc id="diagram-desc">狹長金屬模組，左端光纖接口，右端金手指，內部可見 PCB、雷射次模組、接收次模組與 DSP</desc>
+          <defs>
+            <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="var(--metal-a)"/><stop offset="1" stop-color="var(--metal-b)"/></linearGradient>
+            <linearGradient id="pcb-grad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1a3a32"/><stop offset="1" stop-color="#0f241f"/></linearGradient>
+            <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f3d48a"/><stop offset="1" stop-color="#c9a24a"/></linearGradient>
+            <filter id="soft"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-opacity=".28"/></filter>
+          </defs>
+          <g id="bg-layer"></g>
+          <g id="parts-layer"></g>
+          <g id="callouts"></g>
+        </svg>
+      </div>
+      <div class="component-buttons" id="component-buttons" aria-label="零件選擇"></div>
+    </div>
+    <div class="explore-row">
+      <section class="chain-panel panel">
+        <p class="eyebrow">02 / VALUE CHAIN</p>
+        <div id="chain-content"><h2>選一個零件</h2><p>點擊模組上的部位，展開對應產業鏈。</p></div>
+      </section>
+      <aside class="detail-panel panel" aria-live="polite">
+        <p class="eyebrow">03 / COMPONENT</p>
+        <div id="detail-content"><h2>零件說明</h2><p>這裡解釋這個部位在一顆模組裡做什麼。</p></div>
+      </aside>
+    </div>
+  </section>
+  <section class="supplier-section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">04 / SUPPLIERS</p>
+        <h2>台股與全球供應商</h2>
+      </div>
+      <span id="supplier-count" class="muted"></span>
+    </div>
+    <div id="supplier-grid" class="supplier-grid"></div>
+  </section>
+  <details class="sources panel">
+    <summary>來源與限制 <span>展開查看</span></summary>
+    <div id="sources-content"></div>
+  </details>
+</main>
+<footer>StockTW / 光通模組研究工作區　先查證，再決策。此頁不構成投資建議。</footer>
+<script type="module" src="optical-module.js"></script>
+</body>
+</html>
