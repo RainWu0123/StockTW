@@ -29,36 +29,63 @@
   }
   .topbar h1 { font-size: 16px; margin: 0; margin-right: auto; }
   .topbar input {
-    width: 260px; background: #0d111a; color: var(--text);
+    width: min(260px, 100%); background: #0d111a; color: var(--text);
     border: 1px solid var(--line); border-radius: 10px;
     padding: 10px 12px; font-size: 14px; outline: none;
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
     gap: 14px; padding: 16px;
   }
   .card {
     background: var(--panel); border: 1px solid var(--line);
     border-radius: 14px; padding: 16px; cursor: pointer;
-    transition: transform .1s, border-color .1s;
+    transition: transform .1s, border-color .1s; min-width: 0;
   }
   .card:hover { transform: translateY(-2px); border-color: #2e3a4f; }
-  .card h2 { font-size: 15px; margin: 0 0 6px; color: var(--accent); }
+  .card h2 { font-size: 15px; margin: 0 0 6px; color: var(--accent); overflow-wrap: anywhere; }
   .card .meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
   .card p { font-size: 13px; color: #c7cdd9; line-height: 1.55; margin: 0; }
   .empty { color: var(--muted); padding: 30px; text-align: center; }
-  .markdown-body { line-height: 1.7; }
+  .markdown-body { line-height: 1.7; overflow-wrap: anywhere; }
   .markdown-body h1 { font-size: 18px; }
   .markdown-body h2 { font-size: 16px; margin-top: 18px; color: var(--accent); }
-  .markdown-body table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  .markdown-body table { border-collapse: collapse; width: 100%; margin: 10px 0; display: block; overflow-x: auto; }
   .markdown-body th, .markdown-body td {
     border: 1px solid var(--line); padding: 6px 10px; text-align: left; font-size: 13px;
   }
   .markdown-body th { background: #0d111a; }
   .back {
-    display: inline-block; margin: 12px 16px; color: var(--accent);
+    display: inline-flex; align-items: center; min-height: 44px;
+    margin: 12px 16px; color: var(--accent);
     text-decoration: none; font-size: 14px;
+  }
+  .page-links {
+    margin: 0 16px 8px; display: grid; gap: 8px; min-width: 0;
+  }
+  .page-links-kicker { font-size: 12px; color: var(--muted); }
+  .page-link-group {
+    display: flex; flex-wrap: wrap; gap: 8px; min-width: 0;
+  }
+  .page-link-group a {
+    display: inline-flex; align-items: center; min-height: 44px;
+    padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px;
+    color: var(--accent); font-size: 13px; text-decoration: none;
+    background: var(--panel); max-width: 100%; overflow-wrap: anywhere;
+  }
+  .scopebar { padding: 14px 16px 0; color: var(--muted); font-size: 12px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 16px 0; }
+  .filters button {
+    min-height: 40px; padding: 7px 11px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--panel); color: var(--text); cursor: pointer;
+  }
+  .filters button.active { border-color: var(--accent); color: var(--accent); }
+  .card.pending { cursor: default; opacity: .72; }
+  .tag { display: inline-block; margin: 2px 4px 0 0; padding: 2px 7px; border-radius: 999px; background: #0d111a; color: var(--muted); font-size: 11px; }
+  @media (max-width: 420px) {
+    .topbar { flex-wrap: wrap; }
+    .topbar input { width: 100%; }
   }
 </style>
 </head>
@@ -67,68 +94,239 @@
   <h1>📑 個股深度研究</h1>
   <input id="q" placeholder="搜尋代號 / 名稱 / 關鍵字..." />
 </div>
+<div id="scope-summary" class="scopebar">載入研究範圍…</div>
+<div id="filters" class="filters" aria-label="研究範圍篩選"></div>
 <div id="grid" class="grid"></div>
 <div id="detail" style="display:none">
   <a class="back" href="javascript:void(0)" onclick="back()">← 返回列表</a>
+  <div id="page-links" class="page-links" hidden></div>
   <div class="grid" style="padding-top:6px">
     <div class="card" style="cursor:default">
       <div id="md"></div>
     </div>
   </div>
 </div>
-<script>
-(async () => {
-  const BASE = './research';
-  const listUrl = BASE + '?format=json';
-  let files = [];
-  try {
-    const res = await fetch(listUrl);
-    const txt = await res.text();
-    // fallback: 用已知檔名
-    files = ['1101_台泥.md','1216_統一.md','1301_台塑.md','1303_台塑化.md','2002_中鋼.md','2303_聯電.md','2308_台達電.md','2313_華通.md','2317_鴻海.md','2327_國巨.md','2330_台積電.md','2344_華邦電.md','2345_鴻準.md','2375_凱美.md','2382_廣達.md','2383_台光電.md','2395_研華.md','2404_漢唐.md','2408_南亞科.md','2412_中華電.md','2454_聯發科.md','2609_陽明.md','2610_華航.md','2615_萬海.md','2618_長榮航.md','2881_國泰金.md','2882_開發金.md','2884_玉山金.md','2886_兆豐金.md','2890_永豐金.md','2892_第一金.md','3005_神基.md','3008_大立光.md'];
-  } catch (e) { files = []; }
-
-  const q = document.getElementById('q');
-  const grid = document.getElementById('grid');
-  const detail = document.getElementById('detail');
-  const md = document.getElementById('md');
-
-  function render(list) {
-    grid.innerHTML = '';
-    if (!list.length) { grid.innerHTML = '<div class="empty">沒有符合的研究報告</div>'; return; }
-    list.forEach(f => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<h2>${f.replace('.md','')}</h2><div class="meta">research/${f}</div>`;
-      card.onclick = () => openMarkdown(BASE + '/' + f);
-      grid.appendChild(card);
-    });
-  }
-
-  async function openMarkdown(url) {
-    grid.style.display = 'none';
-    detail.style.display = 'block';
-    md.innerHTML = '載入中...';
-    try {
-      const res = await fetch(url);
-      const text = await res.text();
-      md.innerHTML = '<div class="markdown-body">' + marked.parse(text) + '</div>';
-    } catch (e) {
-      md.innerHTML = '<div class="empty">載入失敗</div>';
-    }
-  }
-  window.back = () => { detail.style.display = 'none'; grid.style.display = ''; };
-
-  q.addEventListener('input', () => {
-    const v = q.value.trim().toLowerCase();
-    const filtered = files.filter(f => f.toLowerCase().includes(v) || f.replace('.md','').includes(v));
-    render(filtered);
-    back();
-  });
-
-  render(files);
-})();
-</script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script type="module">
+import { linksForTicker, tickerFromFilename, resolveCodeParam, fileForCode, loadResearchFilenames } from './research-links.js';
+
+const BASE = './research';
+const CATEGORY_ORDER = ['全部', '0050', '00981A', '熱門族群', '過去常談／指定'];
+const DATASETS = [
+  { page:'cpo', href:'cpo.html', label:'CPO 拆解', url:'./data/cpo.json', suppliers:[], components:[] },
+  { page:'optical-module', href:'optical-module.html', label:'可插拔光通', url:'./data/optical-module.json', suppliers:[], components:[] },
+];
+
+const q = document.getElementById('q');
+const grid = document.getElementById('grid');
+const detail = document.getElementById('detail');
+const md = document.getElementById('md');
+const pageLinks = document.getElementById('page-links');
+const scopeSummary = document.getElementById('scope-summary');
+const filters = document.getElementById('filters');
+let files = [];
+let scopeItems = [];
+let selectedCategory = '全部';
+
+async function loadMaps() {
+  await Promise.all(DATASETS.map(async (ds) => {
+    try {
+      const res = await fetch(ds.url, { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      ds.suppliers = Array.isArray(data.suppliers) ? data.suppliers : [];
+      ds.components = Array.isArray(data.components) ? data.components : [];
+    } catch { /* 圖譜資料缺失時仍可讀研究本文 */ }
+  }));
+}
+
+async function loadFiles() {
+  files = await loadResearchFilenames();
+}
+
+async function loadScope() {
+  const res = await fetch('./data/research-scope.json', { cache: 'no-store' });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  if (!Array.isArray(data.items)) throw new Error('研究範圍格式錯誤');
+  scopeItems = data.items.map((item) => {
+    const resolved = fileForCode(item.code, files);
+    return {
+      ...item,
+      report_file: item.report_file === resolved ? resolved : '',
+    };
+  });
+  const available = scopeItems.filter((item) => item.report_file).length;
+  const pending = scopeItems.length - available;
+  const note = data.etf_evidence?.['00981A']?.complete === false ? '；00981A 持股仍是不完整資料，不用缺席排除' : '';
+  scopeSummary.textContent = `研究範圍 ${scopeItems.length} 檔：${available} 份報告、${pending} 檔待補研究${note}`;
+}
+
+function renderFilters() {
+  filters.replaceChildren();
+  CATEGORY_ORDER.forEach((category) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = category;
+    button.classList.toggle('active', category === selectedCategory);
+    button.addEventListener('click', () => {
+      selectedCategory = category;
+      renderFilters();
+      applyFilters();
+    });
+    filters.append(button);
+  });
+}
+
+function render(list) {
+  grid.replaceChildren();
+  if (!list.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty';
+    empty.textContent = '沒有符合的研究標的';
+    grid.append(empty);
+    return;
+  }
+  list.forEach((item) => {
+    const card = document.createElement('div');
+    card.className = item.report_file ? 'card' : 'card pending';
+    const h2 = document.createElement('h2');
+    h2.textContent = `${item.code} ${item.name}`;
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.textContent = item.report_file ? `research/${item.report_file}` : '待補研究';
+    const tags = document.createElement('div');
+    (item.categories || []).forEach((category) => {
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.textContent = category;
+      tags.append(tag);
+    });
+    card.append(h2, meta, tags);
+    if (item.report_file) card.addEventListener('click', () => openFile(item.report_file));
+    grid.append(card);
+  });
+}
+
+function applyFilters() {
+  const term = q.value.trim().toLowerCase();
+  const list = scopeItems.filter((item) => {
+    const categoryOK = selectedCategory === '全部' || (item.categories || []).includes(selectedCategory);
+    const text = `${item.code} ${item.name} ${(item.categories || []).join(' ')} ${(item.reasons || []).join(' ')}`.toLowerCase();
+    return categoryOK && (!term || text.includes(term));
+  });
+  render(list);
+}
+
+function renderPageLinks(ticker) {
+  pageLinks.replaceChildren();
+  const groups = linksForTicker(ticker, DATASETS);
+  if (!groups.length) {
+    pageLinks.hidden = true;
+    return;
+  }
+  pageLinks.hidden = false;
+  const kicker = document.createElement('div');
+  kicker.className = 'page-links-kicker';
+  kicker.textContent = '互動圖譜';
+  pageLinks.append(kicker);
+  groups.forEach((g) => {
+    const box = document.createElement('div');
+    box.className = 'page-link-group';
+    const page = document.createElement('a');
+    page.href = g.href;
+    page.textContent = g.label + '（整頁）';
+    box.append(page);
+    g.components.forEach((c) => {
+      const a = document.createElement('a');
+      a.href = c.href;
+      a.textContent = `${g.label} · ${c.title}`;
+      box.append(a);
+    });
+    pageLinks.append(box);
+  });
+}
+
+function setCodeQuery(code) {
+  try {
+    const url = new URL(location.href);
+    if (code) url.searchParams.set('code', code);
+    else url.searchParams.delete('code');
+    history.replaceState(null, '', url);
+  } catch { /* ignore */ }
+}
+
+async function openFile(filename) {
+  const ticker = tickerFromFilename(filename);
+  grid.style.display = 'none';
+  detail.style.display = 'block';
+  setCodeQuery(ticker);
+  renderPageLinks(ticker);
+  md.textContent = '載入中...';
+  try {
+    const res = await fetch(BASE + '/' + filename);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    if (typeof marked === 'undefined') {
+      md.textContent = text;
+      return;
+    }
+    const wrap = document.createElement('div');
+    wrap.className = 'markdown-body';
+    wrap.innerHTML = marked.parse(text);
+    md.replaceChildren(wrap);
+  } catch {
+    md.replaceChildren();
+    const empty = document.createElement('div');
+    empty.className = 'empty';
+    empty.textContent = '載入失敗';
+    md.append(empty);
+  }
+}
+
+async function openByCode(code) {
+  const filename = fileForCode(code, files);
+  if (filename) {
+    await openFile(filename);
+    return;
+  }
+  grid.style.display = 'none';
+  detail.style.display = 'block';
+  setCodeQuery(code);
+  renderPageLinks(code);
+  md.replaceChildren();
+  const empty = document.createElement('div');
+  empty.className = 'empty';
+  empty.textContent = '沒有對應的研究檔，仍可開啟圖譜連結。';
+  md.append(empty);
+}
+
+function back() {
+  detail.style.display = 'none';
+  grid.style.display = '';
+  pageLinks.replaceChildren();
+  pageLinks.hidden = true;
+  setCodeQuery('');
+}
+window.back = back;
+
+q.addEventListener('input', () => {
+  applyFilters();
+  back();
+});
+
+await loadMaps();
+await loadFiles();
+try {
+  await loadScope();
+} catch (error) {
+  scopeItems = [];
+  scopeSummary.textContent = `研究範圍載入失敗：${error.message}`;
+}
+renderFilters();
+applyFilters();
+const initial = resolveCodeParam(location.search);
+if (initial) await openByCode(initial);
+</script>
 </body>
 </html>

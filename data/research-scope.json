@@ -1,0 +1,1412 @@
+{
+  "as_of": "2026-09-05",
+  "policy": [
+    "0050持股",
+    "00981A可核對持股",
+    "熱門族群股票",
+    "製作人過去常談或明確指定"
+  ],
+  "etf_evidence": {
+    "0050": {
+      "complete": true,
+      "as_of": "2026-09-04",
+      "source": "元大 PCF/Daily"
+    },
+    "00981A": {
+      "complete": false,
+      "source_note": "目前僅有二手36檔／82.32%，不可用缺席作排除依據"
+    }
+  },
+  "items": [
+    {
+      "code": "1216",
+      "name": "統一",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "1216_統一.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "categories": [
+        "0050",
+        "過去常談／指定"
+      ],
+      "report_file": "1303_南亞.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留",
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "categories": [
+        "0050",
+        "熱門族群"
+      ],
+      "report_file": "2059_川湖.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "categories": [
+        "0050",
+        "熱門族群"
+      ],
+      "report_file": "2301_光寶科.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "categories": [
+        "0050",
+        "00981A",
+        "過去常談／指定"
+      ],
+      "report_file": "2303_聯電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "既往明確研究討論",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "2308_台達電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "categories": [
+        "0050",
+        "熱門族群"
+      ],
+      "report_file": "2317_鴻海.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "2327_國巨.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "2330_台積電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "categories": [
+        "0050",
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "2344_華邦電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "2345",
+      "name": "智邦",
+      "categories": [
+        "0050",
+        "00981A",
+        "過去常談／指定"
+      ],
+      "report_file": "2345_智邦.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留",
+        "0050官方持股：2026-09-04",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2357_華碩.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "categories": [
+        "0050",
+        "00981A"
+      ],
+      "report_file": "2360_致茂.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "2368_金像電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "categories": [
+        "0050",
+        "熱門族群"
+      ],
+      "report_file": "2382_廣達.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "2383_台光電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "categories": [
+        "0050",
+        "過去常談／指定"
+      ],
+      "report_file": "2395_研華.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "2408_南亞科.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "既往明確研究討論",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2412_中華電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "2449_京元電子.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留",
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "2454_聯發科.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "categories": [
+        "0050",
+        "過去常談／指定"
+      ],
+      "report_file": "2603_長榮.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留",
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2880_華南金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2881",
+      "name": "富邦金",
+      "categories": [
+        "0050",
+        "過去常談／指定"
+      ],
+      "report_file": "2881_富邦金.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留",
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2882",
+      "name": "國泰金",
+      "categories": [
+        "0050",
+        "過去常談／指定"
+      ],
+      "report_file": "2882_國泰金.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留",
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2883_凱基金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2884_玉山金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2885_元大金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2886_兆豐金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2887_台新新光金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2890_永豐金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2891_中信金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "2892_第一金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "categories": [
+        "0050",
+        "過去常談／指定"
+      ],
+      "report_file": "3008_大立光.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "3017_奇鋐.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "3037_欣興.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "既往明確研究討論",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "3045",
+      "name": "台灣大",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "3045_台灣大.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "categories": [
+        "0050",
+        "熱門族群"
+      ],
+      "report_file": "3231_緯創.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "categories": [
+        "0050",
+        "熱門族群"
+      ],
+      "report_file": "3443_創意.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "3653_健策.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "categories": [
+        "0050",
+        "熱門族群"
+      ],
+      "report_file": "3661_世芯-KY.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "3665_貿聯-KY.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "3711",
+      "name": "日月光",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "3711_日月光.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "4904",
+      "name": "遠傳",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "4904_遠傳.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "4958_臻鼎-KY.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "5880_合庫金.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "categories": [
+        "0050",
+        "過去常談／指定"
+      ],
+      "report_file": "6505_台塑化.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留",
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "6669_緯穎.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "categories": [
+        "0050"
+      ],
+      "report_file": "7769_鴻勁.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04"
+      ]
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "categories": [
+        "0050",
+        "00981A",
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "8046_南電.md",
+      "status": "available",
+      "reasons": [
+        "0050官方持股：2026-09-04",
+        "核心主題研究候選",
+        "既往明確研究討論",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "1590",
+      "name": "亞德客-KY",
+      "categories": [
+        "00981A"
+      ],
+      "report_file": "1590_亞德客-KY.md",
+      "status": "available",
+      "reasons": [
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "categories": [
+        "00981A",
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "3264_欣銓.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "既往明確研究討論",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "3376",
+      "name": "新日興",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "4966",
+      "name": "譜瑞-KY",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "4979_華星光.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "5274",
+      "name": "信驊",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "5274_信驊.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "6187_萬潤.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6191",
+      "name": "精成科",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "6223_旺矽.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6271",
+      "name": "同欣電",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "6274_台燿.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6278",
+      "name": "台表科",
+      "categories": [
+        "00981A"
+      ],
+      "report_file": "6278_台表科.md",
+      "status": "available",
+      "reasons": [
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6510",
+      "name": "精測",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6515",
+      "name": "穎崴",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "6515_穎崴.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "6805_富世達.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "categories": [
+        "00981A",
+        "熱門族群"
+      ],
+      "report_file": "8210_勤誠.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "00981A歷史二手資料曾列入，非現況認證"
+      ]
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "2313_華通.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "2337_旺宏.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "2375",
+      "name": "凱美",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "2375_凱美.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "2421",
+      "name": "建準",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "2421_建準.md",
+      "status": "available",
+      "reasons": [
+        "本輪製作人批准新增；法人級研究已排程"
+      ]
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍"
+      ]
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "categories": [
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "3026_禾伸堂.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "categories": [
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "3081_聯亞.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "3163",
+      "name": "波若威",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "3163_波若威.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "3234",
+      "name": "光環",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "3234_光環.md",
+      "status": "available",
+      "reasons": [
+        "本輪補入研究範圍"
+      ]
+    },
+    {
+      "code": "3324",
+      "name": "雙鴻",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "3324_雙鴻.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "3363",
+      "name": "上詮",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "3363_上詮.md",
+      "status": "available",
+      "reasons": [
+        "本輪補入研究範圍"
+      ]
+    },
+    {
+      "code": "3533",
+      "name": "嘉澤",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "3533_嘉澤.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "4971",
+      "name": "IET-KY",
+      "categories": [
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "4971_IET-KY.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "4977",
+      "name": "眾達-KY",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍"
+      ]
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍"
+      ]
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "6213_聯茂.md",
+      "status": "available",
+      "reasons": [
+        "本輪製作人批准新增；法人級研究已排程"
+      ]
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "6239_力成.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "6442",
+      "name": "光聖",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "6442_光聖.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "6770_力積電.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選"
+      ]
+    },
+    {
+      "code": "8042",
+      "name": "金山電",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": null,
+      "status": "pending_research",
+      "reasons": [
+        "本輪補入研究範圍"
+      ]
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "categories": [
+        "熱門族群",
+        "過去常談／指定"
+      ],
+      "report_file": "8299_群聯.md",
+      "status": "available",
+      "reasons": [
+        "核心主題研究候選",
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "8358_金居.md",
+      "status": "available",
+      "reasons": [
+        "本輪製作人批准新增；法人級研究已排程"
+      ]
+    },
+    {
+      "code": "8996",
+      "name": "高力",
+      "categories": [
+        "熱門族群"
+      ],
+      "report_file": "8996_高力.md",
+      "status": "available",
+      "reasons": [
+        "本輪製作人批准新增；法人級研究已排程"
+      ]
+    },
+    {
+      "code": "1301",
+      "name": "台塑",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "1301_台塑.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留"
+      ]
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "1326_台化.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留"
+      ]
+    },
+    {
+      "code": "2351",
+      "name": "順德",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "2351_順德.md",
+      "status": "available",
+      "reasons": [
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "2455_全新.md",
+      "status": "available",
+      "reasons": [
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "3490",
+      "name": "單井",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "3490_單井.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留"
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "4919_新唐.md",
+      "status": "available",
+      "reasons": [
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "4939",
+      "name": "亞電",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "4939_亞電.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留"
+      ]
+    },
+    {
+      "code": "4953",
+      "name": "緯軟",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "4953_緯軟.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留"
+      ]
+    },
+    {
+      "code": "6166",
+      "name": "凌華",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "6166_凌華.md",
+      "status": "available",
+      "reasons": [
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "6226",
+      "name": "光鼎",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "6226_光鼎.md",
+      "status": "available",
+      "reasons": [
+        "本輪明確指定保留"
+      ]
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "6285_啟碁.md",
+      "status": "available",
+      "reasons": [
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "6830",
+      "name": "汎銓",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "6830_汎銓.md",
+      "status": "available",
+      "reasons": [
+        "既往明確研究討論"
+      ]
+    },
+    {
+      "code": "7610",
+      "name": "聯友金屬創",
+      "categories": [
+        "過去常談／指定"
+      ],
+      "report_file": "7610_聯友金屬創.md",
+      "status": "available",
+      "reasons": [
+        "既往明確研究討論"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,7 @@
+import { resolveComponentParam, localResearchHref, loadResearchFilenames } from './research-links.js';
 const REQUIRED = ['housing','connector','optics','laser','receiver','dsp','substrate','assembly'];
 const state = { data:null, selected:'assembly', country:'', component:'assembly', tracked:false };
+let researchFiles = [];
 const $ = id => document.getElementById(id);
 const escDate = value => value == null ? '—' : String(value);
 function safeUrl(value){
@@ -297,8 +299,10 @@ function renderSuppliers(){
     if(Array.isArray(s.source_ids)&&s.source_ids.length){
       const p=el('p','citation'); p.append(el('strong','公司來源：','公司來源：'), document.createTextNode(' '), sourceLinks(s.source_ids)); card.append(p);
     }
+    const local=localResearchHref(s, researchFiles);
+    if(local){ const a=el('a','','個股研究頁'); a.href=local; a.style.display='block'; card.append(a); }
     const url=s.research_url&&safeUrl(s.research_url);
-    if(url){ const a=el('a','', s.research_status==='tracked'?'查看追蹤研究 ↗':'查看研究 ↗'); a.href=url; a.target='_blank'; a.rel='noopener noreferrer'; card.append(a); }
+    if(url){ const a=el('a','', s.research_status==='tracked'?'查看追蹤研究 ↗':'查看研究 ↗'); a.href=url; a.target='_blank'; a.rel='noopener noreferrer'; a.style.display='block'; card.append(a); }
     box.append(card);
   });
 }
@@ -327,11 +331,18 @@ async function load(){
   $('supplier-grid').replaceChildren(); $('component-buttons').replaceChildren(); $('sources-content').replaceChildren();
   $('supplier-count').textContent='';
   try {
-    const r=await fetch('./data/optical-module.json',{cache:'no-store'});
+    const [r, files] = await Promise.all([
+      fetch('./data/optical-module.json',{cache:'no-store'}),
+      loadResearchFilenames(),
+    ]);
+    researchFiles = files;
     if(!r.ok) throw new Error(`HTTP ${r.status}`);
     const d=await r.json();
     if(!validData(d)) throw new Error('資料格式不完整');
-    state.data=d; render();
+    state.data=d;
+    state.selected=resolveComponentParam(location.search, REQUIRED, 'assembly');
+    state.component=state.selected;
+    render();
   } catch(e) {
     $('module-workspace').hidden=true;
     setState(`無法載入資料：${e.message}。請確認 data/optical-module.json。`, true);

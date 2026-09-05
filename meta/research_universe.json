@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_from": "INDEX.md",
-  "generated_at": "2026-09-05",
+  "generated_at": "2026-09-05T17:35:00+08:00",
   "stocks": [
     {
       "code": "1101",
@@ -2075,6 +2075,70 @@
       "confidence": "中低",
       "last_verified": "2026-09-05",
       "research_maturity": 60
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "status": "active",
+      "required_maturity": 60,
+      "themes": [
+        "CCL",
+        "PCB",
+        "AI",
+        "伺服器"
+      ],
+      "target_base": null,
+      "confidence": "中",
+      "last_verified": "2026-09-05",
+      "research_path": "research/6213_聯茂.md"
+    },
+    {
+      "code": "8996",
+      "name": "高力",
+      "status": "active",
+      "required_maturity": 60,
+      "themes": [
+        "散熱",
+        "液冷",
+        "AI",
+        "伺服器"
+      ],
+      "target_base": null,
+      "confidence": "中",
+      "last_verified": "2026-09-05",
+      "research_path": "research/8996_高力.md"
+    },
+    {
+      "code": "2421",
+      "name": "建準",
+      "status": "active",
+      "required_maturity": 60,
+      "themes": [
+        "散熱",
+        "液冷",
+        "AI",
+        "伺服器"
+      ],
+      "target_base": null,
+      "confidence": "中",
+      "last_verified": "2026-09-05",
+      "research_path": "research/2421_建準.md"
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "status": "active",
+      "required_maturity": 60,
+      "themes": [
+        "CCL",
+        "PCB",
+        "AI",
+        "伺服器"
+      ],
+      "target_base": null,
+      "confidence": "中",
+      "last_verified": "2026-09-05",
+      "research_path": "research/8358_金居.md"
     }
   ]
 }
