@@ -115,7 +115,8 @@ button { cursor: pointer; }
 .shadow-plate { fill: #000; opacity: .16; }
 .part { cursor: pointer; }
 .part path, .part ellipse, .part rect { transition: opacity .15s, filter .15s; }
-.part.dim { opacity: .55; }
+.part.dim { opacity: .58; }
+.part text { pointer-events: none; paint-order: stroke; stroke: var(--card); stroke-width: 2px; }
 .svg-wrap { scroll-margin-top: 85px; }
 .part.selected { filter: drop-shadow(0 0 8px color-mix(in srgb, var(--accent) 70%, transparent)); }
 .part-label { font-size: 11px; fill: var(--ink); font-weight: 700; pointer-events: none; paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; }
@@ -137,6 +138,21 @@ button { cursor: pointer; }
 .via { fill: var(--gold); }
 .hole { fill: var(--bg); stroke: var(--muted); stroke-width: 1; }
 .pull { fill: #d9b25c; stroke: #8a6a24; stroke-width: 1; }
+.asic-top { fill: #243044; stroke: #0e141c; stroke-width: 1.2; }
+.asic-front { fill: #1a2433; stroke: #0e141c; }
+.asic-side { fill: #121820; stroke: #0e141c; }
+.engine-top { fill: #3d6d63; stroke: #1d3d38; stroke-width: 1; }
+.engine-front { fill: #2a4f48; stroke: #1d3d38; }
+.engine-side { fill: #1c3834; stroke: #1d3d38; }
+.els-top { fill: #5b4a73; stroke: #352848; }
+.els-front { fill: #44355a; stroke: #352848; }
+.els-side { fill: #2e213c; stroke: #352848; }
+.part#els .fiber-ribbon { stroke: #bd99ed; }
+.fiber-ribbon { fill: none; stroke: var(--accent-2); stroke-width: 2.2; stroke-linecap: round; }
+.lid-ghost { fill: color-mix(in srgb, var(--metal-a) 28%, transparent); stroke: var(--muted); stroke-dasharray: 4 4; }
+.lid-front { fill: color-mix(in srgb, var(--metal-a) 16%, transparent); stroke: var(--muted); stroke-dasharray: 4 4; }
+.lid-side { fill: color-mix(in srgb, var(--metal-b) 20%, transparent); stroke: var(--muted); stroke-dasharray: 4 4; }
+.inset-frame { fill: color-mix(in srgb, var(--control) 35%, transparent); stroke: var(--line); stroke-dasharray: 5 4; stroke-width: 1.2; }
 .ferrule { fill: #2a2f34; stroke: #111; }
 .assembly-box { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-dasharray: 7 6; }
 .callout { pointer-events: none; }

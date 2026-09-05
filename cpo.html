@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="StockTW 光通模組結構與全球供應商研究圖譜">
-  <title>StockTW｜光通模組研究圖譜</title>
+  <meta name="description" content="StockTW CPO 共封裝光學結構與全球供應商研究圖譜">
+  <title>StockTW｜CPO 研究圖譜</title>
   <script>try{if(localStorage.getItem('stocktw:theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
-  <link rel="stylesheet" href="optical-module.css">
+  <link rel="stylesheet" href="cpo.css">
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="./"><span class="mark">ST</span><span>StockTW <em>研究終端</em></span></a>
-  <nav><a href="spa.html">追蹤清單</a><a href="cpo.html">CPO 拆解</a><a href="research.html">研究報告 ↗</a></nav>
+  <nav><a href="spa.html">追蹤清單</a><a href="optical-module.html">光通拆解</a><a href="research.html">研究報告 ↗</a></nav>
   <button id="theme-toggle" class="icon-button" type="button" aria-label="切換主題">◐ <span>主題</span></button>
 </header>
 <main class="shell">
   <section class="hero">
     <div>
-      <p class="eyebrow">HARDWARE / OPTICAL INTERCONNECT</p>
-      <p><a href="cpo.html">探索另一種架構：CPO 共封裝光學 →</a></p>
-      <h1>拆開一顆可插拔光模組。</h1>
-      <p class="lede">點零件，看它在模組裡的位置，以及對應的分層產業鏈。這是教學剖視，不是單一品牌 BOM。</p>
+      <p class="eyebrow">HARDWARE / CO-PACKAGED OPTICS</p>
+      <h1>光引擎，如何貼上交換器。</h1>
+      <p><a href="optical-module.html">← 對照可插拔光通模組</a></p>
+      <p class="lede">CPO 不是把可插拔模組縮小。點零件，看 ASIC、光引擎、外置雷射與光纖耦接各自的產業鏈。</p>
     </div>
     <div class="status-box">
       <span>資料狀態</span>
@@ -30,7 +30,7 @@
   </section>
   <section class="notice-panel">
     <strong>研究邊界</strong>
-    <p>可插拔模組概念圖，非特定型號。CPO 不是本圖內部零件。產品角色確認 ≠ 已驗證客戶供應關係。沒有同口徑分母就不填市占。</p>
+    <p>本圖採交換器 CPO＋外置雷射的教學架構，非 Bailly 精確 BOM，也不代表所有 CPO 設計。製程放大圖不是額外零件；產業鏈箭頭不是已確認交易關係。一般光通能力與直接 CPO 產品分開標示，沒有同口徑分母就不填市占。</p>
   </section>
   <details class="comparison panel" id="architecture-comparison">
     <summary>為什麼把光引擎移近 ASIC？ <span>訊號路徑與功耗比較</span></summary>
@@ -43,44 +43,44 @@
     <label class="toggle"><input id="tracked-only" type="checkbox"><span class="switch" aria-hidden="true"></span>只看已追蹤</label>
     <button id="retry" class="button" type="button" hidden>重新載入</button>
   </section>
-  <section id="load-state" class="state" role="status">正在載入光通模組資料…</section>
+  <section id="load-state" class="state" role="status">正在載入 CPO 資料…</section>
   <section class="module-layout" id="module-workspace" hidden>
     <div class="diagram-panel panel">
       <div class="section-head">
         <div>
-          <p class="eyebrow">01 / MODULE CUTAWAY</p>
-          <h2>開蓋剖視 · 點零件拆產業鏈</h2>
+          <p class="eyebrow">01 / CPO CUTAWAY</p>
+          <h2>共封裝剖視 · 點零件拆產業鏈</h2>
         </div>
         <div class="legend">
-          <span><i class="electric"></i>電氣端</span>
-          <span><i class="optic"></i>光纖端</span>
+          <span><i class="electric"></i>ASIC／基板</span>
+          <span><i class="optic"></i>光引擎／光纖</span>
         </div>
       </div>
       <div class="svg-wrap">
-        <svg id="module-svg" viewBox="0 0 1160 300" role="group" aria-labelledby="diagram-title diagram-desc">
-          <title id="diagram-title">可互動光通模組開蓋剖視</title>
-          <desc id="diagram-desc">狹長金屬模組，左端光纖接口，右端金手指，內部可見 PCB、雷射次模組、接收次模組與 DSP</desc>
+        <svg id="module-svg" viewBox="180 0 950 500" role="group" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">可互動 CPO 開蓋 2.5D 剖視</title>
+          <desc id="diagram-desc">方形共基板、中央交換器 ASIC、八顆光引擎與接上的 FA／光纖、懸浮蓋板、外置遠端雷射，以及獨立製程放大 inset</desc>
           <defs>
             <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="var(--metal-a)"/><stop offset="1" stop-color="var(--metal-b)"/></linearGradient>
             <linearGradient id="pcb-grad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1a3a32"/><stop offset="1" stop-color="#0f241f"/></linearGradient>
             <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f3d48a"/><stop offset="1" stop-color="#c9a24a"/></linearGradient>
-            <filter id="soft"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-opacity=".28"/></filter>
           </defs>
           <g id="bg-layer"></g>
           <g id="parts-layer"></g>
           <g id="callouts"></g>
         </svg>
       </div>
+      <p class="muted">紫線：外置雷射供光。橘線：資料光路。光纖分支為示意，未畫出完整配纖；右側 PIC／EIC 是製程放大圖，不是額外零件。</p>
       <div class="component-buttons" id="component-buttons" aria-label="零件選擇"></div>
     </div>
     <div class="explore-row">
       <section class="chain-panel panel">
         <p class="eyebrow">02 / VALUE CHAIN</p>
-        <div id="chain-content"><h2>選一個零件</h2><p>點擊模組上的部位，展開對應產業鏈。</p></div>
+        <div id="chain-content"><h2>選一個零件</h2><p>點擊封裝上的部位，展開對應產業鏈。</p></div>
       </section>
       <aside class="detail-panel panel" aria-live="polite">
         <p class="eyebrow">03 / COMPONENT</p>
-        <div id="detail-content"><h2>零件說明</h2><p>這裡解釋這個部位在一顆模組裡做什麼。</p></div>
+        <div id="detail-content"><h2>零件說明</h2><p>這裡解釋這個部位在 CPO 裡做什麼。</p></div>
       </aside>
     </div>
   </section>
@@ -99,7 +99,7 @@
     <div id="sources-content"></div>
   </details>
 </main>
-<footer>StockTW / 光通模組研究工作區　先查證，再決策。此頁不構成投資建議。</footer>
-<script type="module" src="optical-module.js"></script>
+<footer>StockTW / CPO 研究工作區　先查證，再決策。此頁不構成投資建議。</footer>
+<script type="module" src="cpo.js"></script>
 </body>
 </html>

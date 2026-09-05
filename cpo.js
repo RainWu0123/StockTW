@@ -1,4 +1,4 @@
-const REQUIRED = ['housing','connector','optics','laser','receiver','dsp','substrate','assembly'];
+const REQUIRED = ['lid','asic','engine','fiber','els','substrate','foundry','assembly'];
 const state = { data:null, selected:'assembly', country:'', component:'assembly', tracked:false };
 const $ = id => document.getElementById(id);
 const escDate = value => value == null ? '—' : String(value);
@@ -41,7 +41,7 @@ function renderOptions(){
   country.value=state.country; filter.value=state.component;
 }
 function svgEl(tag){ return document.createElementNS('http://www.w3.org/2000/svg',tag); }
-function iso(x,y,z){ return [70 + x + z * 0.52, 222 - y * 1.25 - z * 0.42]; }
+function iso(x,y,z){ return [420 + (x-z) * Math.sqrt(3)/2, 30 + (x+z)*0.5 - y]; }
 function poly(pts, cls){
   const p=svgEl('path');
   p.setAttribute('d','M'+pts.map(([x,y])=>`${x.toFixed(1)} ${y.toFixed(1)}`).join('L')+'Z');
@@ -58,6 +58,25 @@ function addBox(g, x,y,z,w,h,d, top, front, side){
   g.append(poly(f.side, side), poly(f.front, front), poly(f.top, top));
   return f;
 }
+function isoLabel(g,x,y,z,t,dy=0){
+  const [sx,sy]=iso(x,y,z);
+  const n=svgEl('text');
+  n.setAttribute('x',sx.toFixed(1)); n.setAttribute('y',(sy+dy).toFixed(1));
+  n.setAttribute('class','part-label'); n.textContent=t; g.append(n);
+}
+function ribbon(g,a,b,c,d){
+  const A=iso(...a), B=iso(...b), C=iso(...c), D=iso(...d);
+  const p=svgEl('path');
+  p.setAttribute('d',`M${A[0].toFixed(1)} ${A[1].toFixed(1)}C${B[0].toFixed(1)} ${B[1].toFixed(1)},${C[0].toFixed(1)} ${C[1].toFixed(1)},${D[0].toFixed(1)} ${D[1].toFixed(1)}`);
+  p.setAttribute('class','fiber-ribbon'); g.append(p);
+}
+function drawBackground(){
+  const bg=$('bg-layer'); bg.replaceChildren();
+  const [cx,cy]=iso(330,0,170);
+  const floor=svgEl('ellipse');
+  Object.entries({cx, cy:cy+26, rx:200, ry:15, class:'shadow-plate'}).forEach(([k,v])=>floor.setAttribute(k,v));
+  bg.append(floor);
+}
 function partGroup(id){
   const g=svgEl('g');
   g.id=id; g.classList.add('part'); g.dataset.id=id;
@@ -68,116 +87,97 @@ function partGroup(id){
   g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPart(id)}});
   return g;
 }
-function drawBackground(){
-  const bg=$('bg-layer'); bg.replaceChildren();
-  const floor=svgEl('ellipse');
-  floor.setAttribute('cx','600'); floor.setAttribute('cy','258');
-  floor.setAttribute('rx','430'); floor.setAttribute('ry','18');
-  floor.setAttribute('class','shadow-plate'); bg.append(floor);
-  const guide=svgEl('g'); guide.setAttribute('class','guide');
-  const line=svgEl('path'); line.setAttribute('d','M50 268H1120'); guide.append(line); bg.append(guide);
-  const left=svgEl('text'); left.setAttribute('x','70'); left.setAttribute('y','284'); left.setAttribute('class','end-label'); left.textContent='OPTICAL'; bg.append(left);
-  const right=svgEl('text'); right.setAttribute('x','960'); right.setAttribute('y','284'); right.setAttribute('class','end-label'); right.textContent='ELECTRICAL'; bg.append(right);
-}
 function drawParts(){
   drawBackground();
   const layer=$('parts-layer'), calls=$('callouts');
   layer.replaceChildren(); calls.replaceChildren();
-  const housing=partGroup('housing');
-  addBox(housing, 48,0,6, 760,10, 92, 'metal-top','metal-front','metal-side');
-  addBox(housing, 48,10,90, 760,28, 8, 'metal-top','metal-front','metal-side');
-  addBox(housing, 48,10,6, 14,22, 84, 'metal-top','metal-front','metal-side');
-  addBox(housing, 790,10,6, 18,16, 84, 'metal-top','metal-front','metal-side');
-  [[70,4,18],[70,4,78],[780,4,18],[780,4,78]].forEach(([x,y,z])=>{
-    const hole=svgEl('ellipse'); const p=iso(x,y,z);
-    hole.setAttribute('cx',p[0]); hole.setAttribute('cy',p[1]); hole.setAttribute('rx','5'); hole.setAttribute('ry','3.2');
-    hole.setAttribute('class','hole'); housing.append(hole);
-  });
+  const SX=210, SZ=50, SW=240, SD=240, SH=8;
+  const AX=285, AZ=125, AW=90, AD=90, AH=16, AY=SH;
+  const engines=[
+    {x:268,y:SH,z:256,w:36,h:10,d:18,side:'n'},
+    {x:356,y:SH,z:256,w:36,h:10,d:18,side:'n'},
+    {x:226,y:SH,z:138,w:18,h:10,d:36,side:'w'},
+    {x:226,y:SH,z:196,w:18,h:10,d:36,side:'w'},
+    {x:416,y:SH,z:138,w:18,h:10,d:36,side:'e'},
+    {x:416,y:SH,z:196,w:18,h:10,d:36,side:'e'},
+    {x:268,y:SH,z:66,w:36,h:10,d:18,side:'s'},
+    {x:356,y:SH,z:66,w:36,h:10,d:18,side:'s'}
+  ];
   const substrate=partGroup('substrate');
-  addBox(substrate, 64,7,14, 722,3, 72, 'pcb-top','pcb-front','pcb-side');
-  for(let i=0;i<14;i++){
-    addBox(substrate, 786,7.4, 18+i*4.6, 46,1.1, 3.2, 'gold-face','gold-face','gold-face');
-  }
-  const traces=svgEl('g'); traces.setAttribute('class','trace'); traces.style.pointerEvents='none';
-  [[180,10,50, 420,10,50],[180,10,70, 420,10,70],[520,10,40, 780,10,28],[520,10,78, 780,10,78]].forEach(([x1,y1,z1,x2,y2,z2])=>{
-    const a=iso(x1,y1,z1), b=iso(x2,y2,z2);
-    const p=svgEl('path'); p.setAttribute('d',`M${a[0]} ${a[1]}L${b[0]} ${b[1]}`); p.setAttribute('class','trace'); traces.append(p);
+  addBox(substrate, SX,0,SZ, SW,SH,SD, 'pcb-top','pcb-front','pcb-side');
+  addBox(substrate, AX-2,7.2,AZ-2, AW+4,1.2,AD+4, 'gold-face','gold-face','gold-face');
+  engines.forEach(e=>{
+    const a=iso(AX+AW/2, 8.3, AZ+AD/2), b=iso(e.x+e.w/2, 8.3, e.z+e.d/2);
+    const p=svgEl('path'); p.setAttribute('d',`M${a[0].toFixed(1)} ${a[1].toFixed(1)}L${b[0].toFixed(1)} ${b[1].toFixed(1)}`);
+    p.setAttribute('class','trace'); substrate.append(p);
   });
-  substrate.append(traces);
-  const optics=partGroup('optics');
-  addBox(optics, 118,10,28, 36,14, 44, 'can-top','can-front','can-side');
-  const lens1=svgEl('ellipse'); const lp=iso(118,17,50);
-  lens1.setAttribute('cx',lp[0]); lens1.setAttribute('cy',lp[1]); lens1.setAttribute('rx','10'); lens1.setAttribute('ry','16');
-  lens1.setAttribute('class','lens'); optics.append(lens1);
-  const laser=partGroup('laser');
-  addBox(laser, 162,10,18, 100,22, 26, 'can-top','can-front','can-side');
-  addBox(laser, 256,14,24, 18,12, 14, 'gold-face','gold-face','gold-face');
-  const receiver=partGroup('receiver');
-  addBox(receiver, 162,10,54, 100,22, 26, 'can-top','can-front','can-side');
-  addBox(receiver, 256,14,60, 18,12, 14, 'gold-face','gold-face','gold-face');
-  const dsp=partGroup('dsp');
-  addBox(dsp, 430,10,30, 118,6, 40, 'chip-top','chip-front','metal-side');
-  for(let i=0;i<11;i++){
-    addBox(dsp, 436+i*10, 9.2, 28, 4, 1.4, 2, 'pin','pin','pin');
-    addBox(dsp, 436+i*10, 9.2, 70, 4, 1.4, 2, 'pin','pin','pin');
-  }
-  const mark=svgEl('text'); const mp=iso(458,15,50);
-  mark.setAttribute('x',mp[0]); mark.setAttribute('y',mp[1]); mark.setAttribute('class','part-label'); mark.setAttribute('font-size','9'); mark.textContent='DSP'; dsp.append(mark);
-  const connector=partGroup('connector');
-  const tab=svgEl('path');
-  const t1=iso(6,22,36), t2=iso(6,22,62), t3=iso(-18,34,62), t4=iso(-18,34,36);
-  tab.setAttribute('d',`M${t1[0]} ${t1[1]}L${t2[0]} ${t2[1]}L${t3[0]} ${t3[1]}L${t4[0]} ${t4[1]}Z`);
-  tab.setAttribute('class','pull'); connector.append(tab);
-  addBox(connector, 28,10,24, 78,16, 20, 'metal-top','metal-front','metal-side');
-  addBox(connector, 28,10,58, 78,16, 20, 'metal-top','metal-front','metal-side');
-  [[28,18,34],[28,18,68]].forEach(([x,y,z])=>{
-    const hole=svgEl('ellipse'); const p=iso(x,y,z);
-    hole.setAttribute('cx',p[0]); hole.setAttribute('cy',p[1]); hole.setAttribute('rx','7'); hole.setAttribute('ry','6');
-    hole.setAttribute('class','ferrule'); connector.append(hole);
+  isoLabel(substrate, SX+18, 2, SZ+10, '共基板');
+  const els=partGroup('els');
+  addBox(els, 28,0,110, 86,22,58, 'els-top','els-front','els-side');
+  isoLabel(els, 40, 24, 138, '外置 ELS');
+  ribbon(els, [114,14,140], [150,16,140], [200,12,145], [226,14,156]);
+  const engine=partGroup('engine');
+  engines.forEach(e=>addBox(engine, e.x,e.y,e.z,e.w,e.h,e.d, 'engine-top','engine-front','engine-side'));
+  isoLabel(engine, 360, 22, 270, '光引擎');
+  const asic=partGroup('asic');
+  addBox(asic, AX,AY,AZ, AW,AH,AD, 'asic-top','asic-front','asic-side');
+  isoLabel(asic, AX+14, AY+AH+2, AZ+AD/2, 'Switch ASIC');
+  const fiber=partGroup('fiber');
+  engines.forEach(e=>{
+    const fa=e.side==='s'?{x:e.x+8,y:e.y+2,z:e.z-10,w:20,h:6,d:10}
+      :e.side==='n'?{x:e.x+8,y:e.y+2,z:e.z+e.d,w:20,h:6,d:10}
+      :e.side==='w'?{x:e.x-10,y:e.y+2,z:e.z+8,w:10,h:6,d:20}
+      :{x:e.x+e.w,y:e.y+2,z:e.z+8,w:10,h:6,d:20};
+    addBox(fiber, fa.x,fa.y,fa.z,fa.w,fa.h,fa.d, 'can-top','can-front','can-side');
+    const mx=fa.x+fa.w/2, my=fa.y+fa.h, mz=fa.z+fa.d/2;
+    if(e.side==='s') ribbon(fiber,[mx,my,fa.z],[mx,my-6,fa.z-24],[mx-20,4,fa.z-48],[mx-70,18,fa.z-70]);
+    else if(e.side==='n') ribbon(fiber,[mx,my,fa.z+fa.d],[mx+10,my+8,fa.z+fa.d+24],[mx+40,20,fa.z+fa.d+50],[mx+90,28,fa.z+fa.d+70]);
+    else if(e.side==='w') ribbon(fiber,[fa.x,my,mz],[fa.x-24,my-4,mz-10],[fa.x-50,8,mz-20],[fa.x-80,16,mz-40]);
+    else ribbon(fiber,[fa.x+fa.w,my,mz],[fa.x+fa.w+28,my+4,mz+8],[fa.x+fa.w+60,10,mz+16],[fa.x+fa.w+95,22,mz+28]);
   });
+  isoLabel(fiber, 430, 8, 40, 'FA／光纖');
+  const foundry=partGroup('foundry');
+  foundry.append(poly(boxFaces(548,-4,78,118,36,88).top, 'inset-frame'));
+  addBox(foundry, 562,0,92, 88,7,64, 'chip-top','chip-front','metal-side');
+  addBox(foundry, 576,7,104, 58,11,40, 'asic-top','asic-front','asic-side');
+  isoLabel(foundry, 554, 24, 88, '製程放大');
+  isoLabel(foundry, 580, 4, 100, 'PIC', 20);
+  isoLabel(foundry, 584, 20, 118, 'EIC', -10);
+  const lid=partGroup('lid');
+  addBox(lid, 236,161,150, 150,5,140, 'lid-ghost','lid-front','lid-side');
+  isoLabel(lid, 250, 169, 180, '懸浮散熱蓋');
   const assembly=partGroup('assembly');
-  const outline=boxFaces(18,-6,-4, 830,40, 112);
-  const dash=poly([...outline.top.slice(0,2), ...outline.side.slice(1,3), outline.left[1], outline.left[0]], 'assembly-box');
-  dash.setAttribute('d', `M${iso(18,34,-4).join(' ')}L${iso(848,34,-4).join(' ')}L${iso(848,34,108).join(' ')}L${iso(18,34,108).join(' ')}Z`);
-  assembly.append(dash);
-  const bottom=svgEl('path');
-  bottom.setAttribute('d', `M${iso(18,-6,-4).join(' ')}L${iso(848,-6,-4).join(' ')}L${iso(848,-6,108).join(' ')}L${iso(18,-6,108).join(' ')}Z`);
-  bottom.setAttribute('class','assembly-box'); assembly.append(bottom);
-  [housing, substrate, optics, laser, receiver, dsp, connector, assembly].forEach(g=>layer.append(g));
+  assembly.append(
+    poly([iso(198,34,38), iso(458,34,38), iso(458,34,298), iso(198,34,298)], 'assembly-box'),
+    poly([iso(198,-5,38), iso(458,-5,38), iso(458,-5,298), iso(198,-5,298)], 'assembly-box')
+  );
+  [substrate, els, engine, asic, fiber, foundry, lid, assembly].forEach(g=>layer.append(g));
   const labels={
-    housing:[iso(420,40,96)[0], iso(420,40,96)[1]-36, '外殼'],
-    connector:[iso(-10,38,48)[0], iso(-10,38,48)[1]-18, '光口'],
-    optics:[iso(130,28,50)[0], iso(130,28,50)[1]-42, '耦光'],
-    laser:[iso(200,30,20)[0], iso(200,30,20)[1]-38, '雷射'],
-    receiver:[iso(210,8,80)[0]+40, iso(210,8,80)[1]+48, '接收'],
-    dsp:[iso(490,18,50)[0], iso(490,18,50)[1]-46, 'DSP'],
-    substrate:[iso(360,6,14)[0], iso(360,6,14)[1]+52, 'PCB'],
-    assembly:[iso(860,20,50)[0]+20, iso(860,20,50)[1]-10, '組裝']
+    lid:[iso(236,169,150)[0], iso(236,169,150)[1]-16],
+    asic:[iso(AX+AW/2,AY+AH,AZ+AD/2)[0]+6, iso(AX+AW/2,AY+AH,AZ+AD/2)[1]-34],
+    engine:[iso(434,22,214)[0]+22, iso(434,22,214)[1]-26],
+    fiber:[iso(374,12,56)[0]+8, iso(374,12,56)[1]+34],
+    els:[iso(28,24,110)[0]-4, iso(28,24,110)[1]-20],
+    substrate:[iso(210,0,50)[0]-6, iso(210,0,50)[1]+30],
+    foundry:[iso(640,28,140)[0]+18, iso(640,28,140)[1]-18],
+    assembly:[iso(450,0,50)[0]+72, iso(450,0,50)[1]+34]
   };
   const anchors={
-    housing: iso(420,28,96),
-    connector: iso(20,18,34),
-    optics: iso(136,24,50),
-    laser: iso(208,26,22),
-    receiver: iso(208,10,78),
-    dsp: iso(490,14,50),
-    substrate: iso(400,8,18),
-    assembly: iso(848,20,50)
+    lid:iso(310,163,220), asic:iso(AX+AW/2,AY+AH,AZ+AD/2), engine:iso(434,18,214),
+    fiber:iso(374,12,56), els:iso(70,22,140), substrate:iso(250,0,60),
+    foundry:iso(620,18,120), assembly:iso(440,8,70)
   };
-  REQUIRED.forEach((id,index)=>{
-    const n=svgEl('g'); n.classList.add('callout');
-    const [cx,cy,caption]=labels[id];
-    const [ax,ay]=anchors[id];
-    const line=svgEl('path'); line.setAttribute('d',`M${ax} ${ay}L${cx} ${cy}`); line.setAttribute('class','callout-line');
-    const circle=svgEl('circle'); circle.setAttribute('cx',cx); circle.setAttribute('cy',cy); circle.setAttribute('r','13');
-    circle.setAttribute('class','callout-num'); circle.dataset.id=id; circle.setAttribute('tabindex','0');
-    circle.setAttribute('role','button'); circle.setAttribute('aria-label',`選擇${component(id)?.title||id}`);
-    circle.setAttribute('aria-pressed', String(state.selected===id));
-    const nt=svgEl('text'); nt.setAttribute('x',cx); nt.setAttribute('y',cy); nt.setAttribute('class','callout-num-text'); nt.textContent=index+1;
-    const cap=svgEl('text'); cap.setAttribute('x', cx+16); cap.setAttribute('y', cy+4); cap.setAttribute('class','callout-caption'); cap.textContent=caption;
-    circle.addEventListener('click',e=>{e.stopPropagation();selectPart(id)});
-    circle.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPart(id)}});
-    n.append(line, circle, nt, cap); calls.append(n);
+  REQUIRED.forEach((id,i)=>{
+    const g=svgEl('g'); g.classList.add('callout');
+    const [x,y]=labels[id], [ax,ay]=anchors[id];
+    const line=svgEl('path'); line.setAttribute('d',`M${ax.toFixed(1)} ${ay.toFixed(1)}L${x.toFixed(1)} ${y.toFixed(1)}`); line.setAttribute('class','callout-line');
+    const c=svgEl('circle');
+    Object.entries({cx:x,cy:y,r:13,tabindex:0,role:'button','aria-label':component(id).title,class:'callout-num'}).forEach(([k,v])=>c.setAttribute(k,v));
+    c.dataset.id=id;
+    c.addEventListener('click',()=>selectPart(id));
+    c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPart(id)}});
+    const t=svgEl('text'); t.setAttribute('x',x); t.setAttribute('y',y); t.setAttribute('class','callout-num-text'); t.textContent=i+1;
+    g.append(line,c,t); calls.append(g);
   });
 }
 function statusLabel(status){
@@ -210,8 +210,7 @@ function renderChain(id){
       if(tw.length) cos.append(el('div','', '台股：'+tw.map(s=>`${s.name}${s.ticker?` ${s.ticker}`:''}`).join('、')));
       if(glob.length) cos.append(el('div','', '全球：'+glob.map(s=>s.name).join('、')));
       if(!firms.length) cos.append(el('div','', '公司未確認'));
-      stage.append(cos);
-      if(st.source_ids?.length) stage.append(sourceLinks(st.source_ids));
+      stage.append(cos); if(st.source_ids?.length) stage.append(sourceLinks(st.source_ids));
       stage.append(el('span',`badge ${st.status||''}`, statusLabel(st.status)));
       row.append(stage);
     });
@@ -286,7 +285,7 @@ function renderSuppliers(){
       share.append(el('div','supplier-meta', `分母：${m.denominator} · ${m.period}`));
     } else {
       share.append(el('span','unconfirmed', isHistorical
-        ? `歷史公司自估：約 ${m.value}% · ${m.period} · ${m.geography} · ${m.denominator}。${m.note||''}${componentId&&!(m.component_ids||[]).includes(componentId)?' 此為其他產品的歷史資料，本零件市占未確認。':''}`
+        ? `歷史公司自估：約 ${m.value}% · ${m.period} · ${m.geography} · ${m.denominator}。${m.note||''}`
         : '市占未確認（不以缺失資料推算）'));
     }
     if(applies&&m?.note&&!isHistorical){ share.append(el('p','share-note', m.note)); }
@@ -323,18 +322,18 @@ function render(){
   $('data-status').textContent='已連線'; $('data-asof').textContent=`截至 ${escDate(state.data.as_of)}`;
 }
 async function load(){
-  setState('正在載入光通模組資料…'); $('retry').hidden=true;
+  setState('正在載入CPO 資料…'); $('retry').hidden=true;
   $('supplier-grid').replaceChildren(); $('component-buttons').replaceChildren(); $('sources-content').replaceChildren();
   $('supplier-count').textContent='';
   try {
-    const r=await fetch('./data/optical-module.json',{cache:'no-store'});
+    const r=await fetch('./data/cpo.json',{cache:'no-store'});
     if(!r.ok) throw new Error(`HTTP ${r.status}`);
     const d=await r.json();
     if(!validData(d)) throw new Error('資料格式不完整');
     state.data=d; render();
   } catch(e) {
     $('module-workspace').hidden=true;
-    setState(`無法載入資料：${e.message}。請確認 data/optical-module.json。`, true);
+    setState(`無法載入資料：${e.message}。請確認 data/cpo.json。`, true);
     $('data-status').textContent='載入失敗'; $('data-asof').textContent='來源未確認'; $('retry').hidden=false;
   }
 }

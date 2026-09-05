@@ -1,0 +1,910 @@
+{
+  "as_of": "2026-09-05",
+  "scope": "共封裝光學（CPO）教學剖視：交換器／運算 ASIC 與光引擎同基板，外部遠端雷射模組；不是可插拔光模組 BOM，也不是 NPO／OBO 混圖。",
+  "limitations": [
+    "教學示意，不是 Broadcom Bailly 或任何一家的精確 BOM。",
+    "可插拔模組、OBO／NPO、CPO、光學 I/O 距離 ASIC 不同，不能互推供應商。",
+    "產品角色確認不是已驗證客戶供應關係。",
+    "沒有同口徑分母就不填市占。",
+    "聯亞、英特磊官方頁僅一般磊晶能力，不能當成已確認 CPO／ELS 產品。"
+  ],
+  "chain_notes": [
+    "遠端雷射模組在封裝外，可現場更換；不把磊晶廠寫成 ELS 整機廠。",
+    "光引擎含 PIC 與 EIC，Foundry 平台不是光引擎品牌。"
+  ],
+  "sources": [
+    {
+      "id": "src-broadcom-bailly-2024",
+      "title": "Broadcom Delivers Industry’s First 51.2-Tbps Co-Packaged Optics Ethernet Switch Platform",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-delivers-industrys-first-512-tbps-co-packaged-optics",
+      "published": "2024-03-14",
+      "accessed": "2026-09-05",
+      "quote": "The product integrates eight silicon photonics based 6.4-Tbps optical engines with Broadcom’s best-in-class StrataXGS® Tomahawk®5 switch chip."
+    },
+    {
+      "id": "src-broadcom-scale-2024",
+      "title": "How to scale the optical interconnect using Co-Packaged Optics (CPO)",
+      "url": "https://www.broadcom.com/company/news/articles/ai-infrastructure/how-to-scale-the-optical-interconnect-using-co-packaged-optics-cpo",
+      "published": "2024-04-10",
+      "accessed": "2026-09-05",
+      "quote": "All of the 128 optical modules (denoted by the blue tabs) surrounding the table collapse into eight 6.4 Tbps optical engines co-packaged on a common substrate with a 51.2 Tbps Tomahawk® 5 switch ASIC."
+    },
+    {
+      "id": "src-broadcom-cadence-2023",
+      "title": "Broadcom's persistent cadence of co-packaged optics innovation",
+      "url": "https://www.broadcom.com/company/news/articles/ai-infrastructure/broadcoms-persistent-cadence-copackaged-optics-innovation",
+      "published": "2023-03-01",
+      "accessed": "2026-09-05",
+      "quote": "Each optical engine uses only two pieces of silicon – a PIC and an EIC packaged together at wafer scale pitch matched to the SerDes bumps inside the Tomahawk® 4."
+    },
+    {
+      "id": "src-foci-relfacon",
+      "title": "FOCI releases advanced new CPO connector：ReLFACon™",
+      "url": "https://www.foci.com.tw/en-gb/ReLFACon_news",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "The ReLFAConTM product is to install the optical fiber array connector in the silicon photonics co-packaged optics (CPO) component to complete complex tasks such as high-speed transmission and high-performance computing and accelerate the market's demand for silicon photonics-based transmission architecture."
+    },
+    {
+      "id": "src-tsmc-epic-2024",
+      "title": "EPIC-BOE: An Electronic-Photonic Chiplet Integration Technology with IC Processes for Broadband Optical Engine Applications",
+      "url": "https://research.tsmc.com/page/interconnect/25.html",
+      "published": "2024",
+      "accessed": "2026-09-05",
+      "quote": "We propose first full integration technology for Broadband Optical Engine (BOE) applications from fiber to CoWoS system by leveraging TSMC 3DFabricTM and IC processes forming compact CPO achieving GAI system PPA enhancement."
+    },
+    {
+      "id": "src-ase-cpo-2025",
+      "title": "ASE Demonstrates CPO that Improves Energy Efficiency for AI applications",
+      "url": "https://www.aseglobal.com/press-room/ase-demonstrates-cpo-for-ai-applications",
+      "published": "2025-04-01",
+      "accessed": "2026-09-05",
+      "quote": "ASE's CPO solves the assembly challenge of multiple optical engines with an ASIC in an integrated package with a large body configuration of >75mm X 75mm."
+    },
+    {
+      "id": "src-lmoc-epi",
+      "title": "LandMark Optoelectronics Data center products",
+      "url": "https://www.lmoc.com.tw/index.php?id=110&index=2&lang=en&option=module&task=pageinfo",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "High Power CW laser Epiwafer"
+    },
+    {
+      "id": "src-iet-products",
+      "title": "英特磊產品介紹",
+      "url": "https://www.intelliepi.com.tw/products.html",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "高速高頻的面射型雷射（VCSEL），光接收器（PIN），雪崩式光接收器（APD）及各種不同波長半導體雷射磊晶片，主要應用在光纖通訊與資料傳輸領域。"
+    },
+    {
+      "id": "src-furukawa-dfb-2022",
+      "title": "Furukawa Electric high-output 100mW DFB laser diode chip",
+      "url": "https://www.furukawaelectric.com/en/release/2022/comm_202200916.html",
+      "published": "2022-09-16",
+      "accessed": "2026-09-05",
+      "quote": "Many of these transceivers are equipped with DFB laser diode chips, providing a single-wavelength, high output power light source."
+    },
+    {
+      "id": "src-browave-parts",
+      "title": "Browave Optical Parts",
+      "url": "https://www.browave.com/product/category/44",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "Browave’s Fiber Array can be composed by several of substrate material as Glass, Quartz or Silicon"
+    },
+    {
+      "id": "src-lumentum-elsfp",
+      "title": "External Laser Source (ELS) Module with Ultra-High-Power Laser",
+      "url": "https://www.lumentum.com/en/products/external-laser-source-els-module-ultra-high-power-laser",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "provides a centralized, serviceable light source for co-packaged optics (CPO) systems in AI and cloud data centers."
+    },
+    {
+      "id": "src-coherent-els-ofc2026",
+      "title": "Coherent Demonstrates Multiple Co-Packaged Optics (CPO) Technologies at OFC 2026",
+      "url": "https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026",
+      "published": "2026-03-17",
+      "accessed": "2026-09-05",
+      "quote": "Demonstrations include a 6.4T (32×200G) socketed CPO based on silicon photonics, paired with Coherent’s External Laser Source (ELS) module powered by its own high-power InP CW lasers"
+    },
+    {
+      "id": "src-jentech-thermal",
+      "title": "健策 官方熱管理產品／年報",
+      "url": "https://www.jentech.com.tw/zh/vapor-chamber-lid-2",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "健策微通道散熱蓋 (MC Lid)針對高功率晶片環境進行精密工程設計。"
+    },
+    {
+      "id": "src-auras-thermal",
+      "title": "雙鴻 官方熱管理產品／年報",
+      "url": "https://www.auras.com.tw/CMSFS/Shareholders/FinancialAnnualChinese/ed4475a3-db60-455c-9ce9-93699a2fe601.pdf",
+      "published": "2025-03-18",
+      "accessed": "2026-09-05",
+      "quote": "水冷散熱：提供客製化液冷解決方案"
+    },
+    {
+      "id": "src-avc-thermal",
+      "title": "奇鋐 官方熱管理產品／年報",
+      "url": "https://www.avc.co/zh-tw/ProductTechnology/%E6%95%A3%E7%86%B1%E7%94%A2%E5%93%81",
+      "published": null,
+      "accessed": "2026-09-05",
+      "quote": "遠端熱交換器(熱管式及水冷式)"
+    }
+  ],
+  "components": [
+    {
+      "id": "lid",
+      "title": "蓋板／散熱",
+      "subtitle": "封裝上蓋、TIM 與系統風冷／液冷路徑",
+      "role": "保護光引擎並把 ASIC 熱帶走。Broadcom 公開的是 4RU 系統風冷，不是蓋板供應商品牌。",
+      "signal": "熱必須離開封裝，光才穩得住",
+      "chain": [
+        "蓋板與 TIM",
+        "系統風道／液冷",
+        "可靠度"
+      ],
+      "architecture_note": "散熱路徑取決於封裝與系統設計，不能從 AI 晶片冷板產品推定 CPO 客戶關係，也不能聲稱所有 CPO 已全面液冷。以下分開封裝蓋板與系統散熱。",
+      "supplier_ids": [
+        "jentech",
+        "auras",
+        "avc"
+      ],
+      "source_ids": [
+        "src-broadcom-bailly-2024",
+        "src-ase-cpo-2025",
+        "src-jentech-thermal",
+        "src-auras-thermal",
+        "src-avc-thermal"
+      ],
+      "chains": [
+        {
+          "id": "thermal",
+          "title": "熱管理：不同層級，非客戶交易鏈",
+          "note": "官方產品可確認，特定 CPO 供貨仍未確認。圖中只畫示意上蓋，不表示這些公司的精確零件。",
+          "stages": [
+            {
+              "id": "lid",
+              "title": "封裝散熱蓋（相鄰）",
+              "description": "微通道散熱蓋（MC Lid）與 VC Lid，官方定位 AI 加速器／HPC。是封裝熱管理相鄰產品能力，不是已確認 Bailly 供應商。",
+              "supplier_ids": [
+                "jentech"
+              ],
+              "source_ids": [
+                "src-jentech-thermal"
+              ],
+              "status": "adjacent"
+            },
+            {
+              "id": "system",
+              "title": "系統冷板／熱交換（延伸）",
+              "description": "雙鴻有水冷板及 CDU；奇鋐此來源證明水冷式熱交換等能力，不據此推定具名 CPO 冷板。",
+              "supplier_ids": [
+                "auras",
+                "avc"
+              ],
+              "source_ids": [
+                "src-auras-thermal",
+                "src-avc-thermal"
+              ],
+              "status": "adjacent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asic",
+      "title": "交換／運算 ASIC",
+      "subtitle": "Switch、XPU 或客製邏輯",
+      "role": "高速 SerDes 直接驅動光引擎，減少長走線與 retimer。",
+      "signal": "電訊號在封裝內走最短路",
+      "chain": [
+        "交換／運算 ASIC",
+        "SerDes／PHY",
+        "與光引擎凸塊對位"
+      ],
+      "architecture_note": "Broadcom Bailly 用 Tomahawk 5。運算 CPO 可改為 GPU／XPU，本圖用交換器當教學基準。",
+      "supplier_ids": [
+        "broadcom"
+      ],
+      "source_ids": [
+        "src-broadcom-bailly-2024",
+        "src-broadcom-cadence-2023"
+      ],
+      "chains": [
+        {
+          "id": "switch",
+          "title": "交換器 ASIC",
+          "note": "運算 CPO 可換成 XPU，不在本圖展開。",
+          "stages": [
+            {
+              "id": "silicon",
+              "title": "交換晶片",
+              "description": "Tomahawk 5 51.2T。",
+              "supplier_ids": [
+                "broadcom"
+              ],
+              "source_ids": [
+                "src-broadcom-bailly-2024"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engine",
+      "title": "光引擎",
+      "subtitle": "PIC + EIC 光學引擎",
+      "role": "把電轉成光、把光轉成電。Bailly 是八顆 6.4T 引擎，與 ASIC 同基板。",
+      "signal": "封裝邊緣的光電轉換",
+      "chain": [
+        "PIC 矽光晶片",
+        "EIC（含 TIA 等）",
+        "晶圓級接合"
+      ],
+      "architecture_note": "光引擎不是可插拔 DSP 模組。Broadcom 寫每顆引擎只有 PIC 與 EIC 兩片矽。Foundry 平台不列為光引擎品牌。",
+      "supplier_ids": [
+        "broadcom"
+      ],
+      "source_ids": [
+        "src-broadcom-bailly-2024",
+        "src-broadcom-cadence-2023"
+      ],
+      "chains": [
+        {
+          "id": "oe",
+          "title": "光引擎",
+          "note": "PIC 與 EIC 是兩片矽。",
+          "stages": [
+            {
+              "id": "pic-eic",
+              "title": "PIC + EIC",
+              "description": "Broadcom 光引擎；台積電是製程平台，不列此階段。",
+              "supplier_ids": [
+                "broadcom"
+              ],
+              "source_ids": [
+                "src-broadcom-cadence-2023"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "attach",
+              "title": "與 ASIC 共基板",
+              "description": "八顆引擎環繞交換器是 Bailly 公開結構。",
+              "supplier_ids": [
+                "broadcom"
+              ],
+              "source_ids": [
+                "src-broadcom-scale-2024"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiber",
+      "title": "光纖耦接",
+      "subtitle": "可拆卸光纖陣列／CPO 連接器",
+      "role": "把光引擎接到單模光纖。Broadcom 用 BFC；上詮公開 ReLFACon。",
+      "signal": "光離開封裝",
+      "chain": [
+        "邊緣或表面耦光",
+        "可拆卸 FA／連接器",
+        "面板 LC／MPO"
+      ],
+      "architecture_note": "可拆連接器讓焊死的光引擎仍能換光纖。面板 LC 是系統側，不是封裝內零件。",
+      "supplier_ids": [
+        "broadcom",
+        "foci",
+        "browave"
+      ],
+      "source_ids": [
+        "src-broadcom-bailly-2024",
+        "src-foci-relfacon",
+        "src-browave-parts"
+      ],
+      "chains": [
+        {
+          "id": "fa",
+          "title": "CPO 光纖連接",
+          "note": "面板 LC 是系統 I/O。",
+          "stages": [
+            {
+              "id": "cpo-con",
+              "title": "封裝側連接器",
+              "description": "BFC 與 ReLFACon 都是 CPO 耦光元件，不是同一料號。",
+              "supplier_ids": [
+                "broadcom",
+                "foci"
+              ],
+              "source_ids": [
+                "src-broadcom-bailly-2024",
+                "src-foci-relfacon"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "fa",
+              "title": "光纖陣列（相鄰）",
+              "description": "波若威有 FA 產品，未主張特定 CPO 連接器。",
+              "supplier_ids": [
+                "browave"
+              ],
+              "source_ids": [
+                "src-browave-parts"
+              ],
+              "status": "adjacent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "els",
+      "title": "遠端雷射",
+      "subtitle": "RLM／ELS，封裝外可更換光源",
+      "role": "CPO 常用外置雷射，避免雷射與熱 ASIC 綁死。Broadcom 系統可支援多顆 RLM；Lumentum／Coherent 有官方 ELS 產品或展示。磊晶廠不是 ELS 整機。",
+      "signal": "光功率從外面送進引擎",
+      "chain": [
+        "III-V 磊晶",
+        "雷射晶片",
+        "ELS／RLM 整機"
+      ],
+      "architecture_note": "Lumentum ELSFP 與 Coherent ELS 是官方 ELS 產品／展示，不是 Broadcom Bailly 具名供應商。聯亞、英特磊只有一般磊晶能力。",
+      "supplier_ids": [
+        "lumentum",
+        "coherent",
+        "lmoc",
+        "iet",
+        "furukawa"
+      ],
+      "source_ids": [
+        "src-broadcom-bailly-2024",
+        "src-lumentum-elsfp",
+        "src-coherent-els-ofc2026",
+        "src-lmoc-epi",
+        "src-iet-products",
+        "src-furukawa-dfb-2022"
+      ],
+      "chains": [
+        {
+          "id": "laser",
+          "title": "外置光源",
+          "note": "磊晶 ≠ ELS 整機。",
+          "stages": [
+            {
+              "id": "epi",
+              "title": "III-V 磊晶",
+              "description": "聯亞、英特磊官方磊晶產品，未主張 CPO／ELS 整機。",
+              "supplier_ids": [
+                "lmoc",
+                "iet"
+              ],
+              "source_ids": [
+                "src-lmoc-epi",
+                "src-iet-products"
+              ],
+              "status": "adjacent"
+            },
+            {
+              "id": "chip",
+              "title": "DFB 等雷射晶片",
+              "description": "古河公開高功率 DFB，應用在光模組光源，未直接寫 ELS 整機。",
+              "supplier_ids": [
+                "furukawa"
+              ],
+              "source_ids": [
+                "src-furukawa-dfb-2022"
+              ],
+              "status": "adjacent"
+            },
+            {
+              "id": "rlm",
+              "title": "RLM／ELS 整機",
+              "description": "Lumentum 官方 ELSFP 產品頁寫供 CPO；Coherent 官方展示 ELS 模組。Broadcom 只寫系統可換 RLM，未公布其雷射模組供應商。",
+              "supplier_ids": [
+                "lumentum",
+                "coherent"
+              ],
+              "source_ids": [
+                "src-lumentum-elsfp",
+                "src-coherent-els-ofc2026",
+                "src-broadcom-bailly-2024"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "substrate",
+      "title": "共同基板",
+      "subtitle": "有機基板／CoWoS 類先進封裝",
+      "role": "承載 ASIC 與多顆光引擎，決定電氣距離與翹曲。",
+      "signal": "封裝的地板",
+      "chain": [
+        "基板／中介層",
+        "凸塊與重佈線",
+        "翹曲與共面控制"
+      ],
+      "architecture_note": "TSMC 描述 fiber 到 CoWoS 的 compact CPO。ASE 示範 >75 mm 大型本體。兩者都是封裝平台，不是同一顆產品。",
+      "supplier_ids": [
+        "tsmc",
+        "ase"
+      ],
+      "source_ids": [
+        "src-tsmc-epic-2024",
+        "src-ase-cpo-2025",
+        "src-broadcom-scale-2024"
+      ],
+      "chains": [
+        {
+          "id": "pkg",
+          "title": "基板／先進封裝",
+          "note": "Foundry 與 OSAT 角色不同。",
+          "stages": [
+            {
+              "id": "cowos",
+              "title": "CoWoS／3DFabric 路徑",
+              "description": "台積電研究：fiber 到 CoWoS 的 compact CPO。",
+              "supplier_ids": [
+                "tsmc"
+              ],
+              "source_ids": [
+                "src-tsmc-epic-2024"
+              ],
+              "status": "product_role"
+            },
+            {
+              "id": "osat-sub",
+              "title": "大型有機基板組裝",
+              "description": "ASE 示範把多引擎裝上 >75 mm 基板。",
+              "supplier_ids": [
+                "ase"
+              ],
+              "source_ids": [
+                "src-ase-cpo-2025"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foundry",
+      "title": "PIC／EIC 製程",
+      "subtitle": "CMOS foundry 與矽光子平台",
+      "role": "做出光引擎裡的兩片矽。台積電公開 BOE／CPO 整合研究。Broadcom 是設計品牌、自稱使用 CMOS foundry，不是晶圓廠。",
+      "signal": "晶圓廠，不是終端模組廠",
+      "chain": [
+        "矽光子 PIC",
+        "EIC CMOS",
+        "SoIC／晶圓接合"
+      ],
+      "architecture_note": "COUPE／BOE 是平台路線，可服務可插拔或 CPO。本圖只在 CPO 語境使用，不倒推 OSFP 市占。",
+      "supplier_ids": [
+        "tsmc"
+      ],
+      "source_ids": [
+        "src-tsmc-epic-2024"
+      ],
+      "chains": [
+        {
+          "id": "si",
+          "title": "晶圓製程",
+          "note": "平台供應商不是終端品牌。",
+          "stages": [
+            {
+              "id": "cmos",
+              "title": "PIC／EIC 製程",
+              "description": "台積電公開矽光子與 BOE／compact CPO 整合。Broadcom 不列為 foundry。",
+              "supplier_ids": [
+                "tsmc"
+              ],
+              "source_ids": [
+                "src-tsmc-epic-2024"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "title": "CPO 組裝測試",
+      "subtitle": "多引擎上板、耦光、可靠度",
+      "role": "把 ASIC、光引擎、光纖連接做成可出貨封裝。",
+      "signal": "從晶片變成系統可插光纖的元件",
+      "chain": [
+        "光引擎上板",
+        "光纖陣列耦光",
+        "系統組裝與測試"
+      ],
+      "architecture_note": "Broadcom 強調自動化組裝。ASE 強調翹曲控制與水平／垂直耦光。系統廠組交換器不等於做 CPO 封裝。",
+      "supplier_ids": [
+        "broadcom",
+        "ase"
+      ],
+      "source_ids": [
+        "src-broadcom-scale-2024",
+        "src-ase-cpo-2025"
+      ],
+      "chains": [
+        {
+          "id": "build",
+          "title": "組裝測試",
+          "note": "系統組交換器 ≠ CPO 封裝。",
+          "stages": [
+            {
+              "id": "cpo-assy",
+              "title": "CPO 封裝",
+              "description": "多光引擎上板、耦光、測試。",
+              "supplier_ids": [
+                "broadcom",
+                "ase"
+              ],
+              "source_ids": [
+                "src-broadcom-scale-2024",
+                "src-ase-cpo-2025"
+              ],
+              "status": "product_role"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "broadcom",
+      "name": "Broadcom Inc.",
+      "ticker": "AVGO",
+      "exchange": "NASDAQ",
+      "country": "美國",
+      "role": "CPO 交換器平台：Tomahawk ASIC、6.4T SiPh 光引擎、Broadcom Fiber Connector，以及遠端雷射模組可更換的系統設計。不表示自製全部雷射晶片，也不是晶圓廠。",
+      "component_ids": [
+        "asic",
+        "engine",
+        "fiber",
+        "assembly"
+      ],
+      "source_ids": [
+        "src-broadcom-bailly-2024",
+        "src-broadcom-scale-2024",
+        "src-broadcom-cadence-2023"
+      ],
+      "confidence": "官方產品角色已核對，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "untracked"
+    },
+    {
+      "id": "tsmc",
+      "name": "台積電",
+      "ticker": "2330",
+      "exchange": "TWSE",
+      "country": "台灣",
+      "role": "矽光子與先進封裝平台：官方研究描述 fiber 到 CoWoS 的 compact CPO／BOE 整合，不是光引擎自有品牌。",
+      "component_ids": [
+        "foundry",
+        "substrate"
+      ],
+      "source_ids": [
+        "src-tsmc-epic-2024"
+      ],
+      "confidence": "官方產品角色已核對，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.md"
+    },
+    {
+      "id": "ase",
+      "name": "日月光",
+      "ticker": "3711",
+      "exchange": "TWSE",
+      "country": "台灣",
+      "role": "CPO 組裝示範：把多顆光引擎直接裝上基板，官方稱 >75×75 mm 大型本體，並處理光纖陣列耦光的翹曲控制。不是交換器 ASIC 設計商。",
+      "component_ids": [
+        "assembly",
+        "substrate"
+      ],
+      "source_ids": [
+        "src-ase-cpo-2025"
+      ],
+      "confidence": "官方產品角色已核對，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3711_%E6%97%A5%E6%9C%88%E5%85%89.md"
+    },
+    {
+      "id": "foci",
+      "name": "上詮",
+      "ticker": "3363",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "CPO 光纖陣列連接器 ReLFACon：可耐回焊、8～128 通道，裝在矽光子共封裝元件上。",
+      "component_ids": [
+        "fiber"
+      ],
+      "source_ids": [
+        "src-foci-relfacon"
+      ],
+      "confidence": "官方產品角色已核對，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "untracked"
+    },
+    {
+      "id": "lumentum",
+      "name": "Lumentum",
+      "ticker": "LITE",
+      "exchange": "NASDAQ",
+      "country": "美國",
+      "role": "官方 ELSFP 產品頁：外置可插拔雷射模組，作為 CPO 系統的集中、可維修光源。不是 Broadcom Bailly 具名供應商。",
+      "component_ids": [
+        "els"
+      ],
+      "source_ids": [
+        "src-lumentum-elsfp"
+      ],
+      "confidence": "官方 ELS 產品角色已核對，非已驗證客戶供應，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "untracked"
+    },
+    {
+      "id": "coherent",
+      "name": "Coherent Corp.",
+      "ticker": "COHR",
+      "exchange": "NYSE",
+      "country": "美國",
+      "role": "官方展示 External Laser Source（ELS）模組，與 socketed CPO 搭配；另有 ELSFP 合規模組展示。不是 Broadcom Bailly 具名供應商。",
+      "component_ids": [
+        "els"
+      ],
+      "source_ids": [
+        "src-coherent-els-ofc2026"
+      ],
+      "confidence": "官方 ELS 展示已核對，非已驗證客戶供應，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "untracked"
+    },
+    {
+      "id": "lmoc",
+      "name": "聯亞光電",
+      "ticker": "3081",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "化合物磊晶片（含高功率 CW／矽光子用 DFB epi）。只有一般磊晶能力，不是已確認 CPO 或 ELS 整機。",
+      "component_ids": [
+        "els"
+      ],
+      "source_ids": [
+        "src-lmoc-epi"
+      ],
+      "confidence": "官方僅一般磊晶能力，未確認 CPO 產品角色，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3081_%E8%81%AF%E4%BA%9E.md"
+    },
+    {
+      "id": "iet",
+      "name": "英特磊科技（IET-KY）",
+      "ticker": "4971",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "III-V 磊晶，含雷射與 PIN／APD。官方未主張 CPO／ELS 整機，列為相鄰上游。",
+      "component_ids": [
+        "els"
+      ],
+      "source_ids": [
+        "src-iet-products"
+      ],
+      "confidence": "官方僅一般磊晶能力，未確認 CPO 產品角色，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/4971_IET-KY.md"
+    },
+    {
+      "id": "furukawa",
+      "name": "Furukawa Electric",
+      "ticker": "5801",
+      "exchange": "Tokyo Stock Exchange",
+      "country": "日本",
+      "role": "高輸出 DFB 雷射晶片，官方稱供光模組作單波長光源。對 CPO 遠端雷射是相鄰角色，本輪沒有 ELS 整機證據。",
+      "component_ids": [
+        "els"
+      ],
+      "source_ids": [
+        "src-furukawa-dfb-2022"
+      ],
+      "confidence": "官方產品為光模組 DFB，未確認 ELS／CPO，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "untracked"
+    },
+    {
+      "id": "browave",
+      "name": "波若威",
+      "ticker": "3163",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "光纖陣列與被動元件。可支援多通道 FA，本輪沒有 ReLFACon 等級 CPO 連接器官方主張，列為相鄰。",
+      "component_ids": [
+        "fiber"
+      ],
+      "source_ids": [
+        "src-browave-parts"
+      ],
+      "confidence": "官方僅一般 FA 產品，未確認 CPO 連接器，非投資評等",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_status": "tracked",
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3163_%E6%B3%A2%E8%8B%A5%E5%A8%81.md"
+    },
+    {
+      "id": "jentech",
+      "name": "健策",
+      "ticker": "3653",
+      "exchange": "TWSE",
+      "country": "台灣",
+      "role": "微通道散熱蓋（MC Lid）與 VC Lid，官方定位 AI 加速器／HPC。是封裝熱管理相鄰產品能力，不是已確認 Bailly 供應商。",
+      "component_ids": [
+        "lid"
+      ],
+      "source_ids": [
+        "src-jentech-thermal"
+      ],
+      "confidence": "官方產品能力確認；CPO供貨關係未確認（相鄰／延伸）",
+      "research_status": "tracked",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3653_%E5%81%A5%E7%AD%96.md"
+    },
+    {
+      "id": "auras",
+      "name": "雙鴻",
+      "ticker": "3324",
+      "exchange": "TPEx",
+      "country": "台灣",
+      "role": "113年度年報揭露水冷板、分歧管與 CDU。屬系統液冷延伸環節，不是封裝蓋板或已確認 CPO 客戶關係。",
+      "component_ids": [
+        "lid"
+      ],
+      "source_ids": [
+        "src-auras-thermal"
+      ],
+      "confidence": "官方產品能力確認；CPO供貨關係未確認（相鄰／延伸）",
+      "research_status": "tracked",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3324_%E9%9B%99%E9%B4%BB.md"
+    },
+    {
+      "id": "avc",
+      "name": "奇鋐",
+      "ticker": "3017",
+      "exchange": "TWSE",
+      "country": "台灣",
+      "role": "官方產品頁列液體冷卻、水冷式遠端熱交換器、風扇及熱管／熱板。只證明系統熱管理能力，該頁未確認特定 CPO 冷板供貨。",
+      "component_ids": [
+        "lid"
+      ],
+      "source_ids": [
+        "src-avc-thermal"
+      ],
+      "confidence": "官方產品能力確認；CPO供貨關係未確認（相鄰／延伸）",
+      "research_status": "tracked",
+      "market_share": {
+        "status": "unconfirmed",
+        "value": null,
+        "denominator": "",
+        "geography": "",
+        "period": "",
+        "source_ids": [],
+        "note": "未取得可比較公開產品市占"
+      },
+      "research_url": "https://github.com/RainWu0123/StockTW/blob/main/research/3017_%E5%A5%87%E9%8B%90.md"
+    }
+  ]
+}
