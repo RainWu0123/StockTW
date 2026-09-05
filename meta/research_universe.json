@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_from": "INDEX.md",
-  "generated_at": "2026-08-25",
+  "generated_at": "2026-09-05",
   "stocks": [
     {
       "code": "1101",
@@ -2056,6 +2056,25 @@
         "記憶體",
         "手機"
       ]
+    },
+    {
+      "code": "3363",
+      "name": "上詮",
+      "research_path": "research/3363_上詮.md",
+      "entity_path": "entities/3363_上詮.md",
+      "required_maturity": 60,
+      "status": "active",
+      "themes": [
+        "CPO",
+        "矽光子",
+        "光通訊",
+        "光模組",
+        "FAU"
+      ],
+      "target_base": null,
+      "confidence": "中低",
+      "last_verified": "2026-09-05",
+      "research_maturity": 60
     }
   ]
 }
