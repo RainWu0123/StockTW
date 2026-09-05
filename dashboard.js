@@ -1,7 +1,9 @@
+import { renderCharts, buckets, inBucket } from './dashboard-charts.js?v=charts-dark-1';
+
 (() => {
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
-  const state = { stocks: [], view: 'all', period: 'day', favorites: new Set(), lastFocus: null, generation: 0 };
+  const state = { stocks: [], view: 'all', period: 'day', favorites: new Set(), lastFocus: null, generation: 0, range: '', metric: 'day', expanded: false };
   const number = value => typeof value === 'number' && Number.isFinite(value) ? value : null;
   const display = value => value === undefined || value === null || value === '' ? '未提供' : String(value);
   const nf = new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 2 });
@@ -18,6 +20,22 @@
   const text = (selector, value) => { $(selector).textContent = display(value); };
   const percent = value => number(value) === null ? '未提供' : `${value > 0 ? '+' : ''}${value.toFixed(2)}%`;
   const direction = value => number(value) === null || value === 0 ? 'na' : value > 0 ? 'up' : 'down';
+
+  function updateTheme() {
+    const dark = document.documentElement.dataset.theme === 'dark';
+    $('#theme-toggle').setAttribute('aria-pressed', String(dark));
+    $('#theme-toggle').setAttribute('aria-label', `${dark ? '暗黑' : '淺色'}模式，切換至${dark ? '淺色' : '暗黑'}`);
+    text('#theme-label', dark ? '暗黑' : '淺色');
+    $('meta[name="theme-color"]').content = dark ? '#0c111b' : '#f3f5fa';
+  }
+  $('#theme-toggle').addEventListener('click', () => {
+    const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem('stocktw:theme', theme); }
+    catch (_) { text('#storage-note', '此瀏覽器無法儲存，外觀選擇僅保留至本頁關閉。'); }
+    updateTheme();
+  });
+  updateTheme();
 
   try {
     const saved = JSON.parse(localStorage.getItem('stocktw:favorites') || '[]');
@@ -151,7 +169,16 @@
   }
 
   function render() {
-    const list = filtered();
+    const base = filtered();
+    const chartDate = state.stocks.filter(s => s.currentPrice !== null && timestamp(s.priceDate) !== null).map(s => s.priceDate.slice(0,10)).sort().at(-1) || '';
+    const sameDate = s => s.currentPrice !== null && number(s.currentPct) !== null && s.priceDate?.slice(0,10) === chartDate;
+    const list = state.range ? base.filter(s => sameDate(s) && inBucket(s.currentPct, state.range)) : base;
+    $('#chart-filter-note').textContent = state.range ? `圖表篩選：${buckets.find(b => b.id === state.range).label}，行情 ${chartDate}。再次點選柱子，或「清除篩選」可取消。` : '';
+    renderCharts({ base: base.filter(sameDate), selected: list.filter(sameDate), date: chartDate, metric: state.metric, expanded: state.expanded, range: state.range, industry: $('#industry').value,
+      onStock: openDrawer,
+      onRange: id => { state.range = id; render(); const target = id ? document.querySelector(`[data-bucket="${id}"]`) : $('#reset'); target.focus(); },
+      onIndustry: industry => { $('#industry').value = industry; state.range = ''; render(); $('#industry').focus(); }
+    });
     $('#list').replaceChildren(...(list.length ? list.map(renderCard) : [make('div', 'empty', state.view === 'favorites' ? '沒有符合條件的自選。請清除篩選，或在全部清單加入星號。' : '沒有符合條件的資料，請調整搜尋或清除篩選。')]));
     text('#result-count', `${list.length} / ${state.stocks.length} 筆`);
     text('#favorite-count', state.stocks.filter(s => state.favorites.has(s.code)).length);
@@ -174,12 +201,24 @@
     const href = reportURL(stock.researchFile);
     if (href) { const link = make('a', 'report-link', '閱讀原始研究報告 ↗'); link.href = href; link.target = '_blank'; link.rel = 'noopener noreferrer'; sections.append(link); }
     else sections.append(make('p', 'notice', '未提供可開啟的原報告連結。'));
-    root.append(head, grid, sections);
+    root.append(head);
+    if (stock.currentPrice !== null && stock.target !== null) {
+      const comparison = make('div', 'profile-comparison');
+      comparison.append(make('h3', '', '現價與 Base 情境對照'), make('p', 'chart-caption', '共同零起點，單位新臺幣／股。這是價格對照，不是歷史走勢。'));
+      const max = Math.max(stock.currentPrice, stock.target);
+      [['現價', stock.currentPrice, 'current'], ['Base 情境', stock.target, 'target']].forEach(([label, value, type]) => {
+        const row = make('div', 'comparison-row'); row.append(make('span', '', label), make('strong', '', fmt(value)));
+        const track = make('div', 'comparison-track'), bar = make('div', `comparison-bar ${type}`);
+        bar.style.width = `${value / max * 100}%`; track.append(bar); row.append(track); comparison.append(row);
+      });
+      root.append(comparison);
+    }
+    root.append(grid, sections);
     $('#modal').hidden = false; $('.shell').inert = true; $('.topbar').inert = true; document.body.style.overflow = 'hidden'; $('.drawer-close').focus();
   }
   function closeDrawer() {
     $('#modal').hidden = true; $('.shell').inert = false; $('.topbar').inert = false; document.body.style.overflow = '';
-    if (state.lastFocus?.isConnected) state.lastFocus.focus();
+    if (state.lastFocus?.isConnected) state.lastFocus.focus(); else $('#search').focus();
   }
 
   async function getJSON(url) {
@@ -190,6 +229,7 @@
   async function load() {
     const generation = ++state.generation;
     $('#reload').disabled = true; $('#list').setAttribute('aria-busy', 'true');
+    $('#visuals').hidden = true;
     $('#list').replaceChildren(make('div', 'empty', '正在讀取來源快照…'));
     try {
       const [dataResult, liveResult, etfResult] = await Promise.allSettled([getJSON('./data.json'), getJSON('./data/live.json'), getJSON('./data/etf.json')]);
@@ -207,7 +247,7 @@
       $('#etf').disabled = !Object.keys(state.etfMap).length;
       state.dataDate = data.date; state.researchDate = data.research_summary?.generated;
       state.stocks = data.stocks.map(s => normalize(s, data, state.live));
-      populateFilters(); renderStats(); renderQuality(); render();
+      populateFilters(); renderStats(); renderQuality(); render(); $('#visuals').hidden = false;
     } catch (error) {
       state.stocks = []; $('#stats').replaceChildren(); $('#quality-list').replaceChildren();
       text('#result-count', '未載入'); text('#data-status', '載入失敗'); text('#data-updated', '資料未確認');
@@ -218,7 +258,10 @@
 
   $('#search').addEventListener('input', render);
   ['#industry', '#research-status', '#etf', '#sort'].forEach(selector => $(selector).addEventListener('change', render));
-  $('#reset').addEventListener('click', () => { ['#search', '#industry', '#research-status', '#etf'].forEach(selector => { $(selector).value = ''; }); render(); $('#search').focus(); });
+  $('#reset').addEventListener('click', () => { state.range = ''; ['#search', '#industry', '#research-status', '#etf'].forEach(selector => { $(selector).value = ''; }); render(); $('#search').focus(); });
+  $('#heatmap-metric').addEventListener('change', event => { state.metric = event.target.value; render(); });
+  $('#heatmap-expand').addEventListener('click', () => { state.expanded = !state.expanded; render(); $('#heatmap-expand').focus(); });
+  window.matchMedia('(max-width:700px)').addEventListener('change', render);
   document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => {
     state.view = button.dataset.view;
     document.querySelectorAll('[data-view]').forEach(el => { el.classList.toggle('is-active', el === button); el.setAttribute('aria-pressed', String(el === button)); }); render();
